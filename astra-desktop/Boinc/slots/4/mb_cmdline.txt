@@ -1,0 +1,1 @@
+<soft_link>../../projects/setiathome.berkeley.edu/mb_cmdline-8.00-opencl_intel_gpu_sah.txt</soft_link>

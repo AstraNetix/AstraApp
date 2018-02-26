@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D9280064DF7720835F535FE69117B4689BDEBD0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D9280064DF7720835F535FE69117B4689BDEBD0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FEE403E7-F361-4EB9-A148-9EFFEE0D1763",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D9280064DF7720835F535FE69117B4689BDEBD0" : "Astra\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Testing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "astra-desktop\/Testing.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/skale98@bitbucket.org\/skale98\/astra_web_frameworks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D9280064DF7720835F535FE69117B4689BDEBD0"
+    }
+  ]
+}

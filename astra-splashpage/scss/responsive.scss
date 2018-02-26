@@ -1,0 +1,312 @@
+
+
+@media (min-width: 768px) {
+  /* popUp Video */
+  .apps-video .modal-dialog {
+    width: 750px;
+    margin: 100px auto;
+  }
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+  /* Contact Info */
+  .contact .contact-info {
+    margin-bottom: 15px;
+    overflow: hidden;
+    .info-box {
+      width: 50%;
+      float: left;
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      &:first-child {
+        border-right: 1px solid #CACACA;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .appsLand-btn.appsLand-btn-larg {
+    padding: 20px 27px;
+  }
+  .features__style-2 .feat-tabs {
+    text-align: center;
+    li {
+      width: auto;
+      display: inline-block;
+      float: none;
+      border-bottom: 0;
+      &.active {
+        border-bottom: 0;
+      }
+    }
+  }
+  .clients-logo .clientLogos-slider-container .swiper-slide a {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* General Style */
+  body {
+    padding-bottom: 0 !important;
+  }
+  footer {
+    position: static !important;
+  }
+  header.appsLand-header .app-overlay {
+    padding-top: 172px;
+    padding-bottom: 100px;
+  }
+  header.appsLand-header .header-content .site-intro-content h1 {
+    font-size: 30px;
+  }
+  .entry-main {
+    & > section, & > div {
+      padding: 90px 0;
+      &.section-bg-img {
+        padding: 0;
+        .app-overlay {
+          padding: 90px 0;
+        }
+        &.section-without-title {
+          padding: 0;
+          .app-overlay {
+            padding: 60px 0;
+          }
+        }
+      }
+      &.section-without-title {
+        padding: 60px 0;
+      }
+    }
+  }
+  .section-title {
+    margin-bottom: 60px;
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+  }
+  /* navbar */
+  .appsLand-navbar {
+    &.active-navbar {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .navbar-header {
+      margin: 0;
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .app-links {
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      box-shadow: 5px 0 25px rgba(0,0,0,0.25);
+      background: rgba(0, 0, 0, 0.25);
+      .navbar-nav {
+        background: #FFF;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        height: 100%;
+        width: 270px;
+        overflow: auto;
+        @include transition();
+        &  > li {
+          padding: 0;
+          border-bottom: 1px solid #F1F1F1;
+          &.mobile-size-logo {
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+            z-index: 2;
+            padding: 25px 0;
+            a {
+              padding: 0;
+              display: inline-block;
+              &:hover {
+                background: none;
+              }
+            }
+            img {
+              @include border-radius(50%);
+              box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+            }
+          }
+          & > a,
+          & > span{
+            color: #333;
+            padding: 15px 30px;
+            &:hover {
+              background: #f9f9f9;
+              color: $mainColor;
+            }
+            &:before {
+              content: none;
+            }
+          }
+          &.active {
+            & > a,
+            & > span{
+              color: $mainColor;
+              background: #f9f9f9;
+            }
+          }
+          .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            border: 0;
+            width: 100%;
+            min-width: 0;
+            position: static;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .navbar-brand img {
+      margin: 0;
+      height: 100%;
+    }
+    &.mobile-menu-active {
+      .app-links {
+        visibility: visible;
+        .navbar-nav {
+          left: 0;
+        }
+      }
+    }
+  }
+  /* features */
+  .features .appInfo-data {
+    padding-top: 0;
+  }
+  /* Download */
+  .first-download-btn {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .third-download-btn {
+    text-align: right;
+    margin-top: 15px;
+  }
+  /* testimonials */
+  .testimonials {
+    text-align: center;
+    .testimonials-template .testimonials-slide .row.table-row {
+      display: block;
+      margin-right: 0;
+      margin-left: 0;
+      .table-cel {
+        display: block;
+        float: none;
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+    .testimonials-template .testimonials-slide {
+      padding: 40px;
+      [class*="col-"] {
+        padding: 0;
+      }
+      .client-info {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #EEE;
+      }
+      &:before {
+        content: none;
+      }
+    }
+  }
+  /* statistics */
+  .statistics {
+    .stats {
+      text-align: center;
+      padding: 0;
+      .stats-icon {
+        position: static;
+        margin: 0 auto 15px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  /* Contact */
+  .contact .contact-form {
+    padding: 40px;
+    &:before {
+      content: none;
+    }
+  }
+  /* blog */
+  .blog {
+    .list-post {
+      .entry-header {
+        width: 100%;
+        float: none;
+      }
+      .entry-content .entry-post-info .posted-on {
+        left: auto;
+        right: 20px;
+        top: -32px;
+      }
+      .entry-content-footer {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+  .single-post {
+    .entry-post-info {
+      position: static;
+      background: none;
+      color: inherit;
+      padding: 0 0 15px 0;
+      h2 {
+        font-size: 24px;
+      }
+    }
+    .entry-Categories {
+      position: static;
+      background: none;
+      padding: 0;
+      color: inherit;
+      margin-top: 20px;
+      a {
+        color: inherit;
+      }
+      li {
+        font-size: 14px;
+      }
+    }
+    .entry-content {
+      padding-top: 20px;
+      p {
+        font-size: 14px;
+      }
+    }
+    .entry-footer .post-comments {
+      .user-photo {
+        width: 40px;
+        height: 40px;
+      }
+      .the-comment {
+        width: calc(100% - 50px);
+        margin-left: 10px;
+      }
+      .the-comment .comment-box:before {
+        border-width: 4px;
+        left: -8px;
+      }
+    }
+  }
+}

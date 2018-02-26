@@ -1,0 +1,6 @@
+framework module Pods_astra_desktop {
+  umbrella header "Pods-astra-desktop-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,20 @@
+setiathome_v8 8.00 Revision: 3310XCode LLVM 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57) x86_64
+
+libboinc: 7.7.0
+libboinc: 7.7.0
+
+Work Unit Info:
+...............
+WU true angle range is :  0.007220
+Optimal function choices:
+--------------------------------------------------------
+                            name   timing   error
+--------------------------------------------------------
+                v_BaseLineSmooth (no other)
+     v_vGetPowerSpectrumUnrolled 0.000079 0.00000 
+              sse2_ChirpData_ak8 0.008901 0.00000 
+             v_vTranspose4x16ntw 0.000742 0.00000 
+                 ben SSE folding 0.001107 0.00000 
+Restarted at 3.71 percent.
+Restarted at 9.41 percent.
+Restarted at 25.52 percent.

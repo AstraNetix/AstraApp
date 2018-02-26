@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+<scheduler>http://setiboinc.ssl.berkeley.edu/sah_cgi/cgi</scheduler>
+<link rel="boinc_scheduler" href="http://setiboinc.ssl.berkeley.edu/sah_cgi/cgi">
+-->
+<title>SETI@home</title>
+
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="https://setiathome.berkeley.edu//bootstrap.min.css" media="all">
+    
+            <link rel=stylesheet type="text/css" href="https://setiathome.berkeley.edu/sah_custom_dark.css">
+        <link rel="icon" type="image/x-icon" href="https://setiathome.berkeley.edu/images/logo7.ico"/>
+
+        <link rel=alternate type="application/rss+xml" title="RSS 2.0" href="https://setiathome.berkeley.edu/rss_main.php">
+        </head>
+    <body >
+<!-- SVN VERSIONS -->
+<!-- $Id$ -->
+<!-- $Id: pm.inc 14019 2007-11-01 23:04:39Z davea $ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<!-- $Id$ -->
+<div class="container-fluid">
+    <img width=100% class="img-responsive" src="img/tarantula-sah.jpg"><nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="https://setiathome.berkeley.edu/"><img style="margin-top:7px;" height="40" src="https://setiathome.berkeley.edu/images/sah_logo_wb.png"></a>&nbsp;&nbsp;
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+    
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+    <li><a href="https://setiathome.berkeley.edu/sah_help.php">Help</a></li>
+            <li><a href="https://setiathome.berkeley.edu/sah_donate.php">Donate</a></li>
+            <li><a href="https://setiathome.berkeley.edu/sah_porting.php">Porting</a></li>
+            <li><a href="https://setiathome.berkeley.edu/sah_graphics.php">Graphics</a></li>
+            <li><a href="https://boinc.berkeley.edu/addons.php">Add-ons</a></li>
+            
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Science
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+    <li><a href="https://setiathome.berkeley.edu/sah_about.php">About SETI@home</a></li>
+            <li><a href="https://setiathome.berkeley.edu/ap_faq.php">About Astropulse</a></li>
+            <li><a href="https://setiathome.berkeley.edu/sah_sci_newsletters.php">Science newsletters</a></li>
+            <li><a href="https://setiathome.berkeley.edu/nebula/index.php">Nebula</a></li>
+            
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Computing
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+    <li><a href="https://setiathome.berkeley.edu/stats.php">Statistics</a></li>
+            <li><a href="https://setiathome.berkeley.edu/show_server_status.php">Server status</a></li>
+            <li><a href="https://setiathome.berkeley.edu/tech_news.php">Technical news</a></li>
+            <li><a href="https://setiathome.berkeley.edu/apps.php">Applications</a></li>
+            <li><a href="https://setiathome.berkeley.edu/cert_print.php">Certificate</a></li>
+            <li><a href="https://setiathome.berkeley.edu/kiosk/">World view</a></li>
+            
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+    <li><a href="https://setiathome.berkeley.edu/forum_index.php">Message boards</a></li>
+            <li><a href="https://setiathome.berkeley.edu/forum_help_desk.php">Questions and Answers</a></li>
+            <li><a href="https://setiathome.berkeley.edu/team.php">Teams</a></li>
+            <li><a href="https://setiathome.berkeley.edu/profile_menu.php">Profiles</a></li>
+            <li><a href="https://setiathome.berkeley.edu/user_search.php">User search</a></li>
+            <li><a href="https://setiathome.berkeley.edu/related.php">Web sites</a></li>
+            <li><a href="https://setiathome.berkeley.edu/misc.php">Pictures and music</a></li>
+            <li><a href="https://setiathome.berkeley.edu/uotd.php">User of the day</a></li>
+            
+        </ul>
+      </li>
+    
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Site
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+    <li><a href="https://setiathome.berkeley.edu/site_search.php">Site search</a></li>
+            <li><a href="https://setiathome.berkeley.edu/language_select.php">Languages</a></li>
+            <li><a href="https://setiathome.berkeley.edu/sah_help.php">Help</a></li>
+            
+        </ul>
+      </li>
+    
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    
+                <li><a href="https://setiathome.berkeley.edu/create_account_form.php">Sign Up</a></li>
+                <li><a href="https://setiathome.berkeley.edu/login_form.php">Login</a></li>
+                
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+        <div class="container-fluid">
+    
+            <div class="row">
+            <div class="col-sm-12">
+        
+            </div>
+            </div>
+        
+        <div class="row">
+        <div class="col-sm-5">
+    <div class="panel panel-primary">
+        
+            <div class="panel-heading">
+                <h1 class="panel-title">What is SETI@home?</h1>
+            </div>
+        
+        <div class="panel-body">
+    
+                    <p>
+                    SETI@home is a scientific experiment,
+                    based at <a href=http://www.berkeley.edu >UC Berkeley</a>,
+                    that uses Internet-connected computers in the Search for
+                    Extraterrestrial Intelligence (SETI). You can participate by
+                    running a free program that downloads and analyzes radio
+                    telescope data. 
+                    </p>
+                <center><a href="join.php" class="container-fluid btn btn-success"><font size=+2>Join SETI@home</font></a></center>
+                    
+        </div>
+        </div>
+    <div class="panel panel-primary">
+        
+            <div class="panel-heading">
+                <h1 class="panel-title">User of the Day</h1>
+            </div>
+        
+        <div class="panel-body">
+    <a href="https://setiathome.berkeley.edu/view_profile.php?userid=156547"><img border=0 vspace=4 hspace=8 align=left src="https://setiathome.berkeley.edu/user_profile/images/156547_sm.jpg" alt="User profile"></a> <a href="https://setiathome.berkeley.edu/view_profile.php?userid=156547"><img title="View the profile of WSiaB" src="https://setiathome.berkeley.edu/img/head_20.png" alt="Profile"></a> <a href="https://setiathome.berkeley.edu/show_user.php?userid=156547">WSiaB</a> <img title="Top 25% in average credit" valign=top height=24 src=img/pct_25.png> <br>Kirker Enterprises was founded on April 8th, 1993 by John Lester as an Amway Distributorship (of all things). At the time, John was doing Web Design...
+        </div>
+        </div>
+    
+        </div>
+        <div class="col-sm-7">
+    <div class="panel panel-primary">
+        
+            <div class="panel-heading">
+                <h1 class="panel-title">News</h1>
+            </div>
+        
+        <div class="panel-body">
+    <p><span class="lead">Slow network connection to Green Bank</span><br>
+
+        Something is happening to the network connection between Green Bank and Berkeley that is slowing down the rate at which we can transfer data for splitting.  We've opened a trouble ticket with campus networking services.  Hopefully they will be able to find and fix the problem quickly.  Until then, work may be in short supply.
+        <br>
+        <span class="small">29 Jan 2018, 18:45:35 UTC
+    
+            &middot; <a href="https://setiathome.berkeley.edu/forum_thread.php?id=82546"> Discuss</a>
+        </span>
+        <br clear=all>
+        <hr>
+    <p><span class="lead">Long outage...</span><br>
+
+        The outage ran long today because we needed to run down to the data center to swap some bad drives with new ones and reboot a few of the machine to pick up kernel and mysql updates.<br />
+<br />
+Sorry for the delay.
+        <br>
+        <span class="small">24 Jan 2018, 7:17:44 UTC
+    
+            &middot; <a href="https://setiathome.berkeley.edu/forum_thread.php?id=82529"> Discuss</a>
+        </span>
+        <br clear=all>
+        <hr>
+    <p><span class="lead">Projects are (no longer) down</span><br>
+
+        Our upload server is malfunctioning.  The projects are down until we can fix this.
+        <br>
+        <span class="small">4 Jan 2018, 20:04:53 UTC
+    
+            &middot; <a href="https://setiathome.berkeley.edu/forum_thread.php?id=82448"> Discuss</a>
+        </span>
+        <br clear=all>
+        <hr>
+    <p><span class="lead">Now accepting donations of gridcoin.</span><br>
+
+        Because of several requests, I've resurrected the idea that we could take donation in <a href="http://www.gridcoin.us/" rel="nofollow">gridcoin</a>, a cryptocurrency you can earn by participating in volunteer computing projects.<br />
+<br />
+Our gridcoin address is now listed on our <a href="http://setiathome.berkeley.edu/sah_donate.php" rel="nofollow">donation page</a>.
+        <br>
+        <span class="small">13 Dec 2017, 18:41:43 UTC
+    
+            &middot; <a href="https://setiathome.berkeley.edu/forum_thread.php?id=82350"> Discuss</a>
+        </span>
+        <br clear=all>
+        <hr>
+    <p><span class="lead">Special Fundraiser for Parkes Data Store and GPU development system</span><br>
+
+        Thanks to our collaboration with Breakthrough Listen and their international colleagues, we will soon have the ability to access data recorded at the Parkes Radio Telescope in Australia. For the first time, this will give us full-sky coverage, including the southern hemisphere, in our search for ET. However, due to the enormous amount of data that the 13-beam receiver at Parkes can generate, we will require extra hardware to store and distribute it. We need your help to purchase this.<br />
+<br />
+Thanks to some special offers, one from the <a href="https://setiathome.berkeley.edu/show_user.php?userid=7810325" rel="nofollow">Hanson family</a> in memory of Robert W. & Mary P. Hanson, one from <a href="https://setiathome.berkeley.edu/show_user.php?userid=5509" rel="nofollow">Richard Haselgrove</a> in memory of his mother, Jenifer Leech, and one from <a href="https://setiathome.berkeley.edu/show_user.php?userid=9652" rel="nofollow">Mr. Kevvy</a>, we have the possibility to match donations which will allow us to purchase the Parkes Data store server (~$34K) and the GPU development systems (~$10K) we will need for the coming year.  For every dollar you <a href="https://setiathome.berkeley.edu/sah_donate.php" rel="nofollow">donate</a> in this special fund raiser, Mr. Kevvy will match it, the Hanson Family will match it with two, and Richard Haselgrove will match it with two more.  <b><u>That means for every dollar you donate we'll get <font color="orange"><i>six</i></font> dollars towards the purchase of these servers!</u></b><br />
+<br />
+Because this is a special fundraiser we'll have special notation on your account page and on the forums.  The 12TB disk drives in the Parkes Data Store cost $450. One sixth of that is $75. So, a donation of $75 or more gets you a disk drive icon. The GPUs in the GPU development machine that we will be using for our recording systems at future telescopes are $1500 each, so a donation of $250 or more will get you a GPU icon. And as always, any donation of $10 or more will get you a green star.<br />
+<br />
+But in the end, it's not about the icons: it's about getting the data and making a discovery for the ages. Your help, whether by crunching data or by <a href="https://setiathome.berkeley.edu/sah_donate.php" rel="nofollow">donating</a>, is always appreciated.
+        <br>
+        <span class="small">7 Dec 2017, 19:15:11 UTC
+    
+            &middot; <a href="https://setiathome.berkeley.edu/forum_thread.php?id=82316"> Discuss</a>
+        </span>
+        <br clear=all>
+        <hr>
+    <a href=https://setiathome.berkeley.edu/old_news.php>... more</a>
+        <br><br><small>
+    News is available as an <a href=rss_main.php>RSS feed &nbsp; <img src="img/rss_icon.gif" alt="RSS"></a>
+        </small>
+    
+        </div>
+        </div>
+    
+        </div>
+        </div>
+        </div>
+    <br>
+<br>
+        <p class="text-center">
+        <a class="brand boinc-logo" href="https://boinc.berkeley.edu/"><img align="middle" border="0" src="https://setiathome.berkeley.edu/img/pb_boinc.gif" alt="Powered by BOINC"></a>
+        <br>&nbsp;<br>
+        &copy;2018 University of California
+        <br>&nbsp;<br>
+        SETI@home and Astropulse are funded by grants from the National Science Foundation, NASA, and donations from SETI@home volunteers. AstroPulse is funded in part by the NSF through grant AST-0307956.
+        </p>
+    
+        <script src="https://setiathome.berkeley.edu//jquery.min.js"></script>
+        <script src="https://setiathome.berkeley.edu//bootstrap.min.js"></script>
+        </div>
+        </body>
+        </html>
+    

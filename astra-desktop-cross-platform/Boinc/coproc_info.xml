@@ -1,0 +1,67 @@
+    <coprocs>
+<coproc_intel_gpu>
+   <count>0</count>
+   <name>Intel(R) Iris(TM) Graphics 540</name>
+   <available_ram>1610612736.000000</available_ram>
+   <have_opencl>0</have_opencl>
+   <peak_flops>384000000000.000000</peak_flops>
+   <version>1.2(Aug 24 2017 22:22:18)</version>
+</coproc_intel_gpu>
+   <intel_gpu_opencl>
+      <name>Intel(R) Iris(TM) Graphics 540</name>
+      <vendor>Intel Inc.</vendor>
+      <vendor_id>16925952</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>0</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>1</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_image2d_from_buffer cl_khr_gl_depth_images cl_khr_depth_images cl_khr_3d_image_writes </extensions>
+      <global_mem_size>1610612736</global_mem_size>
+      <local_mem_size>65536</local_mem_size>
+      <max_clock_frequency>1000</max_clock_frequency>
+      <max_compute_units>48</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2 </opencl_device_version>
+      <opencl_driver_version>1.2(Aug 24 2017 22:22:18)</opencl_driver_version>
+      <device_num>0</device_num>
+      <peak_flops>384000000000.000000</peak_flops>
+      <opencl_available_ram>1610612736.000000</opencl_available_ram>
+      <opencl_device_index>0</opencl_device_index>
+      <warn_bad_cuda>0</warn_bad_cuda>
+   </intel_gpu_opencl>
+<opencl_cpu_prop>
+   <platform_vendor>Apple</platform_vendor>
+   <opencl_cpu_info>
+      <name>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz</name>
+      <vendor>Intel</vendor>
+      <vendor_id>4294967295</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>63</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>3</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_APPLE_fp64_basic_ops cl_APPLE_fixed_alpha_channel_orders cl_APPLE_biased_fixed_point_image_formats cl_APPLE_command_queue_priority</extensions>
+      <global_mem_size>8589934592</global_mem_size>
+      <local_mem_size>32768</local_mem_size>
+      <max_clock_frequency>2000</max_clock_frequency>
+      <max_compute_units>4</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2 </opencl_device_version>
+      <opencl_driver_version>1.1</opencl_driver_version>
+   </opencl_cpu_info>
+</opencl_cpu_prop>
+<warning>NVIDIA: dlopen(/usr/local/cuda/lib/libcuda.dylib, 2): image not found</warning>
+    </coprocs>

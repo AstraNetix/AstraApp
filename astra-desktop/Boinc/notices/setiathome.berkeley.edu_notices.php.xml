@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+        <rss version="2.0">
+        <channel>
+        <title>SETI@home notices</title>
+        <link>https://setiathome.berkeley.edu/</link>
+        <description>Notices</description>
+        <lastBuildDate>Sun, 25 Feb 2018 01:18:07 GMT</lastBuildDate>
+    <item>
+        <title><![CDATA[Slow network connection to Green Bank]]></title>
+        <link>https://setiathome.berkeley.edu/forum_thread.php?id=82546</link>
+        <guid isPermaLink="true">https://setiathome.berkeley.edu/forum_thread.php?id=82546</guid>
+        <description><![CDATA[
+Something is happening to the network connection between Green Bank and Berkeley that is slowing down the rate at which we can transfer data for splitting.  We've opened a trouble ticket with campus networking services.  Hopefully they will be able to find and fix the problem quickly.  Until then, work may be in short supply.
+]]></description>
+        <pubDate>Mon, 29 Jan 2018 18:45:35 GMT</pubDate>
+        </item>
+    
+        </channel>
+        </rss>
+    

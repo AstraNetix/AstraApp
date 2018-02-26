@@ -1,0 +1,15 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "3e941d1a8e97b99fa8c73395bcc2e64a"
+build_time: [1519253612, 22772000]
+inputs:
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/PubNubClient.swift": !dirty [1519198856, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/Quote.swift": [1515135441, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/AstraViewController.swift": [1516693041, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/BoincCommands.swift": [1516260070, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/EventMonitor.swift": [1515136918, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/ViewController.swift": [1515118051, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/ServerAPI.swift": !dirty [1516340051, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/AppDelegate.swift": !dirty [1516693074, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/User.swift": [1516387904, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/BashController.swift": [1516266748, 0]
+  "/Users/sohamkale/Documents/Astra/astra-desktop/astra-desktop/LoginViewController.swift": !dirty [1516910902, 0]

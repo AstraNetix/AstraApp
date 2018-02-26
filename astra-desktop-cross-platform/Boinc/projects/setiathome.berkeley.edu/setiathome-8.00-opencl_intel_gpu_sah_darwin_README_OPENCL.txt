@@ -1,0 +1,156 @@
+MultiBeam OpenCL application is intended to process SETI@home MultiBeam v8 tasks.
+-----------
+Mac OS X, 64bit :
+This executable should work on
+OS X (Mavericks), kernels 13.3.0  - 13.5.0
+OS X (Yosemite), kernels 14.0.0 and newer.
+OS X (El Capitain), kernels 15.0.0 and newer. (needs testing ! )
+
+OS X should provide all necessary libraries for this app to run.
+
+Intel GPU notes :
+The following Intel GPUs should be able to run this application :
+all Ivy Bridge (3rd generation)
+all Haswell (4th generation)
+all Broadwell (5th generation)
+all Skylake (6th generation) (needs testing ! )
+
+
+Source code repository: https://setisvn.ssl.berkeley.edu/svn/branches/sah_v7_opt
+Build from SVN revision: 3321
+Date of revision commit: January 2016
+
+Available command line switches:
+
+-v N :sets level of verbosity of app. N - integer number.
+    -v 0 disables almost all output.
+    -v 1 is the Default.
+    Levels from 2 to 5 reserved for increasing verbosity, higher levels reserved for specific usage.
+    -v 2 enables all signals output.
+    -v 6 enables delays printing where sleep loops used.
+    -v 7 enables oclFFT config printing for oclFFT fine tune.
+
+-period_iterations_num N: Splits single PulseFind kernel call to N calls for longest PulseFind calls. Can be
+    used to reduce GUI lags or to prevent driver restarts. Can affect performance. Experimentation
+    required. Default value for v8 task is N=50. N should be positive integer.
+
+-spike_fft_thresh N: Sets threshold FFT size where switch between different SpikeFind algorithms occurs.
+
+-sbs N :Sets maximum single buffer size for GPU memory allocations. N should be positive integer and means
+    bigger size in Mbytes. Can affect performance and total memory requirements for application to run.
+    Experimentation required.
+
+-hp : Results in bigger priority for application process (normal priority class and abothe normal thread priority).
+	Can be used to increase GPU load, experimentation required for particular GPU/CPU/GPU driver combo.
+(not available on OS X, use BOINCs client_config.xml for priority setting eventually)
+
+-cpu_lock :Results in CPUs number limitation for particular app instance. Also attempt to bind different
+    instances to different CPU cores will be made. Can be used to increase performance under some specific
+    conditions. Can decrease performance in other cases though. Experimentation required.
+(not available on OS X)
+
+-total_GPU_instances_num N : To use together with -cpu_lock on multi-vendor GPU hosts. Set N to total number
+    of simultaneously running GPU OpenCL SETI apps for host (total among all used GPU of all vendors). App
+    needs to know this number to properly select logical CPU for execution in affinity-management (-
+    cpu_lock) mode.  Should not exceed 64.
+(not available on OS X)
+
+-cpu_lock_fixed_cpu N : Will enable CPUlock too but will bind all app instances to the same N-th CPU  (N=0,1,.., number of CPUs-1).
+(not available on OS X)
+
+-no_cpu_lock : To disable affinity management (opposite to -cpu_lock option). For ATi version CPUlock affinity management enabled by default.
+(not available on OS X)
+
+-use_sleep :Results in additional Sleep() calls to yield CPU to other processes. Can affect performance. Experimentation required.
+
+-use_sleep_ex N: enables use_sleep; sets argument of Sleep() call to N: Sleep(N)
+
+Here some already obsolete options are listed. They are not tested for proper operation with latest builds and are only listed for completeness:
+
+-gpu_lock :Old way GPU lock enabled. Use -instances_per_device N switch to provide number of instances to run.
+(not available on OS X)
+
+-instances_per_device N :Sets allowed number of simultaneously executed GPU app instances (shared with
+    AstroPulse app instances). N - integer number of allowed instances. Should not exceed 64.
+(not available on OS X, use BOINCs app_config.xml file for running multiple instances per GPU)
+
+These 2 options used together provide BOINC-independent way to limit number of simultaneously executing GPU
+apps. Each SETI OpenCL GPU application with these switches enabled will create/check global Mutexes and
+suspend its process execution if limit is reached. Awaiting process will consume zero CPU/GPU and rather low
+amount of memory awaiting when it can continue execution.
+
+-tune N Mx My Mz : to make app more tunable this param allows user to fine tune kernel launch sizes of most important kernels.
+	N - kernel ID (see below)
+	Mxyz - workgroup size of kernel. For 1D workgroups Mx will be size of first dimension and My=Mz=1 should be 2 other ones.
+	N should be one of values from this list:
+	TRIPLET_HD5_WG=1,
+	For best tuning results its recommended to launch app under profiler to see how particular WG size choice affects particular kernel.
+	This option mostly for developers and hardcore optimization enthusiasts wanting absolute max from their setups.
+	No big changes in speed expected but if you see big positive change over default please report.
+	Usage example: -tune 1 2 1 64  (set workgroup size of 128 (2x1x64) for TripletFind_HD5 kernels).
+
+
+This class of options tunes oclFFT performance
+-oclfft_tune_gr N : Global radix
+-oclfft_tune_lr N : Local radix
+-oclfft_tune_wg N : Workgroup size
+-oclfft_tune_ls N : Max size of local memory FFT
+-oclfft_tune_bn N : Number of local memory banks
+-oclfft_tune_cw N : Memory coalesce width
+
+For examples of app_info.xml entries look into text files provided in corresponding package.
+
+Command line switches can be used either in app_info.xml or mb_cmdline.txt.
+Params in mb_cmdline*.txt will override switches in <cmdline> tag of app_info.xml.
+
+
+For device-specific settings in multi-GPU systems it's possible to override some of command-line options via
+application config file.
+
+Name of this config file:
+MultiBeam_<vendor>_config.xml where vendor can be ATi, NV or iGPU.
+File structure:
+<deviceN>
+	<period_iterations_num>N</period_iterations_num>
+	<spike_fft_thresh>N</spike_fft_thresh>
+	<sbs>N</sbs>
+	<oclfft_plan>
+	        <size>N</size>
+		<global_radix>N</global_radix>
+		<local_radix>N</local_radix>
+		<workgroup_size>N</workgroup_size>
+		<max_local_size>N</max_local_size>
+		<localmem_banks>N</localmem_banks>
+		<localmem_coalesce_width>N</localmem_coalesce_width>
+	</oclfft_plan>
+</deviceN>
+where deviceN - particular OpenCL device N starting with 0, multiple sections allowed, one per each device.
+other fields - corresponding command-line options to override for this particular device.
+All or some sections can be omitted.
+
+Don't forget to re-check device number to physical card relation after driver updat and physical slot change.
+Both these actions can change cards enumeration order.
+
+Best usage tips:
+For best performance it is important to free 2 CPU cores running multiple instances.
+Freeing at least 1 CPU core is necessity to get enough GPU usage.
+
+If you experience screen lags or driver restarts increase -period_iteration_num in app_info.xml or mb_cmdline*.txt
+It is more important to free CPU core(s) so more instances are running.
+
+
+============= Intel specific info =============
+
+Suggested command line switches:
+
+HD 2500
+ -spike_fft_thresh 2048 -tune 1 2 1 16 (*requires testing)
+
+HD 4000
+ -spike_fft_thresh 2048 -tune 1 64 1 4 (*requires testing)
+
+HD 4200 / HD 4600 / HD 5xxx
+ -spike_fft_thresh 4096 -tune 1 64 1 4 -oclfft_tune_gr 256 -oclfft_tune_lr 16 -oclfft_tune_wg 512 (*requires testing)
+
+
+===============================================

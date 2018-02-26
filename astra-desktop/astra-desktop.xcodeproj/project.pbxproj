@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0696292D78CCB514DA07115C /* Pods_astra_desktop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300C3FA2CA95D729F596E946 /* Pods_astra_desktop.framework */; };
+		470AE7E71FFF15630047AA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE7E61FFF15630047AA18 /* AppDelegate.swift */; };
+		470AE7E91FFF15630047AA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE7E81FFF15630047AA18 /* ViewController.swift */; };
+		470AE7EB1FFF15630047AA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470AE7EA1FFF15630047AA18 /* Assets.xcassets */; };
+		470AE7EE1FFF15630047AA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470AE7EC1FFF15630047AA18 /* Main.storyboard */; };
+		470AE7FA1FFF15630047AA18 /* astra_desktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE7F91FFF15630047AA18 /* astra_desktopTests.swift */; };
+		470AE8051FFF15630047AA18 /* astra_desktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE8041FFF15630047AA18 /* astra_desktopUITests.swift */; };
+		470AE8191FFF55AD0047AA18 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE8181FFF55AD0047AA18 /* Quote.swift */; };
+		470AE81B1FFF5D3E0047AA18 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AE81A1FFF5D3E0047AA18 /* EventMonitor.swift */; };
+		474A83352001BB1400484D6E /* BashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A83342001BB1400484D6E /* BashController.swift */; };
+		474A83372001C07700484D6E /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A83362001C07600484D6E /* ServerAPI.swift */; };
+		47B60C64200EA03F00354370 /* AstraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B60C62200EA03F00354370 /* AstraViewController.swift */; };
+		47B60C65200EA03F00354370 /* AstraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B60C63200EA03F00354370 /* AstraViewController.xib */; };
+		47CB679620070C31002257A8 /* PubNubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB679520070C31002257A8 /* PubNubClient.swift */; };
+		47CB679820072FC2002257A8 /* BoincCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB679720072FC2002257A8 /* BoincCommands.swift */; };
+		47CB679A20075174002257A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB679920075174002257A8 /* User.swift */; };
+		47CBEA282008879200FCCD78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CBEA272008879200FCCD78 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		470AE7F61FFF15630047AA18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470AE7DB1FFF15630047AA18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470AE7E21FFF15630047AA18;
+			remoteInfo = "astra-desktop";
+		};
+		470AE8011FFF15630047AA18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470AE7DB1FFF15630047AA18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470AE7E21FFF15630047AA18;
+			remoteInfo = "astra-desktop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		300C3FA2CA95D729F596E946 /* Pods_astra_desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_astra_desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		470AE7E31FFF15630047AA18 /* astra-desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "astra-desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		470AE7E61FFF15630047AA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		470AE7E81FFF15630047AA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		470AE7EA1FFF15630047AA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		470AE7ED1FFF15630047AA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		470AE7EF1FFF15630047AA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470AE7F01FFF15630047AA18 /* astra_desktop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = astra_desktop.entitlements; sourceTree = "<group>"; };
+		470AE7F51FFF15630047AA18 /* astra-desktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "astra-desktopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		470AE7F91FFF15630047AA18 /* astra_desktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astra_desktopTests.swift; sourceTree = "<group>"; };
+		470AE7FB1FFF15630047AA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470AE8001FFF15630047AA18 /* astra-desktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "astra-desktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		470AE8041FFF15630047AA18 /* astra_desktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astra_desktopUITests.swift; sourceTree = "<group>"; };
+		470AE8061FFF15630047AA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		470AE8181FFF55AD0047AA18 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		470AE81A1FFF5D3E0047AA18 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		474A83342001BB1400484D6E /* BashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashController.swift; sourceTree = "<group>"; };
+		474A83362001C07600484D6E /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		47B60C62200EA03F00354370 /* AstraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraViewController.swift; sourceTree = "<group>"; };
+		47B60C63200EA03F00354370 /* AstraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstraViewController.xib; sourceTree = "<group>"; };
+		47CB679520070C31002257A8 /* PubNubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNubClient.swift; sourceTree = "<group>"; };
+		47CB679720072FC2002257A8 /* BoincCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoincCommands.swift; sourceTree = "<group>"; };
+		47CB679920075174002257A8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		47CBEA272008879200FCCD78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C33D363BFA2E6D14FB758A6 /* Pods-astra-desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astra-desktop.release.xcconfig"; path = "Pods/Target Support Files/Pods-astra-desktop/Pods-astra-desktop.release.xcconfig"; sourceTree = "<group>"; };
+		81A40D509753FFA9EDFB17DE /* Pods-astra-desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astra-desktop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-astra-desktop/Pods-astra-desktop.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		470AE7E01FFF15630047AA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0696292D78CCB514DA07115C /* Pods_astra_desktop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7F21FFF15630047AA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7FD1FFF15630047AA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470AE7DA1FFF15630047AA18 = {
+			isa = PBXGroup;
+			children = (
+				470AE8181FFF55AD0047AA18 /* Quote.swift */,
+				470AE7E51FFF15630047AA18 /* astra-desktop */,
+				470AE7F81FFF15630047AA18 /* astra-desktopTests */,
+				470AE8031FFF15630047AA18 /* astra-desktopUITests */,
+				470AE7E41FFF15630047AA18 /* Products */,
+				D70E74746559A50AE6BBF8FE /* Pods */,
+				94AAE2A4B4CD5F7FC1BD0BDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		470AE7E41FFF15630047AA18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470AE7E31FFF15630047AA18 /* astra-desktop.app */,
+				470AE7F51FFF15630047AA18 /* astra-desktopTests.xctest */,
+				470AE8001FFF15630047AA18 /* astra-desktopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		470AE7E51FFF15630047AA18 /* astra-desktop */ = {
+			isa = PBXGroup;
+			children = (
+				470AE7E61FFF15630047AA18 /* AppDelegate.swift */,
+				474A83342001BB1400484D6E /* BashController.swift */,
+				47CB679720072FC2002257A8 /* BoincCommands.swift */,
+				474A83362001C07600484D6E /* ServerAPI.swift */,
+				47B60C62200EA03F00354370 /* AstraViewController.swift */,
+				47B60C63200EA03F00354370 /* AstraViewController.xib */,
+				47CB679520070C31002257A8 /* PubNubClient.swift */,
+				47CB679920075174002257A8 /* User.swift */,
+				470AE7E81FFF15630047AA18 /* ViewController.swift */,
+				470AE7EA1FFF15630047AA18 /* Assets.xcassets */,
+				470AE7EC1FFF15630047AA18 /* Main.storyboard */,
+				470AE81A1FFF5D3E0047AA18 /* EventMonitor.swift */,
+				47CBEA272008879200FCCD78 /* LoginViewController.swift */,
+				470AE7F01FFF15630047AA18 /* astra_desktop.entitlements */,
+				470AE7EF1FFF15630047AA18 /* Info.plist */,
+			);
+			path = "astra-desktop";
+			sourceTree = "<group>";
+		};
+		470AE7F81FFF15630047AA18 /* astra-desktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				470AE7F91FFF15630047AA18 /* astra_desktopTests.swift */,
+				470AE7FB1FFF15630047AA18 /* Info.plist */,
+			);
+			path = "astra-desktopTests";
+			sourceTree = "<group>";
+		};
+		470AE8031FFF15630047AA18 /* astra-desktopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				470AE8041FFF15630047AA18 /* astra_desktopUITests.swift */,
+				470AE8061FFF15630047AA18 /* Info.plist */,
+			);
+			path = "astra-desktopUITests";
+			sourceTree = "<group>";
+		};
+		94AAE2A4B4CD5F7FC1BD0BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				300C3FA2CA95D729F596E946 /* Pods_astra_desktop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70E74746559A50AE6BBF8FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A40D509753FFA9EDFB17DE /* Pods-astra-desktop.debug.xcconfig */,
+				5C33D363BFA2E6D14FB758A6 /* Pods-astra-desktop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		470AE7E21FFF15630047AA18 /* astra-desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470AE8091FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktop" */;
+			buildPhases = (
+				71431C3B54B8D3623C9B19F5 /* [CP] Check Pods Manifest.lock */,
+				470AE7DF1FFF15630047AA18 /* Sources */,
+				470AE7E01FFF15630047AA18 /* Frameworks */,
+				470AE7E11FFF15630047AA18 /* Resources */,
+				865A83B60A7E3FE5173172CB /* [CP] Embed Pods Frameworks */,
+				DF30495B6C6886C74F825C49 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "astra-desktop";
+			productName = "astra-desktop";
+			productReference = 470AE7E31FFF15630047AA18 /* astra-desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		470AE7F41FFF15630047AA18 /* astra-desktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470AE80C1FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktopTests" */;
+			buildPhases = (
+				470AE7F11FFF15630047AA18 /* Sources */,
+				470AE7F21FFF15630047AA18 /* Frameworks */,
+				470AE7F31FFF15630047AA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470AE7F71FFF15630047AA18 /* PBXTargetDependency */,
+			);
+			name = "astra-desktopTests";
+			productName = "astra-desktopTests";
+			productReference = 470AE7F51FFF15630047AA18 /* astra-desktopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		470AE7FF1FFF15630047AA18 /* astra-desktopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470AE80F1FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktopUITests" */;
+			buildPhases = (
+				470AE7FC1FFF15630047AA18 /* Sources */,
+				470AE7FD1FFF15630047AA18 /* Frameworks */,
+				470AE7FE1FFF15630047AA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470AE8021FFF15630047AA18 /* PBXTargetDependency */,
+			);
+			name = "astra-desktopUITests";
+			productName = "astra-desktopUITests";
+			productReference = 470AE8001FFF15630047AA18 /* astra-desktopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		470AE7DB1FFF15630047AA18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Soham Kale";
+				TargetAttributes = {
+					470AE7E21FFF15630047AA18 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					470AE7F41FFF15630047AA18 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 470AE7E21FFF15630047AA18;
+					};
+					470AE7FF1FFF15630047AA18 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 470AE7E21FFF15630047AA18;
+					};
+				};
+			};
+			buildConfigurationList = 470AE7DE1FFF15630047AA18 /* Build configuration list for PBXProject "astra-desktop" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 470AE7DA1FFF15630047AA18;
+			productRefGroup = 470AE7E41FFF15630047AA18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470AE7E21FFF15630047AA18 /* astra-desktop */,
+				470AE7F41FFF15630047AA18 /* astra-desktopTests */,
+				470AE7FF1FFF15630047AA18 /* astra-desktopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		470AE7E11FFF15630047AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470AE7EB1FFF15630047AA18 /* Assets.xcassets in Resources */,
+				47B60C65200EA03F00354370 /* AstraViewController.xib in Resources */,
+				470AE7EE1FFF15630047AA18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7F31FFF15630047AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7FE1FFF15630047AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71431C3B54B8D3623C9B19F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-astra-desktop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865A83B60A7E3FE5173172CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-astra-desktop/Pods-astra-desktop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-astra-desktop/Pods-astra-desktop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF30495B6C6886C74F825C49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-astra-desktop/Pods-astra-desktop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		470AE7DF1FFF15630047AA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CB679620070C31002257A8 /* PubNubClient.swift in Sources */,
+				470AE8191FFF55AD0047AA18 /* Quote.swift in Sources */,
+				47B60C64200EA03F00354370 /* AstraViewController.swift in Sources */,
+				47CB679820072FC2002257A8 /* BoincCommands.swift in Sources */,
+				470AE81B1FFF5D3E0047AA18 /* EventMonitor.swift in Sources */,
+				470AE7E91FFF15630047AA18 /* ViewController.swift in Sources */,
+				474A83372001C07700484D6E /* ServerAPI.swift in Sources */,
+				470AE7E71FFF15630047AA18 /* AppDelegate.swift in Sources */,
+				47CB679A20075174002257A8 /* User.swift in Sources */,
+				474A83352001BB1400484D6E /* BashController.swift in Sources */,
+				47CBEA282008879200FCCD78 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7F11FFF15630047AA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470AE7FA1FFF15630047AA18 /* astra_desktopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470AE7FC1FFF15630047AA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470AE8051FFF15630047AA18 /* astra_desktopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		470AE7F71FFF15630047AA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470AE7E21FFF15630047AA18 /* astra-desktop */;
+			targetProxy = 470AE7F61FFF15630047AA18 /* PBXContainerItemProxy */;
+		};
+		470AE8021FFF15630047AA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470AE7E21FFF15630047AA18 /* astra-desktop */;
+			targetProxy = 470AE8011FFF15630047AA18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		470AE7EC1FFF15630047AA18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470AE7ED1FFF15630047AA18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		470AE8071FFF15630047AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		470AE8081FFF15630047AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		470AE80A1FFF15630047AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A40D509753FFA9EDFB17DE /* Pods-astra-desktop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "astra-desktop/astra_desktop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		470AE80B1FFF15630047AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C33D363BFA2E6D14FB758A6 /* Pods-astra-desktop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "astra-desktop/astra_desktop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		470AE80D1FFF15630047AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astra-desktop.app/Contents/MacOS/astra-desktop";
+			};
+			name = Debug;
+		};
+		470AE80E1FFF15630047AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astra-desktop.app/Contents/MacOS/astra-desktop";
+			};
+			name = Release;
+		};
+		470AE8101FFF15630047AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "astra-desktop";
+			};
+			name = Debug;
+		};
+		470AE8111FFF15630047AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "astra-desktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.astra-desktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "astra-desktop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		470AE7DE1FFF15630047AA18 /* Build configuration list for PBXProject "astra-desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470AE8071FFF15630047AA18 /* Debug */,
+				470AE8081FFF15630047AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470AE8091FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470AE80A1FFF15630047AA18 /* Debug */,
+				470AE80B1FFF15630047AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470AE80C1FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470AE80D1FFF15630047AA18 /* Debug */,
+				470AE80E1FFF15630047AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470AE80F1FFF15630047AA18 /* Build configuration list for PBXNativeTarget "astra-desktopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470AE8101FFF15630047AA18 /* Debug */,
+				470AE8111FFF15630047AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 470AE7DB1FFF15630047AA18 /* Project object */;
+}

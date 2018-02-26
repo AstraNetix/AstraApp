@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RNA World (beta)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="http://www.rnaworld.de/rnaworld/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="http://www.rnaworld.de/rnaworld/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+            <link href="http://www.rnaworld.de/rnaworld/bootstrap.css" rel="stylesheet"><link rel=stylesheet type="text/css" href="http://www.rnaworld.de/rnaworld/rna.css">
+<script src="http://www.rnaworld.de/rnaworld/bootstrap/js/jquery-2.0.3.min.js"></script>
+            <script src="http://www.rnaworld.de/rnaworld/bootstrap/js/bootstrap.min.js"></script><link rel=alternate type="application/rss+xml" title="RNA World (beta) RSS 2.0" href="http://www.rnaworld.de/rnaworld/rss_main.php">
+<!-- <scheduler>http://www.rnaworld.de/rnaworld_cgi/cgi</scheduler> -->
+<link rel="boinc_scheduler" href="http://www.rnaworld.de/rnaworld_cgi/cgi">
+
+</head><body><div class="container-fluid">
+  	            <div class="row-fluid">
+                  <div class="span12"><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18126877-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <div class="container-fluid rna-banner">
+    <p class="text-left span3">
+       <a href=http://www.rnaworld.de/rnaworld/>
+       <img src="http://www.rnaworld.de/rnaworld/img/rna4.png" class="rna-logo" alt="RNA World (beta)"><span class="rna-heading">RNA World (beta)</span>
+       </a><br/>
+       <!--<small><a href="http://www.rnaworld.de/rnaworld/donations.php">Please visit our donation page to help the project cover running costs.</a></small>-->
+    </p>
+    <div class="alert alert-block span6">
+        <h4><a href="http://www.rnaworld.de/rnaworld/donations.php">RNA World (beta) needs donations</a></h4>The RNA World (beta) project needs donations to cover the BOINC project server (bandwidth and traffic) costs.
+        <strong>Please support us and <a href="http://www.rnaworld.de/rnaworld/donations.php">donate</a>!</strong>
+    </div>
+    <p class="text-right span3">
+        <a href="https://www.rechenkraft.net"><img src="http://www.rnaworld.de/rnaworld/img/RKN-Logo_qoU_250px.png" class="rna-logo" alt="Rechenkraft.net e.V."></a>
+    </p></div><div class="navbar">
+			<div class="navbar-inner">
+              <div class="container">
+			    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+			    <a class="brand" href="index.php">RNA World (beta)</a><div class="nav-collapse collapse"><ul class="nav"><li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Participants<b class="caret"></b></a>
+			  <ul class="dropdown-menu"><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/home.php" title="view stats, modify preferences">Your account</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/server_status.php">Server status</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/team.php" title="create or join a team">Teams</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/top_monsters.php">Monster Hunter</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/cert1.php" target="_blank">Certificate</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/apps.php">Applications</a></li></ul></li><li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Community<b class="caret"></b></a>
+			  <ul class="dropdown-menu"><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/profile_menu.php">Profiles</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/user_search.php">User search</a></li><li><a tabindex="-1" href="https://www.rechenkraft.net/forum/viewforum.php?f=74" target="_blank">Message boards</a></li><li class="dropdown-submenu"><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/stats.php">Statistics</a>
+			      <ul class="dropdown-menu"><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/top_users.php">Top participants</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/top_hosts.php">Top computers</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/top_teams.php">Top teams</a></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/top_monsters.php">Monster Hunter</a></li></ul></li><li><a tabindex="-1" href="http://www.rnaworld.de/rnaworld/language_select.php">Languages</a></li></ul></li><li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Rechenkraft.net<b class="caret"></b></a>
+			  <ul class="dropdown-menu"><li><a tabindex="-1" href="https://www.rechenkraft.net/wiki/index.php?title=Willkommen_beim_Verein_Rechenkraft.net_e.V." target="_blank">Information</a></li><li><a tabindex="-1" href="https://www.rechenkraft.net/wiki/index.php?title=Rechenkraft:Chat" target="_blank">Chat</a></li></ul></li></ul><form class="navbar-form pull-right" method="post" action="http://www.rnaworld.de/rnaworld/login_action.php">
+                  <input type="hidden" name="next_url" value="http://www.rnaworld.de/rnaworld/home.php">
+                  <input class="input-small" type="text" name="email_addr" placeholder="email">
+                  <input class="input-small" type="password" name="passwd" placeholder="password">
+                  <button class="btn btn-primary" type="submit">log in</button>
+                </form></div></div>
+</div>
+</div><div class="container-fluid">
+            <div class="row-fluid">
+              <div class="span12"><div class="hero-unit text-center">
+            <h3>About RNA World (beta)</h3>
+            <p>RNA World (beta) is a distributed supercomputer that uses Internet-connected computers to advance RNA-related research.
+        You can participate by downloading and running a free program
+        on your computer.  </p>  </div></div></div>
+          <div class="row-fluid">
+              <div class="span6">
+                <!--left column content-->
+        <div class="alert alert-info">
+        <h4>Important information for users with VirtualBox installed</h4>
+        <p>If you have VirtualBox installed on your computer and participate in this project please note:
+        <ul>
+          <li>in order to get tasks your CPU needs to have virtualisation capabilities (AMD-v or VT-x)</li>
+          <li>those virtualisation capabilities need to be <strong>enabled</strong> in your BIOS settings or all tasks will error out</li>
+          <li>Some tasks are <strong>incompatible with newer VirtualBox versions</strong>:<br />
+              If you have 1.15 or earlier tasks, you must use VirtualBox 4.3.x or earlier.<br />
+              If you have 1.17 tasks, you must use VirtualBox 5.0.x or earlier.<br />
+              If you have 1.18 tasks, you may use VirtualBox 5.1.x.<br />
+              If you have 1.19 tasks, you may use VirtualBox 5.2.x.</li>
+          <li>a BOINC client of at least 7.2.33 is recommended</li>
+          <li>The runtime of the cmsearch VM apps are very long <strong>(>1000 hours)</strong> and deadlines are automatically extended but only visible on the website!</li>
+        </ul>
+        If you <strong>don't want to get work</strong> for the VM application please disable "cmsearch VM" in your <a 
+href="http://www.rnaworld.de/rnaworld/prefs.php?subset=project">project preferences</a>.
+        </p></div>
+        <p>RNA World (beta) is based at the <a href="https://www.rechenkraft.net/wiki/index.php?title=Rechenkraft:English_visitors">Rechenkraft.net e.V.</a> research facility located in Germany.<ul>
+          <li> <a href="https://www.rechenkraft.net/wiki/index.php?title=RNA_World/Projectdescription/en">Project description</a>
+          <li> <a href="https://www.rechenkraft.net/wiki/index.php?title=RNA_World/Project_location_%26_personnel/en">Project location &amp; personnel</a>
+          <li> <a href="https://www.rechenkraft.net/wiki/index.php?title=RNA_World/Cooperation_partners/en">Cooperation partners</a>
+          <li> <a href="https://www.rechenkraft.net/wiki/index.php?title=RNA_World/Sponsors/en">Sponsors</a>
+          <li> <a href="https://www.rechenkraft.net/wiki/index.php?title=RNA_World/FAQ/en">FAQ</a>
+          <li> <a href="http://www.rechenkraft.net/wiki/index.php?title=RNA_World/Project_results,_presentations_and_publications/en">Project results, presentations and publications</a>
+        </ul>
+        <h3>Join RNA World (beta)</h3>
+        <ul>
+        <li><a href="info.php">Read our rules and policies</a>
+        <li> This project uses BOINC.
+            If you're already running BOINC, select Attach to Project.
+            If not, <a target="_new" href="http://boinc.berkeley.edu/download.php">download BOINC</a>.
+        <li> When prompted, enter <br><b>http://www.rnaworld.de/rnaworld/</b>.
+        <li> If you're running a command-line or pre-5.0 version of BOINC, <a href="create_account_form.php">create an account</a> first.
+        <li> If you have any problems, <a target="_new" href="http://boinc.berkeley.edu/help.php">get help here</a>.</ul></p>
+            </div>
+              <div class="span6">
+                <!--right column content-->
+                <div class="media uotd">
+            <a class="pull-left" href="#">
+            <img class="media-object" src="http://www.rnaworld.de/rnaworld/user_profile/images/1951_sm.jpg">
+            </a>
+            <div class="media-body">
+            <h4 class="media-heading">User of the day</h4> <a href="http://www.rnaworld.de/rnaworld/view_profile.php?userid=1951"><img title="View the profile of [AF>France>Est>Alsace] gregoryd01" src="http://www.rnaworld.de/rnaworld/img/head_20.png" alt="Profile"></a> <a href="http://www.rnaworld.de/rnaworld/show_user.php?userid=1951">[AF>France>Est>Alsace] gregoryd01</a><br>Bonjour !
+
+BOINC, c'est une façon pour moi de contribuer à la recherche scientifique.
+
+L'alliance francophone | Forum</div></div>
+
+        <div class=news>
+        <h3 class=headline>News</h3>
+        <ul class="media-list news">
+    <li class="media">  <div class="media-body"><h4 class="media-heading">Short server outage</h4>Yesterday afternoon, we experienced a server outage over a period of a few hours. Everything should be back to normal now. The cause is actually unknown, probably some issues with the electricity circuits.<br />
+<br />
+Gestern war der RNA World Server aus unbekannten Gründen ein paar Stunden nicht erreichbar. Wir vermuten ein Problem mit der Spannungsversorgung, da ein HPC und etliche andere Maschinen ebenfalls ausgefallen sind. Seit gestern ca. 17:30 Uhr Lokalzeit sollte aber wieder alles regulär laufen.<br />
+<br />
+Michael.<br/><p class="muted">29 Sep 2017, 10:44:54 UTC
+                &middot; <a href=http://www.rnaworld.de/rnaworld/forum_thread.php?id=138> Comment</a>
+            </p></div></li><li class="media">  <div class="media-body"><h4 class="media-heading">Meet the RNA World team in Wieda, Germany, 2.-5. June</h4>Vom 2.-5. Juni findet in Wieda im Harz das 8. teamübergreifende BOINC-Treffen statt. Es werden Mitglieder verschiedener Teams und Projekte dabei sein und wir werden gemeinsame Ausflüge unternehmen, grillen und einfach mal Leute in der Realität treffen, die man sonst nur Online kennt.<br />
+<br />
+Es sind noch einige Plätze frei. Näheres zur Teilnahme und das Antragsformular finden sich bei uns im <a href="https://www.rechenkraft.net/forum/viewtopic.php?f=8&t=16570" rel="nofollow">Forum</a>.<br />
+<br />
+Vom RNA World Team werden Yoyo und Michael vor Ort sein.<br />
+<br />
+MIchael.<br />
+<br />
+P.S.: This information is in German only, because we do not assume people from english-speaking countries to join. If this assumption is wrong, do not hesitate to contact us for furher details.<br/><p class="muted">25 May 2017, 7:05:14 UTC
+                &middot; <a href=http://www.rnaworld.de/rnaworld/forum_thread.php?id=137> Comment</a>
+            </p></div></li><li class="media">  <div class="media-body"><h4 class="media-heading">Manual inspection of the monster WUs: Credits coming up</h4>I am very happy to anounce that, thanks one of our particularly enthusiastic volunteer crunchers (Jacob Klein), we were finally able to make major progress regarding the yet non-validated very long work units (termed Monster WUs).<br />
+Some of you may remember that the transition from regular to virtual machine-based computation of these tasks resulted in the problem that we had to carry out the validation process manually.<br />
+This issue now appears to be resolved and Christian is going to make a few magic tweaks on the server side such that the corresponding credits will be granted - presumably some time this upcoming weekend.<br />
+Again, my thanks to Jacob for helping us to finally get this going.<br />
+<br />
+<br />
+Ich freue mich darüber, euch mitteilen zu können, dass wir Dank eines unserer besonders engagierten Unterstützer (Jacob Klein) große Fortschritte bei der Validierung der besonders aufwändigen Monster WUs machen konnten.<br />
+Einige von euch werden sich sicher noch daran erinnern, dass wir beim Übergang zur Berechnung der sehr langen Aufgaben unter Virtualbox das Problem hatten, dass klassich berechnete WUs manuell gegen VM-basierte WUs zu validieren waren.<br />
+Dieses Problem scheinen wir nun in den Griff bekommen zu haben und Christian wird - voraussichtlich noch kommendes Wochenende - einige magische Griffe auf unserem Server anwenden, damt die entsprechend ausstehenden Credits endlich vergeben werden können.<br />
+Ich möchte mich an dieser Stelle noch einmal bei Jacob für seine wertvolle Hilfe bedanken.<br />
+<br />
+:)<br />
+Michael.<br/><p class="muted">27 Apr 2017, 13:59:31 UTC
+                &middot; <a href=http://www.rnaworld.de/rnaworld/forum_thread.php?id=136> Comment</a>
+            </p></div></li><li class="media">  <div class="media-body"><h4 class="media-heading">Server hard disk replacement</h4>Our server indicates issues with one of the hard disks in our raid system, so we had ordered two replacement drives which will presumably be tested and used to cure the problem, today.<br />
+It is therefore possible that the RNA World server might be offline for a short while.<br />
+Anyway, different from other DC projects our discussion forums always remain available for communication with the project team independently of the core server status.<br />
+<br />
+Unser Server scheint ein paar Probleme mit einer der Platten des RAID-Verbunds zu haben, also haben wir umgehend zwei neue bestellt, die wir voraussichtlich heute noch einbauen, testen und zur Lösung des Problems nutzen werden.<br />
+Es ist daher möglich, dass der Server zwischenzeitlich mal nicht erreichbar ist.<br />
+Für den Fall der Fälle ist unser Diskussionforum - anders als bei anderen DC-Projekten - auch unabhängig vom Projektserverstatus kontinuierlich für Kommunikationszwecke mit uns verfügbar.<br />
+<br />
+Michael.<br/><p class="muted">20 Jan 2017, 13:13:40 UTC
+                &middot; <a href=http://www.rnaworld.de/rnaworld/forum_thread.php?id=135> Comment</a>
+            </p></div></li><li class="media">  <div class="media-body"><h4 class="media-heading">Happy New Year</h4>The RNA World team wishes all of our participants a happy new year! ;-)<br />
+<br />
+Ein frohes neues Jahr an all unsere Unterstützer! ;-)<br />
+<br />
+Michael.<br/><p class="muted">1 Jan 2017, 15:14:45 UTC
+                &middot; <a href=http://www.rnaworld.de/rnaworld/forum_thread.php?id=134> Comment</a>
+            </p></div></li><li class="media">
+                 <div class="media-body"><a href=http://www.rnaworld.de/rnaworld/old_news.php>... more</a><br/><br/><small>News is available as an <a href=rss_main.php>RSS feed &nbsp; <img src="img/rss_icon.gif" alt="RSS"></a></small></div></li></ul>
+        </div>
+        </div>
+            </div>
+          </div><div class="navbar navbar-bottom">
+            <div class="navbar-inner">
+            <a class="brand boinc-logo" href="http://boinc.berkeley.edu/"><img align="middle" border="0" src="img/pb_boinc.gif" alt="Powered by BOINC"></a><ul class="nav pull-right">
+                    <li><a href="index.php">&copy;2018 Rechenkraft.net e.V.</a></li>
+                  </ul>
+            </div>
+            </div></div></div></div></body>
+        </html>
+    

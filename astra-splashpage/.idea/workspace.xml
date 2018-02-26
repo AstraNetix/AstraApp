@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58ebe84f-850f-41ae-880b-ef099035ea3d" name="Default" comment="" />
+    <ignored path="app.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="app" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index-demo2-triangle-down1_bg.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index-demo2-triangle-down1_bg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2414">
+              <caret line="104" column="67" lean-forward="true" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+              <folding>
+                <element signature="n#div#0;n#article#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post-sidebar-left.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-post-sidebar-left.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="295" column="77" lean-forward="false" selection-start-line="295" selection-start-column="77" selection-end-line="295" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post-sidebar-right.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-post-sidebar-right.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="290" column="52" lean-forward="false" selection-start-line="290" selection-start-column="52" selection-end-line="290" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post-sidebar-right-rtl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-post-sidebar-right-rtl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="292" column="54" lean-forward="true" selection-start-line="292" selection-start-column="54" selection-end-line="292" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post-sidebar-left-rtl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-post-sidebar-left-rtl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="292" column="52" lean-forward="false" selection-start-line="292" selection-start-column="52" selection-end-line="292" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-post-rtl.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/single-post-rtl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="148" column="41" lean-forward="false" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package_json" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\&lt;\!\-\- Modal \-\-\&gt;\n\&lt;div class\=\&quot;modal fade apps\-video\&quot; id\=\&quot;myModal\&quot; tabindex\=\&quot;\-1\&quot; role\=\&quot;dialog\&quot;\&gt;\n    \&lt;button type\=\&quot;button\&quot; class\=\&quot;close close\-video\-btn\&quot; data\-dismiss\=\&quot;modal\&quot; aria\-label\=\&quot;Close\&quot;\&gt;\n        \&lt;i class\=\&quot;fa fa\-times\&quot;\&gt;\&lt;\/i\&gt;\n    \&lt;\/button\&gt;\n    \&lt;div class\=\&quot;modal\-dialog\&quot; role\=\&quot;document\&quot;\&gt;\n        \&lt;div class\=\&quot;modal\-content\&quot;\&gt;\n            \&lt;div class\=\&quot;modal\-body\&quot;\&gt;\n                \&lt;div class\=\&quot;embed\-responsive embed\-responsive\-16by9\&quot;\&gt;\n                    \&lt;iframe id\=\&quot;popup\-youtube\-player\&quot; class\=\&quot;embed\-responsive\-item\&quot; src\=\&quot;http\:\/\/www\.youtube\.com\/embed\/iNJdPyoqt8U\?enablejsapi\=1\&amp;rel\=0\&amp;showinfo\=0\&quot;\&gt;\&lt;\/iframe\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/div\&gt;\n\&lt;\/div\&gt;</find>
+      <find>\&lt;script src\=\&quot;js\/jquery\.countTo\.min\.js\&quot;\&gt;\&lt;\/script\&gt;</find>
+      <find>&lt;img alt=&quot;&quot; src=&quot;images/icon-14.png&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;</find>
+      <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.css&quot;&gt;</find>
+      <find>video</find>
+      <find>!important</find>
+      <find>gradient-bg&quot;</find>
+      <find>!im</find>
+      <find>\.gradient\-bg\,\n\.appsLand\-btn\.appsLand\-btn\-gradient\:before\,\n\.mini\-feature \.mini\-feature\-box \.icon\-box\:before\,\n\.pricing \.pricing\-tables \.pricing\-recommended \.pricing\-price\,\n\.blog \.normal\-post \.entry\-content \.entry\-post\-info \.posted\-on\,\n\.blog \.list\-post \.entry\-content \.entry\-post\-info \.posted\-on\,\n\.loading\,\n\.hover\-gradient\:before</find>
+      <find>gradient-bg</find>
+      <find>\&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;</find>
+      <find>\&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;</find>
+      <find>\&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;</find>
+      <find>\&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;</find>
+      <find>\&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;</find>
+      <find>\&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Clean Code\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Color Changer\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Creative Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Responsive Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Fast Update\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Clean Code\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Color Changer\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Creative Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Responsive Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Fast Update\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تواصل اجتماعي\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تواصل اجتماعي\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;كود مرتب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;الوان عصريه\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;قالب متجاوب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;متطور دائما\ً\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+      <find>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;كود مرتب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;الوان عصريه\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;قالب متجاوب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;متطور دائما\ً\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>\&lt;script src\=\&quot;js\/jquery\.countTo\.min\.js\&quot;\&gt;\&lt;\/script\&gt;\n\&lt;script src\=\&quot;js\/lity\.min\.js\&quot;\&gt;\&lt;\/script\&gt;</replace>
+      <replace>\&lt;script src\=\&quot;js\/jquery\.countTo\.min\.js\&quot;\&gt;\&lt;\/script\&gt;\n\&lt;script src\=\&quot;j\&lt;a href\=\&quot;http\:\/\/m\.youtube\.com\/watch\?v\=XSGBVzeBUbk\&quot; data\-lity\=\&quot;\&quot;\&gt;\n                        \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/icon\-14\.png\&quot;\&gt;\n                    \&lt;\/a\&gt;s\/lity\.min\.js\&quot;\&gt;\&lt;\/script\&gt;</replace>
+      <replace>\&lt;a href\=\&quot;http\:\/\/m\.youtube\.com\/watch\?v\=XSGBVzeBUbk\&quot; data\-lity\=\&quot;\&quot;\&gt;\n                        \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/icon\-14\.png\&quot;\&gt;\n                    \&lt;\/a\&gt;</replace>
+      <replace>\&lt;link rel\=\&quot;stylesheet\&quot; href\=\&quot;css\/animate\.css\&quot;\&gt;\n    \&lt;link rel\=\&quot;stylesheet\&quot; href\=\&quot;css\/lity\.min\.css\&quot;\&gt;</replace>
+      <replace>\.gradient\-bg\,\n\.appsLand\-btn\.appsLand\-btn\-gradient\:before\,\n\.mini\-feature \.mini\-feature\-box \.icon\-box\:before\,\n\.pricing \.pricing\-tables \.pricing\-recommended \.pricing\-price\,\n\.faq \.questions\-container \.panel\-heading a\.gradient\-bg\,\n\.normal\-post \.entry\-content \.entry\-post\-info \.posted\-on\,\n\.list\-post \.entry\-content \.entry\-post\-info \.posted\-on\,\n\.loading</replace>
+      <replace>\&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n \&lt;div class\=\&quot;container\&quot;\&gt;\n \&lt;div class\=\&quot;row\&quot;\&gt;\n \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n \&lt;\/div\&gt;\n \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n \&lt;p\&gt;\n Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n itaque\,\n \&lt;\/p\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;\/div\&gt;\n \&lt;\/section\&gt;\n</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box active\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Modern Design\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;Social Media\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                            itaque\,\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Clean Code\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Color Changer\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Creative Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Responsive Design\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Fast Update\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;Quick Start\&lt;\/h3\&gt;\n                            \&lt;p\&gt;\n                                Lorem ipsum dolor sit amet\, consectetur adipisicing elit\. Alias assumenda hic inventore\n                                itaque\,\n                            \&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-rocket\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp active\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-ra\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;i class\=\&quot;fa fa\-twitter\&quot;\&gt;\&lt;\/i\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;h3\&gt;تواصل اجتماعي\&lt;\/h3\&gt;\n                        \&lt;p\&gt;\n                            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\n                        \&lt;\/p\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;كود مرتب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;الوان عصريه\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;قالب متجاوب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;متطور دائما\ً\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6 wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</replace>
+      <replace>\&lt;\!\-\- Mini Feature Section\n    \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\-\-\&gt;\n    \&lt;section class\=\&quot;mini\-feature__style\-2 section\-without\-title\&quot;\&gt;\n        \&lt;div class\=\&quot;container\&quot;\&gt;\n            \&lt;div class\=\&quot;row\&quot;\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/01\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;كود مرتب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/02\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;الوان عصريه\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/03\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;تصميم عصري\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/04\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;قالب متجاوب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.25s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/05\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;متطور دائما\ً\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;col\-md\-4 col\-sm\-6\&quot;\&gt;\n                    \&lt;div class\=\&quot;mini\-feature\-box wow fadeInUp\&quot; data\-wow\-duration\=\&quot;1s\&quot; data\-wow\-delay\=\&quot;0\.5s\&quot;\&gt;\n                        \&lt;div class\=\&quot;icon\-box\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                            \&lt;img alt\=\&quot;\&quot; src\=\&quot;images\/flat\-icons\/06\.png\&quot;\&gt;\n                        \&lt;\/div\&gt;\n                        \&lt;div class\=\&quot;data\-box\&quot;\&gt;\n                            \&lt;h3\&gt;سريع التنصيب\&lt;\/h3\&gt;\n                            \&lt;p\&gt;هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ\، غير منظم\، غير منسق\.\&lt;\/p\&gt;\n                        \&lt;\/div\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/section\&gt;\n</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\my work\important work\app</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index-demo1-color_bg.html" />
+        <option value="$PROJECT_DIR$/404.html" />
+        <option value="$PROJECT_DIR$/blog-2-column-sidebar-left-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-2-column-sidebar-left.html" />
+        <option value="$PROJECT_DIR$/blog-2-column-sidebar-right-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-2-column-sidebar-right.html" />
+        <option value="$PROJECT_DIR$/blog-2-column.html" />
+        <option value="$PROJECT_DIR$/blog-3-column-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-3-column.html" />
+        <option value="$PROJECT_DIR$/blog-list-full-width-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-list-full-width.html" />
+        <option value="$PROJECT_DIR$/blog-list-sidebar-left-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-list-sidebar-left.html" />
+        <option value="$PROJECT_DIR$/blog-list-sidebar-right-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-list-sidebar-right.html" />
+        <option value="$PROJECT_DIR$/coming-soon-rtl.html" />
+        <option value="$PROJECT_DIR$/coming-soon.html" />
+        <option value="$PROJECT_DIR$/index-demo1-color_bg-custom-shape1.html" />
+        <option value="$PROJECT_DIR$/index-demo1-color_bg-traingle-down1.html" />
+        <option value="$PROJECT_DIR$/index-demo2-color_bg.html" />
+        <option value="$PROJECT_DIR$/index-demo1-color_bg-cloud.html" />
+        <option value="$PROJECT_DIR$/new/blog-list-full-width-rtl.html" />
+        <option value="$PROJECT_DIR$/new/blog-2-column-rtl.html" />
+        <option value="$PROJECT_DIR$/blog-2-column-rtl.html" />
+        <option value="$PROJECT_DIR$/index-demo1-video_bg.html" />
+        <option value="$PROJECT_DIR$/404-rtl.html" />
+        <option value="$PROJECT_DIR$/index-demo1.html" />
+        <option value="$PROJECT_DIR$/scss/general.scss" />
+        <option value="$PROJECT_DIR$/scss/style.scss" />
+        <option value="$PROJECT_DIR$/scss/responsive.scss" />
+        <option value="$PROJECT_DIR$/css/style-rtl.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_2.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_3.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_4.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_5.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_6.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_7.css" />
+        <option value="$PROJECT_DIR$/css/gradient_colors/theme_color_8.css" />
+        <option value="$PROJECT_DIR$/index-demo2-cloud_bg.html" />
+        <option value="$PROJECT_DIR$/index-demo2-color_bg-cloud.html" />
+        <option value="$PROJECT_DIR$/index-demo1-video_bg-traingle-down2.html" />
+        <option value="$PROJECT_DIR$/index-demo1-cloud_bg.html" />
+        <option value="$PROJECT_DIR$/index-demo2-rtl-custom-shape1_video_bg.html" />
+        <option value="$PROJECT_DIR$/index-demo1-rtl-triangle-up_color_bg.html" />
+        <option value="$PROJECT_DIR$/index-demo1-rtl-cloud_bg.html" />
+        <option value="$PROJECT_DIR$/single-post.html" />
+        <option value="$PROJECT_DIR$/single-post-sidebar-left.html" />
+        <option value="$PROJECT_DIR$/single-post-sidebar-right.html" />
+        <option value="$PROJECT_DIR$/single-post-sidebar-right-rtl.html" />
+        <option value="$PROJECT_DIR$/single-post-sidebar-left-rtl.html" />
+        <option value="$PROJECT_DIR$/single-post-rtl.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1484" />
+    <option name="y" value="8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gradient_colors" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my work\important work\app" />
+      <recent name="D:\my work\important work\app\new" />
+      <recent name="D:\my work\important work\app\New folder" />
+      <recent name="D:\my work\important work\app\fonts" />
+      <recent name="D:\my work\important work\app\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my work\important work\app" />
+      <recent name="D:\my work\important work\app\images" />
+      <recent name="D:\my work\important work\app\images\demos\rtl" />
+      <recent name="D:\my work\important work\app\images\mockups" />
+      <recent name="D:\my work\important work\app\images\demos" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.single-post-sidebar-left.html">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration name="index-demo1-cloud_bg.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/app/index-demo1-cloud_bg.html" />
+    <configuration name="index-demo1-rtl-triangle-up_color_bg.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/app/index-demo1-rtl-triangle-up_color_bg.html" />
+    <configuration name="index-demo1-video_bg-traingle-down2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/app/index-demo1-video_bg-traingle-down2.html" />
+    <configuration name="index-demo2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/app/new/index-demo2.html" />
+    <configuration name="single-post-sidebar-left.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/app/single-post-sidebar-left.html" />
+    <configuration name="single-post.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/app/single-post.html" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index-demo2.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-cloud_bg.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-video_bg-traingle-down2.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-rtl-triangle-up_color_bg.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.single-post.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.single-post-sidebar-left.html" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.single-post-sidebar-left.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.single-post.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-rtl-triangle-up_color_bg.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-cloud_bg.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index-demo1-video_bg-traingle-down2.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58ebe84f-850f-41ae-880b-ef099035ea3d" name="Default" comment="" />
+      <created>1506797491505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506797491505</updated>
+      <workItem from="1506797492709" duration="2656000" />
+      <workItem from="1506800159542" duration="261000" />
+      <workItem from="1506800429737" duration="530000" />
+      <workItem from="1506800978169" duration="24351000" />
+      <workItem from="1506955587679" duration="13278000" />
+      <workItem from="1507037871015" duration="30288000" />
+      <workItem from="1507122413328" duration="4748000" />
+      <workItem from="1507134764158" duration="16132000" />
+      <workItem from="1507205351497" duration="17010000" />
+      <workItem from="1507250198838" duration="842000" />
+      <workItem from="1507294136613" duration="19904000" />
+      <workItem from="1507379338294" duration="11639000" />
+      <workItem from="1507407866722" duration="10941000" />
+      <workItem from="1507474194692" duration="527000" />
+      <workItem from="1507495207966" duration="6397000" />
+      <workItem from="1507575012074" duration="11207000" />
+      <workItem from="1507632651024" duration="23079000" />
+      <workItem from="1507818175888" duration="5507000" />
+      <workItem from="1507837308684" duration="13292000" />
+      <workItem from="1507899182980" duration="36019000" />
+      <workItem from="1507978209641" duration="1434000" />
+      <workItem from="1507986909189" duration="18977000" />
+      <workItem from="1508109603127" duration="599000" />
+      <workItem from="1508166472218" duration="13688000" />
+      <workItem from="1508238244943" duration="820000" />
+      <workItem from="1508239971301" duration="5030000" />
+      <workItem from="1508267256112" duration="21000" />
+      <workItem from="1508278184800" duration="8955000" />
+      <workItem from="1508290529927" duration="3203000" />
+      <workItem from="1508330073037" duration="6000" />
+      <workItem from="1508333333619" duration="268000" />
+      <workItem from="1508361065383" duration="14925000" />
+      <workItem from="1508411817010" duration="9451000" />
+      <workItem from="1508452680383" duration="7905000" />
+      <workItem from="1508502033791" duration="29582000" />
+      <workItem from="1508590804756" duration="20778000" />
+      <workItem from="1508626926208" duration="13787000" />
+      <workItem from="1508669173017" duration="17707000" />
+      <workItem from="1508700369119" duration="20869000" />
+      <workItem from="1508778839672" duration="14267000" />
+      <workItem from="1508802752418" duration="12185000" />
+      <workItem from="1508852939666" duration="8728000" />
+      <workItem from="1508887348951" duration="14895000" />
+      <workItem from="1508934912222" duration="5491000" />
+      <workItem from="1508962110279" duration="16678000" />
+      <workItem from="1510280278974" duration="4733000" />
+      <workItem from="1510312177564" duration="8037000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="521633000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1448" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2234957" sideWeight="0.48772505" order="0" side_tool="false" content_ui="combo" x="-1294" y="147" width="263" height="743" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.75869894" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17027026" sideWeight="0.24130106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270525" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.019582245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2671131" sideWeight="0.512275" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index-demo1-color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="1063" column="58" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1210" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-color_bg-cloud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="720" column="39" lean-forward="false" selection-start-line="720" selection-start-column="39" selection-end-line="720" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="80" column="68" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column-sidebar-left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column-sidebar-right-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="70" column="48" lean-forward="false" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-3-column.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="353" column="10" lean-forward="false" selection-start-line="353" selection-start-column="10" selection-end-line="353" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-3-column-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="70" column="48" lean-forward="false" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-list-full-width.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-list-full-width-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="126" column="54" lean-forward="false" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="122" column="4" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column-sidebar-right.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column-sidebar-left-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-2-column-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6953">
+          <caret line="409" column="0" lean-forward="false" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-rtl-cloud_color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="330" column="46" lean-forward="false" selection-start-line="329" selection-start-column="20" selection-end-line="330" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-video_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-color_bg-traingle-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5032">
+          <caret line="296" column="71" lean-forward="false" selection-start-line="296" selection-start-column="71" selection-end-line="296" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-rtl-cloud_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-rtl_color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="65" lean-forward="false" selection-start-line="122" selection-start-column="65" selection-end-line="122" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="203" column="19" lean-forward="true" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
+          <folding>
+            <element signature="e#148#171#0" expanded="false" />
+            <element signature="e#174#262#0" expanded="false" />
+            <element signature="e#270#307#0" expanded="false" />
+            <element signature="e#327#358#0" expanded="false" />
+            <element signature="e#421#445#0" expanded="false" />
+            <element signature="e#460#488#0" expanded="false" />
+            <element signature="e#505#528#0" expanded="false" />
+            <element signature="e#544#1027#0" expanded="false" />
+            <element signature="e#1048#1549#0" expanded="false" />
+            <element signature="e#1563#2006#0" expanded="false" />
+            <element signature="e#2025#2495#0" expanded="false" />
+            <element signature="e#2972#2993#0" expanded="false" />
+            <element signature="e#3003#3025#0" expanded="false" />
+            <element signature="e#3036#3395#0" expanded="false" />
+            <element signature="e#3616#6341#0" expanded="false" />
+            <element signature="e#6668#8719#0" expanded="false" />
+            <element signature="e#8737#9556#0" expanded="false" />
+            <element signature="e#9679#9729#0" expanded="false" />
+            <element signature="e#9743#10069#0" expanded="false" />
+            <element signature="e#10649#14797#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="1307" column="31" lean-forward="false" selection-start-line="1307" selection-start-column="31" selection-end-line="1307" selection-end-column="31" />
+          <folding>
+            <element signature="e#1403#7576#0" expanded="false" />
+            <element signature="e#1617#1697#0" expanded="false" />
+            <element signature="e#1715#3077#0" expanded="false" />
+            <element signature="e#3096#3490#0" expanded="false" />
+            <element signature="e#3508#3602#0" expanded="false" />
+            <element signature="e#3620#4298#0" expanded="false" />
+            <element signature="e#4321#4421#0" expanded="false" />
+            <element signature="e#4437#4997#0" expanded="false" />
+            <element signature="e#5021#5873#0" expanded="false" />
+            <element signature="e#5898#6877#0" expanded="false" />
+            <element signature="e#6898#7574#0" expanded="false" />
+            <element signature="e#39711#39759#0" expanded="false" />
+            <element signature="e#39773#39805#0" expanded="false" />
+            <element signature="e#39819#40203#0" expanded="false" />
+            <element signature="e#40248#40804#0" expanded="false" />
+            <element signature="e#42398#42790#0" expanded="false" />
+            <element signature="e#42865#43999#0" expanded="false" />
+            <element signature="e#44071#45130#0" expanded="false" />
+            <element signature="e#45649#45822#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="70" column="96" lean-forward="false" selection-start-line="70" selection-start-column="96" selection-end-line="70" selection-end-column="96" />
+          <caret line="71" column="91" lean-forward="false" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+          <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
+          <caret line="73" column="88" lean-forward="false" selection-start-line="73" selection-start-column="88" selection-end-line="73" selection-end-column="88" />
+          <caret line="76" column="96" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="96" />
+          <caret line="77" column="91" lean-forward="false" selection-start-line="77" selection-start-column="91" selection-end-line="77" selection-end-column="91" />
+          <caret line="78" column="93" lean-forward="false" selection-start-line="78" selection-start-column="93" selection-end-line="78" selection-end-column="93" />
+          <caret line="79" column="88" lean-forward="false" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="88" />
+          <caret line="82" column="69" lean-forward="false" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+          <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <caret line="99" column="111" lean-forward="false" selection-start-line="99" selection-start-column="111" selection-end-line="99" selection-end-column="111" />
+          <caret line="100" column="106" lean-forward="false" selection-start-line="100" selection-start-column="106" selection-end-line="100" selection-end-column="106" />
+          <caret line="101" column="108" lean-forward="false" selection-start-line="101" selection-start-column="108" selection-end-line="101" selection-end-column="108" />
+          <caret line="102" column="103" lean-forward="false" selection-start-line="102" selection-start-column="103" selection-end-line="102" selection-end-column="103" />
+          <caret line="14" column="81" lean-forward="false" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <caret line="16" column="78" lean-forward="false" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+          <caret line="20" column="81" lean-forward="false" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+          <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+          <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <caret line="56" column="18" lean-forward="false" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <caret line="63" column="113" lean-forward="false" selection-start-line="63" selection-start-column="113" selection-end-line="63" selection-end-column="113" />
+          <caret line="64" column="108" lean-forward="false" selection-start-line="64" selection-start-column="108" selection-end-line="64" selection-end-column="108" />
+          <caret line="65" column="110" lean-forward="false" selection-start-line="65" selection-start-column="110" selection-end-line="65" selection-end-column="110" />
+          <caret line="66" column="105" lean-forward="false" selection-start-line="66" selection-start-column="105" selection-end-line="66" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_6.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="76" column="96" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="96" />
+          <caret line="77" column="91" lean-forward="false" selection-start-line="77" selection-start-column="91" selection-end-line="77" selection-end-column="91" />
+          <caret line="78" column="93" lean-forward="false" selection-start-line="78" selection-start-column="93" selection-end-line="78" selection-end-column="93" />
+          <caret line="79" column="88" lean-forward="false" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="88" />
+          <caret line="82" column="69" lean-forward="false" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+          <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <caret line="100" column="107" lean-forward="false" selection-start-line="100" selection-start-column="107" selection-end-line="100" selection-end-column="107" />
+          <caret line="101" column="102" lean-forward="false" selection-start-line="101" selection-start-column="102" selection-end-line="101" selection-end-column="102" />
+          <caret line="102" column="104" lean-forward="false" selection-start-line="102" selection-start-column="104" selection-end-line="102" selection-end-column="104" />
+          <caret line="103" column="99" lean-forward="false" selection-start-line="103" selection-start-column="99" selection-end-line="103" selection-end-column="99" />
+          <caret line="14" column="81" lean-forward="false" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <caret line="16" column="78" lean-forward="false" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+          <caret line="20" column="81" lean-forward="false" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+          <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+          <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <caret line="56" column="18" lean-forward="false" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <caret line="63" column="109" lean-forward="false" selection-start-line="63" selection-start-column="109" selection-end-line="63" selection-end-column="109" />
+          <caret line="64" column="104" lean-forward="false" selection-start-line="64" selection-start-column="104" selection-end-line="64" selection-end-column="104" />
+          <caret line="65" column="106" lean-forward="false" selection-start-line="65" selection-start-column="106" selection-end-line="65" selection-end-column="106" />
+          <caret line="66" column="101" lean-forward="false" selection-start-line="66" selection-start-column="101" selection-end-line="66" selection-end-column="101" />
+          <caret line="70" column="96" lean-forward="false" selection-start-line="70" selection-start-column="96" selection-end-line="70" selection-end-column="96" />
+          <caret line="71" column="91" lean-forward="false" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+          <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
+          <caret line="73" column="88" lean-forward="false" selection-start-line="73" selection-start-column="88" selection-end-line="73" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_7.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="76" column="97" lean-forward="false" selection-start-line="76" selection-start-column="97" selection-end-line="76" selection-end-column="97" />
+          <caret line="77" column="92" lean-forward="false" selection-start-line="77" selection-start-column="92" selection-end-line="77" selection-end-column="92" />
+          <caret line="78" column="94" lean-forward="false" selection-start-line="78" selection-start-column="94" selection-end-line="78" selection-end-column="94" />
+          <caret line="79" column="89" lean-forward="false" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="89" />
+          <caret line="82" column="69" lean-forward="false" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+          <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <caret line="99" column="113" lean-forward="false" selection-start-line="99" selection-start-column="113" selection-end-line="99" selection-end-column="113" />
+          <caret line="100" column="108" lean-forward="false" selection-start-line="100" selection-start-column="108" selection-end-line="100" selection-end-column="108" />
+          <caret line="101" column="110" lean-forward="false" selection-start-line="101" selection-start-column="110" selection-end-line="101" selection-end-column="110" />
+          <caret line="102" column="105" lean-forward="false" selection-start-line="102" selection-start-column="105" selection-end-line="102" selection-end-column="105" />
+          <caret line="14" column="81" lean-forward="false" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <caret line="16" column="78" lean-forward="false" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+          <caret line="20" column="81" lean-forward="false" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+          <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+          <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <caret line="56" column="18" lean-forward="false" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <caret line="63" column="115" lean-forward="false" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
+          <caret line="64" column="110" lean-forward="false" selection-start-line="64" selection-start-column="110" selection-end-line="64" selection-end-column="110" />
+          <caret line="65" column="112" lean-forward="false" selection-start-line="65" selection-start-column="112" selection-end-line="65" selection-end-column="112" />
+          <caret line="66" column="107" lean-forward="false" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="107" />
+          <caret line="70" column="97" lean-forward="false" selection-start-line="70" selection-start-column="97" selection-end-line="70" selection-end-column="97" />
+          <caret line="71" column="92" lean-forward="false" selection-start-line="71" selection-start-column="92" selection-end-line="71" selection-end-column="92" />
+          <caret line="72" column="94" lean-forward="false" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
+          <caret line="73" column="89" lean-forward="false" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gradient_colors/theme_color_8.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="175" column="12" lean-forward="true" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-cloud_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-color_bg-cloud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="181" column="16" lean-forward="true" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-video_bg-traingle-down2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="241" column="20" lean-forward="true" selection-start-line="241" selection-start-column="20" selection-end-line="241" selection-end-column="20" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-video_bg-traingle-down1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1510317024768" expanded="true" signature="11732:12357" ph="..." />
+            <marker date="1510317024768" expanded="true" signature="11733:12334" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-rtl-custom-shape1_color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-rtl-custom-shape1_video_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="139" column="4" lean-forward="false" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-cloud_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="144" column="30" lean-forward="true" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-rtl-triangle-up_color_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="137" column="47" lean-forward="true" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-rtl-triangle-up_video_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="139" column="4" lean-forward="true" selection-start-line="139" selection-start-column="4" selection-end-line="219" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1510317691666" expanded="true" signature="11391:11923" ph="..." />
+            <marker date="1510317691666" expanded="true" signature="11392:11900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo1-rtl-cloud_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="148" column="45" lean-forward="true" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-demo2-triangle-down1_bg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2414">
+          <caret line="104" column="67" lean-forward="true" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#article#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post-sidebar-left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="295" column="77" lean-forward="false" selection-start-line="295" selection-start-column="77" selection-end-line="295" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post-sidebar-right.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="290" column="52" lean-forward="false" selection-start-line="290" selection-start-column="52" selection-end-line="290" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post-sidebar-right-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="292" column="54" lean-forward="true" selection-start-line="292" selection-start-column="54" selection-end-line="292" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post-sidebar-left-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="292" column="52" lean-forward="false" selection-start-line="292" selection-start-column="52" selection-end-line="292" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-post-rtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="148" column="41" lean-forward="false" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

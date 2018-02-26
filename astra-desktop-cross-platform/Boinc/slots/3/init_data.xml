@@ -1,0 +1,188 @@
+<app_init_data>
+<major_version>7</major_version>
+<minor_version>9</minor_version>
+<release>0</release>
+<app_version>803</app_version>
+<userid>10673740</userid>
+<teamid>0</teamid>
+<hostid>8467171</hostid>
+<app_name>setiathome_v8</app_name>
+<user_name>SohamKale</user_name>
+<project_dir>/Users/sohamkale/Documents/Astra/astra-desktop/Boinc/projects/setiathome.berkeley.edu</project_dir>
+<boinc_dir>/Users/sohamkale/Documents/Astra/astra-desktop/Boinc</boinc_dir>
+<authenticator>552e80e81e75579075cec0e9e3655660</authenticator>
+<wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</wu_name>
+<result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</result_name>
+<shm_key>-1</shm_key>
+<slot>3</slot>
+<client_pid>5117</client_pid>
+<wu_cpu_time>2793.805000</wu_cpu_time>
+<starting_elapsed_time>3694.755742</starting_elapsed_time>
+<using_sandbox>0</using_sandbox>
+<vm_extensions_disabled>0</vm_extensions_disabled>
+<user_total_credit>0.000000</user_total_credit>
+<user_expavg_credit>0.000000</user_expavg_credit>
+<host_total_credit>0.000000</host_total_credit>
+<host_expavg_credit>0.000000</host_expavg_credit>
+<resource_share_fraction>1.000000</resource_share_fraction>
+<checkpoint_period>60.000000</checkpoint_period>
+<fraction_done_start>0.000000</fraction_done_start>
+<fraction_done_end>1.000000</fraction_done_end>
+<gpu_type></gpu_type>
+<gpu_device_num>-1</gpu_device_num>
+<gpu_opencl_dev_index>-1</gpu_opencl_dev_index>
+<gpu_usage>0.000000</gpu_usage>
+<ncpus>1.000000</ncpus>
+<rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+<rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+<rsc_memory_bound>33554432.000000</rsc_memory_bound>
+<rsc_disk_bound>33554432.000000</rsc_disk_bound>
+<computation_deadline>1523792544.000000</computation_deadline>
+<vbox_window>0</vbox_window>
+<host_info>
+    <timezone>-28800</timezone>
+    <domain_name>Sohams-MacBook-Pro.local</domain_name>
+    <ip_addr>10.0.0.58</ip_addr>
+    <host_cpid>2993a3aa9ab71e204d9406817095749d</host_cpid>
+    <p_ncpus>4</p_ncpus>
+    <p_vendor>GenuineIntel</p_vendor>
+    <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
+    <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
+    <p_fpops>4028302670.332528</p_fpops>
+    <p_iops>11755674783.967611</p_iops>
+    <p_membw>1000000000.000000</p_membw>
+    <p_calculated>1519203679.804676</p_calculated>
+    <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
+    <m_nbytes>8589934592.000000</m_nbytes>
+    <m_cache>1000000.000000</m_cache>
+    <m_swap>16622612480.000000</m_swap>
+    <d_total>250035572736.000000</d_total>
+    <d_free>9497759744.000000</d_free>
+    <os_name>Darwin</os_name>
+    <os_version>17.0.0</os_version>
+    <n_usable_coprocs>1</n_usable_coprocs>
+    <product_name>MacBookPro13,1</product_name>
+    <virtualbox_version>5.2.6r120293</virtualbox_version>
+    <coprocs>
+<coproc_intel_gpu>
+   <count>1</count>
+   <name>Intel(R) Iris(TM) Graphics 540</name>
+   <available_ram>1610612736.000000</available_ram>
+   <have_opencl>1</have_opencl>
+   <peak_flops>384000000000.000000</peak_flops>
+   <version></version>
+   <coproc_opencl>
+      <name>Intel(R) Iris(TM) Graphics 540</name>
+      <vendor>Intel Inc.</vendor>
+      <vendor_id>16925952</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>0</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>1</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_image2d_from_buffer cl_khr_gl_depth_images cl_khr_depth_images cl_khr_3d_image_writes</extensions>
+      <global_mem_size>1610612736</global_mem_size>
+      <local_mem_size>65536</local_mem_size>
+      <max_clock_frequency>1000</max_clock_frequency>
+      <max_compute_units>48</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2</opencl_device_version>
+      <opencl_driver_version>1.2(Aug 24 2017 22:22:18)</opencl_driver_version>
+   </coproc_opencl>
+</coproc_intel_gpu>
+    </coprocs>
+<opencl_cpu_prop>
+   <platform_vendor>Apple</platform_vendor>
+   <opencl_cpu_info>
+      <name>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz</name>
+      <vendor>Intel</vendor>
+      <vendor_id>4294967295</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>63</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>3</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_APPLE_fp64_basic_ops cl_APPLE_fixed_alpha_channel_orders cl_APPLE_biased_fixed_point_image_formats cl_APPLE_command_queue_priority</extensions>
+      <global_mem_size>8589934592</global_mem_size>
+      <local_mem_size>32768</local_mem_size>
+      <max_clock_frequency>2000</max_clock_frequency>
+      <max_compute_units>4</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2</opencl_device_version>
+      <opencl_driver_version>1.1</opencl_driver_version>
+   </opencl_cpu_info>
+</opencl_cpu_prop>
+</host_info>
+<proxy_info>
+    <socks_server_name></socks_server_name>
+    <socks_server_port>80</socks_server_port>
+    <http_server_name></http_server_name>
+    <http_server_port>80</http_server_port>
+    <socks5_user_name></socks5_user_name>
+    <socks5_user_passwd></socks5_user_passwd>
+    <socks5_remote_dns>0</socks5_remote_dns>
+    <http_user_name></http_user_name>
+    <http_user_passwd></http_user_passwd>
+    <no_proxy></no_proxy>
+    <no_autodetect>0</no_autodetect>
+</proxy_info>
+<global_preferences>
+   <source_project></source_project>
+   <mod_time>0.000000</mod_time>
+   <battery_charge_min_pct>90.000000</battery_charge_min_pct>
+   <battery_max_temperature>40.000000</battery_max_temperature>
+   <run_on_batteries>0</run_on_batteries>
+   <run_if_user_active>1</run_if_user_active>
+   <run_gpu_if_user_active>0</run_gpu_if_user_active>
+   <suspend_if_no_recent_input>0.000000</suspend_if_no_recent_input>
+   <suspend_cpu_usage>25.000000</suspend_cpu_usage>
+   <start_hour>0.000000</start_hour>
+   <end_hour>0.000000</end_hour>
+   <net_start_hour>0.000000</net_start_hour>
+   <net_end_hour>0.000000</net_end_hour>
+   <leave_apps_in_memory>0</leave_apps_in_memory>
+   <confirm_before_connecting>1</confirm_before_connecting>
+   <hangup_if_dialed>0</hangup_if_dialed>
+   <dont_verify_images>0</dont_verify_images>
+   <work_buf_min_days>0.100000</work_buf_min_days>
+   <work_buf_additional_days>0.500000</work_buf_additional_days>
+   <max_ncpus_pct>0.000000</max_ncpus_pct>
+   <cpu_scheduling_period_minutes>60.000000</cpu_scheduling_period_minutes>
+   <disk_interval>60.000000</disk_interval>
+   <disk_max_used_gb>0.000000</disk_max_used_gb>
+   <disk_max_used_pct>90.000000</disk_max_used_pct>
+   <disk_min_free_gb>0.100000</disk_min_free_gb>
+   <vm_max_used_pct>75.000000</vm_max_used_pct>
+   <ram_max_used_busy_pct>50.000000</ram_max_used_busy_pct>
+   <ram_max_used_idle_pct>90.000000</ram_max_used_idle_pct>
+   <idle_time_to_run>3.000000</idle_time_to_run>
+   <max_bytes_sec_up>0.000000</max_bytes_sec_up>
+   <max_bytes_sec_down>0.000000</max_bytes_sec_down>
+   <cpu_usage_limit>100.000000</cpu_usage_limit>
+   <daily_xfer_limit_mb>0.000000</daily_xfer_limit_mb>
+   <daily_xfer_period_days>0</daily_xfer_period_days>
+   <override_file_present>0</override_file_present>
+   <network_wifi_only>0</network_wifi_only>
+</global_preferences>
+<app_file>setiathome_8.03_x86_64-apple-darwin</app_file>
+<app_file>setigraphics_8.03_x86_64-apple-darwin</app_file>
+<app_file>bl_bkg_803.jpg</app_file>
+<app_file>bl_803.jpg</app_file>
+<app_file>setiathome-8.03_AUTHORS.txt</app_file>
+<app_file>setiathome-8.03_COPYING.txt</app_file>
+<app_file>setiathome-8.03_COPYRIGHT.txt</app_file>
+<app_file>setiathome-8.03_README.txt</app_file>
+<app_file>seti_803.jpg</app_file>
+</app_init_data>

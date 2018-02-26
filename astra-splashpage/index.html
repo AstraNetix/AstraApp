@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>:: Home ::</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="app.ico" rel="icon">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lity.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/gradient_colors/theme_color_1.css" id="color-option" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/libs.min.js">
+    </script>
+    <script src="js/particle-theme-1.min.js">
+    </script>
+</head>
+<body class="scrollspy-example" data-offset="5" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default navbar-fixed-top appsLand-navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <span class="menu-toggle"><i class="chart"></i> <i class="chart"></i> <i class="chart"></i></span> <a class="navbar-brand" href="#"><img alt="" src="images/logo.png">
+                <h2>ASTRA<br>
+                <span>The Social Supercomputer</span></h2></a>
+            </div><!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="app-links" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right appsLand-links">
+                    <li class="visible-xs-block text-center mobile-size-logo">
+                        <a href="#"><img alt="" src="images/logo.png">
+                        <h2>ASTRA<br>
+                        <span>The Social Supercomputer</span></h2></a>
+                    </li>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="token.html">Token</a>
+                    </li>
+                    <li>
+                        <a href="assests/Astra-Introduction.pdf">Presentation</a>
+                        
+                    </li>
+                    <li>
+                        <a href="http://demo-octalogo.com/Astra/v12/assests/Astra-Whitepaper.pdf"  target="_blank">Whitepaper</a>
+                    </li>
+                   <!-- <li> <a href="#download">One-Pager</a> </li> -->
+                    <li>
+                        <a href="http://demo-octalogo.com/Astra/v12/assests/Astra-FAQ.pdf" target="_blank">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#media">Media</a>
+                    </li>
+                    <li>
+                        <a href="roadmap.html">Roadmap</a>
+                    </li>
+                    <li class="roundedcrck">
+                        <a href="https://t.me/Astra_Network"><i aria-hidden="true" class="fa fa-location-arrow"></i> Join Telegram</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <section class="popup-form modal fade" id="pop" role="dialog">
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+        <div class="formcontainer">
+            <div class="tophead">
+                <h2>Join the Whitelist</h2>
+                <h3>Whitelist Registration Form</h3>
+            </div>
+            <div class="inform" id="popupform">
+                <form action="http://www.GoAstra.Network/api/users/basic/create_user" class="clearfix" id="" method="post" name="">
+                    <div class="field">
+                        <i aria-hidden="true" class="fa fa-user"></i> <input aria-required="true" class="required alphanumeric iecn cn1" maxlength="60" name="name" type="text" value="" placeholder="Full Name">
+                    </div>
+                    <div class="field">
+                        <i aria-hidden="true" class="fa fa-envelope"></i> <input aria-required="true" class="required email em1" maxlength="60" name="email" placeholder="Email Address" type="text" value="">
+                    </div>
+                    <div class="field phone">
+                        <i aria-hidden="true" class="fa fa-lock"></i> <input aria-required="true" class="required number pn1" maxlength="25" name="password" placeholder="Create Password" type="password" value="">
+                    </div>
+                    <div class="field phone">
+                        <i aria-hidden="true" class="fa fa-lock"></i> <input aria-required="true" class="required number pn1" maxlength="25" name="confirm_password" placeholder="Confirm Password Again" type="password" value="">
+                    </div>
+                    <div class="field">
+                        <i aria-hidden="true" class="fa fa-envelope"></i> <input aria-required="true" class="required email em1" maxlength="60" name="telegram" placeholder="Telegram Account Name" type="text" value="">
+                    </div>
+                    <div class="field">
+                        <i aria-hidden="true" class="fa fa-envelope"></i> <input aria-required="true" class="required email em1" maxlength="60" name="ether_address" placeholder="Ethereum Public Address" type="text" value="">
+                    </div>
+                    <div class="clearfix fieldwrap text-center">
+                        <a class="btn btn-default" href="step-2.html" id="submitFormPopup">Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="popup-form modal fade" id="login" role="dialog">
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+        <div class="formcontainer">
+            <div class="tophead">
+                <h2>LOGIN TO YOUR ACCOUNT</h2>
+                <h5>Earn 5 Free STAR Tokens for Approved Registration</h5>
+            </div>
+            <div class="inform" id="popupform">
+                <form action="" class="clearfix" id="" method="post" name="">
+                    
+                    <div class="field">
+                        <i aria-hidden="true" class="fa fa-envelope"></i> <input aria-required="true" class="required email em1" maxlength="60" name="signup[signup_email]" placeholder="Email Address" type="text" value="">
+                    </div>
+                    <div class="field phone">
+                        <i aria-hidden="true" class="fa fa-lock"></i> <input aria-required="true" class="required number pn1" maxlength="25" name="signup[signup_phone]" placeholder="Create Password" type="password" value="">
+                    </div>
+                    
+                    <div class="field phone">
+                       <input name="" type="checkbox" value=""><span>Remember my email address</span>
+                    </div>
+                    
+                    <div class="clearfix fieldwrap text-center">
+                        <a class="btn btn-default" href="#" id="submitFormPopup">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Header
+========================================-->
+    <header class="active-navbar appsLand-header triangle-up-bg" id="home">
+        <div class="app-overlay">
+            <div class="header-content">
+                <div id="particles-js"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="divse">
+                            <div class="col-lg-2 col-md-2"></div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="site-intro-content">
+                                    <h1 class="wow fadeInUp  " data-wow-delay="0s" data-wow-duration="1s">Let’s Come Together to Discover Truths!</h1>
+                                    <h2 class="wow fadeInUp size-34" data-wow-delay="0s" data-wow-duration="1s">Scientific Truths & Social Truths</h2>
+
+                                    <div id="clockdiv" class="m-botom-20">
+                                      <div>
+                                        <span class="days">4</span>
+                                        <div class="smalltext">Days</div>
+                                      </div>
+                                      <div>
+                                        <span class="hours">23</span>
+                                        <div class="smalltext">Hours</div>
+                                      </div>
+                                      <div>
+                                        <span class="minutes">59</span>
+                                        <div class="smalltext">Minutes</div>
+                                      </div>
+                                      <div>
+                                        <span class="seconds">54</span>
+                                        <div class="smalltext">Seconds</div>
+                                      </div>
+                                    </div>
+
+
+                                    <h2 class="wow fadeInUp m-top-20" data-wow-delay="0s" data-wow-duration="1s">STAR Token Pre-sale from Jan 24th 2018</h2>
+                                    <h2 class="wow fadeInUp m-top-20 m-botom-0 size-36" data-wow-delay="0s" data-wow-duration="1s" >5 Free STAR Tokens</h2>
+                                    <ul class="list-inline list-unstyled header-links">
+                                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+                                            <a class="appsLand-btn appsLand-btn-gradient btn-inverse scrollLink" href="videos/Astra - The Social Supercomputer.mp4"  data-lity="" ><span><i aria-hidden="true" class="fa fa-play-circle"></i> Video</span></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="1s">
+                                            <a class="appsLand-btn appsLand-btn-gradient btn-inverse scrollLink" data-aos="fade-right" data-target="#pop" data-toggle="modal" href="#"><span><i aria-hidden="true" class="fa fa-location-arrow"></i> Join the Whitelist/Login</span></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                                            <a class="appsLand-btn appsLand-btn-gradient btn-inverse scrollLink" href="token.html"><span><i aria-hidden="true" class="fa fa-check-circle"></i> Token Sale</span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <div class="signupfrm">
+                                        <div class="custom-input-group wow fadeInUp smlht" data-wow-delay="0.25s" data-wow-duration="1s">
+                                            <a href="https://astranetix.us16.list-manage.com/subscribe/post?u=cbdcc4d7bc5aed8237a9c0b53&id=f4e6f97e1a">
+                                            <input class="form-control" placeholder="Subscribe to Stay Updated" type="email"> <button class="appsLand-btn appsLand-btn-gradient subscribe-btn"><span>Subscribe</span></button>
+                                            <div class="clearfix"></div></a>
+                                        </div><a class="appsLand-btn appsLand-btn-gradient btn-inverse scrollLink" href="https://t.me/joinchat/GNbSLAxLtSll3H0yjkpPFw" target="_blank"><span><i aria-hidden="true" class="fa fa-location-arrow"></i> Join Astra Community</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- Main Content
+========================================-->
+
+    <main class="entry-main">
+        <!-- Mini Feature Section
+    ========================================-->
+        <section class="mini-feature section-without-title bannerbtn">
+            <div class="container">
+                <div class="row">
+                    <h2>Come Together to Discover Scientific & Social Truths</h2>
+                </div>
+<!--                 <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1s"></div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s">
+                        <div class="mini-feature-box">
+                            <div class="img-box"><img alt="" class="responsive-img" src="images/1.png" width=""></div>
+                            <h3>Vibrant Economic Communities</h3>
+                            <p>Transform Passive Communities into Vibrant Economic Communities</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"></div>
+                </div> -->
+<!--                 <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1s">
+                        <div class="mini-feature-box">
+                            <div class="img-box"><img alt="" class="responsive-img" src="images/3.png" width=""></div>
+                            <h3>Scientific Truths</h3>
+                            <p>Harness the Power of Community Computers for Scientific Discoveries</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s">
+                        <div class="mini-feature-box active nobg"><img alt="" src="images/triangle-2.png" width="100%"></div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+                        <div class="mini-feature-box">
+                            <div class="img-box"><img alt="" class="responsive-img" src="images/2.png" width=""></div>
+                            <h3>Social Truths</h3>
+                            <p>Harness the Power of Community Computers for Verifying Information</p>
+                        </div>
+                    </div>-->
+                <div class="astra-tringle">
+                    <div class="col-md-12">
+                        <img src="images/astra.jpg" class="img-responsive">
+                    </div>
+                </div>
+                    <div class="col-lg-12">
+                        <h2>Astra Animates and Captures the Energy of Communities for 'Scientific Truths' and 'Social Truths'</h2>
+                    </div>
+                </div> 
+
+            </div>
+        </section><!-- ScreenShots Section
+    ========================================-->
+        <section class="iconsec">
+            <div class="container">
+                <div class="row">
+                    <h1>Scientific Truths</h1>
+                    <h2>Come Together to Solve Intractable Problems</h2>
+                    <p>Share Computing Power and Ideas for Leading-edge Discoveries in Medicine, Sciences and Humanities</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-hospital-o"></i>
+                            </div>
+                            <h4>Medical Discoveries</h4>
+                            <p>Help discover causes and cures for many dreadful diseases that still afflict humanity, such as Cancer, HIV/AIDS, Alzheimer's, Malaria, etc.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-fire"></i>
+                            </div>
+                            <h4>Global Warming</h4>
+                            <p>Run mathematical models of greenhouse gas emissions and their likely impact on earth's surface temperature, rising sea-levels, and dangerous weather patterns.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-cloud"></i>
+                            </div>
+                            <h4>Clean Energy</h4>
+                            <p>Millions of molecular simulations to find the materials that absorb maximum sun light for the next generation solar panels.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-object-group"></i>
+                            </div>
+                            <h4>Subatomic World</h4>
+                            <p>Help scientists unravel the secrets of Subatomic World by analyzing data from particle accelerators such as the Large Hadron Collider.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-globe"></i>
+                            </div>
+                            <h4>Mysterious Universe</h4>
+                            <p>Analyze data from distant stars and galaxies for better understanding of our mysterious universe and verifying the laws of physics.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-line-chart"></i>
+                            </div>
+                            <h4>Economic Models</h4>
+                            <p>Run simulations to study the patterns of global poverty, economic opportunities and wealth creation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Earn Valuable Digital Currencies while Doing Good Karma!</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="iconsec bottomsse">
+            <div class="container">
+                <div class="row">
+                    <h1>Social Truths</h1>
+                    <h2>Trustworthy Public Data Repositories</h2>
+                    <p>Contribute computing power and storage capacity for building Ownerless, Censor-proof,<br>
+                    and Trustworthy Public Data Repositories for superefficient economies<br>
+                    and transparent governance</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-bank"></i>
+                            </div>
+                            <h4>People's Currencies</h4>
+                            <p>Verify transactions to maintain Trustworthy Public Data Repositories for innovative People's Currencies as opposed to restrictive Sovereign Currencies.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-address-card-o"></i>
+                            </div>
+                            <h4>Universal Identity</h4>
+                            <p>Lend computing power to create Secure Universal Digital Identity for all citizens of the world for their security, health, welfare, and trustful collaborations.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h4>Authenticated Credentials</h4>
+                            <p>Share computing power for creating repositories of authenticated personal and business credentials which can be securely referenced.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-home"></i>
+                            </div>
+                            <h4>Asset Registries</h4>
+                            <p>Help build trustworthy universal asset registries for readily securing credit and superefficient global commerce.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-link"></i>
+                            </div>
+                            <h4>Product Provenance</h4>
+                            <p>Instantaneously check the origin and flow of commodities, products, and services for their integrity. Ensure saftey of food items from around the world.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="feature-item wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="feature-icon">
+                                <i aria-hidden="true" class="fa fa-handshake-o"></i>
+                            </div>
+                            <h4>Transparent Governance</h4>
+                            <p>Publicaly auditable data on corporate and government revenues, expenditures, and activities for transparent, corruption-free governance.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Earn Valuable Digital Currencies while Doing Good Karma!</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="iconsec teams" id="team">
+            <div class="container">
+                <div class="row" id="team">
+                    <h1>The Team</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/01.jpg">
+                            <div class="mask">
+                                <h2>Rajesh Trivedi <span>CEO</span></h2>
+                                <p>Seasoned technology entrepreneur who excels in discovery, conceptualization, and development of new technology markets and industries. Extensive experience in Engineering, Marketing, Strategy Development and Execution in the Software, Databases, Blockchain, Networking, Semiconductors, and FPGA industries.</p>
+                               <!--  <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/04.jpg">
+                            <div class="mask">
+                                <h2>Harman Bains <span>Full-stack Engineer</span></h2>
+                                <p>An experienced full-stack Software Development Engineer. He excels in architecting and building highly intuitive and user friendly software systems. Mr. Bains previously worked as a Software Engineer at Workday in Pleasanton, CA. He earned a B.S. in Neurobiology and a B.S. in Computer Science from the University of Washington.</p>
+                               <!--  <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/02.jpg">
+                            <div class="mask">
+                                <h2>Chandu Bhavsar <span>Cloud Computing Engineer</span></h2>
+                                <p>26 years of experience in designing networking protocols, real-time operating systems, and software systems. Built and managed high-performance teams to define leading- edge products and implement them.</p>
+                                <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/03.jpg">
+                            <div class="mask">
+                                <h2>Abraham Mengistu <span>User Experience Designer</span></h2>
+                                <p>Highly creative user experience and user interface designer. Passionate about deeply understanding consumer needs and how Astra products can delight them.</p>
+                              <!--   <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/05.jpg">
+                            <div class="mask">
+                                <h2>Silas Sadia <span>Blockchain Systems Engineering</span></h2>
+                                <p>Passionate about design of efficient Blockchain systems. He is interested in full-stack system development and is writing parallelized, performance-minded CPU and GPU code for use in cryptography, scientific computing, and machine learning. He is currently incorporating cutting-edge consensus algorithms to architect a truly decentralized and fault-tolerant Blockchain for Astra.</p>
+                                <!-- <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/09.jpg">
+                            <div class="mask">
+                                <h2>Soham Kale <span>Full-stack Engineering </span></h2>
+                                <p>Invested in the production of blockchain powered trust machines, Soham enjoys creating visually appealing and intuitive user interfaces, and how these can facilitate powerful communities born in the blockchain. He hopes to design server-side logic to create a universally usable and productive Astra.</p>
+                               <!--  <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="view view-fifth">
+                            <img alt="" src="images/team/06.jpg">
+                            <div class="mask">
+                                <h2>Sanjeev Varakantam <span>Business Development and Customer Relations</span></h2>
+                                <p>Sanjeev enjoys working closely with customers from around the world and delighting them. He has over 15 years of experience in Application Engineering and Consulting where he relentlessly solved customer problems. He is also a savvy crypto-investor and understands how online communities can be brought together with right token incentives. Sanjeev has a BS and MS in Computer Engineering.</p>
+                               <!--  <div class="member-social-link text-center">
+                                    <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="iconsec teams" id="team">
+            <div class="container">
+                <div class="row">
+                    <h1>The Advisors</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="image">
+                            <img src="images/team/07.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="image">
+                            <h2 class="text-left">Dr. Jeff Flowers</h2>
+                            <h2 class="text-left">Blockchain Advisor</h2>
+                            <p  class="text-left">Dr. Jeff Flowers was a Founder of the Blockchain University in San Francisco in 2014. He is a leading thinker and practitioner in this emerging space. Dr. Jeff Flowers is also a Chemistry Professor and fully understands the vast computing resources required for building a library of molecular simulations. He is helping Astra design an innovative incentive system using Blockchain technology to motivate people. Dr. Flowers doctoral work, at San Francisco State University, focused on the use of neural networks and gamification protocols towards achieving highly optimized education pathways.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="image">
+                            <h2 class="text-left">Dr. Johnnie Chamberlin</h1>
+                            <h2 class="text-left">Science Advisor</h2>
+                            <p class="text-left">Dr. Johnnie Chamberlin is passionate about Scientific Computing, Environmental Science, and how Blockchains may have positive social impact. He wrote an inspiring article on the monumental computing needs of our scientists and researchers. Dr. Chamberlin is the author of two books and was a research fellow for NYT Bestselling book Drawdown. Dr. Chamberlin has a PhD in Environmental Dynamics and a Graduate Certificate in Sustainability from the University of Arkansas, a MS in Environmental Engineering from Duke University, and a BA in Cognitive Science from UC Berkeley.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="image">
+                            <img src="images/team/08.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section
+    ========================================-->
+        <section class="procesroad">
+            <div id="particles-js1"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="sect2">
+                        <div class="col-lg-12">
+                            <h1>The Astra Team is Currently Building</h1>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+                            <div class="msw"><img alt="" src="images/Iphone-x.png" width="100%"></div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-6">
+                            <h2>Astra App</h2>
+                            <p>A user friendly app that allows masses to join the global movement for 'Scientific Truths'<br>
+                            and 'Social Truths' while earning valuable digital currencies.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h2>Astra Economic Communities</h2>
+                            <p>'Astra Communities' to empower people to come together and collectively solve intractable problems.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                            <div class="msw1"><img alt="" src="images/mac.png" width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gfts">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6 text-center">
+                                <a class="appsLand-btn appsLand-btn-gradient btn-inverse scrollLink" href="roadmap.html"><span>RoadMap</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--<section class="subscribe subem">
+        <div class="container">
+            <div class="section-title title__style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s" style="visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: fadeInUp;">
+                <h2>
+                    Subscribe to stay up to date on the Astra Project
+
+                    
+                </h2>
+                <p>
+                    Keep In Touch And Register In Our News Letter
+                </p>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="custom-input-group wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.25s; animation-name: fadeInUp;">
+                            <input type="email" class="form-control" placeholder="Email">
+                            <button class="appsLand-btn appsLand-btn-gradient subscribe-btn"><span>Subscribe</span></button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>-->
+        <section class="video section-bg-img bg-bc" id="media">
+            <div class="app-overlay">
+                <div class="container">
+                    <div class="section-title title__style-2 wow fadeInUp white-color" data-wow-delay="0s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: fadeInUp;">
+                        <h2>Media</h2>
+                        <p></p>
+                    </div>
+                    <div class="play-video-icon wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1s">
+                        <a data-lity="" href="videos/Astra - The Social Supercomputer.mp4"><img alt="" src="images/icon-14.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Download Section
+    ========================================-->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="single-member">
+                            <img alt="" src="images/b1.png">
+                            <div class="member-title text-center padd20">
+                                <h3><a href="https://medium.com/@RajeshT/astra-the-social-supercomputer-b9985777ce6" target="_blank">Astra-The Social Supercomputer</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="single-member">
+                            <img alt="" src="images/b2.png">
+                            <div class="member-title text-center">
+                                <h3><a href="https://medium.com/@RajeshT/boid-one-app-for-discovering-the-most-profitable-grid-computing-market-b766727d26f9" target="_blank">Discovering Profitable Grid Computing Markets</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="single-member">
+                            <img alt="" src="images/b3.png">
+                            <div class="member-title text-center">
+                                <h3><a href="https://medium.com/@RajeshT/boid-one-platform-for-disparate-grid-computing-communities-5921988bfd89" target="_blank">Bringing Together Disparate Grid Computing Communities</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="single-member">
+                            <img alt="" src="images/b4.png">
+                            <div class="member-title text-center">
+                                <h3><a href="https://medium.com/@Astranetix/motivation-for-astra-the-social-supercomputer-c9ef10dfb24f" target="_blank">Motivation for Astra - The Social Supercomputer</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="single-member">
+                            <img alt="" src="images/b5.png">
+                            <div class="member-title text-center">
+                                <h3><a href="assests/The Strongest Supercomputer on Earth Still Needs Your Laptop to Cure Cancer.pdf" target="_blank">The Strongest Supercomputer in the World Still Needs Your Laptop to Cure Cancer</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Pricing Section
+    ========================================-->
+        <!-- Testimonials Section
+    ========================================-->
+        <!-- Team Section
+    ========================================-->
+        <!-- Video Section
+    ========================================-->
+        <!-- FAQ Section
+    ========================================-->
+        <!-- Statistics Section
+    ========================================-->
+        <!-- Blog Section
+    ========================================-->
+        <!-- Contact Section
+    ========================================-->
+        <section class="contact section-bg-img" id="contact">
+            <div class="app-overlay">
+                <div class="container">
+                    <div class="section-title title__style-2 wow fadeInUp white-color" data-wow-delay="0s" data-wow-duration="1s">
+                        <h2>Connect with us</h2>
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="contact-form wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="1s">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-push-8 col-md-push-8">
+                                        <div class="contact-info">
+                                            <div class="info-box">
+                                                <div class="icon-box">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://t.me/joinchat/GNbSLAxLtSll3H0yjkpPFw" target="_blank"><i aria-hidden="true" class="fa fa-telegram ft"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.facebook.com/Astra-The-Social-Supercomputer-1878604948822341/" target="_blank"><i aria-hidden="true" class="fa fa-facebook ft pad5"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.linkedin.com/company/boid-the-social-supercomputer/" target="_blank"><i aria-hidden="true" class="fa fa-linkedin ft"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://twitter.com/AstraNetix" target="_blank"><i aria-hidden="true" class="fa fa-twitter ft"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-pull-4 col-md-pull-4">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Full Name" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Email Address" type="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="Your Message"></textarea>
+                                            </div>
+                                            <div class="btn-box">
+                                                <button class="appsLand-btn appsLand-btn-gradient" type="submit"><span><i class="fa fa-send"></i> Send Message</span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Client Logo Section
+    ========================================-->
+        <!-- Subscribe Section
+    ========================================-->
+    </main><!-- Option Template Menu
+========================================-->
+    <!-- Scroll To Top
+========================================-->
+    <div class="scrollToTop appsLand-btn appsLand-btn-gradient padd0">
+        <span><i class="fa fa-angle-up"></i></span>
+    </div><!-- Loading
+========================================-->
+    <div class="loading">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div><!-- Footer
+========================================-->
+    <footer class="apps-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © Astranetix 2017</p>
+            </div>
+        </div>
+    </footer><!-- start the script -->
+    <script src="js/jquery-2.2.4.min.js">
+    </script> 
+    <script src="js/bootstrap.min.js">
+    </script> 
+    <script src="js/swiper.jquery.min.js">
+    </script> 
+    <script src="js/wow.min.js">
+    </script> 
+    <script src="js/jquery.countTo.min.js">
+    </script> 
+    <script src="js/lity.min.js">
+    </script> 
+    <script src="js/plugins.js">
+    </script> 
+    <script src="js/particles.js">
+    </script> 
+    <script src="js/app.js">
+    </script> 
+    <script>
+     var count_particles, stats, update;
+     stats = new Stats;
+     stats.setMode(0);
+     stats.domElement.style.position = 'absolute';
+     stats.domElement.style.left = '0px';
+     stats.domElement.style.top = '0px';
+     document.body.appendChild(stats.domElement);
+     count_particles = document.querySelector('.js-count-particles');
+     update = function() {
+       stats.begin();
+       stats.end();
+       if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+       }
+       requestAnimationFrame(update);
+     };
+     requestAnimationFrame(update);
+    </script> <!-- end the script -->
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Presentation</h4>
+      </div>
+      <div class="modal-body">
+       <iframe src="assests/Astra-Introduction.pdf" width="100%" height="600"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,675 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PubNubDelegate"
+- "PubNubLoginDelegate"
+- "PubNubPersistDelegate"
+- "PubNubClient"
+provides-nominal:
+- "13astra_desktop14PubNubDelegateP"
+- "13astra_desktop19PubNubLoginDelegateP"
+- "13astra_desktop21PubNubPersistDelegateP"
+- "13astra_desktop12PubNubClientC"
+provides-member:
+- ["13astra_desktop14PubNubDelegateP", ""]
+- ["13astra_desktop19PubNubLoginDelegateP", ""]
+- ["13astra_desktop21PubNubPersistDelegateP", ""]
+- ["13astra_desktop12PubNubClientC", ""]
+provides-dynamic-lookup:
+- "client"
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "=="
+- "AnyObject"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "BoincCommands"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Dictionary"
+- !private "Double"
+- "NSObject"
+- !private "PNConfiguration"
+- !private "PNErrorStatus"
+- "PNMessageResult"
+- "PNObjectEventListener"
+- "PNStatus"
+- "PubNub"
+- "PubNubClient"
+- "PubNubDelegate"
+- "PubNubLoginDelegate"
+- "PubNubPersistDelegate"
+- "String"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- "User"
+- !private "~="
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s19BinaryFloatingPointP", "truncatingRemainder"]
+- !private ["13astra_desktop13BoincCommandsO", "attachProject"]
+- !private ["13astra_desktop13BoincCommandsO", "createUser"]
+- !private ["13astra_desktop13BoincCommandsO", "getProjectStatus"]
+- !private ["13astra_desktop13BoincCommandsO", "lookupAccount"]
+- !private ["13astra_desktop13BoincCommandsO", "noMoreWorkProject"]
+- !private ["13astra_desktop13BoincCommandsO", "quit"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "BoincCommands"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "PNConfiguration"]
+- !private ["s7CVarArgP", "PubNub"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "addListener"]
+- !private ["s7CVarArgP", "authenticator"]
+- !private ["s7CVarArgP", "category"]
+- ["s7CVarArgP", "client"]
+- !private ["s7CVarArgP", "clientWithConfiguration"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "deviceID"]
+- !private ["s7CVarArgP", "email"]
+- !private ["s7CVarArgP", "getPassword"]
+- !private ["s7CVarArgP", "getPubChannel"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isError"]
+- !private ["s7CVarArgP", "message"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "numServerCores"]
+- !private ["s7CVarArgP", "operation"]
+- !private ["s7CVarArgP", "passwords"]
+- !private ["s7CVarArgP", "publish"]
+- !private ["s7CVarArgP", "subscribeToChannels"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "truncatingRemainder"]
+- !private ["s7CVarArgP", "unsubscribeFromChannels"]
+- !private ["s7CVarArgP", "user"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "truncatingRemainder"]
+- !private ["s28CustomDebugStringConvertibleP", "BoincCommands"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "PNConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "PubNub"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "addListener"]
+- !private ["s28CustomDebugStringConvertibleP", "authenticator"]
+- !private ["s28CustomDebugStringConvertibleP", "category"]
+- ["s28CustomDebugStringConvertibleP", "client"]
+- !private ["s28CustomDebugStringConvertibleP", "clientWithConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "deviceID"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- !private ["s28CustomDebugStringConvertibleP", "getPassword"]
+- !private ["s28CustomDebugStringConvertibleP", "getPubChannel"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isError"]
+- !private ["s28CustomDebugStringConvertibleP", "message"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "numServerCores"]
+- !private ["s28CustomDebugStringConvertibleP", "operation"]
+- !private ["s28CustomDebugStringConvertibleP", "passwords"]
+- !private ["s28CustomDebugStringConvertibleP", "publish"]
+- !private ["s28CustomDebugStringConvertibleP", "subscribeToChannels"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "truncatingRemainder"]
+- !private ["s28CustomDebugStringConvertibleP", "unsubscribeFromChannels"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "truncatingRemainder"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "truncatingRemainder"]
+- !private ["s23CustomStringConvertibleP", "BoincCommands"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "PNConfiguration"]
+- !private ["s23CustomStringConvertibleP", "PubNub"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addListener"]
+- !private ["s23CustomStringConvertibleP", "authenticator"]
+- !private ["s23CustomStringConvertibleP", "category"]
+- ["s23CustomStringConvertibleP", "client"]
+- !private ["s23CustomStringConvertibleP", "clientWithConfiguration"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "deviceID"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- !private ["s23CustomStringConvertibleP", "getPassword"]
+- !private ["s23CustomStringConvertibleP", "getPubChannel"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isError"]
+- !private ["s23CustomStringConvertibleP", "message"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "numServerCores"]
+- !private ["s23CustomStringConvertibleP", "operation"]
+- !private ["s23CustomStringConvertibleP", "passwords"]
+- !private ["s23CustomStringConvertibleP", "publish"]
+- !private ["s23CustomStringConvertibleP", "subscribeToChannels"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "truncatingRemainder"]
+- !private ["s23CustomStringConvertibleP", "unsubscribeFromChannels"]
+- !private ["s23CustomStringConvertibleP", "user"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "truncatingRemainder"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["Sd", "init"]
+- !private ["Sd", "truncatingRemainder"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "truncatingRemainder"]
+- !private ["s9EquatableP", "BoincCommands"]
+- !private ["s9EquatableP", "Double"]
+- !private ["s9EquatableP", "PNAccessDeniedCategory"]
+- !private ["s9EquatableP", "PNConfiguration"]
+- !private ["s9EquatableP", "PNDisconnectedCategory"]
+- !private ["s9EquatableP", "PNUnexpectedDisconnectCategory"]
+- !private ["s9EquatableP", "PubNub"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addListener"]
+- !private ["s9EquatableP", "authenticator"]
+- !private ["s9EquatableP", "category"]
+- ["s9EquatableP", "client"]
+- !private ["s9EquatableP", "clientWithConfiguration"]
+- !private ["s9EquatableP", "data"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "deviceID"]
+- !private ["s9EquatableP", "email"]
+- !private ["s9EquatableP", "getPassword"]
+- !private ["s9EquatableP", "getPubChannel"]
+- !private ["s9EquatableP", "heartbeatOperation"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isError"]
+- !private ["s9EquatableP", "message"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "numServerCores"]
+- !private ["s9EquatableP", "operation"]
+- !private ["s9EquatableP", "passwords"]
+- !private ["s9EquatableP", "publish"]
+- !private ["s9EquatableP", "subscribeOperation"]
+- !private ["s9EquatableP", "subscribeToChannels"]
+- !private ["s9EquatableP", "truncatingRemainder"]
+- !private ["s9EquatableP", "unsubscribeFromChannels"]
+- !private ["s9EquatableP", "unsubscribeOperation"]
+- !private ["s9EquatableP", "user"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "truncatingRemainder"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "truncatingRemainder"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s13FloatingPointP", "truncatingRemainder"]
+- !private ["s8HashableP", "BoincCommands"]
+- !private ["s8HashableP", "Double"]
+- !private ["s8HashableP", "PNAccessDeniedCategory"]
+- !private ["s8HashableP", "PNConfiguration"]
+- !private ["s8HashableP", "PNDisconnectedCategory"]
+- !private ["s8HashableP", "PNUnexpectedDisconnectCategory"]
+- !private ["s8HashableP", "PubNub"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addListener"]
+- !private ["s8HashableP", "authenticator"]
+- !private ["s8HashableP", "category"]
+- ["s8HashableP", "client"]
+- !private ["s8HashableP", "clientWithConfiguration"]
+- !private ["s8HashableP", "data"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "deviceID"]
+- !private ["s8HashableP", "email"]
+- !private ["s8HashableP", "getPassword"]
+- !private ["s8HashableP", "getPubChannel"]
+- !private ["s8HashableP", "heartbeatOperation"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isError"]
+- !private ["s8HashableP", "message"]
+- !private ["s8HashableP", "name"]
+- !private ["s8HashableP", "numServerCores"]
+- !private ["s8HashableP", "operation"]
+- !private ["s8HashableP", "passwords"]
+- !private ["s8HashableP", "publish"]
+- !private ["s8HashableP", "subscribeOperation"]
+- !private ["s8HashableP", "subscribeToChannels"]
+- !private ["s8HashableP", "truncatingRemainder"]
+- !private ["s8HashableP", "unsubscribeFromChannels"]
+- !private ["s8HashableP", "unsubscribeOperation"]
+- !private ["s8HashableP", "user"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "truncatingRemainder"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "authenticator"]
+- !private ["So8NSCodingP", "deviceID"]
+- !private ["So8NSCodingP", "getPassword"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "passwords"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "BoincCommands"]
+- !private ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "PNConfiguration"]
+- !private ["So8NSObjectC", "PNErrorStatus"]
+- ["So8NSObjectC", "PNMessageResult"]
+- ["So8NSObjectC", "PNStatus"]
+- ["So8NSObjectC", "PubNub"]
+- ["So8NSObjectC", "PubNubLoginDelegate"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "User"]
+- !private ["So8NSObjectC", "addListener"]
+- !private ["So8NSObjectC", "authenticator"]
+- !private ["So8NSObjectC", "category"]
+- ["So8NSObjectC", "client"]
+- !private ["So8NSObjectC", "clientWithConfiguration"]
+- !private ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "deviceID"]
+- ["So8NSObjectC", "email"]
+- !private ["So8NSObjectC", "getPassword"]
+- ["So8NSObjectC", "getPubChannel"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isError"]
+- ["So8NSObjectC", "loginSubscribe"]
+- !private ["So8NSObjectC", "message"]
+- !private ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "numServerCores"]
+- !private ["So8NSObjectC", "operation"]
+- !private ["So8NSObjectC", "passwords"]
+- ["So8NSObjectC", "publish"]
+- !private ["So8NSObjectC", "subscribeToChannels"]
+- !private ["So8NSObjectC", "unsubscribeFromChannels"]
+- ["So8NSObjectC", "user"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "BoincCommands"]
+- !private ["So16NSObjectProtocolP", "Double"]
+- !private ["So16NSObjectProtocolP", "PNConfiguration"]
+- !private ["So16NSObjectProtocolP", "PubNub"]
+- !private ["So16NSObjectProtocolP", "String"]
+- !private ["So16NSObjectProtocolP", "addListener"]
+- !private ["So16NSObjectProtocolP", "authenticator"]
+- !private ["So16NSObjectProtocolP", "category"]
+- ["So16NSObjectProtocolP", "client"]
+- !private ["So16NSObjectProtocolP", "clientWithConfiguration"]
+- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "deviceID"]
+- !private ["So16NSObjectProtocolP", "email"]
+- !private ["So16NSObjectProtocolP", "getPassword"]
+- !private ["So16NSObjectProtocolP", "getPubChannel"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isError"]
+- !private ["So16NSObjectProtocolP", "message"]
+- !private ["So16NSObjectProtocolP", "name"]
+- !private ["So16NSObjectProtocolP", "numServerCores"]
+- !private ["So16NSObjectProtocolP", "operation"]
+- !private ["So16NSObjectProtocolP", "passwords"]
+- !private ["So16NSObjectProtocolP", "publish"]
+- !private ["So16NSObjectProtocolP", "subscribeToChannels"]
+- !private ["So16NSObjectProtocolP", "unsubscribeFromChannels"]
+- !private ["So16NSObjectProtocolP", "user"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So19NSPasteboardReadingP", "init"]
+- !private ["So19NSPasteboardWritingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "truncatingRemainder"]
+- !private ["So22PNAcknowledgmentStatusC", "isError"]
+- !private ["So15PNConfigurationC", "init"]
+- !private ["So13PNErrorStatusC", "category"]
+- !private ["So13PNErrorStatusC", "isError"]
+- !private ["So13PNMessageDataC", "message"]
+- !private ["So15PNMessageResultC", "data"]
+- !private ["So21PNObjectEventListenerP", "BoincCommands"]
+- !private ["So21PNObjectEventListenerP", "Double"]
+- !private ["So21PNObjectEventListenerP", "PNConfiguration"]
+- !private ["So21PNObjectEventListenerP", "PubNub"]
+- !private ["So21PNObjectEventListenerP", "String"]
+- ["So21PNObjectEventListenerP", "client"]
+- !private ["So21PNObjectEventListenerP", "delegate"]
+- !private ["So21PNObjectEventListenerP", "email"]
+- !private ["So21PNObjectEventListenerP", "getPubChannel"]
+- !private ["So21PNObjectEventListenerP", "numServerCores"]
+- !private ["So21PNObjectEventListenerP", "publish"]
+- !private ["So21PNObjectEventListenerP", "user"]
+- ["So21PNObjectEventListenerP", ""]
+- !private ["SC15PNOperationTypeO", "heartbeatOperation"]
+- !private ["SC15PNOperationTypeO", "subscribeOperation"]
+- !private ["SC15PNOperationTypeO", "unsubscribeOperation"]
+- !private ["So15PNPublishStatusC", "isError"]
+- !private ["So8PNResultC", "category"]
+- !private ["So8PNResultC", "data"]
+- !private ["So8PNResultC", "isError"]
+- !private ["So8PNResultC", "operation"]
+- !private ["So13PNServiceDataC", "message"]
+- !private ["So8PNStatusC", "category"]
+- !private ["So8PNStatusC", "isError"]
+- !private ["So8PNStatusC", "operation"]
+- !private ["SC16PNStatusCategoryO", "PNAccessDeniedCategory"]
+- !private ["SC16PNStatusCategoryO", "PNDisconnectedCategory"]
+- !private ["SC16PNStatusCategoryO", "PNUnexpectedDisconnectCategory"]
+- !private ["So16PNSubscriberDataC", "message"]
+- !private ["So6PubNubC", "addListener"]
+- !private ["So6PubNubC", "clientWithConfiguration"]
+- !private ["So6PubNubC", "publish"]
+- !private ["So6PubNubC", "subscribeToChannels"]
+- !private ["So6PubNubC", "unsubscribeFromChannels"]
+- !private ["13astra_desktop12PubNubClientC", "BoincCommands"]
+- !private ["13astra_desktop12PubNubClientC", "Double"]
+- !private ["13astra_desktop12PubNubClientC", "PNConfiguration"]
+- !private ["13astra_desktop12PubNubClientC", "PNErrorStatus"]
+- ["13astra_desktop12PubNubClientC", "PNMessageResult"]
+- ["13astra_desktop12PubNubClientC", "PNStatus"]
+- ["13astra_desktop12PubNubClientC", "PubNub"]
+- ["13astra_desktop12PubNubClientC", "PubNubLoginDelegate"]
+- ["13astra_desktop12PubNubClientC", "String"]
+- ["13astra_desktop12PubNubClientC", "User"]
+- ["13astra_desktop12PubNubClientC", "client"]
+- ["13astra_desktop12PubNubClientC", "deinit"]
+- ["13astra_desktop12PubNubClientC", "delegate"]
+- ["13astra_desktop12PubNubClientC", "email"]
+- ["13astra_desktop12PubNubClientC", "getPubChannel"]
+- ["13astra_desktop12PubNubClientC", "init"]
+- ["13astra_desktop12PubNubClientC", "loginSubscribe"]
+- ["13astra_desktop12PubNubClientC", "numServerCores"]
+- ["13astra_desktop12PubNubClientC", "publish"]
+- ["13astra_desktop12PubNubClientC", "user"]
+- ["13astra_desktop14PubNubDelegateP", "String"]
+- ["13astra_desktop14PubNubDelegateP", "accessDenied"]
+- ["13astra_desktop14PubNubDelegateP", "heartbeatFailure"]
+- ["13astra_desktop14PubNubDelegateP", "invalidCredentials"]
+- ["13astra_desktop14PubNubDelegateP", "loginSuccess"]
+- ["13astra_desktop14PubNubDelegateP", "publishError"]
+- ["13astra_desktop14PubNubDelegateP", "publishSuccess"]
+- ["13astra_desktop14PubNubDelegateP", "quitClient"]
+- ["13astra_desktop14PubNubDelegateP", "unexpectedDisconnect"]
+- ["13astra_desktop14PubNubDelegateP", ""]
+- ["13astra_desktop19PubNubLoginDelegateP", "String"]
+- !private ["13astra_desktop19PubNubLoginDelegateP", "accessDenied"]
+- !private ["13astra_desktop19PubNubLoginDelegateP", "heartbeatFailure"]
+- ["13astra_desktop19PubNubLoginDelegateP", "invalidCredentials"]
+- ["13astra_desktop19PubNubLoginDelegateP", "loginSuccess"]
+- !private ["13astra_desktop19PubNubLoginDelegateP", "publishError"]
+- !private ["13astra_desktop19PubNubLoginDelegateP", "publishSuccess"]
+- !private ["13astra_desktop19PubNubLoginDelegateP", "unexpectedDisconnect"]
+- ["13astra_desktop21PubNubPersistDelegateP", "quitClient"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "PNAccessDeniedCategory"]
+- !private ["s16RawRepresentableP", "PNDisconnectedCategory"]
+- !private ["s16RawRepresentableP", "PNUnexpectedDisconnectCategory"]
+- !private ["s16RawRepresentableP", "heartbeatOperation"]
+- !private ["s16RawRepresentableP", "subscribeOperation"]
+- !private ["s16RawRepresentableP", "unsubscribeOperation"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "truncatingRemainder"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "truncatingRemainder"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["13astra_desktop4UserC", "authenticator"]
+- !private ["13astra_desktop4UserC", "deinit"]
+- !private ["13astra_desktop4UserC", "deviceID"]
+- !private ["13astra_desktop4UserC", "getPassword"]
+- !private ["13astra_desktop4UserC", "name"]
+- !private ["13astra_desktop4UserC", "passwords"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "truncatingRemainder"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "truncatingRemainder"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "truncatingRemainder"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "truncatingRemainder"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BoincCommands"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PNConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PubNub"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addListener"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authenticator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "category"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "client"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clientWithConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getPassword"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getPubChannel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "message"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numServerCores"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "operation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "passwords"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "publish"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscribeToChannels"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unsubscribeFromChannels"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "truncatingRemainder"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "truncatingRemainder"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "13astra_desktop13BoincCommandsO"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "Sd"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "So22PNAcknowledgmentStatusC"
+- !private "So15PNConfigurationC"
+- !private "So13PNErrorStatusC"
+- !private "So13PNMessageDataC"
+- !private "So15PNMessageResultC"
+- "So21PNObjectEventListenerP"
+- !private "SC15PNOperationTypeO"
+- !private "So15PNPublishStatusC"
+- !private "So8PNResultC"
+- !private "So13PNServiceDataC"
+- !private "So8PNStatusC"
+- !private "SC16PNStatusCategoryO"
+- !private "So16PNSubscriberDataC"
+- !private "So6PubNubC"
+- "13astra_desktop12PubNubClientC"
+- "13astra_desktop14PubNubDelegateP"
+- "13astra_desktop19PubNubLoginDelegateP"
+- "13astra_desktop21PubNubPersistDelegateP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "13astra_desktop4UserC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAES.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+APNS.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub-umbrella.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNServiceData.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Subscribe.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Presence.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Time.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Core.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+State.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Publish.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientInformation.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/NSURLSessionConfiguration+PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+ChannelGroup.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeChannelsOrGroupsAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDeleteMessageAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishSizeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeChannelsOrGroupsAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHeartbeatAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNLLogger.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNObjectEventListener.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorCodes.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDefines.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStructures.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscriberResults.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientStateUpdateStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAcknowledgmentStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSEnabledChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceGlobalHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+History.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "8f5aba7ae79689f2033dcd5a31f42b1d"

@@ -1,0 +1,18 @@
+.top-bar {
+    color: rgb(77, 77, 77);
+    margin: 0px 320px;
+}
+
+.top-container {
+    border-radius: 12px;
+    background: #fff;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.top-text {
+    margin: 0px 20px 20px 0px;
+    display: inline;
+    font-size: 20px;
+}
+

@@ -1,0 +1,215 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Quote"
+provides-nominal:
+- "13astra_desktop5QuoteV"
+provides-member:
+- ["13astra_desktop5QuoteV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CustomStringConvertible"
+- "Quote"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Quote"]
+- !private ["s23CustomStringConvertibleP", "author"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s9DecodableP", "init"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So16NSObjectProtocolP", "init"]
+- ["So19NSPasteboardReadingP", "init"]
+- ["So19NSPasteboardWritingP", "init"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- ["13astra_desktop5QuoteV", "Quote"]
+- ["13astra_desktop5QuoteV", "String"]
+- ["13astra_desktop5QuoteV", "all"]
+- ["13astra_desktop5QuoteV", "author"]
+- ["13astra_desktop5QuoteV", "deinit"]
+- ["13astra_desktop5QuoteV", "description"]
+- ["13astra_desktop5QuoteV", "init"]
+- ["13astra_desktop5QuoteV", "text"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So16NSObjectProtocolP"
+- "So19NSPasteboardReadingP"
+- "So19NSPasteboardWritingP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "13astra_desktop5QuoteV"
+- "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s23_BidirectionalIndexableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAES.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+APNS.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub-umbrella.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNServiceData.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Subscribe.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Presence.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Time.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Core.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+State.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Publish.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientInformation.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/NSURLSessionConfiguration+PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+ChannelGroup.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeChannelsOrGroupsAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDeleteMessageAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishSizeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeChannelsOrGroupsAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHeartbeatAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNLLogger.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNObjectEventListener.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorCodes.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDefines.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStructures.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscriberResults.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientStateUpdateStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAcknowledgmentStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSEnabledChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceGlobalHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+History.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "99e3d1734c326eab02de2c509f70bfc5"

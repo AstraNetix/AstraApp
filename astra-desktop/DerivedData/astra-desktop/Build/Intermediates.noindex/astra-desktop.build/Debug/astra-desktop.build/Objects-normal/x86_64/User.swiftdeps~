@@ -1,0 +1,681 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "User"
+provides-nominal:
+- "13astra_desktop4UserC"
+provides-member:
+- ["13astra_desktop4UserC", ""]
+- ["10Foundation4DataV", ""]
+- ["10Foundation4DataV", "toInt"]
+provides-dynamic-lookup:
+- "encode"
+depends-top-level:
+- !private "+"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "CFTypeRef"
+- "CastingPrecedence"
+- "Data"
+- !private "Dictionary"
+- "Double"
+- "FloatLiteralType"
+- !private "Host"
+- "Int"
+- "IntegerLiteralType"
+- "NSCoder"
+- "NSCoding"
+- "NSObject"
+- !private "SecDigestTransformCreate"
+- !private "SecTransformExecute"
+- !private "SecTransformSetAttribute"
+- "String"
+- !private "StringLiteralType"
+- "User"
+- !private "kSecDigestSHA2"
+- !private "kSecTransformInputAttributeName"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "data"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "toInt"]
+- !private ["s23BidirectionalCollectionP", "withUnsafeBytes"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s19BinaryFloatingPointP", "truncatingRemainder"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "Host"]
+- !private ["s7CVarArgP", "SecDigestTransformCreate"]
+- !private ["s7CVarArgP", "SecTransformExecute"]
+- !private ["s7CVarArgP", "SecTransformSetAttribute"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "User"]
+- !private ["s7CVarArgP", "authenticator"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "decodeObject"]
+- !private ["s7CVarArgP", "deviceID"]
+- !private ["s7CVarArgP", "deviceName"]
+- !private ["s7CVarArgP", "email"]
+- ["s7CVarArgP", "encode"]
+- ["s7CVarArgP", "encodeWithCoder"]
+- !private ["s7CVarArgP", "firstName"]
+- !private ["s7CVarArgP", "hashCode"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "kSecDigestSHA2"]
+- !private ["s7CVarArgP", "kSecTransformInputAttributeName"]
+- !private ["s7CVarArgP", "lastName"]
+- !private ["s7CVarArgP", "localizedName"]
+- !private ["s7CVarArgP", "passwords"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "sha256"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "truncatingRemainder"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "data"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "toInt"]
+- !private ["s10CollectionP", "withUnsafeBytes"]
+- !private ["s10ComparableP", "data"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "pointee"]
+- !private ["s10ComparableP", "truncatingRemainder"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "Host"]
+- !private ["s28CustomDebugStringConvertibleP", "SecDigestTransformCreate"]
+- !private ["s28CustomDebugStringConvertibleP", "SecTransformExecute"]
+- !private ["s28CustomDebugStringConvertibleP", "SecTransformSetAttribute"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "User"]
+- !private ["s28CustomDebugStringConvertibleP", "authenticator"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "decodeObject"]
+- !private ["s28CustomDebugStringConvertibleP", "deviceID"]
+- !private ["s28CustomDebugStringConvertibleP", "deviceName"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- ["s28CustomDebugStringConvertibleP", "encode"]
+- ["s28CustomDebugStringConvertibleP", "encodeWithCoder"]
+- !private ["s28CustomDebugStringConvertibleP", "firstName"]
+- !private ["s28CustomDebugStringConvertibleP", "hashCode"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "kSecDigestSHA2"]
+- !private ["s28CustomDebugStringConvertibleP", "kSecTransformInputAttributeName"]
+- !private ["s28CustomDebugStringConvertibleP", "lastName"]
+- !private ["s28CustomDebugStringConvertibleP", "localizedName"]
+- !private ["s28CustomDebugStringConvertibleP", "passwords"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "sha256"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "toInt"]
+- !private ["s28CustomDebugStringConvertibleP", "truncatingRemainder"]
+- !private ["s28CustomDebugStringConvertibleP", "withUnsafeBytes"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "data"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s29CustomPlaygroundQuickLookableP", "truncatingRemainder"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "toInt"]
+- !private ["s17CustomReflectableP", "truncatingRemainder"]
+- !private ["s17CustomReflectableP", "withUnsafeBytes"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "Host"]
+- !private ["s23CustomStringConvertibleP", "SecDigestTransformCreate"]
+- !private ["s23CustomStringConvertibleP", "SecTransformExecute"]
+- !private ["s23CustomStringConvertibleP", "SecTransformSetAttribute"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "User"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "authenticator"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "decodeObject"]
+- !private ["s23CustomStringConvertibleP", "deviceID"]
+- !private ["s23CustomStringConvertibleP", "deviceName"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- ["s23CustomStringConvertibleP", "encode"]
+- ["s23CustomStringConvertibleP", "encodeWithCoder"]
+- !private ["s23CustomStringConvertibleP", "firstName"]
+- !private ["s23CustomStringConvertibleP", "hashCode"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "kSecDigestSHA2"]
+- !private ["s23CustomStringConvertibleP", "kSecTransformInputAttributeName"]
+- !private ["s23CustomStringConvertibleP", "lastName"]
+- !private ["s23CustomStringConvertibleP", "localizedName"]
+- !private ["s23CustomStringConvertibleP", "passwords"]
+- !private ["s23CustomStringConvertibleP", "sha256"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "toInt"]
+- !private ["s23CustomStringConvertibleP", "truncatingRemainder"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["s23CustomStringConvertibleP", "withUnsafeBytes"]
+- ["s23CustomStringConvertibleP", ""]
+- ["10Foundation4DataV", "Int"]
+- ["10Foundation4DataV", "toInt"]
+- !private ["10Foundation4DataV", "withUnsafeBytes"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "data"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "toInt"]
+- !private ["s9DecodableP", "truncatingRemainder"]
+- !private ["s9DecodableP", "withUnsafeBytes"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["Sd", "init"]
+- !private ["Sd", "truncatingRemainder"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "data"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "toInt"]
+- !private ["s9EncodableP", "truncatingRemainder"]
+- !private ["s9EncodableP", "withUnsafeBytes"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["s9EquatableP", "Double"]
+- !private ["s9EquatableP", "Host"]
+- !private ["s9EquatableP", "SecDigestTransformCreate"]
+- !private ["s9EquatableP", "SecTransformExecute"]
+- !private ["s9EquatableP", "SecTransformSetAttribute"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "User"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "authenticator"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "data"]
+- !private ["s9EquatableP", "decodeObject"]
+- !private ["s9EquatableP", "deviceID"]
+- !private ["s9EquatableP", "deviceName"]
+- !private ["s9EquatableP", "email"]
+- ["s9EquatableP", "encode"]
+- ["s9EquatableP", "encodeWithCoder"]
+- !private ["s9EquatableP", "firstName"]
+- !private ["s9EquatableP", "hashCode"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "kSecDigestSHA2"]
+- !private ["s9EquatableP", "kSecTransformInputAttributeName"]
+- !private ["s9EquatableP", "lastName"]
+- !private ["s9EquatableP", "localizedName"]
+- !private ["s9EquatableP", "passwords"]
+- !private ["s9EquatableP", "pointee"]
+- !private ["s9EquatableP", "sha256"]
+- !private ["s9EquatableP", "toInt"]
+- !private ["s9EquatableP", "truncatingRemainder"]
+- !private ["s9EquatableP", "utf8"]
+- !private ["s9EquatableP", "withUnsafeBytes"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "truncatingRemainder"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "truncatingRemainder"]
+- !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s13FloatingPointP", "truncatingRemainder"]
+- !private ["s8HashableP", "Double"]
+- !private ["s8HashableP", "Host"]
+- !private ["s8HashableP", "SecDigestTransformCreate"]
+- !private ["s8HashableP", "SecTransformExecute"]
+- !private ["s8HashableP", "SecTransformSetAttribute"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "User"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "authenticator"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "data"]
+- !private ["s8HashableP", "decodeObject"]
+- !private ["s8HashableP", "deviceID"]
+- !private ["s8HashableP", "deviceName"]
+- !private ["s8HashableP", "email"]
+- ["s8HashableP", "encode"]
+- ["s8HashableP", "encodeWithCoder"]
+- !private ["s8HashableP", "firstName"]
+- !private ["s8HashableP", "hashCode"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "kSecDigestSHA2"]
+- !private ["s8HashableP", "kSecTransformInputAttributeName"]
+- !private ["s8HashableP", "lastName"]
+- !private ["s8HashableP", "localizedName"]
+- !private ["s8HashableP", "passwords"]
+- !private ["s8HashableP", "pointee"]
+- !private ["s8HashableP", "sha256"]
+- !private ["s8HashableP", "toInt"]
+- !private ["s8HashableP", "truncatingRemainder"]
+- !private ["s8HashableP", "utf8"]
+- !private ["s8HashableP", "withUnsafeBytes"]
+- ["s8HashableP", ""]
+- !private ["So4HostC", "current"]
+- !private ["So4HostC", "localizedName"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "truncatingRemainder"]
+- !private ["s10MirrorPathP", "data"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "toInt"]
+- !private ["s17MutableCollectionP", "withUnsafeBytes"]
+- !private ["So7NSCoderC", "decodeObject"]
+- !private ["So7NSCoderC", "encode"]
+- !private ["So8NSCodingP", "Double"]
+- !private ["So8NSCodingP", "Host"]
+- !private ["So8NSCodingP", "SecDigestTransformCreate"]
+- !private ["So8NSCodingP", "SecTransformExecute"]
+- !private ["So8NSCodingP", "SecTransformSetAttribute"]
+- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "User"]
+- !private ["So8NSCodingP", "authenticator"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So8NSCodingP", "deviceID"]
+- !private ["So8NSCodingP", "deviceName"]
+- !private ["So8NSCodingP", "email"]
+- ["So8NSCodingP", "encode"]
+- ["So8NSCodingP", "encodeWithCoder"]
+- !private ["So8NSCodingP", "firstName"]
+- !private ["So8NSCodingP", "hashCode"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "kSecDigestSHA2"]
+- !private ["So8NSCodingP", "kSecTransformInputAttributeName"]
+- !private ["So8NSCodingP", "lastName"]
+- !private ["So8NSCodingP", "passwords"]
+- !private ["So8NSCodingP", "sha256"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "data"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "data"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "data"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "CFTypeRef"]
+- !private ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "Host"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSCoder"]
+- !private ["So8NSObjectC", "SecDigestTransformCreate"]
+- !private ["So8NSObjectC", "SecTransformExecute"]
+- !private ["So8NSObjectC", "SecTransformSetAttribute"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "User"]
+- ["So8NSObjectC", "authenticator"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "decodeObject"]
+- ["So8NSObjectC", "deviceID"]
+- ["So8NSObjectC", "deviceName"]
+- ["So8NSObjectC", "email"]
+- ["So8NSObjectC", "encode"]
+- ["So8NSObjectC", "encodeWithCoder"]
+- ["So8NSObjectC", "firstName"]
+- ["So8NSObjectC", "getPassword"]
+- ["So8NSObjectC", "hashCode"]
+- ["So8NSObjectC", "hashIndex"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "kSecDigestSHA2"]
+- !private ["So8NSObjectC", "kSecTransformInputAttributeName"]
+- ["So8NSObjectC", "lastName"]
+- !private ["So8NSObjectC", "localizedName"]
+- ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "passwords"]
+- ["So8NSObjectC", "sha256"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "Double"]
+- !private ["So16NSObjectProtocolP", "Host"]
+- !private ["So16NSObjectProtocolP", "SecDigestTransformCreate"]
+- !private ["So16NSObjectProtocolP", "SecTransformExecute"]
+- !private ["So16NSObjectProtocolP", "SecTransformSetAttribute"]
+- !private ["So16NSObjectProtocolP", "String"]
+- !private ["So16NSObjectProtocolP", "User"]
+- !private ["So16NSObjectProtocolP", "authenticator"]
+- !private ["So16NSObjectProtocolP", "current"]
+- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So16NSObjectProtocolP", "decodeObject"]
+- !private ["So16NSObjectProtocolP", "deviceID"]
+- !private ["So16NSObjectProtocolP", "deviceName"]
+- !private ["So16NSObjectProtocolP", "email"]
+- ["So16NSObjectProtocolP", "encode"]
+- ["So16NSObjectProtocolP", "encodeWithCoder"]
+- !private ["So16NSObjectProtocolP", "firstName"]
+- !private ["So16NSObjectProtocolP", "hashCode"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "kSecDigestSHA2"]
+- !private ["So16NSObjectProtocolP", "kSecTransformInputAttributeName"]
+- !private ["So16NSObjectProtocolP", "lastName"]
+- !private ["So16NSObjectProtocolP", "localizedName"]
+- !private ["So16NSObjectProtocolP", "passwords"]
+- !private ["So16NSObjectProtocolP", "sha256"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So19NSPasteboardReadingP", "data"]
+- !private ["So19NSPasteboardReadingP", "init"]
+- !private ["So19NSPasteboardWritingP", "data"]
+- !private ["So19NSPasteboardWritingP", "init"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "data"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "truncatingRemainder"]
+- !private ["s22RandomAccessCollectionP", "toInt"]
+- !private ["s22RandomAccessCollectionP", "withUnsafeBytes"]
+- !private ["s26RangeReplaceableCollectionP", "data"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "toInt"]
+- !private ["s26RangeReplaceableCollectionP", "withUnsafeBytes"]
+- !private ["s16RawRepresentableP", "utf8"]
+- !private ["10Foundation20ReferenceConvertibleP", "toInt"]
+- !private ["10Foundation20ReferenceConvertibleP", "withUnsafeBytes"]
+- !private ["s8SequenceP", "data"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "toInt"]
+- !private ["s8SequenceP", "withUnsafeBytes"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "truncatingRemainder"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "pointee"]
+- !private ["s10StrideableP", "truncatingRemainder"]
+- !private ["SS", "data"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "data"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "data"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "data"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["SP", "pointee"]
+- !private ["13astra_desktop4UserC", "CFTypeRef"]
+- !private ["13astra_desktop4UserC", "Data"]
+- ["13astra_desktop4UserC", "Double"]
+- !private ["13astra_desktop4UserC", "Host"]
+- ["13astra_desktop4UserC", "Int"]
+- ["13astra_desktop4UserC", "NSCoder"]
+- !private ["13astra_desktop4UserC", "SecDigestTransformCreate"]
+- !private ["13astra_desktop4UserC", "SecTransformExecute"]
+- !private ["13astra_desktop4UserC", "SecTransformSetAttribute"]
+- ["13astra_desktop4UserC", "String"]
+- !private ["13astra_desktop4UserC", "User"]
+- ["13astra_desktop4UserC", "authenticator"]
+- ["13astra_desktop4UserC", "deinit"]
+- ["13astra_desktop4UserC", "deviceID"]
+- ["13astra_desktop4UserC", "deviceName"]
+- ["13astra_desktop4UserC", "email"]
+- ["13astra_desktop4UserC", "encode"]
+- ["13astra_desktop4UserC", "encodeWithCoder"]
+- ["13astra_desktop4UserC", "firstName"]
+- ["13astra_desktop4UserC", "getPassword"]
+- ["13astra_desktop4UserC", "hashCode"]
+- ["13astra_desktop4UserC", "hashIndex"]
+- ["13astra_desktop4UserC", "init"]
+- !private ["13astra_desktop4UserC", "kSecDigestSHA2"]
+- !private ["13astra_desktop4UserC", "kSecTransformInputAttributeName"]
+- ["13astra_desktop4UserC", "lastName"]
+- ["13astra_desktop4UserC", "name"]
+- ["13astra_desktop4UserC", "passwords"]
+- ["13astra_desktop4UserC", "sha256"]
+- !private ["s23_BidirectionalIndexableP", "data"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "toInt"]
+- !private ["s23_BidirectionalIndexableP", "withUnsafeBytes"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "truncatingRemainder"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "truncatingRemainder"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "truncatingRemainder"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "truncatingRemainder"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "data"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "data"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "data"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "toInt"]
+- !private ["s10_IndexableP", "withUnsafeBytes"]
+- !private ["s14_IndexableBaseP", "data"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "toInt"]
+- !private ["s14_IndexableBaseP", "withUnsafeBytes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Host"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SecDigestTransformCreate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SecTransformExecute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SecTransformSetAttribute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "User"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authenticator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "decodeObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "encodeWithCoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hashCode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kSecDigestSHA2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kSecTransformInputAttributeName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lastName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "passwords"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sha256"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "toInt"]
+- !private ["s17_MutableIndexableP", "withUnsafeBytes"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "toInt"]
+- !private ["s21_ObjectiveCBridgeableP", "truncatingRemainder"]
+- !private ["s21_ObjectiveCBridgeableP", "withUnsafeBytes"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s22_RandomAccessIndexableP", "toInt"]
+- !private ["s22_RandomAccessIndexableP", "withUnsafeBytes"]
+- !private ["s26_RangeReplaceableIndexableP", "data"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "toInt"]
+- !private ["s26_RangeReplaceableIndexableP", "withUnsafeBytes"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "pointee"]
+- !private ["s11_StrideableP", "truncatingRemainder"]
+- !private ["s16_SwiftStringViewP", "data"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation4DataV"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "Sd"
+- !private "s9EncodableP"
+- !private "SS10FoundationE8EncodingV"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "So4HostC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So7NSCoderC"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "SP"
+- "13astra_desktop4UserC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAES.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+APNS.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub-umbrella.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNServiceData.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Subscribe.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Presence.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Time.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Core.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+State.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+Publish.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientInformation.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/NSURLSessionConfiguration+PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNConfiguration.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+ChannelGroup.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeChannelsOrGroupsAPIBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDeleteMessageAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishSizeAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamModificationAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNUnsubscribeChannelsOrGroupsAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHeartbeatAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStateAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStreamAuditAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryAPICallBuilder.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNLLogger.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNObjectEventListener.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorCodes.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNDefines.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStructures.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscriberResults.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNSubscribeStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNClientStateUpdateStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPublishStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNErrorStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAcknowledgmentStatus.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNTimeResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupClientStateResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNAPNSEnabledChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupChannelsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNChannelGroupsResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceGlobalHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceChannelGroupHereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNPresenceWhereNowResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PNHistoryResult.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Headers/PubNub+History.h"
+- "/Users/sohamkale/Documents/Astra/astra-desktop/DerivedData/astra-desktop/Build/Products/Debug/PubNub/PubNub.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "74faeec2edc46b011d00aae98e756b52"

@@ -1,0 +1,30 @@
+import ActionConstants from 'constants/ActionConstants'
+import Dispatcher from 'dispatcher/Dispatcher'
+
+class CurrentUserActions {
+  standardAction(action, args) { 
+    action.method(Object.keys(args).map((key) => 
+      args[key])).then((response) => {
+        Dispatcher.dispatch(Object.assign(
+          response, args, {actiontype: action.value}));
+    })
+  }
+
+  login(email, password) {
+    this.standardAction(ActionConstants.LOGIN, {email: email, password: password})
+  }
+
+  logout() {
+    this.standardAction(ActionConstants.LOGOUT, {})
+  }
+
+  addProject(projectID, deviceID) {
+    this.standardAction(ActionConstants.ADD_PROJECT, {projectID: projectID, deviceID: deviceID})
+  }
+
+  removeProject(projectID, deviceID) {
+    this.standardAction(ActionConstants.REMOVE_PROJECT, {projectID: projectID, deviceID: deviceID})
+  }
+}
+
+export default CurrentUserActions;

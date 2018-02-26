@@ -1,0 +1,145 @@
+<scheduler_reply>
+<scheduler_version>702</scheduler_version>
+<dont_use_dcf/>
+<master_url>http://www.rnaworld.de/rnaworld/</master_url>
+<request_delay>3636.000000</request_delay>
+<message priority="low">Project has no tasks available</message>
+<project_name>RNA World</project_name>
+<next_rpc_delay>18000.000000</next_rpc_delay>
+<userid>130926</userid>
+<user_name>SohamKale</user_name>
+<user_total_credit>0.000000</user_total_credit>
+<user_expavg_credit>0.000000</user_expavg_credit>
+<user_create_time>1519266398</user_create_time>
+<email_hash>83c110000c87aa8c6f7cac2629551176</email_hash>
+<cross_project_id>2b19f53cdca8922115a3d17345ab2ec1</cross_project_id>
+
+<host_total_credit>0.000000</host_total_credit>
+<host_expavg_credit>0.000000</host_expavg_credit>
+<host_venue></host_venue>
+<host_create_time>1519266486</host_create_time>
+<team_name></team_name>
+<verify_files_on_app_start/>
+<no_rsc_apps>NVIDIA</no_rsc_apps>
+<no_rsc_apps>ATI</no_rsc_apps>
+<no_rsc_apps>intel_gpu</no_rsc_apps>
+<rss_feeds>
+    <rss_feed>
+        <url>http://www.rnaworld.de/rnaworld/notices.php?userid=130926&amp;auth=130926_5ec5709c8ff395359a7fbbe733117e19</url>
+        <poll_interval>86400</poll_interval>
+    </rss_feed>
+</rss_feeds>
+<gui_urls>
+    <gui_url>
+        <name>My account</name>
+        <description>View your account information and credit totals</description>
+        <url>http://www.rnaworld.de/rnaworld/home.php</url>
+    </gui_url>
+    
+    <gui_url>
+        <name>Forum</name>
+        <description>Get help about RNA World</description>
+        <url>http://www.rechenkraft.net/phpBB/viewforum.php?f=74</url>
+    </gui_url>
+    <gui_url>
+        <name>Chat</name>
+        <description>Chat with other user about distributed computing</description>
+        <url>http://www.rechenkraft.net/wiki/index.php?title=Rechenkraft:Chat</url>
+    </gui_url>
+    <gui_url>
+        <name>Rechenkraft.net</name>
+        <description>Mehr Projekte</description>
+        <url>http://www.rechenkraft.net</url>
+    </gui_url>
+    <gui_url>
+        <name>- Donation -</name>
+        <description>Make a donation for the running costs</description>
+        <url>http://www.rnaworld.de/rnaworld/donations.php</url>
+    </gui_url>
+</gui_urls>
+
+<file_info>
+    <name>stat_icon_01.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/stat_icon_01.png</url>
+    <md5_cksum>fd317e48057a4f587b2a8b02a3a9aea4</md5_cksum>
+</file_info>
+<file_info>
+    <name>rkn.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/rkn.png</url>
+    <md5_cksum>1940d60abe4405e2c32cabf71c45dcdb</md5_cksum>
+</file_info>
+<file_info>
+    <name>MW-6SRNAFragment_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/MW-6SRNAFragment_mini_txt.png</url>
+    <md5_cksum>54eeed67199dd327c34d44a390df2190</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</url>
+    <md5_cksum>f2c81be77ca723b7f9eabdaa10b19651</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</url>
+    <md5_cksum>7f10da7a04944d69e15583dcdeb2ee1a</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</url>
+    <md5_cksum>6988a9452855404c01e09f0642e1f800</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</url>
+    <md5_cksum>a3ca447bfda28be98cb50a6aba14074f</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</url>
+    <md5_cksum>6db33aa67e5bebb0b401d235cfb27ea6</md5_cksum>
+</file_info>
+<file_info>
+    <name>PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</name>
+    <url>http://www.rnaworld.de/rnaworld/download/images/PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</url>
+    <md5_cksum>6e086f4176a36365f1232852f00d1d14</md5_cksum>
+</file_info>
+<project_files>
+    <file_ref>
+        <file_name>stat_icon_01.png</file_name>
+        <open_name>stat_icon</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>rkn.png</file_name>
+        <open_name>slideshow_01</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>MW-6SRNAFragment_mini_txt.png</file_name>
+        <open_name>slideshow_02</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</file_name>
+        <open_name>slideshow_03</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</file_name>
+        <open_name>slideshow_04</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</file_name>
+        <open_name>slideshow_05</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</file_name>
+        <open_name>slideshow_06</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</file_name>
+        <open_name>slideshow_07</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</file_name>
+        <open_name>slideshow_08</open_name>
+    </file_ref>
+</project_files>
+
+</scheduler_reply>

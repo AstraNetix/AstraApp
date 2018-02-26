@@ -1,0 +1,101 @@
+$mainColor: #3483ff;
+$secColor: #cd0fd8;
+
+@mixin skewY($val){
+  -webkit-transform: skewY($val);
+  -moz-transform: skewY($val);
+  -ms-transform: skewY($val);
+  -o-transform: skewY($val);
+  transform: skewY($val);
+}
+@mixin skewX($val){
+  -webkit-transform: skewX($val);
+  -moz-transform: skewX($val);
+  -ms-transform: skewX($val);
+  -o-transform: skewX($val);
+  transform: skewX($val);
+}
+@mixin border-radius($val){
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}
+@mixin rotateZ($val){
+  -webkit-transform:rotate($val);
+  -moz-transform:rotate($val);
+  -o-transform:rotate($val);
+  -ms-transform:rotate($val);
+  transform:rotate($val);
+}
+@mixin rotateY($val){
+  -webkit-transform:rotateY($val);
+  -moz-transform:rotateY($val);
+  -o-transform:rotateY($val);
+  -ms-transform:rotateY($val);
+  transform:rotateY($val);
+}
+@mixin rotateX($val){
+  -webkit-transform:rotateX($val);
+  -moz-transform:rotateX($val);
+  -o-transform:rotateX($val);
+  -ms-transform:rotateX($val);
+  transform:rotateX($val);
+}
+@mixin scaleX($val){
+  -webkit-transform:scaleX($val);
+  -moz-transform:scaleX($val);
+  -o-transform:scaleX($val);
+  -ms-transform:scaleX($val);
+  transform:scaleX($val);
+}
+@mixin scale($val){
+  -webkit-transform:scale($val);
+  -moz-transform:scale($val);
+  -o-transform:scale($val);
+  -ms-transform:scale($val);
+  transform:scale($val);
+}
+@mixin translateY($val){
+  -webkit-transform:translateY($val);
+  -moz-transform:translateY($val);
+  -o-transform:translateY($val);
+  -ms-transform:translateY($val);
+  transform:translateY($val);
+}
+@mixin translateX($val){
+  -webkit-transform:translateX($val);
+  -moz-transform:translateX($val);
+  -o-transform:translateX($val);
+  -ms-transform:translateX($val);
+  transform:translateX($val);
+}
+@mixin transition($for: all , $time: 0.5s, $func: ease-in-out, $delay: 0s){
+  -webkit-transition: $for $time $func $delay;
+  -moz-transition: $for $time $func $delay;
+  -o-transition: $for $time $func $delay;
+  transition: $for $time $func $delay;
+}
+@mixin transform($value){
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+@mixin transform-origin($value){
+  -webkit-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -o-transform-origin: $value;
+  -ms-transform-origin: $value;
+  transform-origin: $value;
+}
+@mixin shadow($val){
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -o-box-shadow: $val;
+  box-shadow: $val;
+}
+@mixin backgroundImg($url , $x: center , $y: center, $position: scroll){
+  background: url($url) $x $y no-repeat $position;
+  background-size: cover;
+}

@@ -1,0 +1,36 @@
+<account>
+    <master_url>http://www.rnaworld.de/rnaworld/</master_url>
+    <authenticator>bc9e417c01b840e552dbfe8a6f802699</authenticator>
+    <project_name>RNA World</project_name>
+<project_preferences>
+</project_preferences>
+<gui_urls>
+
+    <gui_url>
+        <name>My account</name>
+        <description>View your account information and credit totals</description>
+        <url>http://www.rnaworld.de/rnaworld/home.php</url>
+    </gui_url>
+    
+    <gui_url>
+        <name>Forum</name>
+        <description>Get help about RNA World</description>
+        <url>http://www.rechenkraft.net/phpBB/viewforum.php?f=74</url>
+    </gui_url>
+    <gui_url>
+        <name>Chat</name>
+        <description>Chat with other user about distributed computing</description>
+        <url>http://www.rechenkraft.net/wiki/index.php?title=Rechenkraft:Chat</url>
+    </gui_url>
+    <gui_url>
+        <name>Rechenkraft.net</name>
+        <description>Mehr Projekte</description>
+        <url>http://www.rechenkraft.net</url>
+    </gui_url>
+    <gui_url>
+        <name>- Donation -</name>
+        <description>Make a donation for the running costs</description>
+        <url>http://www.rnaworld.de/rnaworld/donations.php</url>
+    </gui_url>
+</gui_urls>
+</account>

@@ -1,0 +1,1731 @@
+<client_state>
+<host_info>
+    <timezone>-28800</timezone>
+    <domain_name>Sohams-MacBook-Pro.local</domain_name>
+    <ip_addr>10.0.0.58</ip_addr>
+    <host_cpid>2993a3aa9ab71e204d9406817095749d</host_cpid>
+    <p_ncpus>4</p_ncpus>
+    <p_vendor>GenuineIntel</p_vendor>
+    <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
+    <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
+    <p_fpops>4028302670.332528</p_fpops>
+    <p_iops>11755674783.967611</p_iops>
+    <p_membw>1000000000.000000</p_membw>
+    <p_calculated>1519203679.804676</p_calculated>
+    <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
+    <m_nbytes>8589934592.000000</m_nbytes>
+    <m_cache>1000000.000000</m_cache>
+    <m_swap>16704364544.000000</m_swap>
+    <d_total>250035572736.000000</d_total>
+    <d_free>9037389824.000000</d_free>
+    <os_name>Darwin</os_name>
+    <os_version>17.0.0</os_version>
+    <n_usable_coprocs>1</n_usable_coprocs>
+    <product_name>MacBookPro13,1</product_name>
+    <virtualbox_version>5.2.6r120293</virtualbox_version>
+    <coprocs>
+<coproc_intel_gpu>
+   <count>1</count>
+   <name>Intel(R) Iris(TM) Graphics 540</name>
+   <available_ram>1610612736.000000</available_ram>
+   <have_opencl>1</have_opencl>
+   <peak_flops>384000000000.000000</peak_flops>
+   <version></version>
+   <coproc_opencl>
+      <name>Intel(R) Iris(TM) Graphics 540</name>
+      <vendor>Intel Inc.</vendor>
+      <vendor_id>16925952</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>0</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>1</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_image2d_from_buffer cl_khr_gl_depth_images cl_khr_depth_images cl_khr_3d_image_writes</extensions>
+      <global_mem_size>1610612736</global_mem_size>
+      <local_mem_size>65536</local_mem_size>
+      <max_clock_frequency>1000</max_clock_frequency>
+      <max_compute_units>48</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2</opencl_device_version>
+      <opencl_driver_version>1.2(Aug 24 2017 22:22:18)</opencl_driver_version>
+   </coproc_opencl>
+</coproc_intel_gpu>
+    </coprocs>
+<opencl_cpu_prop>
+   <platform_vendor>Apple</platform_vendor>
+   <opencl_cpu_info>
+      <name>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz</name>
+      <vendor>Intel</vendor>
+      <vendor_id>4294967295</vendor_id>
+      <available>1</available>
+      <half_fp_config>0</half_fp_config>
+      <single_fp_config>191</single_fp_config>
+      <double_fp_config>63</double_fp_config>
+      <endian_little>1</endian_little>
+      <execution_capabilities>3</execution_capabilities>
+      <extensions>cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_APPLE_fp64_basic_ops cl_APPLE_fixed_alpha_channel_orders cl_APPLE_biased_fixed_point_image_formats cl_APPLE_command_queue_priority</extensions>
+      <global_mem_size>8589934592</global_mem_size>
+      <local_mem_size>32768</local_mem_size>
+      <max_clock_frequency>2000</max_clock_frequency>
+      <max_compute_units>4</max_compute_units>
+      <nv_compute_capability_major>0</nv_compute_capability_major>
+      <nv_compute_capability_minor>0</nv_compute_capability_minor>
+      <amd_simd_per_compute_unit>0</amd_simd_per_compute_unit>
+      <amd_simd_width>0</amd_simd_width>
+      <amd_simd_instruction_width>0</amd_simd_instruction_width>
+      <opencl_platform_version>OpenCL 1.2 (Aug 23 2017 16:35:41)</opencl_platform_version>
+      <opencl_device_version>OpenCL 1.2</opencl_device_version>
+      <opencl_driver_version>1.1</opencl_driver_version>
+   </opencl_cpu_info>
+</opencl_cpu_prop>
+</host_info>
+<time_stats>
+    <on_frac>0.325473</on_frac>
+    <connected_frac>0.000000</connected_frac>
+    <cpu_and_network_available_frac>0.871546</cpu_and_network_available_frac>
+    <active_frac>0.871546</active_frac>
+    <gpu_active_frac>0.866541</gpu_active_frac>
+    <client_start_time>1519323454.656784</client_start_time>
+    <total_start_time>1516005359.995951</total_start_time>
+    <total_duration>125031.887337</total_duration>
+    <total_active_duration>6043.132444</total_active_duration>
+    <total_gpu_active_duration>1178.866123</total_gpu_active_duration>
+    <previous_uptime>283002.501231</previous_uptime>
+    <last_update>1519606450.615194</last_update>
+</time_stats>
+<net_stats>
+    <bwup>74748.361481</bwup>
+    <avg_up>5033091486.198261</avg_up>
+    <avg_time_up>1519595390.260760</avg_time_up>
+    <bwdown>5593872.618359</bwdown>
+    <avg_down>95219419273.748688</avg_down>
+    <avg_time_down>1519521467.944675</avg_time_down>
+</net_stats>
+<project>
+    <master_url>http://www.rnaworld.de/rnaworld/</master_url>
+    <project_name>RNA World</project_name>
+    <symstore></symstore>
+    <user_name>SohamKale</user_name>
+    <team_name></team_name>
+    <host_venue></host_venue>
+    <email_hash>83c110000c87aa8c6f7cac2629551176</email_hash>
+    <cross_project_id>2b19f53cdca8922115a3d17345ab2ec1</cross_project_id>
+    <external_cpid></external_cpid>
+    <cpid_time>1519266398.000000</cpid_time>
+    <user_total_credit>0.000000</user_total_credit>
+    <user_expavg_credit>0.000000</user_expavg_credit>
+    <user_create_time>1519266398.000000</user_create_time>
+    <rpc_seqno>21</rpc_seqno>
+    <userid>130926</userid>
+    <teamid>0</teamid>
+    <hostid>65724</hostid>
+    <host_total_credit>0.000000</host_total_credit>
+    <host_expavg_credit>0.000000</host_expavg_credit>
+    <host_create_time>1519266486.000000</host_create_time>
+    <nrpc_failures>0</nrpc_failures>
+    <master_fetch_failures>0</master_fetch_failures>
+    <min_rpc_time>1519599027.261024</min_rpc_time>
+    <next_rpc_time>1519613391.261024</next_rpc_time>
+    <rec>0.000000</rec>
+    <rec_time>1519521493.186525</rec_time>
+    <resource_share>100.000000</resource_share>
+    <desired_disk_usage>0.000000</desired_disk_usage>
+    <duration_correction_factor>1.000000</duration_correction_factor>
+    <sched_rpc_pending>0</sched_rpc_pending>
+    <send_time_stats_log>0</send_time_stats_log>
+    <send_job_log>0</send_job_log>
+    <njobs_success>0</njobs_success>
+    <njobs_error>0</njobs_error>
+    <elapsed_time>0.000000</elapsed_time>
+    <last_rpc_time>1519595391.261024</last_rpc_time>
+    <dont_use_dcf/>
+    <verify_files_on_app_start/>
+    <rsc_backoff_time>
+        <name>CPU</name>
+        <value>0.000000</value>
+    </rsc_backoff_time>
+    <rsc_backoff_interval>
+        <name>CPU</name>
+        <value>0.000000</value>
+    </rsc_backoff_interval>
+    <rsc_backoff_time>
+        <name>intel_gpu</name>
+        <value>0.000000</value>
+    </rsc_backoff_time>
+    <rsc_backoff_interval>
+        <name>intel_gpu</name>
+        <value>0.000000</value>
+    </rsc_backoff_interval>
+    <no_rsc_apps>intel_gpu</no_rsc_apps>
+    <scheduler_url>http://www.rnaworld.de/rnaworld_cgi/cgi</scheduler_url>
+    <code_sign_key>
+1024
+b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
+60996807ca858fa50b93f062da0f892e4c24b5dc50d20f5c51c297ba5dff8f74
+0fb032447d23587d107f99607d412e0e5e7f7c0983a3cb0dc26aa97c19409f41
+6cbb8a28a0d9d9c236fa5c4eee6e9fda9820f9c13d6db9720f455e9a7d8ef3bf
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000010001
+.
+</code_sign_key>
+    <cpu_ec>0.000000</cpu_ec>
+    <cpu_time>0.000000</cpu_time>
+    <gpu_ec>0.000000</gpu_ec>
+    <gpu_time>0.000000</gpu_time>
+    <disk_usage>207471.000000</disk_usage>
+    <disk_share>4927470799.680000</disk_share>
+</project>
+<file>
+    <name>stat_icon_01.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>fd317e48057a4f587b2a8b02a3a9aea4</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/stat_icon_01.png</download_url>
+</file>
+<file>
+    <name>rkn.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>1940d60abe4405e2c32cabf71c45dcdb</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/rkn.png</download_url>
+</file>
+<file>
+    <name>MW-6SRNAFragment_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>54eeed67199dd327c34d44a390df2190</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/MW-6SRNAFragment_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>f2c81be77ca723b7f9eabdaa10b19651</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>7f10da7a04944d69e15583dcdeb2ee1a</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>6988a9452855404c01e09f0642e1f800</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>a3ca447bfda28be98cb50a6aba14074f</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>6db33aa67e5bebb0b401d235cfb27ea6</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</download_url>
+</file>
+<file>
+    <name>PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>6e086f4176a36365f1232852f00d1d14</md5_cksum>
+    <status>1</status>
+    <download_url>http://www.rnaworld.de/rnaworld/download/images/PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</download_url>
+</file>
+<project_files>
+    <file_ref>
+        <file_name>stat_icon_01.png</file_name>
+        <open_name>stat_icon</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>rkn.png</file_name>
+        <open_name>slideshow_01</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>MW-6SRNAFragment_mini_txt.png</file_name>
+        <open_name>slideshow_02</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1EGK_PMID-10864501_FourWayJunction_mini_txt.png</file_name>
+        <open_name>slideshow_03</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1Q8N_PMID-10617571_MalachiteGreenAptamer_mini_txt.png</file_name>
+        <open_name>slideshow_04</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1SJ3_PMID-15141216_HDVRibozyme_mini_txt.png</file_name>
+        <open_name>slideshow_05</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-1U9S_PMID-15459389_S-DomainA-TypeRNaseP_mini_txt.png</file_name>
+        <open_name>slideshow_06</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-2A2E_PMID-16113684_A-typeRNaseP_mini_txt.png</file_name>
+        <open_name>slideshow_07</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>PDB-2NZ4_PMID-17196404_GlmS-GlcN6P_mini_txt.png</file_name>
+        <open_name>slideshow_08</open_name>
+    </file_ref>
+</project_files>
+<project>
+    <master_url>http://setiathome.berkeley.edu/</master_url>
+    <project_name>SETI@home</project_name>
+    <symstore></symstore>
+    <user_name>SohamKale</user_name>
+    <team_name></team_name>
+    <host_venue></host_venue>
+    <email_hash>c5ee1245832291454787fdd3c797f125</email_hash>
+    <cross_project_id>ded576069eaf7a7250052b785bbf8fa0</cross_project_id>
+    <external_cpid>886268417f7e0b6f885f03492bcf1632</external_cpid>
+    <cpid_time>1519203522.000000</cpid_time>
+    <user_total_credit>0.000000</user_total_credit>
+    <user_expavg_credit>0.000000</user_expavg_credit>
+    <user_create_time>1519203522.000000</user_create_time>
+    <rpc_seqno>1</rpc_seqno>
+    <userid>10673740</userid>
+    <teamid>0</teamid>
+    <hostid>8467171</hostid>
+    <host_total_credit>0.000000</host_total_credit>
+    <host_expavg_credit>0.000000</host_expavg_credit>
+    <host_create_time>1519203657.000000</host_create_time>
+    <nrpc_failures>0</nrpc_failures>
+    <master_fetch_failures>0</master_fetch_failures>
+    <min_rpc_time>0.000000</min_rpc_time>
+    <next_rpc_time>0.000000</next_rpc_time>
+    <rec>15.527594</rec>
+    <rec_time>1519521493.186525</rec_time>
+    <resource_share>100.000000</resource_share>
+    <desired_disk_usage>0.000000</desired_disk_usage>
+    <duration_correction_factor>1.000000</duration_correction_factor>
+    <sched_rpc_pending>0</sched_rpc_pending>
+    <send_time_stats_log>0</send_time_stats_log>
+    <send_job_log>0</send_job_log>
+    <njobs_success>0</njobs_success>
+    <njobs_error>0</njobs_error>
+    <elapsed_time>18916.721422</elapsed_time>
+    <last_rpc_time>1519204003.875097</last_rpc_time>
+    <dont_use_dcf/>
+    <rsc_backoff_time>
+        <name>CPU</name>
+        <value>0.000000</value>
+    </rsc_backoff_time>
+    <rsc_backoff_interval>
+        <name>CPU</name>
+        <value>0.000000</value>
+    </rsc_backoff_interval>
+    <rsc_backoff_time>
+        <name>intel_gpu</name>
+        <value>0.000000</value>
+    </rsc_backoff_time>
+    <rsc_backoff_interval>
+        <name>intel_gpu</name>
+        <value>0.000000</value>
+    </rsc_backoff_interval>
+    <scheduler_url>http://setiboinc.ssl.berkeley.edu/sah_cgi/cgi</scheduler_url>
+    <code_sign_key>
+1024
+eb363c5c50af51976b50edeaf169274329a2c15721585e20694abd7d1eda7e22
+6c0d0b39836ffe044743efe4abdae0176f7433e308aea9f686338f944eef2d2a
+f9ad8e452579e9a641f0cf6fe4d636489c64c1a47dba985175cbfbda9ad459f8
+e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000010001
+.
+</code_sign_key>
+    <cpu_ec>247.074513</cpu_ec>
+    <cpu_time>26496.566369</cpu_time>
+    <gpu_ec>25.026509</gpu_ec>
+    <gpu_time>140.774117</gpu_time>
+    <disk_usage>24356329.000000</disk_usage>
+    <disk_share>4927470799.680000</disk_share>
+</project>
+<app>
+    <name>setiathome_v8</name>
+    <user_friendly_name>SETI@home v8</user_friendly_name>
+    <non_cpu_intensive>0</non_cpu_intensive>
+</app>
+<file>
+    <name>setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah</name>
+    <nbytes>4388088.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+667876df25b359aa934b6dceda827d531efa253d13aecf7b64fbd4098171748b
+c76db20fe11e13238bd258b867004893347b12702b42ed1391104c09d2401da1
+2022f67cb4177e58d992af22944a5284a64543a7a3e3e543e76d7a3bca46c7f9
+4c58203b6bd232143676df992bd10e82a20d584fae6b0e2a58c36ff52558178f
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah</download_url>
+</file>
+<file>
+    <name>MultiBeam_Kernels_r3321.cl</name>
+    <nbytes>159629.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+a4f6b8b47c43288ac3b7cebb3019fd761bf3c48546255576e54fa295f3c34e2b
+9f6312749fa3192b4b18df0d4d9874223a5c1ad7dd60263ed535948d87d909d4
+900539ab1a9fcd6daccec47e88fcfabe3472b50328de1f0b9e1c934504de0db6
+809a02bfd8fe7faff09ffceae971bf0f78785ac515a367e962808dc2bb4d2657
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/MultiBeam_Kernels_r3321.cl</download_url>
+</file>
+<file>
+    <name>MultiBeam_iGPU_config_8.00-opencl_intel_gpu_sah.xml</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+ae4bcd55e2df58a147b2547f200335ccc9797fb801857a1b0e4ddcf4ef3077c9
+b999780d903a4d94b1e7075f1dc4d74e1fdf7e1bbba3acce10c9c8fc9bb153b8
+3555894c0c7453794c403f6e8c7c3e654714ec37917efaae6f81a0386f89db76
+405f8cff5eecca704221a72ccdb7a1ae56d6134cb98ebbe5a75b82b7b92b3f03
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/MultiBeam_iGPU_config_8.00-opencl_intel_gpu_sah.xml</download_url>
+</file>
+<file>
+    <name>mb_cmdline-8.00-opencl_intel_gpu_sah.txt</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+ae4bcd55e2df58a147b2547f200335ccc9797fb801857a1b0e4ddcf4ef3077c9
+b999780d903a4d94b1e7075f1dc4d74e1fdf7e1bbba3acce10c9c8fc9bb153b8
+3555894c0c7453794c403f6e8c7c3e654714ec37917efaae6f81a0386f89db76
+405f8cff5eecca704221a72ccdb7a1ae56d6134cb98ebbe5a75b82b7b92b3f03
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/mb_cmdline-8.00-opencl_intel_gpu_sah.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.00-opencl_intel_gpu_sah_AUTHORS.txt</name>
+    <nbytes>958.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+ab1965a1e0797b3f0c327e88c579c9aefa4b25a588c4c646935b90a11d3e8e9a
+6ec4e32a1d2a29f78ad2905524ad8c833b350329c905d0a004e9169b04e493a0
+9842282aff871b155dfbfbc04e2fb0e23ccee9654f45d4f07b525b29f5008509
+80572ddc20959aca7de96376ee43518fff6fa250ae56b005ee4be7463540db38
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.00-opencl_intel_gpu_sah_AUTHORS.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.00-opencl_intel_gpu_sah_COPYING.txt</name>
+    <nbytes>17992.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+c0774560fd2b589aafeaaa360bc3f0eb0e9c1fad15bccd04c7a9158f96552bad
+1b36e47b709c65db43a3820a08def46a8a953adf6cb7777a5b01c96e1fe00ef8
+0cb27b910247ea561e9d32f6ac7033895cdc4b3ac5ed0f62c275439aca7f1579
+d35f3169f1299a8984cf6298dde01d252ebdfcc27191d316d18c9c0d8e4aad90
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.00-opencl_intel_gpu_sah_COPYING.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.00-opencl_intel_gpu_sah_COPYRIGHT.txt</name>
+    <nbytes>2037.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+8f133314fe569359bd489504353bb525cc756486af737eaa730f0312fb2242ce
+5b050633d3459ecde01ec48ca5ba43890f795655cd79589fd0f194f52d407602
+b0ad6d8a477d99c7b70a3ddbd940df14121cd273d151344535aa11c3f827c6c0
+fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.00-opencl_intel_gpu_sah_COPYRIGHT.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.00-opencl_intel_gpu_sah_README.txt</name>
+    <nbytes>2124.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+8aa8e849a5baead31c9e40980bb84e8a4186f9cca8835ec3656c64cd399ee551
+1edf26a8c611638cf963e274bc3134034723d353fe520bf2b1f122ff59fa2ba3
+3cd1ebe3acbfb4ddbe63a7f976ea5838ba505e0b7aef137caa8fb01759b76939
+938e29e88c710aeaf038d770ea7c559f22e80cd3df24a604d3df1f275a266cb8
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.00-opencl_intel_gpu_sah_README.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.00-opencl_intel_gpu_sah_darwin_README_OPENCL.txt</name>
+    <nbytes>7605.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+a74bd8b277adddcd4cbf18818b23a47b511fe388de2a86bcb854f1fa276dd527
+bdf3b30f2cab0f8feb7cc333b3b3bc662394d17df33116d5271b1d8c568eb9af
+d1061fc96ad3ed461e73ca3f4d4792e5eeacf7fac9e6e0f9a15ac289d50a1f06
+d006cd1628b5eac6dcc6b17ed2041c2aa5889e35a554bc7284b55768b264feef
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.00-opencl_intel_gpu_sah_darwin_README_OPENCL.txt</download_url>
+</file>
+<file>
+    <name>setiathome_8.03_x86_64-apple-darwin</name>
+    <nbytes>4058048.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+0a544e250b03774ba7de7246676b92e9c863bf4ad828f03d4311aab293f69326
+92ef6be9c5cc5c1c8dee0c26d88548971a37be2ba6171d4626dd4fe512534f09
+2332b2807e3a83313958f85319e144e799cabcf1fa91439a0138193f7a9593ff
+f5865e697ffc31cb95a0ed9e8f8f5e42869c8f35aca8005ebbc1e8aa4d092e53
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome_8.03_x86_64-apple-darwin</download_url>
+</file>
+<file>
+    <name>setigraphics_8.03_x86_64-apple-darwin</name>
+    <nbytes>345716.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+92e410ca964040ee4a91152f3f349423a900bb5ff9bbe8ba4169edbd952a9e78
+46b94b86714ac5166d288098d601587e15f4a2ef6ffae0812f65d29473614758
+23b6a7c25460728fc667d9bf44667a801aaadcc18bcb0e5534a5d97ec7f59e88
+795a802534d9db6b8abfeaf145adfaf4c466fa15812ae17f4822ffe1ab92f362
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setigraphics_8.03_x86_64-apple-darwin</download_url>
+</file>
+<file>
+    <name>bl_bkg_803.jpg</name>
+    <nbytes>356520.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+7c3842674565ce5e2e66f3f494990c1fcd2dd5ec831c24bc302fdb3ae72d084f
+dda1975ab562444450e59b403f483ec40411774b0ece91673c152aea2f2042bc
+9efdbc4f92522f0343af38dd05cba76ab56787cd77c90663fa6af7993fedfb55
+bc8ada1eb2bdd303cd5185f3b1939365bf1395ffe308cc4d07366b798a88e489
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/bl_bkg_803.jpg</download_url>
+</file>
+<file>
+    <name>bl_803.jpg</name>
+    <nbytes>13551.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+810de011982b18c145a23b8c18d3cd184303119d6fc4836140593f14e74d71dd
+678a1f83e22e8791e556529c15e6cc4d4324c51d88d70a0f49668acba1ba404b
+335f04ccf93f1077ad0bcb1cdd48e25f202b64b13b64b8fc711eb0171fe958c1
+29e77fa1cac6237f37b81ca448b066e987c77e708538d5cb86ba144ee9a66d66
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/bl_803.jpg</download_url>
+</file>
+<file>
+    <name>setiathome-8.03_AUTHORS.txt</name>
+    <nbytes>958.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+ab1965a1e0797b3f0c327e88c579c9aefa4b25a588c4c646935b90a11d3e8e9a
+6ec4e32a1d2a29f78ad2905524ad8c833b350329c905d0a004e9169b04e493a0
+9842282aff871b155dfbfbc04e2fb0e23ccee9654f45d4f07b525b29f5008509
+80572ddc20959aca7de96376ee43518fff6fa250ae56b005ee4be7463540db38
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.03_AUTHORS.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.03_COPYING.txt</name>
+    <nbytes>18332.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+12a1f5b8e33db1a7500d20b368534c03bf2bc144605bae84bf8bcf43c20d227d
+7b1b083e756487ac1587686fbf69714a90f764de14e5c61f1d668d5b55e7e262
+99c2e7088e8008348f38cdda6f43f2b614be133a3dff4982b5e4f6dc159f25c0
+ac1add4d09bad1404aad1ea6a701756cc8436f4750c2f987008b6ac528ef7fc3
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.03_COPYING.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.03_COPYRIGHT.txt</name>
+    <nbytes>2037.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+8f133314fe569359bd489504353bb525cc756486af737eaa730f0312fb2242ce
+5b050633d3459ecde01ec48ca5ba43890f795655cd79589fd0f194f52d407602
+b0ad6d8a477d99c7b70a3ddbd940df14121cd273d151344535aa11c3f827c6c0
+fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.03_COPYRIGHT.txt</download_url>
+</file>
+<file>
+    <name>setiathome-8.03_README.txt</name>
+    <nbytes>2124.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+8aa8e849a5baead31c9e40980bb84e8a4186f9cca8835ec3656c64cd399ee551
+1edf26a8c611638cf963e274bc3134034723d353fe520bf2b1f122ff59fa2ba3
+3cd1ebe3acbfb4ddbe63a7f976ea5838ba505e0b7aef137caa8fb01759b76939
+938e29e88c710aeaf038d770ea7c559f22e80cd3df24a604d3df1f275a266cb8
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome-8.03_README.txt</download_url>
+</file>
+<file>
+    <name>seti_803.jpg</name>
+    <nbytes>9714.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+2b34aba37fb11cc3dfea96a1ebf88cc5693a736cd93e7ad3497655df32a955fa
+334d5bbeb0f0d7415251c3bae8c43f2adefd767948ee83520572e325608d37ba
+6d1f0be7a41f49ccf4d1b6887e01896e4ea48784a08d677d6a990031885f155c
+23db293155110578fb347f3f808f38f359ddee70d827275928cab334daaafa56
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/seti_803.jpg</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>e0f010b19f91a463079603c540a74af2</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/21d/blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</download_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</name>
+    <nbytes>720434.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>d601a32cae4ae988e17b7bb861878f9b</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/242/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1_r3914912_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>arecibo_181.png</name>
+    <nbytes>52779.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>f9b65230a594098d183d2266511bc648</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sg_images/arecibo_181.png</download_url>
+</file>
+<file>
+    <name>sah_40.png</name>
+    <nbytes>2536.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>5791ba1be2d33eaa5f90ecf5de89a53d</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sg_images/sah_40.png</download_url>
+</file>
+<file>
+    <name>sah_banner_290.png</name>
+    <nbytes>25488.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>39839286db7f580bef5377322d15ed35</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sg_images/sah_banner_290.png</download_url>
+</file>
+<file>
+    <name>sah_ss_290.png</name>
+    <nbytes>35399.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>caf95504208aedd6ac6d82201e2fd8b1</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sg_images/sah_ss_290.png</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>271632983593f7dbe5b0fba35813782d</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3ce/blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>1bca09a421c372b3df236bc9548c3110</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/2b8/blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar</download_url>
+</file>
+<file>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar</name>
+    <nbytes>720468.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>c1242b8c79d124a6f6212e05cf5643a2</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3c4/blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar</name>
+    <nbytes>720458.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>09efbc2156d8135fb7f96670b43f5bc1</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3df/blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar</name>
+    <nbytes>720443.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>cb26098e71298841afe863b23592796d</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/1b5/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar</download_url>
+</file>
+<file>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar</name>
+    <nbytes>720470.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>2464095a89f15bfe6ab70982196bbbe0</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3be/blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar</download_url>
+</file>
+<file>
+    <name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar</name>
+    <nbytes>720492.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>424aa9b0d43e864fb59d213316f89ed6</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/101/blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar</download_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar</name>
+    <nbytes>720477.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>617e3d4504f735d8d0c454c4be4e69ed</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/292/blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar</name>
+    <nbytes>720443.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>6260d5490e2dbf1c5a79bbb20efe2a60</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3f8/blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>7265c9c7498b0af91b541007428595f1</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/2e3/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</download_url>
+</file>
+<file>
+    <name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar</name>
+    <nbytes>720429.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>ca0cf3a4be18c03289021c113d08e825</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/cd/blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar</download_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar</name>
+    <nbytes>720475.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>565bb12921c7160a67b3b010bef2295c</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/1ee/blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>a5c1044cd5495ebb8ec14ac66266db17</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/15e/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</download_url>
+</file>
+<file>
+    <name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar</name>
+    <nbytes>720539.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>08f86c0746d6c61c1cf34f7e56e38152</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3fd/blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar</name>
+    <nbytes>720445.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>1116ab6ebbcdd99ef8993f577e2307a6</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/2a7/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</name>
+    <nbytes>720460.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>8a391c205c5a6615a4517fa3ffc90723</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/24b/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</download_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar_0_r1472201851_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar_0_r1400909537_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar_0_r795564386_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar_0_r382699132_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar_0_r11378160_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar_0_r1758438161_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar_0_r1571480020_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar_1_r1554045164_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar_0_r74924628_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar_2_r1577223599_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar_0_r240900767_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar_0_r1666409831_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar_0_r1803434173_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<app_version>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <platform>x86_64-apple-darwin</platform>
+    <avg_ncpus>0.008532</avg_ncpus>
+    <max_ncpus>0.008532</max_ncpus>
+    <flops>71722174453.856339</flops>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <api_version>7.7.0</api_version>
+    <file_ref>
+        <file_name>setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah</file_name>
+        <main_program/>
+    </file_ref>
+    <file_ref>
+        <file_name>MultiBeam_Kernels_r3321.cl</file_name>
+        <open_name>MultiBeam_Kernels_r3321.cl</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>MultiBeam_iGPU_config_8.00-opencl_intel_gpu_sah.xml</file_name>
+        <open_name>MultiBeam_iGPU_config.xml</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>mb_cmdline-8.00-opencl_intel_gpu_sah.txt</file_name>
+        <open_name>mb_cmdline.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.00-opencl_intel_gpu_sah_AUTHORS.txt</file_name>
+        <open_name>setiathome-8.00-opencl_intel_gpu_sah_AUTHORS.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.00-opencl_intel_gpu_sah_COPYING.txt</file_name>
+        <open_name>setiathome-8.00-opencl_intel_gpu_sah_COPYING.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.00-opencl_intel_gpu_sah_COPYRIGHT.txt</file_name>
+        <open_name>setiathome-8.00-opencl_intel_gpu_sah_COPYRIGHT.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.00-opencl_intel_gpu_sah_README.txt</file_name>
+        <open_name>setiathome-8.00-opencl_intel_gpu_sah_README.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.00-opencl_intel_gpu_sah_darwin_README_OPENCL.txt</file_name>
+        <open_name>setiathome-8.00-opencl_intel_gpu_sah_darwin_README_OPENCL.txt</open_name>
+    </file_ref>
+    <coproc>
+        <type>intel_gpu</type>
+        <count>1.000000</count>
+    </coproc>
+    <gpu_ram>264241152.000000</gpu_ram>
+    <dont_throttle/>
+</app_version>
+<app_version>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <platform>x86_64-apple-darwin</platform>
+    <avg_ncpus>1.000000</avg_ncpus>
+    <max_ncpus>1.000000</max_ncpus>
+    <flops>23738474300.775532</flops>
+    <api_version>7.7.0</api_version>
+    <file_ref>
+        <file_name>setiathome_8.03_x86_64-apple-darwin</file_name>
+        <main_program/>
+    </file_ref>
+    <file_ref>
+        <file_name>setigraphics_8.03_x86_64-apple-darwin</file_name>
+        <open_name>graphics_app</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>bl_bkg_803.jpg</file_name>
+        <open_name>sponsor_bkg</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>bl_803.jpg</file_name>
+        <open_name>sponsor_logo</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_AUTHORS.txt</file_name>
+        <open_name>setiathome-8.03_AUTHORS.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_COPYING.txt</file_name>
+        <open_name>setiathome-8.03_COPYING.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_COPYRIGHT.txt</file_name>
+        <open_name>setiathome-8.03_COPYRIGHT.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_README.txt</file_name>
+        <open_name>setiathome-8.03_README.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>seti_803.jpg</file_name>
+        <open_name>seti_logo</open_name>
+    </file_ref>
+</app_version>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>800</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<workunit>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</name>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_memory_bound>33554432.000000</rsc_memory_bound>
+    <rsc_disk_bound>33554432.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</file_name>
+        <open_name>work_unit.sah</open_name>
+    </file_ref>
+</workunit>
+<result>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</name>
+    <final_cpu_time>3595.633000</final_cpu_time>
+    <final_elapsed_time>4484.431385</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <final_peak_working_set_size>131014656</final_peak_working_set_size>
+    <final_peak_swap_size>4557160448</final_peak_swap_size>
+    <final_peak_disk_usage>314349</final_peak_disk_usage>
+    <wu_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</wu_name>
+    <report_deadline>1523800839.000000</report_deadline>
+    <received_time>1519203658.594556</received_time>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</name>
+    <final_cpu_time>147.564100</final_cpu_time>
+    <final_elapsed_time>1107.766110</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <final_peak_working_set_size>71217152</final_peak_working_set_size>
+    <final_peak_swap_size>4743053312</final_peak_swap_size>
+    <final_peak_disk_usage>46236</final_peak_disk_usage>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</wu_name>
+    <report_deadline>1523800839.000000</report_deadline>
+    <received_time>1519203658.594556</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1_r3914912_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</name>
+    <final_cpu_time>3378.962000</final_cpu_time>
+    <final_elapsed_time>4244.383334</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <final_peak_working_set_size>108961792</final_peak_working_set_size>
+    <final_peak_swap_size>4557361152</final_peak_swap_size>
+    <final_peak_disk_usage>312028</final_peak_disk_usage>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</name>
+    <final_cpu_time>3398.154000</final_cpu_time>
+    <final_elapsed_time>4275.631952</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <final_peak_working_set_size>108974080</final_peak_working_set_size>
+    <final_peak_swap_size>4557357056</final_peak_swap_size>
+    <final_peak_disk_usage>313802</final_peak_disk_usage>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar_0_r1400909537_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</name>
+    <final_cpu_time>3373.116000</final_cpu_time>
+    <final_elapsed_time>4240.610625</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <final_peak_working_set_size>109887488</final_peak_working_set_size>
+    <final_peak_swap_size>4556443648</final_peak_swap_size>
+    <final_peak_disk_usage>314329</final_peak_disk_usage>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar_0_r1571480020_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar_0_r1666409831_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar_0_r1758438161_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar_0_r11378160_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar_0_r1803434173_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar_0_r795564386_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar_1</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar_1_r1554045164_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar_0_r382699132_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar_0_r240900767_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>800</version_num>
+    <plan_class>opencl_intel_gpu_sah</plan_class>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar_0_r1472201851_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar_0_r74924628_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar_2</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar</wu_name>
+    <report_deadline>1523801184.000000</report_deadline>
+    <received_time>1519204003.875097</received_time>
+    <file_ref>
+        <file_name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar_2_r1577223599_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<project_files>
+    <file_ref>
+        <file_name>sah_40.png</file_name>
+        <open_name>stat_icon</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>sah_ss_290.png</file_name>
+        <open_name>slideshow_setiathome_v7_00</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>arecibo_181.png</file_name>
+        <open_name>slideshow_setiathome_v7_01</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>sah_banner_290.png</file_name>
+        <open_name>slideshow_setiathome_v7_02</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>sah_ss_290.png</file_name>
+        <open_name>slideshow_astropulse_v6_00</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>arecibo_181.png</file_name>
+        <open_name>slideshow_astropulse_v6_01</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>sah_banner_290.png</file_name>
+        <open_name>slideshow_astropulse_v6_02</open_name>
+    </file_ref>
+</project_files>
+<active_task_set>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>0</slot>
+    <checkpoint_cpu_time>3585.053000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4482.581155</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.547401</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4482.581155</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3595.633000</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4483002368.000000</swap_size>
+    <working_set_size>438272.000000</working_set_size>
+    <working_set_size_smoothed>437919.751595</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>1</slot>
+    <checkpoint_cpu_time>3368.474000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4242.533104</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.374075</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4242.533104</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3378.962000</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4482674688.000000</swap_size>
+    <working_set_size>417792.000000</working_set_size>
+    <working_set_size_smoothed>418288.728729</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>2</slot>
+    <checkpoint_cpu_time>3388.450000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4273.781722</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.465074</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4273.781722</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3398.154000</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4482609152.000000</swap_size>
+    <working_set_size>479232.000000</working_set_size>
+    <working_set_size_smoothed>479167.385933</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>3</slot>
+    <checkpoint_cpu_time>3362.713000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4238.760395</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.494967</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4238.760395</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3373.116000</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4483866624.000000</swap_size>
+    <working_set_size>520192.000000</working_set_size>
+    <working_set_size_smoothed>519483.940437</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>800</app_version_num>
+    <slot>4</slot>
+    <checkpoint_cpu_time>132.653700</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>1089.263811</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.146340</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>1089.263811</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>147.564100</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4723859456.000000</swap_size>
+    <working_set_size>409600.000000</working_set_size>
+    <working_set_size_smoothed>406011.537109</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+</active_task_set>
+<platform_name>x86_64-apple-darwin</platform_name>
+<core_client_major_version>7</core_client_major_version>
+<core_client_minor_version>9</core_client_minor_version>
+<core_client_release>0</core_client_release>
+<user_run_request>2</user_run_request>
+<user_run_prev_request>3</user_run_prev_request>
+<user_gpu_request>2</user_gpu_request>
+<user_gpu_prev_request>2</user_gpu_prev_request>
+<user_network_request>2</user_network_request>
+<new_version_check_time>0.000000</new_version_check_time>
+<all_projects_list_check_time>1518200255.937572</all_projects_list_check_time>
+<alt_platform>i686-apple-darwin</alt_platform>
+</client_state>
