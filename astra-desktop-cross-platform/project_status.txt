@@ -1,0 +1,103 @@
+======== Projects ========
+1) -----------
+   name: RNA World
+   master URL: http://www.rnaworld.de/rnaworld/
+   user_name: SohamKale
+   team_name:
+   resource share: 100.000000
+   user_total_credit: 0.000000
+   user_expavg_credit: 0.000000
+   host_total_credit: 0.000000
+   host_expavg_credit: 0.000000
+   nrpc_failures: 0
+   master_fetch_failures: 0
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: no
+   don't request more work: no
+   disk usage: 0.000000
+   last RPC: Tue Mar  6 16:34:01 2018
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: My account
+   description: View your account information and credit totals
+   URL: http://www.rnaworld.de/rnaworld/home.php
+GUI URL:
+   name: Forum
+   description: Get help about RNA World
+   URL: http://www.rechenkraft.net/phpBB/viewforum.php?f=74
+GUI URL:
+   name: Chat
+   description: Chat with other user about distributed computing
+   URL: http://www.rechenkraft.net/wiki/index.php?title=Rechenkraft:Chat
+GUI URL:
+   name: Rechenkraft.net
+   description: Mehr Projekte
+   URL: http://www.rechenkraft.net
+GUI URL:
+   name: - Donation -
+   description: Make a donation for the running costs
+   URL: http://www.rnaworld.de/rnaworld/donations.php
+   jobs succeeded: 0
+   jobs failed: 0
+   elapsed time: 0.000000
+   cross-project ID:
+2) -----------
+   name: SETI@home
+   master URL: http://setiathome.berkeley.edu/
+   user_name: SohamKale
+   team_name:
+   resource share: 100.000000
+   user_total_credit: 0.000000
+   user_expavg_credit: 0.000000
+   host_total_credit: 0.000000
+   host_expavg_credit: 0.000000
+   nrpc_failures: 0
+   master_fetch_failures: 0
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: no
+   don't request more work: no
+   disk usage: 0.000000
+   last RPC: Wed Feb 21 01:06:43 2018
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: Message boards
+   description: Correspond with other users on the SETI@home message boards
+   URL: http://setiathome.berkeley.edu/forum_index.php
+GUI URL:
+   name: Help
+   description: Ask questions and report problems
+   URL: http://setiathome.berkeley.edu/forum_help_desk.php
+GUI URL:
+   name: Account
+   description: View your account information
+   URL: http://setiathome.berkeley.edu/home.php
+GUI URL:
+   name: Preferences
+   description: View and modify your computing preferences
+   URL: http://setiathome.berkeley.edu/prefs.php?subset=global
+GUI URL:
+   name: Tasks
+   description: View your recent tasks
+   URL: http://setiathome.berkeley.edu/results.php?userid=10673740
+GUI URL:
+   name: Computers
+   description: View a list of the computers on which you are running SETI@Home
+   URL: http://setiathome.berkeley.edu/hosts_user.php?userid=10673740
+GUI URL:
+   name: Donate
+   description: Donate to SETI@home
+   URL: http://setiathome.berkeley.edu/sah_donate.php
+   jobs succeeded: 0
+   jobs failed: 0
+   elapsed time: 17338.478384
+   cross-project ID: 886268417f7e0b6f885f03492bcf1632

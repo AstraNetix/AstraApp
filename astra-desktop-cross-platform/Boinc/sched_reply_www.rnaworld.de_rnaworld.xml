@@ -3,7 +3,6 @@
 <dont_use_dcf/>
 <master_url>http://www.rnaworld.de/rnaworld/</master_url>
 <request_delay>3636.000000</request_delay>
-<message priority="low">Project has no tasks available</message>
 <project_name>RNA World</project_name>
 <next_rpc_delay>18000.000000</next_rpc_delay>
 <userid>130926</userid>

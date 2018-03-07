@@ -2,6 +2,8 @@ package core;
 
 import java.io.File;
 import java.io.Serializable;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,16 +21,21 @@ public class User implements Serializable {
         _firstName = firstName;
         _lastName = lastName;
         _email = email;
-        /** Get authenticator by BOINC command when initializing*/
-        /** Get device name somehow */
-        _deviceName = "test_device";
+        _accountKeys = new HashMap<>();
         _deviceID = User.hash(_deviceName, email);
         _passwords = new HashMap<>();
+
+        try {
+            _deviceName = InetAddress.getLocalHost().getHostName();
+        } catch (UnknownHostException ex) {
+            System.out.println("Hostname can not be resolved"); // TODO: make into a better response
+        }
     }
 
     private static String hash(User user) {
         return User.hash(user._deviceName, user._email);
     }
+
     
     String getPassword(String url) {
         return _passwords.get(url);
@@ -38,14 +45,22 @@ public class User implements Serializable {
         _passwords.put(url, password);
     }
 
+    String getAccountKey(String url) {
+        return _accountKeys.get(url);
+    }
+
+    void addAccountKey(String url, String accountKey) { _accountKeys.put(url, accountKey); }
+
+
     String name() {
         return _firstName + " " + _lastName;
     }
 
+
     private static String hash(String deviceName, String email) {
         return Utils.sha1(
                 deviceName,
-                /** Find out how to get company and model name */
+                // TODO: Find out how to get company and model name */
                 email);
     }
 
@@ -59,6 +74,5 @@ public class User implements Serializable {
 
 
     String _firstName, _lastName, _email, _deviceName, _company, _model, _deviceID;
-    private String _authenticator;
-    private Map<String, String> _passwords; /** [project url] -> [password] */
+    private Map<String, String> _passwords, _accountKeys; /* [project url] -> [password | account key] */
 }

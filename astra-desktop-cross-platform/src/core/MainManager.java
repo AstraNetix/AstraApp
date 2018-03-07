@@ -2,7 +2,6 @@ package core;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.SpinnerValueFactory;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -35,10 +34,18 @@ public class MainManager implements PubNubClient.PubNubDelegate {
             );
             _scene.setRoot(loader.load());
 
-            //TODO: Find out how to create persistent bash shell and run ./boinc
+            Thread boinc = new Thread(() -> {
+                BashClient.bashPersist("./boinc -insecure");
+            });
+            boinc.start();
         } catch (IOException ex) {
             Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    void logout() {
+        LoginManager loginManager = new LoginManager(_scene);
+        loginManager.showLoginScreen();
     }
 
 
@@ -61,4 +68,5 @@ public class MainManager implements PubNubClient.PubNubDelegate {
     public void heartbeatFailure() {
         _controller.setErrorMessages("Error: Heartbeat Failure.");
     }
+
 }

@@ -27,6 +27,7 @@
             </Text>
             <Text fx:id="errorMessages" layoutX="32.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="311.3326234817505" />
             <Button fx:id="quitButton" layoutX="15.0" layoutY="410.0" mnemonicParsing="false" text="Quit" />
+            <Button fx:id="logoutButton" layoutX="67.0" layoutY="410.0" mnemonicParsing="false" text="Logout" />
          </children>
       </AnchorPane>
    </children>

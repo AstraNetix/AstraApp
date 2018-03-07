@@ -9,6 +9,7 @@ package core;
  *
  */
 public class BoincCommands {
+
     /* ****************************** GLOBAL PREFERENCES ****************************** */
 
     static void setRunOnBatteries(boolean opt) {
@@ -117,6 +118,9 @@ public class BoincCommands {
     static String[] noMoreWorkProject(String url)  { return execCmnd("--project", url, "nomorework"); }
 
 
+    static String[] runBenchmarks()  { return execCmnd("--run_benchmarks"); }
+
+
     static String[] setCPU(String setting, int... duration)  {
         return execCmnd("--set_run_mode", setting, (duration == null) ? "" : String.valueOf(duration[0]));
     }
@@ -136,8 +140,8 @@ public class BoincCommands {
 
 
     private static String[] execCmnd(String... args) {
-        String[] boincArgs = new String[args.length + 2];
-        System.arraycopy(args, 0, boincArgs, 2, args.length);
+        String[] boincArgs = new String[args.length + 1];
+        System.arraycopy(args, 0, boincArgs, 1, args.length);
         boincArgs[0] = "./boinccmd";
         return BashClient.bash(boincArgs);
     }

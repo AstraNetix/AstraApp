@@ -21,3 +21,73 @@ WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documen
 WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_128_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
 WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_256_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
 WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_512_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+OpenCL platform detected: Apple
+Number of OpenCL devices found : 1 
+BOINC assigns slot on device #0.
+Info: BOINC provided OpenCL device ID used
+
+Build features: SETI8 Non-graphics OpenCL USE_OPENCL_INTEL OCL_ZERO_COPY OCL_CHIRP3 ASYNC_SPIKE FFTW SSSE3 64bit 
+ System: Darwin  x86_64  Kernel: 17.0.0
+CPU : Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz 
+ GenuineIntel x86, Family 6 Model 78 Stepping 3
+ Features : FPU TSC PAE APIC MTRR MMX SSE  SSE2 HT  SSE3 SSSE3 SSE4.1 SSE4.2 AVX1.0  
+
+OpenCL-kernels filename : MultiBeam_Kernels_r3321.cl 
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_512_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_1024_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_2048_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_4096_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_8192_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_16384_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_32768_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_65536_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+WARNING: can't open binary kernel file for oclFFT plan: /Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu/MB_clFFTplan_IntelRIrisTMGraphics540_131072_gr64_lr8_wg64_tw3_r3321.bin_17.0.0_12Aug242017222, continue with recompile...
+ar=0.007145  NumCfft=95311  NumGauss=0  NumPulse=25023071104  NumTriplet=37965368480
+Currently allocated 185 MB for GPU buffers
+In v_BaseLineSmooth: NumDataPoints=1048576, BoxCarLength=8192, NumPointsInChunk=32768
+OS X optimized setiathome_v8 application
+Version info: SSSE3ux (Intel, Core 2-optimized v8-nographics) V5.13 by Alex Kan
+SSSE3ux OS X 64bit Build 3321 , Ported by : Raistmer, JDWhale, Urs Echternacht
+
+
+OpenCL version by Raistmer, r3321
+
+Number of OpenCL platforms:				 1
+
+
+ OpenCL Platform Name:					 Apple
+Number of devices:				 1
+  Max compute units:				 48
+  Max work group size:				 256
+  Max clock frequency:				 1000Mhz
+  Max memory allocation:			 402653184
+  Cache type:					 None
+  Cache line size:				 0
+  Cache size:					 0
+  Global memory size:				 1610612736
+  Constant buffer size:				 65536
+  Max number of constant args:			 8
+  Local memory type:				 Scratchpad
+  Local memory size:				 65536
+  Queue properties:				 
+    Out-of-Order:				 No
+  Name:						 Intel(R) Iris(TM) Graphics 540
+  Vendor:					 Intel Inc.
+  Driver version:				 1.2(Aug 24 2017 22:22:18)
+  Version:					 OpenCL 1.2 
+  Extensions:					 cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_image2d_from_buffer cl_khr_gl_depth_images cl_khr_depth_images cl_khr_3d_image_writes 
+
+
+Work Unit Info:
+...............
+Credit multiplier is :  2.85
+WU true angle range is :  0.007145
+Used GPU device parameters are:
+	Number of compute units: 48
+	Single buffer allocation size: 128MB
+	Total device global memory: 1536MB
+	max WG size: 256
+	local mem type: Real
+	LotOfMem path: no
+period_iterations_num=50
+Pulse: peak=6.350857, time=45.9, period=16.15, d_freq=6624295416.61, score=1.006, chirp=0.20055, fft_len=2k

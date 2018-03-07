@@ -46,7 +46,7 @@ public class BoincClient {
         String[] diskUsage = BoincCommands.getDiskUsage();
         for (int i = 0; i < diskUsage.length; i++) {
             if (diskUsage[i].matches(Line.NUMBER._header) &&
-                    getDataKnown(diskUsage[i + 1], Line.MASTER_URL).equals(projectURL)) {
+                    getDataKnown(diskUsage[i + 1], Line.URL).equals(projectURL)) {
                 return getDiskUsage(diskUsage, i + 1);
             }
         }
@@ -57,23 +57,24 @@ public class BoincClient {
 
     private Map<String, String> getDiskUsage(String[] diskUsage, int i) {
         return new HashMap<String, String>() {{
-            put("url", getDataKnown(diskUsage[i], Line.MASTER_URL));
+            put("url", getDataKnown(diskUsage[i], Line.URL));
             put("disk-usage", getDataKnown(diskUsage[i + 1], Line.DISK_USAGE));
         }};
     }
 
     /* *********************************** PROJECTS *********************************** */
 
-    /** Returns all relevant project info and status.
+    /** Returns all relevant project info and status from its URL.
      *
      * @param projectURL The URL of the project
      * @return Map of info type (String) to info data (String)
      */
-    Map<String, String> getProjectInfo(String projectURL) {
-        String[] projectStatus = BoincCommands.getProjectStatus();
+    Map<String, String> getProjectInfo(String projectURL, String[] projectStatus) {
+        // String[] projectStatus = BoincCommands.getProjectStatus();  // TODO: Uncomment this
+        Pattern header = Pattern.compile(Line.NUMBER._header);
         for (int i = 1; i < projectStatus.length; i++) {
-            if (projectStatus[i].matches(Line.NUMBER._header)) {
-                if (getDataKnown(projectStatus[i+2], Line.MASTER_URL).equals(projectURL))
+            if (header.matcher(projectStatus[i]).find()) {
+                if (getDataKnown(projectStatus[i+2], Line.URL).equals(projectURL))
                     return getProjectInfo(i, projectStatus);
                 i += 23;
             }
@@ -83,25 +84,67 @@ public class BoincClient {
         }};
     }
 
+    List<String[]> getProjectsAndURLs(String[] projectStatus) {
+        // String[] projectStatus = BoincCommands.getProjectStatus(); // TODO: Uncomment this
+        Pattern header = Pattern.compile(Line.NUMBER._header);
+        List<String[]> projects = new ArrayList<>();
+        for (int i = 1; i < projectStatus.length; i++) {
+            if (header.matcher(projectStatus[i]).find()) {
+                projects.add(new String[] {
+                        getDataKnown(projectStatus[i+1], Line.NAME),
+                        getDataKnown(projectStatus[i+2], Line.URL)
+                });
+                i += 23;
+            }
+        }
+        return projects;
+    }
+
 
     /** Starts a project by inputting user information and a randomized password
      *
      * @param projectURL URL for the project to start
      */
-    void startProject(String projectURL) {
+    Map<String, String> startProject(String projectURL) {
+        String accountKey = _user.getAccountKey(projectURL);
         if (_user.getPassword(projectURL) == null) {
             String password = UUID.randomUUID().toString();
             _user.addPassword(projectURL, password);
-            // TODO: Parse return for this and set up authenticator key.
-            BoincCommands.createUser(projectURL, _user._email, UUID.randomUUID().toString(), _user.name());
-        }
-        BoincCommands.attachProject(projectURL, "" /** Use authenticator key here */);
+            String[] output = BoincCommands.createUser(projectURL, _user._email, password, _user.name());
 
+            if ((accountKey = parseCreateAccount(output)) != null) {
+                _user.addAccountKey(projectURL, accountKey);
+            } else {
+                return new HashMap<String, String>() {{
+                    put("failure", String.format("Unable to start project at %s", projectURL));
+                }};
+            }
+        }
+        BoincCommands.attachProject(projectURL, accountKey);
+        return new HashMap<String, String>() {{
+            put("success", String.format("Project at %s successfully started", projectURL));
+        }};
+    }
+
+    String parseCreateAccount(String[] input) { // TODO make private later
+        Pattern status = Pattern.compile(Line.STATUS._data);
+        Matcher matcher = status.matcher(input[0]);
+        if (!matcher.find() ||
+                !input[0].substring(matcher.start(), matcher.end()).equals("Success"))
+            return null;
+        Pattern accountKey = Pattern.compile(Line.ACCOUNT_KEY._data);
+        for (String line : input) {
+            matcher = accountKey.matcher(line);
+            if (matcher.find()) {
+                return line.substring(matcher.start(), matcher.end());
+            }
+        }
+        return null;
     }
 
     private Map<String, String> getProjectInfo(int ind, String[] projectStatus) {
         Map<String, String> projectData = new HashMap<>();
-        int[] indices = new int[] {1, 2, 3, 6, 7, 16, 18, 19, 21};
+        int[] indices = new int[] {1, 2, 3, 6, 7, 16, 18, 19, 22};
         Line[] values = Line.values();
         for (int i = 0; i < indices.length - 2; i++) {
             projectData.put(values[i + 2].toString().toLowerCase(),
@@ -115,10 +158,11 @@ public class BoincClient {
 
     private String getDataUnknown(String input) {
         for (Line dataType: Line.values()) {
-            if (input.matches(dataType._header)) {
-                Pattern pattern = Pattern.compile(dataType._data);
-                Matcher matcher = pattern.matcher(input);
-                if (matcher.matches()) return matcher.group(1);
+            Pattern header = Pattern.compile(dataType._header);
+            if ((header.matcher(dataType._header)).find()) {
+                Pattern data = Pattern.compile(dataType._data);
+                Matcher matcher = data.matcher(input);
+                if (matcher.find()) { return input.substring(matcher.start(), matcher.end()); }
             }
         }
         return null;
@@ -127,9 +171,7 @@ public class BoincClient {
     private String getDataKnown(String input, Line line) {
         Pattern pattern = Pattern.compile(line._data);
         Matcher matcher = pattern.matcher(input);
-        if (matcher.matches())
-            return matcher.group(1);
-        return "";
+        return matcher.find() ? input.substring(matcher.start(), matcher.end()) : "";
     }
 
 
@@ -137,19 +179,22 @@ public class BoincClient {
 
     private enum Line {
         HEADER("========\\s\\S+\\s========", "[a-zA-Z0-9]+"),
-        NUMBER("\\)\\s-----------", "\\d)"),
-        NAME("name:\\s", "\\S+"),
-        MASTER_URL("master\\sURL:\\s", "\\S+"),
-        USER_NAME("user_name:\\s", "\\S+"),
+        NUMBER("\\)\\s-----------", "\\d+"),
+        NAME("name:\\s", "(?<=name:\\s).+"),
+        URL("master\\sURL:\\s", "(?<=master\\sURL:\\s).+"),
+        USER_NAME("user_name:\\s", "(?<=user_name:\\s).+"),
         USER_TOTAL_CREDIT("user_total_credit:\\s", "\\d\\.\\d{6}"),
         USER_AVG_CREDIT("user_expavg_credit:\\s", "\\d\\.\\d{6}"),
-        ENDED("ended:\\s", "[yes|no]"),
-        NO_MORE_WORK("don't request more work:\\s", "[yes|no]"),
-        DISK_USAGE("disk usage:\\s", "[\\d\\.\\d{6}|\\d*\\.\\d{2}MB]"),
+        ENDED("ended:\\s", "(yes|no)"),
+        NO_MORE_WORK("don't request more work:\\s", "(yes|no)"),
+        DISK_USAGE("disk\\susage:\\s", "(\\d\\.\\d{6}|\\d*\\.\\d{2}MB)"),
         PROJECT_FILES_DOWNLOADED("project\\sfiles\\sdownloaded:\\s", "\\d\\.\\d{6}"),
 
         TOTAL("total:\\s", "\\d+\\.\\d+"),
-        FREE("free:\\s", "\\d+\\.\\d+");
+        FREE("free:\\s", "\\d+\\.\\d+"),
+
+        STATUS("status\\s", "(Success|Failure)"),
+        ACCOUNT_KEY("account key:\\s", "(?<=account key:\\s).+");
 
 
         Line(String header, String data) {

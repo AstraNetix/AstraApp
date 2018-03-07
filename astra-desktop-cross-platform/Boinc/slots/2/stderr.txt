@@ -18,3 +18,4 @@ Optimal function choices:
 Restarted at 1.13 percent.
 Restarted at 6.14 percent.
 Restarted at 23.33 percent.
+Restarted at 34.63 percent.

@@ -18,15 +18,17 @@ import javafx.scene.text.Text;
 public class MainController {
     @FXML private Text errorMessages;
     @FXML private Button quitButton;
+    @FXML private Button logoutButton;
 
     private MainManager _manager;
 
     public void initialize() {}
 
-    public void initManager(final MainManager mainManager) {
-        _manager = mainManager;
+    public void initManager(final MainManager manager) {
+        _manager = manager;
         errorMessages.setText("Everything is ok!");
         quitButton.setOnAction(event -> Platform.exit());
+        logoutButton.setOnAction(event -> manager.logout());
     }
 
     void setErrorMessages(String error) {

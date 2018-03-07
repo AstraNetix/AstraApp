@@ -1,5 +1,4 @@
 package core;
-import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -27,19 +26,15 @@ public class LoginController {
 
     private LoginManager _manager;
 
-    public void initialize() {}
-
-    public void initManager(final LoginManager loginManager) {
+    void initManager(final LoginManager loginManager) {
         _manager = loginManager;
 
         loginButton.setOnAction(event -> _manager.login(email.getText(), password.getText()));
-        forgotPasswordButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent event) {
-                try {
-                    Desktop.getDesktop().browse(new URI("")); // TODO: Put forgot password link here
-                } catch (IOException | URISyntaxException e1) {
-                    e1.printStackTrace();
-                }
+        forgotPasswordButton.setOnAction(event -> {
+            try {
+                Desktop.getDesktop().browse(new URI("")); // TODO: Put forgot password link here
+            } catch (IOException | URISyntaxException e1) {
+                e1.printStackTrace();
             }
         });
     }

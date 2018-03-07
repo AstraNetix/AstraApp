@@ -75,9 +75,8 @@ public class PubNubClient extends SubscribeCallback {
             case PNHeartbeatOperation:
                 if (status.isError())
                     if (_delegate != null) _delegate.heartbeatFailure();
-            default: {
+            default:
                 // Encountered unknown status type
-            }
         }
     }
 
@@ -104,8 +103,23 @@ public class PubNubClient extends SubscribeCallback {
                 if (_delegate instanceof PubNubLoginDelegate)
                     ((PubNubLoginDelegate) _delegate).invalidCredentials(message.get("error").getAsString());
 
+            case "run-on-batteries":
+                BoincCommands.setRunOnBatteries(message.get("opt").getAsString().equals("True"));
+            case "run-if-active":
+                BoincCommands.setRunIfActive(message.get("opt").getAsString().equals("True"));
+            case "config_hours":
+                BoincCommands.setConfigHours(message.get("start").getAsInt(), message.get("end").getAsInt());
+            case "max-cpus":
+                BoincCommands.setMaxCPUs(message.get("number").getAsInt());
+            case "disk-percent":
+                BoincCommands.setDiskMaxPercent(message.get("percent").getAsInt());
+            case "ram-percent":
+                BoincCommands.setRAMMaxUse(message.get("percent").getAsInt());
+            case "cpu-percent":
+                BoincCommands.setCPUUsage(message.get("percent").getAsInt());
+
             case "start-project":
-                _boincClient.startProject(message.get("url").getAsString());
+                publish(_boincClient.startProject(message.get("url").getAsString()));
             case "quit-project":
                 BoincCommands.noMoreWorkProject(message.get("url").getAsString());
             case "resume-project":
@@ -116,7 +130,7 @@ public class PubNubClient extends SubscribeCallback {
                 BoincCommands.noMoreWorkProject(message.get("url").getAsString());
 
             case "project-status":
-                publish(_boincClient.getProjectInfo(message.get("url").getAsString()));
+                publish(_boincClient.getProjectInfo(message.get("url").getAsString(), new String[] {})); // TODO get rid of second argument after testing
 
             case "disk-usage":
                 publish((_boincClient.getDiskUsage(message.get("url").getAsString())));

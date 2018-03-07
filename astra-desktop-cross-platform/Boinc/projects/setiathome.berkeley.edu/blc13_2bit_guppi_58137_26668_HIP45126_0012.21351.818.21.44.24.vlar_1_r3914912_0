@@ -337,3 +337,31 @@
 </subband_desc>
 <sb_id>0</sb_id>
 </workunit_header>
+<pulse>
+  <peak_power>6.350857257843</peak_power>
+  <mean_power>0.13111731410027</mean_power>
+  <time>2458137.810884</time>
+  <ra>9.1946602424683</ra>
+  <decl>39.1991</decl>
+  <q_pix>0</q_pix>
+  <freq>6624295407.4061</freq>
+  <detection_freq>6624295416.6117</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>2048</fft_len>
+  <chirp_rate>0.20054606169077</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>16.150867462158</period>
+  <snr>14.200949668884</snr>
+  <thresh>14.116226196289</thresh>
+  <score>0</score>
+  <len_prof>90</len_prof>
+  <pot length=274 encoding="x-csv">
+    39,64,19,22,14,34,29,18,10,34,9,17,23,6,1,27,6,2,24,28,12,8,40,8,32,24,
+    27,39,26,50,36,5,17,31,255,18,39,16,57,65,3,1,23,19,4,25,8,33,38,13,17,
+    60,34,21,26,29,50,10,10,54,48,33,15,58,29,22,26,26,29,68,5,27,1,21,18,
+    27,21,21,22,8,51,10,6,10,0,26,29,36,3,5
+  </pot>
+</pulse>
+

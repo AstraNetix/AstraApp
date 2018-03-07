@@ -8,16 +8,16 @@
 <hostid>8467171</hostid>
 <app_name>setiathome_v8</app_name>
 <user_name>SohamKale</user_name>
-<project_dir>/Users/sohamkale/Documents/Astra/astra-desktop/Boinc/projects/setiathome.berkeley.edu</project_dir>
-<boinc_dir>/Users/sohamkale/Documents/Astra/astra-desktop/Boinc</boinc_dir>
+<project_dir>/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu</project_dir>
+<boinc_dir>/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc</boinc_dir>
 <authenticator>552e80e81e75579075cec0e9e3655660</authenticator>
 <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</wu_name>
 <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</result_name>
 <shm_key>-1</shm_key>
 <slot>2</slot>
-<client_pid>5117</client_pid>
-<wu_cpu_time>2820.507000</wu_cpu_time>
-<starting_elapsed_time>3726.002676</starting_elapsed_time>
+<client_pid>13431</client_pid>
+<wu_cpu_time>3194.198000</wu_cpu_time>
+<starting_elapsed_time>4157.844998</starting_elapsed_time>
 <using_sandbox>0</using_sandbox>
 <vm_extensions_disabled>0</vm_extensions_disabled>
 <user_total_credit>0.000000</user_total_credit>
@@ -43,7 +43,7 @@
     <timezone>-28800</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
     <ip_addr>10.0.0.58</ip_addr>
-    <host_cpid>2993a3aa9ab71e204d9406817095749d</host_cpid>
+    <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
     <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
@@ -55,14 +55,13 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>16622612480.000000</m_swap>
+    <m_swap>11667161088.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>9497759744.000000</d_free>
+    <d_free>4537102336.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
     <product_name>MacBookPro13,1</product_name>
-    <virtualbox_version>5.2.6r120293</virtualbox_version>
     <coprocs>
 <coproc_intel_gpu>
    <count>1</count>
@@ -144,7 +143,7 @@
    <battery_charge_min_pct>90.000000</battery_charge_min_pct>
    <battery_max_temperature>40.000000</battery_max_temperature>
    <run_on_batteries>0</run_on_batteries>
-   <run_if_user_active>1</run_if_user_active>
+   <run_if_user_active>0</run_if_user_active>
    <run_gpu_if_user_active>0</run_gpu_if_user_active>
    <suspend_if_no_recent_input>0.000000</suspend_if_no_recent_input>
    <suspend_cpu_usage>25.000000</suspend_cpu_usage>
@@ -153,7 +152,7 @@
    <net_start_hour>0.000000</net_start_hour>
    <net_end_hour>0.000000</net_end_hour>
    <leave_apps_in_memory>0</leave_apps_in_memory>
-   <confirm_before_connecting>1</confirm_before_connecting>
+   <confirm_before_connecting>0</confirm_before_connecting>
    <hangup_if_dialed>0</hangup_if_dialed>
    <dont_verify_images>0</dont_verify_images>
    <work_buf_min_days>0.100000</work_buf_min_days>
@@ -161,8 +160,8 @@
    <max_ncpus_pct>0.000000</max_ncpus_pct>
    <cpu_scheduling_period_minutes>60.000000</cpu_scheduling_period_minutes>
    <disk_interval>60.000000</disk_interval>
-   <disk_max_used_gb>0.000000</disk_max_used_gb>
-   <disk_max_used_pct>90.000000</disk_max_used_pct>
+   <disk_max_used_gb>100.000000</disk_max_used_gb>
+   <disk_max_used_pct>50.000000</disk_max_used_pct>
    <disk_min_free_gb>0.100000</disk_min_free_gb>
    <vm_max_used_pct>75.000000</vm_max_used_pct>
    <ram_max_used_busy_pct>50.000000</ram_max_used_busy_pct>
@@ -170,11 +169,12 @@
    <idle_time_to_run>3.000000</idle_time_to_run>
    <max_bytes_sec_up>0.000000</max_bytes_sec_up>
    <max_bytes_sec_down>0.000000</max_bytes_sec_down>
-   <cpu_usage_limit>100.000000</cpu_usage_limit>
+   <cpu_usage_limit>10.000000</cpu_usage_limit>
    <daily_xfer_limit_mb>0.000000</daily_xfer_limit_mb>
    <daily_xfer_period_days>0</daily_xfer_period_days>
-   <override_file_present>0</override_file_present>
+   <override_file_present>1</override_file_present>
    <network_wifi_only>0</network_wifi_only>
+   <max_cpus>2</max_cpus>
 </global_preferences>
 <app_file>setiathome_8.03_x86_64-apple-darwin</app_file>
 <app_file>setigraphics_8.03_x86_64-apple-darwin</app_file>
