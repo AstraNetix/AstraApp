@@ -1,8 +1,8 @@
 <client_state>
 <host_info>
     <timezone>-28800</timezone>
-    <domain_name>airbears2-10-142-11-57.airbears2.1918.berkeley.edu</domain_name>
-    <ip_addr>10.142.11.57</ip_addr>
+    <domain_name>Sohams-MacBook-Pro.local</domain_name>
+    <ip_addr>10.0.0.58</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -15,9 +15,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15840493568.000000</m_swap>
+    <m_swap>15765041152.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>9787027456.000000</d_free>
+    <d_free>8637571072.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -85,64 +85,66 @@
 </opencl_cpu_prop>
 </host_info>
 <time_stats>
-    <on_frac>0.110793</on_frac>
+    <on_frac>0.104726</on_frac>
     <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.946329</cpu_and_network_available_frac>
-    <active_frac>0.946329</active_frac>
-    <gpu_active_frac>0.940887</gpu_active_frac>
-    <client_start_time>1520386331.698588</client_start_time>
+    <cpu_and_network_available_frac>0.930954</cpu_and_network_available_frac>
+    <active_frac>0.930954</active_frac>
+    <gpu_active_frac>0.925600</gpu_active_frac>
+    <client_start_time>1520591700.997678</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>52761.492094</total_duration>
-    <total_active_duration>4975.582019</total_active_duration>
-    <total_gpu_active_duration>111.315698</total_gpu_active_duration>
-    <previous_uptime>15297.929154</previous_uptime>
-    <last_update>1520401626.057817</last_update>
+    <total_duration>66926.166031</total_duration>
+    <total_active_duration>4985.749772</total_active_duration>
+    <total_gpu_active_duration>121.483451</total_gpu_active_duration>
+    <previous_uptime>0.163964</previous_uptime>
+    <last_update>1520591675.727093</last_update>
 </time_stats>
 <net_stats>
-    <bwup>83329.593941</bwup>
-    <avg_up>2041231718.932597</avg_up>
-    <avg_time_up>1520382841.844276</avg_time_up>
-    <bwdown>5304615.709438</bwdown>
-    <avg_down>35074412157.732735</avg_down>
-    <avg_time_down>1520392886.146161</avg_time_down>
+    <bwup>80227.919653</bwup>
+    <avg_up>1626765198.923379</avg_up>
+    <avg_time_up>1520580876.639278</avg_time_up>
+    <bwdown>5021756.730883</bwdown>
+    <avg_down>28099666506.936558</avg_down>
+    <avg_time_down>1520586373.011534</avg_time_down>
 </net_stats>
 <project>
     <master_url>http://quakecatcher.net/sensor/</master_url>
-    <project_name></project_name>
+    <project_name>Quake-Catcher Network</project_name>
     <symstore></symstore>
-    <user_name></user_name>
+    <user_name>SohamKale</user_name>
     <team_name></team_name>
     <host_venue></host_venue>
-    <email_hash></email_hash>
-    <cross_project_id></cross_project_id>
-    <external_cpid></external_cpid>
-    <cpid_time>0.000000</cpid_time>
+    <email_hash>b7ddd6df268c7c72c7ae94e1b8df417b</email_hash>
+    <cross_project_id>2303786d311848b39b5c132948794b30</cross_project_id>
+    <external_cpid>d50dec70e57e1bcf593906738e9cc51f</external_cpid>
+    <cpid_time>1520391728.000000</cpid_time>
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
-    <user_create_time>0.000000</user_create_time>
-    <rpc_seqno>0</rpc_seqno>
-    <userid>0</userid>
+    <user_create_time>1520391728.000000</user_create_time>
+    <rpc_seqno>4</rpc_seqno>
+    <userid>147652</userid>
     <teamid>0</teamid>
-    <hostid>0</hostid>
+    <hostid>76447</hostid>
     <host_total_credit>0.000000</host_total_credit>
     <host_expavg_credit>0.000000</host_expavg_credit>
-    <host_create_time>0.000000</host_create_time>
+    <host_create_time>1520570309.000000</host_create_time>
     <nrpc_failures>0</nrpc_failures>
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>0.000000</rec_time>
+    <rec_time>1520591680.627581</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
-    <sched_rpc_pending>6</sched_rpc_pending>
+    <sched_rpc_pending>0</sched_rpc_pending>
     <send_time_stats_log>0</send_time_stats_log>
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
-    <elapsed_time>0.000000</elapsed_time>
-    <last_rpc_time>0.000000</last_rpc_time>
+    <elapsed_time>9.117761</elapsed_time>
+    <last_rpc_time>1520580876.910121</last_rpc_time>
+    <dont_use_dcf/>
+    <non_cpu_intensive/>
     <rsc_backoff_time>
         <name>CPU</name>
         <value>0.000000</value>
@@ -159,14 +161,582 @@
         <name>intel_gpu</name>
         <value>0.000000</value>
     </rsc_backoff_interval>
+    <no_rsc_apps>intel_gpu</no_rsc_apps>
     <scheduler_url>http://quakecatcher.net/sensor_cgi/cgi</scheduler_url>
+    <code_sign_key>
+1024
+c1ee42cc7a7c45d4669f033c2b452ccb36f83fb29e1d7e64b0bc3a8dc6f9437f
+63b8baf83db80810b45063b4aa4fc7a707806a82a8d5abe515ef7010aec6bca2
+51e13f8ab59cd7717dbe89a44a2f6bf460713e396f51cd34c98cdd061d155d0b
+d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000010001
+.
+</code_sign_key>
     <cpu_ec>0.000000</cpu_ec>
     <cpu_time>0.000000</cpu_time>
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
-    <disk_usage>0.000000</disk_usage>
+    <disk_usage>19813233.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
+<app>
+    <name>qcnsensor</name>
+    <user_friendly_name>QCN Sensor</user_friendly_name>
+    <non_cpu_intensive>1</non_cpu_intensive>
+</app>
+<file>
+    <name>qcn_8.07_x86_64-apple-darwin__nci</name>
+    <nbytes>679044.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+0d1133de01e0283e176cee189ca8c813a33db909871f0d7cdc6da922cb449520
+3e325f6b631258f9814d3348b8bbb6e851ca143e019362207598b94ce103b6b9
+0b6511cfe5f5832d5f5ec5224acab0190223d6e5f16be79007213b9f11b0e6e8
+ce0921791c5d54e3f3c781b3da1b6464089fb21d9e80e11c12f4d7f32293a619
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/qcn_8.07_x86_64-apple-darwin__nci</download_url>
+</file>
+<file>
+    <name>qcn_graphics_8.07_x86_64-apple-darwin</name>
+    <nbytes>1895104.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+37ac15606244e166786c472b935b1ba13947d42e5303af9f0391d8955888d96e
+6796e3bb0264dfe79a67ca6c75ba971d880f73063054cfd0a206b154e424250e
+6374da995642c3c008f6f12960c9d3f7ccec32d07421a67ab772dcbe16cc29c4
+b9a90a9c133e6f9fb9cd893980dc5252c7770d6277490d63fcf9bf8db2ce0683
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/qcn_graphics_8.07_x86_64-apple-darwin</download_url>
+</file>
+<file>
+    <name>hvt</name>
+    <nbytes>184420.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+848bf0ac8ee12328aafdf9a7e87df3d70d3d6b2ef76dbbde71e1530c07082b49
+29950b6004df6d87264fd264c960e1870a1b35c4d350cfdd24236f3347284294
+fcb37f44a53feb4946cccd8c76bab1104f1d2e597dec50ab929af93c628e7ad4
+47cc35a40e3b6b7a7b916c49c06a3362798e5556a55b864ab089cddc9d4f1bc2
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/hvt</download_url>
+</file>
+<file>
+    <name>cbt</name>
+    <nbytes>115016.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+2f38645575d1a62c69af50ba1f13a9664ce768701befc3415bed2e4e409b0c54
+4bbe14ab4d6fdd06e8b2a505a0c193b57cf85f022db0c2ea1f5a1a9c045a6240
+b84af2945a310ec9766412f962b30f90fee464272c81ac1e170ac7d1652f26e2
+a1ad0045eca72d9b3e33b5a06689867c6b955e53f83003565351d68edab575f0
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/cbt</download_url>
+</file>
+<file>
+    <name>xyzaxesbl.jpg</name>
+    <nbytes>13625.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+1d719e79cc6dc88d9befcef4d1e358a7c47cbd78046a248c7cae0053c219ead3
+f4a760dff210888744291791578921c181a6c359d1c3385123fbdb70c9b003e4
+3b7323f2a0848ce774e402fd4aa95fa0f610fb50109f93dbdddeb3fe50162ee0
+4bc5bf1aefc800c138945f75ab028178a05f92e55bd39979c90a62bbad0a5a90
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/xyzaxesbl.jpg</download_url>
+</file>
+<file>
+    <name>phidget218.dylib</name>
+    <nbytes>1600412.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+1065d7228430e4e15dc86f36a949328f665b16a3d504cb812377c402d14e6a03
+c8e11d7a650d9062f87f5e595ebda8f986753c7bfd6d4c1851d5b9867c41b4a3
+779b8ca8b5e2c251a82f0ed0b3af5ea7f2e809f27955b994c2bb676c481b8699
+a692ae58552581a666c351a1d202ae9d4e0636461371c4d8e5fef64d8ab31a55
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/phidget218.dylib</download_url>
+</file>
+<file>
+    <name>earthday4096.jpg</name>
+    <nbytes>968829.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+054d2013222241868b3ebfe33202f4f58d65281bb89cb27db20034d742b9f27b
+34e962e4fb50d8c57d0e58e4101d9c85d5ecd4e39207fef82c7f718d0c8629b7
+01470862040ad2b5e749416e3c6e8d93739fbf7e736211f3a69c5ef9fac83502
+801f17255f18f53d862a6b30793ada34d9183c2f91cd20df74bd2ef7e170a87b
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/earthday4096.jpg</download_url>
+</file>
+<file>
+    <name>xyzaxes.jpg</name>
+    <nbytes>11721.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+63eefb60b3daad216048e4538f727666faffa20a6cb00c13722b48e2bb991862
+60675172a2886d8214a1b10b4072ad5d2f59647f9a7bf38b34b973ba53ca88e7
+c74a2b3f03f8eed67f0e85428483c0f68bfbfba594073aa862ba7b7032225915
+71b2aae79f3afc87334accdf589e7881290a9b7739ebff589a2a4e09566e9794
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/xyzaxes.jpg</download_url>
+</file>
+<file>
+    <name>earthnight4096.jpg</name>
+    <nbytes>741317.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+1dbbca4b7de896ec34040bb27621cf93c8441a2124af3fce11b5376db3e4f71d
+25eb4c554ebd989c4eb98778e197bb948fdc10b429ec8b120e9568a3a0c74bb7
+aa971f68d6980aa863ff18574be91a083a89db9a6fa1dd23d6517ec0a2507071
+ab0538073b53296a155c4d073812d1e360c54fdae8942a2c204481bf92a9f671
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/earthnight4096.jpg</download_url>
+</file>
+<file>
+    <name>logo_iris.jpg</name>
+    <nbytes>18579.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <signature_required/>
+    <file_signature>
+6bcd2994d08da8cf040cc75eb3fa7ee9e3a303549c569499f85de49ac2dddf3c
+89673adf3f3d4a188978e8d4b1cbfd7ffa68fbaf5575601b6de157933da8e302
+47407097dab5dcf77431bae9bf810df5c3a8c74cdcbf5f3291e1533cd0e8aeca
+c0355fec4a975aeef770afda417bcf3a69d6aeb24d64a0e7510e86b1f2eabbb7
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/logo_iris.jpg</download_url>
+</file>
+<file>
+    <name>ntpdate_4.2.6p5a_universal-apple-darwin</name>
+    <nbytes>204668.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <status>1</status>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+04083b2f6e57077e1401ae41de06a403abb31023219b278b838887c22a141738
+0fdc6b82e1b312d8737b8c605ce3e9ad5125ab73ea17526bebaff74827f809aa
+72d84c4e722be9d35235a466796ec5f779d4bf1127ee3f558477641202e903ba
+c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
+.
+</file_signature>
+    <download_url>http://quakecatcher.net/sensor/download/ntpdate_4.2.6p5a_universal-apple-darwin</download_url>
+</file>
+<file>
+    <name>qcn_t5</name>
+    <nbytes>29.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>1816c80cd2a1e752ac975f54b5aa68c4</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcn_t5</download_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_1.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_2.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_3.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_4.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_5.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_6.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_7.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_8.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_9.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_10.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_11.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_12.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_13.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_14.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_15.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_16.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_17.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_18.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_19.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnuscee_085529_0_r287051262_20.zip</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>50000000.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://quakecatcher.net/sensor_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>qcnicon.png</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>74e84056284ae1062a073ce146757d91</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcnicon.png</download_url>
+</file>
+<file>
+    <name>qcn10.jpg</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>d57124dcd05274a2c5c488ef7ded98b5</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcn10.jpg</download_url>
+</file>
+<file>
+    <name>qcn11.jpg</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>b2d0a57bbda896cd052865a7e86672c7</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcn11.jpg</download_url>
+</file>
+<file>
+    <name>qcn12.jpg</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>871d0ec58fe77d86e60700b3f04d32db</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcn12.jpg</download_url>
+</file>
+<file>
+    <name>qcn13.jpg</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>3825f0b32e561cd6c406f2d09e97e505</md5_cksum>
+    <status>1</status>
+    <download_url>http://quakecatcher.net/sensor/download/qcn13.jpg</download_url>
+</file>
+<app_version>
+    <app_name>qcnsensor</app_name>
+    <version_num>807</version_num>
+    <platform>x86_64-apple-darwin</platform>
+    <avg_ncpus>0.010000</avg_ncpus>
+    <max_ncpus>0.010000</max_ncpus>
+    <flops>40270990.313683</flops>
+    <plan_class>nci</plan_class>
+    <api_version>7.7.0</api_version>
+    <file_ref>
+        <file_name>qcn_8.07_x86_64-apple-darwin__nci</file_name>
+        <main_program/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcn_graphics_8.07_x86_64-apple-darwin</file_name>
+        <open_name>graphics_app</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>hvt</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>cbt</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>xyzaxesbl.jpg</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>phidget218.dylib</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>earthday4096.jpg</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>xyzaxes.jpg</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>earthnight4096.jpg</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>logo_iris.jpg</file_name>
+    </file_ref>
+    <file_ref>
+        <file_name>ntpdate_4.2.6p5a_universal-apple-darwin</file_name>
+    </file_ref>
+</app_version>
+<workunit>
+    <name>qcnuscee_085529</name>
+    <app_name>qcnsensor</app_name>
+    <version_num>807</version_num>
+    <rsc_fpops_est>100000000000000.000000</rsc_fpops_est>
+    <rsc_fpops_bound>1000000000000000.000000</rsc_fpops_bound>
+    <rsc_memory_bound>100000000.000000</rsc_memory_bound>
+    <rsc_disk_bound>100000000.000000</rsc_disk_bound>
+    <file_ref>
+        <file_name>qcn_t5</file_name>
+        <open_name>qcn_0</open_name>
+    </file_ref>
+</workunit>
+<result>
+    <name>qcnuscee_085529_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>x86_64-apple-darwin</platform>
+    <version_num>807</version_num>
+    <plan_class>nci</plan_class>
+    <wu_name>qcnuscee_085529</wu_name>
+    <report_deadline>1521779909.000000</report_deadline>
+    <received_time>1520570310.732362</received_time>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_1.zip</file_name>
+        <open_name>qcnout1.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_2.zip</file_name>
+        <open_name>qcnout2.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_3.zip</file_name>
+        <open_name>qcnout3.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_4.zip</file_name>
+        <open_name>qcnout4.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_5.zip</file_name>
+        <open_name>qcnout5.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_6.zip</file_name>
+        <open_name>qcnout6.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_7.zip</file_name>
+        <open_name>qcnout7.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_8.zip</file_name>
+        <open_name>qcnout8.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_9.zip</file_name>
+        <open_name>qcnout9.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_10.zip</file_name>
+        <open_name>qcnout10.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_11.zip</file_name>
+        <open_name>qcnout11.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_12.zip</file_name>
+        <open_name>qcnout12.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_13.zip</file_name>
+        <open_name>qcnout13.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_14.zip</file_name>
+        <open_name>qcnout14.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_15.zip</file_name>
+        <open_name>qcnout15.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_16.zip</file_name>
+        <open_name>qcnout16.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_17.zip</file_name>
+        <open_name>qcnout17.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_18.zip</file_name>
+        <open_name>qcnout18.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_19.zip</file_name>
+        <open_name>qcnout19.zip</open_name>
+        <optional/>
+    </file_ref>
+    <file_ref>
+        <file_name>qcnuscee_085529_0_r287051262_20.zip</file_name>
+        <open_name>qcnout20.zip</open_name>
+        <optional/>
+    </file_ref>
+</result>
+<project_files>
+    <file_ref>
+        <file_name>qcnicon.png</file_name>
+        <open_name>stat_icon</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>qcn10.jpg</file_name>
+        <open_name>slideshow_qcnsensor_00</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>qcn11.jpg</file_name>
+        <open_name>slideshow_qcnsensor_01</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>qcn12.jpg</file_name>
+        <open_name>slideshow_qcnsensor_02</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>qcn13.jpg</file_name>
+        <open_name>slideshow_qcnsensor_03</open_name>
+    </file_ref>
+</project_files>
 <project>
     <master_url>http://www.rnaworld.de/rnaworld/</master_url>
     <project_name>RNA World</project_name>
@@ -181,7 +751,7 @@
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1519266398.000000</user_create_time>
-    <rpc_seqno>3</rpc_seqno>
+    <rpc_seqno>4</rpc_seqno>
     <userid>130926</userid>
     <teamid>0</teamid>
     <hostid>65724</hostid>
@@ -191,9 +761,9 @@
     <nrpc_failures>0</nrpc_failures>
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
-    <next_rpc_time>1520400841.881424</next_rpc_time>
+    <next_rpc_time>1520588317.018777</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>1520386074.145034</rec_time>
+    <rec_time>1520591680.627581</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -203,7 +773,7 @@
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
     <elapsed_time>0.000000</elapsed_time>
-    <last_rpc_time>1520382841.881424</last_rpc_time>
+    <last_rpc_time>1520570317.018777</last_rpc_time>
     <dont_use_dcf/>
     <verify_files_on_app_start/>
     <rsc_backoff_time>
@@ -378,8 +948,8 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
-    <rec>6.946693</rec>
-    <rec_time>1520386074.145034</rec_time>
+    <rec>5.890361</rec>
+    <rec_time>1520591680.627581</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -388,7 +958,7 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
-    <elapsed_time>17338.478384</elapsed_time>
+    <elapsed_time>17351.243250</elapsed_time>
     <last_rpc_time>1519204003.875097</last_rpc_time>
     <dont_use_dcf/>
     <rsc_backoff_time>
@@ -424,8 +994,8 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
     <cpu_time>25985.669649</cpu_time>
     <gpu_ec>2.368318</gpu_ec>
     <gpu_time>13.321792</gpu_time>
-    <disk_usage>24344466.000000</disk_usage>
-    <disk_share>0.000000</disk_share>
+    <disk_usage>24347521.000000</disk_usage>
+    <disk_share>1492596873384760809272472177040730112547549890661703391692606018902745867260486248575802870805340093090455752826866458165792691540525940083626161441683414020623327723583134854059868696805615075328.000000</disk_share>
 </project>
 <app>
     <name>setiathome_v8</name>
@@ -1689,9 +2259,9 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_fraction_done_elapsed_time>4378.891358</checkpoint_fraction_done_elapsed_time>
     <current_cpu_time>3412.521000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4521381888.000000</swap_size>
-    <working_set_size>258048.000000</working_set_size>
-    <working_set_size_smoothed>219324.195070</working_set_size_smoothed>
+    <swap_size>4519178240.000000</swap_size>
+    <working_set_size>10604544.000000</working_set_size>
+    <working_set_size_smoothed>10604548.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1708,9 +2278,9 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_fraction_done_elapsed_time>4137.834852</checkpoint_fraction_done_elapsed_time>
     <current_cpu_time>3196.971000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4522123264.000000</swap_size>
-    <working_set_size>262144.000000</working_set_size>
-    <working_set_size_smoothed>221640.665407</working_set_size_smoothed>
+    <swap_size>4517310464.000000</swap_size>
+    <working_set_size>10592256.000000</working_set_size>
+    <working_set_size_smoothed>10592264.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1727,9 +2297,9 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_fraction_done_elapsed_time>4169.083470</checkpoint_fraction_done_elapsed_time>
     <current_cpu_time>3216.768000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4520988672.000000</swap_size>
-    <working_set_size>266240.000000</working_set_size>
-    <working_set_size_smoothed>223443.152712</working_set_size_smoothed>
+    <swap_size>4518785024.000000</swap_size>
+    <working_set_size>10592256.000000</working_set_size>
+    <working_set_size_smoothed>10591236.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1746,9 +2316,9 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_fraction_done_elapsed_time>4138.841169</checkpoint_fraction_done_elapsed_time>
     <current_cpu_time>3189.640000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4521050112.000000</swap_size>
-    <working_set_size>294912.000000</working_set_size>
-    <working_set_size_smoothed>238276.210694</working_set_size_smoothed>
+    <swap_size>4518621184.000000</swap_size>
+    <working_set_size>10641408.000000</working_set_size>
+    <working_set_size_smoothed>10641420.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1765,9 +2335,28 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_fraction_done_elapsed_time>105.325800</checkpoint_fraction_done_elapsed_time>
     <current_cpu_time>19.333110</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4727259136.000000</swap_size>
-    <working_set_size>278528.000000</working_set_size>
-    <working_set_size_smoothed>236868.173645</working_set_size_smoothed>
+    <swap_size>4731535360.000000</swap_size>
+    <working_set_size>10153984.000000</working_set_size>
+    <working_set_size_smoothed>10155011.999939</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://quakecatcher.net/sensor/</project_master_url>
+    <result_name>qcnuscee_085529_0</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>807</app_version_num>
+    <slot>5</slot>
+    <checkpoint_cpu_time>14.059590</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>9.117761</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.000000</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>0.000000</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>14.059590</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>4423229440.000000</swap_size>
+    <working_set_size>21975040.000000</working_set_size>
+    <working_set_size_smoothed>22015161.813876</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1783,6 +2372,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <user_gpu_prev_request>3</user_gpu_prev_request>
 <user_network_request>2</user_network_request>
 <new_version_check_time>0.000000</new_version_check_time>
-<all_projects_list_check_time>1519263132.951964</all_projects_list_check_time>
+<all_projects_list_check_time>0.000000</all_projects_list_check_time>
 <alt_platform>i686-apple-darwin</alt_platform>
 </client_state>

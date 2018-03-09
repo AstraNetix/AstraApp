@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>bc9e417c01b840e552dbfe8a6f802699</authenticator>
     <hostid>65724</hostid>
-    <rpc_seqno>2</rpc_seqno>
+    <rpc_seqno>3</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -76,33 +76,33 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 </working_global_preferences>
 <cross_project_id>2b19f53cdca8922115a3d17345ab2ec1</cross_project_id>
 <time_stats>
-    <on_frac>0.103137</on_frac>
-    <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.955867</cpu_and_network_available_frac>
-    <active_frac>0.955867</active_frac>
-    <gpu_active_frac>0.950370</gpu_active_frac>
-    <client_start_time>1520382453.696175</client_start_time>
+    <on_frac>0.095552</on_frac>
+    <connected_frac>-1.000000</connected_frac>
+    <cpu_and_network_available_frac>0.941856</cpu_and_network_available_frac>
+    <active_frac>0.941856</active_frac>
+    <gpu_active_frac>0.936438</gpu_active_frac>
+    <client_start_time>1520569532.633248</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>44096.394879</total_duration>
+    <total_duration>56856.412627</total_duration>
     <total_active_duration>4975.582019</total_active_duration>
     <total_gpu_active_duration>111.315698</total_gpu_active_duration>
-    <now>1520382839.844815</now>
-    <previous_uptime>844.052527</previous_uptime>
+    <now>1520570315.994744</now>
+    <previous_uptime>25.468698</previous_uptime>
     <session_active_duration>0.000000</session_active_duration>
     <session_gpu_active_duration>0.000000</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>84409.236658</bwup>
-    <avg_up>3980323521.231977</avg_up>
-    <avg_time_up>1519800149.552766</avg_time_up>
-    <bwdown>5547817.946436</bwdown>
-    <avg_down>68709578193.786140</avg_down>
-    <avg_time_down>1519806174.281541</avg_time_down>
+    <bwup>83504.614875</bwup>
+    <avg_up>1646581271.446480</avg_up>
+    <avg_time_up>1520570309.876026</avg_time_up>
+    <bwdown>5199938.144149</bwdown>
+    <avg_down>28621251213.039135</avg_down>
+    <avg_time_down>1520570314.030381</avg_time_down>
 </net_stats>
 <host_info>
     <timezone>-28800</timezone>
-    <domain_name>airbears2-10-142-11-57.airbears2.1918.berkeley.edu</domain_name>
-    <ip_addr>10.142.11.57</ip_addr>
+    <domain_name>Sohams-MacBook-Pro.local</domain_name>
+    <ip_addr>10.142.10.72</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -115,9 +115,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>16485945344.000000</m_swap>
+    <m_swap>15880413184.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>10411962368.000000</d_free>
+    <d_free>8735416320.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -151,9 +151,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>24603509.000000</d_boinc_used_total>
+        <d_boinc_used_total>31967115.000000</d_boinc_used_total>
         <d_boinc_used_project>207471.000000</d_boinc_used_project>
-        <d_project_share>5681055432.030000</d_project_share>
+        <d_project_share>3175336725.953333</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>

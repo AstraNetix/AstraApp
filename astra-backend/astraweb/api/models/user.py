@@ -76,7 +76,7 @@ class User(AbstractUser):
                                 (BOTH, 'both'),
                             )
 
-    app_header          =   "https://www.goastra.win/" # Add web app url header here
+    app_header          =   "https://www.goastra.info/" # Add web app url header here
 
     verbose_name        =   'user'
     verbose_name_plural =   'users'
@@ -384,6 +384,13 @@ class User(AbstractUser):
         Logs in a user. Only to be used after authentication
         """
         self.logged_in = True
+
+    #######################################################################################
+    # Transactions (PyEthApp Abstractions)
+
+    def send_funds(self, value):
+        tx = eth.transact(self.ether_addr, value=value)
+        return eth.find_transaction(tx)
         
 
     #######################################################################################

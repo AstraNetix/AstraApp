@@ -1,6 +1,370 @@
 <account>
     <master_url>http://quakecatcher.net/sensor/</master_url>
     <authenticator>a55199ffa54908b596e8d096dc50c5fa</authenticator>
+    <project_name>Quake-Catcher Network</project_name>
 <project_preferences>
+
+<project_specific>
+<quakes>
+<qu001>  4.8|2018/02/27 20:14:31|  -6.0891| 142.5035|  10.00|103km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d913</qu001>
+<qu002>  4.9|2018/02/27 19:30:37|  -6.1859| 142.4519|  10.00|114km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d90v</qu002>
+<qu003>  6.0|2018/02/27 18:45:44|  -6.1716| 142.4749|  10.00|111km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d90d</qu003>
+<qu004>  2.8|2018/02/27 17:39:01|  62.3608|-148.7262|  21.80|62km ENE of Y, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18571126</qu004>
+<qu005>  4.1|2018/02/27 17:27:47|  62.3502|-148.7237|  27.80|62km N of Sutton-Alpine, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18571095</qu005>
+<qu006>  4.4|2018/02/27 17:17:11|  18.7312| 145.3671| 227.29|31km W of Agrihan, Northern Mariana Islands|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8ym</qu006>
+<qu007>  3.3|2018/02/27 16:48:00|  59.2840|-152.7384|  89.40|75km SW of Anchor Point, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18571082</qu007>
+<qu008>  3.4|2018/02/27 16:40:54|  56.0869|-149.6174|  20.85|254km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8yc</qu008>
+<qu009>  3.2|2018/02/27 16:30:36|  41.9078|-126.4232|  10.00|174km WSW of Gold Beach, Oregon|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8xx</qu009>
+<qu010>  4.7|2018/02/27 16:18:51|  -6.3072| 143.1969|  10.00|52km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8xs</qu010>
+<qu011>  2.7|2018/02/27 16:05:25|  59.6800|-154.5166| 198.50|23km ESE of Old Iliamna, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18571064</qu011>
+<qu012>  4.9|2018/02/27 15:59:53|  -6.2562| 142.9929|  10.00|73km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8xf</qu012>
+<qu013>  4.6|2018/02/27 14:57:31|  37.6306| 141.7225|  38.74|65km ENE of Namie, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8wj</qu013>
+<qu014>  3.4|2018/02/27 14:26:49|  19.6050| -65.8740|  57.00|128km N of San Juan, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018058008</qu014>
+<qu015>  4.7|2018/02/27 13:52:05| -26.4267|-114.3493|  10.00|Easter Island region|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8vp</qu015>
+<qu016>  4.3|2018/02/27 13:17:47|  -6.0108| 142.9319|  10.00|67km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8v9</qu016>
+<qu017>  2.8|2018/02/27 12:31:33|  40.5775|-124.5245|  23.47|22km W of Ferndale, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72977056</qu017>
+<qu018>  5.2|2018/02/27 12:11:04|  -6.2147| 142.8358|  10.00|90km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8u9</qu018>
+<qu019>  4.0|2018/02/27 11:25:43| -20.9647|  56.5393|  10.00|79km ENE of Sainte-Rose, Reunion|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8vk</qu019>
+<qu020>  4.3|2018/02/27 11:03:38|  41.3735|  48.4907|  49.97|2km WNW of Quba, Azerbaijan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8tl</qu020>
+<qu021>  4.5|2018/02/27 10:30:54|  -6.1504| 142.5632|  10.00|103km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8td</qu021>
+<qu022>  5.9|2018/02/27 09:29:23| -60.1778| 150.7321|  10.00|West of Macquarie Island|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8rl</qu022>
+<qu023>  2.6|2018/02/27 08:22:27|  18.0433| -67.4248|   7.00|25km W of Puerto Real, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018058006</qu023>
+<qu024>  5.2|2018/02/27 08:19:53|  -6.0855| 142.8469|  10.00|78km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8r4</qu024>
+<qu025>  2.8|2018/02/27 07:27:09|  59.4288|-152.2797|  55.40|46km SSW of Anchor Point, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18563946</qu025>
+<qu026>  4.5|2018/02/27 07:27:07|  -6.4128| 143.2841|  10.00|48km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8qt</qu026>
+<qu027>  4.5|2018/02/27 06:20:39|  -2.8170| -79.7752|  10.00|11km NNE of Balao, Ecuador|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8qa</qu027>
+<qu028>  5.0|2018/02/27 06:11:18|  -6.3589| 142.9858|  14.45|76km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8q9</qu028>
+<qu029>  3.0|2018/02/27 06:01:19|  18.9420| -67.2380|  28.00|51km NNW of San Antonio, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018058004</qu029>
+<qu030>  5.0|2018/02/27 05:58:27|  -6.3793| 143.2030|  14.70|54km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8q3</qu030>
+<qu031>  4.6|2018/02/27 05:28:47|  -6.2707| 142.7402|  10.00|101km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8q0</qu031>
+<qu032>  4.8|2018/02/27 04:29:52| -17.7801|-177.9639| 532.71|Fiji region|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8pu</qu032>
+<qu033>  4.9|2018/02/27 02:49:55|  -6.3147| 143.5327|  21.10|20km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8pf</qu033>
+<qu034>  4.9|2018/02/27 02:33:45|  -6.4194| 143.2525|  20.86|51km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8pb</qu034>
+<qu035>  2.8|2018/02/27 02:25:12|  59.8032|-152.9155| 106.70|60km W of Anchor Point, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18560465</qu035>
+<qu036>  4.7|2018/02/27 00:07:02| -19.6512| 169.0188|  55.87|28km WSW of Isangel, Vanuatu|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8nj</qu036>
+<qu037>  5.2|2018/02/26 23:19:23|  -6.3225| 142.7909|  10.00|96km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8nf</qu037>
+<qu038>  5.6|2018/02/26 22:19:12|  -6.4178| 143.0483|  10.00|71km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8my</qu038>
+<qu039>  4.8|2018/02/26 21:51:26|  -6.4679| 143.0884|  10.00|70km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8ms</qu039>
+<qu040>  2.9|2018/02/26 21:50:36|  19.0131| -66.4735|  50.00|61km N of Tierras Nuevas Poniente, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018058001</qu040>
+<qu041>  4.9|2018/02/26 21:35:37|  -5.7415| 142.3015|  10.00|104km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8mm</qu041>
+<qu042>  2.8|2018/02/26 21:30:42|  18.2826| -68.6408| 126.00|11km SSW of Boca de Yuma, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018058000</qu042>
+<qu043>  5.5|2018/02/26 21:17:58| -18.8524| 169.2939| 196.49|77km N of Isangel, Vanuatu|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8mh</qu043>
+<qu044>  2.5|2018/02/26 21:07:34|  39.7537|-120.2957|   6.47|10km NNW of Loyalton, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72976811</qu044>
+<qu045>  2.5|2018/02/26 20:28:21|  59.8536|-152.8217|  89.00|56km W of Anchor Point, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18555865</qu045>
+<qu046>  4.7|2018/02/26 19:40:11|  -2.8834| -79.7642|  10.00|6km ENE of Balao, Ecuador|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8lq</qu046>
+<qu047>  4.5|2018/02/26 18:31:04|  53.3240|-164.2223|  15.70|136km SE of Akutan, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18554610</qu047>
+<qu048>  5.2|2018/02/26 18:15:07|  -6.5309| 143.2716|  10.00|57km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8k4</qu048>
+<qu049>  4.6|2018/02/26 17:31:06|  49.5620| 155.7885|  57.07|126km S of Severo-Kuril'sk, Russia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8jt</qu049>
+<qu050>  5.0|2018/02/26 16:55:22|  -6.0456| 142.6355|  10.00|89km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8jk</qu050>
+<qu051>  5.1|2018/02/26 16:08:13|  -6.4713| 143.3485|  10.00|46km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8j8</qu051>
+<qu052>  4.5|2018/02/26 16:05:14|  -6.2332| 143.1081|  10.00|60km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8j3</qu052>
+<qu053>  2.5|2018/02/26 15:50:50|  63.5868|-147.7696|   6.80|62km ENE of Cantwell, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18552336</qu053>
+<qu054>  4.9|2018/02/26 15:31:43| -28.3617| -67.5128| 123.76|33km S of Tinogasta, Argentina|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8if</qu054>
+<qu055>  4.3|2018/02/26 15:08:00|  36.2915| 140.1456|  52.45|4km NE of Makabe, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8i0</qu055>
+<qu056>  3.9|2018/02/26 14:19:53|  56.0322|-149.7144|  21.08|255km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8h5</qu056>
+<qu057>  4.8|2018/02/26 14:16:56|  -5.9650| 142.4064|  10.00|103km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8ha</qu057>
+<qu058>  4.7|2018/02/26 14:02:30|  -6.2246| 142.5460|  10.00|110km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8gv</qu058>
+<qu059>  5.0|2018/02/26 13:52:36|  -6.3587| 142.8545|  10.00|90km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8gk</qu059>
+<qu060>  4.8|2018/02/26 13:00:27| -42.8091| -82.4063|  10.00|West Chile Rise|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8f2</qu060>
+<qu061>  4.2|2018/02/26 12:43:47|  56.5834|-148.6473|  10.00|264km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8er</qu061>
+<qu062>  5.1|2018/02/26 11:21:51|  -6.4892| 143.4601|  22.52|40km SSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8dl</qu062>
+<qu063>  3.7|2018/02/26 10:44:41|  33.4825|-116.5037|  12.59|18km ESE of Anza, CA|https://earthquake.usgs.gov/earthquakes/eventpage/ci38116288</qu063>
+<qu064>  5.4|2018/02/26 10:28:03|  -6.0360| 142.7017|  20.00|83km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8bx</qu064>
+<qu065>  4.3|2018/02/26 10:18:26|  56.5688|-148.6585|  10.00|264km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8bf</qu065>
+<qu066>  4.5|2018/02/26 09:58:05|  -5.9412| 142.4853|  19.39|94km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8be</qu066>
+<qu067>  5.2|2018/02/26 09:41:15|  -5.7791| 142.5541|  10.00|79km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8au</qu067>
+<qu068>  2.8|2018/02/26 07:44:37|  38.7975|-122.7840|   3.33|3km NW of The Geysers, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72976426</qu068>
+<qu069>  2.8|2018/02/26 07:30:07|  62.8277|-144.9794|  40.60|85km NNE of Glennallen, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18544545</qu069>
+<qu070>  6.2|2018/02/26 07:17:59|  -6.4950| 143.2550|  13.81|56km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d867</qu070>
+<qu071>  4.3|2018/02/26 07:04:18|  41.7340|  19.6804|  10.00|6km SSE of Lezhe, Albania|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d865</qu071>
+<qu072>  2.8|2018/02/26 06:39:54|  36.8705|-121.6023|   5.41|4km ESE of Aromas, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72976396</qu072>
+<qu073>  2.7|2018/02/26 06:13:09|  36.8705|-121.6043|   5.20|4km ESE of Aromas, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72976376</qu073>
+<qu074>  3.8|2018/02/26 06:00:55|  55.9792|-149.9472|  10.00|251km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d85u</qu074>
+<qu075>  4.3|2018/02/26 05:53:15|  56.1771|-149.8628|  14.82|237km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d85j</qu075>
+<qu076>  3.8|2018/02/26 05:45:45|  56.5340|-149.0129|  10.00|248km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d8ag</qu076>
+<qu077>  6.1|2018/02/26 05:34:53|  -2.7732| 126.6953|   8.42|45km NE of Airbuaya, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d855</qu077>
+<qu078>  4.1|2018/02/26 05:18:48|  -6.3334| 143.2170|  36.58|51km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d851</qu078>
+<qu079>  4.9|2018/02/26 05:15:00|   8.4150| -83.2433|  15.11|26km SSW of Golfito, Costa Rica|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d84z</qu079>
+<qu080>  4.8|2018/02/26 04:49:45|  -6.2977| 143.1497|  38.32|57km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d84n</qu080>
+<qu081>  5.2|2018/02/26 04:34:54|  -6.3147| 143.3448|  26.70|37km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d84y</qu081>
+<qu082>  5.0|2018/02/26 04:29:30|  -6.2970| 143.2469|  40.01|46km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d84e</qu082>
+<qu083>  5.7|2018/02/26 03:56:07|  -6.5004| 143.5538|  13.33|37km SSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d83z</qu083>
+<qu084>  4.7|2018/02/26 03:04:12|  -6.1569| 143.0470|  22.31|66km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d83g</qu084>
+<qu085>  4.9|2018/02/26 03:00:17|  -6.3805| 143.2632|  33.05|48km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d83d</qu085>
+<qu086>  4.7|2018/02/26 02:20:01|  -6.4743| 143.4644|  49.00|38km SSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d839</qu086>
+<qu087>  4.8|2018/02/26 02:07:48|  -6.2669| 142.8408|  35.90|90km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d82h</qu087>
+<qu088>  4.9|2018/02/26 01:28:18|  -6.4259| 142.9475|  50.46|82km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d81t</qu088>
+<qu089>  5.0|2018/02/26 01:19:43|  -6.3315| 142.8392|  60.30|91km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d81l</qu089>
+<qu090>  3.3|2018/02/26 01:10:34|  19.5733| -68.8430|  33.00|65km NE of Santa Barbara de Samana, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057006</qu090>
+<qu091>  6.0|2018/02/26 00:26:59|  -6.4274| 143.2706|  23.64|50km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d80x</qu091>
+<qu092>  2.6|2018/02/26 00:19:26|  33.5570|-115.8860|   9.11|6km NE of North Shore, CA|https://earthquake.usgs.gov/earthquakes/eventpage/ci38116056</qu092>
+<qu093>  2.6|2018/02/26 00:18:16|  19.0461| -66.5495|  37.00|64km N of Tierras Nuevas Poniente, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057005</qu093>
+<qu094>  2.7|2018/02/25 23:46:25|  36.2047| -97.4290|   3.94|15km SW of Perry, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d809</qu094>
+<qu095>  4.6|2018/02/25 23:41:04|  -6.3073| 142.8372|  35.00|91km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d80b</qu095>
+<qu096>  2.6|2018/02/25 23:08:51|  31.1274|-103.4345|   5.00|33km S of Pecos, Texas|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7zw</qu096>
+<qu097>  5.1|2018/02/25 23:01:49|  -6.1196| 142.6353|  35.00|95km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7zv</qu097>
+<qu098>  4.6|2018/02/25 22:27:50|  -6.1585| 142.6275|  32.38|99km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7zh</qu098>
+<qu099>  4.7|2018/02/25 22:26:56| -15.0883| -71.5428| 113.69|46km N of Ccolo, Peru|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7zf</qu099>
+<qu100>  2.9|2018/02/25 22:08:16|  18.2308| -67.7830|  92.00|57km WSW of Rincon, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057004</qu100>
+<qu101>  2.6|2018/02/25 22:06:21|  18.3271| -68.3136| 119.00|31km ESE of Boca de Yuma, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057003</qu101>
+<qu102>  5.0|2018/02/25 21:28:01|  -6.2495| 142.7798|  10.81|96km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ym</qu102>
+<qu103>  4.8|2018/02/25 21:20:13|  -6.4864| 142.5832|  35.00|123km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7yl</qu103>
+<qu104>  4.7|2018/02/25 20:54:00|  -6.3440| 143.4677|  35.00|27km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7yf</qu104>
+<qu105>  5.6|2018/02/25 20:41:02|  -5.4195| 151.8309|  35.00|127km SSW of Kokopo, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7y3</qu105>
+<qu106>  4.8|2018/02/25 20:37:07|  -6.2925| 143.0061|  27.32|72km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7xx</qu106>
+<qu107>  5.2|2018/02/25 19:12:57|  -6.1221| 143.0201|  35.00|70km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ws</qu107>
+<qu108>  5.0|2018/02/25 19:10:59|  -6.3033| 142.9725|  35.00|76km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7wl</qu108>
+<qu109>  3.5|2018/02/25 18:40:41|  17.9633| -64.4866| 118.00|33km NE of Christiansted, U.S. Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057002</qu109>
+<qu110>  4.8|2018/02/25 18:31:52|  -6.4513| 143.2979|  21.44|49km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7wf</qu110>
+<qu111>  5.0|2018/02/25 18:25:34|  -6.3056| 142.9533|  35.00|78km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7wa</qu111>
+<qu112>  2.5|2018/02/25 18:07:59|  38.7917|-122.8033|   2.92|4km WNW of The Geysers, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72976136</qu112>
+<qu113>  3.8|2018/02/25 18:04:55|  18.7880| -64.2366|  83.00|57km NE of Road Town, British Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057000</qu113>
+<qu114>  3.6|2018/02/25 17:48:03|  18.8463| -64.2521|  53.00|61km NE of Road Town, British Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018057001</qu114>
+<qu115>  4.1|2018/02/25 17:31:40|  -6.4174| 143.2392|  35.00|52km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7w2</qu115>
+<qu116>  2.7|2018/02/25 17:19:55|  63.1287|-151.4143|   0.00|111km NW of Talkeetna, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18531317</qu116>
+<qu117>  4.6|2018/02/25 16:16:43|  -6.2925| 142.9705|  35.00|76km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7vk</qu117>
+<qu118>  2.6|2018/02/25 16:03:38|  42.6080|-111.5004|   6.05|9km ESE of Soda Springs, Idaho|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ve</qu118>
+<qu119>  4.6|2018/02/25 15:46:23|  -6.5246| 143.1539|  27.93|67km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7v9</qu119>
+<qu120>  4.6|2018/02/25 15:07:27|  -6.1535| 143.1280|  35.00|57km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ux</qu120>
+<qu121>  5.0|2018/02/25 14:57:46|  -6.3409| 143.1137|  35.00|62km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7up</qu121>
+<qu122>  4.4|2018/02/25 14:57:09|  54.3356| 158.5490| 163.03|128km N of Yelizovo, Russia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7uq</qu122>
+<qu123>  5.0|2018/02/25 14:28:13|  -6.1671| 142.7552|  35.00|91km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7u8</qu123>
+<qu124>  5.0|2018/02/25 14:19:11|  -6.3044| 143.1923|  35.00|52km WSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7un</qu124>
+<qu125>  2.5|2018/02/25 14:15:03|  17.9898| -68.1205|  84.00|67km SE of Boca de Yuma, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056011</qu125>
+<qu126>  4.5|2018/02/25 14:09:37|  -6.1352| 142.9995|  35.00|72km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7u3</qu126>
+<qu127>  5.2|2018/02/25 13:47:46|  -5.9635| 142.6503|  16.63|82km SW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7tt</qu127>
+<qu128>  2.8|2018/02/25 13:24:35|  57.3477|-154.8447|  78.00|56km WSW of Larsen Bay, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18527519</qu128>
+<qu129>  5.0|2018/02/25 13:11:43|  -5.6987| 142.3630|  35.00|96km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7t3</qu129>
+<qu130>  3.1|2018/02/25 13:05:34|  19.4091| -66.9676|  35.00|100km N of Isabela, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056010</qu130>
+<qu131>  4.9|2018/02/25 12:57:05|  -5.8846| 142.5046|  35.00|89km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7sw</qu131>
+<qu132>  4.6|2018/02/25 12:55:14|  56.0557|-161.9751| 190.19|107km NNE of Cold Bay, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7sr</qu132>
+<qu133>  5.2|2018/02/25 12:17:29|  -6.2439| 142.7457|  35.00|99km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7sa</qu133>
+<qu134>  4.5|2018/02/25 12:15:46|  27.6632|  56.5377|  10.00|58km NNE of Bandar 'Abbas, Iran|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7s8</qu134>
+<qu135>  2.9|2018/02/25 12:10:49|  18.9430| -67.5226|  50.00|67km NW of San Antonio, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056009</qu135>
+<qu136>  4.2|2018/02/25 11:58:47| -37.7015| -72.9988|  10.00|27km WNW of Angol, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rz</qu136>
+<qu137>  5.3|2018/02/25 11:40:52|  -6.3806| 143.3568|  35.00|39km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rv</qu137>
+<qu138>  4.6|2018/02/25 11:05:01|  -6.2481| 143.1622|  34.31|54km W of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rl</qu138>
+<qu139>  4.9|2018/02/25 10:54:18|  -6.4070| 143.4283|  35.00|35km SW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rh</qu139>
+<qu140>  5.0|2018/02/25 10:47:18|  -6.0589| 142.9240|  35.00|72km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rq</qu140>
+<qu141>  2.8|2018/02/25 10:44:33|  18.5251| -68.9901| 100.00|7km S of Guaymate, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056008</qu141>
+<qu142>  5.0|2018/02/25 10:28:39|  24.3781| 122.0889|  10.00|34km SE of Su'ao, Taiwan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7r8</qu142>
+<qu143>  5.4|2018/02/25 10:26:14|  -6.4330| 143.4862|  35.00|33km SSW of Mendi, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7rc</qu143>
+<qu144>  5.5|2018/02/25 10:11:34|  -5.7603| 142.2443|  38.97|110km WSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7r4</qu144>
+<qu145>  7.5|2018/02/25 09:44:44|  -6.1488| 142.7663|  35.00|89km SSW of Porgera, Papua New Guinea|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7q6</qu145>
+<qu146>  4.4|2018/02/25 09:37:25|  37.5760| 141.8868|  42.74|79km E of Namie, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7q4</qu146>
+<qu147>  2.8|2018/02/25 09:35:48|  60.6909|-151.8382|  75.20|30km W of Nikiski, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18523839</qu147>
+<qu148>  4.6|2018/02/25 08:36:01|  27.5150|  52.4612|  10.00|147km S of Firuzabad, Iran|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7px</qu148>
+<qu149>  5.6|2018/02/25 08:28:39|  37.5905| 141.7455|  30.77|66km E of Namie, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7pu</qu149>
+<qu150>  2.9|2018/02/25 07:55:17|  18.9841| -66.5291|  11.00|57km N of Tierras Nuevas Poniente, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056007</qu150>
+<qu151>  4.5|2018/02/25 07:21:15|  38.5740|  25.5816|  10.71|48km WNW of Lagkada, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7pi</qu151>
+<qu152>  3.0|2018/02/25 07:10:21|  44.7535|-110.9953|   6.30|13km NE of West Yellowstone, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/uu60272617</qu152>
+<qu153>  4.6|2018/02/25 06:41:30| -21.0123|-178.7933| 589.36|41km SSW of Ndoi Island, Fiji|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7pc</qu153>
+<qu154>  4.6|2018/02/25 06:25:40|  18.8571| 145.5881| 221.47|12km NW of Agrihan, Northern Mariana Islands|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7p5</qu154>
+<qu155>  2.5|2018/02/25 06:09:40|  33.5585|-115.8875|   9.03|6km NE of North Shore, CA|https://earthquake.usgs.gov/earthquakes/eventpage/ci38115656</qu155>
+<qu156>  4.3|2018/02/25 05:43:46| -40.9578| 175.5112|  29.18|12km W of Masterton, New Zealand|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7nv</qu156>
+<qu157>  4.7|2018/02/25 04:51:39|  15.5253| -94.3615|  53.62|77km SW of Paredon, Mexico|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7nh</qu157>
+<qu158>  3.3|2018/02/25 04:08:14|  19.5636| -65.3458|  69.00|136km NNE of Vieques, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056005</qu158>
+<qu159>  4.0|2018/02/25 03:32:53|  63.2122|-150.5949| 131.90|83km WSW of Cantwell, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18519571</qu159>
+<qu160>  4.4|2018/02/25 03:18:59| -31.4494| -67.6411|  54.02|64km ENE of Caucete, Argentina|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7n7</qu160>
+<qu161>  3.7|2018/02/25 00:29:40|  56.2970|-149.9991|  20.46|221km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7mg</qu161>
+<qu162>  2.7|2018/02/25 00:04:52|  36.7555| -97.5272|   5.00|19km ESE of Medford, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7md</qu162>
+<qu163>  3.6|2018/02/24 22:51:18|  37.2026|-104.8283|   5.00|29km W of Trinidad, Colorado|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7lc</qu163>
+<qu164>  2.8|2018/02/24 22:27:51|  19.2399| -69.0102|  35.00|28km N of Miches, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7mq</qu164>
+<qu165>  4.3|2018/02/24 22:19:01| -29.0961| -72.8814|  10.00|176km WNW of Coquimbo, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7l2</qu165>
+<qu166>  2.7|2018/02/24 22:16:06|  38.8038|-122.7795|   1.88|4km NW of The Geysers, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72975786</qu166>
+<qu167>  4.8|2018/02/24 19:27:25| -30.4997|-176.5047|  12.86|191km SE of Raoul Island, New Zealand|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7k8</qu167>
+<qu168>  3.7|2018/02/24 18:06:10|  56.5356|-148.9849|  21.56|249km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7jw</qu168>
+<qu169>  4.6|2018/02/24 17:37:33| -15.6465|-175.0678| 253.99|145km WNW of Hihifo, Tonga|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7js</qu169>
+<qu170>  3.2|2018/02/24 17:31:27|  19.0791| -64.9276|  67.00|80km NNW of Road Town, British Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018056000</qu170>
+<qu171>  4.4|2018/02/24 16:38:06|   6.4969| -73.3704| 137.68|7km NNW of Simacota, Colombia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7jp</qu171>
+<qu172>  4.3|2018/02/24 16:21:54| -31.5512| -71.5771|  47.35|40km WNW of Illapel, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7jf</qu172>
+<qu173>  3.7|2018/02/24 15:13:56|  18.9796| -64.3606|  51.00|67km NNE of Road Town, British Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018055006</qu173>
+<qu174>  2.5|2018/02/24 15:05:32|  18.6683| -66.5318|  69.00|23km N of Tierras Nuevas Poniente, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018055005</qu174>
+<qu175>  4.2|2018/02/24 14:34:12| -29.7236| -71.6805|  36.39|41km NW of Coquimbo, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7in</qu175>
+<qu176>  2.7|2018/02/24 13:58:59|  17.9818| -66.3528|   8.00|0km E of Jauca, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018055004</qu176>
+<qu177>  4.7|2018/02/24 13:25:38|  -3.2377| 130.7378|  10.00|202km E of Amahai, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ht</qu177>
+<qu178>  2.9|2018/02/24 13:06:50|  36.4636| -98.7761|  12.41|34km NW of Fairview, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7hi</qu178>
+<qu179>  3.5|2018/02/24 13:02:19|  37.3380|-117.9070|   6.10|8km ESE of Deep Springs, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72975536</qu179>
+<qu180>  3.1|2018/02/24 10:11:50|  58.1224|-147.7137| 128.00|166km SSW of Middleton Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18513734</qu180>
+<qu181>  2.6|2018/02/24 09:53:27|  58.7681|-146.5227|  41.30|75km S of Middleton Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18513730</qu181>
+<qu182>  4.8|2018/02/24 08:59:31|  23.1322| 125.6045|  21.37|187km S of Hirara, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7fc</qu182>
+<qu183>  3.0|2018/02/24 08:46:37|  63.0162|-149.8777|  83.50|62km SW of Cantwell, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18513708</qu183>
+<qu184>  4.0|2018/02/24 08:26:33|  33.7795|  44.9757|  10.00|22km S of Al Miqdadiyah, Iraq|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7f3</qu184>
+<qu185>  4.3|2018/02/24 07:11:49|  16.1433| -94.9013|  96.37|12km ESE of San Mateo del Mar, Mexico|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7e7</qu185>
+<qu186>  2.8|2018/02/24 07:11:20|  36.8179| -97.8578|   7.60|11km W of Medford, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7e4</qu186>
+<qu187>  4.0|2018/02/24 06:51:07|  56.4862|-148.5296|  22.60|275km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7e0</qu187>
+<qu188>  3.3|2018/02/24 04:30:15|  57.0406|-148.6394|   0.00|241km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18511261</qu188>
+<qu189>  2.7|2018/02/24 03:56:17|  19.0638| -68.6800|   9.00|39km ENE of Miches, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018055001</qu189>
+<qu190>  3.1|2018/02/24 03:55:45|  36.8885| -97.6496|   3.39|11km NE of Medford, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7dc</qu190>
+<qu191>  3.8|2018/02/24 03:29:37|  54.3774|-159.9279|  17.57|51km SSW of Chernabura Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7d9</qu191>
+<qu192>  5.2|2018/02/24 03:02:22|  19.7901| 120.3809|  10.00|142km NNW of Pagudpud, Philippines|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7d5</qu192>
+<qu193>  5.0|2018/02/24 02:02:33|   2.0844|  98.8216|  10.59|22km ESE of Onan Ganjang, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7cu</qu193>
+<qu194>  2.5|2018/02/24 00:48:30|  38.6303|-119.8345|  -1.48|7km SSW of Markleeville, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72975151</qu194>
+<qu195>  5.0|2018/02/24 00:35:45|  34.5757| 141.7711|  28.76|147km ESE of Ohara, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7c6</qu195>
+<qu196>  4.3|2018/02/23 23:51:42|  36.2258|  22.0311|  10.00|64km S of Koroni, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7bw</qu196>
+<qu197>  4.7|2018/02/23 22:51:15|  -3.0904|  86.5686|  10.00|South Indian Ocean|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7bq</qu197>
+<qu198>  4.1|2018/02/23 18:47:24| -21.3758| -68.5386| 133.39|127km NNE of Calama, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7at</qu198>
+<qu199>  4.6|2018/02/23 18:43:52|  37.3345| 141.3128|  34.61|32km ESE of Namie, Japan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7av</qu199>
+<qu200>  2.8|2018/02/23 18:39:20|  36.2278|-117.4022|   2.08|48km SSW of Stovepipe Wells, CA|https://earthquake.usgs.gov/earthquakes/eventpage/ci38114680</qu200>
+<qu201>  4.8|2018/02/23 18:16:57| -21.4301|-179.2746| 613.84|105km SW of Ndoi Island, Fiji|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ae</qu201>
+<qu202>  4.4|2018/02/23 18:03:01|  34.1280|  26.1043|  16.31|102km S of Makry Gialos, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7ac</qu202>
+<qu203>  4.9|2018/02/23 17:50:53|  12.7000| -88.1942|  58.21|57km S of Chirilagua, El Salvador|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7a6</qu203>
+<qu204>  4.4|2018/02/23 17:17:11|   2.3480|  98.6324|  10.03|21km N of Onan Ganjang, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d799</qu204>
+<qu205>  4.1|2018/02/23 17:04:43|  52.7772|-165.4827|  10.00|140km SSE of Unalaska, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d791</qu205>
+<qu206>  2.8|2018/02/23 16:53:29|  59.6198|-152.6538|  80.70|49km WSW of Anchor Point, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18505479</qu206>
+<qu207>  3.2|2018/02/23 16:25:29|  56.2886|-149.4284|  34.40|246km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18505476</qu207>
+<qu208>  2.5|2018/02/23 15:12:46|  18.0390| -66.9570|  12.00|1km WSW of Liborio Negron Torres, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018054003</qu208>
+<qu209>  4.8|2018/02/23 15:07:54|  12.0589| -43.8606|  10.00|Northern Mid-Atlantic Ridge|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d76k</qu209>
+<qu210>  2.8|2018/02/23 12:21:59|  37.8292|-121.9793|   6.79|2km WSW of Diablo, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974776</qu210>
+<qu211>  3.5|2018/02/23 12:19:39|  37.8263|-121.9845|   6.16|2km ENE of Danville, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974766</qu211>
+<qu212>  3.4|2018/02/23 12:19:24|  37.8285|-121.9818|   5.98|2km ENE of Danville, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974771</qu212>
+<qu213>  3.0|2018/02/23 11:19:29|  59.7855|-136.7701|   7.08|89km WNW of Skagway, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d737</qu213>
+<qu214>  3.2|2018/02/23 10:52:53|  19.2235| -67.4481|  78.00|105km NNW of San Antonio, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018054004</qu214>
+<qu215>  4.9|2018/02/23 10:49:21| -34.5046| -72.2236|  22.81|79km W of Santa Cruz, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d71v</qu215>
+<qu216>  3.4|2018/02/23 06:21:57|  18.2686| -64.4348|  77.00|25km SE of Road Town, British Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018054001</qu216>
+<qu217>  3.3|2018/02/23 05:28:40|  37.8257|-121.9793|   6.93|2km ENE of Danville, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974586</qu217>
+<qu218>  3.4|2018/02/23 05:15:28|  54.7882|-154.0394|  15.65|153km SE of Chirikof Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6vg</qu218>
+<qu219>  2.8|2018/02/23 05:11:53|  18.2940| -68.3631| 116.00|27km ESE of Boca de Yuma, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018054000</qu219>
+<qu220>  4.5|2018/02/23 04:11:43|   2.6969| -84.3460|  39.03|Off the coast of Central America|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6uu</qu220>
+<qu221>  2.8|2018/02/23 03:24:57|  37.8315|-121.9790|   5.95|2km WSW of Diablo, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974536</qu221>
+<qu222>  4.5|2018/02/23 02:42:33|  -3.2052| 130.7390|  17.15|203km E of Amahai, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6u9</qu222>
+<qu223>  2.6|2018/02/23 02:32:10|  37.8323|-121.9797|   5.93|2km W of Diablo, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974491</qu223>
+<qu224>  4.5|2018/02/23 02:22:01|  39.5911|  72.7362|  48.52|46km WSW of Sary-Tash, Kyrgyzstan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6tz</qu224>
+<qu225>  2.5|2018/02/23 01:53:00|  40.1378|-121.0562|   3.98|4km SSE of Canyondam, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72974481</qu225>
+<qu226>  4.3|2018/02/23 00:49:10|  27.7877|  67.7848|  30.10|13km WSW of Shahdadkot, Pakistan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6ta</qu226>
+<qu227>  2.5|2018/02/23 00:27:27|  32.2237|-116.4423|  17.44|42km SSE of Tecate, B.C., MX|https://earthquake.usgs.gov/earthquakes/eventpage/ci38114176</qu227>
+<qu228>  3.3|2018/02/22 23:21:29|  58.2158|-155.4212| 115.30|89km SE of King Salmon, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18497470</qu228>
+<qu229>  4.6|2018/02/22 23:20:38|  -5.3709| 129.5641| 190.76|223km SSE of Saparua, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6t4</qu229>
+<qu230>  3.2|2018/02/22 22:54:29|  38.0274|-115.2493|  14.30|73km W of Pioche, Nevada|https://earthquake.usgs.gov/earthquakes/eventpage/nn00622844</qu230>
+<qu231>  2.7|2018/02/22 22:36:09|  36.5018| -90.8502|  11.22|13km S of Doniphan, Missouri|https://earthquake.usgs.gov/earthquakes/eventpage/nm60188992</qu231>
+<qu232>  4.8|2018/02/22 21:43:41|  16.3511| -97.5764|  10.00|23km WNW of San Miguel Panixtlahuaca, Mexico|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6sm</qu232>
+<qu233>  2.7|2018/02/22 21:24:50|  44.7490|-110.9938|   9.48|13km NE of West Yellowstone, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/uu60272162</qu233>
+<qu234>  3.5|2018/02/22 19:47:52|  59.8464|-153.2898| 120.30|77km SSW of Redoubt Volcano, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18496667</qu234>
+<qu235>  5.0|2018/02/22 19:31:16|  55.5351|-158.8342|  27.50|68km SSW of Chignik Lake, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18495894</qu235>
+<qu236>  2.5|2018/02/22 18:52:05|  46.8950|-112.5255|  12.41|13km ESE of Lincoln, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/mb80284084</qu236>
+<qu237>  3.6|2018/02/22 16:12:08|  56.4848|-148.6455|  17.01|270km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6q6</qu237>
+<qu238>  3.9|2018/02/22 16:03:48|  55.4609|-148.9786|   7.29|Gulf of Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6q3</qu238>
+<qu239>  3.8|2018/02/22 15:15:05|  41.9413|  24.8181|  10.00|9km SSW of Asenovgrad, Bulgaria|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6q4</qu239>
+<qu240>  3.8|2018/02/22 14:41:12|  55.2106|-157.3390|   2.70|128km WSW of Chirikof Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18494333</qu240>
+<qu241>  2.6|2018/02/22 14:26:42|  44.7482|-110.9932|   9.30|12km NE of West Yellowstone, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/uu60272047</qu241>
+<qu242>  4.2|2018/02/22 14:15:24|  55.3547|-157.6411|   4.80|122km SE of Chignik Lake, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18494312</qu242>
+<qu243>  4.4|2018/02/22 13:36:47|  56.2082|-149.2082|   3.80|262km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18493544</qu243>
+<qu244>  2.6|2018/02/22 13:17:22|  44.7505|-110.9952|  10.22|13km NE of West Yellowstone, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/uu60272027</qu244>
+<qu245>  3.1|2018/02/22 12:05:37|  19.0226| -67.6940|  47.00|82km NW of San Antonio, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018053004</qu245>
+<qu246>  2.7|2018/02/22 10:43:26|  19.3882|-155.2473|   1.43|5km SSW of Volcano, Hawaii|https://earthquake.usgs.gov/earthquakes/eventpage/hv70043177</qu246>
+<qu247>  4.4|2018/02/22 08:55:13|  85.5330|  86.1626|  10.00|North of Severnaya Zemlya|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6fm</qu247>
+<qu248>  4.2|2018/02/22 05:45:35| -23.9530| -68.1037| 178.02|115km S of San Pedro de Atacama, Chile|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6d1</qu248>
+<qu249>  3.1|2018/02/22 05:13:31|  50.1552| 179.5281|  27.70|156km SW of Amatignak Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18488969</qu249>
+<qu250>  4.4|2018/02/22 04:55:11|  56.5802|-148.4103|  16.93|276km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6cf</qu250>
+<qu251>  2.6|2018/02/22 04:10:06|  56.0722|-148.5643|  12.40|Gulf of Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18488229</qu251>
+<qu252>  4.7|2018/02/22 03:19:04|  12.1274| -88.1997|  10.00|106km SW of Jiquilillo, Nicaragua|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6bt</qu252>
+<qu253>  3.2|2018/02/22 02:18:39|  46.9010|-112.5342|  10.37|12km ESE of Lincoln, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/mb80283814</qu253>
+<qu254>  2.9|2018/02/22 02:17:37|  32.9193|-100.8634|   3.65|22km NNE of Snyder, Texas|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6bk</qu254>
+<qu255>  2.8|2018/02/22 01:54:50|  36.2118| -97.3728|   2.65|11km SW of Perry, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6be</qu255>
+<qu256>  2.5|2018/02/22 01:41:08|  40.3182|-124.3517|  16.14|6km W of Petrolia, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72973851</qu256>
+<qu257>  3.2|2018/02/22 01:29:30|  18.8693| -65.1388|  50.00|62km NNW of Charlotte Amalie, U.S. Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018053002</qu257>
+<qu258>  3.0|2018/02/22 00:49:42|  42.5925|-111.4563|   0.57|13km ESE of Soda Springs, Idaho|https://earthquake.usgs.gov/earthquakes/eventpage/uu60271832</qu258>
+<qu259>  2.6|2018/02/22 00:49:07|  44.7507|-110.9937|  10.08|12km NE of West Yellowstone, Montana|https://earthquake.usgs.gov/earthquakes/eventpage/uu60271827</qu259>
+<qu260>  2.5|2018/02/22 00:46:20|  56.5449|-148.5947|  11.90|269km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18486060</qu260>
+<qu261>  4.4|2018/02/22 00:12:21|  56.6779|-148.5768|  17.12|262km ESE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6ah</qu261>
+<qu262>  2.7|2018/02/22 00:04:14|  38.8412|-122.8310|   1.92|10km WNW of Cobb, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72973756</qu262>
+<qu263>  3.2|2018/02/21 23:31:16|  18.7608| -64.9966|  38.00|46km N of Charlotte Amalie, U.S. Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018053001</qu263>
+<qu264>  5.3|2018/02/21 23:21:40|  -3.1918| 130.8411|  10.00|214km E of Amahai, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6a6</qu264>
+<qu265>  2.7|2018/02/21 23:20:38|  63.1173|-149.7690|  82.70|51km SW of Cantwell, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18485255</qu265>
+<qu266>  5.4|2018/02/21 23:19:28|  -3.2537| 130.7629|  10.00|205km E of Amahai, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d6a3</qu266>
+<qu267>  4.1|2018/02/21 23:07:50|  38.2509|  21.6110|  10.00|9km NW of Paralia, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d69x</qu267>
+<qu268>  5.0|2018/02/21 21:48:58|  23.8125| -44.9506|  10.00|Northern Mid-Atlantic Ridge|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d69c</qu268>
+<qu269>  3.4|2018/02/21 21:36:28|  58.6549|-151.1449|   0.00|112km SSE of Homer, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18483841</qu269>
+<qu270>  4.2|2018/02/21 21:15:32|  34.3364|  25.0167|  10.00|74km S of Pirgos, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d694</qu270>
+<qu271>  3.2|2018/02/21 20:21:27|  17.9183| -64.7016|  30.00|18km N of Christiansted, U.S. Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018053000</qu271>
+<qu272>  2.8|2018/02/21 18:19:50|  63.5540|-147.7873|   4.90|60km ENE of Cantwell, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18482420</qu272>
+<qu273>  5.0|2018/02/21 15:44:56|  37.8553|  20.3613|  16.66|35km W of Katastarion, Greece|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d66w</qu273>
+<qu274>  4.3|2018/02/21 15:41:59|  42.0321|  24.9119|   8.28|4km ENE of Asenovgrad, Bulgaria|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d66r</qu274>
+<qu275>  3.3|2018/02/21 15:16:25|  65.5161|-166.6647|   5.00|86km SSW of Shishmaref, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d66y</qu275>
+<qu276>  5.0|2018/02/21 15:10:39|  23.3971| 121.6286|  10.00|64km S of Hualian, Taiwan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d669</qu276>
+<qu277>  2.7|2018/02/21 14:24:30|  36.2852| -97.5187|   4.96|20km W of Perry, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d65i</qu277>
+<qu278>  4.8|2018/02/21 14:09:17|  14.3741| 147.0227|  10.00|164km ESE of JP Tinian Town pre-WW2, Northern Mariana Islands|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d657</qu278>
+<qu279>  2.9|2018/02/21 12:59:10|  39.3442|-120.0272|  -2.10|12km N of Tahoe Vista, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72973441</qu279>
+<qu280>  4.3|2018/02/21 12:56:09|  -7.4934| 128.2746| 164.80|Kepulauan Barat Daya, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d62b</qu280>
+<qu281>  2.9|2018/02/21 12:45:40|  65.3924|-167.0182|  10.00|95km ESE of Little Diomede Island, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d668</qu281>
+<qu282>  2.6|2018/02/21 12:19:23|  69.1056|-145.6679|   1.40|109km N of Arctic Village, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18479580</qu282>
+<qu283>  3.2|2018/02/21 09:55:33|  19.2221| -67.8938|   8.00|89km NE of Punta Cana, Dominican Republic|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018052007</qu283>
+<qu284>  4.7|2018/02/21 08:11:35|  15.2681| -94.1409|  52.34|89km SSW of Paredon, Mexico|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5wp</qu284>
+<qu285>  4.4|2018/02/21 07:55:22|  12.6114| -88.8559|  49.72|81km SSW of Puerto El Triunfo, El Salvador|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5w9</qu285>
+<qu286>  3.4|2018/02/21 07:28:51|  18.9633| -64.9555|  44.00|68km N of Charlotte Amalie, U.S. Virgin Islands|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018052006</qu286>
+<qu287>  4.1|2018/02/21 07:10:18|  36.7760|  71.3415| 186.80|19km WNW of Ashkasham, Afghanistan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5vt</qu287>
+<qu288>  4.5|2018/02/21 06:53:07|  -7.0926| 129.4005| 162.17|231km WNW of Saumlaki, Indonesia|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5vp</qu288>
+<qu289>  4.7|2018/02/21 05:41:48| -37.2062| 178.8599|  36.21|169km NE of Opotiki, New Zealand|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5v7</qu289>
+<qu290>  4.6|2018/02/21 05:13:25| -41.3257| -86.5540|  10.00|West Chile Rise|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5uy</qu290>
+<qu291>  3.0|2018/02/21 05:03:45|  63.6349|-150.8085|   0.10|94km WSW of Healy, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18477512</qu291>
+<qu292>  2.5|2018/02/21 03:49:18|  36.5310| -99.2164|   2.49|10km N of Mooreland, Oklahoma|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5u5</qu292>
+<qu293>  4.4|2018/02/21 03:36:17|   2.1555| -98.8640|  10.00|West of the Galapagos Islands|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5u4</qu293>
+<qu294>  5.2|2018/02/21 02:27:55| -52.9015|   9.9397|  10.00|Southwest of Africa|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5tm</qu294>
+<qu295>  2.9|2018/02/21 02:10:15|  37.3635|-119.9477|  14.54|12km SSW of Bootjack, CA|https://earthquake.usgs.gov/earthquakes/eventpage/nc72973141</qu295>
+<qu296>  4.3|2018/02/21 02:04:22| -22.4705| -66.1832| 252.43|57km WNW of Abra Pampa, Argentina|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5t8</qu296>
+<qu297>  2.5|2018/02/21 01:47:22|  57.1864|-150.8626|   9.50|114km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18476185</qu297>
+<qu298>  3.2|2018/02/21 01:46:26|  19.3138| -67.2953|  15.00|103km NNW of Isabela, Puerto Rico|https://earthquake.usgs.gov/earthquakes/eventpage/pr2018052004</qu298>
+<qu299>  4.2|2018/02/21 01:29:52|  36.5335|  71.2153| 204.53|32km WSW of Ashkasham, Afghanistan|https://earthquake.usgs.gov/earthquakes/eventpage/us2000d5sw</qu299>
+<qu300>  3.2|2018/02/21 00:59:40|  56.6213|-149.9105|  40.50|199km SE of Kodiak, Alaska|https://earthquake.usgs.gov/earthquakes/eventpage/ak18475536</qu300>
+</quakes>
+<quakes>
+<wequ001>  9.5|1960/05/22 19:11:14|  -38.24|-73.05 |   0.0|Chile, #1|http://earthquake.usgs.gov/regional/world/events/1960_05_22.php</wequ001>
+<wequ002>  9.2|1964/03/28 03:36:14|  61.02 |-147.65|   0.0|Prince William Sound, Alaska, #2|http://earthquake.usgs.gov/regional/states/events/1964_03_28.php</wequ002>
+<wequ003>  9.1|2004/12/26 00:58:53|  3.30  |95.78  |   0.0|West Coast, Northern Sumatra, #3|http://earthquake.usgs.gov/eqcenter/eqinthenews/2004/usslav/</wequ003>
+<wequ004>  9.0|1952/11/04 16:58:26|  52.76 |160.06 |   0.0|Kamchatka, #4|http://earthquake.usgs.gov/regional/world/events/1952_11_04.php</wequ004>
+<wequ005>  9.0|2011/03/11 05:46:23|  38.322|142.369|  32.0|East Coast of Honshu Japan, #5|http://earthquake.usgs.gov/earthquakes/eqinthenews/2011/usc0001xgp/</wequ005>
+<wequ006>  8.8|2010/02/27 06:34:14| -35.846|-72.719|  35.0|Offshore Maule, Chile, #6|http://earthquake.usgs.gov/earthquakes/eqinthenews/2010/us2010tfan</wequ006>
+<wequ007>  8.8|1906/01/31 15:35:00|  1.0   |-81.5  |   0.0|Off the Coast of Ecuador, #7|http://earthquake.usgs.gov/regional/world/events/1906_01_31.php</wequ007>
+<wequ008>  8.7|1965/02/04 05:01:00|  51.21 |178.50 |   0.0|Rat Islands, Alaska, #8|http://earthquake.usgs.gov/regional/states/events/1965_02_04.php</wequ008>
+<wequ009>  8.6|2005/03/28 16:09:36|  2.08  |97.01  |   0.0|Northern Sumatra, Indonesia, #9|http://earthquake.usgs.gov/eqcenter/eqinthenews/2005/usweax/</wequ009>
+<wequ010>  8.6|1950/08/15 14:09:00|  28.5  |96.5   |   0.0|Assam, Tibet, #10|http://earthquake.usgs.gov/regional/world/events/1950_08_15.php</wequ010>
+<wequ011>  8.6|1957/03/09 14:22:31|  51.56 |-175.39|   0.0|Andreanof Islands, Alaska, #11|http://earthquake.usgs.gov/regional/states/events/1957_03_09.php</wequ011>
+<wequ012>  8.6|1938/02/01 19:04:00|  -5.05 |131.62 |   0.0|Banda Sea, Indonesia, #12|http://earthquake.usgs.gov/regional/world/events/1938_02_01.php</wequ012>
+<wequ013>  8.5|1923/02/03 00:00:00|  54.0  |161.0  |   0.0|Kamchatka, #13|http://earthquake.usgs.gov/regional/world/10_largest_world.php</wequ013>
+<wequ014>  8.5|1922/11/11 04:32:00|  -28.55|-70.5  |   0.0|Chile-Argentina Border, #14|http://earthquake.usgs.gov/regional/world/events/1922_11_11.php</wequ014>
+<wequ015>  8.5|1963/10/13 00:00:00|  44.9  |149.6  |   0.0|Kuril Islands, #15|http://earthquake.usgs.gov/regional/world/10_largest_world.php</wequ015>
+</quakes>
+
+<qlatlng>
+  <qlllat>0.000000</qlllat>
+  <qlllng>0.000000</qlllng>
+  <qlllvv>0.000000</qlllvv>
+  <qlllvt>0</qlllvt>
+  <qllal>0</qllal>
+</qlatlng>
+</project_specific>
 </project_preferences>
+<gui_urls>
+
+   <gui_url>
+       <name>QCN Home Page</name>
+       <description>The home page for the Quake-Catcher network</description>
+       <url>http://quakecatcher.net</url>
+   </gui_url>
+   <gui_url>
+       <name>Your QCN Account</name>
+       <description>Your account data for the Quake-Catcher Network</description>
+       <url>http://quakecatcher.net/sensor/home.php</url>
+   </gui_url>
+   <gui_url>
+       <name>Message Boards</name>
+       <description>Help Desk and Message Board for QCN Participants</description>
+       <url>http://quakecatcher.net/sensor/forum_index.php</url>
+   </gui_url>
+   <gui_url>
+       <name>Computer Location Info</name>
+       <description>View/set location (lat/long) info for this computer</description>
+       <url>http://quakecatcher.net/sensor/edit_host_info_form.php?hostid=76447</url>
+   </gui_url>
+   <gui_url>
+       <name>Computer Triggers</name>
+       <description>View recent triggers for this computer</description>
+       <url>http://quakecatcher.net/sensor/trigger.php?hostid=76447</url>
+   </gui_url>
+   <gui_url>
+       <name>Trigger Map</name>
+       <description>View QCN triggers on an interactive map</description>
+       <url>http://quakecatcher.net/sensor/maptrig.php?hostid=76447&amp;zoom=16&amp;timeint=D</url>
+   </gui_url>
+</gui_urls>
 </account>

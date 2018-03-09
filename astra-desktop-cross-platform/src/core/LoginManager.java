@@ -1,7 +1,12 @@
 package core;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.util.Duration;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,6 +29,7 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
     private PubNubClient _pubnub;
     private User _user;
     private LoginController _controller;
+    private Timeline _logoTimeline;
 
     LoginManager(Scene scene) {
         _scene = scene;
@@ -36,17 +42,27 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
             _scene.setRoot(loader.load());
             _controller = loader.getController();
             _controller.initManager(this);
+
+            _logoTimeline = new Timeline(
+                    new KeyFrame(Duration.seconds(1),
+                            new KeyValue(_controller.logoImage.rotateProperty(), 110)),
+                    new KeyFrame(Duration.seconds(0.5),
+                            new KeyValue(_controller.logoImage.rotateProperty(), 0))
+            );
+            _logoTimeline.setCycleCount(Animation.INDEFINITE);
         } catch (IOException ex) {
             Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     void login(String email, String password) {
-        if (email.isEmpty()|| email.isEmpty()) {
+        if (email.isEmpty()|| password.isEmpty()) {
             _controller.setErrorLabel("Please fill in the required fields");
             return;
         }
+
         _controller.disableButtons();
+        _logoTimeline.play();
 
         _pubnub.loginSubscribe(email);
         _pubnub.publish(new HashMap<String, String>() {{
@@ -60,8 +76,8 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
                 _controller.setErrorLabel("There was a problem connecting to " +
                         "our servers. Please try again.");
                 _controller.enableButtons();
-
-                //TODO: only for debugging!
+                _logoTimeline.pause();
+                //TODO: only for debugging, make sure to take out!
                 loginSuccess("Soham", "Kale");
             }
         };
@@ -92,6 +108,7 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
 
     public void invalidCredentials(String error) {
         _controller.enableButtons();
+        _logoTimeline.pause();
         _controller.setErrorLabel(error);
     }
 
@@ -100,24 +117,32 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
     }
 
     public void publishError(int errorCode) {
+        _controller.enableButtons();
+        _logoTimeline.pause();
         _controller.setErrorLabel("There was a problem connecting to " +
                 "our servers. Please try again.");
         System.out.println(errorCode);
     }
 
     public void unexpectedDisconnect() {
+        _controller.enableButtons();
+        _logoTimeline.pause();
         _controller.setErrorLabel("There was a problem connecting to " +
                 "our servers. We are trying to connect...");
         System.out.println("Unexpected Disconnect");
     }
 
     public void accessDenied() {
+        _controller.enableButtons();
+        _logoTimeline.stop();
         _controller.setErrorLabel("There was a problem connecting to " +
                 "our servers. We are trying to connect...");
         System.out.println("Access denied");
     }
 
     public void heartbeatFailure() {
+        _controller.enableButtons();
+        _logoTimeline.pause();
         _controller.setErrorLabel("There was a problem connecting to " +
                 "our servers. We are trying to connect...");
         System.out.println("Heartbeat Failure");

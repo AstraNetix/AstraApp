@@ -100,6 +100,23 @@ public class BoincClient {
         return projects;
     }
 
+    List<String[]> getProjectsURLCredits(String[] projectStatus) {
+        // String[] projectStatus = BoincCommands.getProjectStatus();
+        Pattern header = Pattern.compile(Line.NUMBER._header);
+        List<String[]> projects = new ArrayList<>();
+        for (int i = 1; i < projectStatus.length; i++) {
+            if (header.matcher(projectStatus[i]).find()) {
+                projects.add(new String[] {
+                        getDataKnown(projectStatus[i+1], Line.NAME),
+                        getDataKnown(projectStatus[i+2], Line.URL),
+                        getDataKnown(projectStatus[i+6], Line.USER_TOTAL_CREDIT)
+                });
+                i += 23;
+            }
+        }
+        return projects;
+    }
+
 
     /** Starts a project by inputting user information and a randomized password
      *

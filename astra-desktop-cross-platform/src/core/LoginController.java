@@ -2,6 +2,7 @@ package core;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
 import java.awt.*;
@@ -18,9 +19,11 @@ import java.net.URISyntaxException;
  *
  */
 public class LoginController {
+    @FXML ImageView logoImage;
     @FXML TextField email;
     @FXML private TextField password;
     @FXML private Button loginButton;
+    @FXML private Button newUserButton;
     @FXML private Button forgotPasswordButton;
     @FXML private Text errorLabel;
 
@@ -33,6 +36,13 @@ public class LoginController {
         forgotPasswordButton.setOnAction(event -> {
             try {
                 Desktop.getDesktop().browse(new URI("")); // TODO: Put forgot password link here
+            } catch (IOException | URISyntaxException e1) {
+                e1.printStackTrace();
+            }
+        });
+        newUserButton.setOnAction(event -> {
+            try {
+                Desktop.getDesktop().browse(new URI("")); // TODO: Put signup link here
             } catch (IOException | URISyntaxException e1) {
                 e1.printStackTrace();
             }

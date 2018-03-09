@@ -19,10 +19,11 @@ public class MainManager implements PubNubClient.PubNubDelegate {
     private Scene _scene;
     private PubNubClient _pubnub;
     private MainController _controller;
+    private User _user;
 
     MainManager(Scene scene, User user) {
         _scene = scene;
-
+        _user = user;
         _pubnub = new PubNubClient(this);
         _pubnub.setUser(user);
     }
@@ -38,15 +39,23 @@ public class MainManager implements PubNubClient.PubNubDelegate {
                 BashClient.bashPersist("./boinc -insecure");
             });
             boinc.start();
+
+            _controller = loader.getController();
+            _controller.initManager(this);
+            _controller.deviceName.setText(_user._deviceName);
+
         } catch (IOException ex) {
             Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     void logout() {
+        BoincCommands.quit();
         LoginManager loginManager = new LoginManager(_scene);
         loginManager.showLoginScreen();
     }
+
+    void quit() { Main.quit(_user); }
 
 
     public void publishSuccess() {

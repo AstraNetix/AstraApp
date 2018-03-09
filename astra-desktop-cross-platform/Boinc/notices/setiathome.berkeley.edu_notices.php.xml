@@ -1,5 +1,11 @@
-
-        <title>Project down for maintenance</title>
-        <h1>Project down for maintenance</h1>
-        Please check back in a few hours.
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+        <rss version="2.0">
+        <channel>
+        <title>SETI@home notices</title>
+        <link>https://setiathome.berkeley.edu/</link>
+        <description>Notices</description>
+        <lastBuildDate>Fri, 09 Mar 2018 09:06:13 GMT</lastBuildDate>
+    
+        </channel>
+        </rss>
     

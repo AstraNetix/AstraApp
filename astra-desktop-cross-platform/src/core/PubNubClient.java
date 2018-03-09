@@ -9,6 +9,7 @@ import com.pubnub.api.models.consumer.PNPublishResult;
 import com.pubnub.api.models.consumer.PNStatus;
 import com.pubnub.api.models.consumer.pubsub.PNMessageResult;
 import com.pubnub.api.models.consumer.pubsub.PNPresenceEventResult;
+import javafx.application.Platform;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -138,7 +139,9 @@ public class PubNubClient extends SubscribeCallback {
                 publish((_boincClient.getTotalDiskUsage()));
 
             case "quit":
-                BoincCommands.quit();
+                if (!(_delegate instanceof PubNubLoginDelegate)) {
+                    Main.quit(_user);
+                }
             default:
                 publish(new HashMap<String, String>() {{
                     put("status", "unknown-command");

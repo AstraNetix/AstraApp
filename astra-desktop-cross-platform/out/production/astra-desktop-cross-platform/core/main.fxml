@@ -1,33 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.MainController">
    <children>
-      <AnchorPane prefHeight="456.0" prefWidth="370.0">
+      <AnchorPane prefHeight="456.0" prefWidth="370.0" stylesheets="file:/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/src/login.css">
          <children>
-            <Text fill="#757575" layoutX="108.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Astra">
+            <ImageView fitHeight="452.0" fitWidth="370.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../background.png" />
+               </image>
+            </ImageView>
+            <Text fill="#757575" layoutX="72.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Astra">
                <font>
-                  <Font size="51.0" />
+                  <Font size="37.0" />
                </font>
             </Text>
-            <Text fill="#757575" layoutX="235.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="alpha">
+            <Text fill="#757575" layoutX="159.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="alpha">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#757575" layoutX="238.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Testing Module">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text fill="#757575" layoutX="126.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Testing Module">
+            <Text fx:id="errorMessages" fill="#757575" layoutX="22.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" textAlignment="CENTER" wrappingWidth="311.3326234817505" />
+            <Button fx:id="quitButton" layoutX="21.0" layoutY="397.0" mnemonicParsing="false" styleClass="login-button" text="Quit" textFill="#757575">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="logoutButton" layoutX="83.0" layoutY="397.0" mnemonicParsing="false" styleClass="forgot-password-button" text="Logout" textFill="#757575">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Astra-Logo@3x.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="deviceName" fill="#757575" layoutX="24.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="319.3138484954834">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Pane layoutX="25.0" layoutY="145.0" prefHeight="89.0" prefWidth="319.0" styleClass="project-box">
+               <children>
+                  <Text fx:id="projectNameOne" fill="#757575" layoutX="13.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="197.61396265434632">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="projectCreditsOne" fill="#757575" layoutX="10.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="181.72370147705078">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="seeDetailsOne" layoutX="218.0" layoutY="52.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
+                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="299.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../arrow%20copy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="254.0" prefHeight="89.0" prefWidth="319.0" styleClass="project-box">
+               <children>
+                  <Text fx:id="projectNameTwo" fill="#757575" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="197.61396265434632">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="projectCreditsTwo" fill="#757575" layoutX="10.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="188.53197479248047">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="seeDetailsTwo" layoutX="218.0" layoutY="52.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
+                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="299.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../arrow%20copy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="goToManagerButton" layoutX="224.0" layoutY="397.0" mnemonicParsing="false" styleClass="login-button" text="Go to Manager" textFill="#757575">
                <font>
                   <Font size="15.0" />
                </font>
-            </Text>
-            <Text fx:id="errorMessages" layoutX="32.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="311.3326234817505" />
-            <Button fx:id="quitButton" layoutX="15.0" layoutY="410.0" mnemonicParsing="false" text="Quit" />
-            <Button fx:id="logoutButton" layoutX="67.0" layoutY="410.0" mnemonicParsing="false" text="Logout" />
+            </Button>
          </children>
       </AnchorPane>
    </children>

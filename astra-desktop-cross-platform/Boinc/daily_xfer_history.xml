@@ -1,5 +1,15 @@
 <daily_xfers>
 <dx>
+   <when>17599</when>
+   <up>0.000000</up>
+   <down>1059.000000</down>
+</dx>
+<dx>
+   <when>17598</when>
+   <up>64487.000000</up>
+   <down>10829922.000000</down>
+</dx>
+<dx>
    <when>17596</when>
    <up>10115.000000</up>
    <down>22524.000000</down>

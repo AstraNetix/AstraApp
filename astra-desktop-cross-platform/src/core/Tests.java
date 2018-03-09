@@ -28,7 +28,7 @@ public class Tests {
         BoincCommands.runBenchmarks();
     }
 
-    private static String[] getData(String path) {
+    static String[] getData(String path) {
         List<String> output = new ArrayList<>();
         try (Stream<String> stream = Files.lines(Paths.get(path))) {
             stream.forEach(output::add);

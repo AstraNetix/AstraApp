@@ -15,9 +15,9 @@
 <result_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</result_name>
 <shm_key>-1</shm_key>
 <slot>0</slot>
-<client_pid>13431</client_pid>
-<wu_cpu_time>3388.724000</wu_cpu_time>
-<starting_elapsed_time>4367.652886</starting_elapsed_time>
+<client_pid>8734</client_pid>
+<wu_cpu_time>3412.521000</wu_cpu_time>
+<starting_elapsed_time>4378.891358</starting_elapsed_time>
 <using_sandbox>0</using_sandbox>
 <vm_extensions_disabled>0</vm_extensions_disabled>
 <user_total_credit>0.000000</user_total_credit>
@@ -42,22 +42,22 @@
 <host_info>
     <timezone>-28800</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.142.10.72</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
     <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
     <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
-    <p_fpops>4028302670.332528</p_fpops>
-    <p_iops>11755674783.967611</p_iops>
+    <p_fpops>4027099031.368307</p_fpops>
+    <p_iops>11957441553.355947</p_iops>
     <p_membw>1000000000.000000</p_membw>
-    <p_calculated>1519203679.804676</p_calculated>
+    <p_calculated>1520382024.722423</p_calculated>
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>11667161088.000000</m_swap>
+    <m_swap>15880413184.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>4537102336.000000</d_free>
+    <d_free>8735416320.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>

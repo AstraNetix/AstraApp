@@ -1,8 +1,10 @@
 package core;
 
+import javax.crypto.*;
+import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
+import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Formatter;
@@ -44,27 +46,50 @@ public class Utils {
                                Serializable obj) {
         byte[] contents = serialize(obj);
         try {
-            BufferedOutputStream str =
-                    new BufferedOutputStream(Files.newOutputStream(file.toPath()));
-            str.write(contents);
-            str.close();
+            SecretKeySpec sks = new SecretKeySpec(cipherPassword.getBytes(), outputAlgorithm);
+            Cipher cipher = Cipher.getInstance(outputAlgorithm);
+            cipher.init(Cipher.ENCRYPT_MODE, sks);
+            SealedObject sealedObject = new SealedObject(obj, cipher);
+
+            CipherOutputStream cos =
+                    new CipherOutputStream(new BufferedOutputStream(new FileOutputStream(file)), cipher);
+            ObjectOutputStream outputStream = new ObjectOutputStream(cos);
+            outputStream.writeObject(sealedObject);
+
+            cos.close();
+            outputStream.close();
         } catch (IOException | ClassCastException excp) {
             throw new IllegalArgumentException(excp.getMessage());
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException |
+                InvalidKeyException | IllegalBlockSizeException excp) {
+            excp.printStackTrace();
         }
     }
 
     static <T extends Serializable> T readObject(File file,
                                                  Class<T> expectedClass) {
+        T object = null;
         try {
-            ObjectInputStream in =
-                    new ObjectInputStream(new FileInputStream(file));
-            T object = expectedClass.cast(in.readObject());
-            in.close();
-            return object;
+            SecretKeySpec sks = new SecretKeySpec(cipherPassword.getBytes(), outputAlgorithm);
+            Cipher cipher = Cipher.getInstance(outputAlgorithm);
+            cipher.init(Cipher.DECRYPT_MODE, sks);
+
+            CipherInputStream cipherInputStream =
+                    new CipherInputStream( new BufferedInputStream(new FileInputStream(file)), cipher);
+            ObjectInputStream inputStream = new ObjectInputStream( cipherInputStream );
+            SealedObject sealedObject = (SealedObject) inputStream.readObject();
+            object = expectedClass.cast(sealedObject.getObject(cipher));
+
+            inputStream.close();
+            cipherInputStream.close();
         } catch (IOException | ClassCastException
                 | ClassNotFoundException excp) {
             throw new IllegalArgumentException(excp.getMessage());
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException |
+                InvalidKeyException | IllegalBlockSizeException | BadPaddingException excp) {
+            excp.printStackTrace();
         }
+        return object;
     }
 
     /** Returns a byte array containing the serialized contents of OBJ. */
@@ -79,5 +104,10 @@ public class Utils {
             excp.printStackTrace();
         } return new byte[] {};
     }
+
+    // TODO: change in production (must be 16 bytes)
+    private static final String cipherPassword = "9np9l2'a=e/c]v`5";
+    private static final String outputAlgorithm = "AES";
+
 }
 

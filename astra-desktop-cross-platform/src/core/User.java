@@ -6,6 +6,8 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Copyright (c) 2018 Astra International. All rights reserved.
@@ -22,14 +24,9 @@ public class User implements Serializable {
         _lastName = lastName;
         _email = email;
         _accountKeys = new HashMap<>();
-        _deviceID = User.hash(_deviceName, email);
         _passwords = new HashMap<>();
-
-        try {
-            _deviceName = InetAddress.getLocalHost().getHostName();
-        } catch (UnknownHostException ex) {
-            System.out.println("Hostname can not be resolved"); // TODO: make into a better response
-        }
+        _deviceName = getComputerName();
+        _deviceID = User.hash(_deviceName, email);
     }
 
     private static String hash(User user) {
@@ -62,6 +59,23 @@ public class User implements Serializable {
                 deviceName,
                 // TODO: Find out how to get company and model name */
                 email);
+    }
+
+    private String getComputerName() {
+        Map<String, String> env = System.getenv();
+        if (env.containsKey("COMPUTERNAME"))
+            return env.get("COMPUTERNAME");
+        else if (env.containsKey("HOSTNAME"))
+            return env.get("HOSTNAME");
+        else if (env.containsKey("SESSION_MANAGER")) {
+            // TODO: test this on Ubuntu somehow
+            String input = env.get("SESSION_MANAGER");
+            Pattern pattern = Pattern.compile("(?<=local/).*(?=:@)");
+            Matcher matcher = pattern.matcher(input);
+            return matcher.find() ? input.substring(matcher.start(), matcher.end()) : "";
+        } else {
+            return "Unknown Computer";
+        }
     }
 
     void save() {
