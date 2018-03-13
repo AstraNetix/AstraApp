@@ -42,11 +42,6 @@
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="file:/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Astra-Logo@3x.png" />
-               </image>
-            </ImageView>
             <Text fx:id="deviceName" fill="#757575" layoutX="24.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" wrappingWidth="319.3138484954834">
                <font>
                   <Font size="31.0" />
@@ -97,6 +92,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
+            <Button fx:id="astraButton" layoutX="37.0" layoutY="30.0" mnemonicParsing="false" styleClass="logo-button" stylesheets="@../login.css" />
          </children>
       </AnchorPane>
    </children>

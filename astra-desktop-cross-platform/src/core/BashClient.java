@@ -3,6 +3,8 @@ package core;
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
@@ -47,7 +49,7 @@ public class BashClient {
             System.out.println("Unable to finish process");
         }
 
-        List<String> output = null;
+        List<String> output;
         synchronized (streamConsumer) {
             if (!streamConsumer.hasData) {
                 try {
@@ -81,19 +83,35 @@ public class BashClient {
 
         builder.directory(new File("./Boinc"));
 
-        Process process;
+        Timer timer = new Timer();
         try {
-            process = builder.start();
+            Process process = builder.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
+            timer.schedule(new InterruptScheduler(Thread.currentThread()), 3000L);
             int exitCode = process.waitFor();
         } catch (IOException | InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            timer.cancel();
+        } finally {
+            timer.cancel();
         }
+    }
+
+    private static class InterruptScheduler extends TimerTask {
+        Thread target;
+
+        InterruptScheduler(Thread target) {
+            this.target = target;
+        }
+
+        @Override
+        public void run() {
+            target.interrupt();
+        }
+
     }
 
     private static class StreamConsumer implements Runnable {
@@ -119,7 +137,7 @@ public class BashClient {
             new BufferedReader(new InputStreamReader(inputStream)).lines()
                     .forEach(addToOutput);
 
-            /** Notify any waiting thread that data is now ready */
+            /* Notify any waiting thread that data is now ready */
             synchronized (this) {
                 hasData = true;
                 notifyAll();

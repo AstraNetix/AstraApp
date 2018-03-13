@@ -38,7 +38,7 @@
                   <Font size="51.0" />
                </font>
             </Text>
-            <Text fx:id="errorLabel" fill="#b20000" layoutX="42.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" textAlignment="CENTER" wrappingWidth="288.9999921321869" />
+            <Text fx:id="errorLabel" fill="#b20000" layoutX="42.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="288.9999921321869" />
             <Text fill="#757575" layoutX="227.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="alpha">
                <font>
                   <Font size="15.0" />

@@ -25,7 +25,12 @@ public class User implements Serializable {
         _email = email;
         _accountKeys = new HashMap<>();
         _passwords = new HashMap<>();
-        _deviceName = getComputerName();
+
+        String[] deviceInfo = getDeviceInfo();
+        _company = deviceInfo[0];
+        _model = deviceInfo[1];
+
+        _deviceName = getComputerName() != null ? getComputerName() : _firstName + "'s " + _company + " " + _model;
         _deviceID = User.hash(_deviceName, email);
     }
 
@@ -74,8 +79,29 @@ public class User implements Serializable {
             Matcher matcher = pattern.matcher(input);
             return matcher.find() ? input.substring(matcher.start(), matcher.end()) : "";
         } else {
-            return "Unknown Computer";
+            return null;
         }
+    }
+
+    private String[] getDeviceInfo() {
+        boolean isWindows = System.getProperty("os.name")
+                .toLowerCase().startsWith("windows");
+        String[] input;
+        String[] deviceInfo = new String[2];
+        if (isWindows) {
+            input = BashClient.bash("wmic",  "csproduct", "get", "vendor");
+            deviceInfo[0] = input[1];
+            input = BashClient.bash("wmic",  "csproduct", "get", "model");
+            deviceInfo[1] = input[1];
+        } else {
+            input = BashClient.bash("system_profiler", "SPHardwareDataType");
+            deviceInfo[0] = "Apple";
+
+            Pattern pattern = Pattern.compile("(?<=Model\\sName:\\s)");
+            Matcher matcher = pattern.matcher(input[4]);
+            deviceInfo[1] = matcher.find() ? input[4].substring(matcher.start(), matcher.end()) : "";
+        }
+        return deviceInfo;
     }
 
     void save() {

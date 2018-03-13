@@ -2,56 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Concepts/AstraDesktopLogin.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/AstraSplashPage.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/Dashboard.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/Login.psd" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/core/Manager.java" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/project.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/project.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/pubnub_client.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/pubnub_client.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user_exceptions.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user_exceptions.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/account_quakecatcher.net_sensor.xml" afterPath="$PROJECT_DIR$/Boinc/account_quakecatcher.net_sensor.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state.xml" afterPath="$PROJECT_DIR$/Boinc/client_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state_prev.xml" afterPath="$PROJECT_DIR$/Boinc/client_state_prev.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/daily_xfer_history.xml" afterPath="$PROJECT_DIR$/Boinc/daily_xfer_history.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/notices/feeds.xml" afterPath="$PROJECT_DIR$/Boinc/notices/feeds.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1_r3914912_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1_r3914912_0" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0" />
       <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/r3321_IntelRCoreTMi56360UCPU200GHz_x64.wisdom" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/r3321_IntelRCoreTMi56360UCPU200GHz_x64.wisdom" />
+      <change beforePath="$PROJECT_DIR$/Boinc/sched_request_quakecatcher.net_sensor.xml" afterPath="$PROJECT_DIR$/Boinc/sched_request_quakecatcher.net_sensor.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/sched_request_www.rnaworld.de_rnaworld.xml" afterPath="$PROJECT_DIR$/Boinc/sched_request_www.rnaworld.de_rnaworld.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_lockfile" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_setiathome_0" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_setiathome_0" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_task_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/0/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/0/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_lockfile" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_setiathome_1" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_setiathome_1" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_task_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/1/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/1/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_lockfile" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_setiathome_2" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_setiathome_2" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_task_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/2/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/2/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_lockfile" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_setiathome_3" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_setiathome_3" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_task_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/3/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/3/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/wisdom.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/4/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/4/boinc_mmap_file" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/4/boinc_task_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/4/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/4/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/4/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/4/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/4/stderr.txt" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_mmap_file" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_quake_5" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_quake_5" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_task_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/5/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/5/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/5/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/5/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" afterPath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" afterPath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/time_stats_log" afterPath="$PROJECT_DIR$/Boinc/time_stats_log" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincClient$Line.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincClient$Line.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincClient.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincClient.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BashClient$StreamConsumer.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BashClient$StreamConsumer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BashClient.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BashClient.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginController.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginController.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$1.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$2.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$3.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$3.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Main.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainController.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainController.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainManager.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainManager.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$1.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" />
@@ -62,7 +85,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Utils.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Utils.class" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/login.fxml" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/login.fxml" />
       <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/main.fxml" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/main.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/core/BoincClient.java" afterPath="$PROJECT_DIR$/src/core/BoincClient.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" />
+      <change beforePath="$PROJECT_DIR$/src/core/BashClient.java" afterPath="$PROJECT_DIR$/src/core/BashClient.java" />
       <change beforePath="$PROJECT_DIR$/src/core/LoginController.java" afterPath="$PROJECT_DIR$/src/core/LoginController.java" />
       <change beforePath="$PROJECT_DIR$/src/core/LoginManager.java" afterPath="$PROJECT_DIR$/src/core/LoginManager.java" />
       <change beforePath="$PROJECT_DIR$/src/core/Main.java" afterPath="$PROJECT_DIR$/src/core/Main.java" />
@@ -74,10 +98,8 @@
       <change beforePath="$PROJECT_DIR$/src/core/Utils.java" afterPath="$PROJECT_DIR$/src/core/Utils.java" />
       <change beforePath="$PROJECT_DIR$/src/core/login.fxml" afterPath="$PROJECT_DIR$/src/core/login.fxml" />
       <change beforePath="$PROJECT_DIR$/src/core/main.fxml" afterPath="$PROJECT_DIR$/src/core/main.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/login.css" afterPath="$PROJECT_DIR$/src/login.css" />
       <change beforePath="$PROJECT_DIR$/user_data.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/AstraBackground.psd" afterPath="" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,23 +157,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+      <file leaf-file-name="PubNubClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="45">
+              <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7290#7291#0" expanded="true" />
+                <element signature="e#7386#7387#0" expanded="true" />
+                <element signature="e#7574#7575#0" expanded="true" />
+                <element signature="e#7639#7640#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+            <state relative-caret-position="1320">
+              <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setRunIfActive#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setConfigHours#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setMaxCPUs#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -160,31 +197,60 @@
       <file leaf-file-name="BoincClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="198" column="44" lean-forward="false" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
+            <state relative-caret-position="1757">
+              <caret line="196" column="23" lean-forward="false" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BashClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-531">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+            <state relative-caret-position="261">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#publishSuccess#0;class#LoginManager#0" expanded="false" />
+                <element signature="e#2293#2677#0" expanded="true" />
+                <element signature="e#2676#2677#0" expanded="true" />
+                <element signature="e#3811#3812#0" expanded="true" />
+                <element signature="e#3865#3866#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3798#3799#0" expanded="true" />
+                <element signature="e#3842#3843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,30 +259,18 @@
       <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="43" column="108" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="108" />
+            <state relative-caret-position="899">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
+      <file leaf-file-name="BashClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="48" column="11" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="48" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PubNubClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="142" column="20" lean-forward="false" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="37" />
+            <state relative-caret-position="223">
+              <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -225,34 +279,9 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="375">
+              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-              <folding>
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#2349#2350#0" expanded="true" />
-                <element signature="e#2417#2418#0" expanded="true" />
-                <element signature="e#2443#2444#0" expanded="true" />
-                <element signature="e#2523#2524#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -263,6 +292,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -299,20 +329,22 @@
         <option value="$PROJECT_DIR$/src/core/tests/BashControllerTests.java" />
         <option value="$PROJECT_DIR$/src/core/Tests/Tests.java" />
         <option value="$PROJECT_DIR$/src/core/BoincCommands.java" />
-        <option value="$PROJECT_DIR$/src/core/BashClient.java" />
         <option value="$PROJECT_DIR$/project_status.txt" />
         <option value="$PROJECT_DIR$/src/create_account.txt" />
-        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
-        <option value="$PROJECT_DIR$/src/core/Utils.java" />
-        <option value="$PROJECT_DIR$/src/core/Main.java" />
-        <option value="$PROJECT_DIR$/src/core/LoginManager.java" />
-        <option value="$PROJECT_DIR$/src/core/LoginController.java" />
         <option value="$PROJECT_DIR$/src/core/main.fxml" />
-        <option value="$PROJECT_DIR$/src/core/MainManager.java" />
-        <option value="$PROJECT_DIR$/src/core/Tests.java" />
         <option value="$PROJECT_DIR$/src/core/BoincClient.java" />
-        <option value="$PROJECT_DIR$/src/core/User.java" />
+        <option value="$PROJECT_DIR$/src/core/Manager.java" />
+        <option value="$PROJECT_DIR$/src/core/Main.java" />
+        <option value="$PROJECT_DIR$/src/core/MainManager.java" />
         <option value="$PROJECT_DIR$/src/core/MainController.java" />
+        <option value="$PROJECT_DIR$/src/core/Utils.java" />
+        <option value="$PROJECT_DIR$/src/core/User.java" />
+        <option value="$PROJECT_DIR$/src/core/FakePNDelegate.java" />
+        <option value="$PROJECT_DIR$/src/core/Tests.java" />
+        <option value="$PROJECT_DIR$/src/core/BashClient.java" />
+        <option value="$PROJECT_DIR$/src/core/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/core/LoginManager.java" />
+        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
       </list>
     </option>
   </component>
@@ -340,8 +372,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,8 +398,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -961,7 +993,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -969,21 +1000,20 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.286578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.286578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20069444" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42321643" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3337364" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -997,6 +1027,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1012,7 +1043,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="31" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/MainController.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/BashClient.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/LoginManager.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1021,62 +1072,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="method#publishSuccess#0;class#LoginManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1607#1608#0" expanded="false" />
+            <element signature="e#1678#1679#0" expanded="false" />
+            <element signature="e#1858#1859#0" expanded="false" />
+            <element signature="e#1935#1936#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2038#2039#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2149#2150#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1093,9 +1101,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1128,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7290#7291#0" expanded="true" />
+            <element signature="e#7386#7387#0" expanded="true" />
+            <element signature="e#7574#7575#0" expanded="true" />
+            <element signature="e#7639#7640#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,20 +1143,10 @@
         <state relative-caret-position="405">
           <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
+            <element signature="e#3579#3580#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1176,9 +1178,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,27 +1220,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/astradesktop.fxml" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8413" column="0" lean-forward="false" selection-start-line="8413" selection-start-column="0" selection-end-line="8413" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/pubnub-gson-4.18.0-all.jar!/com/pubnub/api/models/consumer/PNStatus.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1278,25 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
-          <folding>
-            <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setRunIfActive#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setConfigHours#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setMaxCPUs#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_account.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1308,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1324,17 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="99" lean-forward="true" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="109" column="56" lean-forward="false" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1360,104 +1307,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/core/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="48" column="11" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="48" selection-end-column="11" />
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="8413" column="0" lean-forward="false" selection-start-line="8413" selection-start-column="0" selection-end-line="8413" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#publishSuccess#0;class#LoginManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="43" column="108" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="108" />
+        <state relative-caret-position="967">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
+    <entry file="file://$PROJECT_DIR$/src/core/FakePNDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="142" column="20" lean-forward="false" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        <state relative-caret-position="30">
+          <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
+            <element signature="e#3579#3580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/pubnub-gson-4.18.0-all.jar!/com/pubnub/api/PubNub.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="294" column="29" lean-forward="false" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3842#3843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7290#7291#0" expanded="true" />
+            <element signature="e#7386#7387#0" expanded="true" />
+            <element signature="e#7574#7575#0" expanded="true" />
+            <element signature="e#7639#7640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+          <folding>
+            <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setRunIfActive#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setConfigHours#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setMaxCPUs#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="198" column="44" lean-forward="false" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
+        <state relative-caret-position="1757">
+          <caret line="196" column="23" lean-forward="false" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+        <state relative-caret-position="261">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2293#2677#0" expanded="true" />
+            <element signature="e#2676#2677#0" expanded="true" />
+            <element signature="e#3811#3812#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
           </folding>
         </state>
       </provider>

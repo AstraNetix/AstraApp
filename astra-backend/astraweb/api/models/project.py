@@ -19,7 +19,7 @@ platform_choices = {
 class SeparatedValuesField(models.TextField):
     def __init__(self, *args, **kwargs):
         self.token = kwargs.pop('token', ', ')
-        super(SeparatedValuesField, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def to_python(self, value):
         if not value: return
@@ -40,7 +40,7 @@ class SeparatedValuesField(models.TextField):
 class PlatformField(models.CharField):
     def __init__(self, *args, **kwargs):
         self.token = kwargs.pop('token', ', ')
-        super(SeparatedValuesField, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def to_python(self, value):
         if not value: return
@@ -69,7 +69,7 @@ class Project(models.Model):
     area1               =   models.CharField(max_length=50, null=True)
     area2               =   models.CharField(max_length=50, null=True, blank=True)
 
-    platforms           =   PlatformField(null=True)
+    platforms           =   PlatformField(max_length=40, null=True)
 
     def __str__(self):
         return self.name

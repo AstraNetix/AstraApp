@@ -371,8 +371,10 @@ class User(AbstractUser):
         """
         if not (email and password):
             raise AuthenticationError.missing_fields()
-
-        user = User.objects.get(email=email)
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist: 
+            raise AuthenticationError.user_does_not_exist()
         if not user or user.password != password:
             raise AuthenticationError.invalid_credentials()
         if not user.is_active:

@@ -1,7 +1,12 @@
 package core;
 
+import javafx.event.ActionEvent;
+import javafx.scene.Cursor;
+import javafx.scene.control.Button;
+
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
+import javafx.event.EventHandler;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
@@ -103,6 +108,14 @@ public class Utils {
         } catch (IOException excp) {
             excp.printStackTrace();
         } return new byte[] {};
+    }
+
+    static void setupButton(Button button,
+                            EventHandler<ActionEvent> eventHandler,
+                            Manager manager) {
+        button.setOnMouseEntered(event -> manager._scene.setCursor(Cursor.HAND));
+        button.setOnAction(eventHandler);
+        button.setOnMouseExited(event -> manager._scene.setCursor(Cursor.DEFAULT));
     }
 
     // TODO: change in production (must be 16 bytes)

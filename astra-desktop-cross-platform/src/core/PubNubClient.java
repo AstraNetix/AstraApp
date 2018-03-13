@@ -11,9 +11,7 @@ import com.pubnub.api.models.consumer.pubsub.PNMessageResult;
 import com.pubnub.api.models.consumer.pubsub.PNPresenceEventResult;
 import javafx.application.Platform;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static java.util.Collections.singletonList;
 
@@ -43,11 +41,11 @@ public class PubNubClient extends SubscribeCallback {
     void setUser(User user) {
         _user = user;
         _boincClient.setUser(user);
-        _pubNub.subscribe().channels(new ArrayList<>(singletonList(_user._deviceID))).execute();
+        _pubNub.subscribe().channels(getSubscribeChannel()).execute();
     }
 
     void publish(Map data) {
-        _pubNub.publish().message(data).channel(getPublishChannel()).async(new PNCallback<PNPublishResult>() {
+        _pubNub.publish().message(mapToJSON(data)).channel(getPublishChannel()).async(new PNCallback<PNPublishResult>() {
             @Override
             public void onResponse(PNPublishResult result, PNStatus status) {
                 if(status.isError() && _delegate != null) {
@@ -62,7 +60,7 @@ public class PubNubClient extends SubscribeCallback {
 
     public void status(PubNub pubnub, PNStatus status) {
         if (status.getOperation() == null)
-            /** After a reconnection see status.getCategory() */
+            /* After a reconnection see status.getCategory() */
 
         switch (status.getOperation()) {
             case PNSubscribeOperation:
@@ -93,59 +91,78 @@ public class PubNubClient extends SubscribeCallback {
 
         switch (message.get("function").getAsString()) {
             case "login-success":
-                _pubNub.unsubscribe().channels(new ArrayList<>(singletonList(_user._email))).execute();
+                _pubNub.unsubscribe().channels(new ArrayList<>(singletonList(_email))).execute();
                 if (_delegate instanceof PubNubLoginDelegate)
-                    ((PubNubLoginDelegate) _delegate).loginSuccess(
+                    Platform.runLater(() -> {((PubNubLoginDelegate) _delegate).loginSuccess(
                             message.get("first-name").getAsString(),
                             message.get("last-name").getAsString()
-                    );
+                    );});
+                break;
             case "invalid-credentials":
-                _pubNub.unsubscribe().channels(new ArrayList<>(singletonList(_user._email))).execute();
+                _pubNub.unsubscribe().channels(new ArrayList<>(singletonList(_email))).execute();
                 if (_delegate instanceof PubNubLoginDelegate)
-                    ((PubNubLoginDelegate) _delegate).invalidCredentials(message.get("error").getAsString());
+                    Platform.runLater(() -> ((PubNubLoginDelegate) _delegate)
+                            .invalidCredentials(message.get("error").getAsString()));
+
+                break;
 
             case "run-on-batteries":
                 BoincCommands.setRunOnBatteries(message.get("opt").getAsString().equals("True"));
+                break;
             case "run-if-active":
                 BoincCommands.setRunIfActive(message.get("opt").getAsString().equals("True"));
+                break;
             case "config_hours":
                 BoincCommands.setConfigHours(message.get("start").getAsInt(), message.get("end").getAsInt());
+                break;
             case "max-cpus":
                 BoincCommands.setMaxCPUs(message.get("number").getAsInt());
+                break;
             case "disk-percent":
                 BoincCommands.setDiskMaxPercent(message.get("percent").getAsInt());
+                break;
             case "ram-percent":
                 BoincCommands.setRAMMaxUse(message.get("percent").getAsInt());
+                break;
             case "cpu-percent":
                 BoincCommands.setCPUUsage(message.get("percent").getAsInt());
+                break;
 
             case "start-project":
                 publish(_boincClient.startProject(message.get("url").getAsString()));
+                break;
             case "quit-project":
                 BoincCommands.noMoreWorkProject(message.get("url").getAsString());
+                break;
             case "resume-project":
                 BoincCommands.resetProject(message.get("url").getAsString());
+                break;
             case "suspend-project":
                 BoincCommands.suspendProject(message.get("url").getAsString());
+                break;
             case "no-more-work":
                 BoincCommands.noMoreWorkProject(message.get("url").getAsString());
+                break;
 
             case "project-status":
                 publish(_boincClient.getProjectInfo(message.get("url").getAsString(), new String[] {})); // TODO get rid of second argument after testing
-
+                break;
             case "disk-usage":
                 publish((_boincClient.getDiskUsage(message.get("url").getAsString())));
+                break;
             case "total-disk-usage":
                 publish((_boincClient.getTotalDiskUsage()));
+                break;
 
             case "quit":
-                if (!(_delegate instanceof PubNubLoginDelegate)) {
-                    Main.quit(_user);
-                }
+                if (!(_delegate instanceof PubNubLoginDelegate))
+                    Platform.runLater(() ->  Main.quit(_user));
+                break;
             default:
                 publish(new HashMap<String, String>() {{
                     put("status", "unknown-command");
                 }});
+                break;
         }
     }
 
@@ -156,7 +173,6 @@ public class PubNubClient extends SubscribeCallback {
         void accessDenied();
         void heartbeatFailure();
     }
-
     interface PubNubLoginDelegate extends PubNubDelegate {
         void loginSuccess(String firstName, String lastName);
         void invalidCredentials(String error);
@@ -171,10 +187,24 @@ public class PubNubClient extends SubscribeCallback {
         _pubNub.unsubscribe().channels(new ArrayList<>(singletonList(_email))).execute();
     }
 
-    private String getSubscribeChannel() { return String.valueOf(Long.parseLong(_user._deviceID) % _coreNum); }
+    private List<String> getSubscribeChannel() {
+        return new ArrayList<>(singletonList(String.valueOf(_user._deviceID.charAt(0))));
+    }
 
     private String getPublishChannel() {
-        return _user == null ? "create" : String.valueOf(Long.parseLong(_user._deviceID));
+        return _user == null ? "create" : _user._deviceID;
+    }
+
+    private JsonObject mapToJSON(Map data) {
+        JsonObject json = new JsonObject();
+        for (Object key : data.keySet()) {
+            if (data.get(key) instanceof Map) {
+                json.add((String) key, mapToJSON((Map) data.get(key)));
+            } else {
+                json.addProperty((String) key, String.valueOf(data.get(key)));
+            }
+        }
+        return json;
     }
 
     private PubNub _pubNub;

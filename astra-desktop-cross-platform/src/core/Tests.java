@@ -4,9 +4,12 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
+
+import static java.util.Collections.singletonList;
 
 
 /**
@@ -58,7 +61,45 @@ public class Tests {
                 getData("/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/create_account.txt")));
     }
 
-    public static void main(String... args) {
-        testParseCreateAccount();
+    static void testSingletonList() {
+        User _user = User.load();
+        System.out.println(new ArrayList<>(singletonList(_user._email)));
     }
+
+    static void testDeviceCreatePubNub() {
+        PubNubClient _pubnub = new PubNubClient(new FakePNDelegate());
+        User _user = User.load();
+        // _pubnub.setUser(_user);
+        _pubnub.publish(new HashMap<String, String>() {{
+            put("status", "create");
+            put("email", _user._email);
+            put("name", _user._deviceName);
+            put("company", _user._company);
+            put("model", _user._model);
+        }});
+    }
+
+    private static class FakePNDelegate implements PubNubClient.PubNubDelegate {
+        public void publishSuccess() {
+            System.out.println("Publish Success");
+        }
+        public void publishError(int errorCode) {
+            System.out.println("Publish Error");
+        }
+        public void unexpectedDisconnect() {
+            System.out.println("Unexpected Disconnect");
+        }
+        public void accessDenied() {
+            System.out.println("Access Denied");
+        }
+        public void heartbeatFailure() {
+            System.out.println("Heartbeat Failure");
+        }
+    }
+
+
+    public static void main(String... args) {
+        testSingletonList();
+    }
+
 }

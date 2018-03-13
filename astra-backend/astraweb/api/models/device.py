@@ -3,6 +3,7 @@ import hashlib
 
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.core.validators import RegexValidator
 
 from django.contrib.auth import get_user_model
 from api.models.project import Project
@@ -46,7 +47,12 @@ class Device(models.Model):
     #######################################################################################
     # Fields
 
-    uid                 =   models.IntegerField(default=1, blank=True)
+    uid                 =   models.CharField(
+                            validators=[RegexValidator(
+                                regex='^\w{40}$', 
+                                message='UID length (from SHA1) must be 40 characters', 
+                                code='nomatch'
+                            )], max_length=40, default="", blank=True)
 
     name                =   models.CharField(max_length=45, null=True, blank=True)
     company             =   models.CharField(max_length=45)
@@ -62,9 +68,9 @@ class Device(models.Model):
                                 MaxValueValidator(8), MinValueValidator(0)])
     disk_max_percent    =   models.IntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
-    ram_max_usage       =   models.IntegerField(default=50, blank=True, validators=[
+    ram_max_percent     =   models.IntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
-    cpu_max_usage       =   models.IntegerField(default=50, blank=True, validators=[
+    cpu_max_percent     =   models.IntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
 
     active_projects     =   models.ManyToManyField(Project, blank=True, related_name="active_projects")
@@ -93,13 +99,14 @@ class Device(models.Model):
                     device.model,
                 )
             device.uid = device.hashCode()
+            device.save()
             return device
         except User.DoesNotExist:
             # Handle UserDoesNotExist 
             pass
 
     def quit_boinc(self):
-            self.pubnub.publish(message={
+        Device.pubnub.publish(message={
             "function": "quit"
         }, device_id=self.uid)
 
@@ -117,7 +124,7 @@ class Device(models.Model):
             "url": project.url
         })  
 
-        if not self.pubnub.check_for_response():
+        if not Device.pubnub.check_for_response():
             raise DeviceClientError.device_unreachable()
 
     def quit_project(self, pk):
@@ -125,12 +132,12 @@ class Device(models.Model):
         if not project:
             raise QuitProjectError.project_nonexistent()
 
-        time_token = self.pubnub.publish(self.uid, {
+        time_token = Device.pubnub.publish(self.uid, {
             "function": "quit-project",
             "url": project.url
         }) 
                 
-        if not self.pubnub.check_for_response():
+        if not Device.pubnub.check_for_response():
             raise DeviceClientError.device_unreachable()
 
     def start_project_async(self, url):
@@ -158,9 +165,9 @@ class Device(models.Model):
         self.dormant_projects.add(project)
 
     def project_status(self):
-        self.pubnub.publish(message={
+        Device.pubnub.publish(message={
             "function": "project-status",
         }, device_id=self.uid)
 
-        if not self.pubnub.check_for_response():
+        if not Device.pubnub.check_for_response():
             raise DeviceClientError.device_unreachable()

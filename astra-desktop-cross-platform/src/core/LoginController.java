@@ -4,6 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
+import javafx.scene.Cursor;
 
 import java.awt.*;
 import java.io.IOException;
@@ -32,34 +33,39 @@ public class LoginController {
     void initManager(final LoginManager loginManager) {
         _manager = loginManager;
 
-        loginButton.setOnAction(event -> _manager.login(email.getText(), password.getText()));
-        forgotPasswordButton.setOnAction(event -> {
+        Utils.setupButton(loginButton, event -> _manager.login(email.getText(), password.getText()), _manager);
+        Utils.setupButton(forgotPasswordButton, event -> {
             try {
                 Desktop.getDesktop().browse(new URI("")); // TODO: Put forgot password link here
             } catch (IOException | URISyntaxException e1) {
                 e1.printStackTrace();
             }
-        });
-        newUserButton.setOnAction(event -> {
+        }, _manager);
+        Utils.setupButton(newUserButton, event -> {
             try {
                 Desktop.getDesktop().browse(new URI("")); // TODO: Put signup link here
             } catch (IOException | URISyntaxException e1) {
                 e1.printStackTrace();
             }
-        });
+        }, _manager);
+
     }
 
     void setErrorLabel(String error) {
         errorLabel.setText(error);
     }
 
+    String getErrorLabel() { return errorLabel.getText(); }
+
     void disableButtons() {
         loginButton.setDisable(true);
         forgotPasswordButton.setDisable(true);
+        newUserButton.setDisable(true);
     }
 
     void enableButtons() {
         loginButton.setDisable(false);
         forgotPasswordButton.setDisable(false);
+        newUserButton.setDisable(false);
     }
 }

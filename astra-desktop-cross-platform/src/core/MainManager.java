@@ -15,11 +15,9 @@ import java.util.logging.Logger;
  * Created by Soham Kale on 2/20/18
  *
  */
-public class MainManager implements PubNubClient.PubNubDelegate {
-    private Scene _scene;
+public class MainManager extends Manager implements PubNubClient.PubNubDelegate {
     private PubNubClient _pubnub;
     private MainController _controller;
-    private User _user;
 
     MainManager(Scene scene, User user) {
         _scene = scene;
@@ -28,7 +26,7 @@ public class MainManager implements PubNubClient.PubNubDelegate {
         _pubnub.setUser(user);
     }
 
-    void showMainScreen() {
+    void showScreen() {
         try {
             FXMLLoader loader = new FXMLLoader(
                     getClass().getResource("main.fxml")
@@ -52,7 +50,7 @@ public class MainManager implements PubNubClient.PubNubDelegate {
     void logout() {
         BoincCommands.quit();
         LoginManager loginManager = new LoginManager(_scene);
-        loginManager.showLoginScreen();
+        loginManager.showScreen();
     }
 
     void quit() { Main.quit(_user); }

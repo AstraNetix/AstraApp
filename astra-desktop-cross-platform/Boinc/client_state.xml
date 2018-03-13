@@ -1,8 +1,8 @@
 <client_state>
 <host_info>
-    <timezone>-28800</timezone>
-    <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <timezone>-25200</timezone>
+    <domain_name>airbears2-10-142-10-6.airbears2.1918.berkeley.edu</domain_name>
+    <ip_addr>10.142.10.6</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -15,9 +15,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15765041152.000000</m_swap>
+    <m_swap>11904552960.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>8637571072.000000</d_free>
+    <d_free>6926008320.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -85,26 +85,26 @@
 </opencl_cpu_prop>
 </host_info>
 <time_stats>
-    <on_frac>0.104726</on_frac>
+    <on_frac>0.084538</on_frac>
     <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.930954</cpu_and_network_available_frac>
-    <active_frac>0.930954</active_frac>
-    <gpu_active_frac>0.925600</gpu_active_frac>
-    <client_start_time>1520591700.997678</client_start_time>
+    <cpu_and_network_available_frac>0.920442</cpu_and_network_available_frac>
+    <active_frac>0.920442</active_frac>
+    <gpu_active_frac>0.915154</gpu_active_frac>
+    <client_start_time>1520891427.160095</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>66926.166031</total_duration>
-    <total_active_duration>4985.749772</total_active_duration>
-    <total_gpu_active_duration>121.483451</total_gpu_active_duration>
-    <previous_uptime>0.163964</previous_uptime>
-    <last_update>1520591675.727093</last_update>
+    <total_duration>77693.628683</total_duration>
+    <total_active_duration>5869.898777</total_active_duration>
+    <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
+    <previous_uptime>116.708827</previous_uptime>
+    <last_update>1520891538.103830</last_update>
 </time_stats>
 <net_stats>
-    <bwup>80227.919653</bwup>
-    <avg_up>1626765198.923379</avg_up>
-    <avg_time_up>1520580876.639278</avg_time_up>
-    <bwdown>5021756.730883</bwdown>
-    <avg_down>28099666506.936558</avg_down>
-    <avg_time_down>1520586373.011534</avg_time_down>
+    <bwup>77643.211477</bwup>
+    <avg_up>1247399041.772968</avg_up>
+    <avg_time_up>1520812572.552797</avg_time_up>
+    <bwdown>5064424.673164</bwdown>
+    <avg_down>21516548948.132542</avg_down>
+    <avg_time_down>1520819285.314308</avg_time_down>
 </net_stats>
 <project>
     <master_url>http://quakecatcher.net/sensor/</master_url>
@@ -120,7 +120,7 @@
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1520391728.000000</user_create_time>
-    <rpc_seqno>4</rpc_seqno>
+    <rpc_seqno>12</rpc_seqno>
     <userid>147652</userid>
     <teamid>0</teamid>
     <hostid>76447</hostid>
@@ -132,7 +132,7 @@
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>1520591680.627581</rec_time>
+    <rec_time>1520891543.868922</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -141,8 +141,8 @@
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
-    <elapsed_time>9.117761</elapsed_time>
-    <last_rpc_time>1520580876.910121</last_rpc_time>
+    <elapsed_time>941.356886</elapsed_time>
+    <last_rpc_time>1520620241.117777</last_rpc_time>
     <dont_use_dcf/>
     <non_cpu_intensive/>
     <rsc_backoff_time>
@@ -179,7 +179,7 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
     <cpu_time>0.000000</cpu_time>
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
-    <disk_usage>19813233.000000</disk_usage>
+    <disk_usage>19847272.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
 <app>
@@ -604,13 +604,16 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
 </workunit>
 <result>
     <name>qcnuscee_085529_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
+    <final_cpu_time>18.827290</final_cpu_time>
+    <final_elapsed_time>941.356886</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>807</version_num>
     <plan_class>nci</plan_class>
+    <final_peak_working_set_size>22937600</final_peak_working_set_size>
+    <final_peak_swap_size>4425158656</final_peak_swap_size>
+    <final_peak_disk_usage>13316553</final_peak_disk_usage>
     <wu_name>qcnuscee_085529</wu_name>
     <report_deadline>1521779909.000000</report_deadline>
     <received_time>1520570310.732362</received_time>
@@ -751,7 +754,7 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1519266398.000000</user_create_time>
-    <rpc_seqno>4</rpc_seqno>
+    <rpc_seqno>8</rpc_seqno>
     <userid>130926</userid>
     <teamid>0</teamid>
     <hostid>65724</hostid>
@@ -761,9 +764,9 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <nrpc_failures>0</nrpc_failures>
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
-    <next_rpc_time>1520588317.018777</next_rpc_time>
+    <next_rpc_time>1520830573.554265</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>1520591680.627581</rec_time>
+    <rec_time>1520891543.868922</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -773,7 +776,7 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
     <elapsed_time>0.000000</elapsed_time>
-    <last_rpc_time>1520570317.018777</last_rpc_time>
+    <last_rpc_time>1520812573.554265</last_rpc_time>
     <dont_use_dcf/>
     <verify_files_on_app_start/>
     <rsc_backoff_time>
@@ -948,8 +951,8 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
-    <rec>5.890361</rec>
-    <rec_time>1520591680.627581</rec_time>
+    <rec>5.987352</rec>
+    <rec_time>1520891543.868922</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -958,7 +961,7 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
-    <elapsed_time>17351.243250</elapsed_time>
+    <elapsed_time>18656.378024</elapsed_time>
     <last_rpc_time>1519204003.875097</last_rpc_time>
     <dont_use_dcf/>
     <rsc_backoff_time>
@@ -990,12 +993,12 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 0000000000000000000000000000000000000000000000000000000000010001
 .
 </code_sign_key>
-    <cpu_ec>242.310516</cpu_ec>
-    <cpu_time>25985.669649</cpu_time>
-    <gpu_ec>2.368318</gpu_ec>
-    <gpu_time>13.321792</gpu_time>
-    <disk_usage>24347521.000000</disk_usage>
-    <disk_share>1492596873384760809272472177040730112547549890661703391692606018902745867260486248575802870805340093090455752826866458165792691540525940083626161441683414020623327723583134854059868696805615075328.000000</disk_share>
+    <cpu_ec>246.096150</cpu_ec>
+    <cpu_time>26391.766952</cpu_time>
+    <gpu_ec>20.378671</gpu_ec>
+    <gpu_time>114.630027</gpu_time>
+    <disk_usage>24354777.000000</disk_usage>
+    <disk_share>0.000000</disk_share>
 </project>
 <app>
     <name>setiathome_v8</name>
@@ -1910,15 +1913,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 </workunit>
 <result>
     <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</name>
-    <final_cpu_time>835.193500</final_cpu_time>
-    <final_elapsed_time>1043.212449</final_elapsed_time>
+    <final_cpu_time>3563.357000</final_cpu_time>
+    <final_elapsed_time>4471.309380</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
     <final_peak_working_set_size>131014656</final_peak_working_set_size>
     <final_peak_swap_size>4557160448</final_peak_swap_size>
-    <final_peak_disk_usage>311029</final_peak_disk_usage>
+    <final_peak_disk_usage>314345</final_peak_disk_usage>
     <wu_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</wu_name>
     <report_deadline>1523800839.000000</report_deadline>
     <received_time>1519203658.594556</received_time>
@@ -1929,13 +1932,16 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 </result>
 <result>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
+    <final_cpu_time>111.920700</final_cpu_time>
+    <final_elapsed_time>1015.225974</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>800</version_num>
     <plan_class>opencl_intel_gpu_sah</plan_class>
+    <final_peak_working_set_size>55427072</final_peak_working_set_size>
+    <final_peak_swap_size>4732522496</final_peak_swap_size>
+    <final_peak_disk_usage>48762</final_peak_disk_usage>
     <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</wu_name>
     <report_deadline>1523800839.000000</report_deadline>
     <received_time>1519203658.594556</received_time>
@@ -1946,15 +1952,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 </result>
 <result>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</name>
-    <final_cpu_time>639.287700</final_cpu_time>
-    <final_elapsed_time>833.413038</final_elapsed_time>
+    <final_cpu_time>3345.114000</final_cpu_time>
+    <final_elapsed_time>4229.239758</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
     <final_peak_working_set_size>108961792</final_peak_working_set_size>
     <final_peak_swap_size>4557361152</final_peak_swap_size>
-    <final_peak_disk_usage>307168</final_peak_disk_usage>
+    <final_peak_disk_usage>312027</final_peak_disk_usage>
     <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</wu_name>
     <report_deadline>1523801184.000000</report_deadline>
     <received_time>1519204003.875097</received_time>
@@ -1965,15 +1971,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 </result>
 <result>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</name>
-    <final_cpu_time>638.990000</final_cpu_time>
-    <final_elapsed_time>834.419355</final_elapsed_time>
+    <final_cpu_time>3366.358000</final_cpu_time>
+    <final_elapsed_time>4261.602249</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
     <final_peak_working_set_size>108974080</final_peak_working_set_size>
     <final_peak_swap_size>4557357056</final_peak_swap_size>
-    <final_peak_disk_usage>310684</final_peak_disk_usage>
+    <final_peak_disk_usage>313800</final_peak_disk_usage>
     <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</wu_name>
     <report_deadline>1523801184.000000</report_deadline>
     <received_time>1519204003.875097</received_time>
@@ -2001,15 +2007,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 </result>
 <result>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</name>
-    <final_cpu_time>641.508600</final_cpu_time>
-    <final_elapsed_time>834.419355</final_elapsed_time>
+    <final_cpu_time>3340.451000</final_cpu_time>
+    <final_elapsed_time>4231.359948</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
     <final_peak_working_set_size>109887488</final_peak_working_set_size>
     <final_peak_swap_size>4556443648</final_peak_swap_size>
-    <final_peak_disk_usage>307280</final_peak_disk_usage>
+    <final_peak_disk_usage>313444</final_peak_disk_usage>
     <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</wu_name>
     <report_deadline>1523801184.000000</report_deadline>
     <received_time>1519204003.875097</received_time>
@@ -2253,15 +2259,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>803</app_version_num>
     <slot>0</slot>
-    <checkpoint_cpu_time>3412.521000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>4378.891358</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.503301</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>4378.891358</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>3412.521000</current_cpu_time>
+    <checkpoint_cpu_time>3553.769000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4467.461899</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.532691</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4467.461899</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3553.769000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4519178240.000000</swap_size>
-    <working_set_size>10604544.000000</working_set_size>
-    <working_set_size_smoothed>10604548.000000</working_set_size_smoothed>
+    <swap_size>0.000000</swap_size>
+    <working_set_size>0.000000</working_set_size>
+    <working_set_size_smoothed>23113984.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2272,15 +2278,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>803</app_version_num>
     <slot>1</slot>
-    <checkpoint_cpu_time>3196.971000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>4137.834852</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.346633</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>4137.834852</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>3196.971000</current_cpu_time>
+    <checkpoint_cpu_time>3336.175000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4225.392277</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.364523</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4225.392277</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3336.175000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4517310464.000000</swap_size>
-    <working_set_size>10592256.000000</working_set_size>
-    <working_set_size_smoothed>10592264.000000</working_set_size_smoothed>
+    <swap_size>0.000000</swap_size>
+    <working_set_size>0.000000</working_set_size>
+    <working_set_size_smoothed>24188928.000008</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2291,15 +2297,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>803</app_version_num>
     <slot>2</slot>
-    <checkpoint_cpu_time>3216.768000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>4169.083470</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.419221</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>4169.083470</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>3216.768000</current_cpu_time>
+    <checkpoint_cpu_time>3356.979000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4257.754768</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.452130</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4257.754768</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3356.979000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4518785024.000000</swap_size>
-    <working_set_size>10592256.000000</working_set_size>
-    <working_set_size_smoothed>10591236.000000</working_set_size_smoothed>
+    <swap_size>0.000000</swap_size>
+    <working_set_size>0.000000</working_set_size>
+    <working_set_size_smoothed>22566656.000000</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2310,15 +2316,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>803</app_version_num>
     <slot>3</slot>
-    <checkpoint_cpu_time>3189.640000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>4138.841169</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.447837</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>4138.841169</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>3189.640000</current_cpu_time>
+    <checkpoint_cpu_time>3330.798000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>4227.512467</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.482502</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>4227.512467</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>3330.798000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4518621184.000000</swap_size>
-    <working_set_size>10641408.000000</working_set_size>
-    <working_set_size_smoothed>10641420.000000</working_set_size_smoothed>
+    <swap_size>4522082304.000000</swap_size>
+    <working_set_size>45813760.000000</working_set_size>
+    <working_set_size_smoothed>45813759.999756</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2329,15 +2335,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>800</app_version_num>
     <slot>4</slot>
-    <checkpoint_cpu_time>19.333110</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>105.325800</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.029355</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>105.325800</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>19.333110</current_cpu_time>
+    <checkpoint_cpu_time>109.199500</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>982.855299</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.282768</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>982.855299</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>109.199500</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4731535360.000000</swap_size>
-    <working_set_size>10153984.000000</working_set_size>
-    <working_set_size_smoothed>10155011.999939</working_set_size_smoothed>
+    <swap_size>0.000000</swap_size>
+    <working_set_size>0.000000</working_set_size>
+    <working_set_size_smoothed>15501312.000228</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2348,15 +2354,15 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <active_task_state>0</active_task_state>
     <app_version_num>807</app_version_num>
     <slot>5</slot>
-    <checkpoint_cpu_time>14.059590</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>9.117761</checkpoint_elapsed_time>
+    <checkpoint_cpu_time>18.693230</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>909.993926</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.000000</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>0.000000</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>14.059590</current_cpu_time>
+    <current_cpu_time>18.693230</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4423229440.000000</swap_size>
-    <working_set_size>21975040.000000</working_set_size>
-    <working_set_size_smoothed>22015161.813876</working_set_size_smoothed>
+    <swap_size>4423057408.000000</swap_size>
+    <working_set_size>22118400.000000</working_set_size>
+    <working_set_size_smoothed>22122757.896769</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -2372,6 +2378,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <user_gpu_prev_request>3</user_gpu_prev_request>
 <user_network_request>2</user_network_request>
 <new_version_check_time>0.000000</new_version_check_time>
-<all_projects_list_check_time>0.000000</all_projects_list_check_time>
+<all_projects_list_check_time>1519768228.332527</all_projects_list_check_time>
 <alt_platform>i686-apple-darwin</alt_platform>
 </client_state>

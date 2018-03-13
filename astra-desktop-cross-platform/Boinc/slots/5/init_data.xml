@@ -345,9 +345,9 @@
 <result_name>qcnuscee_085529_0</result_name>
 <shm_key>-1</shm_key>
 <slot>5</slot>
-<client_pid>8734</client_pid>
-<wu_cpu_time>1.590149</wu_cpu_time>
-<starting_elapsed_time>9.117761</starting_elapsed_time>
+<client_pid>16048</client_pid>
+<wu_cpu_time>16.997530</wu_cpu_time>
+<starting_elapsed_time>243.695658</starting_elapsed_time>
 <using_sandbox>0</using_sandbox>
 <vm_extensions_disabled>0</vm_extensions_disabled>
 <user_total_credit>0.000000</user_total_credit>
@@ -370,9 +370,9 @@
 <computation_deadline>1521771269.000000</computation_deadline>
 <vbox_window>0</vbox_window>
 <host_info>
-    <timezone>-28800</timezone>
+    <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.142.10.72</ip_addr>
+    <ip_addr>10.0.0.58</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -385,9 +385,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15880413184.000000</m_swap>
+    <m_swap>12476309504.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>8727379968.000000</d_free>
+    <d_free>7497572352.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>

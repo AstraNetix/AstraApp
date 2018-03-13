@@ -45,7 +45,7 @@ class PubNubClient(SubscribeCallback):
 
     @staticmethod
     def get_sub_channel(device_id):
-        return str(device_id % server["NUM_CORES"]) 
+        return str(device_id[0]) 
 
 
     ##############################################################################################
@@ -62,7 +62,7 @@ class PubNubClient(SubscribeCallback):
  
     @staticmethod
     def get_pub_channel(device_id, login, message):
-        return str(device_id) if not login else message["email"]
+        return device_id if not login else message["email"]
 
 
     ##############################################################################################
@@ -91,7 +91,8 @@ class PubNubClient(SubscribeCallback):
                 # Handle heartbeat operation error
 
     def message(self, pubnub, message):
-        message = message.data.message
+        message = message.message
+        print(message)
         if message["status"] == "login":
             self.login(message)
         elif message["status"] == "create":
@@ -108,15 +109,17 @@ class PubNubClient(SubscribeCallback):
     def login(self, message):
         try:
             user = User.authenticate(email=message['email'], password=message['password'])
-            instance = self.delegate.objects.get(uid=message['id'])
-            instance.active = True
-            self.pubnub.publish(message={
+            if 'id' in message: # To account for first-time login
+                instance = self.delegate.objects.get(uid=message['id'])
+                instance.active = True
+            self.publish(message={
                 "function": "login-success",
+                "email": message['email'],
                 "first-name": user.first_name,
                 "last-name": user.last_name,
             }, login=True)
         except AuthenticationError as ae:
-            self.pubnub.publish(message={
+            self.publish(message={
                 "function": "invalid-credentials",
                 "error": str(ae),
                 "email": message['email'],

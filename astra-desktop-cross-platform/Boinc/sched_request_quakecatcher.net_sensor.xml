@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>a55199ffa54908b596e8d096dc50c5fa</authenticator>
     <hostid>76447</hostid>
-    <rpc_seqno>3</rpc_seqno>
+    <rpc_seqno>11</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -76,33 +76,33 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 </working_global_preferences>
 <cross_project_id>2303786d311848b39b5c132948794b30</cross_project_id>
 <time_stats>
-    <on_frac>0.099564</on_frac>
+    <on_frac>0.102450</on_frac>
     <connected_frac>-1.000000</connected_frac>
-    <cpu_and_network_available_frac>0.936998</cpu_and_network_available_frac>
-    <active_frac>0.936998</active_frac>
-    <gpu_active_frac>0.931609</gpu_active_frac>
-    <client_start_time>1520579833.585862</client_start_time>
+    <cpu_and_network_available_frac>0.930083</cpu_and_network_available_frac>
+    <active_frac>0.930083</active_frac>
+    <gpu_active_frac>0.924735</gpu_active_frac>
+    <client_start_time>1520591700.997678</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>61334.435485</total_duration>
-    <total_active_duration>4985.749772</total_active_duration>
-    <total_gpu_active_duration>121.483451</total_gpu_active_duration>
-    <now>1520580867.833004</now>
-    <previous_uptime>211.896132</previous_uptime>
-    <session_active_duration>0.000000</session_active_duration>
-    <session_gpu_active_duration>0.000000</session_gpu_active_duration>
+    <total_duration>67923.300344</total_duration>
+    <total_active_duration>5160.864715</total_active_duration>
+    <total_gpu_active_duration>296.598394</total_gpu_active_duration>
+    <now>1520620239.082940</now>
+    <previous_uptime>45.568729</previous_uptime>
+    <session_active_duration>175.114943</session_active_duration>
+    <session_gpu_active_duration>175.114943</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>81622.306874</bwup>
-    <avg_up>1638514295.159269</avg_up>
-    <avg_time_up>1520574596.857102</avg_time_up>
-    <bwdown>5077447.644781</bwdown>
-    <avg_down>28621254273.707870</avg_down>
-    <avg_time_down>1520570325.312858</avg_time_down>
+    <bwup>78309.768562</bwup>
+    <avg_up>1558403111.137042</avg_up>
+    <avg_time_up>1520618342.393580</avg_time_up>
+    <bwdown>5026717.210666</bwdown>
+    <avg_down>27884395569.399803</avg_down>
+    <avg_time_down>1520593083.274301</avg_time_down>
 </net_stats>
 <host_info>
     <timezone>-28800</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr></ip_addr>
+    <ip_addr>10.0.0.58</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -115,9 +115,9 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15819132928.000000</m_swap>
+    <m_swap>15765041152.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>9740500992.000000</d_free>
+    <d_free>8626704384.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -151,9 +151,9 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>48945168.000000</d_boinc_used_total>
-        <d_boinc_used_project>19813233.000000</d_boinc_used_project>
-        <d_project_share>3550093058.453333</d_project_share>
+        <d_boinc_used_total>49010757.000000</d_boinc_used_total>
+        <d_boinc_used_project>19817380.000000</d_boinc_used_project>
+        <d_project_share>3141725018.153333</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>
@@ -210,6 +210,22 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
   </msg_from_host>
   <msg_from_host>
       <result_name>qcnuscee_085529_0</result_name>
+      <time>1520607673</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520607671.942681</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
       <time>1520576205</time>
 <variety>quakelist</variety>
 <vr>8.07</vr>
@@ -226,6 +242,70 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
   </msg_from_host>
   <msg_from_host>
       <result_name>qcnuscee_085529_0</result_name>
+      <time>1520620235</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520620233.943670</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520596559</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520596557.936900</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520598644</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520598639.937649</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520610112</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520610110.948384</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
       <time>1520574406</time>
 <variety>quakelist</variety>
 <vr>8.07</vr>
@@ -234,6 +314,54 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 <reset>0</reset>
 <dt>0.020000</dt>
 <ctime>1520574404.823991</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520603618</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520603616.939063</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520618332</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520618330.952639</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520614359</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520614357.940901</ctime>
 <tsync>0.000000</tsync>
 <toff>0.000000</toff>
 <wct>0.00</wct>

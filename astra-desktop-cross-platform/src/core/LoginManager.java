@@ -24,10 +24,8 @@ import java.util.logging.Logger;
  * Created by Soham Kale on 2/20/18
  *
  */
-public class LoginManager implements PubNubClient.PubNubLoginDelegate {
-    private Scene _scene;
+public class LoginManager extends Manager implements PubNubClient.PubNubLoginDelegate {
     private PubNubClient _pubnub;
-    private User _user;
     private LoginController _controller;
     private Timeline _logoTimeline;
 
@@ -36,7 +34,7 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
         _pubnub = new PubNubClient(this);
     }
 
-    void showLoginScreen() {
+    void showScreen() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
             _scene.setRoot(loader.load());
@@ -73,12 +71,12 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
 
         TimerTask quit = new TimerTask() {
             public void run() {
-                _controller.setErrorLabel("There was a problem connecting to " +
-                        "our servers. Please try again.");
-                _controller.enableButtons();
                 _logoTimeline.pause();
-                //TODO: only for debugging, make sure to take out!
-                loginSuccess("Soham", "Kale");
+                _controller.enableButtons();
+                if (_controller.getErrorLabel().isEmpty()) {
+                    _controller.setErrorLabel("There was a problem connecting to " +
+                            "our servers. Please try again.");
+                }
             }
         };
 
@@ -86,13 +84,14 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
         timer.schedule(quit, 5000L);
     }
 
-    public void loginSuccess(String firstName, String lastName) {
+    public synchronized void loginSuccess(String firstName, String lastName) {
         File userData = new File("./user_data.txt");
         if (!userData.exists()) {
             _user = new User(firstName, lastName, _controller.email.getText());
+            _pubnub.setUser(_user);
             _pubnub.publish(new HashMap<String, String>() {{
                 put("status", "create");
-                put("user-email", _user._email);
+                put("email", _user._email);
                 put("name", _user._deviceName);
                 put("company", _user._company);
                 put("model", _user._model);
@@ -100,10 +99,12 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
             _user.save();
         } else {
             _user = User.load();
+            _pubnub.setUser(_user);
         }
+        _pubnub.loginUnsubscribe();
 
         MainManager mainManager = new MainManager(_scene, _user);
-        mainManager.showMainScreen();
+        mainManager.showScreen();
     }
 
     public void invalidCredentials(String error) {
@@ -113,7 +114,7 @@ public class LoginManager implements PubNubClient.PubNubLoginDelegate {
     }
 
     public void publishSuccess() {
-
+        System.out.println("Publish Success!");
     }
 
     public void publishError(int errorCode) {

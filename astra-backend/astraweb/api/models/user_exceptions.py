@@ -22,12 +22,17 @@ class AuthenticationError(LookupError):
     Error raised when a user fails to authenticate a User.
     """
 
+    USER_DOES_NOT_EXIST = 'There is no account associated with this email.'
     INVALID_CREDENTIALS = 'The credentials you provided are invalid.'
     MISSING_FIELDS = 'One or more of the fields is blank.'
     INACTIVE_ACCOUNT = 'Your account is inactive.'
 
     def __init__(self, message):
         super().__init__(message)
+
+    @classmethod
+    def user_does_not_exist(cls):
+        return cls(cls.USER_DOES_NOT_EXIST)
 
     @classmethod
     def invalid_credentials(cls):

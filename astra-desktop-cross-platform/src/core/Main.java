@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception{
         Scene scene = new Scene(new StackPane());
         LoginManager loginManager = new LoginManager(scene);
-        loginManager.showLoginScreen();
+        loginManager.showScreen();
 
         stage.setTitle("Astra Desktop");
 
