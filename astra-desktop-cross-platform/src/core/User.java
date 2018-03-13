@@ -94,12 +94,16 @@ public class User implements Serializable {
             input = BashClient.bash("wmic",  "csproduct", "get", "model");
             deviceInfo[1] = input[1];
         } else {
+            /*
             input = BashClient.bash("system_profiler", "SPHardwareDataType");
-            deviceInfo[0] = "Apple";
 
             Pattern pattern = Pattern.compile("(?<=Model\\sName:\\s)");
             Matcher matcher = pattern.matcher(input[4]);
             deviceInfo[1] = matcher.find() ? input[4].substring(matcher.start(), matcher.end()) : "";
+            */
+            deviceInfo[0] = "Apple";
+            // TODO get rid of this
+            deviceInfo[1] = "Macbook Pro";
         }
         return deviceInfo;
     }
@@ -110,6 +114,11 @@ public class User implements Serializable {
 
     static User load() {
         return Utils.readObject(new File("./user_data.txt"), User.class);
+    }
+
+    static boolean exists() {
+        File userData = new File("./user_data.txt");
+        return userData.exists();
     }
 
 

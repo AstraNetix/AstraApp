@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.util.Duration;
 
+import javax.jws.soap.SOAPBinding;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -81,12 +82,12 @@ public class LoginManager extends Manager implements PubNubClient.PubNubLoginDel
         };
 
         Timer timer = new Timer();
-        timer.schedule(quit, 5000L);
+        timer.schedule(quit, 4000L);
     }
 
     public synchronized void loginSuccess(String firstName, String lastName) {
-        File userData = new File("./user_data.txt");
-        if (!userData.exists()) {
+        System.out.println("Login success!");
+        if (!User.exists()) {
             _user = new User(firstName, lastName, _controller.email.getText());
             _pubnub.setUser(_user);
             _pubnub.publish(new HashMap<String, String>() {{
@@ -99,7 +100,6 @@ public class LoginManager extends Manager implements PubNubClient.PubNubLoginDel
             _user.save();
         } else {
             _user = User.load();
-            _pubnub.setUser(_user);
         }
         _pubnub.loginUnsubscribe();
 

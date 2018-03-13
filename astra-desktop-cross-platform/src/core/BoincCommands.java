@@ -10,6 +10,15 @@ package core;
  */
 public class BoincCommands {
 
+    static Thread startBoinc() {
+        Thread boinc = new Thread(() -> {
+            BashClient.bashPersist("./boinc -insecure");
+        });
+        boinc.start();
+        return boinc;
+    }
+
+
     /* ****************************** GLOBAL PREFERENCES ****************************** */
 
     static void setRunOnBatteries(boolean opt) {

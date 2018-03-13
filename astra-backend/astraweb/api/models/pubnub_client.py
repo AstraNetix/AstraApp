@@ -45,7 +45,7 @@ class PubNubClient(SubscribeCallback):
 
     @staticmethod
     def get_sub_channel(device_id):
-        return str(device_id[0]) 
+        return device_id[0]
 
 
     ##############################################################################################
@@ -92,7 +92,6 @@ class PubNubClient(SubscribeCallback):
 
     def message(self, pubnub, message):
         message = message.message
-        print(message)
         if message["status"] == "login":
             self.login(message)
         elif message["status"] == "create":

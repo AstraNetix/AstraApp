@@ -59,8 +59,8 @@
                         <Font size="19.0" />
                      </font>
                   </Text>
-                  <Button fx:id="seeDetailsOne" layoutX="218.0" layoutY="52.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
-                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="299.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                  <Button fx:id="seeDetailsOne" layoutX="211.0" layoutY="54.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
+                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="292.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../arrow%20copy.png" />
                      </image>
@@ -79,8 +79,8 @@
                         <Font size="19.0" />
                      </font>
                   </Text>
-                  <Button fx:id="seeDetailsTwo" layoutX="218.0" layoutY="52.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
-                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="299.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                  <Button fx:id="seeDetailsTwo" layoutX="212.0" layoutY="54.0" mnemonicParsing="false" styleClass="see-details" text="See Details" textFill="#757575" />
+                  <ImageView fitHeight="13.0" fitWidth="10.0" layoutX="293.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../arrow%20copy.png" />
                      </image>

@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import djcelery
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,7 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'api.apps.ApiConfig',
     'phonenumber_field',
-    'djcelery',
     'kombu.transport.django', #### CHANGE WHEN CHANGING BROKER_URL FOR PRODUCTION ####
 ]
 
@@ -80,11 +78,22 @@ WSGI_APPLICATION = 'astraweb.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'default' : {
+        'ENGINE' : 'django.db.backends.mysql',
+        'NAME' : os.environ['RDS_DB_NAME'],
+        'USER' : os.environ['RDS_USERNAME],
+        'PASSWORD' : os.environ['RDS_PASSWORD'],
+        'HOST' : os.environ['RDS_HOSTNAME'],
+        'PORT' : os.environ['RDS_PORT']
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
@@ -140,9 +149,4 @@ EMAIL_HOST_PASSWORD = 'Noreply12astrA'
 
 EMAIL_USE_SSL = True
 
-
-#Cron-like services 
-
-djcelery.setup_loader()
-BROKER_URL = 'django://' ########## IMPORTANT: CHANGE TO RABBITMQ, REDIS, ETC BEFORE PRODUCTION ##########
 

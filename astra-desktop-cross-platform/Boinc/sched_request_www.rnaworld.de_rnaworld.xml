@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>bc9e417c01b840e552dbfe8a6f802699</authenticator>
     <hostid>65724</hostid>
-    <rpc_seqno>7</rpc_seqno>
+    <rpc_seqno>8</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -76,28 +76,28 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 </working_global_preferences>
 <cross_project_id>2b19f53cdca8922115a3d17345ab2ec1</cross_project_id>
 <time_stats>
-    <on_frac>0.086880</on_frac>
+    <on_frac>0.082995</on_frac>
     <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.924747</cpu_and_network_available_frac>
-    <active_frac>0.924747</active_frac>
-    <gpu_active_frac>0.919428</gpu_active_frac>
-    <client_start_time>1520811604.339005</client_start_time>
+    <cpu_and_network_available_frac>0.919668</cpu_and_network_available_frac>
+    <active_frac>0.919668</active_frac>
+    <gpu_active_frac>0.914385</gpu_active_frac>
+    <client_start_time>1520916021.595820</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>72906.166002</total_duration>
-    <total_active_duration>5171.150751</total_active_duration>
-    <total_gpu_active_duration>306.884430</total_gpu_active_duration>
-    <now>1520812570.260847</now>
-    <previous_uptime>52.278477</previous_uptime>
+    <total_duration>78419.296602</total_duration>
+    <total_active_duration>5869.898777</total_active_duration>
+    <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
+    <now>1520916247.339113</now>
+    <previous_uptime>38.506219</previous_uptime>
     <session_active_duration>0.000000</session_active_duration>
     <session_gpu_active_duration>0.000000</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>78673.133723</bwup>
-    <avg_up>1555018295.164797</avg_up>
-    <avg_time_up>1520620240.386170</avg_time_up>
-    <bwdown>5026717.210666</bwdown>
-    <avg_down>27884395569.399803</avg_down>
-    <avg_time_down>1520593083.274301</avg_time_down>
+    <bwup>77643.211477</bwup>
+    <avg_up>1247399041.772968</avg_up>
+    <avg_time_up>1520812572.552797</avg_time_up>
+    <bwdown>5064424.673164</bwdown>
+    <avg_down>21516548948.132542</avg_down>
+    <avg_time_down>1520819285.314308</avg_time_down>
 </net_stats>
 <host_info>
     <timezone>-25200</timezone>
@@ -115,9 +115,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>12300599296.000000</m_swap>
+    <m_swap>11419979776.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>7316377600.000000</d_free>
+    <d_free>6395445248.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -151,9 +151,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>49045562.000000</d_boinc_used_total>
+        <d_boinc_used_total>49060421.000000</d_boinc_used_total>
         <d_boinc_used_project>207471.000000</d_boinc_used_project>
-        <d_project_share>2661284625.853333</d_project_share>
+        <d_project_share>2323614878.420000</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>

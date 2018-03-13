@@ -100,6 +100,7 @@ class Device(models.Model):
                 )
             device.uid = device.hashCode()
             device.save()
+            print("creating device...")
             return device
         except User.DoesNotExist:
             # Handle UserDoesNotExist 

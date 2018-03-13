@@ -45,7 +45,11 @@ public class PubNubClient extends SubscribeCallback {
     }
 
     void publish(Map data) {
-        _pubNub.publish().message(mapToJSON(data)).channel(getPublishChannel()).async(new PNCallback<PNPublishResult>() {
+        String channel  = getPublishChannel();
+        JsonObject jsonData = mapToJSON(data);
+        if (channel.length() == 1) { jsonData.addProperty("id", _user._deviceID); }
+
+        _pubNub.publish().message(jsonData).channel(channel).async(new PNCallback<PNPublishResult>() {
             @Override
             public void onResponse(PNPublishResult result, PNStatus status) {
                 if(status.isError() && _delegate != null) {
@@ -145,7 +149,8 @@ public class PubNubClient extends SubscribeCallback {
                 break;
 
             case "project-status":
-                publish(_boincClient.getProjectInfo(message.get("url").getAsString(), new String[] {})); // TODO get rid of second argument after testing
+                publish(_boincClient.getProjectInfo(message.get("url").getAsString(), new String[] {}));
+                // TODO get rid of second argument after testing
                 break;
             case "disk-usage":
                 publish((_boincClient.getDiskUsage(message.get("url").getAsString())));
@@ -188,11 +193,11 @@ public class PubNubClient extends SubscribeCallback {
     }
 
     private List<String> getSubscribeChannel() {
-        return new ArrayList<>(singletonList(String.valueOf(_user._deviceID.charAt(0))));
+        return new ArrayList<>(singletonList(_user._deviceID));
     }
 
     private String getPublishChannel() {
-        return _user == null ? "create" : _user._deviceID;
+        return _user == null ? "create" : String.valueOf(_user._deviceID.charAt(0));
     }
 
     private JsonObject mapToJSON(Map data) {

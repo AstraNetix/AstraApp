@@ -3,10 +3,7 @@ package core;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Stream;
 
 import static java.util.Collections.singletonList;
@@ -23,12 +20,21 @@ import static java.util.Collections.singletonList;
  */
 public class Tests {
 
+    static void testCL() {
+        Arrays.asList(BashClient.bash("ls")).forEach(System.out::println);
+    }
+
     static void testBoinc() {
-        Thread boinc = new Thread(() -> {
-            BashClient.bashPersist("./boinc -insecure");
-        });
-        boinc.start();
-        BoincCommands.runBenchmarks();
+        BoincCommands.startBoinc();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("Starting data drop...");
+                Arrays.asList(BoincCommands.getDiskUsage()).forEach(System.out::println);
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(task, 4000L);
     }
 
     static String[] getData(String path) {
@@ -99,7 +105,7 @@ public class Tests {
 
 
     public static void main(String... args) {
-        testSingletonList();
+        testBoinc();
     }
 
 }

@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 public class MainManager extends Manager implements PubNubClient.PubNubDelegate {
     private PubNubClient _pubnub;
     private MainController _controller;
+    private Thread _boinc;
 
     MainManager(Scene scene, User user) {
         _scene = scene;
@@ -32,11 +33,7 @@ public class MainManager extends Manager implements PubNubClient.PubNubDelegate 
                     getClass().getResource("main.fxml")
             );
             _scene.setRoot(loader.load());
-
-            Thread boinc = new Thread(() -> {
-                BashClient.bashPersist("./boinc -insecure");
-            });
-            boinc.start();
+            _boinc = BoincCommands.startBoinc();
 
             _controller = loader.getController();
             _controller.initManager(this);
