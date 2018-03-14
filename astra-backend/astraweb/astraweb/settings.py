@@ -77,23 +77,24 @@ WSGI_APPLICATION = 'astraweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE' : 'django.db.backends.mysql',
-        'NAME' : os.environ['RDS_DB_NAME'],
-        'USER' : os.environ['RDS_USERNAME'],
-        'PASSWORD' : os.environ['RDS_PASSWORD'],
-        'HOST' : os.environ['RDS_HOSTNAME'],
-        'PORT' : os.environ['RDS_PORT']
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE' : 'django.db.backends.mysql',
+            'NAME' : os.environ['RDS_DB_NAME'],
+            'USER' : os.environ['RDS_USERNAME'],
+            'PASSWORD' : os.environ['RDS_PASSWORD'],
+            'HOST' : os.environ['RDS_HOSTNAME'],
+            'PORT' : os.environ['RDS_PORT']
+        }
     }
-}
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
@@ -133,6 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "www", "static")
 
 AUTH_USER_MODEL = 'api.User'
 
