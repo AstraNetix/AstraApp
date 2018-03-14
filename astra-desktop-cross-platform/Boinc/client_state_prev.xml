@@ -95,7 +95,7 @@
     <total_duration>80041.549759</total_duration>
     <total_active_duration>5869.898777</total_active_duration>
     <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
-    <previous_uptime>0.000000</previous_uptime>
+    <previous_uptime>0.164293</previous_uptime>
     <last_update>1520919085.397840</last_update>
 </time_stats>
 <net_stats>
@@ -179,7 +179,7 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
     <cpu_time>0.000000</cpu_time>
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
-    <disk_usage>0.000000</disk_usage>
+    <disk_usage>19847272.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
 <app>
@@ -813,7 +813,7 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <cpu_time>0.000000</cpu_time>
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
-    <disk_usage>0.000000</disk_usage>
+    <disk_usage>207471.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
 <file>
@@ -997,7 +997,7 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
     <cpu_time>26391.766952</cpu_time>
     <gpu_ec>20.378671</gpu_ec>
     <gpu_time>114.630027</gpu_time>
-    <disk_usage>0.000000</disk_usage>
+    <disk_usage>24354777.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
 <app>
@@ -2263,7 +2263,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>4467.461899</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.532691</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>4467.461899</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>3553.769000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>0.000000</swap_size>
     <working_set_size>0.000000</working_set_size>
@@ -2282,7 +2282,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>4225.392277</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.364523</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>4225.392277</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>3336.175000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>0.000000</swap_size>
     <working_set_size>0.000000</working_set_size>
@@ -2301,7 +2301,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>4257.754768</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.452130</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>4257.754768</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>3356.979000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>0.000000</swap_size>
     <working_set_size>0.000000</working_set_size>
@@ -2320,7 +2320,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>4227.512467</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.482502</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>4227.512467</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>3330.798000</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>4522082304.000000</swap_size>
     <working_set_size>45813760.000000</working_set_size>
@@ -2339,7 +2339,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>982.855299</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.282768</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>982.855299</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>109.199500</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>0.000000</swap_size>
     <working_set_size>0.000000</working_set_size>
@@ -2358,7 +2358,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>909.993926</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.000000</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>0.000000</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>0.000000</current_cpu_time>
+    <current_cpu_time>18.693230</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
     <swap_size>4423057408.000000</swap_size>
     <working_set_size>22118400.000000</working_set_size>
@@ -2378,6 +2378,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <user_gpu_prev_request>3</user_gpu_prev_request>
 <user_network_request>2</user_network_request>
 <new_version_check_time>0.000000</new_version_check_time>
-<all_projects_list_check_time>1519795866.297709</all_projects_list_check_time>
+<all_projects_list_check_time>0.000000</all_projects_list_check_time>
 <alt_platform>i686-apple-darwin</alt_platform>
 </client_state>

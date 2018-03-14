@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/pubnub_client.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/pubnub_client.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/tasks.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb.zip" afterPath="$PROJECT_DIR$/../astra-backend/astraweb.zip" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/djangoapp.config" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/djangoapp.config" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state.xml" afterPath="$PROJECT_DIR$/Boinc/client_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state_prev.xml" afterPath="$PROJECT_DIR$/Boinc/client_state_prev.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/daily_xfer_history.xml" afterPath="$PROJECT_DIR$/Boinc/daily_xfer_history.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/sched_request_www.rnaworld.de_rnaworld.xml" afterPath="$PROJECT_DIR$/Boinc/sched_request_www.rnaworld.de_rnaworld.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" afterPath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" afterPath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/time_stats_log" afterPath="$PROJECT_DIR$/Boinc/time_stats_log" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincCommands.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincCommands.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$1.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$2.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$3.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginManager.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainManager.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/MainManager.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$1.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$3.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests$1.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests$FakePNDelegate.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests$FakePNDelegate.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/Tests.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/User.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/User.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/main.fxml" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/main.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/core/BoincCommands.java" afterPath="$PROJECT_DIR$/src/core/BoincCommands.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/LoginManager.java" afterPath="$PROJECT_DIR$/src/core/LoginManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/MainManager.java" afterPath="$PROJECT_DIR$/src/core/MainManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/PubNubClient.java" afterPath="$PROJECT_DIR$/src/core/PubNubClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/Tests.java" afterPath="$PROJECT_DIR$/src/core/Tests.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/User.java" afterPath="$PROJECT_DIR$/src/core/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/core/main.fxml" afterPath="$PROJECT_DIR$/src/core/main.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />

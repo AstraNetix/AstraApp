@@ -85,26 +85,26 @@
 </opencl_cpu_prop>
 </host_info>
 <time_stats>
-    <on_frac>0.084597</on_frac>
+    <on_frac>0.088503</on_frac>
     <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.917944</cpu_and_network_available_frac>
-    <active_frac>0.917944</active_frac>
-    <gpu_active_frac>0.912670</gpu_active_frac>
+    <cpu_and_network_available_frac>0.913494</cpu_and_network_available_frac>
+    <active_frac>0.913494</active_frac>
+    <gpu_active_frac>0.908245</gpu_active_frac>
     <client_start_time>1520919090.640027</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>80041.549759</total_duration>
+    <total_duration>84240.689496</total_duration>
     <total_active_duration>5869.898777</total_active_duration>
     <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
-    <previous_uptime>0.164293</previous_uptime>
-    <last_update>1520919085.397840</last_update>
+    <previous_uptime>9619.256651</previous_uptime>
+    <last_update>1520928700.889637</last_update>
 </time_stats>
 <net_stats>
     <bwup>76672.183268</bwup>
     <avg_up>1107648939.581666</avg_up>
     <avg_time_up>1520916249.533331</avg_time_up>
-    <bwdown>5060398.400537</bwdown>
-    <avg_down>19253475230.704548</avg_down>
-    <avg_time_down>1520916251.588555</avg_time_down>
+    <bwdown>5128117.184887</bwdown>
+    <avg_down>19161063807.747654</avg_down>
+    <avg_time_down>1520920449.638711</avg_time_down>
 </net_stats>
 <project>
     <master_url>http://quakecatcher.net/sensor/</master_url>
@@ -2378,6 +2378,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <user_gpu_prev_request>3</user_gpu_prev_request>
 <user_network_request>2</user_network_request>
 <new_version_check_time>0.000000</new_version_check_time>
-<all_projects_list_check_time>0.000000</all_projects_list_check_time>
+<all_projects_list_check_time>1519795891.848022</all_projects_list_check_time>
 <alt_platform>i686-apple-darwin</alt_platform>
 </client_state>
