@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from api.models.device import Device
 from api.models.project import Project
-from api.models.user_exceptions import CreationError
+from api.models.user_exceptions import CreationError, AuthenticationError
 
 User = get_user_model()
 
@@ -50,6 +50,7 @@ class UserPasswordSerializer(serializers.Serializer):
 
 class UserBasicSerializer(serializers.ModelSerializer):
     name = serializers.CharField(source='first_name')
+    confirm_password = serializers.CharField(max_length=200)
 
     def create(self, validated_data):
         if User.objects.filter(email=validated_data["email"]).exists():
@@ -63,9 +64,7 @@ class UserBasicSerializer(serializers.ModelSerializer):
         except ValueError:  # If for some reason, user only gave first name
             user.first_name = user.first_name
 
-        user.confirm_password = None
         user.validate_email()
-
         user.save()
         return user
 
@@ -84,6 +83,40 @@ class UserBasicSerializer(serializers.ModelSerializer):
             'ether_addr', 
         )
 
+class UserUpdateSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(source='first_name')
+    old_password = serializers.CharField(max_length=200)
+    new_password = serializers.CharField(max_length=200)
+    confirm_password = serializers.CharField(max_length=200)
+
+    def update(self, validated_data):
+        user = User.authenticate(email=validated_data["email"], password=validated_data["old_password"])
+        if validated_data["new_password"] != validated_data["confirm_password"]:
+            raise CreationError.unmatching_passwords()
+        try:
+            user.first_name, user.last_name = validated_data["name"].split(" ")
+        except ValueError:  # If for some reason, user only gave first name
+            user.first_name = user.first_name
+
+        user.email = validated_data["email"]
+        user.save()
+        return user
+
+    class Meta:
+        model = User
+        extra_kwargs = {
+            'old_password': {'write_only': True},
+            'new_password': {'write_only': True},
+            'confirm_password': {'write_only': True}
+        }
+        fields = (
+            'name', 
+            'email',
+            'old_password',
+            'old_password',
+            'confirm_password',
+        )
+
 class UserICOKYCSerializer(UserIdentificationSerializer):
     class Meta:
         model = User
@@ -92,14 +125,31 @@ class UserICOKYCSerializer(UserIdentificationSerializer):
             'first_name',
             'middle_name',
             'last_name',
-            'street_addr',  
+            'street_addr1',  
+            'street_addr2',
             'city', 
             'state',  
             'country',  
-            'zip_code', 
+            'zip_code',
+            'phone_number', 
+            'ether_addr',
             'id_file', 
             'selfie',  
             'ether_part_amount', 
+            'referral',
+        )
+
+class UserAirDropsSerializer(UserIdentificationSerializer):
+    class Meta:
+        model = User
+        fields = (
+            'twitter_name',
+            'facebook_url',
+            'linkedin_url',
+            'bitcoin_name',
+            'reddit_name',
+            'steemit_name',
+            'referral', 
         )
 
 class UserBalanceSerializer(UserIdentificationSerializer):

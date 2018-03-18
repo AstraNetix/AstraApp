@@ -60,17 +60,17 @@ class Device(models.Model):
 
     run_on_batteries    =   models.BooleanField(default=False, blank=True)
     run_if_active       =   models.BooleanField(default=False, blank=True)
-    start_hour          =   models.IntegerField(default=0, blank=True, validators=[
+    start_hour          =   models.SmallIntegerField(default=0, blank=True, validators=[
                                 MaxValueValidator(23), MinValueValidator(0)])
-    end_hour            =   models.IntegerField(default=23, blank=True, validators=[
+    end_hour            =   models.SmallIntegerField(default=23, blank=True, validators=[
                                 MaxValueValidator(23), MinValueValidator(0)])
-    max_CPUs            =   models.IntegerField(default=2, blank=True, validators=[
+    max_CPUs            =   models.SmallIntegerField(default=2, blank=True, validators=[
                                 MaxValueValidator(8), MinValueValidator(0)])
-    disk_max_percent    =   models.IntegerField(default=50, blank=True, validators=[
+    disk_max_percent    =   models.SmallIntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
-    ram_max_percent     =   models.IntegerField(default=50, blank=True, validators=[
+    ram_max_percent     =   models.SmallIntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
-    cpu_max_percent     =   models.IntegerField(default=50, blank=True, validators=[
+    cpu_max_percent     =   models.SmallIntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
 
     active_projects     =   models.ManyToManyField(Project, blank=True, related_name="active_projects")

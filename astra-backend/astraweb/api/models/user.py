@@ -1,4 +1,5 @@
 from __future__ import unicode_literals
+import uuid
 import re
 
 from django.db import models
@@ -13,6 +14,7 @@ from django.core.validators import RegexValidator
 from django.core.mail import send_mail
 
 from phonenumber_field.modelfields import PhoneNumberField
+from passlib.context import CryptContext
 
 
 class UserManager(BaseUserManager):
@@ -26,7 +28,7 @@ class UserManager(BaseUserManager):
             raise ValueError('The given email must be set')
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-        user.set_password(password)
+        user.set_password(User.pwd_context.hash(password))
         user.save(using=self._db)
         return user
 
@@ -86,6 +88,11 @@ class User(AbstractUser):
     USERNAME_FIELD      =   'email'
     REQUIRED_FIELDS     =   []
 
+    pwd_context = CryptContext(
+        schemes=["pbkdf2_sha256", "des_crypt"],
+        deprecated="auto",
+    )
+
     #######################################################################################
     # Fields
 
@@ -98,13 +105,12 @@ class User(AbstractUser):
     last_name           =   models.CharField(max_length=150, blank=True, null=True)
     phone_number        =   PhoneNumberField(null=True, blank=True)
 
-    confirm_password    =   models.CharField(max_length=150, null=True, blank=True)
-
     is_active           =   models.BooleanField('active', default=True)
     is_staff            =   models.BooleanField('staff', default=False)
     is_superuser        =   models.BooleanField('superuser', default=False)
 
-    street_addr         =   models.CharField(max_length=100, null=True, blank=True)
+    street_addr1         =   models.CharField(max_length=100, null=True, blank=True)
+    street_addr2         =   models.CharField(max_length=100, null=True, blank=True)
     city                =   models.CharField(max_length=40, null=True, blank=True)
     state               =   models.CharField(validators=[RegexValidator(
                                 regex='^\w{2}$', 
@@ -145,6 +151,15 @@ class User(AbstractUser):
 
     email_verified      =   models.BooleanField(blank=True, default=False)
     phone_verified      =   models.BooleanField(blank=True, default=False)
+
+    twitter_name        =   models.CharField(max_length=50, blank=True, null=True)
+    facebook_url        =   models.URLField(blank=True, null=True)
+    linkedin_url        =   models.URLField(blank=True, null=True)
+    bitcoin_name        =   models.CharField(max_length=50, blank=True, null=True)
+    reddit_name         =   models.CharField(max_length=50, blank=True, null=True)
+    steemit_name        =   models.CharField(max_length=50, blank=True, null=True)
+    
+    referral            =   models.EmailField(null=True, blank=True)
 
 
     def __str__(self):
@@ -375,7 +390,7 @@ class User(AbstractUser):
             user = User.objects.get(email=email)
         except User.DoesNotExist: 
             raise AuthenticationError.user_does_not_exist()
-        if not user or user.password != password:
+        if not user or User.pwd_context.verify(user.password, password):
             raise AuthenticationError.invalid_credentials()
         if not user.is_active:
             raise AuthenticationError.inactive_account()

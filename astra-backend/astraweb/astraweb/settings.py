@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# ALLOWED_HOSTS = ['astraapi.us-west-1.elasticbeanstalk.com']
+
 
 # Application definition
 
@@ -40,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'api.apps.ApiConfig',
     'phonenumber_field',
-    'kombu.transport.django', #### CHANGE WHEN CHANGING BROKER_URL FOR PRODUCTION ####
 ]
 
 MIDDLEWARE = [
@@ -80,12 +81,12 @@ WSGI_APPLICATION = 'astraweb.wsgi.application'
 if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
         'default': {
-            'ENGINE' : 'django.db.backends.mysql',
-            'NAME' : os.environ['RDS_DB_NAME'],
-            'USER' : os.environ['RDS_USERNAME'],
-            'PASSWORD' : os.environ['RDS_PASSWORD'],
-            'HOST' : os.environ['RDS_HOSTNAME'],
-            'PORT' : os.environ['RDS_PORT']
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
         }
     }
 else:

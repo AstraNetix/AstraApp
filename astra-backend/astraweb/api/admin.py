@@ -15,7 +15,8 @@ class UserCreationForm(BaseUserCreationForm):
             'middle_name',
             'last_name', 
             'phone_number', 
-            'street_addr', 
+            'street_addr1',  
+            'street_addr2', 
             'city', 
             'state',  
             'country', 
@@ -27,7 +28,14 @@ class UserCreationForm(BaseUserCreationForm):
             'ether_part_amount', 
             'email_verified', 
             'phone_verified', 
-            'user_type'
+            'user_type',
+            'twitter_name',
+            'facebook_url',
+            'linkedin_url',
+            'bitcoin_name',
+            'reddit_name',
+            'steemit_name',
+            'referral',
         )
 
 
