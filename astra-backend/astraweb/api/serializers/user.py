@@ -143,6 +143,7 @@ class UserAirDropsSerializer(UserIdentificationSerializer):
     class Meta:
         model = User
         fields = (
+            'telegram_addr',
             'twitter_name',
             'facebook_url',
             'linkedin_url',

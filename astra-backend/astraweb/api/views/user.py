@@ -115,25 +115,20 @@ class UserIDViewSet(viewsets.ModelViewSet):
                             status=status.HTTP_400_BAD_REQUEST)
 
     @list_route(methods=['get'])
-    def get_ICO_KYC(self, request, pk=None):
+    def get_air_drops(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
 
         if serializer.exists():
             user = User.objects.get(email=serializer.data['email'])
             return Response({
-                'first_name'        :   user.first_name if user.first_name else " ",
-                'middle_name'       :   user.middle_name if user.middle_name else " ",
-                'last_name'         :   user.last_name if user.last_name else " ",
-                'street_addr1'      :   user.street_addr1 if user.street_addr1 else " ",
-                'street_addr2'      :   user.street_addr2 if user.street_addr2 else " ",
-                'city'              :   user.city if user.city else " ",
-                'state'             :   user.state if user.state else " ",
-                'country'           :   user.country if user.country else " ",
-                'zip_code'          :   user.zip_code if user.zip_code else " ",
-                'phone_number'      :   user.phone_number if user.phone_number else " ",
-                'ether_addr'        :   user.ether_addr if user.ether_addr else " ",
-                'ether_part_amount' :   user.ether_part_amount if user.ether_part_amount else " ",
-                'referral'          :   user.referral if user.referral else " ",
+                'telegram_addr'     :   user.telegram_addr if user.telegram_addr else " ",
+                'twitter_name'      :   user.twitter_name if user.twitter_name else " ",
+                'facebook_url'      :   user.facebook_url if user.facebook_url else " ",
+                'linkedin_url'      :   user.linkedin_url if user.linkedin_url else " ",
+                'bitcoin_name'      :   user.bitcoin_name if user.bitcoin_name else " ",
+                'reddit_name'       :   user.reddit_name if user.reddit_name else " ",
+                'steemit_name'      :   user.steemit_name if user.steemit_name else " ",
+                'referral'          :   user.referral if user.countreferralry else " ",
             })
         else: 
             return Response(serializer.errors,
@@ -216,7 +211,7 @@ class UserLoginViewSet(viewsets.ModelViewSet):
                     serializer.data['password'])
                 user.login()
                 return Response({
-                        'success': "User successfully logged in", 
+                        'success': "Successfully logged in", 
                         'data': self.serializer_data_class(user).data,
                         'balance': self.serializer_balance_class(user).data,
                     }, status=status.HTTP_201_CREATED)
@@ -241,7 +236,7 @@ class UserPasswordViewSet(viewsets.ViewSet):
             try:
                 user = User.objects.get(email=serializer.validated_data['email'])
                 user.reset_password(serializer.validated_data['new_password'])
-                return Response({'success': "User password successfully reset"})
+                return Response({'success': "Password successfully reset"})
             except PasswordChangeError as pc:
                 return Response({'failure': str(pc)},
                     status=status.HTTP_400_BAD_REQUEST)
@@ -257,7 +252,7 @@ class UserPasswordViewSet(viewsets.ViewSet):
                 user = User.objects.get(email=serializer.validated_data['email'])
                 user.change_password(serializer.validated_data['old_password'], 
                     serializer.validated_data['new_password'])
-                return Response({'success': "User password successfully reset"})
+                return Response({'success': "Password successfully reset"})
             except PasswordChangeError as pc:
                 return Response({'failure': str(pc)},
                     status=status.HTTP_400_BAD_REQUEST)
@@ -279,7 +274,7 @@ class UserICOKYCViewSet(viewsets.ViewSet):
             user = User.objects.get(email=serializer.validated_data.pop('email'))
             for key, value in serializer.validated_data.items():   
                 setattr(user, key, value)
-            return Response({'success': "User ICOKYC data successfully set"})
+            return Response({'success': "ICOKYC data successfully set"})
         else: 
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -289,6 +284,17 @@ class UserAirDropsViewSet(viewsets.ViewSet):
     queryset = User.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
 
+    defaults = [
+        "Telegram Account Username",
+        "Twitter Username",
+        "Facebook Profile URL",
+        "LinkedIn Profile URL",
+        "BitcoinTalk Username",
+        "Reddit Username",
+        "Steemit Username",
+        "Who Referred You? (email address)"
+    ]
+
     @list_route(methods=['patch'])
     def add_air_drops(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
@@ -296,8 +302,9 @@ class UserAirDropsViewSet(viewsets.ViewSet):
         if serializer.exists():
             user = User.objects.get(email=serializer.validated_data.pop('email'))
             for key, value in serializer.validated_data.items():   
-                setattr(user, key, value)
-            return Response({'success': "User Air Drops data successfully set"})
+                if value not in self.defaults:
+                    setattr(user, key, value)
+            return Response({'success': "Air Drops data successfully set"})
         else: 
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

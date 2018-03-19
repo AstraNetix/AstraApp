@@ -1,4 +1,3 @@
-from django.urls import path
 from api.views.user import (
     UserIDViewSet,
     UserBasicViewSet,

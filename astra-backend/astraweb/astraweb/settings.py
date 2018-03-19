@@ -72,6 +72,9 @@ TEMPLATES = [
     },
 ]
 
+
+# WSGI
+
 WSGI_APPLICATION = 'astraweb.wsgi.application'
 
 
@@ -137,19 +140,22 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "www", "static")
 
+
+# User Model
+
 AUTH_USER_MODEL = 'api.User'
 
 
 # Email hosting settings
 
-EMAIL_HOST = 'smtpdm-ap-southeast-1.aliyun.com'
+EMAIL_HOST = 'email-smtp.us-west-2.amazonaws.com'
 
 EMAIL_PORT = 465
 
-EMAIL_HOST_USER = 'noreply@mail.goastra.win'
+EMAIL_HOST_USER = 'AKIAJQXSPKJHOFUVESOQ'
 
-EMAIL_HOST_PASSWORD = 'Noreply12astrA'
+EMAIL_HOST_PASSWORD = 'Aq2OnNB2qaWtxWaKqtHyzbtrgoVZ76pv8h1AdF9Kkw9R'
 
-EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
 
 

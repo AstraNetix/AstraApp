@@ -85,13 +85,13 @@ class User(AbstractUser):
 
     objects             =   UserManager()
 
-    USERNAME_FIELD      =   'email'
+    USERNAME_FIELD      =   'email'_tt
     REQUIRED_FIELDS     =   []
 
-    pwd_context = CryptContext(
-        schemes=["pbkdf2_sha256", "des_crypt"],
-        deprecated="auto",
-    )
+    pwd_context         =   CryptContext(
+                                schemes     =   ["pbkdf2_sha256", "des_crypt"],
+                                deprecated   =  "auto",
+                            )
 
     #######################################################################################
     # Fields
@@ -160,7 +160,7 @@ class User(AbstractUser):
     steemit_name        =   models.CharField(max_length=50, blank=True, null=True)
     
     referral            =   models.EmailField(null=True, blank=True)
-
+s
 
     def __str__(self):
         return self.first_name if self.first_name else "" + " " + self.last_name if self.last_name else ""
