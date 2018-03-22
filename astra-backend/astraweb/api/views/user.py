@@ -11,8 +11,8 @@ from api.serializers.user import (
     UserBalanceSerializer,
     UserRelationalSerializer
 )
-from api.models.user_exceptions import *
-from api.models.device_exceptions import *
+from api.exceptions.user_exceptions import *
+from api.exceptions.device_exceptions import *
 from api.permissions import SuperUserPermission
 
 from rest_framework import generics

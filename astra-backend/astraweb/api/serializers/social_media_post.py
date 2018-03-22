@@ -3,7 +3,7 @@ import datetime
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from api.models.social_media_post import SocialMediaPost
-from api.models.user_exceptions import AuthenticationError
+from api.exceptions.user_exceptions import AuthenticationError
 
 User = get_user_model()
 

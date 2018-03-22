@@ -8,10 +8,10 @@ from django.core.validators import RegexValidator
 from django.contrib.auth import get_user_model
 from api.models.project import Project
 
-from api.models.device_exceptions import QuitProjectError, StartProjectError, DeviceClientError
-from api.models.user_exceptions import AuthenticationError
+from api.exceptions.device_exceptions import QuitProjectError, StartProjectError, DeviceClientError
+from api.exceptions.user_exceptions import AuthenticationError
 
-from api.models.pubnub_client import PubNubClient
+from api.pubnub_client import PubNubClient
 
 User = get_user_model()
 

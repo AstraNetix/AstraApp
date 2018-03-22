@@ -1,8 +1,10 @@
 import os
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "astraweb.settings")
-django.setup()
+from django.core.management.base import BaseCommand, CommandError
+
+#os.environ.setdefault("DJANGO_SETTINGS_MODULE", "astraweb.settings")
+#django.setup()
 
 from api.models.project import Project
 
@@ -336,8 +338,12 @@ projects = [
 ]
 
 
-if __name__ == "__main__":
-    for project_description in projects:
-        project_description['sponsors'] = project_description['sponsors'].split(", ")
-        project = Project(**project_description)
-        project.save()
+class ProjectCreationCommand(BaseCommand):
+    def handle(self, *args, **options):
+        for project_description in projects:
+            project_description['sponsors'] = project_description['sponsors'].split(", ")
+            project = Project(**project_description)
+            project.save()
+        self.stdout.write(self.style.SUCCESS('Successfully populated all projects.'))
+
+    

@@ -1,6 +1,6 @@
 from api.models.social_media_post import SocialMediaPost
 from api.serializers.social_media_post import SocialMediaPostCreateSerializer, SocialMediaPostIDSerializer
-from api.models.user_exceptions import AuthenticationError
+from api.exceptions.user_exceptions import AuthenticationError
 
 from api.permissions import SuperUserPermission
 

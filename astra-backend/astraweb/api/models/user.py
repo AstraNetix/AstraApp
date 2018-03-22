@@ -8,7 +8,7 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 from api.models.project import Project
 
-from api.models.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError
+from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError
 
 from django.core.validators import RegexValidator
 from django.core.mail import send_mail
@@ -85,13 +85,13 @@ class User(AbstractUser):
 
     objects             =   UserManager()
 
-    USERNAME_FIELD      =   'email'_tt
+    USERNAME_FIELD      =   'email'
     REQUIRED_FIELDS     =   []
 
-    pwd_context         =   CryptContext(
-                                schemes     =   ["pbkdf2_sha256", "des_crypt"],
-                                deprecated   =  "auto",
-                            )
+    pwd_context = CryptContext(
+        schemes=["pbkdf2_sha256", "des_crypt"],
+        deprecated="auto",
+    )
 
     #######################################################################################
     # Fields
@@ -160,7 +160,7 @@ class User(AbstractUser):
     steemit_name        =   models.CharField(max_length=50, blank=True, null=True)
     
     referral            =   models.EmailField(null=True, blank=True)
-s
+
 
     def __str__(self):
         return self.first_name if self.first_name else "" + " " + self.last_name if self.last_name else ""
@@ -318,7 +318,7 @@ s
         if not self.check_password(old_password):
             PasswordChangeError.incorrect_password()
 
-        self.set_password(new_password)
+        self.set_password(User.pwd_context.hash(new_password))
         self.save()
 
     def reset_password(self, new_password):
@@ -332,22 +332,25 @@ s
         if not re.match(valid_regex, new_password):
             PasswordChangeError.invalid_characters()
 
-        self.set_password(new_password) 
+        self.set_password(User.pwd_context.hash(new_password)) 
         self.save()
 
     #######################################################################################
     # Authentication
 
-    def valid_for_sale(self):
+    def ico_complete(self):
         """
         Checks to see if user has submitted all ICO-KYC form 
         data.
         """
         return all([
-            self.street_addr, 
+            self.first_name,
+            self.last_name,
+            self.street_addr1, 
             self.city, 
             self.state, 
-            self.country, 
+            self.country,
+            self.phone_number, 
             self.zip_code,
             self.id_file, 
             self.selfie,
@@ -365,7 +368,7 @@ s
             raise TokenICOKYCError.not_verified()
         if not self.is_active:
             raise TokenICOKYCError.inactive()
-        if not self.valid_for_sale():
+        if not self.ico_complete():
             raise TokenICOKYCError.incomplete_ICO()
 
     def boolean_token_auth(self):
@@ -375,7 +378,7 @@ s
         return (
             self.email_verified and 
             self.is_active and 
-            self.valid_for_sale()
+            self.ico_complete()
             )
 
     @staticmethod
@@ -390,7 +393,7 @@ s
             user = User.objects.get(email=email)
         except User.DoesNotExist: 
             raise AuthenticationError.user_does_not_exist()
-        if not user or User.pwd_context.verify(user.password, password):
+        if not user or not User.pwd_context.verify(user.password, password):
             raise AuthenticationError.invalid_credentials()
         if not user.is_active:
             raise AuthenticationError.inactive_account()

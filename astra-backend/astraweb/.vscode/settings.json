@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/Users/sohamkale/anaconda/bin/python",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./api",
+        "-p",
+        "test_*.py"
+    ],
+    "python.unitTest.unittestEnabled": true
+}

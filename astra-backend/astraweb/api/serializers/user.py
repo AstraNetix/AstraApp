@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from api.models.device import Device
 from api.models.project import Project
-from api.models.user_exceptions import CreationError, AuthenticationError
+from api.exceptions.user_exceptions import CreationError, AuthenticationError
 
 User = get_user_model()
 

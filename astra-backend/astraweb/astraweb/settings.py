@@ -145,6 +145,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "www", "static")
 
 AUTH_USER_MODEL = 'api.User'
 
+AUTHENTICATION_BACKENDS = ['api.auth.Authentication']
+
 
 # Email hosting settings
 

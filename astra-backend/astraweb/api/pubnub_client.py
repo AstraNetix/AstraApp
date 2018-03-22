@@ -3,8 +3,8 @@ import pubnub
 
 from django.contrib.auth import get_user_model
 from astraweb.constants import server
-from api.models.user_exceptions import AuthenticationError
-from api.models.device_exceptions import DeviceClientError
+from api.exceptions.user_exceptions import AuthenticationError
+from api.exceptions.device_exceptions import DeviceClientError
 
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.pubnub import PubNub

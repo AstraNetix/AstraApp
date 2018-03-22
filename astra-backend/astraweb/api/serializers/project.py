@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from api.models.project import Project
-from api.models.devices import Device
+from api.models.device import Device
 from django.contrib.auth import get_user_model
 
 User = get_user_model()

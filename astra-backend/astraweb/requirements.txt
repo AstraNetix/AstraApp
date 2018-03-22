@@ -9,6 +9,7 @@ idna==2.6
 Mako==1.0.7
 MarkupSafe==1.0
 passlib==1.7.1
+pbr==3.1.1
 phonenumberslite==8.9.1
 Pillow==5.0.0
 psycopg2==2.7.4
@@ -17,5 +18,9 @@ pycryptodomex==3.5.1
 pytz==2018.3
 requests==2.18.4
 six==1.11.0
+stevedore==1.28.0
 urllib3==1.22
 vine==1.1.4
+virtualenv==15.1.0
+virtualenv-clone==0.3.0
+virtualenvwrapper==4.8.2
