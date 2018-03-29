@@ -3,9 +3,9 @@ class StartProjectError(Exception):
     Error raised when trying to start a project on a device.
     """
 
-    PROJECT_ACTIVE = 'This project is already active.'
-    PROJECT_NONEXISTENT = 'This project does not exist'
-    PROJECT_FINISHED = 'This project is already completed'
+    PROJECT_ACTIVE = {'url': ['This project is already active.']}
+    PROJECT_NONEXISTENT = {'url': ['This project does not exist']}
+    PROJECT_FINISHED = {'url': ['This project is already completed']}
 
     def __init__(self, message):
         super().__init__(message)
@@ -27,9 +27,9 @@ class QuitProjectError(Exception):
     Error raised when trying to quit a project on a device.
     """
 
-    PROJECT_NOT_ACTIVE = 'This project is not currently active.'
-    PROJECT_NONEXISTENT = 'This project does not exist.'
-    PROJECT_FINISHED = 'This project is already completed'
+    PROJECT_NOT_ACTIVE = {'url': ['This project is not currently active.']}
+    PROJECT_NONEXISTENT = {'url': ['This project does not exist.']}
+    PROJECT_FINISHED = {'url': ['This project is already completed']}
 
     def __init__(self, message):
         super().__init__(message)
@@ -51,8 +51,8 @@ class DeviceClientError(Exception):
     Error raised by client or by server when unable to communicate with client
     """
 
-    DEVICE_UNREACHABLE = 'Device took too long to respond.'
-    UNEXPECTED_DISCONNECT = 'Device has unexpectedly disconnected from server'
+    DEVICE_UNREACHABLE = {'device_id': ['Device took too long to respond.']}
+    UNEXPECTED_DISCONNECT = {'device_id': ['Device has unexpectedly disconnected from server']}
 
     def __init__(self, message):
         super().__init__(message)

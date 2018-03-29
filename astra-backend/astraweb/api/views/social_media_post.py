@@ -17,12 +17,13 @@ class SocialMediaPostViewSet(viewsets.ModelViewSet):
     queryset = SocialMediaPost.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
 
-    def create(self, request, pk=None):
+    @list_route(methods=['post'])
+    def create_post(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
         
         if serializer.is_valid():
             try:
-                serializer.create(serializer.validated_data)
+                serializer.create()
                 return Response({'success': "Social media post(s) successfully created"}, 
                     status=status.HTTP_200_OK)
             except AuthenticationError as ae: 
@@ -35,11 +36,12 @@ class SocialMediaPostViewSet(viewsets.ModelViewSet):
     def validate(self, request, pk=None):
         serializer = SocialMediaPostIDSerializer(data=request.data)
         user = User.objects.get(email=serializer.validated_data['email'])
+
         if serializer.is_valid():
             post = SocialMediaPost.objects.get(
-                date=SocialMediaPostCreateSerializer.convert_date(
+                date = SocialMediaPostCreateSerializer.convert_date(
                     serializer.validated_data['str_date']), 
-                user=user,
+                user = user,
             )
             post.verify()
             return Response({'success': "Social media post(s) successfully validated"}, status=status.HTTP_200_OK)

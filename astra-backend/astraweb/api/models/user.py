@@ -5,6 +5,7 @@ import re
 from django.db import models
 from django.contrib.auth import authenticate as auth
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.contrib.auth.hashers import check_password
 
 from api.models.project import Project
 
@@ -14,7 +15,6 @@ from django.core.validators import RegexValidator
 from django.core.mail import send_mail
 
 from phonenumber_field.modelfields import PhoneNumberField
-from passlib.context import CryptContext
 
 
 class UserManager(BaseUserManager):
@@ -28,7 +28,7 @@ class UserManager(BaseUserManager):
             raise ValueError('The given email must be set')
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-        user.set_password(User.pwd_context.hash(password))
+        user.set_password(password)
         user.save(using=self._db)
         return user
 
@@ -72,10 +72,10 @@ class User(AbstractUser):
     BOTH                =   3
 
     USER_TYPE_CHOICES   =   (
-                                (NONE, 'none'),
-                                (INVESTOR, 'investor'),
-                                (CONTRIBUTOR, 'contributor'),
-                                (BOTH, 'both'),
+                                (NONE, 'None'),
+                                (INVESTOR, 'Investor'),
+                                (CONTRIBUTOR, 'Contributor'),
+                                (BOTH, 'Both'),
                             )
 
     app_header          =   "https://www.goastra.info/" # Add web app url header here
@@ -88,17 +88,13 @@ class User(AbstractUser):
     USERNAME_FIELD      =   'email'
     REQUIRED_FIELDS     =   []
 
-    pwd_context = CryptContext(
-        schemes=["pbkdf2_sha256", "des_crypt"],
-        deprecated="auto",
-    )
 
     #######################################################################################
     # Fields
 
     logged_in           =   models.BooleanField('logged_in', default=False)
+    username            =   models.CharField(max_length=1, default='0')
 
-    username            =   None
     email               =   models.EmailField(('email address'), unique=True)
     first_name          =   models.CharField(max_length=50)
     middle_name         =   models.CharField(max_length=150, blank=True, null=True)
@@ -109,8 +105,8 @@ class User(AbstractUser):
     is_staff            =   models.BooleanField('staff', default=False)
     is_superuser        =   models.BooleanField('superuser', default=False)
 
-    street_addr1         =   models.CharField(max_length=100, null=True, blank=True)
-    street_addr2         =   models.CharField(max_length=100, null=True, blank=True)
+    street_addr1        =   models.CharField(max_length=100, null=True, blank=True)
+    street_addr2        =   models.CharField(max_length=100, null=True, blank=True)
     city                =   models.CharField(max_length=40, null=True, blank=True)
     state               =   models.CharField(validators=[RegexValidator(
                                 regex='^\w{2}$', 
@@ -318,7 +314,7 @@ class User(AbstractUser):
         if not self.check_password(old_password):
             PasswordChangeError.incorrect_password()
 
-        self.set_password(User.pwd_context.hash(new_password))
+        self.set_password(new_password)
         self.save()
 
     def reset_password(self, new_password):
@@ -332,7 +328,7 @@ class User(AbstractUser):
         if not re.match(valid_regex, new_password):
             PasswordChangeError.invalid_characters()
 
-        self.set_password(User.pwd_context.hash(new_password)) 
+        self.set_password(new_password) 
         self.save()
 
     #######################################################################################
@@ -393,17 +389,22 @@ class User(AbstractUser):
             user = User.objects.get(email=email)
         except User.DoesNotExist: 
             raise AuthenticationError.user_does_not_exist()
-        if not user or not User.pwd_context.verify(user.password, password):
+        if not user or not user.check_password(password):
             raise AuthenticationError.invalid_credentials()
         if not user.is_active:
             raise AuthenticationError.inactive_account()
         return user
 
-    def login(self):
+    @staticmethod
+    def login(email, password):
         """ 
-        Logs in a user. Only to be used after authentication
+        Logs in a user by first authenticating them, or raises an authentication error.
         """
-        self.logged_in = True
+        user = User.authenticate(email, password)
+        if user: user.logged_in = True
+
+    def logout(self):
+        self.logged_in = False
 
     #######################################################################################
     # Transactions (PyEthApp Abstractions)

@@ -25,9 +25,11 @@ SECRET_KEY = '00hn$g7iz%bv2@$qu)0pta&6*5$9yr(!ka^vi_+92g^@&%j@dn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-# ALLOWED_HOSTS = ['astraapi.us-west-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1', 
+    'astraweb-dev.us-west-2.elasticbeanstalk.com'
+]
 
 
 # Application definition
@@ -145,10 +147,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "www", "static")
 
 AUTH_USER_MODEL = 'api.User'
 
-AUTHENTICATION_BACKENDS = ['api.auth.Authentication']
 
-
-# Email hosting settings
+# Email hosting
 
 EMAIL_HOST = 'email-smtp.us-west-2.amazonaws.com'
 

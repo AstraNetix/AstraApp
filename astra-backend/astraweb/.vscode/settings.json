@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/sohamkale/anaconda/bin/python",
+    "python.pythonPath": "/Users/sohamkale/.virtualenvs/backend/bin/python",
     "python.unitTest.unittestArgs": [
         "-v",
         "-s",
@@ -7,5 +7,5 @@
         "-p",
         "test_*.py"
     ],
-    "python.unitTest.unittestEnabled": true
+    "python.unitTest.unittestEnabled": false,
 }

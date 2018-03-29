@@ -15,7 +15,9 @@ from api.views.device import (
 from api.views.social_media_post import (
     SocialMediaPostViewSet,
 )
+from api.views.homepage import homepage
 from rest_framework.routers import DefaultRouter
+from django.urls import path
 
 router = DefaultRouter()
 
@@ -33,4 +35,4 @@ router.register('device/create', DeviceIDViewSet, base_name='device_create')
 
 router.register('proof-of-love', SocialMediaPostViewSet, base_name='proof_of_love')
 
-urlpatterns = router.urls
+urlpatterns = router.urls + [path('home/', homepage, name='index')]

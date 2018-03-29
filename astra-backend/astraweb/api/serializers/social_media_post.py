@@ -8,46 +8,37 @@ from api.exceptions.user_exceptions import AuthenticationError
 User = get_user_model()
 
 class SocialMediaPostIDSerializer(serializers.Serializer):
-    email = serializers.CharField(max_length=200)
-    str_date = serializers.CharField(max_length=23)
-    class Meta:
-        model = SocialMediaPost
-        fields = (
-            'email',
-            'str_date',
-        )  
+    email               =   serializers.EmailField(max_length=200)
+    str_date            =   serializers.CharField(min_length=20)
 
-class SocialMediaPostCreateSerializer(serializers.ModelSerializer):
+class SocialMediaPostCreateSerializer(SocialMediaPostIDSerializer):
+    platform            =   serializers.CharField(max_length=2)
+    content             =   serializers.CharField()
+
     @staticmethod
     def convert_date(str_date):
         return datetime.datetime(
-                year=str_date[0:4], 
-                month=str_date[5:7], 
-                day=str_date[8:10], 
-                hour=str_date[11:13], 
-                minute=str_date[15:17],
-                second=str_date[19:21],
+                year=int(str_date[0:4]), 
+                month=int(str_date[5:7]), 
+                day=int(str_date[8:10]), 
+                hour=int(str_date[11:13]), 
+                minute=int(str_date[14:16]),
+                second=int(str_date[17:19]),
         )
 
-    def create(self, validated_data):
-        user = User.objects.get(email=validated_data.pop('email'))
-        if not user.exists():
+    def create(self):
+        try:
+            user = User.objects.get(email=self.validated_data.pop('email'))
+        except User.DoesNotExist:
             raise AuthenticationError.user_does_not_exist()
 
-        # Date must be a string in RfC 3339 format
-        str_date = validated_data.pop('str_date', False)
+        # Date must be a string in RFC 3339 format
+        str_date = self.validated_data.pop('str_date', False)
         date = self.convert_date(str_date) if str_date else datetime.datetime.utcnow()
-        
-        post = SocialMediaPost.objects.create(user=user, date=date, **validated_data)
+    
+        post = SocialMediaPost(user=user, date=date, **self.validated_data)
+        post.uid = post.hash_code()
         post.save()
         return post
 
-    class Meta:
-        model = SocialMediaPost
-        fields = (
-            'platform',
-            'content',
-            'email',
-            'str_date',
-        )  
 

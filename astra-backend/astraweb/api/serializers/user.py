@@ -6,8 +6,11 @@ from api.exceptions.user_exceptions import CreationError, AuthenticationError
 
 User = get_user_model()
 
-
-class UserIdentificationSerializer(serializers.ModelSerializer):
+class UserIdentification(serializers.Serializer):
+    """
+    A base class meant for verifying user existence, with only basic serialization
+    incorporated. Has no fields so not meant to be exposed as an endpoint.
+    """
     email_error = {'failure': 'Email does not exist'}
 
     def exists(self):
@@ -15,6 +18,11 @@ class UserIdentificationSerializer(serializers.ModelSerializer):
         return ('email' in self.data) and (User.objects.filter(
             email=self.data['email']).exists())
 
+class UserIdentificationSerializer(serializers.ModelSerializer, UserIdentification):
+    """
+    A base class that verifies users but extends Model Serializer with a single 
+    email field.
+    """
     class Meta:
         model = User
         fields = (
@@ -22,102 +30,89 @@ class UserIdentificationSerializer(serializers.ModelSerializer):
         )   
         
 class UserLoginSerializer(UserIdentificationSerializer):
+    """
+    Used for logging in users.
+    """
     class Meta:
         model = User
         extra_kwargs = {
-            'password': {'write_only': True},   
+            'password'      :   {'write_only': True},   
         }
         fields = (
             'email',
             'password',
         )
         
-class UserPasswordSerializer(serializers.Serializer):
-    old_password = serializers.CharField(max_length=200, min_length=6)
-    new_password = serializers.CharField(max_length=200, min_length=6)
+class UserPasswordSerializer(UserIdentification):
+    """
+    Used for changing users' passwords.
+    """
+    email                   =   serializers.EmailField(allow_blank=False)
+    old_password            =   serializers.CharField(max_length=200, min_length=6, write_only=True, required=False, allow_blank=True)
+    new_password            =   serializers.CharField(max_length=200, min_length=6, write_only=True)
 
-    class Meta:
-        model = User
-        extra_kwargs = {
-            'new_password': {'write_only': True},
-            'old_password': {'write_only': True},
-        }
-        fields = (
-            'email',
-            'old_password'
-            'new_password',
-        )
 
-class UserBasicSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(source='first_name')
-    confirm_password = serializers.CharField(max_length=200)
+class UserBasicSerializer(UserIdentification):
+    """
+    Used for creating users and getting basic user information.
+    """
+    name                    =   serializers.CharField(max_length=200)
+    email                   =   serializers.EmailField(max_length=None, min_length=None)
+    password                =   serializers.CharField(max_length=200, min_length=6, write_only=True)
+    confirm_password        =   serializers.CharField(max_length=200, min_length=6, write_only=True)
+    telegram_addr           =   serializers.CharField(allow_blank=True, required=False)
+    ether_addr              =   serializers.CharField(allow_blank=True, required=False, max_length=40, min_length=40)
 
     def create(self, validated_data):
         if User.objects.filter(email=validated_data["email"]).exists():
             raise CreationError.user_exists()
-        if validated_data["password"] != validated_data["confirm_password"]:
+        if validated_data["password"] != validated_data.pop("confirm_password"):
             raise CreationError.unmatching_passwords()
-        user = User.objects.create(**validated_data)
-
+        name = validated_data.pop('name')
         try:
-            user.first_name, user.last_name = user.first_name.split(" ")
+            first_name, last_name = name.split(" ")
         except ValueError:  # If for some reason, user only gave first name
-            user.first_name = user.first_name
+            first_name, last_name = name, None
+        user = User.objects.create_user(first_name=first_name, last_name=last_name, **validated_data)
 
-        user.validate_email()
+        # user.validate_email() TODO uncomment this
         user.save()
         return user
 
-    class Meta:
-        model = User
-        extra_kwargs = {
-            'password': {'write_only': True},
-            'confirm_password': {'write_only': True}
-        }
-        fields = (
-            'name', 
-            'email',
-            'password',
-            'confirm_password',
-            'telegram_addr'
-            'ether_addr', 
-        )
-
-class UserUpdateSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(source='first_name')
-    old_password = serializers.CharField(max_length=200)
-    new_password = serializers.CharField(max_length=200)
-    confirm_password = serializers.CharField(max_length=200)
+class UserUpdateSerializer(UserIdentification):
+    """
+    Used for updating basic user information.
+    """
+    email               =   serializers.EmailField()
+    name                =   serializers.CharField(max_length=200, required=False, allow_blank=True)
+    new_email           =   serializers.EmailField(required=False, allow_blank=True)
+    old_password        =   serializers.CharField(max_length=200, write_only=True, required=False, allow_blank=True)
+    new_password        =   serializers.CharField(max_length=200, write_only=True, required=False, allow_blank=True)
+    confirm_password    =   serializers.CharField(max_length=200, write_only=True, required=False, allow_blank=True)
 
     def update(self, validated_data):
         user = User.authenticate(email=validated_data["email"], password=validated_data["old_password"])
-        if validated_data["new_password"] != validated_data["confirm_password"]:
+        if "new_password" in validated_data and "old_password" not in validated_data:
+            raise CreationError.old_password_required()
+        elif (("new_password" in validated_data and "confirm_password" not in validated_data) 
+            or (validated_data["new_password"] != validated_data["confirm_password"])):
             raise CreationError.unmatching_passwords()
+
         try:
             user.first_name, user.last_name = validated_data["name"].split(" ")
         except ValueError:  # If for some reason, user only gave first name
-            user.first_name = user.first_name
+            user.first_name = validated_data["name"]
 
-        user.email = validated_data["email"]
+        user.email = User.objects.normalize_email(validated_data["new_email"])
+        user.set_password(validated_data["new_password"])
+        
         user.save()
         return user
 
-    class Meta:
-        model = User
-        extra_kwargs = {
-            'old_password': {'write_only': True},
-            'new_password': {'write_only': True},
-            'confirm_password': {'write_only': True}
-        }
-        fields = (
-            'name', 
-            'email',
-            'old_password',
-            'old_password',
-            'confirm_password',
-        )
-
 class UserICOKYCSerializer(UserIdentificationSerializer):
+    """
+    Used for getting ICO KYC information for users.
+    """
     class Meta:
         model = User
         fields = (
@@ -140,9 +135,13 @@ class UserICOKYCSerializer(UserIdentificationSerializer):
         )
 
 class UserAirDropsSerializer(UserIdentificationSerializer):
+    """
+    Used for getting social media information for users.
+    """
     class Meta:
         model = User
         fields = (
+            'email',
             'telegram_addr',
             'twitter_name',
             'facebook_url',
@@ -154,6 +153,9 @@ class UserAirDropsSerializer(UserIdentificationSerializer):
         )
 
 class UserBalanceSerializer(UserIdentificationSerializer):
+    """
+    Used for getting user balances.
+    """
     class Meta:
         model = User
         fields = (
@@ -164,10 +166,16 @@ class UserBalanceSerializer(UserIdentificationSerializer):
             'star_balance',
         )
 
-class UserRelationalSerializer(UserIdentificationSerializer):
-    email_error = {'failure': 'User does not exist'}
-    device_id_error = {'failure': 'Device does not exist'}
-    project_id_error = {'failure': 'Project does not exist'}
+class UserRelationalSerializer(UserIdentification):
+    """
+    Used for starting and stopping projects.
+    """
+
+    # TODO Change to using regular serializer instead of model serializer OR THIS WON'T WORK
+
+    email_error         =   {'failure'  : 'User does not exist'}
+    device_id_error     =   {'failure'  : 'Device does not exist'}
+    project_id_error    =   {'failure'  : 'Project does not exist'}
 
     def exists(self):
         self.is_valid()
@@ -195,5 +203,5 @@ class UserRelationalSerializer(UserIdentificationSerializer):
         fields = (
             'email',
             'device-pk',
-            'project-pk'
+            'project-pk',
             )

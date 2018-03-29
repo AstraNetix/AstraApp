@@ -24,7 +24,7 @@ class Device(models.Model):
         app_label       =   "api"
         db_table        =   "api_device"
 
-    def hashCode(self):
+    def hash_code(self):
         code = hashlib.sha1()
         code.update(self.name.encode('utf-8'))
         code.update(self.company.encode('utf-8'))
@@ -98,7 +98,7 @@ class Device(models.Model):
                     device.company, 
                     device.model,
                 )
-            device.uid = device.hashCode()
+            device.uid = device.hash_code()
             device.save()
             print("creating device...")
             return device

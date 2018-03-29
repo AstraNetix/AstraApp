@@ -2,7 +2,7 @@
 <host_info>
     <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.236.48.226</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -15,9 +15,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>11370213376.000000</m_swap>
+    <m_swap>7819919360.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>6390747136.000000</d_free>
+    <d_free>1762615296.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -85,26 +85,26 @@
 </opencl_cpu_prop>
 </host_info>
 <time_stats>
-    <on_frac>0.084597</on_frac>
+    <on_frac>0.088503</on_frac>
     <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.917944</cpu_and_network_available_frac>
-    <active_frac>0.917944</active_frac>
-    <gpu_active_frac>0.912670</gpu_active_frac>
-    <client_start_time>1520919090.640027</client_start_time>
+    <cpu_and_network_available_frac>0.913494</cpu_and_network_available_frac>
+    <active_frac>0.913494</active_frac>
+    <gpu_active_frac>0.908245</gpu_active_frac>
+    <client_start_time>1522107988.412176</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>80041.549759</total_duration>
+    <total_duration>84240.689496</total_duration>
     <total_active_duration>5869.898777</total_active_duration>
     <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
-    <previous_uptime>0.164293</previous_uptime>
-    <last_update>1520919085.397840</last_update>
+    <previous_uptime>0.646236</previous_uptime>
+    <last_update>1520928700.889637</last_update>
 </time_stats>
 <net_stats>
     <bwup>76672.183268</bwup>
     <avg_up>1107648939.581666</avg_up>
     <avg_time_up>1520916249.533331</avg_time_up>
-    <bwdown>5060398.400537</bwdown>
-    <avg_down>19253475230.704548</avg_down>
-    <avg_time_down>1520916251.588555</avg_time_down>
+    <bwdown>5128117.184887</bwdown>
+    <avg_down>19161063807.747654</avg_down>
+    <avg_time_down>1520920449.638711</avg_time_down>
 </net_stats>
 <project>
     <master_url>http://quakecatcher.net/sensor/</master_url>
@@ -997,7 +997,7 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
     <cpu_time>26391.766952</cpu_time>
     <gpu_ec>20.378671</gpu_ec>
     <gpu_time>114.630027</gpu_time>
-    <disk_usage>24354777.000000</disk_usage>
+    <disk_usage>15909037.000000</disk_usage>
     <disk_share>0.000000</disk_share>
 </project>
 <app>
@@ -1009,7 +1009,7 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
     <name>setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah</name>
     <nbytes>4388088.000000</nbytes>
     <max_nbytes>0.000000</max_nbytes>
-    <status>1</status>
+    <status>0</status>
     <executable/>
     <signature_required/>
     <file_signature>
@@ -1020,6 +1020,14 @@ c76db20fe11e13238bd258b867004893347b12702b42ed1391104c09d2401da1
 .
 </file_signature>
     <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah</download_url>
+    <persistent_file_xfer>
+        <num_retries>0</num_retries>
+        <first_request_time>1522107989.058412</first_request_time>
+        <next_request_time>1522107989.058412</next_request_time>
+        <time_so_far>0.000000</time_so_far>
+        <last_bytes_xferred>0.000000</last_bytes_xferred>
+        <is_upload>0</is_upload>
+    </persistent_file_xfer>
 </file>
 <file>
     <name>MultiBeam_Kernels_r3321.cl</name>
@@ -1145,7 +1153,7 @@ d006cd1628b5eac6dcc6b17ed2041c2aa5889e35a554bc7284b55768b264feef
     <name>setiathome_8.03_x86_64-apple-darwin</name>
     <nbytes>4058048.000000</nbytes>
     <max_nbytes>0.000000</max_nbytes>
-    <status>1</status>
+    <status>0</status>
     <executable/>
     <signature_required/>
     <file_signature>
@@ -1156,6 +1164,14 @@ f5865e697ffc31cb95a0ed9e8f8f5e42869c8f35aca8005ebbc1e8aa4d092e53
 .
 </file_signature>
     <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome_8.03_x86_64-apple-darwin</download_url>
+    <persistent_file_xfer>
+        <num_retries>0</num_retries>
+        <first_request_time>1522107989.058412</first_request_time>
+        <next_request_time>1522107989.058412</next_request_time>
+        <time_so_far>0.000000</time_so_far>
+        <last_bytes_xferred>0.000000</last_bytes_xferred>
+        <is_upload>0</is_upload>
+    </persistent_file_xfer>
 </file>
 <file>
     <name>setigraphics_8.03_x86_64-apple-darwin</name>

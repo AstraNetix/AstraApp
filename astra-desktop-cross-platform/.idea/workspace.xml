@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/djangoapp.config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/python.config" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/python.config" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.vscode/settings.json" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/.vscode/settings.json" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/__init__.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/auth.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/exceptions/user_exceptions.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/exceptions/user_exceptions.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/user.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/urls.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/urls.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/createproj.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/createsu.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/project_creation.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/requirements.txt" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/tests.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/tests.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/setiathome_8.03_x86_64-apple-darwin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/login.css" afterPath="$PROJECT_DIR$/src/login.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" />
+      <change beforePath="$PROJECT_DIR$/Astra-Logo@3x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/client_state.xml" afterPath="$PROJECT_DIR$/Boinc/client_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/client_state_prev.xml" afterPath="$PROJECT_DIR$/Boinc/client_state_prev.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" afterPath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" />
+      <change beforePath="$PROJECT_DIR$/Boinc/time_stats_log" afterPath="$PROJECT_DIR$/Boinc/time_stats_log" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,24 +83,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PubNubClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="188" column="5" lean-forward="false" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7466#7467#0" expanded="true" />
-                <element signature="e#7562#7563#0" expanded="true" />
-                <element signature="e#7612#7613#0" expanded="true" />
-                <element signature="e#7682#7683#0" expanded="true" />
-                <element signature="e#7724#7725#0" expanded="true" />
-                <element signature="e#7815#7816#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="32" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -177,8 +166,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="120" column="33" lean-forward="false" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+            <state relative-caret-position="1020">
+              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding>
                 <element signature="e#3514#3515#0" expanded="true" />
                 <element signature="e#3582#3583#0" expanded="true" />
@@ -203,17 +192,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="705">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#490#491#0" expanded="true" />
                 <element signature="e#571#572#0" expanded="true" />
                 <element signature="e#3520#3521#0" expanded="true" />
                 <element signature="e#3547#3548#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -304,8 +303,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -314,21 +311,12 @@
               <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -368,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Tests">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -925,7 +913,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1043,15 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7466#7467#0" expanded="true" />
-            <element signature="e#7562#7563#0" expanded="true" />
-            <element signature="e#7612#7613#0" expanded="true" />
-            <element signature="e#7682#7683#0" expanded="true" />
-            <element signature="e#7724#7725#0" expanded="true" />
-            <element signature="e#7815#7816#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,32 +1181,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/login.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="149" lean-forward="false" selection-start-line="12" selection-start-column="149" selection-end-line="12" selection-end-column="149" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1236,9 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1254,14 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,30 +1254,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
           <caret line="188" column="5" lean-forward="false" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7466#7467#0" expanded="true" />
-            <element signature="e#7562#7563#0" expanded="true" />
-            <element signature="e#7612#7613#0" expanded="true" />
-            <element signature="e#7682#7683#0" expanded="true" />
-            <element signature="e#7724#7725#0" expanded="true" />
-            <element signature="e#7815#7816#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
+    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        <state relative-caret-position="705">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1330,25 +1310,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="120" column="33" lean-forward="false" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+        <state relative-caret-position="1020">
+          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding>
             <element signature="e#3514#3515#0" expanded="true" />
             <element signature="e#3582#3583#0" expanded="true" />
             <element signature="e#3608#3609#0" expanded="true" />
             <element signature="e#3688#3689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3853#3854#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1365,18 +1333,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
+    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="32" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -1391,19 +1367,6 @@
             <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
           </folding>
         </state>
       </provider>
