@@ -11,7 +11,7 @@ class UserIdentification(serializers.Serializer):
     A base class meant for verifying user existence, with only basic serialization
     incorporated. Has no fields so not meant to be exposed as an endpoint.
     """
-    email_error = {'failure': 'Email does not exist'}
+    email_error = {'email': ['Email does not exist.']}
 
     def exists(self):
         self.is_valid()
@@ -23,6 +23,7 @@ class UserIdentificationSerializer(serializers.ModelSerializer, UserIdentificati
     A base class that verifies users but extends Model Serializer with a single 
     email field.
     """
+
     class Meta:
         model = User
         fields = (
@@ -56,12 +57,13 @@ class UserBasicSerializer(UserIdentification):
     """
     Used for creating users and getting basic user information.
     """
-    name                    =   serializers.CharField(max_length=200)
+    name                    =   serializers.CharField(max_length=200, allow_blank=True, required=False)
     email                   =   serializers.EmailField(max_length=None, min_length=None)
     password                =   serializers.CharField(max_length=200, min_length=6, write_only=True)
     confirm_password        =   serializers.CharField(max_length=200, min_length=6, write_only=True)
     telegram_addr           =   serializers.CharField(allow_blank=True, required=False)
     ether_addr              =   serializers.CharField(allow_blank=True, required=False, max_length=40, min_length=40)
+    user_type               =   serializers.ChoiceField(choices=list(User.USER_TYPE_CHOICES))
 
     def create(self, validated_data):
         if User.objects.filter(email=validated_data["email"]).exists():
@@ -73,8 +75,8 @@ class UserBasicSerializer(UserIdentification):
             first_name, last_name = name.split(" ")
         except ValueError:  # If for some reason, user only gave first name
             first_name, last_name = name, None
+        
         user = User.objects.create_user(first_name=first_name, last_name=last_name, **validated_data)
-
         # user.validate_email() TODO uncomment this
         user.save()
         return user
@@ -109,62 +111,53 @@ class UserUpdateSerializer(UserIdentification):
         user.save()
         return user
 
-class UserICOKYCSerializer(UserIdentificationSerializer):
+class UserICOKYCSerializer(UserIdentification):
     """
-    Used for getting ICO KYC information for users.
+    Used for inputting ICO KYC information for users.
     """
-    class Meta:
-        model = User
-        fields = (
-            'email',
-            'first_name',
-            'middle_name',
-            'last_name',
-            'street_addr1',  
-            'street_addr2',
-            'city', 
-            'state',  
-            'country',  
-            'zip_code',
-            'phone_number', 
-            'ether_addr',
-            'id_file', 
-            'selfie',  
-            'ether_part_amount', 
-            'referral',
-        )
+    email               =   serializers.EmailField(required=True)
+    first_name          =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    middle_name         =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    last_name           =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    street_addr1        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
+    street_addr1        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
+    city                =   serializers.CharField(max_length=40, required=False, allow_blank=True)
+    state               =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
+    country             =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
+    zip_code            =   serializers.IntegerField(required=False, allow_null=True)
+    phone_number        =   serializers.CharField(required=False, allow_blank=True)
+    ether_addr          =   serializers.CharField(max_length=40, min_length=40, required=False, allow_blank=True)
+    id_file             =   serializers.ImageField(allow_empty_file=True, required=False)
+    selfie              =   serializers.ImageField(allow_empty_file=True, required=False)
+    ether_part_amount   =   serializers.IntegerField(required=False, allow_null=True)
+    referral            =   serializers.EmailField(required=False, allow_blank=True)
 
-class UserAirDropsSerializer(UserIdentificationSerializer):
-    """
-    Used for getting social media information for users.
-    """
-    class Meta:
-        model = User
-        fields = (
-            'email',
-            'telegram_addr',
-            'twitter_name',
-            'facebook_url',
-            'linkedin_url',
-            'bitcoin_name',
-            'reddit_name',
-            'steemit_name',
-            'referral', 
-        )
 
-class UserBalanceSerializer(UserIdentificationSerializer):
+class UserAirDropsSerializer(UserIdentification):
     """
-    Used for getting user balances.
+    Used for inputting social media information for users.
     """
-    class Meta:
-        model = User
-        fields = (
-            'email',
-            'bitcoin_balance', 
-            'ether_balance', 
-            'usd_balance', 
-            'star_balance',
-        )
+    email               =   serializers.EmailField(required=True)
+    telegram_addr       =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    twitter_name        =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    facebook_url        =   serializers.CharField(required=False, allow_blank=True)
+    linkedin_url        =   serializers.CharField(required=False, allow_blank=True)
+    bitcoin_name        =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    reddit_name         =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    steemit_name        =   serializers.CharField(max_length=50, required=False, allow_blank=True)
+    referral            =   serializers.EmailField(required=False, allow_blank=True)
+
+
+class UserBalanceSerializer(UserIdentification):
+    """
+    Used for changing user balances.
+    """
+    email               =   serializers.EmailField(required=True)
+    bitcoin             =   serializers.DecimalField(max_digits=11, decimal_places=4, required=False, allow_null=True)
+    ether               =   serializers.DecimalField(max_digits=11, decimal_places=4, required=False, allow_null=True)
+    usd                 =   serializers.DecimalField(max_digits=11, decimal_places=2, required=False, allow_null=True)
+    star                =   serializers.DecimalField(max_digits=11, decimal_places=2, required=False, allow_null=True)
+
 
 class UserRelationalSerializer(UserIdentification):
     """

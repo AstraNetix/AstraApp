@@ -131,7 +131,7 @@ class UserIDViewSet(viewsets.ModelViewSet):
                 'bitcoin_name'      :   user.bitcoin_name if user.bitcoin_name else "",
                 'reddit_name'       :   user.reddit_name if user.reddit_name else "",
                 'steemit_name'      :   user.steemit_name if user.steemit_name else "",
-                'referral'          :   user.referral if user.countreferralry else "",
+                'referral'          :   user.referral if user.referral else "",
             }, status=status.HTTP_200_OK)
         else: 
             return Response(serializer.errors,
@@ -205,7 +205,7 @@ class UserUpdateViewSet(viewsets.ModelViewSet):
                 return Response({"success": "User successfully updated"},
                     status=status.HTTP_201_CREATED)
             except (CreationError, AuthenticationError) as ce:
-                return Response({"failure": str(ce)},
+                return Response(ce.errors,
                     status=status.HTTP_400_BAD_REQUEST)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -232,7 +232,7 @@ class UserLoginViewSet(viewsets.ModelViewSet):
                         'balance': self.serializer_balance_class(user).data,
                     }, status=status.HTTP_201_CREATED)
             except AuthenticationError as ae:
-                return Response({'failure': str(ae)}, 
+                return Response(ae.errors, 
                     status=status.HTTP_401_UNAUTHORIZED)
         else: 
             return Response(serializer.email_error, status=status.HTTP_400_BAD_REQUEST)
@@ -246,39 +246,42 @@ class UserPasswordViewSet(viewsets.ViewSet):
 
     @list_route(methods=['patch'])
     def reset_password(self, request, pk=None):
-        serializer = self.serializer_class(data=request.data, partial=True)
+        try:
+            serializer = self.serializer_class(data=request.data, partial=True)
 
-        if serializer.is_valid():
-            try:
-                user = User.objects.get(email=serializer.validated_data['email'])
-                user.reset_password(serializer.validated_data['new_password'])
-                return Response({'success': "Password successfully reset"}, 
-                    status=status.HTTP_200_OK)
-            except PasswordChangeError as pc:
-                return Response({'failure': str(pc)},
-                    status=status.HTTP_400_BAD_REQUEST)
-        else: 
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            if serializer.is_valid():
+                try:
+                    user = User.objects.get(email=serializer.validated_data['email'])
+                    user.reset_password(serializer.validated_data['new_password'])
+                    return Response({'success': "Password successfully reset. Check your inbox!"}, 
+                        status=status.HTTP_200_OK)
+                except PasswordChangeError as pc:
+                    return Response(pc.errors,
+                        status=status.HTTP_400_BAD_REQUEST)
+            else: 
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except KeyError:
+                return Response({'email': ['This field must not be blank']},
+                    status=status.HTTP_400_BAD_REQUEST) 
 
     @list_route(methods=['patch'])
     def change_password(self, request, pk=None):
-        serializer = self.serializer_class(data=request.data)
-
-        if serializer.is_valid():
-            try:
+        try:
+            serializer = self.serializer_class(data=request.data)
+            if serializer.is_valid():
                 user = User.objects.get(email=serializer.validated_data['email'])
                 user.change_password(serializer.validated_data['old_password'], 
                     serializer.validated_data['new_password'])
                 return Response({'success': "Password successfully changed"}, 
                     status=status.HTTP_200_OK)
-            except PasswordChangeError as pc:
-                return Response(pc.errors,
-                    status=status.HTTP_400_BAD_REQUEST)
-            except KeyError:
+            else: 
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except PasswordChangeError as pc:
+            return Response(pc.errors,
+                status=status.HTTP_400_BAD_REQUEST)
+        except KeyError:
                 return Response(AuthenticationError.MISSING_FIELDS,
                     status=status.HTTP_400_BAD_REQUEST)
-        else: 
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             
             
 class UserICOKYCViewSet(viewsets.ViewSet):
@@ -289,16 +292,21 @@ class UserICOKYCViewSet(viewsets.ViewSet):
 
     @list_route(methods=['patch'])
     def add_ICOKYC_data(self, request, pk=None):
-        serializer = self.serializer_class(data=request.data)
-
-        if serializer.exists():
-            user = User.objects.get(email=serializer.validated_data.pop('email'))
-            for key, value in serializer.validated_data.items():   
-                setattr(user, key, value)
-            return Response({'success': "ICOKYC data successfully set"}, 
-                status=status.HTTP_200_OK)
-        else: 
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            serializer = self.serializer_class(data=request.data, partial=True)
+        
+            if serializer.exists():
+                user = User.objects.get(email=serializer.validated_data.pop('email'))
+                for key, value in serializer.validated_data.items():   
+                    setattr(user, key, value)
+                user.save()
+                return Response({'success': "ICOKYC data successfully set"}, 
+                    status=status.HTTP_200_OK) 
+            else: 
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except KeyError:
+            return Response({'email': ["This field must not be blank"]}, 
+                    status=status.HTTP_400_BAD_REQUEST)
 
 class UserAirDropsViewSet(viewsets.ViewSet):
     serializer_class = UserAirDropsSerializer
@@ -319,19 +327,25 @@ class UserAirDropsViewSet(viewsets.ViewSet):
 
     @list_route(methods=['patch'])
     def add_air_drops(self, request, pk=None):
-        serializer = self.serializer_class(data=request.data)
+        try:
+            serializer = self.serializer_class(data=request.data, partial=True)
+        
+            if serializer.exists():
+                user = User.objects.get(email=serializer.validated_data.pop('email'))
+                for key, value in serializer.validated_data.items():   
+                    if value not in self.defaults:
+                        setattr(user, key, value)
+                user.save()
+                return Response({'success': "Air Drops data successfully set"},
+                    status=status.HTTP_200_OK)
+            else: 
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except KeyError:
+            return Response({'email': ["This field must not be blank"]}, 
+                    status=status.HTTP_400_BAD_REQUEST)
 
-        if serializer.exists():
-            user = User.objects.get(email=serializer.validated_data.pop('email'))
-            for key, value in serializer.validated_data.items():   
-                if value not in self.defaults:
-                    setattr(user, key, value)
-            return Response({'success': "Air Drops data successfully set"},
-                status=status.HTTP_200_OK)
-        else: 
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class UserBalanceViewSet(viewsets.ModelViewSet):
+class UserBalanceViewSet(viewsets.ViewSet):
     serializer_class = UserBalanceSerializer
     
     queryset = User.objects.all()
@@ -353,21 +367,27 @@ class UserBalanceViewSet(viewsets.ModelViewSet):
     def add_ether(self, request, pk=None):
         return self.add_tokens(User.add_ether, 'ether', request)
 
-    def add_tokens(self, func, token_type, request):
-        serializer = UserIdentificationSerializer(data=request.data, partial=True)
-
-        if serializer.exists():
-            try: 
-                user = User.objects.get(email=serializer.data['email'])
-                func(user, serializer.data[token_type]) 
+    def add_tokens(self, token_func, token_type, request):
+        try: 
+            serializer = self.serializer_class(data=request.data, partial=True)
+            
+            if serializer.exists():
+                user = User.objects.get(email=serializer.validated_data['email'])
+                if token_type not in serializer.validated_data:
+                    return Response({token_type: ["This field must not be blank"]}, 
+                        status=status.HTTP_400_BAD_REQUEST)
+                token_func(user, serializer.validated_data[token_type]) 
                 return Response({'success': '{0} added'.format(token_type.capitalize())}, 
                     status=status.HTTP_200_OK)
-            except TokenICOKYCError as tik:
-                return Response(tik.errors, 
+            else:
+                return Response(serializer.errors,
+                        status=status.HTTP_400_BAD_REQUEST)
+        except TokenICOKYCError as tik:
+            return Response(tik.errors, 
                     status=status.HTTP_412_PRECONDITION_FAILED)
-        else:
-            return Response(serializer.errors,
-                            status=status.HTTP_400_BAD_REQUEST)
+        except KeyError:
+            return Response({'email': ["This field must not be blank"]}, 
+                    status=status.HTTP_400_BAD_REQUEST)
                     
 
 class UserRelationalViewSet(viewsets.ViewSet):

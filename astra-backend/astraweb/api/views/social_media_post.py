@@ -27,7 +27,7 @@ class SocialMediaPostViewSet(viewsets.ModelViewSet):
                 return Response({'success': "Social media post(s) successfully created"}, 
                     status=status.HTTP_200_OK)
             except AuthenticationError as ae: 
-                return Response(str(ae), status=status.HTTP_400_BAD_REQUEST)
+                return Response(ae.errors, status=status.HTTP_400_BAD_REQUEST)
         else: 
             return Response({'failure': serializer.errors}, 
                 status=status.HTTP_400_BAD_REQUEST)

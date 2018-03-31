@@ -25,13 +25,13 @@ class SocialMediaPost(models.Model):
     OTHER               =   'OR'
 
     PLATFORM_CHOICES    =   (
-                                (FACEBOOK, 'Facebook'),
-                                (TWITTER, 'Twitter'),
-                                (TELEGRAM, 'Telegram'),
-                                (LINKEDIN, 'Linkedin'),
-                                (BITCOIN_TALK, 'Bitcoin Talk'),
-                                (REDDIT, 'Reddit'),
-                                (OTHER, 'Other'),
+                                (FACEBOOK,      'Facebook'),
+                                (TWITTER,       'Twitter'),
+                                (TELEGRAM,      'Telegram'),
+                                (LINKEDIN,      'Linkedin'),
+                                (BITCOIN_TALK,  'Bitcoin Talk'),
+                                (REDDIT,        'Reddit'),
+                                (OTHER,         'Other'),
                             )
 
     #######################################################################################
@@ -61,4 +61,4 @@ class SocialMediaPost(models.Model):
         post_hash.update(str(self.user.email).encode('utf-8'))
         post_hash.update(str(self.content).encode('utf-8'))
         post_hash.update(str(self.date).encode('utf-8'))
-        return post_hash.hexdigest()[:-10]
+        return post_hash.hexdigest()[:10]

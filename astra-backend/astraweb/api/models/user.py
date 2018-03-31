@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 import uuid
 import re
+from decimal import Decimal
 
 from django.db import models
 from django.contrib.auth import authenticate as auth
@@ -11,7 +12,7 @@ from api.models.project import Project
 
 from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError
 
-from django.core.validators import RegexValidator
+from django.core.validators import RegexValidator, MinValueValidator
 from django.core.mail import send_mail
 
 from phonenumber_field.modelfields import PhoneNumberField
@@ -78,7 +79,7 @@ class User(AbstractUser):
                                 (BOTH, 'Both'),
                             )
 
-    app_header          =   "https://www.goastra.info/" # Add web app url header here
+    WEB_HEADER          =   "http://goastra.tinyewebswirl.com/" # Add website url header here
 
     verbose_name        =   'user'
     verbose_name_plural =   'users'
@@ -134,10 +135,14 @@ class User(AbstractUser):
     ether_part_amount   =   models.PositiveIntegerField(null=True, blank=True)
     telegram_addr       =   models.CharField(max_length=50, blank=True, null=True)
 
-    bitcoin_balance     =   models.DecimalField(max_digits=11, decimal_places=4, default=0)
-    ether_balance       =   models.DecimalField(max_digits=11, decimal_places=4, default=0)
-    usd_balance         =   models.DecimalField(max_digits=11, decimal_places=2, default=0)
-    star_balance        =   models.DecimalField(max_digits=11, decimal_places=2, default=0)
+    bitcoin_balance     =   models.DecimalField(max_digits=11, decimal_places=4, default=0, 
+                                validators=[MinValueValidator(Decimal('0.0000'))])
+    ether_balance       =   models.DecimalField(max_digits=11, decimal_places=4, default=0, 
+                                validators=[MinValueValidator(Decimal('0.0000'))])
+    usd_balance         =   models.DecimalField(max_digits=11, decimal_places=2, default=0, 
+                                validators=[MinValueValidator(Decimal('0.00'))])
+    star_balance        =   models.DecimalField(max_digits=11, decimal_places=2, default=0, 
+                                validators=[MinValueValidator(Decimal('0.00'))])
 
     start_time          =   models.DateField(auto_now_add=True, editable=False)
 
@@ -179,7 +184,7 @@ class User(AbstractUser):
         send_mail(
             subject = subject, 
             message = message, 
-            from_email = "noreply@mail.goastra.win", 
+            from_email = "no-reply@astraglobal.net", 
             recipient_list = [self.email], 
             fail_silently = True
         )
@@ -193,7 +198,7 @@ class User(AbstractUser):
         send_mail(
             subject = '', 
             message = message, 
-            from_email = "noreply@mail.goastra.win", 
+            from_email = "noreply@astraglobal.net", 
             recipient_list = [self.phone_number], 
             fail_silently = True
         )
@@ -209,7 +214,10 @@ class User(AbstractUser):
             "After you do so, remember to fill out the rest of your ICO-"
             "KYC form to begin token sale.\n\n"
             "Best,\n\n"
-            "The Astra Team ").format(self.first_name, "") #TODO: Add email confirmation link
+            "The Astra Team ").format(
+                self.first_name, 
+                "{0}dashboard-login/?email-verify={1}".format(User.WEB_HEADER, self.email)
+            ) 
         )
 
     def remind_validate_email(self):
@@ -222,7 +230,10 @@ class User(AbstractUser):
             "After you do so, remember to fill out the rest of your ICO-"
             "KYC form to begin token sale.\n\n"
             "Best,\n\n"
-            "The Astra Team ").format(self.first_name, "") #TODO: Add email confirmation link
+            "The Astra Team ").format(
+                self.first_name, 
+                "{0}dashboard-login/?email-verify={1}".format(User.WEB_HEADER, self.email)
+            ) 
         )
 
     def reset_password_email(self):
@@ -233,7 +244,10 @@ class User(AbstractUser):
             "{1}/login/forgot-password\n\n"
             "If you believe you have gotten this email in error, please ignore this message.\n\n"
             "Best,\n\n"
-            "The Astra Team ").format(self.first_name, self.app_header) 
+            "The Astra Team ").format(
+                self.first_name, 
+                "{0}dashboard-recover/".format(User.WEB_HEADER)
+            ) 
         )
 
     def validate_phone(self):
@@ -276,24 +290,32 @@ class User(AbstractUser):
     def add_star_tokens(user, amount):
         user.token_auth()
         user.star_balance += amount
+        if user.star_balance < 0:
+            user.star_balance = 0
         user.save()
 
     @staticmethod
     def add_usd(user, amount):  
         user.token_auth()
         user.usd_balance += amount
+        if user.usd_balance < 0:
+            user.usd_balance = 0
         user.save()
 
     @staticmethod
     def add_bitcoin(user, amount):
         user.token_auth()
         user.bitcoin_balance += amount
+        if user.bitcoin_balance < 0:
+            user.bitcoin_balance = 0
         user.save()
 
     @staticmethod
     def add_ether(user, amount):
         user.token_auth()
         user.ether_balance += amount
+        if user.ether_balance < 0:
+            user.ether_balance = 0
         user.save()
 
     #######################################################################################
@@ -402,6 +424,7 @@ class User(AbstractUser):
         """
         user = User.authenticate(email, password)
         if user: user.logged_in = True
+        return user
 
     def logout(self):
         self.logged_in = False
