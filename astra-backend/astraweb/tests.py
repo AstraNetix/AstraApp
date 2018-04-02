@@ -107,115 +107,115 @@ class ViewSetTests(Tests):
         )
         return response
     
-    # @Tests.test
-    # def test_user_login(self):
-    #     user = self.make_test_user()
-    #     def check_logged_in():
-    #         nonlocal user 
-    #         return user.logged_in
+    @Tests.test
+    def test_user_login(self):
+        user = self.make_test_user()
+        def check_logged_in():
+            nonlocal user 
+            return user.logged_in
 
-    #     response = self.cmnd_line_test(
-    #         given_input = "http -a superuser@gmail.com:Super1@useR " +
-    #                 "PATCH http://127.0.0.1:8000/api/users/login/login_user/ " + 
-    #                 "email=\"{0}\" ".format(user.email) +
-    #                 "password=\"{0}\" ".format(user.password),
-    #         expected_output = """{"success", "Successfully logged in"}""",
-    #         preconditions = [lambda: user.logout()],
-    #         postchecks = [check_logged_in], 
-    #     ) 
-    #     user.delete()
-    #     return response
+        response = self.cmnd_line_test(
+            given_input = "http -a superuser@gmail.com:Super1@useR " +
+                    "PATCH http://127.0.0.1:8000/api/users/login/login_user/ " + 
+                    "email=\"{0}\" ".format(user.email) +
+                    "password=\"{0}\" ".format(user.password),
+            expected_output = """{"success", "Successfully logged in"}""",
+            preconditions = [lambda: user.logout()],
+            postchecks = [check_logged_in], 
+        ) 
+        user.delete()
+        return response
 
-    # @Tests.test
-    # def test_user_update(self):
-    #     user = self.make_test_user()
-    #     def check_updated():
-    #         nonlocal user 
-    #         return all([
-    #             str(user) == 'New Name', 
-    #             user.email == 'new@new.com', 
-    #             user.password == 'newpassword'
-    #         ])
+    @Tests.test
+    def test_user_update(self):
+        user = self.make_test_user()
+        def check_updated():
+            nonlocal user 
+            return all([
+                str(user) == 'New Name', 
+                user.email == 'new@new.com', 
+                user.password == 'newpassword'
+            ])
 
-    #     response = self.cmnd_line_test(
-    #         given_input = "http -a superuser@gmail.com:Super1@useR " +
-    #                 "PATCH http://127.0.0.1:8000/api/users/update/update_user/ " + 
-    #                 "email=\"{0}\" ".format(user.email) +
-    #                 "name=\"{0}\" ".format("New Name") +
-    #                 "new_email=\"{0}\" ".format("new@new.com") +
-    #                 "old_password=\"{0}\" ".format(user.password) + 
-    #                 "new_password=\"{0}\" ".format("newpassword") +
-    #                 "confirm_password=\"{0}\" ".format("newpassword"),
-    #         expected_output = """{"success", "User successfully updated"}""",
-    #         preconditions = [lambda: user.logout()],
-    #         postchecks = [check_updated], 
-    #     ) 
-    #     user.delete()
-    #     return response
+        response = self.cmnd_line_test(
+            given_input = "http -a superuser@gmail.com:Super1@useR " +
+                    "PATCH http://127.0.0.1:8000/api/users/update/update_user/ " + 
+                    "email=\"{0}\" ".format(user.email) +
+                    "name=\"{0}\" ".format("New Name") +
+                    "new_email=\"{0}\" ".format("new@new.com") +
+                    "old_password=\"{0}\" ".format(user.password) + 
+                    "new_password=\"{0}\" ".format("newpassword") +
+                    "confirm_password=\"{0}\" ".format("newpassword"),
+            expected_output = """{"success", "User successfully updated"}""",
+            preconditions = [lambda: user.logout()],
+            postchecks = [check_updated], 
+        ) 
+        user.delete()
+        return response
     
-    # @Tests.test
-    # def test_user_add_tokens(self):
-    #     user = self.make_test_user()
-    #     def check_tokens_added():
-    #         nonlocal user 
-    #         return user.ether_balance == 10
+    @Tests.test
+    def test_user_add_tokens(self):
+        user = self.make_test_user()
+        def check_tokens_added():
+            nonlocal user 
+            return user.ether_balance == 10
 
-    #     response = self.cmnd_line_test(
-    #         given_input = "http -a superuser@gmail.com:Super1@useR " +
-    #                 "PATCH http://127.0.0.1:8000/api/users/balance/add_ether/ " + 
-    #                 "email=\"{0}\" ".format(user.email) +
-    #                 "ether_balance=\"10\" ",
-    #         expected_output = """{"success", "Ether added"}""",
-    #         preconditions = [],
-    #         postchecks = [check_tokens_added], 
-    #     ) 
-    #     user.delete()
-    #     return response
+        response = self.cmnd_line_test(
+            given_input = "http -a superuser@gmail.com:Super1@useR " +
+                    "PATCH http://127.0.0.1:8000/api/users/balance/add_ether/ " + 
+                    "email=\"{0}\" ".format(user.email) +
+                    "ether_balance=\"10\" ",
+            expected_output = """{"success", "Ether added"}""",
+            preconditions = [],
+            postchecks = [check_tokens_added], 
+        ) 
+        user.delete()
+        return response
 
-    # @Tests.test
-    # def test_user_add_icokyc(self):
-    #     user = self.make_test_user()
-    #     def check_icokyc_added():
-    #         nonlocal user 
-    #         return all([
-    #             user.first_name == 'First', 
-    #             user.middle_name == 'Middle', 
-    #             user.last_name == 'Last',
-    #             user.street_addr1 == '1234 Fake St',
-    #             user.street_addr2 == 'Apt. 0',
-    #             user.city == 'Cityville',
-    #             user.state == 'Florida',
-    #             user.country == 'US',
-    #             user.zip_code == '123456',
-    #             user.phone_number == '1234567890',
-    #             user.ether_addr == '0000000000000000000000000000000000000000',
-    #             user.ether_part_amount == '1',
-    #             user.referral == 'another@email.com',
-    #         ])
+    @Tests.test
+    def test_user_add_icokyc(self):
+        user = self.make_test_user()
+        def check_icokyc_added():
+            nonlocal user 
+            return all([
+                user.first_name == 'First', 
+                user.middle_name == 'Middle', 
+                user.last_name == 'Last',
+                user.street_addr1 == '1234 Fake St',
+                user.street_addr2 == 'Apt. 0',
+                user.city == 'Cityville',
+                user.state == 'Florida',
+                user.country == 'US',
+                user.zip_code == '123456',
+                user.phone_number == '1234567890',
+                user.ether_addr == '0000000000000000000000000000000000000000',
+                user.ether_part_amount == '1',
+                user.referral == 'another@email.com',
+            ])
 
-    #     response = self.cmnd_line_test(
-    #         given_input = "http -a superuser@gmail.com:Super1@useR " +
-    #                 "PATCH http://127.0.0.1:8000/api/users/icokyc/add_ICOKYC_data/ " + 
-    #                 "email=\"{0}\" ".format(user.email) +
-    #                 "first_name=\"{0}\" ".format("First") + 
-    #                 "middle_name=\"{0}\" ".format("Middle") + 
-    #                 "last_name=\"{0}\" ".format("Last") + 
-    #                 "street_addr1=\"{0}\" ".format("1234 Fake St.") + 
-    #                 "street_addr2=\"{0}\" ".format("Apt. 0") + 
-    #                 "city=\"{0}\" ".format("Cityville") + 
-    #                 "state=\"{0}\" ".format("Florida") + 
-    #                 "country=\"{0}\" ".format("US") + 
-    #                 "zip_code=\"{0}\" ".format("123456") + 
-    #                 "phone_number=\"{0}\" ".format("1234567890") + 
-    #                 "ether_addr=\"{0}\" ".format("0000000000000000000000000000000000000000") + 
-    #                 "ether_part_amount=\"{0}\" ".format("1") + 
-    #                 "referral=\"{0}\" ".format("another@email.com"),
-    #         expected_output = """{"success", "ICOKYC data successfully set"}""",
-    #         preconditions = [],
-    #         postchecks = [check_icokyc_added], 
-    #     ) 
-    #     user.delete()
-    #     return response
+        response = self.cmnd_line_test(
+            given_input = "http -a superuser@gmail.com:Super1@useR " +
+                    "PATCH http://127.0.0.1:8000/api/users/icokyc/add_ICOKYC_data/ " + 
+                    "email=\"{0}\" ".format(user.email) +
+                    "first_name=\"{0}\" ".format("First") + 
+                    "middle_name=\"{0}\" ".format("Middle") + 
+                    "last_name=\"{0}\" ".format("Last") + 
+                    "street_addr1=\"{0}\" ".format("1234 Fake St.") + 
+                    "street_addr2=\"{0}\" ".format("Apt. 0") + 
+                    "city=\"{0}\" ".format("Cityville") + 
+                    "state=\"{0}\" ".format("Florida") + 
+                    "country=\"{0}\" ".format("US") + 
+                    "zip_code=\"{0}\" ".format("123456") + 
+                    "phone_number=\"{0}\" ".format("1234567890") + 
+                    "ether_addr=\"{0}\" ".format("0000000000000000000000000000000000000000") + 
+                    "ether_part_amount=\"{0}\" ".format("1") + 
+                    "referral=\"{0}\" ".format("another@email.com"),
+            expected_output = """{"success", "ICOKYC data successfully set"}""",
+            preconditions = [],
+            postchecks = [check_icokyc_added], 
+        ) 
+        user.delete()
+        return response
 
 if __name__ == "__main__":
     ViewSetTests.__main__()

@@ -1,0 +1,1738 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "/Users/sohamkale/Documents/Astra/astra-backend/astraweb",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2018-03-31 21:43:53",
+            "filesum": 274,
+            "codesum": 22165,
+            "commentsum": 3685,
+            "blanksum": 4387,
+            "filelist": [
+                {
+                    "blank": 3,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": ".ebextensions/python.config"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".ebextensions/server/update-apache.sh"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": ".elasticbeanstalk/config.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 3,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".idea/astraweb.iml"
+                },
+                {
+                    "blank": 0,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": ".idea/inspectionProfiles/Project_Default.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": ".idea/misc.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".idea/modules.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 510,
+                    "comment": 0,
+                    "filename": ".idea/workspace.xml"
+                },
+                {
+                    "filename": ".Soham copy.jpg.icloud",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "__init__.py"
+                },
+                {
+                    "filename": "__pycache__/settings.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "api/__init__.py"
+                },
+                {
+                    "filename": "api/__init__.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/admin.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/apps.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/auth.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/models.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/permissions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/pubnub_client.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/serializers.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/urls.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/__pycache__/views.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 30,
+                    "code": 115,
+                    "comment": 2,
+                    "filename": "api/admin.py"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "api/apps.py"
+                },
+                {
+                    "filename": "api/apps.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "api/exceptions/__init__.py"
+                },
+                {
+                    "filename": "api/exceptions/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/exceptions/__pycache__/device_exceptions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/exceptions/__pycache__/user_exceptions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 21,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "api/exceptions/device_exceptions.py"
+                },
+                {
+                    "blank": 36,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "api/exceptions/user_exceptions.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "api/management/__init__.py"
+                },
+                {
+                    "filename": "api/management/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "api/management/commands/__init__.py"
+                },
+                {
+                    "filename": "api/management/commands/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/management/commands/__pycache__/createproj.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/management/commands/__pycache__/createsu.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 339,
+                    "comment": 2,
+                    "filename": "api/management/commands/createproj.py"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "api/management/commands/createsu.py"
+                },
+                {
+                    "blank": 6,
+                    "code": 157,
+                    "comment": 1,
+                    "filename": "api/migrations/0001_initial.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 12,
+                    "comment": 1,
+                    "filename": "api/migrations/0002_user_username.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "api/migrations/0003_auto_20180327_1736.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "api/migrations/0004_auto_20180329_1647.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "api/migrations/0005_auto_20180331_1426.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "api/migrations/0006_auto_20180331_1449.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "api/migrations/__init__.py"
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0001_initial.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0002_user_username.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0003_auto_20180327_1736.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0004_auto_20180329_1647.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0005_auto_20180331_1426.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/0006_auto_20180331_1449.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/migrations/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "api/models/__init__.py"
+                },
+                {
+                    "filename": "api/models/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/auth.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/device.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/device_exceptions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/exceptions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/project.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/pubnub_client.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/sale.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/social_media_post.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/user.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/models/__pycache__/user_exceptions.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 41,
+                    "code": 124,
+                    "comment": 9,
+                    "filename": "api/models/device.py"
+                },
+                {
+                    "blank": 18,
+                    "code": 57,
+                    "comment": 0,
+                    "filename": "api/models/project.py"
+                },
+                {
+                    "blank": 8,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": "api/models/sale.py"
+                },
+                {
+                    "blank": 12,
+                    "code": 48,
+                    "comment": 5,
+                    "filename": "api/models/social_media_post.py"
+                },
+                {
+                    "blank": 114,
+                    "code": 316,
+                    "comment": 19,
+                    "filename": "api/models/user.py"
+                },
+                {
+                    "blank": 2,
+                    "code": 4,
+                    "comment": 1,
+                    "filename": "api/permissions.py"
+                },
+                {
+                    "blank": 31,
+                    "code": 104,
+                    "comment": 15,
+                    "filename": "api/pubnub_client.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "api/serializers/__init__.py"
+                },
+                {
+                    "filename": "api/serializers/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/serializers/__pycache__/device.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/serializers/__pycache__/social_media_post.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/serializers/__pycache__/user.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 57,
+                    "comment": 0,
+                    "filename": "api/serializers/device.py"
+                },
+                {
+                    "blank": 6,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "api/serializers/project.py"
+                },
+                {
+                    "blank": 10,
+                    "code": 33,
+                    "comment": 1,
+                    "filename": "api/serializers/social_media_post.py"
+                },
+                {
+                    "blank": 44,
+                    "code": 148,
+                    "comment": 4,
+                    "filename": "api/serializers/user.py"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "api/templates/api/homepage.html"
+                },
+                {
+                    "blank": 5,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "api/urls.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "api/views/__init__.py"
+                },
+                {
+                    "filename": "api/views/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/views/__pycache__/device.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/views/__pycache__/homepage.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/views/__pycache__/social_media_post.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "api/views/__pycache__/user.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 18,
+                    "code": 117,
+                    "comment": 0,
+                    "filename": "api/views/device.py"
+                },
+                {
+                    "blank": 1,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "api/views/homepage.py"
+                },
+                {
+                    "blank": 9,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "api/views/social_media_post.py"
+                },
+                {
+                    "blank": 74,
+                    "code": 360,
+                    "comment": 0,
+                    "filename": "api/views/user.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "astraweb/__init__.py"
+                },
+                {
+                    "filename": "astraweb/__init__.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/__init__.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/constants.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/settings.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/urls.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/views.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "astraweb/__pycache__/wsgi.cpython-36.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "astraweb/constants.py"
+                },
+                {
+                    "blank": 46,
+                    "code": 90,
+                    "comment": 17,
+                    "filename": "astraweb/settings.py"
+                },
+                {
+                    "filename": "astraweb/settings.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "astraweb/urls.py"
+                },
+                {
+                    "blank": 1,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "astraweb/views.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "astraweb/wsgi.py"
+                },
+                {
+                    "filename": "db.sqlite3",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "manage.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "requirements.txt"
+                },
+                {
+                    "blank": 28,
+                    "code": 97,
+                    "comment": 102,
+                    "filename": "tests.py"
+                },
+                {
+                    "blank": 47,
+                    "code": 213,
+                    "comment": 0,
+                    "filename": "www/static/admin/css/autocomplete.css"
+                },
+                {
+                    "blank": 188,
+                    "code": 769,
+                    "comment": 21,
+                    "filename": "www/static/admin/css/base.css"
+                },
+                {
+                    "blank": 60,
+                    "code": 277,
+                    "comment": 7,
+                    "filename": "www/static/admin/css/changelists.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "www/static/admin/css/dashboard.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "www/static/admin/css/fonts.css"
+                },
+                {
+                    "blank": 102,
+                    "code": 402,
+                    "comment": 11,
+                    "filename": "www/static/admin/css/forms.css"
+                },
+                {
+                    "blank": 13,
+                    "code": 64,
+                    "comment": 1,
+                    "filename": "www/static/admin/css/login.css"
+                },
+                {
+                    "blank": 215,
+                    "code": 747,
+                    "comment": 28,
+                    "filename": "www/static/admin/css/responsive.css"
+                },
+                {
+                    "blank": 14,
+                    "code": 64,
+                    "comment": 2,
+                    "filename": "www/static/admin/css/responsive_rtl.css"
+                },
+                {
+                    "blank": 59,
+                    "code": 195,
+                    "comment": 10,
+                    "filename": "www/static/admin/css/rtl.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "www/static/admin/css/vendor/select2/LICENSE-SELECT2.md"
+                },
+                {
+                    "blank": 57,
+                    "code": 427,
+                    "comment": 0,
+                    "filename": "www/static/admin/css/vendor/select2/select2.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "www/static/admin/css/vendor/select2/select2.min.css"
+                },
+                {
+                    "blank": 99,
+                    "code": 458,
+                    "comment": 8,
+                    "filename": "www/static/admin/css/widgets.css"
+                },
+                {
+                    "blank": 29,
+                    "code": 154,
+                    "comment": 1,
+                    "filename": "www/static/admin/fonts/LICENSE.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "www/static/admin/fonts/README.txt"
+                },
+                {
+                    "filename": "www/static/admin/fonts/Roboto-Bold-webfont.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/admin/fonts/Roboto-Light-webfont.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/admin/fonts/Roboto-Regular-webfont.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/calendar-icons.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/gis/move_vertex_off.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/gis/move_vertex_on.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-addlink.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-alert.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-calendar.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-changelink.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-clock.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-deletelink.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-no.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-unknown-alt.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-unknown.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/icon-yes.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/inline-delete.svg"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/LICENSE"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 3,
+                    "filename": "www/static/admin/img/README.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/search.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/selector-icons.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/sorting-icons.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/tooltag-add.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "www/static/admin/img/tooltag-arrowright.svg"
+                },
+                {
+                    "blank": 1,
+                    "code": 146,
+                    "comment": 6,
+                    "filename": "www/static/admin/js/actions.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/actions.min.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 329,
+                    "comment": 77,
+                    "filename": "www/static/admin/js/admin/DateTimeShortcuts.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 153,
+                    "comment": 12,
+                    "filename": "www/static/admin/js/admin/RelatedObjectLookups.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 32,
+                    "comment": 2,
+                    "filename": "www/static/admin/js/autocomplete.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 164,
+                    "comment": 29,
+                    "filename": "www/static/admin/js/calendar.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/cancel.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/change_form.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 6,
+                    "filename": "www/static/admin/js/collapse.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/collapse.min.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 171,
+                    "comment": 22,
+                    "filename": "www/static/admin/js/core.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 233,
+                    "comment": 57,
+                    "filename": "www/static/admin/js/inlines.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/inlines.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 6,
+                    "filename": "www/static/admin/js/jquery.init.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 15,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/popup_response.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 28,
+                    "comment": 10,
+                    "filename": "www/static/admin/js/prepopulate.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/prepopulate.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/prepopulate_init.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 138,
+                    "comment": 9,
+                    "filename": "www/static/admin/js/SelectBox.js"
+                },
+                {
+                    "blank": 21,
+                    "code": 201,
+                    "comment": 32,
+                    "filename": "www/static/admin/js/SelectFilter2.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 97,
+                    "comment": 7,
+                    "filename": "www/static/admin/js/timeparse.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 177,
+                    "comment": 13,
+                    "filename": "www/static/admin/js/urlify.js"
+                },
+                {
+                    "blank": 1826,
+                    "code": 6356,
+                    "comment": 1614,
+                    "filename": "www/static/admin/js/vendor/jquery/jquery.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/jquery/jquery.min.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": "www/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ar.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/az.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/bg.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ca.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/cs.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/da.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/de.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/el.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/en.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/es.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/et.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/eu.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/fa.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/fi.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/fr.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/gl.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/he.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/hi.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/hr.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/hu.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/id.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/is.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/it.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ja.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/km.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ko.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/lt.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/lv.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/mk.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ms.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/nb.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/nl.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/pl.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/pt-BR.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/pt.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ro.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/ru.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/sk.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/sr-Cyrl.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/sr.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/sv.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/th.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/tr.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/uk.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/vi.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/zh-CN.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/i18n/zh-TW.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "www/static/admin/js/vendor/select2/LICENSE-SELECT2.md"
+                },
+                {
+                    "blank": 123,
+                    "code": 479,
+                    "comment": 134,
+                    "filename": "www/static/admin/js/vendor/select2/select2.full.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/select2/select2.full.min.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "www/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt"
+                },
+                {
+                    "blank": 165,
+                    "code": 1223,
+                    "comment": 963,
+                    "filename": "www/static/admin/js/vendor/xregexp/xregexp.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "www/static/admin/js/vendor/xregexp/xregexp.min.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 65,
+                    "comment": 0,
+                    "filename": "www/static/css/homepage.css"
+                },
+                {
+                    "filename": "www/static/images/Astra-Logo@3x.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 44,
+                    "code": 174,
+                    "comment": 15,
+                    "filename": "www/static/rest_framework/css/bootstrap-tweaks.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 6,
+                    "filename": "www/static/rest_framework/css/bootstrap.min.css"
+                },
+                {
+                    "blank": 17,
+                    "code": 62,
+                    "comment": 3,
+                    "filename": "www/static/rest_framework/css/default.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "www/static/rest_framework/css/prettify.css"
+                },
+                {
+                    "blank": 63,
+                    "code": 281,
+                    "comment": 7,
+                    "filename": "www/static/rest_framework/docs/css/base.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 9,
+                    "filename": "www/static/rest_framework/docs/css/bootstrap-theme.min.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 6,
+                    "filename": "www/static/rest_framework/docs/css/bootstrap.min.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1329,
+                    "comment": 9,
+                    "filename": "www/static/rest_framework/docs/css/font-awesome-4.0.3.css"
+                },
+                {
+                    "blank": 18,
+                    "code": 101,
+                    "comment": 6,
+                    "filename": "www/static/rest_framework/docs/css/highlight.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "www/static/rest_framework/docs/css/jquery.json-view.min.css"
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/fontawesome-webfont.eot",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 414,
+                    "comment": 0,
+                    "filename": "www/static/rest_framework/docs/fonts/fontawesome-webfont.svg"
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/fontawesome-webfont.ttf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/fontawesome-webfont.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/glyphicons-halflings-regular.eot",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 288,
+                    "comment": 0,
+                    "filename": "www/static/rest_framework/docs/fonts/glyphicons-halflings-regular.svg"
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/glyphicons-halflings-regular.ttf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/glyphicons-halflings-regular.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/fonts/glyphicons-halflings-regular.woff2",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/img/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/docs/img/grid.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 36,
+                    "code": 264,
+                    "comment": 21,
+                    "filename": "www/static/rest_framework/docs/js/api.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 5,
+                    "filename": "www/static/rest_framework/docs/js/bootstrap.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/rest_framework/docs/js/highlight.pack.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": "www/static/rest_framework/docs/js/jquery-1.10.2.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 7,
+                    "filename": "www/static/rest_framework/docs/js/jquery.json-view.min.js"
+                },
+                {
+                    "filename": "www/static/rest_framework/fonts/glyphicons-halflings-regular.eot",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 288,
+                    "comment": 0,
+                    "filename": "www/static/rest_framework/fonts/glyphicons-halflings-regular.svg"
+                },
+                {
+                    "filename": "www/static/rest_framework/fonts/glyphicons-halflings-regular.ttf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/fonts/glyphicons-halflings-regular.woff",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/fonts/glyphicons-halflings-regular.woff2",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/img/glyphicons-halflings-white.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/img/glyphicons-halflings.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "www/static/rest_framework/img/grid.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 21,
+                    "code": 92,
+                    "comment": 14,
+                    "filename": "www/static/rest_framework/js/ajax-form.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 5,
+                    "filename": "www/static/rest_framework/js/bootstrap.min.js"
+                },
+                {
+                    "blank": 325,
+                    "code": 1316,
+                    "comment": 203,
+                    "filename": "www/static/rest_framework/js/coreapi-0.1.1.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 34,
+                    "comment": 10,
+                    "filename": "www/static/rest_framework/js/csrf.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 32,
+                    "comment": 6,
+                    "filename": "www/static/rest_framework/js/default.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "www/static/rest_framework/js/jquery-1.12.4.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "www/static/rest_framework/js/prettify-min.js"
+                }
+            ]
+        }
+    ]
+}

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from api.models.device import Device
 from api.models.project import Project
-from api.exceptions.user_exceptions import CreationError, AuthenticationError
+from api.exceptions.user_exceptions import CreationError, AuthenticationError, ReferralError
 
 User = get_user_model()
 
@@ -115,7 +115,7 @@ class UserICOKYCSerializer(UserIdentification):
     """
     Used for inputting ICO KYC information for users.
     """
-    email               =   serializers.EmailField(required=True)
+    email               =   serializers.EmailField()
     first_name          =   serializers.CharField(max_length=50, required=False, allow_blank=True)
     middle_name         =   serializers.CharField(max_length=50, required=False, allow_blank=True)
     last_name           =   serializers.CharField(max_length=50, required=False, allow_blank=True)
@@ -130,7 +130,18 @@ class UserICOKYCSerializer(UserIdentification):
     id_file             =   serializers.ImageField(allow_empty_file=True, required=False)
     selfie              =   serializers.ImageField(allow_empty_file=True, required=False)
     ether_part_amount   =   serializers.IntegerField(required=False, allow_null=True)
-    referral            =   serializers.EmailField(required=False, allow_blank=True)
+    referral_type       =   serializers.ChoiceField(choices=User.REFERRAL_CHOICES, required=False, allow_blank=True)
+    referral_code       =   serializers.CharField(required=False, allow_blank=True)
+
+    def add_icokyc(self):
+        user = User.objects.get(email=self.validated_data.pop('email'))
+        user.add_referral(self.validated_data.pop('referral_code', ''))
+
+        for key, value in self.data.items(): 
+            if ((key == 'state' or key == 'country') and value == '00'):
+                continue 
+            setattr(user, key, value)
+        user.save()
 
 
 class UserAirDropsSerializer(UserIdentification):

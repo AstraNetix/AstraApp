@@ -16,9 +16,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '00hn$g7iz%bv2@$qu)0pta&6*5$9yr(!ka^vi_+92g^@&%j@dn'
 
@@ -28,7 +25,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost', 
     '127.0.0.1', 
-    'astraweb-dev.us-west-2.elasticbeanstalk.com'
+    'astraweb.us-west-2.elasticbeanstalk.com'
 ]
 
 

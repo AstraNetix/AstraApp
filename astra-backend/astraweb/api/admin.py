@@ -82,7 +82,9 @@ class UserCreationForm(BaseUserCreationForm):
             'bitcoin_name',
             'reddit_name',
             'steemit_name',
-            'referral',
+            'referral_code',
+            'referral_type',
+            'referral_user',
         )
 
 
@@ -102,7 +104,8 @@ class UserChangeForm(BaseUserChangeForm):
 class UserAdmin(BaseUserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
-    readonly_fields = ('logged_in', 'is_active', 'email_verified', 'phone_verified', 'bitcoin_balance', 'ether_balance', 'usd_balance', 'star_balance')
+    readonly_fields = ('logged_in', 'is_active', 'email_verified', 'phone_verified', 'bitcoin_balance', 
+                'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance', 'referral_code')
 
     list_display = ('email', 'first_name', 'last_name', 'is_superuser', 'user_type')
     list_filter = ('is_superuser', 'user_type', 'email_verified')
@@ -114,8 +117,9 @@ class UserAdmin(BaseUserAdmin):
         ('Location', {'fields': ('street_addr1', 'street_addr2', 'city', 'state', 'country', 'zip_code')}),
         ('Files', {'fields': ('id_file', 'selfie')}),
         ('Social Media', {'fields': ('telegram_addr', 'twitter_name', 'facebook_url', 'linkedin_url', 'bitcoin_name', 'reddit_name', 'steemit_name')}),
-        ('Balance', {'fields': ('bitcoin_balance', 'ether_balance', 'usd_balance', 'star_balance')}),
+        ('Balance', {'fields': ('bitcoin_balance', 'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance')}),
         ('Verifications', {'fields': ('email_verified', 'phone_verified')}),
+        ('Referrals', {'fields': ('referral_code', 'referral_type', 'referral_user')}),
     )
 
     add_fieldsets = (

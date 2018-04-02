@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 import uuid
 import re
+import random
+import string
 from decimal import Decimal
 
 from django.db import models
@@ -10,7 +12,7 @@ from django.contrib.auth.hashers import check_password
 
 from api.models.project import Project
 
-from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError
+from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError, ReferralError
 
 from django.core.validators import RegexValidator, MinValueValidator
 from django.core.mail import send_mail
@@ -30,6 +32,7 @@ class UserManager(BaseUserManager):
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
+        user.set_referral_code(email)
         user.save(using=self._db)
         return user
 
@@ -73,13 +76,28 @@ class User(AbstractUser):
     BOTH                =   3
 
     USER_TYPE_CHOICES   =   (
-                                (NONE, 'None'),
-                                (INVESTOR, 'Investor'),
-                                (CONTRIBUTOR, 'Contributor'),
-                                (BOTH, 'Both'),
+                                (NONE,          'None'          ),
+                                (INVESTOR,      'Investor'      ),
+                                (CONTRIBUTOR,   'Contributor'   ),
+                                (BOTH,          'Both'          ),
+                            )
+    
+    NO_REFERRAL         =   0
+    GOOGLE              =   1
+    EMAIL               =   2
+    FACEBOOK            =   3
+    REFERRAL            =   4
+
+    REFERRAL_CHOICES    =   (
+                                (NO_REFERRAL,   'No Referral'       ),
+                                (GOOGLE,        'Google'            ),
+                                (EMAIL,         'Email Marketing'   ),
+                                (FACEBOOK,      'Facebook'          ),
+                                (REFERRAL,      'Referral'          ),
                             )
 
-    WEB_HEADER          =   "http://goastra.tinyewebswirl.com/" # Add website url header here
+    WEB_HEADER          =   "http://goastra.tinyewebswirl.com/" 
+    APP_HEADER          =   ""
 
     verbose_name        =   'user'
     verbose_name_plural =   'users'
@@ -143,6 +161,8 @@ class User(AbstractUser):
                                 validators=[MinValueValidator(Decimal('0.00'))])
     star_balance        =   models.DecimalField(max_digits=11, decimal_places=2, default=0, 
                                 validators=[MinValueValidator(Decimal('0.00'))])
+    bonus_star_balance  =   models.DecimalField(max_digits=11, decimal_places=2, default=0, 
+                                validators=[MinValueValidator(Decimal('0.00'))])
 
     start_time          =   models.DateField(auto_now_add=True, editable=False)
 
@@ -159,8 +179,12 @@ class User(AbstractUser):
     bitcoin_name        =   models.CharField(max_length=50, blank=True, null=True)
     reddit_name         =   models.CharField(max_length=50, blank=True, null=True)
     steemit_name        =   models.CharField(max_length=50, blank=True, null=True)
-    
-    referral            =   models.EmailField(null=True, blank=True)
+
+    referral_code       =   models.CharField(max_length=150, null=True, blank=True)
+    referral_type       =   models.PositiveSmallIntegerField(choices=REFERRAL_CHOICES, default=NO_REFERRAL)
+    referral_user       =   models.ForeignKey('self', on_delete=models.CASCADE, 
+                                    related_name='referees', blank=True, null=True)
+
 
 
     def __str__(self):
@@ -171,6 +195,12 @@ class User(AbstractUser):
 
     def get_short_name(self):
         return self.first_name if self.first_name else ""
+
+    def set_referral_code(self, email):
+        self.referral_code = "{0}_{1}".format(
+            email.split('@')[0], "".join(random.choice(
+            string.ascii_letters + string.digits) for i in range(10))
+        )
 
 
     #######################################################################################
@@ -285,6 +315,15 @@ class User(AbstractUser):
 
     #######################################################################################
     # Token sale
+    @staticmethod
+    def add_promo_star_tokens(user, amount):
+        user.star_balance += amount
+        user.bonus_star_balance += amount
+        if user.star_balance < 0:
+            user.star_balance = 0
+        if user.bonus_star_balance < 0:
+            user.bonus_star_balance = 0
+        user.save()    
 
     @staticmethod
     def add_star_tokens(user, amount):
@@ -427,7 +466,11 @@ class User(AbstractUser):
         return user
 
     def logout(self):
+        """
+        Logs a user out.
+        """
         self.logged_in = False
+
 
     #######################################################################################
     # Transactions (PyEthApp Abstractions)
@@ -438,8 +481,38 @@ class User(AbstractUser):
         
 
     #######################################################################################
-    # Sales
+    # Referrals
+    
+    def referral_count(self):
+        """
+        The number of referral codes given by the user.
+        """
+        return self.referees.count()
+    
+    def add_referral(self, referral_code):
+        """
+        Adds referral to the referree's account, checking to see if the 
+        referrer exists and hasn't exceeded their max referrals. Adds 
+        star tokens to both parties.
+        """
+        if not referral_code: return False
+        
+        try:
+            referrer = User.objects.get(referral_code=referral_code)
+            if referrer == self:
+                raise ReferralError.self_referral()
+        except User.DoesNotExist:
+            raise ReferralError.referral_code_error()
+        if referrer.referral_count() >= 10:
+            raise ReferralError.referral_max_error()
+        if self.referral_user:
+            raise ReferralError.referral_set()
 
-    ### Make calls to SALE model to check for eligibility, change token value, etc. based on
-    ### start date, current date, etc.
+        referrer.referees.add(self)
+        User.add_promo_star_tokens(self, 5)
+        self.save()
+        User.add_promo_star_tokens(referrer, 5)
+        referrer.save()
+
+        return True
         
