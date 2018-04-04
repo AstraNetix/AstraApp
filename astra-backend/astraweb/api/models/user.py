@@ -188,7 +188,7 @@ class User(AbstractUser):
 
 
     def __str__(self):
-        return self.first_name if self.first_name else "" + " " + self.last_name if self.last_name else ""
+        return "%s %s" % (self.first_name or "", self.last_name or "")
 
     def get_full_name(self):
         return self.__str__()

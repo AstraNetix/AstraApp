@@ -214,7 +214,7 @@ class UserUpdateViewSet(viewsets.ModelViewSet):
     def update_user(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
 
-        if serializer.is_valid():
+        if serializer.exists():
             try:
                 serializer.update(serializer.validated_data)
                 return Response({"success": "User successfully updated"},

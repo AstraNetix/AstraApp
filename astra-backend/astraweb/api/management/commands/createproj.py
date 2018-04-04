@@ -27,8 +27,7 @@ projects = [
         'name': 'Acoustics@home', 
         'sponsors': 'V.I. Ilichev Pacific Oceanological Institute, Far Eastern Federal University, Matrosov Institute for System Dynamics and Control Theory, A.A. Kharkevich Institute for Information Transmission Problems, Dorodnicyn Computing Centre',
         'description': """In underwater acoustics the notion of geoacoustic inversion refers to a collection of techniques that can be used for the reconstruction of medium parameters. The medium parameters are usually understood as the sound speed profile in water (i.e., the dependence of the sound speed on the depth) and the sound speed and density in the sea bottom sediment layers. Medium parameters reconstruction is of great importance for problems of underwater communication and for the development of underwater navigation systems. \n While normally measurements for the geoacoustic inversion are performed using expensive receiver arrays, recently it was shown that single-hydrophone recording of a broadband pulse signal can be also successfully used for estimating the medium parameters. \n The method of geoacoustic inversion developed in our study is based on using modal dispersion data. Waveguide dispersion is usually induced by the difference in group velocities of propagation of normal waves of different mode numbers at different frequencies. By using special algorithms of the frequency-time analysis of signals, it is possible to filter out the modal components of a pulse signal from its time series recorded by a single hydrophone. The implementation of this method in practice can be thought of as a solution of an optimization problem in a (very large) discrete search space, and every evaluation of the cost function requires numerous solutions of an acoustic spectral problem. Thus, the whole computational burden can be easily divided into a large number of relatively simple independent tasks, which can be solved using volunteer computing.""",
-        'area1': 'Physics',
-        'area2': 'Underwater Acoustics',
+        'area': 'Physics',
         'platforms': ['WIN', 'LIN'],
     },
     {
@@ -36,8 +35,7 @@ projects = [
         'name': 'Amicable Numbers',
         'sponsors': 'Independent', 
         'description': """Amicable Numbers is an independent research project that uses Internet-connected computers to find new amicable pairs. You can contribute to our research by running a free program on your computer.\nCurrent goal of the project is to find all amicable pairs with smallest member < 1020.\nAll new findings are published regularly on the Amicable pairs list page. \nThough mathematics is not an experimental science, mathematicians often look for examples to test conjectures (which they then hope to prove). As the number of examples increases, so does (in a sense) their understanding of the distribution.\nThe goal is to collect all amicable numbers up to a very large limit. This data will facilitate theoretical research in the field: 1, 2, 3 to name a few examples. It will also help to improve understanding of the properties of Divisor function.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'NVI' 'LIN', 'AMD'],
     },
     {
@@ -45,8 +43,7 @@ projects = [
         'name': 'Asteroids@home',
         'sponsors': 'Charles University in Prague',
         'description': """Asteroids@home is a research project that uses Internet-connected computers to do research in Asteroids@home. You can participate by downloading and running a free program on your computer.\nAsteroids are the most numerous objects in the solar system. So far, hundreds of thousands of asteroids are known, with hundres of new discoveries every day. Altough the total number of known asteroids is large, very little is known about the physical properties of individual objects. For a significant part of the population, only the size of the bodies is known. Other physical parameters (the shape, the rotation period, direction of the rotation axis,...) are known only for hundreds of objects.\nBecause asteroids have in general irregular shapes and they rotate, the amount of sunlight they scatter towards the observer varies with time. This variation of brightness with time is called a lightcurve. The shape of a lightcurve depends on the shape of asteroid and also on the viewing and illumination geometry. If a sufficient number of lightcurves observed under various geometries is collected, a unique physical model of the asteroid can be reconstucted by the lightcurve inversion method.\nThe project Asteroids@home was started with the aim to significanly enlarge our knowledge of physical properties of asteroids. The BOINC application uses photometric measurements of asteroids observed by professional big all-sky surveys as well as 'backyard' astronomers. The data is processed using the lightcurve inversion method and a 3D shape model of an asteroid together with the rotation period and the direction of the spin axis are derived.\nBecause the photometric data from all-sky surveys are typically sparse in time, the rotation period is not directly 'visible' in the data and the huge parameter space has to be scanned to find the best solution. In such cases, the lightcurve inversion is very time-consuming and the distributed computation is the only way how to efficiently deal with photometry of hundres of thousands of asteroids. Moreover, in order to reveal biases in the method and reconstruct the real distribution of physical parameters in the asteroid population, it is necessary to process large data sets of 'synthetic' populations.""",
-        'area1': 'Astrophysics',
-        'area2': '',
+        'area': 'Astrophysics',
         'platforms': ['WIN', 'MAC', 'NVI', 'LIN', 'AND', 'BSD', 'LAR'],
     },
     {
@@ -54,8 +51,7 @@ projects = [
         'name': 'CAS@home',
         'sponsors': 'Chinese Academy of Sciences',
         'description': """CAS@home is hosted by the Computing Centre of the Institute of High Energy Physics (IHEP), Chinese Academy of Sciences. CAS@home is a volunteer computing platform for Chinese scientists based on the BOINC volunteer computing software. CAS@home collects the volunteer contributions to computing resources for scientists at the Chinese Academy of Sciences and other Chinese research institutions, to provide massive free computing resources that help the scientists complete major scientific computing tasks. Therefore, CAS@home supports multiple applications. The first application to be launched on CAS@home was developed by scientists at the Institute of Computing Technology (ICT), Chinese Academy of Sciences. It focused on protein structure prediction application (software called SCThread). In addition, Tsinghua University's Centre for Micro and Nano Mechanics (CNMM) an interdisciplinary innovation research center, has prepared an application for simulating flow of fluids and motion of solids on the nanoscale. Beijing Institute of Genomics (BIG), Chinese Academy of Sciences, is preparing an application for gene sequencing for applications in cancer research. And physicists of the Institute of High Energy Physics (IHEP), Chinese Academy of Sciences, are preparing an application for simulating particle collisions at the Beijing Electron Positron Collider, based on software called BOSS.""",
-        'area1': 'Physics',
-        'area2': 'Biochemistry',
+        'area': 'Physics',
         'platforms': ['WIN', 'LIN'],
     },
     {
@@ -63,8 +59,7 @@ projects = [
         'name': 'Citizen Science Grid',
         'sponsors': 'University of North Dakota',
         'description': """The Citizen Science Grid is run by Travis Desell, an Assistant Professor in the Computer Science Department at the University of North Dakota. It is hosted by UND's Computational Research Center and Information Technology Systems and Services. The Citizen Science Grid is dedicated to supporting a wide range of research and educational projects using volunteer computing and citizen science, which you can read about and visit below.""",
-        'area1': 'Molecular Biology',
-        'area2': 'Computer Science',
+        'area': 'Computer Science',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -72,8 +67,7 @@ projects = [
         'name': 'Climateprediction.net',
         'sponsors': 'Oxford University',
         'description': """Climateprediction.net is a volunteer computing, climate modelling project.\nWe run climate models on people’s home computers to help answer questions about how climate change is affecting our world, now and in the future –\nSign up now and help us predict the climate.\nEvidence of how our climate is changing is vital to encourage investment in reducing greenhouse gas emissions, as well as coping with inevitable change.\nYou can help discover how the climate could look by running our free software on your computer. The data generated is sent back to us and incorporated into the climateprediction.net projects.\nOur computer models simulate the climate for the next century, producing predictions of temperature, rainfall and the probability of extreme weather events. The more models that are run, the more evidence we gather on climate change.\nGet started and help us predict the climate.""", 
-        'area1': 'Climate study',
-        'area2': '',
+        'area': 'Climate study',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -81,8 +75,7 @@ projects = [
         'name': 'Collatz Conjecture',
         'sponsors': 'Independent',
         'description': """Collatz is a research project that uses Internet-connected computers to do research in mathematics. You can participate by downloading and running a free program on your computer.\nCollatz Conjecture is based in Wood Dale, Illinois. It is a privately managed BOINC project attempting to disprove the Collatz Conjecture. For more information about the Collatz Conjecture, check out the Wikipedia Collatz page. The Collatz Conjecture project makes use of the parity sequence optimization and runs on Linux, Windows, and OS X and can utilize CPUs as well as AMD, nVidia, and Intel graphics cards. \nSee the results gathered to date""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'LAR', 'NVI', 'AMD', 'INT'],
     },
     {
@@ -90,8 +83,7 @@ projects = [
         'name': 'Cosmology@Home',
         'sponsors': 'University of Illinois at Urbana-Champaign',
         'description': """Cosmology@Home lets you volunteer your spare computer time (like when your screen saver is on) to help search for the model which best describes our Universe and to find the range of models that agree with available cosmological and particle physics data. \nUnlike ordinary matter, dark matter does not emit or absorb light--or any other type of electromagnetic radiation. Consequently, dark matter cannot be observed directly using a telescope or any other astronomical instrument that has been developed by humans. If dark matter has these strange properties, how do we know that it exists in the first place? \nLike ordinary matter, dark matter interacts gravitationally with ordinary matter and radiation. Astronomers study the distribution of dark matter through observing its gravitational effects on ordinary matter in its vicinity and through its gravitational lensing effects on background radiation. The background image shows the bullet cluster, a famous example where the visible matter does not follow the mass distribution. \nCombining all the available evidence, dark matter represents about 83% of the matter content of the universe.""",
-        'area1': 'Astronomy',
-        'area2': '',
+        'area': 'Astrophysics',
         'platforms': ['WIN', 'MAC', 'LIN', 'BOX'],
     },
     {
@@ -99,8 +91,7 @@ projects = [
         'name': 'Einstein@home',
         'sponsors': 'University of Wisconsin - Milwaukee (USA), Max Planck Institute for Gravitational Physics - Hanover (Germany)',
         'description': """Einstein@Home is a World Year of Physics 2005 and an International Year of Astronomy 2009 project. It is supported by the American Physical Society (APS), the US National Science Foundation (NSF), the Max Planck Society (MPG), and a number of international organizations.\nEinstein@Home uses your computer's idle time to search for weak astrophysical signals from spinning neutron stars (often called pulsars) using data from the LIGO gravitational-wave detectors, the Arecibo radio telescope, and the Fermi gamma-ray satellite. Einstein@Home volunteers have already discovered about fifty new neutron stars, and we hope to find many more.\nOur long-term goal is to make the first direct detections of gravitational-wave emission from spinning neutron stars. Gravitational waves were predicted by Albert Einstein a century ago, and were directly seen for the first time on September 14, 2015. This observation of gravitational waves from a pair of merging black holes opens up a new window on the universe, and ushers in a new era in astronomy.\nThis first direct measurement was made soon after the advanced LIGO instruments came online after an extensive five-year upgrade. These advanced detectors took data between September 2015 and January 2016 and can already "see" three to six times as far as initial LIGO, depending upon the source type. Over the next two years this will increase to a factor of ten or more, increasing the number of potentially-visible gravitational-wave sources by a factor of a thousand!""",
-        'area1': 'Astrophysics',
-        'area2': '',
+        'area': 'Astronomy',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'LAR', 'NVI', 'AMD', 'INT'],
     },
     {
@@ -108,8 +99,7 @@ projects = [
         'name': 'Enigma@Home',
         'sponsors': 'Independent',
         'description': """Enigma@Home is a wrapper between BOINC and Stefan Krah's M4 Project. 'The M4 Project is an effort to break 3 original Enigma messages with the help of distributed computing. The signals were intercepted in the North Atlantic in 1942 and are believed to be unbroken.' [read more] You can participate by downloading and running a free program on your computer.""",
-        'area1': 'Cryptography',
-        'area2': '',
+        'area': 'Cryptography',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'LAR', 'NVI', 'AMD'],
     },
     {
@@ -117,8 +107,7 @@ projects = [
         'name': 'Gerasim@Home',
         'sponsors': 'Southwest State University (Russia)',
         'description': """The project uses Internet-connected computers to do research in discrete mathematics and logic control.\nThe current goal: testing and comparison of heuristic methods for getting separations of parallel algorithms working in the CAD system for designing logic control systems.""",
-        'area1': 'Astrophysics',
-        'area2': '',
+        'area': 'Astrophysics',
         'platforms': ['WIN', 'LIN'],
     },
     {
@@ -126,8 +115,7 @@ projects = [
         'name': 'GPUGrid.net',
         'sponsors': 'Barcelona Biomedical Research Park (PRBB)',
         'description': """GPUGRID.net is a distributed computing infrastructure devoted to biomedical research. Thanks to the contribution of volunteers, GPUGRID scientists can perform molecular simulations to understand the function of proteins in health and disease.\nGPUGRID is made of many graphics cards (GPUs) joined together to deliver high-performance all-atom biomolecular simulations. The molecular simulations performed by our volunteers are some of the most common types performed by scientists in the field, but they are also some of the most computationally demanding and usually require a supercomputer. Running GPUGRID on GPUs innovates volunteer computing by delivering supercomputing class applications on a cost effective infrastructure which will greatly impact the way biomedical research is performed.\nOur activities pursue exclusively scientific and academic goals, with the invaluable help of all the volunteers that donate computing power to the GPUGRID.net project in order to advance scientific research. We would like to thank them all here.""",
-        'area1': 'Molecular Simulations',
-        'area2': 'Molecular Biology',
+        'area': 'Molecular Biology',
         'platforms': ['WIN', 'LIN', 'NVI'],
     },
     {
@@ -135,8 +123,7 @@ projects = [
         'name': 'Leiden Classical',
         'sponsors': 'Leiden University, The Netherlands',
         'description': """Join in and help to build a Desktop Computer Grid dedicated to general Classical Dynamics for any scientist or science student!""",
-        'area1': 'Chemistry',
-        'area2': '',
+        'area': 'Chemistry',
         'platforms': ['WIN', 'LIN'],
     },
     {
@@ -144,8 +131,7 @@ projects = [
         'name': 'LHC@home',
         'sponsors': 'CERN (European Organization for Nuclear Research)',
         'description': """This a research project that uses Internet-connected computers to advance Particle and Accelerator Physics. Participate by downloading and running a free program on your computer. By default, you can run the classic LHC@home application Sixtrack, for simulations of accelerator physics, and help researchers at CERN to improve the LHC.\nOther LHC@home simulations that utilizes virtualization to run applications for Theory and experiment simulations for ATLAS, CMS and LHCb are also available.\nPlease note that some of the applications on LHC@home requre Virtual Box to be installed. Please visit the LHC@home information site for more information. If you have any problems or questions please visit the Message Boards, Questions and Answers and FAQ.""",
-        'area1': 'Physics',
-        'area2': '',
+        'area': 'Physics',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'BSD', 'LAR', 'AMD', 'BOX'],
     },
     {
@@ -153,8 +139,7 @@ projects = [
         'name': 'Milkyway@home',
         'sponsors': 'Rensselaer Polytechnic Institute',
         'description': """Milkyway@Home uses the BOINC platform to harness volunteered computing resources, creating a highly accurate three dimensional model of the Milky Way galaxy using data gathered by the Sloan Digital Sky Survey. This project enables research in both astroinformatics and computer science.\nIn computer science, the project is investigating different optimization methods which are resilient to the fault-prone, heterogeneous and asynchronous nature of Internet computing; such as evolutionary and genetic algorithms, as well as asynchronous newton methods. While in astroinformatics, Milkyway@Home is generating highly accurate three dimensional models of the Sagittarius stream, which provides knowledge about how the Milky Way galaxy was formed and how tidal tails are created when galaxies merge.\nMilkyway@Home is a joint effort between Rensselaer Polytechnic Institute's departments of Computer Science and Physics, Applied Physics and Astronomy. Feel free to contact us via our forums, or email astro@cs.lists.rpi.edu.\nRead more on our Science Page, or check out our YouTube Channel!""",
-        'area1': 'Astronomy',
-        'area2': '',
+        'area': 'Astronomy',
         'platforms': ['WIN', 'MAC', 'LIN', 'NVI', 'AND'],
     },
     {
@@ -162,8 +147,7 @@ projects = [
         'name': 'MindModeling@Home',
         'sponsors': 'University of Dayton and Wright State University',
         'description': """MindModeling@Home (Beta) is a research project that uses volunteer computing for the advancement of cognitive science. The research focuses on utilizing computational cognitive process modeling to better understand the human mind. We need your help to improve on the scientific foundations that explain the mechanisms and processes that enable and moderate human performance and learning. Please join us in our efforts!""",
-        'area1': 'Cognitive Science',
-        'area2': '',
+        'area': 'Cognitive Science',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -171,8 +155,7 @@ projects = [
         'name': 'Moo! Wrapper',
         'sponsors': 'Independent',
         'description': """TBD""",
-        'area1': 'Cryptography',
-        'area2': '',
+        'area': 'Cryptography',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'NVI', 'AMD'],
     },
     {
@@ -180,8 +163,7 @@ projects = [
         'name': 'NFS@home',
         'sponsors': 'California State University Fullerton',
         'description': """NFS@Home is a research project that uses Internet-connected computers to do the lattice sieving step in the Number Field Sieve factorization of large integers. As a young school student, you gained your first experience at breaking an integer into prime factors, such as 15 = 3 * 5 or 35 = 5 * 7. NFS@Home is a continuation of that experience, only with integers that are hundreds of digits long. Most recent large factorizations have been done primarily by large clusters at universities. With NFS@Home you can participate in state-of-the-art factorizations simply by downloading and running a free program on your computer.\nInteger factorization is interesting from both mathematical and practical perspectives. Mathematically, for instance, the calculation of multiplicative functions in number theory for a particular number require the factors of the number. Likewise, the integer factorization of particular numbers can aid in the proof that an associated number is prime. Practically, many public key algorithms, including the RSA algorithm, rely on the fact that the publicly available modulus cannot be factored. If it is factored, the private key can be easily calculated. Until quite recently, RSA-512, which uses a 512-bit modulus (155 digits), was commonly used but can now be easily broken.\nThe numbers what we are factoring are chosen from the Cunningham project. Started in 1925, it is one of the oldest continuously ongoing projects in computational number theory. The third edition of the book, published by the American Mathematical Society in 2002, is available as a free download. All results obtained since, including those of NFS@Home, are available on the Cunningham project website.\nNFS@Home is hosted at California State University Fullerton, and is supported in part by the National Science Foundation through XSEDE resources provided by the Texas Advanced Computing Center, the San Diego Supercomputer Center, the National Center for Supercomputing Applications, and Purdue University under grant number TG-DMS100027.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN', 'BSD'],
     },
     {
@@ -189,16 +171,15 @@ projects = [
         'name': 'NumberFields@home',
         'sponsors': 'Arizona State University School of Mathematics',
         'description': """NumberFields@home is a research project that uses Internet-connected computers to do research in number theory. You can participate by downloading and running a free program on your computer.\nNumberFields@home searches for fields with special properties. The primary application of this research is in the realm of algebraic number theory. Number theorists can mine the data for interesting patterns to help them formulate conjectures about number fields. Ultimately, this research will lead to a deeper understanding of the properties of numbers, the basic building blocks of all mathematics. A more detailed description of the project can be found here.\nNumberFields@home is based at the school of mathematics at Arizona State University. The final results of this project will be complete tables of number fields. The results are given in table form or as a searchable database.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
         'url': 'https://boinc.progger.info/odlk/',
         'name': 'ODLK',
         'sponsors': 'Independent',
-        'description': """In the project, a database of canonical forms (CR) of diagonal Latin squares (DLK) of the 10th order having orthogonal diagonal Latin squares (ODLC) is compiled. The necessary definitions for the topic can be found here:\nhttps://en.wikipedia.org/wiki/Latin_square\nhttps://en.wikipedia.org/wiki/Latin Square\nThe first three orthogonal pairs of DLK were found in 1992, they were published in the article "Completion of the Spectrum of Orthogonal Diagonal Latin Squares" (JW Brown et al.).\nIn 2012-2016 years. There was a scientific BOINC project SAT @ home, in which new orthogonal pairs of DLK of the 10th order were searched.\nhttps://en.wikipedia.org/wiki/SAT@home\nhttp://sat.isa.ru/pdsat/\nIn this project were found 77 unique orthogonal pairs of DLK, which gave 154 unique KF ODLK. You can see the solutions found in the SAT @ home project here:\nhttp://sat.isa.ru/pdsat/solutions.php\nThe database produced in the submitted project includes solutions found in the SAT @ home project'area1': 'Mathematics'""",
-        'area2': '',
+        'description': """In the project, a database of canonical forms (CR) of diagonal Latin squares (DLK) of the 10th order having orthogonal diagonal Latin squares (ODLC) is compiled. The necessary definitions for the topic can be found here:\nhttps://en.wikipedia.org/wiki/Latin_square\nhttps://en.wikipedia.org/wiki/Latin Square\nThe first three orthogonal pairs of DLK were found in 1992, they were published in the article "Completion of the Spectrum of Orthogonal Diagonal Latin Squares" (JW Brown et al.).\nIn 2012-2016 years. There was a scientific BOINC project SAT @ home, in which new orthogonal pairs of DLK of the 10th order were searched.\nhttps://en.wikipedia.org/wiki/SAT@home\nhttp://sat.isa.ru/pdsat/\nIn this project were found 77 unique orthogonal pairs of DLK, which gave 154 unique KF ODLK. You can see the solutions found in the SAT @ home project here:\nhttp://sat.isa.ru/pdsat/solutions.php\nThe database produced in the submitted project includes solutions found in the SAT @ home project'area': 'Mathematics'""",
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'BSD'],
     },
     {
@@ -206,7 +187,7 @@ projects = [
         'name': 'ODLK1',
         'sponsors': 'Independent',
         'description': """BOINC-project ODLK1 continues to solve the problem of BOINC-project ODLK. \nThe project generates a database of canonical forms (CF) of diagonal Latin squares (DLS) of order 10 having orthogonal diagonal Latin squares (ODLS).""",
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'BSD'],
     },
     {
@@ -214,8 +195,7 @@ projects = [
         'name': 'primaboinca',
         'sponsors': 'Hochschule RheinMain University of Applied Sciences',
         'description': """PRIMABOINCA is a research project that uses Internet-connected computers to search for a counterexample to some conjectures.\nThis project concerns itself with two hypotheses in number theory. Both are conjectures for the identification of prime numbers. The first conjecture (Agrawal's Conjecture) was the basis for the formulation of the first deterministic prime test algorithm in polynomial time (AKS algorithm). Hendrik Lenstras and Carl Pomerances heuristic for this conjecture suggests that there must be an infinite number of counterexamples. So far, however, no counterexamples are known. This hypothesis was tested for n < 1010 without having found a counterexample. The second conjecture (Popovych's conjecture) adds a further condition to Agrawals conjecture and therefore logically strengthens the conjecture. If this hypothesis would be correct, the time of a deterministic prime test could be reduced from O(log N)6 (currently most efficient version of the AKS algorithm) to O(log N)^3.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -223,8 +203,7 @@ projects = [
         'name': 'PrimeGrid',
         'sponsors': 'Independent',
         'description': """PrimeGrid's primary goal is to advance mathematics by enabling everyday computer users to contribute their system's processing power towards prime finding. By simply downloading and installing BOINC and attaching to the PrimeGrid project, participants can choose from a variety of prime forms to search. With a little patience, you may find a large or even record breaking prime and enter into Chris Caldwell's The Largest Known Primes Database as a Titan!\nPrimeGrid's secondary goal is to provide relevant educational materials about primes. Additionally, we wish to contribute to the field of mathematics\nLastly, primes play a central role in the cryptographic systems which are used for computer security. Through the study of prime numbers it can be shown how much processing is required to crack an encryption code and thus to determine whether current security schemes are sufficiently secure.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN', 'NVI', 'AMD'],
     },
     {
@@ -232,8 +211,7 @@ projects = [
         'name': 'Quake Catcher Network',
         'sponsors': 'University of Southern California',
         'description': """The Quake Catcher Network (QCN) is a research project that uses Internet-connected computers to do research, education, and outreach in seismology. You can participate by downloading and running a free program on your computer. Currently only certain Mac (OS X) PPC and Intel laptops are supported -- recent ones which have a built-in accelerometer. You can also buy an external USB accelerometer.\nQCN is based at the University of Southern California (USC). From 2015 to 2016, QCN was based at the Caltech Divisien of Geological and Planetary Sciences (GPS). From 2007 to 2015 QCN was based at the Stanford University School of Earth Sciences.""",
-        'area1': 'Seismology',
-        'area2': '',
+        'area': 'Seismology',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'LAR'],
     },
     {
@@ -241,8 +219,7 @@ projects = [
         'name': 'Radioactive@Home',
         'sponsors': 'BOINC Poland Foundation',
         'description': """Radioactive@Home is a polish science project using distributed computing capabilities of BOINC platform. The main goal of the project is to create free and constantly updated map of radiation available for all people, by gathering information about gamma radiation using using sensors connected to computers of volunteers willing to participate in the project. The project uses dedicated hardware sensor; without it the app does nothing and no credits are granted. \nProject is completely non-commercial, participating will be free of charge and the software will be licensed under the GNU General Public License (GPL). on your computer.""",
-        'area1': 'Environmental',
-        'area2': '',
+        'area': 'Environmental',
         'platforms': ['WIN', 'LIN', 'LAR'],
     },
     {
@@ -250,8 +227,7 @@ projects = [
         'name': 'RNA World',
         'sponsors': 'Rechenkraft.net e.V.',
         'description': """RNA World is a distributed supercomputer that uses Internet-connected computers to advance RNA research. This system is dedicated to identify, analyze, structurally predict and design RNA molecules on the basis of established bioinformatics software in a high-performance, high-throughput fashion.\n   In contrast to classical bioinformatic approaches, RNA World does not rely on individual desktop computers, web servers or supercomputers. Instead, it represents a continuously evolving cluster of world-wide distributed machines of any type. As such, RNA World is very heterogenous and, depending on the sub-project, currently addresses Internet-connected computers running Linux, Windows and OSX operating systems - your computer could be an important part of it. The fact that hardware and electricity costs are shared among the volunteer contributors raises the possibility of performing interesting analyses which under economical aspects would often not be affordable. In return, RNA World is not for profit, exclusively uses open source code and will make its results available to the public.""",
-        'area1': 'Molecular Biology',
-        'area2': '',
+        'area': 'Molecular Biology',
         'platforms': ['WIN', 'MAC', 'LIN', 'BOX'],
     },
     {
@@ -259,8 +235,7 @@ projects = [
         'name': 'Rosetta@home',
         'sponsors': 'University of Washington',
         'description': """Rosetta@home needs your help to determine the 3-dimensional shapes of proteins in research that may ultimately lead to finding cures for some major human diseases. By running the Rosetta program on your computer while you don't need it you will help us speed up and extend our research in ways we couldn't possibly attempt without your help. You will also be helping our efforts at designing new proteins to fight diseases such as HIV, Malaria, Cancer, and Alzheimer's. Please join us in our efforts! Rosetta@home is not for profit.\nProteins are the molecular machines and building blocks of life. Their functions and interactions are critical for the chemical and biological framework and processes of all living organisms. The function of a protein and how it iteracts with other molecules are largely determined by its shape (the three-dimensional structure). Proteins are initially synthesized as long chains of amino acids and, for the most part, they cannot function properly until they fold into intricate globular structures. Understanding and predicting the rules that govern this complex folding process -- involving the folding of the main backbone and the packing of the molecular side chains of the amino acids -- is one of the central problems of biology. Knowing how proteins fold and interact with other molecules and determining their functions may ultimately lead to drug discoveries and cures for human diseases. Currently, millions of dollars are being spent to determine the structures of proteins experimentally using X-ray crystallography and nuclear magnetic resonance (NMR). If this could be done computationally, it would significantly reduce the cost and revolutionize structural biology. Designing protein structures and complexes also offers significant scientific and practical benefits. If one can design completely new structures, one can potentially design novel molecular machines -- proteins for carrying out new functions as therapeutics, catalysts, etc. And finally, there's the evolutionary question of whether the folds that are sampled in nature are the limit to what's possible; or whether there are quite different folds that are also possible. Understanding the rules that govern folding and design may help answer this question.""",
-        'area1': 'Molecular Biology',
-        'area2': '',
+        'area': 'Molecular Biology',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND '],
     },
     {
@@ -268,8 +243,7 @@ projects = [
         'name': 'SAT@home',
         'sponsors': 'Institute for System Dynamics and Control Theory and Institute for Information Transmission Problems, Russian Academy of Science',
         'description': """SAT@home is a research project that uses Internet-connected computers to solve hard and practically important problems (discrete functions inversion problems, discrete optimization, bioinformatics, etc) that can be effectively reduced to Boolean satisfiability problem.""",
-        'area1': 'Computer Science',
-        'area2': '',
+        'area': 'Computer Science',
         'platforms': ['WIN', 'LIN'],
     },
     {
@@ -277,8 +251,7 @@ projects = [
         'name': 'SETI@home',
         'sponsors': 'University of California, Berkeley',
         'description': """SETI (Search for Extraterrestrial Intelligence) is a scientific area whose goal is to detect intelligent life outside Earth. One approach, known as radio SETI, uses radio telescopes to listen for narrow-bandwidth radio signals from space. Such signals are not known to occur naturally, so a detection would provide evidence of extraterrestrial technology.\nRadio telescope signals consist primarily of noise (from celestial sources and the receiver's electronics) and man-made signals such as TV stations, radar, and satellites. Modern radio SETI projects analyze the data digitally. More computing power enables searches to cover greater frequency ranges with more sensitivity. Radio SETI, therefore, has an insatiable appetite for computing power\nPrevious radio SETI projects have used special-purpose supercomputers, located at the telescope, to do the bulk of the data analysis. In 1995, David Gedye proposed doing radio SETI using a virtual supercomputer composed of large numbers of Internet-connected computers, and he organized the SETI@home project to explore this idea. SETI@home was originally launched in May 1999.""",
-        'area1': 'Astrophysics',
-        'area2': 'Astrobiology',
+        'area': 'Astrophysics',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND', 'LAR', 'NVI', 'AMD', 'INT'],
     },
     {
@@ -286,8 +259,7 @@ projects = [
         'name': 'SourceFinder',
         'sponsors': 'The International Centre for Radio Astronomy Research (Perth, Australia)',
         'description': """Sourcefinder is a BOINC based distributed computing project that aims to provide a means to test the effectiveness of various astronomical sourcefinding applications. Sourcefinding applications are designed to process ‘cubes’ of data that contain radio sources and identify the location of the sources within the cube.\nWe’re currently testing the effectiveness of two different sourcefinding applications: Duchamp and SoFiA.\nThe effectiveness of a sourcefinding application can be determined by comparing the number of correct sources found within a cube to the number of incorrect sources found\nIn order to provide a fair comparison between sourcefinding applications, we’re currently getting each application to process the same sections of a large cube known as the DINGO cube. DINGO is a simualated cube of data that contains a known catalogue of valid sources, with the addition of various levels of simulated noise. The total size of the DINGO cube is around 700GB.\nThis is where BOINC comes in. The huge cube is subdivded in to much smaller cubelets, around 10MB to 100MB each, that are processed by the computers of BOINC users. Each user runs one of the sourcefinding applications on their local machine, processes the small cubelet, then reports any sources found within the cubelet back to the project.\nOnce we’ve processed the full cube through the Duchamp and SoFiA sourcefinders, the results will be compared by a researcher, and a paper will be written on the comparitive performance of these sourcefinders.\nWe also have the prospect of processing cube data generated by ASKAP in the near future, as ASKAP has almost completed processing a large cube of sources.""",
-        'area1': 'Astronomy',
-        'area2': '',
+        'area': 'Astronomy',
         'platforms': ['WIN', 'MAC', 'LIN', 'BOX'],
     },
     {
@@ -295,8 +267,7 @@ projects = [
         'name': 'SRBase',
         'sponsors': 'The International Centre for Radio Astronomy Research (Perth, Australia)',
         'description': """SRBase is a mathematical research project that uses Internet-connected computers trying to solve Sierpinski / Riesel Bases up to 1030. You can participate by downloading and running a free program on your computer. \nThe project is in collaboration with the Mersenne CRUS project.\nThe server is running on a private computer in a VM.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -304,8 +275,7 @@ projects = [
         'name': 'SZTAKI Desktop Grid',
         'sponsors': 'MTA-SZTAKI Laboratory of Parallel and Distributed Systems (Hungary)',
         'description': """SZTAKI Desktop Grid is operated by the Laboratory of Parallel and Distributed Systems at the Hungarian Academy of Sciences, Budapest, Hungary.\nThe SZTAKI Desktop Grid and its applications are partly supported by the ongoing IDGF-SP project. The work leading to these results has received funding from the European Union Seventh Framework Programme (FP7/2007-2013) under grant agreement n° RI-312297. The experts of the International Desktop Grid Federation provide further support for the SZTAKI Desktop Grid infrastructure, its applications, and its integration into the European Grid Infrastructure.""",
-        'area1': 'Mathematics',
-        'area2': '',
+        'area': 'Mathematics',
         'platforms': ['WIN', 'MAC', 'LIN'],
     },
     {
@@ -313,8 +283,7 @@ projects = [
         'name': 'theSkyNet POGS',
         'sponsors': 'The International Centre for Radio Astronomy Research (Perth, Australia)',
         'description': """TheSkyNet POGS is a research project that uses Internet-connected computers to do research in astronomy. We will combine the spectral coverage of GALEX, Pan-STARRS1, and WISE to generate a multi-wavelength UV-optical-NIR galaxy atlas for the nearby Universe. We will calculate physical parameters such as: star formation rate, stellar mass of the galaxy, dust attenuation, and total dust mass of a galaxy; on a pixel-by-pixel basis using spectral energy distribution fitting techniques. You can participate by downloading and running a free program on your computer.\nTheSkyNet is an initiative of the International Centre for Radio Astronomy Research (ICRAR), a joint venture of Curtin University and The University of Western Australia. By joining this project your computer will help astronomers around the world answer some of the big questions we have about the Universe. TheSkyNet POGS is theSkyNet's newest project, in testing since late 2012 and officially joining theSkyNet on our second birthday - September 13th 2013.""",
-        'area1': 'Astronomy',
-        'area2': '',
+        'area': 'Astronomy',
         'platforms': ['WIN', 'MAC', 'LIN', 'AND'],
     },
     {
@@ -322,8 +291,7 @@ projects = [
         'name': 'Universe@Home',
         'sponsors': 'University of Warsaw',
         'description': """Universe@home project's two main goals are:\n1. to provi  de scientist with a necessary computational power and\n2. to provide the way of involvement for anyone equipped with a computer and willing to take part in the research\nOur simulations deal with fundamental problems of the Universe, which cannot be investigated in a laboratory.""",
-        'area1': 'Astronomy',
-        'area2': '',
+        'area': 'Astronomy',
         'platforms': ['WIN', 'LIN', 'AND', 'LAR', 'AMD'],
     },
     {
@@ -331,8 +299,7 @@ projects = [
         'name': 'World Community Grid',
         'sponsors': 'IBM Corporate Citizenship',
         'description': """When you become a World Community Grid volunteer, you donate your device’s spare computing power to help scientists solve the world’s biggest problems in health and sustainability.""",
-        'area1': 'Medical Research',
-        'area2': 'Environmental Research',
+        'area': 'Medical',
         'platforms': ['WIN', 'MAC', 'LIN', 'LAR', 'AND'],
     },
 ]

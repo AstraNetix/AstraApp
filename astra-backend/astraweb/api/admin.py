@@ -5,6 +5,10 @@ from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.contrib.auth.forms import UserCreationForm as BaseUserCreationForm
 from django.contrib.auth.forms import UserChangeForm as BaseUserChangeForm
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.admin import FieldListFilter
+
+from django.utils.html import format_html
+from django.utils.translation import ugettext_lazy as _
 
 from django.contrib.auth import get_user_model
 
@@ -107,7 +111,7 @@ class UserAdmin(BaseUserAdmin):
     readonly_fields = ('logged_in', 'is_active', 'email_verified', 'phone_verified', 'bitcoin_balance', 
                 'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance', 'referral_code')
 
-    list_display = ('email', 'first_name', 'last_name', 'is_superuser', 'user_type')
+    list_display = ('name', 'email', 'is_superuser', 'user_type')
     list_filter = ('is_superuser', 'user_type', 'email_verified')
 
     fieldsets = (
@@ -132,6 +136,9 @@ class UserAdmin(BaseUserAdmin):
     search_fields = ('email',)
     ordering = ('email',)
 
+    def name(self, obj):
+        return "%s %s" % (obj.first_name or "", obj.last_name or "")
+
 
 class SocialMediaPostAdmin(admin.ModelAdmin):
     search_fields = ('user', 'date')
@@ -143,11 +150,52 @@ class SocialMediaPostAdmin(admin.ModelAdmin):
     readonly_fields = ('uid', 'date', 'user', 'platform', 'content')
     fields = (('uid', 'verified'), 'platform', 'content', 'user', 'date')
 
-admin.site.register(User, UserAdmin)
-admin.site.register(SocialMediaPost, SocialMediaPostAdmin)
-admin.site.register(Device)
-admin.site.register(Project)
-admin.site.register(Sale)
+
+# class PlatformFilter(FieldListFilter):
+#     title = _('Platform')
+
+#     parameter_name = 'platforms'
+
+#     def lookups(self, request, model_admin):
+#         return(
+#             ("WIN", _("Microsoft Windows")),
+#             ("MAC", _("Apple Mac OS X")),
+#             ("LIN", _("Linux on Intel")),
+#             ("NVI", _("Nvidia GPU")),
+#             ("AMD", _("AMD GPU")),
+#             ("AND", _("Android")),
+#             ("BSD", _("FreeBSD")),
+#             ("LAR", _("Linux on ARM")),
+#             ("INT", _("Intel GPU")),
+#             ("BOX", _("Virtual Box")),
+#         )
+    
+#     def queryset(self, request, queryset):
+#         return_query = Project.objects.none()
+#         for project in queryset:
+#             if self.value() in PlatformField.to_python(project.platforms):
+                    
+
+
+
+class ProjectAdmin(admin.ModelAdmin):
+    search_fields = ('area', 'platforms')
+
+    list_display = ('name', 'base_url', 'sponsors', 'area')
+    list_filter = ('area', 'platforms')
+
+    readonly_fields = ('base_url', 'name', 'sponsors', 'area', 'platforms')
+    fields = ('name', 'base_url', 'area', 'description', 'sponsors', 'platforms')
+
+    def base_url(self, obj):
+        return format_html('<a href="%s">%s</a>' % (obj.url, obj.url))
+    
+
+admin.site.register(User,               UserAdmin               )
+admin.site.register(SocialMediaPost,    SocialMediaPostAdmin    )
+admin.site.register(Device                                      )
+admin.site.register(Project,            ProjectAdmin            )
+admin.site.register(Sale                                        )
 
 
 

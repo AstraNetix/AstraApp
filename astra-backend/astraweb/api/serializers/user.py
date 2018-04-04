@@ -63,7 +63,7 @@ class UserBasicSerializer(UserIdentification):
     confirm_password        =   serializers.CharField(max_length=200, min_length=6, write_only=True)
     telegram_addr           =   serializers.CharField(allow_blank=True, required=False)
     ether_addr              =   serializers.CharField(allow_blank=True, required=False, max_length=40, min_length=40)
-    user_type               =   serializers.ChoiceField(choices=list(User.USER_TYPE_CHOICES))
+    user_type               =   serializers.ChoiceField(choices=list(User.USER_TYPE_CHOICES), allow_blank=True, required=False)
 
     def create(self, validated_data):
         if User.objects.filter(email=validated_data["email"]).exists():
@@ -93,22 +93,28 @@ class UserUpdateSerializer(UserIdentification):
     confirm_password    =   serializers.CharField(max_length=200, write_only=True, required=False, allow_blank=True)
 
     def update(self, validated_data):
-        user = User.authenticate(email=validated_data["email"], password=validated_data["old_password"])
-        if "new_password" in validated_data and "old_password" not in validated_data:
-            raise CreationError.old_password_required()
-        elif (("new_password" in validated_data and "confirm_password" not in validated_data) 
-            or (validated_data["new_password"] != validated_data["confirm_password"])):
-            raise CreationError.unmatching_passwords()
+        user = User.objects.get(email=validated_data["email"])
 
-        try:
-            user.first_name, user.last_name = validated_data["name"].split(" ")
-        except ValueError:  # If for some reason, user only gave first name
-            user.first_name = validated_data["name"]
+        if "name" in validated_data:
+            try:
+                user.first_name, user.last_name = validated_data["name"].split(" ")
+            except ValueError:  # If for some reason, user only gave first name
+                user.first_name = validated_data["name"]
+            user.save()
 
-        user.email = User.objects.normalize_email(validated_data["new_email"])
-        user.set_password(validated_data["new_password"])
+        if "new_email" in validated_data:
+            user.email = User.objects.normalize_email(validated_data["new_email"])
+            user.save()
+            
+        if "new_password" in validated_data:
+            if "old_password" not in validated_data:
+                raise CreationError.old_password_required()
+            user = User.authenticate(email=validated_data["email"], password=validated_data["old_password"])
+            if validated_data["new_password"] != validated_data.pop("confirm_password", ""):
+                raise CreationError.unmatching_passwords()
+            user.set_password(validated_data["new_password"])
+            user.save()
         
-        user.save()
         return user
 
 class UserICOKYCSerializer(UserIdentification):
@@ -120,7 +126,7 @@ class UserICOKYCSerializer(UserIdentification):
     middle_name         =   serializers.CharField(max_length=50, required=False, allow_blank=True)
     last_name           =   serializers.CharField(max_length=50, required=False, allow_blank=True)
     street_addr1        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
-    street_addr1        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
+    street_addr2        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
     city                =   serializers.CharField(max_length=40, required=False, allow_blank=True)
     state               =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
     country             =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
@@ -140,6 +146,8 @@ class UserICOKYCSerializer(UserIdentification):
         for key, value in self.data.items(): 
             if ((key == 'state' or key == 'country') and value == '00'):
                 continue 
+            if key == 'referral_code':
+                continue
             setattr(user, key, value)
         user.save()
 

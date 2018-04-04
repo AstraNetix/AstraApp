@@ -5,10 +5,10 @@ import django
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "astraweb.settings")
 
-    django.setup()
-    if 'runserver' in sys.argv:
-        from api.models.device import Device
-        Device.setup_client()
+    # django.setup()
+    # if 'runserver' in sys.argv:
+    #     from api.models.device import Device
+    #     Device.setup_client()
 
     from django.core.management import execute_from_command_line
 
