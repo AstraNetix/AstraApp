@@ -9,6 +9,12 @@ class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      register: {
+        name: '',
+        email: '',
+        password: '',
+        confirmPassword: '',
+      },
       login: {
         email: '',
         password: '',
@@ -16,53 +22,38 @@ class LoginForm extends React.Component {
     }
   }
 
-  handleInputChange = (property) => (event) => {
+  handleChange = (property) => (event) => {
     const { login } = this.state;
+    const { register } = this.state;
+    const newRegister = {
+      ...register,
+      [property]: event.target.value
+    }
     const newLogin = {
       ...login,
       [property]: event.target.value
     };
-    this.setState({ login: newLogin });
+    this.setState({ login: newLogin , register: newRegister});
   }
 
-  handleSubmit = (event) => {
+  handleLogin = (event) => {
     this.setState({loggingIn: true});
     CurrentUserActions.login(this.props.login.email, this.props.login.password);
+  }
+
+  handleRegister = (event) => {
+    this.setState({registering: true});
+    CurrentUserActions.register(this.props.login.email, this.props.login.password);
   }
 
   render() {
     return(
       <Center>
-        <div className='login-form'>
-          <div className='login-title'>
-            Login
-          </div>
-          <form className='login-input' onSubmit={this.handleSubmit}>
-            <label> Email </label>
-            <label>
-              <input 
-                className='input' 
-                type='email'
-                value={this.state.email} 
-                onChange={this.handleInputChange('email')} />
-            </label>
+        <div className='register'>
+          Register
+          <form className='login-form'>
+            <input type="text" value={this.state.register.name} onChange={this.handleChange} />
           </form>
-          <form className='login-input' onSubmit={this.handleSubmit}>
-            <label> Password </label>
-            <label>
-              <input 
-                className='input' 
-                type='password' 
-                value={this.state.password} 
-                onChange={this.handleInputChange('password')} />
-            </label>
-          </form>
-          <LoginButton handleClick={this.handleSubmit}/>
-          <Button className='gradient-border'>
-            <div className='gradient-text'>
-              Forgot Password
-            </div>
-          </Button>
         </div>
       </Center>
     )

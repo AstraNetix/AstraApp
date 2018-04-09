@@ -7,13 +7,14 @@ from api.serializers.user import (
     UserBasicSerializer,
     UserUpdateSerializer,
     UserICOKYCSerializer,
-    UserAirDropsSerializer,
     UserBalanceSerializer,
     UserRelationalSerializer
 )
 from api.exceptions.user_exceptions import *
 from api.exceptions.device_exceptions import *
-from api.permissions import SuperUserPermission
+from api.permissions import APIUserPermission
+
+from api.sales.promo_sale import PromoSale
 
 from rest_framework import generics
 from rest_framework import permissions
@@ -29,7 +30,7 @@ class UserIDViewSet(viewsets.ModelViewSet):
     serializer_class = UserIdentificationSerializer
 
     queryset = User.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def set_user_verified(self, request, pk=None):
@@ -38,6 +39,7 @@ class UserIDViewSet(viewsets.ModelViewSet):
         if serializer.exists():
             user = User.objects.get(email=serializer.data['email'])
             user.set_email_valid()
+            PromoSale.registered(user)
             return Response({'success': "User successfully email verified"}, 
                 status=status.HTTP_200_OK)
         else: 
@@ -111,41 +113,26 @@ class UserIDViewSet(viewsets.ModelViewSet):
 
         if serializer.exists():
             user = User.objects.get(email=serializer.data['email'])
+            referrer = user.referral_user
             return Response({
-                'first_name'        :   user.first_name if user.first_name else "",
-                'middle_name'       :   user.middle_name if user.middle_name else "",
-                'last_name'         :   user.last_name if user.last_name else "",
-                'street_addr1'      :   user.street_addr1 if user.street_addr1 else "",
-                'street_addr2'      :   user.street_addr2 if user.street_addr2 else "",
-                'city'              :   user.city if user.city else "",
-                'state'             :   user.state if user.state else "",
-                'country'           :   user.country if user.country else "",
-                'zip_code'          :   user.zip_code if user.zip_code else "",
-                'phone_number'      :   user.phone_number if user.phone_number else "",
-                'ether_addr'        :   user.ether_addr if user.ether_addr else "",
-                'ether_part_amount' :   user.ether_part_amount if user.ether_part_amount else "",
-                'referral_type'     :   user.referral_type if user.referral_type else "",
-                'referral_code'     :   user.referral_user.referral_code if user.referral_user else "",
-            }, status=status.HTTP_200_OK)
-        else: 
-            return Response(serializer.errors,
-                            status=status.HTTP_400_BAD_REQUEST)
-
-    @list_route(methods=['patch'])
-    def get_air_drops(self, request, pk=None):
-        serializer = self.serializer_class(data=request.data)
-
-        if serializer.exists():
-            user = User.objects.get(email=serializer.data['email'])
-            return Response({
-                'telegram_addr'     :   user.telegram_addr if user.telegram_addr else "",
-                'twitter_name'      :   user.twitter_name if user.twitter_name else "",
-                'facebook_url'      :   user.facebook_url if user.facebook_url else "",
-                'linkedin_url'      :   user.linkedin_url if user.linkedin_url else "",
-                'bitcoin_name'      :   user.bitcoin_name if user.bitcoin_name else "",
-                'reddit_name'       :   user.reddit_name if user.reddit_name else "",
-                'steemit_name'      :   user.steemit_name if user.steemit_name else "",
-                'referral'          :   user.referral if user.referral else "",
+                'first_name'        :   user.first_name         or "",
+                'middle_name'       :   user.middle_name        or "",
+                'last_name'         :   user.last_name          or "",
+                'street_addr1'      :   user.street_addr1       or "",
+                'street_addr2'      :   user.street_addr2       or "",
+                'city'              :   user.city               or "",
+                'state'             :   user.state              or "",
+                'country'           :   user.country            or "",
+                'zip_code'          :   user.zip_code           or "",
+                'phone_number'      :   user.phone_number       or "",
+                'ether_addr'        :   user.ether_addr         or "",
+                'ether_part_amount' :   user.ether_part_amount  or "",
+                'referral_type'     :   user.referral_type      or "",
+                'referral_code'     :   referrer                or "",
+                'whitepaper'        :   user.whitepaper         or "false",
+                'token_sale'        :   user.whitepaper         or "false",
+                'data_protection'   :   user.whitepaper         or "false",
+                'over_18'           :   user.whitepaper         or "false",
             }, status=status.HTTP_200_OK)
         else: 
             return Response(serializer.errors,
@@ -187,7 +174,7 @@ class UserBasicViewSet(viewsets.ModelViewSet):
     serializer_class = UserBasicSerializer
 
     queryset = User.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['post'])
     def create_user(self, request, pk=None):
@@ -208,7 +195,7 @@ class UserUpdateViewSet(viewsets.ModelViewSet):
     serializer_class = UserUpdateSerializer
 
     queryset = User.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def update_user(self, request, pk=None):
@@ -231,7 +218,7 @@ class UserLoginViewSet(viewsets.ModelViewSet):
     serializer_balance_class = UserBalanceSerializer
     
     queryset = User.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def login_user(self, request, pk=None):
@@ -255,7 +242,7 @@ class UserLoginViewSet(viewsets.ModelViewSet):
 
 class UserPasswordViewSet(viewsets.ViewSet):
     serializer_class = UserPasswordSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def reset_password(self, request, pk=None):
@@ -299,7 +286,7 @@ class UserPasswordViewSet(viewsets.ViewSet):
             
 class UserICOKYCViewSet(viewsets.ViewSet):
     serializer_class = UserICOKYCSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def add_ICOKYC_data(self, request, pk=None):
@@ -308,6 +295,9 @@ class UserICOKYCViewSet(viewsets.ViewSet):
         
             if serializer.exists():
                 serializer.add_icokyc()
+                if any(serializer.check_errors):
+                    return Response(serializer.check_errors, 
+                        status=status.HTTP_200_OK) 
                 return Response({'success': "ICOKYC data successfully set"}, 
                     status=status.HTTP_200_OK) 
             else: 
@@ -320,36 +310,9 @@ class UserICOKYCViewSet(viewsets.ViewSet):
             return Response(re.errors,
                     status=status.HTTP_400_BAD_REQUEST)
 
-class UserAirDropsViewSet(viewsets.ViewSet):
-    serializer_class = UserAirDropsSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
-
-    @list_route(methods=['patch'])
-    def add_air_drops(self, request, pk=None):
-        try:
-            serializer = self.serializer_class(data=request.data, partial=True)
-        
-            if serializer.exists():
-                user = User.objects.get(email=serializer.data.pop('email'))
-                user.add_referral(self.vdata.pop('referral_code', ''))
-                for key, value in serializer.data.items():   
-                    setattr(user, key, value)
-                user.save()
-                return Response({'success': "Air Drops data successfully set"},
-                    status=status.HTTP_200_OK)
-            else: 
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        except KeyError:
-            return Response({'email': ["This field must not be blank"]}, 
-                    status=status.HTTP_400_BAD_REQUEST)
-        except ReferralError as re:
-            return Response(re.errors,
-                    status=status.HTTP_400_BAD_REQUEST)
-
-
 class UserBalanceViewSet(viewsets.ViewSet):
     serializer_class = UserBalanceSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def add_star(self, request, pk=None):
@@ -392,7 +355,7 @@ class UserBalanceViewSet(viewsets.ViewSet):
 
 class UserRelationalViewSet(viewsets.ViewSet):
     serializer_class = UserRelationalSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def start_project(self, request, pk=None):
@@ -401,8 +364,8 @@ class UserRelationalViewSet(viewsets.ViewSet):
         if serializer.exists():
             try:
                 user = User.objects.get(email=serializer.data['email'])
-                device = User.devices.get(pk=serializer.data['device_id'])
-                device.start_project(pk=serializer.data['project_id'])
+                device = User.devices.get(uid=serializer.data['device_id'])
+                device.start_project(url=serializer.data['url'])
                 return Response({'success': "Project successfully started"}, 
                     status=status.HTTP_200_OK)
             except DeviceClientError as dce:
@@ -418,8 +381,8 @@ class UserRelationalViewSet(viewsets.ViewSet):
         if serializer.exists():
             try:
                 user = User.objects.get(email=serializer.data['email'])
-                device = User.devices.get(pk=serializer.data['device_id'])
-                device.stop_project(pk=serializer.data['url'])
+                device = User.devices.get(uid=serializer.data['device_id'])
+                device.stop_project(url=serializer.data['url'])
 
                 return Response({'success': "Project successfully stopped"}, 
                     status=status.HTTP_200_OK)

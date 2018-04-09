@@ -131,6 +131,10 @@ public class PubNubClient extends SubscribeCallback {
             case "cpu-percent":
                 BoincCommands.setCPUUsage(message.get("percent").getAsInt());
                 break;
+            case "bytes-up":
+                BoincCommands.setMaxBytesUp(message.get("kb/sec").getAsInt());
+            case "bytes-down":
+                BoincCommands.setMaxBytesDown(message.get("kb/sec").getAsInt());
 
             case "start-project":
                 publish(_boincClient.startProject(message.get("url").getAsString()));

@@ -8,11 +8,11 @@ const emailCookie = Cookie.get('email')
 
 export default class ServerAPI extends React.Component {
   getUser(email) {
-    return _get("users/is/", {email: email})
+    return _get("users/is/", {'email': email})
   }
 
   loginUser(email, password) {
-    return _post("users/basic/login_user/", {email: email, password: password})
+    return _post("users/basic/login_user/", {'email': email, 'password': password})
   }
 
   logoutUser() {
@@ -20,36 +20,97 @@ export default class ServerAPI extends React.Component {
   }
 
   setUserVerified() {
-    return _patch("users/id/set_user_verified/", {email: emailCookie})
+    return _patch("users/id/set_user_verified/", {'email': emailCookie})
   }
 
   isUserValidForSale() {
-    return _get("users/id/user_valid_for_sale", {email: emailCookie})
+    return _get("users/id/user_valid_for_sale", {'email': emailCookie})
   }
 
-  createUser(email, password, firstName, lastName) {
-    return _post("users/basic/", {email: email, password: password, 
-      first_name: firstName, last_name: lastName})
+  createUser(name, email, password, confirmPassword) {
+    return _post("users/basic/", {'name': name, 'email': email, 
+      'password': password, 'confirm_password': confirmPassword})
   }
 
   deleteUser() {
-    return _delete("users/id", {email: emailCookie})
+    return _delete("users/id", {'email': emailCookie})
   }
 
   resetUserPassword(email, newPassword) {
-    return _patch("password/reset_password/", {email: email, new_password: newPassword})
+    return _patch("users/password/reset_password/", {'email': email, 'new_password': newPassword})
   }
 
-  changeUserPassword(email, oldPassword, newPassword) {
-    return _patch("password/change_password/", {email: email, old_password: oldPassword, new_password: newPassword})
+  changeUserPassword(oldPassword, newPassword) {
+    return _patch("users/password/change_password/", {'email': emailCookie, 'old_password': oldPassword, 'new_password': newPassword})
   }
 
-  addProject(projectID, deviceID) {
-    return _patch("users/relational/start_project", {email: emailCookie, device_id: deviceID, 'project-id': projectID})
+  getUserDevices() {
+    return _patch("users/id/devices", {'email': emailCookie})
   }
 
-  removeProject(projectID, deviceID) {
-    return _patch("users/relational/stop_project", {email: emailCookie, device_id: deviceID, project_id: projectID})
+  getDeviceInfo(deviceID) {
+    return _patch("devices/id/info", {'email': emailCookie, 'device_id': deviceID})
+  }
+
+  getDeviceProjects(deviceID) {
+    return _patch("devices/id/projects", {'email': emailCookie, 'device_id': deviceID})
+  }
+
+  startProject(url, deviceID) {
+    return _patch("users/relational/start_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
+  }
+
+  stopProject(url, deviceID) {
+    return _patch("users/relational/stop_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
+  }
+
+  stopProject(url, deviceID) {
+    return _patch("users/relational/suspend_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
+  }
+
+  changeUsageTimes(deviceID, days, startTime, endTime) {
+    return _patch("devices/usage/change_usage_times", {'email': emailCookie, 'device_id': deviceID,
+    'days': days, 'start_time': startTime, 'end_time': endTime})
+  }
+
+  changeCPUPercent(deviceID, percent) {
+    return _patch("devices/usage/cpu_percent", {'email': emailCookie, 'device_id': deviceID,
+    'percent': percent})
+  }
+
+  changeCPUCores(deviceID, numCores) {
+    return _patch("devices/usage/cpu_percent", {'email': emailCookie, 'device_id': deviceID,
+    'num_cores': numCores})
+  }
+
+  changeDiskPercent(deviceID, percent) {
+    return _patch("devices/usage/disk_percent", {'email': emailCookie, 'device_id': deviceID,
+    'percent': percent})
+  }
+
+  changeRAMPercent(deviceID, percent) {
+    return _patch("devices/usage/ram_percent", {'email': emailCookie, 'device_id': deviceID,
+    'percent': percent})
+  }
+
+  changeNetworkDown(deviceID, kbps) {
+    return _patch("devices/usage/network_down", {'email': emailCookie, 'device_id': deviceID,
+    'kbps': kbps})
+  }
+
+  runOnBatteries(deviceID, value) {
+    return _patch("devices/preferences/run_on_batteries", {'email': emailCookie, 'device_id': deviceID,
+    'value': value})
+  }
+
+  runifInactive(deviceID, value) {
+    return _patch("devices/preferences/run_if_inactive", {'email': emailCookie, 'device_id': deviceID,
+    'value': value})
+  }
+
+  useMemoryOnly(deviceID, value) {
+    return _patch("devices/preferences/use_memory_only", {'email': emailCookie, 'device_id': deviceID,
+    'value': value})
   }
 
 }

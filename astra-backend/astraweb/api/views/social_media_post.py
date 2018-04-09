@@ -2,7 +2,9 @@ from api.models.social_media_post import SocialMediaPost
 from api.serializers.social_media_post import SocialMediaPostCreateSerializer, SocialMediaPostIDSerializer
 from api.exceptions.user_exceptions import AuthenticationError
 
-from api.permissions import SuperUserPermission
+from api.sales.promo_sale import PromoSale
+
+from api.permissions import APIUserPermission
 
 from rest_framework.decorators import detail_route, list_route  
 from rest_framework.response import Response
@@ -15,7 +17,7 @@ class SocialMediaPostViewSet(viewsets.ModelViewSet):
     serializer_class = SocialMediaPostCreateSerializer
 
     queryset = SocialMediaPost.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['post'])
     def create_post(self, request, pk=None):
@@ -44,6 +46,7 @@ class SocialMediaPostViewSet(viewsets.ModelViewSet):
                 user = user,
             )
             post.verify()
+            PromoSale.add_proof_of_love(user)
             return Response({'success': "Social media post(s) successfully validated"}, status=status.HTTP_200_OK)
         else: 
             return Response({'failure': serializer.errors}, 

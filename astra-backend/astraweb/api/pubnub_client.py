@@ -2,7 +2,6 @@ import logging
 import pubnub
 
 from django.contrib.auth import get_user_model
-from astraweb.constants import server
 from api.exceptions.user_exceptions import AuthenticationError
 from api.exceptions.device_exceptions import DeviceClientError
 
@@ -16,6 +15,8 @@ from pubnub.enums import PNOperationType, PNStatusCategory
 User = get_user_model()
 
 class PubNubClient(SubscribeCallback):
+
+    NUM_CORES = 2
 
     ##############################################################################################
     # PubNubSetup
@@ -34,7 +35,7 @@ class PubNubClient(SubscribeCallback):
 
         self.pubnub.subscribe().channels("create").execute()
         (self.pubnub.subscribe().channels(i).execute() 
-            for i in range(server["NUM_CORES"]))
+            for i in range(NUM_CORES))
 
         self.pubnub.add_listener(self)
 

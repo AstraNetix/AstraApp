@@ -59,6 +59,15 @@ public class BoincCommands {
         globalPrefsOverride();
     }
 
+    static void setMaxBytesUp(int kbsec) {
+        XMLController.editTag("max_bytes_sec_up", Integer.toString(kbsec));
+        globalPrefsOverride();
+    }
+
+    static void setMaxBytesDown(int kbsec) {
+        XMLController.editTag("max_bytes_sec_down", Integer.toString(kbsec));
+        globalPrefsOverride();
+    }
 
 
     static String getRunIfActive(boolean opt) {

@@ -20,6 +20,7 @@ class SocialMediaPost(models.Model):
     TWITTER             =   'TW'
     TELEGRAM            =   'TE'
     LINKEDIN            =   'LN'
+    YOUTUBE             =   'YT'
     BITCOIN_TALK        =   'BT'
     REDDIT              =   'RD'
     OTHER               =   'OR'
@@ -29,6 +30,7 @@ class SocialMediaPost(models.Model):
                                 (TWITTER,       'Twitter'),
                                 (TELEGRAM,      'Telegram'),
                                 (LINKEDIN,      'Linkedin'),
+                                (YOUTUBE,       'Youtube'),
                                 (BITCOIN_TALK,  'Bitcoin Talk'),
                                 (REDDIT,        'Reddit'),
                                 (OTHER,         'Other'),
@@ -53,7 +55,6 @@ class SocialMediaPost(models.Model):
 
     def verify(self):
         self.verified = True
-        User.add_star_tokens(self.user, self.STAR_BONUS)
 
     def hash_code(self):
         post_hash = hashlib.sha256()

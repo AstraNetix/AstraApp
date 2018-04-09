@@ -14,7 +14,6 @@ from django.contrib.auth import get_user_model
 
 from api.models.device import Device
 from api.models.project import Project
-from api.models.sale import Sale
 from api.models.social_media_post import SocialMediaPost
 
 User = get_user_model()
@@ -109,20 +108,21 @@ class UserAdmin(BaseUserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
     readonly_fields = ('logged_in', 'is_active', 'email_verified', 'phone_verified', 'bitcoin_balance', 
-                'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance', 'referral_code')
+                'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance', 'referral_code',
+                'whitepaper', 'token_sale', 'data_protection')
 
     list_display = ('name', 'email', 'is_superuser', 'user_type')
     list_filter = ('is_superuser', 'user_type', 'email_verified')
 
     fieldsets = (
         (None, {'fields': ('email', 'password', 'user_type')}),
-        ('Status', {'fields': ('logged_in', 'is_active', 'is_staff', 'is_superuser')}),
+        ('Status', {'fields': ('logged_in', 'is_active', 'is_staff', 'is_superuser', 'is_api_user')}),
         ('Personal info', {'fields': ('first_name', 'middle_name', 'last_name', 'phone_number', 'ether_addr')}),
         ('Location', {'fields': ('street_addr1', 'street_addr2', 'city', 'state', 'country', 'zip_code')}),
         ('Files', {'fields': ('id_file', 'selfie')}),
         ('Social Media', {'fields': ('telegram_addr', 'twitter_name', 'facebook_url', 'linkedin_url', 'bitcoin_name', 'reddit_name', 'steemit_name')}),
         ('Balance', {'fields': ('bitcoin_balance', 'ether_balance', 'usd_balance', 'star_balance', 'bonus_star_balance')}),
-        ('Verifications', {'fields': ('email_verified', 'phone_verified')}),
+        ('Verifications', {'fields': ('email_verified', 'phone_verified', 'whitepaper', 'token_sale', 'data_protection')}),
         ('Referrals', {'fields': ('referral_code', 'referral_type', 'referral_user')}),
     )
 
@@ -195,7 +195,6 @@ admin.site.register(User,               UserAdmin               )
 admin.site.register(SocialMediaPost,    SocialMediaPostAdmin    )
 admin.site.register(Device                                      )
 admin.site.register(Project,            ProjectAdmin            )
-admin.site.register(Sale                                        )
 
 
 

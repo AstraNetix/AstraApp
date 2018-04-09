@@ -6,7 +6,7 @@ from api.serializers.device import (
     DeviceUsageSerializer,
     )
 
-from api.permissions import SuperUserPermission
+from api.permissions import APIUserPermission
 
 from rest_framework import generics
 from rest_framework import permissions
@@ -22,7 +22,7 @@ class DeviceIDViewSet(viewsets.ModelViewSet):
     serializer_class = DeviceCreateSerializer
 
     queryset = Device.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     def create(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
@@ -57,7 +57,7 @@ class DeviceUsageViewSet(viewsets.ModelViewSet):
     serializer_class = DeviceUsageSerializer
 
     queryset = Device.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, SuperUserPermission]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
     @list_route(methods=['patch'])
     def config_hours(self, request, pk=None):

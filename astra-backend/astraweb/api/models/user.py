@@ -17,8 +17,6 @@ from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeEr
 from django.core.validators import RegexValidator, MinValueValidator
 from django.core.mail import send_mail
 
-from phonenumber_field.modelfields import PhoneNumberField
-
 
 class UserManager(BaseUserManager):
     use_in_migrations = True
@@ -50,13 +48,28 @@ class UserManager(BaseUserManager):
         """
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_api_user', True)
 
         if extra_fields.get('is_staff') is not True:
             raise ValueError('Superuser must have is_staff=True.')
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Superuser must have is_superuser=True.')
+        if extra_fields.get('is_api_user') is not True:
+            raise ValueError('Superuser must have is_api_user=True.')
 
         return self._create_user(email, password, **extra_fields)
+    
+    def create_api_user(self, email, password, **extra_fields):
+        """
+        Create and save an API user with given email and password
+        """
+        extra_fields.setdefault('is_api_user', True)
+
+        if extra_fields.get('is_api_user') is not True:
+            raise ValueError('API user must have is_api_user=True.')
+
+        return self._create_user(email, password, **extra_fields)
+    
 
 
 
@@ -118,11 +131,12 @@ class User(AbstractUser):
     first_name          =   models.CharField(max_length=50)
     middle_name         =   models.CharField(max_length=150, blank=True, null=True)
     last_name           =   models.CharField(max_length=150, blank=True, null=True)
-    phone_number        =   PhoneNumberField(null=True, blank=True)
+    phone_number        =   models.CharField(max_length=150, blank=True, null=True)
 
     is_active           =   models.BooleanField('active', default=True)
     is_staff            =   models.BooleanField('staff', default=False)
     is_superuser        =   models.BooleanField('superuser', default=False)
+    is_api_user         =   models.BooleanField('api_user', default=False)
 
     street_addr1        =   models.CharField(max_length=100, null=True, blank=True)
     street_addr2        =   models.CharField(max_length=100, null=True, blank=True)
@@ -144,11 +158,11 @@ class User(AbstractUser):
     selfie              =   models.ImageField(upload_to="./selfies", null=True, blank=True)
     ether_addr          =   models.CharField(
                             validators=[RegexValidator(
-                                regex='^\w{40}$', 
-                                message='Ether address length must be 40 characters', 
+                                regex='^\w{42}$', 
+                                message='Ether address length must be 42 characters', 
                                 code='nomatch'
                             )], 
-                            max_length=40, null=True, blank=True
+                            max_length=42, null=True, blank=True
                             )
     ether_part_amount   =   models.PositiveIntegerField(null=True, blank=True)
     telegram_addr       =   models.CharField(max_length=50, blank=True, null=True)
@@ -185,6 +199,9 @@ class User(AbstractUser):
     referral_user       =   models.ForeignKey('self', on_delete=models.CASCADE, 
                                     related_name='referees', blank=True, null=True)
 
+    whitepaper          =   models.BooleanField(default=False)
+    token_sale          =   models.BooleanField(default=False)
+    data_protection     =   models.BooleanField(default=False)
 
 
     def __str__(self):
@@ -297,6 +314,8 @@ class User(AbstractUser):
         elif self.user_type == self.INVESTOR:
             self.user_type = self.BOTH
 
+        self.add_promo_star_tokens(10)
+
         self.save()
 
     def set_email_invalid(self):
@@ -315,6 +334,7 @@ class User(AbstractUser):
 
     #######################################################################################
     # Token sale
+    
     @staticmethod
     def add_promo_star_tokens(user, amount):
         user.star_balance += amount
@@ -330,6 +350,7 @@ class User(AbstractUser):
         user.token_auth()
         user.star_balance += amount
         if user.star_balance < 0:
+            amount = amo
             user.star_balance = 0
         user.save()
 
@@ -413,6 +434,9 @@ class User(AbstractUser):
             self.selfie,
             self.ether_addr, 
             self.ether_part_amount,
+            self.whitepaper,
+            self.token_sale,
+            self.data_protection,
         ])
 
     def token_auth(self):
@@ -492,8 +516,7 @@ class User(AbstractUser):
     def add_referral(self, referral_code):
         """
         Adds referral to the referree's account, checking to see if the 
-        referrer exists and hasn't exceeded their max referrals. Adds 
-        star tokens to both parties.
+        referrer exists and hasn't exceeded their max referrals.
         """
         if not referral_code: return False
         
@@ -509,10 +532,8 @@ class User(AbstractUser):
             raise ReferralError.referral_set()
 
         referrer.referees.add(self)
-        User.add_promo_star_tokens(self, 5)
         self.save()
-        User.add_promo_star_tokens(referrer, 5)
         referrer.save()
 
-        return True
+        return referrer
         

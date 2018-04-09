@@ -2,10 +2,10 @@ import React from 'react';
 import Image from './core/Image';
 
 import LogoutButton from './buttons/LogoutButton';
-import ArrowButton from './buttons/ArrowButton'
 import Button from './core/Button';
 import settingsImage from '../images/Settings Image.png';
-import blankUser from '../images/User Layers.png';
+import userPlaceholder from '../images/User.png';
+import ranking from '../images/Ranking.png';
 
 import CurrentUserStore from '../stores/CurrentUserStore';
 
@@ -18,9 +18,9 @@ class UserTab extends React.Component {
       currentUser: null,
       userData: {
         name: "------",
-        image: blankUser,
+        image: userPlaceholder,
         starBalance: "--",
-        earningRate: "--",
+        level: ["0", ]
       },
     };
   }
@@ -44,35 +44,16 @@ class UserTab extends React.Component {
         <div className="user-panel">
           <ul>
             <li>
-              <Image className="user-image" src={this.state.userData["image"]} alt="userImage" height={30} width={30}/>
-              {this.state.userData["name"]}
+              <span className="user-level">
+                <Image className="user-image" src={this.state.userData["image"]} alt="userImage" height={30} width={30}/>
+                {this.state.userData["name"]}
+              </span>
             </li>
             <li>
               Balance
-              <div>
+              <div className="balance">
                 {this.state.userData["starBalance"]}
               </div>
-            </li>
-            <li>
-              Earning Rate
-              <div>
-                {this.state.userData["earningRate"]}
-              </div>
-            </li>
-            <li>
-              <ArrowButton to="/balance">
-                View My Earnings
-                {/* Add arrow image */}
-              </ArrowButton>
-            </li>
-            <li>
-              <Button className='small' to="/account">
-                <Image src={settingsImage} height={15} width={15} />
-                Settings
-              </Button>
-            </li>
-            <li>
-              <LogoutButton />
             </li>
           </ul>
         </div>

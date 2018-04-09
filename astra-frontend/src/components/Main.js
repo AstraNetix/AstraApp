@@ -1,5 +1,4 @@
 import React from 'react';
-import TopBar from './TopBar';
 import { Switch, Route, Redirect} from 'react-router-dom';
 import CurrentUserStore from '../stores/CurrentUserStore'
 
@@ -18,11 +17,9 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <TopBar />
         <Switch>
           <Route path="/login" render={() => this.state.loggedIn ?
-            <Redirect to="/dashboard"/> : <LoginView/> }/>
-          <Route path="/dashboard" component={DashboardView}/>
+            <Redirect to="/devices"/> : <LoginView/> }/>
           {/*
           <Route path="/login/forgot-password" component={ForgotPasswordView}/>
           <Route path="/devices" component={DevicesView}/>

@@ -2,30 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/python.config" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/.ebextensions/python.config" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/.vscode/settings.json" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/.vscode/settings.json" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/auth.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/exceptions/user_exceptions.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/exceptions/user_exceptions.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/sale.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/pubnub_client.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/pubnub_client.py" />
       <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/user.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/urls.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/urls.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/createproj.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/management/commands/createsu.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/tests.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/tests.py" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/constants.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Astra-Logo@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/client_state.xml" afterPath="$PROJECT_DIR$/Boinc/client_state.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/client_state_prev.xml" afterPath="$PROJECT_DIR$/Boinc/client_state_prev.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" afterPath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" />
-      <change beforePath="$PROJECT_DIR$/Boinc/time_stats_log" afterPath="$PROJECT_DIR$/Boinc/time_stats_log" />
-      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" />
+      <change beforePath="$PROJECT_DIR$/Boinc/global_prefs_override.xml" afterPath="$PROJECT_DIR$/Boinc/global_prefs_override.xml" />
+      <change beforePath="$PROJECT_DIR$/src/core/BoincCommands.java" afterPath="$PROJECT_DIR$/src/core/BoincCommands.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/PubNubClient.java" afterPath="$PROJECT_DIR$/src/core/PubNubClient.java" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/LoginForm.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/LoginForm.js" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/LoginForm.css" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/TopBar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/Untitled.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/index.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/index.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,25 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3799#3800#0" expanded="true" />
-                <element signature="e#3853#3854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
               <folding>
                 <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -111,12 +89,35 @@
                 <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
+                <element signature="method#setMaxBytesUp#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#getConfigHours#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#getRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
+                <element signature="e#3960#3961#0" expanded="true" />
+                <element signature="e#4015#4016#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global_prefs_override.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Boinc/global_prefs_override.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PubNubClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="136" column="80" lean-forward="false" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/core/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
-              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+              <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding>
                 <element signature="e#3514#3515#0" expanded="true" />
                 <element signature="e#3582#3583#0" expanded="true" />
@@ -192,26 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#3520#3521#0" expanded="true" />
-                <element signature="e#3547#3548#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -271,11 +257,12 @@
         <option value="$PROJECT_DIR$/src/core/LoginController.java" />
         <option value="$PROJECT_DIR$/src/core/MainController.java" />
         <option value="$PROJECT_DIR$/src/core/User.java" />
-        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
         <option value="$PROJECT_DIR$/src/core/LoginManager.java" />
         <option value="$PROJECT_DIR$/src/core/MainManager.java" />
-        <option value="$PROJECT_DIR$/src/core/BoincCommands.java" />
         <option value="$PROJECT_DIR$/src/core/Tests.java" />
+        <option value="$PROJECT_DIR$/src/core/BoincCommands.java" />
+        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
+        <option value="$PROJECT_DIR$/Boinc/global_prefs_override.xml" />
       </list>
     </option>
   </component>
@@ -303,7 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,12 +298,28 @@
               <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="Boinc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="astra-desktop-cross-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="astra-desktop-cross-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -913,6 +916,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -970,8 +974,14 @@
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/BoincCommands.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="61" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1017,11 +1027,14 @@
             <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setMaxBytesUp#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#getConfigHours#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#getRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#4015#4016#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1138,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boinc/global_prefs_override.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/cs61b-software/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1250,21 +1256,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="188" column="5" lean-forward="false" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3853#3854#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3799#3800#0" expanded="false" />
+            <element signature="e#3853#3854#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1274,10 +1273,10 @@
         <state relative-caret-position="705">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#3520#3521#0" expanded="false" />
+            <element signature="e#3547#3548#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1285,7 +1284,7 @@
     <entry file="file://$PROJECT_DIR$/src/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1311,7 +1310,7 @@
     <entry file="file://$PROJECT_DIR$/src/core/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+          <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding>
             <element signature="e#3514#3515#0" expanded="true" />
             <element signature="e#3582#3583#0" expanded="true" />
@@ -1351,8 +1350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="371">
+          <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
           <folding>
             <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -1362,12 +1361,31 @@
             <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
+            <element signature="method#setMaxBytesUp#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#getConfigHours#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#getRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#4015#4016#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/global_prefs_override.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="136" column="80" lean-forward="false" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost', 
     '127.0.0.1', 
-    'astraweb.us-west-2.elasticbeanstalk.com'
+    'astraweb.us-west-2.elasticbeanstalk.com',
+    'www.astraglobal.net',
 ]
 
 

@@ -1,9 +1,9 @@
 from rest_framework import permissions
 
-class SuperUserPermission(permissions.BasePermission):
+class APIUserPermission(permissions.BasePermission):
 	"""
-	Permission set for API calls from front end
+	Permission set for API calls from investor site
 	"""
 	def has_permission(self, request, view):
-		# Only allows if superuser
-		return request.user.is_superuser	
+		# Only allows if api user
+		return request.user.is_api_user	
