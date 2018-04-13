@@ -411,10 +411,10 @@ class User(AbstractUser):
         """
         selfie = id_file = False
         
-        if self.files.filter(filetype="SF").exists:
-            selfie = self.files.filter(filetype="SF").latest('created').verified
-        if self.files.filter(filetype="ID").exists:
-            id_file = self.files.filter(filetype="ID").latest('created').verified
+        # if self.files.filter(filetype="SF").exists:
+        #     selfie = self.files.filter(filetype="SF").latest('created').verified
+        # if self.files.filter(filetype="ID").exists:
+        #     id_file = self.files.filter(filetype="ID").latest('created').verified
 
         return all([
             self.first_name,

@@ -6,6 +6,7 @@ User = get_user_model()
 
 class FileUploadSerializer(serializers.Serializer):
     email = serializers.EmailField()
+    name = serializers.CharField(max_length=300, required=False, allow_blank=True)
     datafile = serializers.FileField()
     filetype = serializers.ChoiceField(choices=File.FILE_TYPES)
 
