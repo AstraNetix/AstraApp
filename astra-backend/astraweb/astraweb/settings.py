@@ -147,8 +147,6 @@ AWS_S3_OBJECT_PARAMETERS = {
 
 AWS_STORAGE_BUCKET_NAME = 'astraweb-static'
 AWS_S3_REGION_NAME = 'us-west-1'  
-AWS_ACCESS_KEY_ID = 'AKIAJ5WTGIVCZRB6Y2YA'
-AWS_SECRET_ACCESS_KEY = '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'
 
 # Tell django-storages the domain to use to refer to static files.
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
