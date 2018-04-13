@@ -8,52 +8,60 @@ import image from '../images/Phone.png'
 class CurrentUserStore extends Store {
   constructor(dispatcher) {
     super(dispatcher);
-    this._currentUser = null;
     this.state = {
-      _userData: {
-        first_name: 'Soham',
-        last_name: 'Kale',
-        selfie: null,
-      },
-      _userBalance: {
-        starBalance: 35,
-        earningRate: 23,
-      },
-      _userErrors: {},
+      email: null,
+      data: {},
+      balance: {},
+      devices: {},
+      errors: {},
     };
   }
 
-  getCurrentUser() { 
-    return this.state._currentUser;
+  getUserEmail() { 
+    return this.state.email;
   }
 
-  getUserPanelData() {
+  getSideBarState() {
     return {
-      name: this.state._userData.first_name + this.state._userData.last_name, 
-      image: this.state._userData.selfie,
-      starBalance: this.state._userBalance.star_balance,
-      earningRate: this.state._userBalance.earning_rate,
+      name: this.state.data.first_name + this.state.data.last_name, 
+      level: 1, 
+      image: this.state.data.selfie,
+      stars: this.state.balance.starBalance,
     };
   }
 
   __onDispatch(action) {
     switch(action.actionType) {
+
       case ActionConstants.LOGIN:
-        if (action.status == "401") {
-          this.setState({_userErrors: {
-            ...this.state._userErrors,
+        if (action.response.status != 200) {
+          this.setState({errors: {
+            ...this.state.errors,
             authentication: action['failure'],
           }}); 
           break;
         }
-        this.state._currentUser = action.user;
-        this.state._userData = action.data;
-        this.state._userBalance = action.balance;
+        this.setState({
+          email: action.args.email,
+          data: {
+            firstName: action.response.data['first_name'],
+            lastName: action.response.data['last_name'],
+            profile: action.response.data['selfie'],
+          },
+          balance: {
+            star: action.response.balance['star_balance'],
+          },
+          devices: ServerAPI.getUserDevices(),
+        });
         break;
+
       case ActionConstants.LOGOUT:
-        this.state._currentUser = null;
-        this.state._userData = {};
-        this.state._userBalance = {};
+        this.setState({
+          email: '',
+          data: {},
+          balance: {},
+          devices: {},
+        });
         break;
       default:
         return;

@@ -17,7 +17,6 @@ from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeEr
 from django.core.validators import RegexValidator, MinValueValidator
 from django.core.mail import send_mail
 
-
 class UserManager(BaseUserManager):
     use_in_migrations = True
     
@@ -70,8 +69,6 @@ class UserManager(BaseUserManager):
 
         return self._create_user(email, password, **extra_fields)
     
-
-
 
 
 class User(AbstractUser):
@@ -141,21 +138,13 @@ class User(AbstractUser):
     street_addr1        =   models.CharField(max_length=100, null=True, blank=True)
     street_addr2        =   models.CharField(max_length=100, null=True, blank=True)
     city                =   models.CharField(max_length=40, null=True, blank=True)
-    state               =   models.CharField(validators=[RegexValidator(
+    state               =   models.CharField(max_length=200, null=True,  blank=True)
+    country             =   models.CharField(validators=[RegexValidator(
                                 regex='^\w{2}$', 
                                 message='State ID length must be 2 characters', 
                                 code='nomatch'
-                            )],
-                            max_length=2, null=True,  blank=True)
-    country             =   models.CharField(validators=[RegexValidator(
-                                regex='^\w{2}$', 
-                                message='Country code length must be 2 characters', 
-                                code='nomatch'
-                            )],
-                            max_length=50, null=True, blank=True)
+                            )],max_length=2, null=True, blank=True)
     zip_code            =   models.PositiveIntegerField(null=True, blank=True)
-    id_file             =   models.ImageField(null=True, blank=True)
-    selfie              =   models.ImageField(upload_to="./selfies", null=True, blank=True)
     ether_addr          =   models.CharField(
                             validators=[RegexValidator(
                                 regex='^\w{42}$', 
@@ -208,7 +197,7 @@ class User(AbstractUser):
         return "%s %s" % (self.first_name or "", self.last_name or "")
 
     def get_full_name(self):
-        return self.__str__()
+        return str(self)
 
     def get_short_name(self):
         return self.first_name if self.first_name else ""
@@ -218,7 +207,6 @@ class User(AbstractUser):
             email.split('@')[0], "".join(random.choice(
             string.ascii_letters + string.digits) for i in range(10))
         )
-
 
     #######################################################################################
     # Contacting User
@@ -233,7 +221,7 @@ class User(AbstractUser):
             message = message, 
             from_email = "no-reply@astraglobal.net", 
             recipient_list = [self.email], 
-            fail_silently = True
+            fail_silently = False
         )
         return True
 
@@ -421,6 +409,13 @@ class User(AbstractUser):
         Checks to see if user has submitted all ICO-KYC form 
         data.
         """
+        selfie = id_file = False
+        
+        if self.files.filter(filetype="SF").exists:
+            selfie = self.files.filter(filetype="SF").latest('created').verified
+        if self.files.filter(filetype="ID").exists:
+            id_file = self.files.filter(filetype="ID").latest('created').verified
+
         return all([
             self.first_name,
             self.last_name,
@@ -430,8 +425,8 @@ class User(AbstractUser):
             self.country,
             self.phone_number, 
             self.zip_code,
-            self.id_file, 
-            self.selfie,
+            selfie,
+            id_file,
             self.ether_addr, 
             self.ether_part_amount,
             self.whitepaper,
@@ -518,7 +513,8 @@ class User(AbstractUser):
         Adds referral to the referree's account, checking to see if the 
         referrer exists and hasn't exceeded their max referrals.
         """
-        if not referral_code: return False
+        if not referral_code: 
+            return False
         
         try:
             referrer = User.objects.get(referral_code=referral_code)
@@ -529,11 +525,16 @@ class User(AbstractUser):
         if referrer.referral_count() >= 10:
             raise ReferralError.referral_max_error()
         if self.referral_user:
-            raise ReferralError.referral_set()
+            if self.referral_user != referrer:
+                raise ReferralError.referral_set()
+            return False
+        if referrer.referral_user and referrer.referral_user == self:
+            raise ReferralError.circular_referral()
 
         referrer.referees.add(self)
         self.save()
         referrer.save()
 
         return referrer
-        
+
+    

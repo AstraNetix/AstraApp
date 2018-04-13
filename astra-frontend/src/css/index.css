@@ -1,4 +1,59 @@
 body {
-    background-image: url(../images/background.png);
-    font-family: 'Roboto', sans-serif;
+    background: url(../images/background.png) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 }
+
+.input-dark {
+    padding: 5px 20px;
+    
+
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(216, 216, 216);
+
+    border-radius: 30px;
+    border-color: rgb(150, 150, 150);
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+
+    font-size: 14px;
+    font-weight: 100;
+
+    cursor: text;
+}
+
+.true-input {
+    width: 230px;
+    margin: 8px 0px;
+}
+
+.input-dark:focus {
+    border-color: rgb(214, 214, 214);
+}
+
+.input-light {
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0);
+
+    border-radius: 30px;
+    border-color: rgb(199, 199, 199);
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+
+    font-size: 14px;
+    font-weight: 100;
+
+    cursor: text;
+}
+
+.input-light:focus {
+    border-color: rgb(165, 165, 165);
+}
+  

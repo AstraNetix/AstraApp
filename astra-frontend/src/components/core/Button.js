@@ -25,13 +25,13 @@ class Button extends React.Component {
     return(
       <ButtonComponent
         {... this.props}
-        className={this.props.className + '-button'}
+        className={this.props.className}
         onClick={this.props.handleClick}
         disabled={this.props.loading}
         to={this.props.href}>
-      <span>
+      {/* <span> */}
         {this.props.children}
-      </span>
+      {/* </span> */}
       </ButtonComponent>
     );
   }

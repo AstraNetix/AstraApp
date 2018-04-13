@@ -9,10 +9,10 @@ User = get_user_model()
 
 class SocialMediaPostIDSerializer(serializers.Serializer):
     email               =   serializers.EmailField(max_length=200)
-    str_date            =   serializers.CharField(min_length=20)
+    str_date            =   serializers.CharField(min_length=20, required=False, allow_blank=True)
 
 class SocialMediaPostCreateSerializer(SocialMediaPostIDSerializer):
-    platform            =   serializers.CharField(max_length=2)
+    platform            =   serializers.CharField(max_length=15)
     content             =   serializers.CharField()
 
     @staticmethod
@@ -31,7 +31,7 @@ class SocialMediaPostCreateSerializer(SocialMediaPostIDSerializer):
             user = User.objects.get(email=self.validated_data.pop('email'))
         except User.DoesNotExist:
             raise AuthenticationError.user_does_not_exist()
-
+        
         # Date must be a string in RFC 3339 format
         str_date = self.validated_data.pop('str_date', False)
         date = self.convert_date(str_date) if str_date else datetime.datetime.utcnow()

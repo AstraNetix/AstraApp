@@ -1,5 +1,7 @@
 from django.contrib.auth import get_user_model, login, logout
 from api.models.device import Device
+from api.models.file import File
+
 from api.serializers.user import (
     UserIdentificationSerializer,
     UserLoginSerializer,
@@ -21,8 +23,8 @@ from rest_framework import permissions
 from rest_framework import viewsets
 from rest_framework import status
 
-from rest_framework.decorators import detail_route, list_route  
 from rest_framework.response import Response
+from rest_framework.decorators import detail_route, list_route  
 
 User = get_user_model()
 
@@ -91,7 +93,7 @@ class UserIDViewSet(viewsets.ModelViewSet):
             user = User.objects.get(email=serializer.data['email'])
             return Response({ 'name' : str(user) }, status=status.HTTP_200_OK)
         else: 
-            return Response(serializer.errors,
+            return Response(serializer.email_error,
                             status=status.HTTP_400_BAD_REQUEST)
     
     @list_route(methods=['patch'])
@@ -104,7 +106,7 @@ class UserIDViewSet(viewsets.ModelViewSet):
                 'referral_count'    : user.referral_count(),
             }, status=status.HTTP_200_OK)
         else: 
-            return Response(serializer.errors,
+            return Response(serializer.email_error,
                             status=status.HTTP_400_BAD_REQUEST)
 
     @list_route(methods=['patch'])
@@ -114,6 +116,8 @@ class UserIDViewSet(viewsets.ModelViewSet):
         if serializer.exists():
             user = User.objects.get(email=serializer.data['email'])
             referrer = user.referral_user
+            referral_code = referrer.referral_code if referrer else ""
+
             return Response({
                 'first_name'        :   user.first_name         or "",
                 'middle_name'       :   user.middle_name        or "",
@@ -128,14 +132,13 @@ class UserIDViewSet(viewsets.ModelViewSet):
                 'ether_addr'        :   user.ether_addr         or "",
                 'ether_part_amount' :   user.ether_part_amount  or "",
                 'referral_type'     :   user.referral_type      or "",
-                'referral_code'     :   referrer                or "",
-                'whitepaper'        :   user.whitepaper         or "false",
-                'token_sale'        :   user.whitepaper         or "false",
-                'data_protection'   :   user.whitepaper         or "false",
-                'over_18'           :   user.whitepaper         or "false",
+                'referral_code'     :   referral_code,
+                'whitepaper'        :   user.whitepaper, 
+                'token_sale'        :   user.token_sale,         
+                'data_protection'   :   user.data_protection,    
             }, status=status.HTTP_200_OK)
         else: 
-            return Response(serializer.errors,
+            return Response(serializer.email_error,
                             status=status.HTTP_400_BAD_REQUEST)
     
     @list_route(methods=['patch'])
@@ -156,6 +159,23 @@ class UserIDViewSet(viewsets.ModelViewSet):
                             status=status.HTTP_400_BAD_REQUEST)
 
     @list_route(methods=['patch'])
+    def get_file_names(self, request, pk=None):
+        serializer = self.serializer_class(data=request.data)
+
+        if serializer.exists(): 
+            user = User.objects.get(email=serializer.data['email'])
+            id_file = File.id_file(user)
+            selfie = File.selfie(user)
+
+            return Response({
+                'selfie'    :   selfie.name if selfie else '',
+                'id_file'   :   id_file.name if id_file else '',
+            }, status=status.HTTP_200_OK)
+        else: 
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
+    @list_route(methods=['patch'])
     def delete_user(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
 
@@ -168,7 +188,17 @@ class UserIDViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors,
                             status=status.HTTP_400_BAD_REQUEST)
 
+    @list_route(methods=['patch'])
+    def get_devices(self, request, pk=None):
+        serializer = self.serializer_class(data=request.data)
 
+        if serializer.exists():
+            user = User.objects.get(email=serializer.data['email'])
+            return Response({device.uid : str(device) for device in user.devices.all()},
+                    status=status.HTTP_200_OK)
+        else: 
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
 
 class UserBasicViewSet(viewsets.ModelViewSet):
     serializer_class = UserBasicSerializer
@@ -232,7 +262,7 @@ class UserLoginViewSet(viewsets.ModelViewSet):
                         'success': "Successfully logged in", 
                         'data': self.serializer_data_class(user).data,
                         'balance': self.serializer_balance_class(user).data,
-                    }, status=status.HTTP_201_CREATED)
+                    }, status=status.HTTP_200_OK)
             except AuthenticationError as ae:
                 return Response(ae.errors, 
                     status=status.HTTP_401_UNAUTHORIZED)

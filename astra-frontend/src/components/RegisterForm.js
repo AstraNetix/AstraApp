@@ -2,51 +2,64 @@ import React from 'react'
 import LoginButton from "./buttons/LoginButton"
 import Button from "./core/Button"
 import CurrentUserActions from "../actions/CurrentUserActions"
-import Center from 'react-center';
-import "../css/LoginForm.css"
+
+import "../css/InitialView.css"
+import "../css/Button.css"
 
 class RegisterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      error: '',
       name: '',
       email: '',
       password: '',
       confirmPassword: '',
+      loading: false,
     }
   }
 
-  handleNameChange = (name) => {
-    this.setState({name});
-  }
-
-  handleEmailChange = (email) => {
-    this.setState({email});
-  }
-
-  handlePasswordChange = (password) => {
-    this.setState({password});
-  }
-
-  handleConfirmPasswordChange = (confirmPassword) => {
-    this.setState({confirmPassword});
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
   }
 
   handleRegister = (event) => {
-    this.setState({registering: true});
-    CurrentUserActions.register(this.props.login.email, this.props.login.password);
+    this.setState({loading: true});
+    CurrentUserActions.register(this.state.name, this.state.email, this.state.password, this.state.confirmPassword);
   }
 
   render() {
     return(
-      <div className='register'>
-        Register
+      <div className='initial register'>
+        <div className='initial-title'>
+          Register
+        </div>
         <form className='login-form' onSubmit={this.handleRegister}>
-          <input type="text"      value={this.state.register.name}            onChange={this.handleNameChange}            />
-          <input type="text"      value={this.state.register.email}           onChange={this.handleEmailChange}           />
-          <input type="password"  value={this.state.register.password}        onChange={this.handlePasswordChange}        />
-          <input type="password"  value={this.state.register.confirmPassword} onChange={this.handleConfirmPasswordChange} />
-          <input type="submit"    value="Register" />
+          <div> {this.state.error} </div>
+          <div>
+            <input type='text' value={this.state.name} onChange={this.handleChange} 
+            name='name' placeholder='Name' className='input-light true-input'/>
+          </div>
+          <div>
+            <input type='text' value={this.state.email} onChange={this.handleChange} 
+            name='email' placeholder='Email' className='input-light true-input'/>
+          </div>
+          <div>
+            <input type='password' value={this.state.password} onChange={this.handleChange} 
+            name='password' placeholder='Password' className='input-light true-input'/>
+          </div>
+          <div>
+            <input type='password' value={this.state.confirmPassword} onChange={this.handleChange} 
+            name='confirmPassword' placeholder='Confirm Password' className='input-light true-input'/>
+          </div>
+          <div>
+            <Button className='input-light submit-light' type='submit' loading={this.state.loading} 
+              handleClick={this.handleRegister}> 
+              Register
+            </Button>
+          </div>
         </form>
       </div>
     )

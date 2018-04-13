@@ -115,10 +115,11 @@ class ReferralError(Exception):
     Error raised when attributing user to a referral.
     """
     
-    REFERRAL_CODE_ERROR = {'referral_code': ['Referral code does not belong to a user.']        }
-    REFERRAL_MAX_ERROR  = {'referral_code': ['This user has used up all of their referrals.']   }
-    REFERRAL_SET        = {'referral_code': ['You have already set your referral.']             }
-    SELF_REFERRAL       = {'referral_code': ['You cannot refer yourself.']                  }
+    REFERRAL_CODE_ERROR = {'referral_code': ['Referral code does not belong to a user']         }
+    REFERRAL_MAX_ERROR  = {'referral_code': ['This user has used up all of their referrals']    }
+    REFERRAL_SET        = {'referral_code': ['You have already set your referral']              }
+    SELF_REFERRAL       = {'referral_code': ['You cannot refer yourself']                       }
+    CIRCULAR_REFERRAL   = {'referral_code': ['You cannot refer someone who referred you']       }
 
     def __init__(self, errors):
         super().__init__(next(iter(errors)))
@@ -139,3 +140,7 @@ class ReferralError(Exception):
     @classmethod
     def self_referral(cls):
         return cls(cls.SELF_REFERRAL)
+    
+    @classmethod
+    def circular_referral(cls):
+        return cls(cls.CIRCULAR_REFERRAL)

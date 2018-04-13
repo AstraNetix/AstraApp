@@ -60,10 +60,37 @@ class Device(models.Model):
 
     run_on_batteries    =   models.BooleanField(default=False, blank=True)
     run_if_active       =   models.BooleanField(default=False, blank=True)
-    start_hour          =   models.SmallIntegerField(default=0, blank=True, validators=[
-                                MaxValueValidator(23), MinValueValidator(0)])
-    end_hour            =   models.SmallIntegerField(default=23, blank=True, validators=[
-                                MaxValueValidator(23), MinValueValidator(0)])
+    use_mem_only        =   models.BooleanField(default=False, blank=True)
+
+    mon_start           =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    mon_end             =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    tues_start          =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    tues_end            =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    wed_start           =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    wed_end             =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    thurs_start         =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    thurs_end           =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    fri_start           =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    fri_end             =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    sat_start           =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    sat_end             =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    sun_start           =   models.SmallIntegerField(default=0, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+    sun_end             =   models.SmallIntegerField(default=24, validators=[
+                                MaxValueValidator(24), MinValueValidator(0)])
+
     max_CPUs            =   models.SmallIntegerField(default=2, blank=True, validators=[
                                 MaxValueValidator(8), MinValueValidator(0)])
     disk_max_percent    =   models.SmallIntegerField(default=50, blank=True, validators=[
@@ -72,12 +99,15 @@ class Device(models.Model):
                                 MaxValueValidator(0), MinValueValidator(100)])
     cpu_max_percent     =   models.SmallIntegerField(default=50, blank=True, validators=[
                                 MaxValueValidator(0), MinValueValidator(100)])
+    net_max_bytes_up    =   models.SmallIntegerField(default=0, blank=True, validators=[
+                                MaxValueValidator(0), MinValueValidator(100)])    
+    net_max_bytes_down  =   models.SmallIntegerField(default=0, blank=True, validators=[
+                                MaxValueValidator(0), MinValueValidator(100)])
 
     active_projects     =   models.ManyToManyField(Project, blank=True, related_name="active_projects")
     dormant_projects    =   models.ManyToManyField(Project, blank=True, related_name="dormant_projects")
-    past_projects       =   models.ManyToManyField(Project, blank=True, related_name="past_projects")
 
-    user                =   models.ForeignKey(User, blank=True, related_name="device", on_delete="CASCADE")
+    user                =   models.ForeignKey(User, blank=True, related_name="devices", on_delete="CASCADE")
 
     active              =   models.BooleanField(default=False, blank=True)
 

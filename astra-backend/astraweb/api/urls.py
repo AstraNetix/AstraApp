@@ -14,6 +14,9 @@ from api.views.device import (
 from api.views.social_media_post import (
     SocialMediaPostViewSet,
 )
+from api.views.file import (
+    FileUploadViewSet,
+)
 from api.views.homepage import homepage
 from rest_framework.routers import DefaultRouter
 from django.urls import path
@@ -32,5 +35,7 @@ router.register('users/relational', UserRelationalViewSet, base_name='user_relat
 router.register('device/create', DeviceIDViewSet, base_name='device_create')
 
 router.register('proof-of-love', SocialMediaPostViewSet, base_name='proof_of_love')
+
+router.register('files', FileUploadViewSet, base_name='files')
 
 urlpatterns = router.urls + [path('home/', homepage, name='index')]

@@ -7,13 +7,13 @@ User = get_user_model()
 class PromoSale(TokenSale):
     END_DATE        =   date.today() + timedelta(days=365.25/2)
 
-    TOTAL_STARS     =   500,000
+    TOTAL_STARS     =   500000
 
     REFERRAL        =   5
     JOINING         =   10
     TELEGRAM        =   10
     MEME            =   10
-    PROOF_OF_LOVE   =   5
+    PROOF_OF_LOVE   =   10
     WHITELIST       =   25
 
     @classmethod
@@ -32,7 +32,6 @@ class PromoSale(TokenSale):
         if referrer:
             cls.add_stars(user, cls.REFERRAL)
             cls.add_stars(referrer, cls.REFERRAL)
-            user.save()
 
     @classmethod
     def join_telegram(cls, user):

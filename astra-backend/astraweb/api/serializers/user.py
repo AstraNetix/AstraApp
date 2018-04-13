@@ -16,8 +16,8 @@ class UserIdentification(serializers.Serializer):
 
     def exists(self):
         self.is_valid()
-        return ('email' in self.data) and (User.objects.filter(
-            email=self.data['email']).exists())
+        return ('email' in self.data) and User.objects.filter(
+            email=self.data['email']).exists()
 
 class UserIdentificationSerializer(serializers.ModelSerializer, UserIdentification):
     """
@@ -71,7 +71,7 @@ class UserBasicSerializer(UserIdentification):
             raise CreationError.user_exists()
         if validated_data["password"] != validated_data.pop("confirm_password"):
             raise CreationError.unmatching_passwords()
-        name = validated_data.pop('name').split(" ")
+        name = [name.title() for name in validated_data.pop('name').split(" ")]
         
         if len(name) == 3:
             first_name, middle_name, last_name = name
@@ -79,7 +79,7 @@ class UserBasicSerializer(UserIdentification):
             first_name, last_name = name
             middle_name = None
         else: 
-            first_name, middle_name, last_name = name, None, None
+            first_name, middle_name, last_name = name[0], None, None
             
         user = User.objects.create_user(
             first_name=first_name, 
@@ -104,28 +104,31 @@ class UserUpdateSerializer(UserIdentification):
 
     def update(self, validated_data):
         user = User.objects.get(email=validated_data["email"])
+        name = validated_data.pop("name", False)
+        new_password = validated_data.pop("new_password", False)
+        new_email = validated_data.pop("new_email", False)
 
-        if "name" in validated_data:
-            name = validated_data.pop('name').split(" ")
+        if name:
+            name = [field.title() for field in name.split(" ")]
             if len(name) == 3:
                 user.first_name, user.middle_name, user.last_name = name
             elif len(name) == 2 and name[1]:
                 user.first_name, user.last_name = name
             else: 
-                user.first_name = name
+                user.first_name = name[0]
             user.save()
 
-        if "new_password" in validated_data:
+        if new_password:
             if "old_password" not in validated_data:
                 raise CreationError.old_password_required()
             user = User.authenticate(email=validated_data["email"], password=validated_data["old_password"])
-            if validated_data["new_password"] != validated_data.pop("confirm_password", ""):
+            if new_password != validated_data.pop("confirm_password", ""):
                 raise CreationError.unmatching_passwords()
             user.set_password(validated_data["new_password"])
             user.save()
 
-        if "new_email" in validated_data and validated_data["new_email"]:
-            user.email = User.objects.normalize_email(validated_data["new_email"])
+        if new_email:
+            user.email = User.objects.normalize_email(new_email)
             user.save()
             
         return user
@@ -141,13 +144,11 @@ class UserICOKYCSerializer(UserIdentification):
     street_addr1        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
     street_addr2        =   serializers.CharField(max_length=100, required=False, allow_blank=True)
     city                =   serializers.CharField(max_length=40, required=False, allow_blank=True)
-    state               =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
+    state               =   serializers.CharField(min_length=2, required=False, allow_blank=True)
     country             =   serializers.CharField(min_length=2, max_length=2, required=False, allow_blank=True)
     zip_code            =   serializers.IntegerField(required=False, allow_null=True)
     phone_number        =   serializers.CharField(max_length=150, required=False, allow_blank=True)
     ether_addr          =   serializers.CharField(max_length=42, min_length=42, required=False, allow_blank=True)
-    id_file             =   serializers.ImageField(allow_empty_file=True, required=False)
-    selfie              =   serializers.ImageField(allow_empty_file=True, required=False)
     ether_part_amount   =   serializers.IntegerField(required=False, allow_null=True)
     referral_type       =   serializers.ChoiceField(choices=User.REFERRAL_CHOICES, required=False, allow_blank=True)
     referral_code       =   serializers.CharField(required=False, allow_blank=True)
@@ -158,17 +159,19 @@ class UserICOKYCSerializer(UserIdentification):
 
     def add_icokyc(self):
         user = User.objects.get(email=self.data.pop('email'))
-        PromoSale.make_referee(user, self.data.pop('referral_code', ''))
         
         self.check_errors = {}
         for key, value in self.data.items(): 
-            if ((key == 'state' or key == 'country') and value == '00'):
+            if (key == 'country' and value == '00') or (key == 'referral_code'):
                 continue 
             if key in ['whitepaper', 'token_sale', 'data_protection']:
                 setattr(user, key, True if value == '1' else False)
+            if key == 'ether_addr' and value and len(value) != 42:
+                self.check_errors['ether_addr'] = ['This field must be a 42 character hex value']
             setattr(user, key, value)
         user.save()
 
+        PromoSale.make_referee(user, self.data.pop('referral_code', ''))
         PromoSale.complete_whitelist(user)
 
 

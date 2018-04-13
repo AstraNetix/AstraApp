@@ -14,16 +14,15 @@ class SocialMediaPost(models.Model):
         app_label       =   "api"
         db_table        =   "api_social_media_post"
 
-    STAR_BONUS          =   5  # Amount of bonus star coins per post
-
-    FACEBOOK            =   'FB'
-    TWITTER             =   'TW'
-    TELEGRAM            =   'TE'
-    LINKEDIN            =   'LN'
-    YOUTUBE             =   'YT'
-    BITCOIN_TALK        =   'BT'
-    REDDIT              =   'RD'
-    OTHER               =   'OR'
+    FACEBOOK            =   'facebook'
+    TWITTER             =   'twitter'
+    TELEGRAM            =   'telegram'
+    LINKEDIN            =   'linkedin'
+    YOUTUBE             =   'youtube'
+    MEDIUM              =   'medium'
+    BITCOIN_TALK        =   'bitcoin_talk'
+    REDDIT              =   'reddit'
+    OTHER               =   'other'
 
     PLATFORM_CHOICES    =   (
                                 (FACEBOOK,      'Facebook'),
@@ -31,6 +30,7 @@ class SocialMediaPost(models.Model):
                                 (TELEGRAM,      'Telegram'),
                                 (LINKEDIN,      'Linkedin'),
                                 (YOUTUBE,       'Youtube'),
+                                (MEDIUM,        'Medium'),
                                 (BITCOIN_TALK,  'Bitcoin Talk'),
                                 (REDDIT,        'Reddit'),
                                 (OTHER,         'Other'),
@@ -44,7 +44,7 @@ class SocialMediaPost(models.Model):
                                 message='UID must be 10 hex characters', 
                                 code='nomatch'
                             )], unique=True)
-    platform            =   models.CharField(max_length=2, choices=PLATFORM_CHOICES, default=OTHER)
+    platform            =   models.CharField(max_length=15, choices=PLATFORM_CHOICES, default=OTHER)
     content             =   models.TextField()
     user                =   models.ForeignKey(User, blank=False, related_name="post", on_delete="CASCADE")
     date                =   models.DateTimeField()

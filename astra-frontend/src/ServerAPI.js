@@ -45,7 +45,7 @@ export default class ServerAPI extends React.Component {
   }
 
   getUserDevices() {
-    return _patch("users/id/devices", {'email': emailCookie})
+    return _patch("users/id/get_devices", {'email': emailCookie})
   }
 
   getDeviceInfo(deviceID) {

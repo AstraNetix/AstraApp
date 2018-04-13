@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../css/MainTab.css'
 
 class MainTab extends React.Component {
   render() {

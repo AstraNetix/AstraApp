@@ -3,11 +3,14 @@ import Dispatcher from 'dispatcher/Dispatcher'
 
 class CurrentUserActions {
   action(action, args) { 
-    action.method(Object.keys(args).map((key) => 
-      args[key])).then((response) => {
-        Dispatcher.dispatch(Object.assign(
-          response, args, {actiontype: action.value}));
-    })
+    action.method(Object.keys(args).map((key) => args[key]))
+    .then((response) => {
+        Dispatcher.dispatch({
+          actiontype: action.value,
+          response: response,
+          args: args, 
+        });
+    });
   }
 
   register(name, email, password, confirmPassword) {

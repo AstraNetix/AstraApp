@@ -1,77 +1,36 @@
-.clear-button {
-    background: none;
-    color: #ffffff;
-    padding: 7px;
-    margin-right: 20px;
-    text-decoration: none;
-    border: none;
-}
-
-.medium-button {
-    background: none;
-    color: #333;
-    text-decoration: none;
-    border: none;
-    font-size: 18px;
-    font-family: 'Gothic A1', sans-serif;
-}
-
 .small-button {
-    background: none;
-    color: #333;
-    text-decoration: none;
-    border: none;
-    font-size: 0.8em;
-    font-family: 'Gothic A1', sans-serif;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    text-decoration: None;
+    padding-top: 400px;
 }
 
-.gradient-button {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
-    border-radius: 10px;
-    padding: 8px 25px;
-    margin: 0px;
-    text-decoration: none;
-
-    color: #fff;
-    background: #3782fe; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #3782fe 0%, #be1adc 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #3782fe 0%,#be1adc 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #3782fe 0%,#be1adc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3782fe', endColorstr='#be1adc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.small-button:hover {
+    text-decoration: underline;
 }
 
-.gradient-border-button {
-  background: -webkit-linear-gradient(-45deg, #3782fe 0%, #be1adc 100%);
-  background: -o-linear-gradient(-45deg, #3782fe 0%, #be1adc 100%);
-  background: linear-gradient(135deg, #3782fe 0%, #be1adc 100%);
-  border-radius: 10px;
-  margin: 20px 0px 0px 20px;
-  display: inline-block;
-  font-size: 20px;
-  padding: 1px;
-  text-decoration: none;
-  font-family: "Shree Devanagari 714";
-}   
-
-.gradient-border-button span {
-  background: #fff;
-  display: block;
-  padding: 5px 18px;
-  border-radius: 8px;
+.submit-dark {
+    width: 270px;
 }
 
-.gradient-text {
-  background: -webkit-linear-gradient(-45deg, #3782fe 0%, #be1adc 100%);
-  background: -o-linear-gradient(-45deg, #3782fe 0%, #be1adc 100%);
-  background: linear-gradient(135deg, #3782fe 0%, #be1adc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.submit-dark:hover {
+    background-color: rgb(172, 172, 172);
+    color: rgb(71, 71, 71);
+    cursor: pointer; 
 }
 
-.arrow-button {
-    font-family: "Shree Devanagari 714", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.8em;
-    text-decoration: none;
-    background: none; 
-    border: none;
+.submit-light {
+    width: 270px;
+    color: rgb(230, 230, 230);
+    background-image: -moz-linear-gradient( 180deg, rgb(88,123,179) 0%, rgb(149,83,167) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(88,123,179) 0%, rgb(149,83,167) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(88,123,179) 0%, rgb(149,83,167) 100%);
+    margin-top: 48px;
+}
+
+.submit-light:hover {
+    cursor: pointer; 
+    background-image: -moz-linear-gradient( 180deg, rgb(134, 167, 221) 0%, rgb(195, 134, 212) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(134, 167, 221) 0%, rgb(195, 134, 212) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(134, 167, 221) 0%, rgb(195, 134, 212) 100%);
 }
