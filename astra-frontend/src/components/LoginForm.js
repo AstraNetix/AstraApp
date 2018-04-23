@@ -1,7 +1,10 @@
+'use strict'
+
 import React from 'react'
-import LoginButton from "./buttons/LoginButton"
 import Button from "./core/Button"
 import CurrentUserActions from "../actions/CurrentUserActions"
+import ServerAPI from "../ServerAPI"
+import Cookies from 'js-cookie';
 
 import "../css/InitialView.css"
 import "../css/Button.css"
@@ -10,22 +13,42 @@ class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: '',
+      errors: {
+        general: '',
+        email: Cookies.get('email') === undefined ? '' : Cookies.get('email'),
+        password: '',
+      },
       email: '',
       password: '',
       loading: false,
     }
   }
 
-  handleChange = (event) => {
+  _handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
 
-  handleLogin = (event) => {
-    this.setState({loggingIn: true});
-    CurrentUserActions.login(this.state.email, this.state.password);
+  _handleLogin = (event) => {
+    this.setState({loading: true});
+    ServerAPI.login(this.state.email, this.state.password).then(
+      this._handleSuccess,
+      this._handleFailure
+    );
+  }
+
+  _handleSuccess = (responseJSON) => {
+    this.setState({loading: false});
+    Cookies.set('email', this.state.email)
+    CurrentUserActions.login(this.state.email);
+  }
+
+  _handleFailure = (responseJSON) => {
+    this.setState({
+      errors: responseJSON.data,
+      loading: false,
+    });
   }
 
   render() {
@@ -35,24 +58,26 @@ class LoginForm extends React.Component {
           Login
         </div>
         <form>
-          <div> {this.state.error} </div>
+          <div> {this.state.errors.general} </div>
           <div>
             <input 
               className='input-dark true-input' type="text" name='email' value={this.state.email} 
-              onChange={this.handleChange} placeholder='Email' />
+              onChange={this._handleChange} placeholder='Email' />
           </div>
           <div>
             <input 
               className='input-dark true-input' type="password" name='password' value={this.state.password} 
-              onChange={this.handleChange} placeholder='Password' />
+              onChange={this._handleChange} placeholder='Password' />
           </div>
-          <Button className='small-button' href='/forgot-password'>
-            Forgot Password?
-          </Button>
+          <div>
+            <Button  className='small-button' href='/forgot-password'>
+              Forgot Password?
+            </Button>
+          </div>
           <div>
             <Button 
               className='input-dark submit-dark' type='submit' loading={this.state.loading} 
-              handleClick={this.handleLogin}>
+              handleClick={this._handleLogin}>
               Login
             </Button>
           </div>

@@ -2,11 +2,29 @@
     color: rgb(150, 150, 150);
     font-size: 12px;
     text-decoration: None;
-    padding-top: 400px;
 }
 
 .small-button:hover {
     text-decoration: underline;
+}
+
+.select-light {
+    border-radius: 30px;
+    border-color: #646464;
+    border-width: 1px;
+    background: rgba(0, 0, 0, 0);
+    color: #646464;
+}
+
+.select-light:hover {
+    background: #646464;
+    color: #ffffff;
+}
+
+.selected-light {
+    border-radius: 30px;
+    background: #646464;
+    color: #ffffff;
 }
 
 .submit-dark {

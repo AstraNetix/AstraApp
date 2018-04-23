@@ -1,2 +1,2 @@
-from .user import UserLoginSerializer, UserPasswordSerializer, UserBasicSerializer, UserICOKYCSerializer, UserBalanceSerializer
+from .user import UserLoginSerializer, UserPasswordSerializer, UserRegisterSerializer, UserICOKYCSerializer, UserBalanceSerializer
 from .device import DeviceCreateSerializer

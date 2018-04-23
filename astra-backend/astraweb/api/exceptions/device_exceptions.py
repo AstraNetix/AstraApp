@@ -69,3 +69,21 @@ class DeviceClientError(Exception):
     def unexpected_disconnect(cls):
         return cls(cls.UNEXPECTED_DISCONNECT)
 
+class DeviceIDError(Exception):
+    """
+    Error raised when trying to get or change information on device
+    """
+
+    OWNERSHIP_ERROR = {'device_id': ['Device does not belong to this user']}
+    DOES_NOT_EXIST = {'device_id': ['This device does not exists']}
+
+    def __init__(self, message):
+        super().__init__(message)
+
+    @classmethod
+    def ownership_error(cls):
+        return cls(cls.OWNERSHIP_ERROR)
+    
+    @classmethod
+    def does_not_exist(cls):
+        return cls(cls.DOES_NOT_EXIST)

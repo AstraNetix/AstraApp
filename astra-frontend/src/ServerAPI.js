@@ -1,22 +1,18 @@
-require('whatwg-fetch');
+'use strict'
 
-const React = require('react');
+require('whatwg-fetch');
 const Cookie = require('js-cookie');
 
-const apiHead = "api"
+const API = 'http://127.0.0.1:8000/api';
 const emailCookie = Cookie.get('email')
 
-export default class ServerAPI extends React.Component {
-  getUser(email) {
-    return _get("users/is/", {'email': email})
+class ServerAPI {
+  login(email, password) {
+    return _patch("users/basic/login_user/", {'email': email, 'password': password})
   }
 
-  loginUser(email, password) {
-    return _post("users/basic/login_user/", {'email': email, 'password': password})
-  }
-
-  logoutUser() {
-    return _delete("users/id/logout_user/")
+  logout() {
+    return _patch("users/id/logout_user/")
   }
 
   setUserVerified() {
@@ -24,7 +20,7 @@ export default class ServerAPI extends React.Component {
   }
 
   isUserValidForSale() {
-    return _get("users/id/user_valid_for_sale", {'email': emailCookie})
+    return _patch("users/id/user_valid_for_sale", {'email': emailCookie})
   }
 
   createUser(name, email, password, confirmPassword) {
@@ -52,6 +48,10 @@ export default class ServerAPI extends React.Component {
     return _patch("devices/id/info", {'email': emailCookie, 'device_id': deviceID})
   }
 
+  getDeviceData(deviceID) {
+    return _patch("devices/id/data", {'email': emailCookie, 'device_id': deviceID})
+  }
+
   getDeviceProjects(deviceID) {
     return _patch("devices/id/projects", {'email': emailCookie, 'device_id': deviceID})
   }
@@ -60,11 +60,11 @@ export default class ServerAPI extends React.Component {
     return _patch("users/relational/start_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
   }
 
-  stopProject(url, deviceID) {
-    return _patch("users/relational/stop_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
+  quitProject(url, deviceID) {
+    return _patch("users/relational/quit_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
   }
 
-  stopProject(url, deviceID) {
+  suspendProject(url, deviceID) {
     return _patch("users/relational/suspend_project", {'email': emailCookie, 'device_id': deviceID, 'url': url})
   }
 
@@ -115,30 +115,51 @@ export default class ServerAPI extends React.Component {
 
 }
 
-function _ajax(method, uri, data) {
-  const isSafeMethod = /^(GET|HEAD|OPTIONS|TRACE)$/.test(method);
+function _ajax(method, uri, data, content_type) {
+  if (content_type == null) {
+    content_type = 'application/json';
+  }
+
   const params = {
     method: method,
     credentials: 'same-origin',
     headers: {
-      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + window.btoa('apimaster@gmail.com:Api1@useR'),
+      'Content-Type': content_type,
     },
   };
-  if (!isSafeMethod) {
-    params.headers['X-CSRFToken'] = Cookie.get('csrftoken');
-    if (data) {
-      params.body = typeof data === 'string' ? data : JSON.stringify(data);
-    }
+
+  if (data && content_type !== 'multipart/form-data') {
+    params.body = typeof data === 'string' ? data : JSON.stringify(data);
+  } else if (data && content_type === 'multipart/form-data') {
+    var form = new FormData();
+    form.append('file', data['file']);
+    params.body = form;
   }
 
-  return fetch(apiHead + uri, params).then(response =>
-    response.ok ? 
-      response.json() :
-      response.json().then(json => Promise.reject(json)),
-  ).catch(error => { 
+  if (content_type === 'application/json') {
+    return fetch(API + uri, params).then(response =>
+      response.ok ? 
+        response.json() :
+        response.json().then(json => Promise.reject(json)),
+    ).catch(error => { 
       throw Error(error.message) 
-    }
-  ); 
+    }); 
+  } else if (content_type === 'application/force-download') {
+    return fetch(uri, params).then(
+      response =>
+        response.ok
+          ? response.blob()
+          : response.blob().then(json => Promise.reject(json)),
+    );
+  } else {
+    return fetch(uri, params).then(
+      response =>
+        response.ok
+          ? response.text()
+          : response.text().then(text => Promise.reject(text)),
+    );
+  }
 }
 
 const _delete = _ajax.bind(null, 'DELETE');
@@ -147,4 +168,4 @@ const _patch = _ajax.bind(null, 'PATCH');
 const _put = _ajax.bind(null, 'PUT');
 const _post = _ajax.bind(null, 'POST');
 
-
+export default ServerAPI;

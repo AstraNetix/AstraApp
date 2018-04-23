@@ -15,7 +15,7 @@ from api.models.project import Project
 from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError, ReferralError
 
 from django.core.validators import RegexValidator, MinValueValidator
-from django.core.mail import send_mail
+from django.core.mail import send_mail, send_mass_mail
 
 class UserManager(BaseUserManager):
     use_in_migrations = True
@@ -210,8 +210,9 @@ class User(AbstractUser):
 
     #######################################################################################
     # Contacting User
-
-    def send_email(self, subject, message):
+    
+    def send_email(self, subject, message,
+            from_email="no-reply@astraglobal.net"):
         """
         Sends an email to this user using the current STMP email
         middleware, with the subject and message inputed.
@@ -219,7 +220,7 @@ class User(AbstractUser):
         send_mail(
             subject = subject, 
             message = message, 
-            from_email = "no-reply@astraglobal.net", 
+            from_email = from_email, 
             recipient_list = [self.email], 
             fail_silently = False
         )
@@ -240,6 +241,9 @@ class User(AbstractUser):
         return True
 
     def validate_email(self):
+        if self.email_verified:
+            return False
+
         return self.send_email(
             "Activate Astra",
             ("{0},\n\n"
@@ -256,6 +260,9 @@ class User(AbstractUser):
         )
 
     def remind_validate_email(self):
+        if self.email_verified:
+            return False
+
         return self.send_email(
             "Reminder to Activate Astra",
             ("{0},\n\n"
@@ -276,12 +283,13 @@ class User(AbstractUser):
             "Reset Password",
             ("{0},\n\n"
             "Hi! Please click the following link to reset your password\n\n"
-            "{1}/login/forgot-password\n\n"
+            "{1}/dashboard-change-password/?email={2}\n\n"
             "If you believe you have gotten this email in error, please ignore this message.\n\n"
             "Best,\n\n"
             "The Astra Team ").format(
                 self.first_name, 
-                "{0}dashboard-recover/".format(User.WEB_HEADER)
+                User.WEB_HEADER,
+                self.email,
             ) 
         )
 
@@ -369,7 +377,7 @@ class User(AbstractUser):
     #######################################################################################
     # Passwords
 
-    def change_password(self, old_password, new_password):
+    def change_password(self, old_password, new_password, confirm_new_password):
         """
         Confirms user's old password to be old_password and changes
         it to new_password.
@@ -387,17 +395,21 @@ class User(AbstractUser):
         self.set_password(new_password)
         self.save()
 
-    def reset_password(self, new_password):
+    def reset_password(self, new_password, confirm_new_password):
         """
         Reset's user password to new_password. Only to be done after 
         email confirmation.
         """
         valid_regex = "^[A-Za-z0-9\_\.!@#\$%\^&\*\(\)~\-=\+`\?]+$"
+        if not (new_password and confirm_new_password):
+            PasswordChangeError.missing_fields()
         if len(new_password) < 6:
             PasswordChangeError.password_too_short()
         if not re.match(valid_regex, new_password):
             PasswordChangeError.invalid_characters()
-
+        if new_password != confirm_new_password:
+            PasswordChangeError.unmatching_passwords()
+        
         self.set_password(new_password) 
         self.save()
 

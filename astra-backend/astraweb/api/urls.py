@@ -1,6 +1,6 @@
 from api.views.user import (
     UserIDViewSet,
-    UserBasicViewSet,
+    UserRegisterViewSet,
     UserUpdateViewSet,
     UserLoginViewSet,
     UserPasswordViewSet, 
@@ -24,7 +24,7 @@ from django.urls import path
 router = DefaultRouter()
 
 router.register('users/id', UserIDViewSet, base_name='user_id')
-router.register('users/basic', UserBasicViewSet, base_name='user_basic')
+router.register('users/basic', UserRegisterViewSet, base_name='user_register')
 router.register('users/update', UserUpdateViewSet, base_name='user_update')
 router.register('users/login', UserLoginViewSet, base_name='user_login')
 router.register('users/password', UserPasswordViewSet, base_name='user_password')

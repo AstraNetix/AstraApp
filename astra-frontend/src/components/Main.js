@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route, Redirect} from 'react-router-dom';
 import CurrentUserStore from '../stores/CurrentUserStore'
 
-import DevicesView from "./DevicesView"
-import InitialView from "./InitialView"
+import InitialView from './InitialView'
+import Dashboard from './core/Dashboard'
 
 require('core-js/es6');
 require('core-js/es7');
@@ -20,17 +20,8 @@ class Main extends React.Component {
         <Switch>
           <Route path="/login" render={() => this.state.loggedIn ?
             <Redirect to="/devices"/> : <InitialView/> }/>
-          <Route path="/devices" component={DevicesView}/>
-          {/*
-          <Route path="/login/forgot-password" component={ForgotPasswordView}/>
-          <Route path="/devices/:id" component={DevicesDetailView}/>
-          <Route path="/projects" component={ProjectView}/>
-          <Route path="/projects/:id" component={ProjectDetailView}/>
-          <Route path="/balance" component={BalanceView}/>
-          <Route path="/balance/add-tokens" component={BalanceAddView}/>
-          <Route path="/account" component={AccountView}/> 
-          <Route path="*" component={NotFoundView}/>
-        */}
+          <Route path="/welcome" render={() => <Dashboard type='welcome'/>}/>
+          <Route path="/devices" render={() => <Dashboard type='devices'/>}/>
         </Switch>
       </main>
     );

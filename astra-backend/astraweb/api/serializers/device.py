@@ -1,10 +1,11 @@
 from rest_framework import serializers
 from api.models.device import Device
+from api.exceptions.device_exceptions import DeviceIDError
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class DeviceIDSerializer(serializers.ModelSerializer):
-    id_error = {'failure': 'Device does not exist'}
+    id_error = {'failure': ['Device does not exist']}
 
     def exists(self):
         self.is_valid()
@@ -18,7 +19,7 @@ class DeviceIDSerializer(serializers.ModelSerializer):
         )
 
 class DeviceCreateSerializer(serializers.ModelSerializer):
-    id_error = {'failure': 'User does not exist'}
+    id_error = {'failure': ['User does not exist']}
 
     def exists(self):
         self.is_valid()
@@ -36,20 +37,15 @@ class DeviceCreateSerializer(serializers.ModelSerializer):
             )
 
 class DeviceUsageSerializer(DeviceIDSerializer):
-    ownership_error = {'failure': 'User does not own device'}
-
     def exists(self):
         exist = super().exists() and ('email' in self.data) 
         if exist:
             user = User.objects.filter(email=self.data['email'])
-            owned = user.exists() and (Device.objects.get(
-                uid=self.data['id']).user == user)
-            if owned: 
+            if user == Device.objects.get(uid=self.data['id']).user: 
                 return True
-            self.error = ownership_error
+            raise DeviceIDError.ownership_error()
         else:
-            self.error = id_error
-        return False
+            raise DeviceIDError.does_not_exist()
 
     class Meta: 
         model = Device

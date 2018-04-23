@@ -25,7 +25,7 @@ class SeparatedValuesField(models.TextField):
         if not value: return
         if isinstance(value, list):
             return value
-        return value.split(self.token).join('\n')
+        return value.split(self.token)
 
     def get_prep_value(self, value):
         if not value: return

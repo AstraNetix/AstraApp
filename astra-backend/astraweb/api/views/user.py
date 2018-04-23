@@ -6,7 +6,7 @@ from api.serializers.user import (
     UserIdentificationSerializer,
     UserLoginSerializer,
     UserPasswordSerializer,
-    UserBasicSerializer,
+    UserRegisterSerializer,
     UserUpdateSerializer,
     UserICOKYCSerializer,
     UserBalanceSerializer,
@@ -95,7 +95,20 @@ class UserIDViewSet(viewsets.ModelViewSet):
         else: 
             return Response(serializer.email_error,
                             status=status.HTTP_400_BAD_REQUEST)
-    
+
+    @list_route(methods=['patch'])
+    def get_basic(self, request, pk=None):
+        serializer = self.serializer_class(data=request.data)
+        if serializer.exists():
+            user = User.objects.get(email=serializer.data['email'])
+            return Response({ 
+                'name' : str(user),
+                'profile' : File.selfie(user),
+                # Add level later when game-ifying
+            }, status=status.HTTP_200_OK)
+        else: 
+            return Response(serializer.email_error,
+                            status=status.HTTP_400_BAD_REQUEST)
     @list_route(methods=['patch'])
     def get_referrals(self, request, pk=None):
         serializer = self.serializer_class(data=request.data)
@@ -194,14 +207,15 @@ class UserIDViewSet(viewsets.ModelViewSet):
 
         if serializer.exists():
             user = User.objects.get(email=serializer.data['email'])
-            return Response({device.uid : str(device) for device in user.devices.all()},
+            return Response([device.uid for device in user.devices.all()],
                     status=status.HTTP_200_OK)
         else: 
             return Response(serializer.errors,
                             status=status.HTTP_400_BAD_REQUEST)
 
-class UserBasicViewSet(viewsets.ModelViewSet):
-    serializer_class = UserBasicSerializer
+
+class UserRegisterViewSet(viewsets.ModelViewSet):
+    serializer_class = UserRegisterSerializer
 
     queryset = User.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
@@ -258,11 +272,8 @@ class UserLoginViewSet(viewsets.ModelViewSet):
             try:
                 user = User.login(serializer.data['email'], 
                     serializer.data['password'])
-                return Response({
-                        'success': "Successfully logged in", 
-                        'data': self.serializer_data_class(user).data,
-                        'balance': self.serializer_balance_class(user).data,
-                    }, status=status.HTTP_200_OK)
+                return Response({'success': "Successfully logged in"}, 
+                    status=status.HTTP_200_OK)
             except AuthenticationError as ae:
                 return Response(ae.errors, 
                     status=status.HTTP_401_UNAUTHORIZED)
@@ -282,8 +293,9 @@ class UserPasswordViewSet(viewsets.ViewSet):
             if serializer.is_valid():
                 try:
                     user = User.objects.get(email=serializer.validated_data['email'])
-                    user.reset_password(serializer.validated_data['new_password'])
-                    return Response({'success': "Password successfully reset. Check your inbox!"}, 
+                    user.reset_password(serializer.validated_data['new_password'], 
+                        serializer.validated_data['confirm_new_password'])
+                    return Response({'success': "Password successfully reset"}, 
                         status=status.HTTP_200_OK)
                 except PasswordChangeError as pc:
                     return Response(pc.errors,

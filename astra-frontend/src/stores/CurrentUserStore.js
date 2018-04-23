@@ -3,65 +3,59 @@ import Dispatcher from '../dispatcher'
 import ServerAPI from '../ServerAPI'
 import {Store} from 'flux/utils'
 import image from '../images/Phone.png'
-
+import cookie from "react-cookie";
 
 class CurrentUserStore extends Store {
   constructor(dispatcher) {
     super(dispatcher);
-    this.state = {
-      email: null,
-      data: {},
-      balance: {},
-      devices: {},
-      errors: {},
+    this.email = null;
+    this.data = {
+      firstName: '',
+      lastName: '',
+      profile: null,
+      level: 1,
     };
+    this.balance = {
+      stars: 0,
+    };
+    this.devices = [];
   }
 
-  getUserEmail() { 
-    return this.state.email;
-  }
+  getErrors() { return this.errors; }
+
+  getUserEmail() {  return this.email; }
+
+  getDevices() { return this.devices; }
+
+  getName() { return (this.data.firstName + this.data.lastName); }
 
   getSideBarState() {
-    return {
-      name: this.state.data.first_name + this.state.data.last_name, 
-      level: 1, 
-      image: this.state.data.selfie,
-      stars: this.state.balance.starBalance,
-    };
+    return ({
+      name: this.data.firstName + this.data.lastName, 
+      level: this.data.level, 
+      profile: this.data.profile,
+      stars: this.balance.stars,
+    });
   }
 
   __onDispatch(action) {
-    switch(action.actionType) {
+    switch(action.type) {
 
       case ActionConstants.LOGIN:
-        if (action.response.status != 200) {
-          this.setState({errors: {
-            ...this.state.errors,
-            authentication: action['failure'],
-          }}); 
-          break;
-        }
-        this.setState({
-          email: action.args.email,
-          data: {
+        this.email = action.args.email;
+        this.data = {
             firstName: action.response.data['first_name'],
             lastName: action.response.data['last_name'],
             profile: action.response.data['selfie'],
-          },
-          balance: {
-            star: action.response.balance['star_balance'],
-          },
-          devices: ServerAPI.getUserDevices(),
-        });
+            /* Get level as well */
+        };
+        this.balance = {
+          star: action.response.balance['star_balance'],
+        };
+        this.devices = ServerAPI.getUserDevices();
+        cookie.save('email', this.email, '/');
         break;
-
       case ActionConstants.LOGOUT:
-        this.setState({
-          email: '',
-          data: {},
-          balance: {},
-          devices: {},
-        });
         break;
       default:
         return;

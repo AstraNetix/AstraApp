@@ -54,9 +54,9 @@ class UserPasswordSerializer(UserIdentification):
     new_password            =   serializers.CharField(max_length=200, min_length=6, write_only=True)
 
 
-class UserBasicSerializer(UserIdentification):
+class UserRegisterSerializer(UserIdentification):
     """
-    Used for creating users and getting basic user information.
+    Used for creating users.
     """
     name                    =   serializers.CharField(max_length=200, allow_blank=True, required=False)
     email                   =   serializers.EmailField(max_length=None, min_length=None)

@@ -10,12 +10,16 @@ from django.contrib.admin import FieldListFilter
 from django.utils.html import format_html
 from django.utils.translation import ugettext_lazy as _
 
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+
 from django.contrib.auth import get_user_model
 
 from api.models.device import Device
 from api.models.project import Project
 from api.models.social_media_post import SocialMediaPost
 from api.models.file import File
+from api.models.email import Email
 
 User = get_user_model()
 
@@ -112,6 +116,7 @@ class UserAdmin(BaseUserAdmin):
 
     list_display = ('name', 'email', 'is_superuser', 'user_type')
     list_filter = ('is_superuser', 'user_type', 'email_verified')
+    actions = ['send_validation_email', 'send_email']
 
     fieldsets = (
         (None, {'fields': ('email', 'password', 'user_type')}),
@@ -134,6 +139,51 @@ class UserAdmin(BaseUserAdmin):
 
     search_fields = ('email',)
     ordering = ('email',)
+
+    class SendEmailForm(forms.Form):
+        from_email_choices = (
+            ('no-reply@astraglobal.net', 'no-reply'),
+            ('support@astraglobal.net', 'support'),
+            ('billing@astraglobal.net', 'billing'),
+            ('info@astraglobal.net', 'info'),
+            ('rajesh@astraglobal.net', 'rajesh'),
+            ('team@astraglobal.net', 'team'),
+            ('feedback@astraglobal.net', 'feedback'),
+            ('soham@astraglobal.net', 'soham'),
+        )
+
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+        from_email = forms.ChoiceField(choices=from_email_choices)
+        subject = forms.CharField()
+        content = forms.CharField()
+
+    def send_email(self, request, queryset):
+        form = None
+        if 'apply' in request.POST:
+            form = self.SendEmailForm(request.POST)
+
+            if form.is_valid():
+                from_email = form.cleaned_data['from_email']
+                subject = form.cleaned_data['subject']
+                content = form.cleaned_data['content']
+
+                for user in queryset:
+                    user.send_email(subject=subject, content=content, from_email=from_email)
+                
+                self.message_user("Email successfully sent to {} user{}".format(
+                    len(queryset), 's' if len(queryset) < 2 else ''))
+                return HttpResponseRedirect(request.get_full_path())
+        if not form:
+            form = self.SendEmailForm(initial={'_selected_action': 
+                request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+
+        return render('admin/send_email.html', 
+            {'users': queryset, 'email_form': form})
+                
+    def send_validation_email(self, request, queryset):
+        for user in queryset:
+            user.validate_email()
+        self.message_user(request, "Email verification emails successfully sent.")
 
     def name(self, obj):
         return "%s %s" % (obj.first_name or "", obj.last_name or "")
@@ -199,12 +249,22 @@ class FileAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'name', 'user', 'datafile', 'filetype')
     fields = (('name', 'verified'), 'datafile', 'user', 'created')
 
+class EmailAdmin(admin.ModelAdmin):
+    search_fields = ('name',)
+
+    list_display = ('name', 'from_email', 'times_sent')
+    list_filter = ('from_email',)
+
+    readonly_fields = ('times_sent',)
+    fields = ('name', 'from_email', 'reply_to', 'subject', 'header', 'content', 'footer', 
+        'attachments', 'times_sent')
+
 
 admin.site.register(User,               UserAdmin               )
 admin.site.register(SocialMediaPost,    SocialMediaPostAdmin    )
 admin.site.register(Device                                      )
 admin.site.register(Project,            ProjectAdmin            )
 admin.site.register(File,               FileAdmin               )
-
+admin.site.register(Email,              EmailAdmin               )
 
 

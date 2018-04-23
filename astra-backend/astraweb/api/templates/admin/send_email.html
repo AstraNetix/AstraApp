@@ -1,0 +1,16 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+
+<form action="" method="post">  
+  <p> Send email to selected users </p>
+
+  {{ email_form }}
+
+  <p> Are you sure you want to send this email to: </p>
+  <ul>{{ users|unordered_list }}</ul>
+
+  <input type="hidden" name="action" value="send_email" />
+  <input type="submit" name="submit" value="Send Email"/>
+</form>
+
+{% endblock %}

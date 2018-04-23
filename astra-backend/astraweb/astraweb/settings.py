@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '00hn$g7iz%bv2@$qu)0pta&6*5$9yr(!ka^vi_+92g^@&%j@dn'
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api.apps.ApiConfig',
-    'phonenumber_field',
+    'django_celery_beat',
     'storages',
 ]
 
@@ -147,6 +147,8 @@ AWS_S3_OBJECT_PARAMETERS = {
 
 AWS_STORAGE_BUCKET_NAME = 'astraweb-static'
 AWS_S3_REGION_NAME = 'us-west-1'  
+AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
 
 # Tell django-storages the domain to use to refer to static files.
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
@@ -171,9 +173,9 @@ EMAIL_HOST = 'email-smtp.us-west-2.amazonaws.com'
 
 EMAIL_PORT = 465
 
-EMAIL_HOST_USER = 'AKIAJQXSPKJHOFUVESOQ'
+EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
 
-EMAIL_HOST_PASSWORD = 'Aq2OnNB2qaWtxWaKqtHyzbtrgoVZ76pv8h1AdF9Kkw9R'
+EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
 
 EMAIL_USE_TLS = True
 

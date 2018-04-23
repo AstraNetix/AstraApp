@@ -60,10 +60,11 @@ class PasswordChangeError(Exception):
     Error raised when a user fails to change their password.
     """
 
-    MISSING_FIELDS      = {'general':       ['One or more fields is blank.']                                            }
-    PASSWORD_TOO_SHORT  = {'new_password':  ['New password must be at least 6 characters long.']                        }
-    INVALID_CHARACTERS  = {'new_password':  ['New password can only consist of alphanumeric characters and symbols.']   }
-    INCORRECT_PASSWORD  = {'password':      ['Incorrect password.']                                                     }
+    MISSING_FIELDS      = {'general':               ['One or more fields is blank.']                                            }
+    PASSWORD_TOO_SHORT  = {'new_password':          ['New password must be at least 6 characters long.']                        }
+    INVALID_CHARACTERS  = {'new_password':          ['New password can only consist of alphanumeric characters and symbols.']   }
+    UNMATCHING_PASSWORD = {'confirm_new_password':  ['Passwords do not match']                                                  }
+    INCORRECT_PASSWORD  = {'password':              ['Incorrect password.']                                                     }
 
     def __init__(self, errors):
         super().__init__(next(iter(errors)))
@@ -84,6 +85,10 @@ class PasswordChangeError(Exception):
     @classmethod
     def incorrect_password(cls):
         return cls(cls.INCORRECT_PASSWORD)
+
+    @classmethod
+    def unmatching_passwords(cls):
+        return cls(cls.UNMATCHING_PASSWORD)
 
 class TokenICOKYCError(Exception):
     """

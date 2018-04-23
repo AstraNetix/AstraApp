@@ -1,1 +1,1 @@
-from .user import UserBasicViewSet, UserICOKYCViewSet, UserBalanceViewSet
+from .user import UserRegisterViewSet, UserICOKYCViewSet, UserBalanceViewSet

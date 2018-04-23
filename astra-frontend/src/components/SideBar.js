@@ -1,7 +1,5 @@
 import React from 'react'
 import Image from './core/Image'
-import user from '../images/User.png'
-import Button from './core/Button'
 
 import CurrentUserStore from '../stores/CurrentUserStore'
 
