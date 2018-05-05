@@ -1,0 +1,22 @@
+{% extends "mail_templated/base.tpl" %}
+
+{% block subject %}
+{{subject}}
+{% endblock %}
+
+{% block html %}
+<head>
+    <title>Astra API Homepage</title>
+</head>
+<body>
+    <img src="{% static 'images/Astra-Logo@3x.png' %}">
+    <div> {{content}} </div>
+
+    <div> 
+        Astra International 
+        <a href=""> Contact us </a>
+        <a href=""> Help and Support </a>
+    </div>
+</body>
+{% endblock %}
+

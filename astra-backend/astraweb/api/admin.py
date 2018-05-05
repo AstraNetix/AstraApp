@@ -8,10 +8,12 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.admin import FieldListFilter
 
 from django.utils.html import format_html
+from django.urls import reverse, path
 from django.utils.translation import ugettext_lazy as _
 
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.template.response import TemplateResponse
 
 from django.contrib.auth import get_user_model
 
@@ -20,8 +22,27 @@ from api.models.project import Project
 from api.models.social_media_post import SocialMediaPost
 from api.models.file import File
 from api.models.email import Email
+from api.exceptions.email_exceptions import ParsingError
 
 User = get_user_model()
+
+class SendEmailForm(forms.Form):
+    def __init__(self, *args, **kwargs):
+        self.email = kwargs.pop('email', None)
+        super().__init__(args, kwargs)
+        self.fields['from_email'].widget = forms.ChoiceField(
+            choices=Email.FROM_CHOICES, 
+            default=self.email.from_email
+            )
+
+    _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+    from_email = forms.ChoiceField(choices=Email.FROM_CHOICES)
+    users = forms.ModelMultipleChoiceField(queryset=User.objects.all())
+
+    def send_email(self):
+        self.email.from_email = self.cleaned_data['from_email']
+        self.email.send(to=self.cleaned_data['users'])
+        self.email.save()
 
 class UserCreationForm(BaseUserCreationForm):
     """
@@ -139,46 +160,6 @@ class UserAdmin(BaseUserAdmin):
 
     search_fields = ('email',)
     ordering = ('email',)
-
-    class SendEmailForm(forms.Form):
-        from_email_choices = (
-            ('no-reply@astraglobal.net', 'no-reply'),
-            ('support@astraglobal.net', 'support'),
-            ('billing@astraglobal.net', 'billing'),
-            ('info@astraglobal.net', 'info'),
-            ('rajesh@astraglobal.net', 'rajesh'),
-            ('team@astraglobal.net', 'team'),
-            ('feedback@astraglobal.net', 'feedback'),
-            ('soham@astraglobal.net', 'soham'),
-        )
-
-        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
-        from_email = forms.ChoiceField(choices=from_email_choices)
-        subject = forms.CharField()
-        content = forms.CharField()
-
-    def send_email(self, request, queryset):
-        form = None
-        if 'apply' in request.POST:
-            form = self.SendEmailForm(request.POST)
-
-            if form.is_valid():
-                from_email = form.cleaned_data['from_email']
-                subject = form.cleaned_data['subject']
-                content = form.cleaned_data['content']
-
-                for user in queryset:
-                    user.send_email(subject=subject, content=content, from_email=from_email)
-                
-                self.message_user("Email successfully sent to {} user{}".format(
-                    len(queryset), 's' if len(queryset) < 2 else ''))
-                return HttpResponseRedirect(request.get_full_path())
-        if not form:
-            form = self.SendEmailForm(initial={'_selected_action': 
-                request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
-
-        return render('admin/send_email.html', 
-            {'users': queryset, 'email_form': form})
                 
     def send_validation_email(self, request, queryset):
         for user in queryset:
@@ -252,12 +233,61 @@ class FileAdmin(admin.ModelAdmin):
 class EmailAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
-    list_display = ('name', 'from_email', 'times_sent')
+    list_display = ('name', 'from_email', 'times_sent', 'email_actions')
     list_filter = ('from_email',)
 
-    readonly_fields = ('times_sent',)
-    fields = ('name', 'from_email', 'reply_to', 'subject', 'header', 'content', 'footer', 
-        'attachments', 'times_sent')
+    readonly_fields = ('times_sent', 'email_actions')
+    fields = ('name', 'from_email', 'reply_to', 'subject','content', 'attachments', 'times_sent')
+
+    def get_urls(self):
+        custom_urls = [
+            path(
+                r'^(?P<account_id>.+)/send/$',
+                self.admin_site.admin_view(self.send_email),
+                name='Send Email'
+            ),
+        ]
+        return super().get_urls() + custom_urls
+
+    def email_actions(self, obj):
+        return format_html(
+            '<a class="button" href="{}">Send</a>',
+            reverse('admin:email-send', args=[obj.pk]),
+        )
+    
+    email_actions.short_description = 'Actions'
+    email_actions.allow_tags = True
+
+    def send_email(self, request, email_id):
+        email = self.get_object(request, email_id)
+        if request.method != 'POST':
+            form = SendEmailForm(email=email)
+        else:
+            form = SendEmailForm(request.POST, email=email)
+            if form.is_valid():
+                try:
+                    form.send_email()
+                except ParsingError as pe:
+                    pass
+                else:
+                    self.message_user("Email successfully sent to {} user{}".format(
+                        len(users), 's' if len(users) < 2 else ''))
+                    url = reverse(
+                        'admin:email_email_change',
+                        args=[email.pk],
+                        current_app=self.admin_site.name,
+                    )
+                    return HttpResponseRedirect(url)
+
+        context = self.admin_site.each_context(request)
+        context['email_form'] = form
+        context['subject'] = email.subject
+        context['content'] = email.content
+        return TemplateResponse(
+            request, 
+            'admin/send_email.html',
+            context
+        )
 
 
 admin.site.register(User,               UserAdmin               )

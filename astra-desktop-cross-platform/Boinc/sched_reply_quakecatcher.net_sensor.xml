@@ -349,6 +349,9 @@
 <host_venue></host_venue>
 <host_create_time>1520570309</host_create_time>
 <team_name></team_name>
+<result_abort_if_not_started>
+    <name>qcnuscee_085529_0</name>
+</result_abort_if_not_started>
 <non_cpu_intensive/>
 <no_rsc_apps>intel_gpu</no_rsc_apps>
 <gui_urls>

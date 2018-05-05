@@ -1,10 +1,8 @@
-'use strict'
-
-import ActionConstants from 'constants/ActionConstants'
-import Dispatcher from 'dispatcher/Dispatcher'
+import ActionConstants from '../constants/ActionConstants'
+import Dispatcher from '../dispatcher'
 
 class CurrentDeviceActions {
-  action(action, args) { 
+  static action = (action, args) => { 
     action.method(Object.keys(args).map((key) => args[key]))
     .then((response) => {
       Dispatcher.dispatch({
@@ -15,45 +13,49 @@ class CurrentDeviceActions {
     });
   }
 
-  changeUsageTimes(deviceID, days, startTime, endTime) {
-    action(ActionConstants.CHANGE_USAGE_TIMES, {deviceID: deviceID, days: days, 
+  static changeDevice(uid) {
+    CurrentDeviceActions.action(ActionConstants.DEVICE_CHANGE, {uid: uid});
+  }
+
+  static changeUsageTimes = (uid, days, startTime, endTime) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_USAGE_TIMES, {uid: uid, days: days, 
       startTime: startTime, endTime: endTime});
   }
 
-  changeCPUPercent(deviceID, percent) {
-    action(ActionConstants.CHANGE_CPU_PERCENT, {deviceID: deviceID, percent: percent});
+  static changeCPUPercent = (uid, percent) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_CPU_PERCENT, {uid: uid, percent: percent});
   }
 
-  changeCPUCores(deviceID, percent) {
-    action(ActionConstants.CHANGE_CPU_CORES, {deviceID: deviceID, numCores: numCores});
+  static changeCPUCores = (uid, numCores) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_CPU_CORES, {uid: uid, numCores: numCores});
   }
 
-  changeRAMPercent(deviceID, percent) {
-    action(ActionConstants.CHANGE_RAM_PERCENT, {deviceID: deviceID, percent: percent});
+  static changeRAMPercent = (uid, percent) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_RAM_PERCENT, {uid: uid, percent: percent});
   }
 
-  changeDiskPercent(deviceID, percent) {
-    action(ActionConstants.CHANGE_DISK_PERCENT, {deviceID: deviceID, percent: percent});
+  static changeDiskPercent = (uid, percent) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_DISK_PERCENT, {uid: uid, percent: percent});
   }
 
-  changeNetworkDown(deviceID, percent) {
-    action(ActionConstants.CHANGE_NETWORK_DOWN, {deviceID: deviceID, kbps: kbps});
+  static changeNetworkDown = (uid, kbps) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_NETWORK_DOWN, {uid: uid, kbps: kbps});
   }
 
-  changeNetworkUp(deviceID, percent) {
-    action(ActionConstants.CHANGE_NETWORK_UP, {deviceID: deviceID, kbps: kbps});
+  static changeNetworkUp = (uid, kbps) => {
+    CurrentDeviceActions.action(ActionConstants.CHANGE_NETWORK_UP, {uid: uid, kbps: kbps});
   }
 
-  changeUseMemoryOnly(deviceID, opt) {
-    action(ActionConstants.USE_MEMORY_ONLY, {deviceID: deviceID, opt: opt});
+  static changeUseMemoryOnly = (uid, opt) => {
+    CurrentDeviceActions.action(ActionConstants.USE_MEMORY_ONLY, {uid: uid, opt: opt});
   }
   
-  changeRunIfActive(deviceID, opt) {
-    action(ActionConstants.RUN_IF_ACTIVE, {deviceID: deviceID, opt: opt});
+  static changeRunIfActive = (uid, opt) => {
+    CurrentDeviceActions.action(ActionConstants.RUN_IF_ACTIVE, {uid: uid, opt: opt});
   }
 
-  changeRunOnBatteries(deviceID, opt) {
-    action(ActionConstants.RUN_ON_BATTERIES, {deviceID: deviceID, opt: opt});
+  static changeRunOnBatteries = (uid, opt) => {
+    CurrentDeviceActions.action(ActionConstants.RUN_ON_BATTERIES, {uid: uid, opt: opt});
   }
 }
 

@@ -24,6 +24,16 @@ class Device(models.Model):
         app_label       =   "api"
         db_table        =   "api_device"
 
+    DAY_MAP             =   {
+                                0 : 'mon',
+                                1 : 'tues',
+                                2 : 'wed',
+                                3 : 'thurs',
+                                4 : 'fri',
+                                5 : 'sat',
+                                6 : 'sun',
+                            }
+
     def hash_code(self):
         code = hashlib.sha1()
         code.update(self.name.encode('utf-8'))
@@ -49,7 +59,7 @@ class Device(models.Model):
 
     uid                 =   models.CharField(
                             validators=[RegexValidator(
-                                regex='^\w{40}$', 
+                                regex=r'^\w{40}$', 
                                 message='UID length (from SHA1) must be 40 characters', 
                                 code='nomatch'
                             )], max_length=40, default="", blank=True)
@@ -130,7 +140,6 @@ class Device(models.Model):
                 )
             device.uid = device.hash_code()
             device.save()
-            print("creating device...")
             return device
         except User.DoesNotExist:
             # Handle UserDoesNotExist 

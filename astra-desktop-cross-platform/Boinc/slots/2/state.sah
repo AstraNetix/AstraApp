@@ -1,14 +1,14 @@
-<ncfft>72258</ncfft>
-<cr>3.634453e+01</cr>
-<fl>512</fl>
-<prog>0.38059159</prog>
-<potfreq>158</potfreq>
+<ncfft>81901</ncfft>
+<cr>-6.293592e+01</cr>
+<fl>8192</fl>
+<prog>0.63763937</prog>
+<potfreq>1</potfreq>
 <potactivity>2</potactivity>
-<signal_count>12</signal_count>
-<flops>16009171207332.265625</flops>
+<signal_count>14</signal_count>
+<flops>20155318376476.675781</flops>
 <spike_count>10</spike_count>
 <autocorr_count>1</autocorr_count>
-<pulse_count>1</pulse_count>
+<pulse_count>3</pulse_count>
 <gaussian_count>0</gaussian_count>
 <triplet_count>0</triplet_count>
 <best_spike>
@@ -83,37 +83,32 @@
 </best_gaussian>
 <best_pulse>
 <pulse>
-  <peak_power>1.7086534500122</peak_power>
-  <mean_power>0.01557963527739</mean_power>
-  <time>2458137.810036</time>
-  <ra>9.1946600425419</ra>
+  <peak_power>1.9339685440063</peak_power>
+  <mean_power>0.2685894370079</mean_power>
+  <time>2458137.8100379</time>
+  <ra>9.1946605220011</ra>
   <decl>39.1991</decl>
   <q_pix>0</q_pix>
-  <freq>6618393614.3882</freq>
-  <detection_freq>6618394202.19</detection_freq>
+  <freq>6618392597.3839</freq>
+  <detection_freq>6618394404.1397</detection_freq>
   <barycentric_freq>0</barycentric_freq>
-  <fft_len>256</fft_len>
-  <chirp_rate>12.827332274981</chirp_rate>
+  <fft_len>4096</fft_len>
+  <chirp_rate>39.284181071705</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
-  <period>2.7505314350128</period>
-  <snr>9.665602684021</snr>
-  <thresh>9.5371923446655</thresh>
+  <period>2.9304203987122</period>
+  <snr>9.4744729995728</snr>
+  <thresh>9.1815242767334</thresh>
   <score>0</score>
-  <len_prof>122</len_prof>
-  <pot length=395 encoding="x-csv">
-    40,84,64,39,43,46,78,9,35,64,69,49,57,33,81,81,35,43,24,45,30,43,32,63,
-    61,68,45,21,36,40,88,75,17,58,89,38,44,255,65,42,8,27,29,32,38,51,60,73,
-    17,43,46,36,43,71,73,75,42,58,49,58,69,80,40,75,23,6,67,50,35,46,28,46,
-    51,48,80,62,52,38,110,57,30,30,48,45,45,70,29,65,64,33,71,88,57,31,15,
-    31,70,82,46,22,62,44,0,71,56,6,46,37,80,56,52,16,54,97,85,23,40,24,53,
-    87,38,71
+  <len_prof>8</len_prof>
+  <pot length=30 encoding="x-csv">
+    254,21,28,9,60,64,51,0
   </pot>
 </pulse>
-<bp_score>1.013464</bp_score>
-<bp_freq_bin>15</bp_freq_bin>
-<bp_time_bin>2048</bp_time_bin>
+<bp_score>1.031906</bp_score>
+<bp_freq_bin>3972</bp_freq_bin>
+<bp_time_bin>128</bp_time_bin>
 </best_pulse>
 <baseline_smooth>v_BaseLineSmooth</baseline_smooth>
 <get_power_spectrum>v_vGetPowerSpectrumUnrolled</get_power_spectrum>

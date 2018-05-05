@@ -29,7 +29,7 @@
 
 .register {
     background-color: rgb(241, 241, 241);
-    color:  rgb(77, 77, 77);
+    color:  #646464;
     margin-left: -360px;
     z-index: 2;
 }

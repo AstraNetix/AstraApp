@@ -1,11 +1,11 @@
-<ncfft>58958</ncfft>
-<cr>2.528404e+01</cr>
-<fl>65536</fl>
-<prog>0.26253554</prog>
+<ncfft>60503</ncfft>
+<cr>2.594533e+01</cr>
+<fl>8192</fl>
+<prog>0.27655498</prog>
 <potfreq>-1</potfreq>
 <potactivity>0</potactivity>
 <signal_count>5</signal_count>
-<flops>7918893243841.481445</flops>
+<flops>8125934840601.481445</flops>
 <spike_count>2</spike_count>
 <autocorr_count>0</autocorr_count>
 <pulse_count>3</pulse_count>

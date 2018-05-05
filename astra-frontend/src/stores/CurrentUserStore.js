@@ -1,8 +1,9 @@
 import ActionConstants from '../constants/ActionConstants'
+import DeviceConstants from '../constants/DeviceConstants'
 import Dispatcher from '../dispatcher'
 import ServerAPI from '../ServerAPI'
 import {Store} from 'flux/utils'
-import image from '../images/Phone.png'
+import userProfile from '../images/User.png'
 import cookie from "react-cookie";
 
 class CurrentUserStore extends Store {
@@ -10,15 +11,19 @@ class CurrentUserStore extends Store {
     super(dispatcher);
     this.email = null;
     this.data = {
-      firstName: '',
-      lastName: '',
-      profile: null,
+      firstName: 'Soham',
+      lastName: 'Kale',
+      profile: userProfile,
       level: 1,
     };
     this.balance = {
-      stars: 0,
+      stars: '$0.00',
     };
-    this.devices = [];
+    this.devices = {
+      1: {name: 'A device', platform: DeviceConstants.WINDOWS},
+      2: {name: 'Another device', platform: DeviceConstants.MACOS},
+      3: {name: 'A third device', platform: DeviceConstants.LINUX},
+    }; // {uid: {name, platform}}
   }
 
   getErrors() { return this.errors; }
@@ -26,12 +31,12 @@ class CurrentUserStore extends Store {
   getUserEmail() {  return this.email; }
 
   getDevices() { return this.devices; }
-
-  getName() { return (this.data.firstName + this.data.lastName); }
+  
+  getName() { return (this.data.firstName + ' ' + this.data.lastName); }
 
   getSideBarState() {
     return ({
-      name: this.data.firstName + this.data.lastName, 
+      name: this.data.firstName + ' ' + this.data.lastName, 
       level: this.data.level, 
       profile: this.data.profile,
       stars: this.balance.stars,
@@ -40,7 +45,6 @@ class CurrentUserStore extends Store {
 
   __onDispatch(action) {
     switch(action.type) {
-
       case ActionConstants.LOGIN:
         this.email = action.args.email;
         this.data = {

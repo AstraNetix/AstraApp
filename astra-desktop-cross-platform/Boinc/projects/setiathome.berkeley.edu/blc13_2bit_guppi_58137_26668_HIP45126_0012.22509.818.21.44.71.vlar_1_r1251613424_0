@@ -488,3 +488,20 @@
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
 </spike>
+<triplet>
+  <peak_power>13.028491973877</peak_power>
+  <mean_power>0.032645385712385</mean_power>
+  <time>2458137.8106541</time>
+  <ra>9.1946622970041</ra>
+  <decl>39.1991</decl>
+  <q_pix>0</q_pix>
+  <freq>6624833575.8812</freq>
+  <detection_freq>6624832301.2501</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>512</fft_len>
+  <chirp_rate>-48.95227823562</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>8.3438692092896</period>
+</triplet>

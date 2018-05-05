@@ -1,5 +1,3 @@
-'use strict'
-
 import React from 'react'
 import Button from "./core/Button"
 import CurrentUserActions from "../actions/CurrentUserActions"
@@ -64,7 +62,7 @@ class LoginForm extends React.Component {
               className='input-dark true-input' type="text" name='email' value={this.state.email} 
               onChange={this._handleChange} placeholder='Email' />
           </div>
-          <div>
+          <div style={{marginBottom: '92px'}}>
             <input 
               className='input-dark true-input' type="password" name='password' value={this.state.password} 
               onChange={this._handleChange} placeholder='Password' />

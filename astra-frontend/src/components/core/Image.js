@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import '../../css/Image.css'
 
 export default class Image extends Component {  
   render() {
-    let {mode, src, height, width, style, ...props} = this.props;
+    let {mode, src, height, width, shape, style, ...props} = this.props;
     let modes = {
       'fill': 'cover',
       'fit': 'contain'
@@ -12,12 +13,14 @@ export default class Image extends Component {
     let defaults = {
       height: height || 100,
       width: width || 100,
-      backgroundColor: 'white'
+      shape: shape || 'rectangular',
+      backgroundColor: 'none',
+      borderColor: 'none',
     };
 
     let important = {
       backgroundImage: `url("${src}")`,
-      backgroundSize: size,
+      backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat'
     };

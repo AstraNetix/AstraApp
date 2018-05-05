@@ -15,9 +15,9 @@
 <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</result_name>
 <shm_key>-1</shm_key>
 <slot>3</slot>
-<client_pid>16048</client_pid>
-<wu_cpu_time>3246.010000</wu_cpu_time>
-<starting_elapsed_time>4161.593825</starting_elapsed_time>
+<client_pid>45624</client_pid>
+<wu_cpu_time>3330.798000</wu_cpu_time>
+<starting_elapsed_time>4227.512467</starting_elapsed_time>
 <using_sandbox>0</using_sandbox>
 <vm_extensions_disabled>0</vm_extensions_disabled>
 <user_total_credit>0.000000</user_total_credit>
@@ -48,16 +48,16 @@
     <p_vendor>GenuineIntel</p_vendor>
     <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
     <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
-    <p_fpops>4027099031.368307</p_fpops>
-    <p_iops>11957441553.355947</p_iops>
+    <p_fpops>4023876675.639733</p_fpops>
+    <p_iops>11891166871.399490</p_iops>
     <p_membw>1000000000.000000</p_membw>
-    <p_calculated>1520382024.722423</p_calculated>
+    <p_calculated>1525413234.500580</p_calculated>
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>12476309504.000000</m_swap>
+    <m_swap>15938027520.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>7497572352.000000</d_free>
+    <d_free>5390409728.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -138,12 +138,12 @@
     <no_autodetect>0</no_autodetect>
 </proxy_info>
 <global_preferences>
-   <source_project></source_project>
-   <mod_time>0.000000</mod_time>
+   <source_project>http://setiathome.berkeley.edu/</source_project>
+   <mod_time>1519264187.000000</mod_time>
    <battery_charge_min_pct>90.000000</battery_charge_min_pct>
    <battery_max_temperature>40.000000</battery_max_temperature>
    <run_on_batteries>0</run_on_batteries>
-   <run_if_user_active>0</run_if_user_active>
+   <run_if_user_active>1</run_if_user_active>
    <run_gpu_if_user_active>0</run_gpu_if_user_active>
    <suspend_if_no_recent_input>0.000000</suspend_if_no_recent_input>
    <suspend_cpu_usage>25.000000</suspend_cpu_usage>
@@ -156,25 +156,59 @@
    <hangup_if_dialed>0</hangup_if_dialed>
    <dont_verify_images>0</dont_verify_images>
    <work_buf_min_days>0.100000</work_buf_min_days>
-   <work_buf_additional_days>0.500000</work_buf_additional_days>
-   <max_ncpus_pct>0.000000</max_ncpus_pct>
+   <work_buf_additional_days>0.000000</work_buf_additional_days>
+   <max_ncpus_pct>100.000000</max_ncpus_pct>
    <cpu_scheduling_period_minutes>60.000000</cpu_scheduling_period_minutes>
    <disk_interval>60.000000</disk_interval>
    <disk_max_used_gb>100.000000</disk_max_used_gb>
-   <disk_max_used_pct>50.000000</disk_max_used_pct>
+   <disk_max_used_pct>100.000000</disk_max_used_pct>
    <disk_min_free_gb>0.100000</disk_min_free_gb>
    <vm_max_used_pct>75.000000</vm_max_used_pct>
-   <ram_max_used_busy_pct>50.000000</ram_max_used_busy_pct>
+   <ram_max_used_busy_pct>90.000000</ram_max_used_busy_pct>
    <ram_max_used_idle_pct>90.000000</ram_max_used_idle_pct>
    <idle_time_to_run>3.000000</idle_time_to_run>
    <max_bytes_sec_up>0.000000</max_bytes_sec_up>
    <max_bytes_sec_down>0.000000</max_bytes_sec_down>
-   <cpu_usage_limit>10.000000</cpu_usage_limit>
+   <cpu_usage_limit>100.000000</cpu_usage_limit>
    <daily_xfer_limit_mb>0.000000</daily_xfer_limit_mb>
    <daily_xfer_period_days>0</daily_xfer_period_days>
    <override_file_present>1</override_file_present>
-   <network_wifi_only>0</network_wifi_only>
-   <max_cpus>2</max_cpus>
+   <network_wifi_only>1</network_wifi_only>
+   <day_prefs>
+      <day_of_week>0</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>1</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>2</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>3</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>4</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>5</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>6</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
 </global_preferences>
 <app_file>setiathome_8.03_x86_64-apple-darwin</app_file>
 <app_file>setigraphics_8.03_x86_64-apple-darwin</app_file>

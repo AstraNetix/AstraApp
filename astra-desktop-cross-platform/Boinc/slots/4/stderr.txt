@@ -170,3 +170,30 @@ Pulse: peak=2.71537, time=45.84, period=5.097, d_freq=6624295342.54, score=1.01,
 Pulse: peak=6.517478, time=45.9, period=17.49, d_freq=6624294774.19, score=1.03, chirp=26.013, fft_len=2k
 GPU device sync requested...  ...GPU device synched
 Termination request detected or computations are finished. GPU device synched,  exiting...
+OpenCL platform detected: Apple
+Number of OpenCL devices found : 1 
+BOINC assigns slot on device #0.
+Info: BOINC provided OpenCL device ID used
+
+Build features: SETI8 Non-graphics OpenCL USE_OPENCL_INTEL OCL_ZERO_COPY OCL_CHIRP3 ASYNC_SPIKE FFTW SSSE3 64bit 
+ System: Darwin  x86_64  Kernel: 17.0.0
+CPU : Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz 
+ GenuineIntel x86, Family 6 Model 78 Stepping 3
+ Features : FPU TSC PAE APIC MTRR MMX SSE  SSE2 HT  SSE3 SSSE3 SSE4.1 SSE4.2 AVX1.0  
+
+OpenCL-kernels filename : MultiBeam_Kernels_r3321.cl 
+ar=0.007145  NumCfft=95311  NumGauss=0  NumPulse=25023071104  NumTriplet=37965368480
+Currently allocated 185 MB for GPU buffers
+In v_BaseLineSmooth: NumDataPoints=1048576, BoxCarLength=8192, NumPointsInChunk=32768
+Restarted at 26.25 percent.
+Used GPU device parameters are:
+	Number of compute units: 48
+	Single buffer allocation size: 128MB
+	Total device global memory: 1536MB
+	max WG size: 256
+	local mem type: Real
+	LotOfMem path: no
+period_iterations_num=50
+Pulse: peak=6.517478, time=45.9, period=17.49, d_freq=6624294774.19, score=1.03, chirp=26.013, fft_len=2k
+GPU device sync requested...  ...GPU device synched
+Termination request detected or computations are finished. GPU device synched,  exiting...

@@ -22,6 +22,7 @@ class Main extends React.Component {
             <Redirect to="/devices"/> : <InitialView/> }/>
           <Route path="/welcome" render={() => <Dashboard type='welcome'/>}/>
           <Route path="/devices" render={() => <Dashboard type='devices'/>}/>
+          <Route path="/projects" render={() => <Dashboard type='projects'/>}/>
         </Switch>
       </main>
     );

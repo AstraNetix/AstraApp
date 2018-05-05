@@ -1,5 +1,3 @@
-'use strict'
-
 import ActionConstants from '../constants/ActionConstants'
 import Dispatcher from '../dispatcher'
 import ServerAPI from '../ServerAPI'
@@ -8,16 +6,16 @@ import {Store} from 'flux/utils'
 class CurrentDeviceStore extends Store {
   constructor(dispatcher) {
     super(dispatcher);
-    this.uid = 0;
+    this.uid = 2;
     this.info = {
-      name: '',
-      models: '',
-      processor: '',
-      graphics: '',
-      memory: '',
-      type: '',
+      name: "Soham's Macbook Pro",
+      model: 'Apple Macbook Pro',
+      processor: '2Ghz Intel Core I7',
+      graphics: 'Intel Iris Graphics 570',
+      memory: '8GB 1867 MHz LPDDR3',
+      type: 'laptop',
     };
-    this.projects = {};
+    this.projects = {}; // {url: [name, status]}
     this.preferences= {
       runOnBatteries: false,
       runIfActive: false,
@@ -38,7 +36,7 @@ class CurrentDeviceStore extends Store {
       saturday: {start: 0, end: 24},
       sunday: {start: 0, end: 24},
     };
-    /* Holds data for past 24 hours, 1 point for every 30 min, each point 3 digits in length */
+    /* Holds data for past 24 hours, 1 point for every 15 min, each point 3 digits in length */
     this.fineData = {
       cpu: [], 
       gpu: [], 
@@ -52,36 +50,60 @@ class CurrentDeviceStore extends Store {
       disk: [], 
       network: [], 
     }; 
+    
+    for (var i = 0; i < 96; i++) {
+      this.fineData.cpu.push(Math.floor(0.0002*Math.pow(i, 3) + 50*Math.random()));
+      this.fineData.gpu.push(Math.floor(100*Math.exp(-i)*Math.abs(Math.cos(i/5)) + 10*Math.random()));
+      this.fineData.disk.push(Math.floor(0.04*Math.pow(i - 48, 2) + 20*Math.random()));
+      this.fineData.network.push(Math.floor((0.00000004*Math.pow(i, 4) + 0.03*Math.pow(i, 2) + 0.4*i) + 50*Math.random()));
+    }
   }
 
-  getInfo() { return this.state.info; }
+  getUID() { return this.uid; }
 
-  getProjects() { return this.state.projects; }
+  getInfo() { return this.info; }
 
-  getPreferences() { return this.state.preferences; }
+  getProjects() { return this.projects; }
 
-  getLimits() { return this.state.limits; }
+  getPreferences() { return this.preferences; }
 
-  getTimes() { return this.state.times; }
+  getLimits() { return this.limits; }
 
-  __onDispatch(action) {{ return; }
+  getTimes() { return this.times; }
+  
+  getFineData() { return this.fineData; }
+
+  getCoarseData() { return this.CoarseData; }
+
+  __onDispatch(action) {
+    var storeData;
     switch(action.type) {
-      case ActionConstant.LOGIN:
+      case ActionConstants.LOGIN:
         if (action.response.status !== 200) { break; } 
+        this.uid = action.response.uid;
+        storeData = ServerAPI.getDeviceStore(action.response.uid);
 
-        const deviceInfo = ServerAPI.getDeviceInfo(this.uid);
-        this.info = deviceInfo.data.info;
-        this.preferences = deviceInfo.data.preferences;
-        this.limits = deviceInfo.data.limits;
-        this.times = deviceInfo.data.times;
-
-        this.projects = ServerAPI.getDeviceProjects(this.uid).data;
-
-        const deviceData = ServerAPI.getDeviceData(this.uid);
-        this.fineData = deviceData.data.fineData;
-        this.coarseData = deviceData.data.coarseData;
+        this.info = storeData.info;
+        this.projects = storeData.projects;
+        this.preferences = storeData.preferences;
+        this.limits = storeData.limits;
+        this.times = storeData.times;
+        this.coarseData = storeData.coarseData;
+        this.fineData = storeData.fineData;
         
         break;
+      case ActionConstants.DEVICE_CHANGE:
+        storeData = action.response;
+
+        this.info = storeData.info;
+        this.projects = storeData.projects;
+        this.preferences = storeData.preferences;
+        this.limits = storeData.limits;
+        this.times = storeData.times;
+        this.coarseData = storeData.coarseData;
+        this.fineData = storeData.fineData;
+
+        break
       case ActionConstants.LOGOUT:
         this._currentDevice = {};
         break;  

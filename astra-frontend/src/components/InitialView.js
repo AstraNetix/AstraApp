@@ -1,4 +1,5 @@
 import React from 'react'
+import TopBar from './TopBar'
 import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
 
@@ -9,6 +10,7 @@ class InitialView extends React.Component {
   render() {
     return(
       <div className='initial-view' style={{position: 'relative', left: '50%'}}>
+        <TopBar />
         <RegisterForm />
         <LoginForm />
       </div>

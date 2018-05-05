@@ -1,5 +1,3 @@
-'use strict'
-
 require('whatwg-fetch');
 const Cookie = require('js-cookie');
 
@@ -44,6 +42,10 @@ class ServerAPI {
     return _patch("users/id/get_devices", {'email': emailCookie})
   }
 
+  getDeviceStore(deviceID) {
+    return _patch("devices/id/store_data", {'email': emailCookie, 'device_id': deviceID})
+  }
+
   getDeviceInfo(deviceID) {
     return _patch("devices/id/info", {'email': emailCookie, 'device_id': deviceID})
   }
@@ -69,7 +71,7 @@ class ServerAPI {
   }
 
   changeUsageTimes(deviceID, days, startTime, endTime) {
-    return _patch("devices/usage/change_usage_times", {'email': emailCookie, 'device_id': deviceID,
+    return _patch("devices/usage/config_hours", {'email': emailCookie, 'device_id': deviceID,
     'days': days, 'start_time': startTime, 'end_time': endTime})
   }
 
@@ -79,8 +81,8 @@ class ServerAPI {
   }
 
   changeCPUCores(deviceID, numCores) {
-    return _patch("devices/usage/cpu_percent", {'email': emailCookie, 'device_id': deviceID,
-    'num_cores': numCores})
+    return _patch("devices/usage/max_cpus", {'email': emailCookie, 'device_id': deviceID,
+    'max_cpus': numCores})
   }
 
   changeDiskPercent(deviceID, percent) {
@@ -98,13 +100,18 @@ class ServerAPI {
     'kbps': kbps})
   }
 
+  changeNetworkUp(deviceID, kbps) {
+    return _patch("devices/usage/network_up", {'email': emailCookie, 'device_id': deviceID,
+    'kbps': kbps})
+  }
+
   runOnBatteries(deviceID, value) {
     return _patch("devices/preferences/run_on_batteries", {'email': emailCookie, 'device_id': deviceID,
     'value': value})
   }
 
-  runifInactive(deviceID, value) {
-    return _patch("devices/preferences/run_if_inactive", {'email': emailCookie, 'device_id': deviceID,
+  runIfActive(deviceID, value) {
+    return _patch("devices/preferences/run_if_active", {'email': emailCookie, 'device_id': deviceID,
     'value': value})
   }
 

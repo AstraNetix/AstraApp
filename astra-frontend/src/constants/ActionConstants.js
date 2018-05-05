@@ -1,13 +1,15 @@
 import ServerAPI from '../ServerAPI'
 
 export default {
-  REGISTER:             {method: null,          value: 'REGISTER'           },
+  REGISTER:             {method: null,                          value: 'REGISTER'           },
   BOOTSTRAP:            {method: null,                          value: 'BOOTSTRAP'          },
   LOGIN:                {method: null,                          value: 'LOGIN'              },
   LOGOUT:               {method: ServerAPI.logoutUser,          value: 'LOGOUT'             },
   DELETE_USER:          {method: ServerAPI.deleteUser,          value: 'DELETE_USER'        },
   RESET_PASSWORD:       {method: ServerAPI.resetUserPassword,   value: 'RESET_PASSWORD'     },
   CHANGE_PASSWORD:      {method: ServerAPI.changeUserPassword,  value: 'CHANGE_PASSWORD'    },
+  DEVICE_CHANGE:        {method: ServerAPI.getDeviceStore,      value: 'DEVICE_CHANGE'      },
+  GET_PROJECTS:         {method: ServerAPI.getProjects,        value: 'GET_PROJECTS'       },
   START_PROJECT:        {method: ServerAPI.addProject,          value: 'ADD_PROJECT'        },
   END_PROJECT:          {method: ServerAPI.removeProject,       value: 'REMOVE_PROJECT'     },
   CHANGE_USAGE_TIMES:   {method: ServerAPI.changeUsageTimes,    value: 'CHANGE_USAGE_TIMES' },

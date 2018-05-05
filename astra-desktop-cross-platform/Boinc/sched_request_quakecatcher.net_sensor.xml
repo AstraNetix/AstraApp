@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>a55199ffa54908b596e8d096dc50c5fa</authenticator>
     <hostid>76447</hostid>
-    <rpc_seqno>11</rpc_seqno>
+    <rpc_seqno>13</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -35,12 +35,12 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 </code_sign_key>
 <working_global_preferences>
 <global_preferences>
-   <source_project></source_project>
-   <mod_time>0.000000</mod_time>
+   <source_project>http://setiathome.berkeley.edu/</source_project>
+   <mod_time>1519264187.000000</mod_time>
    <battery_charge_min_pct>90.000000</battery_charge_min_pct>
    <battery_max_temperature>40.000000</battery_max_temperature>
    <run_on_batteries>0</run_on_batteries>
-   <run_if_user_active>0</run_if_user_active>
+   <run_if_user_active>1</run_if_user_active>
    <run_gpu_if_user_active>0</run_gpu_if_user_active>
    <suspend_if_no_recent_input>0.000000</suspend_if_no_recent_input>
    <suspend_cpu_usage>25.000000</suspend_cpu_usage>
@@ -53,71 +53,138 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
    <hangup_if_dialed>0</hangup_if_dialed>
    <dont_verify_images>0</dont_verify_images>
    <work_buf_min_days>0.100000</work_buf_min_days>
-   <work_buf_additional_days>0.500000</work_buf_additional_days>
-   <max_ncpus_pct>0.000000</max_ncpus_pct>
+   <work_buf_additional_days>0.000000</work_buf_additional_days>
+   <max_ncpus_pct>100.000000</max_ncpus_pct>
    <cpu_scheduling_period_minutes>60.000000</cpu_scheduling_period_minutes>
    <disk_interval>60.000000</disk_interval>
    <disk_max_used_gb>100.000000</disk_max_used_gb>
-   <disk_max_used_pct>50.000000</disk_max_used_pct>
+   <disk_max_used_pct>100.000000</disk_max_used_pct>
    <disk_min_free_gb>0.100000</disk_min_free_gb>
    <vm_max_used_pct>75.000000</vm_max_used_pct>
-   <ram_max_used_busy_pct>50.000000</ram_max_used_busy_pct>
+   <ram_max_used_busy_pct>90.000000</ram_max_used_busy_pct>
    <ram_max_used_idle_pct>90.000000</ram_max_used_idle_pct>
    <idle_time_to_run>3.000000</idle_time_to_run>
    <max_bytes_sec_up>0.000000</max_bytes_sec_up>
    <max_bytes_sec_down>0.000000</max_bytes_sec_down>
-   <cpu_usage_limit>10.000000</cpu_usage_limit>
+   <cpu_usage_limit>100.000000</cpu_usage_limit>
    <daily_xfer_limit_mb>0.000000</daily_xfer_limit_mb>
    <daily_xfer_period_days>0</daily_xfer_period_days>
    <override_file_present>1</override_file_present>
-   <network_wifi_only>0</network_wifi_only>
-   <max_cpus>2</max_cpus>
+   <network_wifi_only>1</network_wifi_only>
+   <day_prefs>
+      <day_of_week>0</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>1</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>2</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>3</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>4</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>5</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
+   <day_prefs>
+      <day_of_week>6</day_of_week>
+      <start_hour>0.00</start_hour>
+      <end_hour>24.00</end_hour>
+   </day_prefs>
 </global_preferences>
 </working_global_preferences>
+<global_preferences>
+    <source_project>http://setiathome.berkeley.edu/</source_project>
+    <source_scheduler>http://setiboinc.ssl.berkeley.edu/sah_cgi/cgi</source_scheduler>
+
+<mod_time>1519264187</mod_time>
+<max_ncpus_pct>100</max_ncpus_pct>
+<cpu_usage_limit>100</cpu_usage_limit>
+<run_on_batteries>0</run_on_batteries>
+<run_if_user_active>1</run_if_user_active>
+<run_gpu_if_user_active>0</run_gpu_if_user_active>
+<idle_time_to_run>3</idle_time_to_run>
+<suspend_if_no_recent_input>0</suspend_if_no_recent_input>
+<suspend_cpu_usage>25</suspend_cpu_usage>
+<work_buf_min_days>0.1</work_buf_min_days>
+<work_buf_additional_days>0.5</work_buf_additional_days>
+<cpu_scheduling_period_minutes>60</cpu_scheduling_period_minutes>
+<disk_interval>60</disk_interval>
+<disk_max_used_gb>0</disk_max_used_gb>
+<disk_min_free_gb>1</disk_min_free_gb>
+<disk_max_used_pct>90</disk_max_used_pct>
+<ram_max_used_busy_pct>50</ram_max_used_busy_pct>
+<ram_max_used_idle_pct>90</ram_max_used_idle_pct>
+<leave_apps_in_memory>0</leave_apps_in_memory>
+<vm_max_used_pct>75</vm_max_used_pct>
+<max_bytes_sec_down>0</max_bytes_sec_down>
+<max_bytes_sec_up>0</max_bytes_sec_up>
+<daily_xfer_limit_mb>0</daily_xfer_limit_mb>
+<daily_xfer_period_days>0</daily_xfer_period_days>
+<dont_verify_images>0</dont_verify_images>
+<confirm_before_connecting>0</confirm_before_connecting>
+<hangup_if_dialed>0</hangup_if_dialed>
+</global_preferences>
+<global_prefs_source_email_hash>c5ee1245832291454787fdd3c797f125</global_prefs_source_email_hash>
 <cross_project_id>2303786d311848b39b5c132948794b30</cross_project_id>
 <time_stats>
-    <on_frac>0.102450</on_frac>
+    <on_frac>0.029912</on_frac>
     <connected_frac>-1.000000</connected_frac>
-    <cpu_and_network_available_frac>0.930083</cpu_and_network_available_frac>
-    <active_frac>0.930083</active_frac>
-    <gpu_active_frac>0.924735</gpu_active_frac>
-    <client_start_time>1520591700.997678</client_start_time>
+    <cpu_and_network_available_frac>0.906863</cpu_and_network_available_frac>
+    <active_frac>0.906863</active_frac>
+    <gpu_active_frac>0.900320</gpu_active_frac>
+    <client_start_time>1525412903.250590</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>67923.300344</total_duration>
-    <total_active_duration>5160.864715</total_active_duration>
-    <total_gpu_active_duration>296.598394</total_gpu_active_duration>
-    <now>1520620239.082940</now>
-    <previous_uptime>45.568729</previous_uptime>
-    <session_active_duration>175.114943</session_active_duration>
-    <session_gpu_active_duration>175.114943</session_gpu_active_duration>
+    <total_duration>91812.234403</total_duration>
+    <total_active_duration>7029.211880</total_active_duration>
+    <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
+    <now>1525459622.967325</now>
+    <previous_uptime>7.671155</previous_uptime>
+    <session_active_duration>1159.313103</session_active_duration>
+    <session_gpu_active_duration>0.000000</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>78309.768562</bwup>
-    <avg_up>1558403111.137042</avg_up>
-    <avg_time_up>1520618342.393580</avg_time_up>
-    <bwdown>5026717.210666</bwdown>
-    <avg_down>27884395569.399803</avg_down>
-    <avg_time_down>1520593083.274301</avg_time_down>
+    <bwup>77831.350119</bwup>
+    <avg_up>6092930.731673</avg_up>
+    <avg_time_up>1525456665.059825</avg_time_up>
+    <bwdown>5132751.149538</bwdown>
+    <avg_down>112099288.267147</avg_down>
+    <avg_time_down>1525412941.220513</avg_time_down>
 </net_stats>
 <host_info>
-    <timezone>-28800</timezone>
+    <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr></ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
     <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
     <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
-    <p_fpops>4027099031.368307</p_fpops>
-    <p_iops>11957441553.355947</p_iops>
+    <p_fpops>4023876675.639733</p_fpops>
+    <p_iops>11891166871.399490</p_iops>
     <p_membw>1000000000.000000</p_membw>
-    <p_calculated>1520382024.722423</p_calculated>
+    <p_calculated>1525413234.500580</p_calculated>
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15765041152.000000</m_swap>
+    <m_swap>15938027520.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>8626704384.000000</d_free>
+    <d_free>7719198720.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -151,9 +218,9 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>49010757.000000</d_boinc_used_total>
-        <d_boinc_used_project>19817380.000000</d_boinc_used_project>
-        <d_project_share>3141725018.153333</d_project_share>
+        <d_boinc_used_total>39644665.000000</d_boinc_used_total>
+        <d_boinc_used_project>19859693.000000</d_boinc_used_project>
+        <d_project_share>2805538707.620000</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>
@@ -226,6 +293,22 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
   </msg_from_host>
   <msg_from_host>
       <result_name>qcnuscee_085529_0</result_name>
+      <time>1525459618</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1525459617.895495</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
       <time>1520576205</time>
 <variety>quakelist</variety>
 <vr>8.07</vr>
@@ -234,6 +317,22 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
 <reset>0</reset>
 <dt>0.020000</dt>
 <ctime>1520576204.921386</ctime>
+<tsync>0.000000</tsync>
+<toff>0.000000</toff>
+<wct>0.00</wct>
+<cpt>0.00</cpt>
+
+  </msg_from_host>
+  <msg_from_host>
+      <result_name>qcnuscee_085529_0</result_name>
+      <time>1520596559</time>
+<variety>quakelist</variety>
+<vr>8.07</vr>
+<os>M64</os>
+<sms>0</sms>
+<reset>0</reset>
+<dt>0.020000</dt>
+<ctime>1520596557.936900</ctime>
 <tsync>0.000000</tsync>
 <toff>0.000000</toff>
 <wct>0.00</wct>
@@ -258,14 +357,14 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
   </msg_from_host>
   <msg_from_host>
       <result_name>qcnuscee_085529_0</result_name>
-      <time>1520596559</time>
+      <time>1525456659</time>
 <variety>quakelist</variety>
 <vr>8.07</vr>
 <os>M64</os>
 <sms>0</sms>
 <reset>0</reset>
 <dt>0.020000</dt>
-<ctime>1520596557.936900</ctime>
+<ctime>1525456657.974655</ctime>
 <tsync>0.000000</tsync>
 <toff>0.000000</toff>
 <wct>0.00</wct>

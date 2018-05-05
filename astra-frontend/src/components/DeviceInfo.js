@@ -1,51 +1,57 @@
 import React from 'react'
+import {Container} from 'flux/utils';
 import Image from './core/Image'
+import CurrentDeviceStore from '../stores/CurrentDeviceStore'
+import laptop from '../images/Laptop.png'
+import '../css/DeviceView.css'
 
 const images = {
-  laptop : 1, /* laptopImage */
+  laptop : laptop,
   desktop : 2, /*desktopImage */
   mobile : 3, /* mobileImage */
 }  
 
 class DeviceInfo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name : props.name, 
-      model : props.model,
-      processor: props.processor,
-      graphics : props.graphics,
-      memory : props.memory,
-      type : images[props.type],   
-    };
+  static getStores() {
+    return [CurrentDeviceStore];
+  }
+
+  static calculateState(prevState) {
+    return CurrentDeviceStore.getInfo();
   }
 
   render() {
     return(
       <div className='device-info'>
-        <Image src={this.state.type}/>
-        <div className='device-title'> {this.state.name} </div>
-        <div className='device-data'>
-          <span>
-            <div style='fontWeight:bold;'> Model </div> 
-            {this.state.model}
-          </span>
-          <span>
-            <div style='fontWeight:bold;'> Processor </div> 
-            {this.state.processor}
-          </span>
-          <span>
-            <div style='fontWeight:bold;'> Graphics </div> 
-            {this.state.graphics}
-          </span>
-          <span>
-            <div style='fontWeight:bold;'> Memory </div> 
-            {this.state.memory}
-          </span>
+        <div style={{padding: '1em 0em', marginRight: '1.5em'}}>
+          <Image  src={images[this.state.type]} width={200} height={116}/>
+        </div>
+        <div>
+          <div style={{fontSize: 'x-large', marginBottom: '0.5em'}}> {this.state.name} </div>
+          <table>
+            <trbody>
+            <tr>
+              <td style={{fontWeight: '400'}}> Model </td>
+              <td>{this.state.model}</td>
+            </tr>
+            <tr>
+              <td style={{fontWeight: '400'}}> Processor </td>
+              <td>{this.state.processor}</td>
+            </tr>
+            <tr>
+              <td style={{fontWeight: '400'}}> Graphics </td>
+              <td>{this.state.graphics}</td>
+            </tr>
+            <tr>
+              <td style={{fontWeight: '400'}}> Memory </td>  
+              <td>{this.state.memory}</td>
+            </tr>
+            </trbody>
+          </table>
         </div>
       </div>
     );
   }
 }
 
-export default DeviceInfo;
+export default Container.create(DeviceInfo);

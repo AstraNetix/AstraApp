@@ -560,3 +560,20 @@
   </pot>
 </pulse>
 
+<triplet>
+  <peak_power>11.368852615356</peak_power>
+  <mean_power>0.12139292806387</mean_power>
+  <time>2458137.8140576</time>
+  <ra>9.3140502737386</ra>
+  <decl>36.8016</decl>
+  <q_pix>0</q_pix>
+  <freq>6332939229.9056</freq>
+  <detection_freq>6332937612.6903</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>2048</fft_len>
+  <chirp_rate>-48.585456641768</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>22.817014694214</period>
+</triplet>

@@ -1,10 +1,10 @@
 <active_task>
     <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
     <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</result_name>
-    <checkpoint_cpu_time>3336.175000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>4225.392277</checkpoint_elapsed_time>
-    <fraction_done>0.364523</fraction_done>
+    <checkpoint_cpu_time>4255.597000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>5469.463982</checkpoint_elapsed_time>
+    <fraction_done>0.644843</fraction_done>
     <peak_working_set_size>108961792</peak_working_set_size>
     <peak_swap_size>4557361152</peak_swap_size>
-    <peak_disk_usage>312027</peak_disk_usage>
+    <peak_disk_usage>315947</peak_disk_usage>
 </active_task>

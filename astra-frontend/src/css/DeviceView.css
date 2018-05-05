@@ -1,0 +1,58 @@
+th, td {
+    padding: 0.3em 0.5em 0.3em 0em;
+}
+
+.device-view {
+    font-size: medium;
+    position: absolute;
+    left: 9em;
+    right: 0px;
+    padding-left: 3em;
+    margin: 5em auto 0em auto;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.device-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-right: 4em;
+    min-width: 0px; 
+}   
+
+
+.project-mini {
+    font-size: small;
+    width: 17em;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.15);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    padding: 0.5em 0.8em;
+    margin: 0.3em 0.2em;
+}
+
+.usage-graph {
+    z-index: -1;
+    color: #646464;
+    margin: 3em 2em 0em 0em;
+    width: 50%;
+    max-width: 50em;
+    min-width: 32em;
+    font-size: small;
+    background: rgb(243, 243, 243);
+    border-radius: 5px;
+    padding: 1em 1em 0em 0em;
+    box-shadow: 0px 3px 20px 0px rgba(31, 31, 31, 0.15);
+}
+
+.usage-console {
+    color: rgb(243, 243, 243);
+    background: rgba(48, 48, 48, 0.5);
+    margin-top: 2.5em;
+    width: 30%;
+    min-width: 5em;
+    padding: 1em 1em;
+    border-radius: 5px;
+}

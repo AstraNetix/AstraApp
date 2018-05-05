@@ -1,18 +1,17 @@
-.top-bar {
-    color: rgb(77, 77, 77);
-    margin-left: 320px;
+.side-bar {
+    position: fixed;
+    height: 100%;
+    top: 5em;
+    padding: 0em 1em 4em 2em;
+    overflow-x: hidden;
+    line-height: 20px;
+    font-size: medium;
+    float:left;
+    z-index: 0;
 }
 
-.top-container {
-    border-radius: 12px;
-    background: #fff;
-    margin: 0 auto;
-    display: inline-block;
+.navigation {
+    margin-top: 3em;
+    line-height: 2.5em;
 }
-
-.top-text {
-    margin: 0px 20px 20px 0px;
-    display: inline;
-    font-size: 20px;
-}
-
+  

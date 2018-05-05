@@ -117,7 +117,7 @@ public class PubNubClient extends SubscribeCallback {
                 BoincCommands.setRunIfActive(message.get("opt").getAsString().equals("True"));
                 break;
             case "config_hours":
-                BoincCommands.setConfigHours(message.get("start").getAsInt(), message.get("end").getAsInt());
+                BoincCommands.setConfigHours(message.get("start-hour").getAsInt(), message.get("end-hour").getAsInt());
                 break;
             case "max-cpus":
                 BoincCommands.setMaxCPUs(message.get("number").getAsInt());

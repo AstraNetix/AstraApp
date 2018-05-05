@@ -9,8 +9,15 @@ class DeviceIDSerializer(serializers.ModelSerializer):
 
     def exists(self):
         self.is_valid()
-        return ('id' in self.data) and (Device.objects.filter(
-            uid=self.data['id']).exists())
+        if (('id' in self.data) and 
+            (Device.objects.filter(uid=self.data['id']).exists()) and 
+            ('email' in self.data)):
+            user = User.objects.filter(email=self.data['email'])
+            if user == Device.objects.get(uid=self.data['id']).user: 
+                return True
+            raise DeviceIDError.ownership_error()
+        else:
+            raise DeviceIDError.does_not_exist()
 
     class Meta:
         model = Device
@@ -37,16 +44,6 @@ class DeviceCreateSerializer(serializers.ModelSerializer):
             )
 
 class DeviceUsageSerializer(DeviceIDSerializer):
-    def exists(self):
-        exist = super().exists() and ('email' in self.data) 
-        if exist:
-            user = User.objects.filter(email=self.data['email'])
-            if user == Device.objects.get(uid=self.data['id']).user: 
-                return True
-            raise DeviceIDError.ownership_error()
-        else:
-            raise DeviceIDError.does_not_exist()
-
     class Meta: 
         model = Device
         fields = (
@@ -54,8 +51,6 @@ class DeviceUsageSerializer(DeviceIDSerializer):
             'uid',
             'run_on_batteries',
             'run_if_active',
-            'start_hour',
-            'end_hour',
             'max_CPUs',
             'disk_max_percent',
             'ram_max_percent',

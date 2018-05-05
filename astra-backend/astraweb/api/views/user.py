@@ -29,6 +29,9 @@ from rest_framework.decorators import detail_route, list_route
 User = get_user_model()
 
 class UserIDViewSet(viewsets.ModelViewSet):
+    """
+    Views that only require a user's identifying email.
+    """
     serializer_class = UserIdentificationSerializer
 
     queryset = User.objects.all()
@@ -215,6 +218,9 @@ class UserIDViewSet(viewsets.ModelViewSet):
 
 
 class UserRegisterViewSet(viewsets.ModelViewSet):
+    """
+    View to register a user for the first time.
+    """
     serializer_class = UserRegisterSerializer
 
     queryset = User.objects.all()
@@ -236,6 +242,9 @@ class UserRegisterViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class UserUpdateViewSet(viewsets.ModelViewSet):
+    """
+    View to update a user's basic information.
+    """
     serializer_class = UserUpdateSerializer
 
     queryset = User.objects.all()
@@ -257,6 +266,9 @@ class UserUpdateViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class UserLoginViewSet(viewsets.ModelViewSet):
+    """
+    View to authenticate and login a user.
+    """
     serializer_class = UserLoginSerializer
     serializer_data_class = UserICOKYCSerializer
     serializer_balance_class = UserBalanceSerializer
@@ -282,6 +294,10 @@ class UserLoginViewSet(viewsets.ModelViewSet):
 
 
 class UserPasswordViewSet(viewsets.ViewSet):
+    """
+    View that exposes password functionality, including resetting and changing 
+    a user's password.
+    """
     serializer_class = UserPasswordSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
@@ -327,6 +343,9 @@ class UserPasswordViewSet(viewsets.ViewSet):
             
             
 class UserICOKYCViewSet(viewsets.ViewSet):
+    """
+    View to add ICO KYC whitelist data to a user.
+    """
     serializer_class = UserICOKYCSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
@@ -353,6 +372,9 @@ class UserICOKYCViewSet(viewsets.ViewSet):
                     status=status.HTTP_400_BAD_REQUEST)
 
 class UserBalanceViewSet(viewsets.ViewSet):
+    """
+    View to change a user's balance in Star token, USD, Bitcoin, and Ether.
+    """
     serializer_class = UserBalanceSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 
@@ -396,6 +418,9 @@ class UserBalanceViewSet(viewsets.ViewSet):
                     
 
 class UserRelationalViewSet(viewsets.ViewSet):
+    """
+    [DEPRECIATED] View to add and remove projects to user devices.
+    """
     serializer_class = UserRelationalSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, APIUserPermission]
 

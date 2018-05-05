@@ -466,3 +466,86 @@
   </pot>
 </pulse>
 
+<pulse>
+  <peak_power>4.6177673339844</peak_power>
+  <mean_power>0.06586841493845</mean_power>
+  <time>2458137.8108835</time>
+  <ra>9.1946601141367</ra>
+  <decl>39.1991</decl>
+  <q_pix>0</q_pix>
+  <freq>6621894445.2703</freq>
+  <detection_freq>6621892465.0358</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>1024</fft_len>
+  <chirp_rate>-43.18213648596</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>10.215459823608</period>
+  <snr>13.061018943787</snr>
+  <thresh>12.562558174133</thresh>
+  <score>0</score>
+  <len_prof>114</len_prof>
+  <pot length=357 encoding="x-csv">
+    33,39,21,37,20,9,31,20,22,31,18,5,11,33,43,32,3,30,52,20,16,42,45,68,38,
+    46,30,9,53,16,15,10,16,19,46,56,45,12,71,27,44,15,39,8,43,66,31,49,26,
+    24,255,35,13,23,12,14,19,33,49,32,22,12,34,17,29,66,18,29,38,23,52,13,
+    42,27,41,19,4,7,19,9,51,111,13,55,23,23,19,54,22,8,30,36,15,23,5,34,35,
+    30,31,30,57,35,8,12,6,33,0,35,11,24,2,21,20,23
+  </pot>
+</pulse>
+
+<pulse>
+  <peak_power>4.4462389945984</peak_power>
+  <mean_power>0.063962019979954</mean_power>
+  <time>2458137.8108835</time>
+  <ra>9.1946601141367</ra>
+  <decl>39.1991</decl>
+  <q_pix>0</q_pix>
+  <freq>6621894456.4462</freq>
+  <detection_freq>6621892463.9302</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>1024</fft_len>
+  <chirp_rate>-43.449954327838</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>10.215459823608</period>
+  <snr>12.575862884521</snr>
+  <thresh>12.562559127808</thresh>
+  <score>0</score>
+  <len_prof>114</len_prof>
+  <pot length=366 encoding="x-csv">
+    36,49,40,36,19,16,49,20,27,54,28,17,17,47,42,32,13,47,32,30,54,40,40,70,
+    12,39,25,29,41,46,38,16,27,40,37,36,39,28,41,33,16,42,52,30,10,42,23,26,
+    8,24,254,34,18,21,52,35,46,27,59,28,49,16,11,46,21,64,43,37,36,22,31,22,
+    29,27,24,30,3,21,26,15,81,93,24,103,6,40,25,46,37,38,46,30,0,22,7,48,52,
+    24,26,23,18,55,30,18,24,59,26,67,37,57,17,22,48,39
+  </pot>
+</pulse>
+
+<pulse>
+  <peak_power>3.6173696517944</peak_power>
+  <mean_power>0.25215888023376</mean_power>
+  <time>2458137.810885</time>
+  <ra>9.1946604991316</ra>
+  <decl>39.1991</decl>
+  <q_pix>0</q_pix>
+  <freq>6621897870.6747</freq>
+  <detection_freq>6621899995.0576</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>4096</fft_len>
+  <chirp_rate>46.190327411322</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <period>8.7241525650024</period>
+  <snr>11.439127922058</snr>
+  <thresh>11.298045158386</thresh>
+  <score>0</score>
+  <len_prof>24</len_prof>
+  <pot length=76 encoding="x-csv">
+    50,8,35,10,32,37,20,31,8,0,57,16,255,23,32,20,51,6,35,32,25,68,49,37
+  </pot>
+</pulse>
+

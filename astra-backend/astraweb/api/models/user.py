@@ -3,14 +3,13 @@ import uuid
 import re
 import random
 import string
+import itertools
 from decimal import Decimal
 
 from django.db import models
 from django.contrib.auth import authenticate as auth
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.contrib.auth.hashers import check_password
-
-from api.models.project import Project
 
 from api.exceptions.user_exceptions import AuthenticationError, PasswordChangeError, TokenICOKYCError, ReferralError
 
@@ -170,8 +169,6 @@ class User(AbstractUser):
     start_time          =   models.DateField(auto_now_add=True, editable=False)
 
     user_type           =   models.PositiveSmallIntegerField(choices=USER_TYPE_CHOICES, default=NONE)
-    
-    projects            =   models.ManyToManyField(Project, blank=True)
 
     email_verified      =   models.BooleanField(blank=True, default=False)
     phone_verified      =   models.BooleanField(blank=True, default=False)
@@ -191,6 +188,11 @@ class User(AbstractUser):
     whitepaper          =   models.BooleanField(default=False)
     token_sale          =   models.BooleanField(default=False)
     data_protection     =   models.BooleanField(default=False)
+
+    @property
+    def projects(self):
+        return list(itertools.chain.from_iterable(
+            [device.active_projects.all() for device in self.devices]))
 
 
     def __str__(self):

@@ -1,5 +1,3 @@
-'use strict'
-
 import React from 'react'
 import Button from "./core/Button"
 import CurrentUserActions from "../actions/CurrentUserActions"

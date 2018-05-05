@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
+    'drf_yasg',
     'rest_framework',
     'api.apps.ApiConfig',
     'django_celery_beat',
@@ -165,6 +167,10 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 # User Model
 
 AUTH_USER_MODEL = 'api.User'
+
+ADMINS = [
+    ('Soham', 'skale1@berkeley.edu'),
+]
 
 
 # Email hosting
