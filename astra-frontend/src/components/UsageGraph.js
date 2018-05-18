@@ -24,7 +24,7 @@ class UsageGraph extends React.Component {
     var fineData = []; 
     while (yesterday <= today) {
       fineData.push({time: yesterday.getTime()});
-      yesterday.setTime(yesterday.getTime() + (15 * 60 * 1000));
+      yesterday.setTime(yesterday.getTime() + (5 * 60 * 1000));
     }
 
     fineData.forEach((dataPoint, i) => {  

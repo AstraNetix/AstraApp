@@ -36,7 +36,7 @@ class CurrentDeviceStore extends Store {
       saturday: {start: 0, end: 24},
       sunday: {start: 0, end: 24},
     };
-    /* Holds data for past 24 hours, 1 point for every 15 min, each point 3 digits in length */
+    /* Holds data for past 24 hours, 1 point for every 5 min, each point 3 digits in length */
     this.fineData = {
       cpu: [], 
       gpu: [], 
@@ -51,7 +51,7 @@ class CurrentDeviceStore extends Store {
       network: [], 
     }; 
     
-    for (var i = 0; i < 96; i++) {
+    for (var i = 0; i < 288; i++) {
       this.fineData.cpu.push(Math.floor(0.0002*Math.pow(i, 3) + 50*Math.random()));
       this.fineData.gpu.push(Math.floor(100*Math.exp(-i)*Math.abs(Math.cos(i/5)) + 10*Math.random()));
       this.fineData.disk.push(Math.floor(0.04*Math.pow(i - 48, 2) + 20*Math.random()));

@@ -87,3 +87,8 @@
 12-Mar-2018 22:31:30 [---] cc_config.xml not found - using defaults
 26-Mar-2018 16:46:28 [---] cc_config.xml not found - using defaults
 03-May-2018 22:48:23 [---] cc_config.xml not found - using defaults
+16-May-2018 19:52:59 [---] cc_config.xml not found - using defaults
+17-May-2018 18:09:45 [---] cc_config.xml not found - using defaults
+17-May-2018 18:10:48 [---] cc_config.xml not found - using defaults
+17-May-2018 18:49:21 [---] cc_config.xml not found - using defaults
+17-May-2018 20:53:00 [---] cc_config.xml not found - using defaults

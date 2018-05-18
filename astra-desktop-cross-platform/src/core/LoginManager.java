@@ -64,8 +64,7 @@ public class LoginManager extends Manager implements PubNubClient.PubNubLoginDel
         _logoTimeline.play();
 
         _pubnub.loginSubscribe(email);
-        _pubnub.publish(new HashMap<String, String>() {{
-            put("status", "login");
+        _pubnub.login(new HashMap<String, String>() {{
             put("email", email);
             put("password", password);
         }});
@@ -90,8 +89,7 @@ public class LoginManager extends Manager implements PubNubClient.PubNubLoginDel
         if (!User.exists()) {
             _user = new User(firstName, lastName, _controller.email.getText());
             _pubnub.setUser(_user);
-            _pubnub.publish(new HashMap<String, String>() {{
-                put("status", "create");
+            _pubnub.create(new HashMap<String, String>() {{
                 put("email", _user._email);
                 put("name", _user._deviceName);
                 put("company", _user._company);

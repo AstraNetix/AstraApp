@@ -1,5 +1,6 @@
 import logging
 import pubnub
+import datetime
 
 from django.contrib.auth import get_user_model
 from api.exceptions.user_exceptions import AuthenticationError
@@ -98,8 +99,7 @@ class PubNubClient(SubscribeCallback):
         elif message["status"] == "create":
             self.create_device(message)
         elif message["status"] == "update":
-            pass
-            # Run update chain
+            self.update_chain(message)
         elif message["status"] == "success":
             self.success_chain(message)
         elif message["status"] == "failure":
@@ -134,7 +134,20 @@ class PubNubClient(SubscribeCallback):
             })
 
     def update_chain(self, message):
-        pass
+        try:
+            user = User.objects.get(email=message['email'])
+            device = self.delegate.objects.get(uid=message['uid'], user=user)
+            device.update(message)
+        except User.DoesNotExist:
+            self.publish(
+                message={'failure': 'User with this email does not exist'}, 
+                device_id=message['uid']
+            )
+        except Device.DoesNotExist:
+            self.publish(
+                message={'failure': 'Device does not belong to this user'}, 
+                device_id=message['uid']
+            )
 
     def success_chain(self, message):
         instance = self.delegate.objects.get(uid=message["id"])

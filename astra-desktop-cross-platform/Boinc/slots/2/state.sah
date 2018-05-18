@@ -1,117 +1,119 @@
-<ncfft>81901</ncfft>
-<cr>-6.293592e+01</cr>
-<fl>8192</fl>
-<prog>0.63763937</prog>
-<potfreq>1</potfreq>
-<potactivity>2</potactivity>
-<signal_count>14</signal_count>
-<flops>20155318376476.675781</flops>
-<spike_count>10</spike_count>
-<autocorr_count>1</autocorr_count>
-<pulse_count>3</pulse_count>
+<ncfft>13631</ncfft>
+<cr>3.571343e+00</cr>
+<fl>16384</fl>
+<prog>0.05526324</prog>
+<potfreq>2788</potfreq>
+<potactivity>1</potactivity>
+<signal_count>0</signal_count>
+<flops>2505814544783.169922</flops>
+<spike_count>0</spike_count>
+<autocorr_count>0</autocorr_count>
+<pulse_count>0</pulse_count>
 <gaussian_count>0</gaussian_count>
 <triplet_count>0</triplet_count>
 <best_spike>
 <spike>
-  <peak_power>26.282093048096</peak_power>
+  <peak_power>21.000761032104</peak_power>
   <mean_power>1</mean_power>
-  <time>2458137.8097044</time>
-  <ra>9.1946699976312</ra>
-  <decl>39.199049964467</decl>
+  <time>2458254.5452696</time>
+  <ra>11.887249524893</ra>
+  <decl>9.1332215262989</decl>
   <q_pix>0</q_pix>
-  <freq>6618389780.7152</freq>
-  <detection_freq>6618389822.9535</detection_freq>
+  <freq>1420463584.1399</freq>
+  <detection_freq>1420463434.2415</detection_freq>
   <barycentric_freq>0</barycentric_freq>
   <fft_len>131072</fft_len>
-  <chirp_rate>2.4585931740191</chirp_rate>
+  <chirp_rate>-1.7182005818128</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
 </spike>
-<bs_score>-0.182400</bs_score>
-<bs_bin>94844</bs_bin>
-<bs_fft_ind>1</bs_fft_ind>
+<bs_score>-0.279825</bs_score>
+<bs_bin>61737</bs_bin>
+<bs_fft_ind>6</bs_fft_ind>
 </best_spike>
 <best_autocorr>
 <autocorr>
-  <peak_power>18.796659469604</peak_power>
+  <peak_power>16.344799041748</peak_power>
   <mean_power>1</mean_power>
-  <time>2458137.8103672</time>
-  <ra>9.1946666639238</ra>
-  <decl>39.1991</decl>
+  <time>2458254.5446483</time>
+  <ra>11.872296698442</ra>
+  <decl>9.1332197859956</decl>
   <q_pix>0</q_pix>
-  <delay>5.558239232</delay>
-  <freq>6618392943.8359</freq>
-  <detection_freq>6618392168.711</detection_freq>
+  <delay>6.539776</delay>
+  <freq>1420458984.375</freq>
+  <detection_freq>1420459033.0655</detection_freq>
   <barycentric_freq>0</barycentric_freq>
   <fft_len>131072</fft_len>
-  <chirp_rate>-10.411894582591</chirp_rate>
+  <chirp_rate>1.4510892487607</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
 </autocorr>
-<ba_score>-0.327979</ba_score>
-<ba_bin>63609</ba_bin>
-<ba_fft_ind>6</ba_fft_ind>
+<ba_score>-0.388680</ba_score>
+<ba_bin>63865</ba_bin>
+<ba_fft_ind>2</ba_fft_ind>
 </best_autocorr>
 <best_gaussian>
 <gaussian>
-  <peak_power>0</peak_power>
-  <mean_power>0</mean_power>
-  <time>0</time>
-  <ra>0</ra>
-  <decl>0</decl>
+  <peak_power>3.8933706283569</peak_power>
+  <mean_power>0.60522598028183</mean_power>
+  <time>2458254.5452599</time>
+  <ra>11.887015763032</ra>
+  <decl>9.1332214990053</decl>
   <q_pix>0</q_pix>
-  <freq>0</freq>
-  <detection_freq>0</detection_freq>
+  <freq>1420459049.9401</freq>
+  <detection_freq>1420458925.201</detection_freq>
   <barycentric_freq>0</barycentric_freq>
-  <fft_len>0</fft_len>
+  <fft_len>16384</fft_len>
+  <chirp_rate>-1.4436951634167</chirp_rate>
+  <rfi_checked>0</rfi_checked>
+  <rfi_found>0</rfi_found>
+  <reserved>0</reserved>
+  <sigma>3.0701203346252</sigma>
+  <chisqr>1.2267905473709</chisqr>
+  <null_chisqr>1.9179781675339</null_chisqr>
+  <score>0</score>
+  <max_power>9.2397184371948</max_power>
+  <pot length=190 encoding="x-csv">
+    18,11,12,5,5,5,5,12,8,14,21,3,55,2,13,76,33,5,50,18,16,23,7,13,3,4,9,10,
+    9,3,23,59,17,13,37,13,20,40,5,40,1,16,7,10,7,7,4,56,34,255,186,122,161,
+    16,9,16,12,37,29,11,7,13,1,14
+  </pot>
+</gaussian>
+<bg_score>-3.933896</bg_score>
+<bg_display_power_thresh>1.066667</bg_display_power_thresh>
+<bg_bin>110</bg_bin>
+<bg_fft_ind>51</bg_fft_ind>
+</best_gaussian>
+<best_pulse>
+<pulse>
+  <peak_power>1.2061083316803</peak_power>
+  <mean_power>0.00048593690735288</mean_power>
+  <time>2458254.5444705</time>
+  <ra>11.868018328281</ra>
+  <decl>9.1332226441933</decl>
+  <q_pix>0</q_pix>
+  <freq>1420455322.2656</freq>
+  <detection_freq>1420455322.2656</detection_freq>
+  <barycentric_freq>0</barycentric_freq>
+  <fft_len>8</fft_len>
   <chirp_rate>0</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
-  <sigma>0</sigma>
-  <chisqr>0</chisqr>
-  <null_chisqr>0</null_chisqr>
+  <period>0.24191999435425</period>
+  <snr>8.3561639785767</snr>
+  <thresh>9.053503036499</thresh>
   <score>0</score>
-  <max_power>0</max_power>
-</gaussian>
-<bg_score>-12.000000</bg_score>
-<bg_display_power_thresh>0.000000</bg_display_power_thresh>
-<bg_bin>0</bg_bin>
-<bg_fft_ind>0</bg_fft_ind>
-</best_gaussian>
-<best_pulse>
-<pulse>
-  <peak_power>1.9339685440063</peak_power>
-  <mean_power>0.2685894370079</mean_power>
-  <time>2458137.8100379</time>
-  <ra>9.1946605220011</ra>
-  <decl>39.1991</decl>
-  <q_pix>0</q_pix>
-  <freq>6618392597.3839</freq>
-  <detection_freq>6618394404.1397</detection_freq>
-  <barycentric_freq>0</barycentric_freq>
-  <fft_len>4096</fft_len>
-  <chirp_rate>39.284181071705</chirp_rate>
-  <rfi_checked>0</rfi_checked>
-  <rfi_found>0</rfi_found>
-  <reserved>0</reserved>
-  <period>2.9304203987122</period>
-  <snr>9.4744729995728</snr>
-  <thresh>9.1815242767334</thresh>
-  <score>0</score>
-  <len_prof>8</len_prof>
-  <pot length=30 encoding="x-csv">
-    254,21,28,9,60,64,51,0
-  </pot>
+  <len_prof>295</len_prof>
 </pulse>
-<bp_score>1.031906</bp_score>
-<bp_freq_bin>3972</bp_freq_bin>
-<bp_time_bin>128</bp_time_bin>
+<bp_score>0.922976</bp_score>
+<bp_freq_bin>5</bp_freq_bin>
+<bp_time_bin>22209</bp_time_bin>
 </best_pulse>
 <baseline_smooth>v_BaseLineSmooth</baseline_smooth>
 <get_power_spectrum>v_vGetPowerSpectrumUnrolled</get_power_spectrum>
-<chirp_data>sse2_ChirpData_ak8</chirp_data>
+<chirp_data>sse3_ChirpData_ak8</chirp_data>
 <transpose>v_vTranspose4x16ntw</transpose>
-<folding>ben SSE</folding>
+<folding>AK SSE</folding>

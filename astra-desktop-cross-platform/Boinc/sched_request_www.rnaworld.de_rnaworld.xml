@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>bc9e417c01b840e552dbfe8a6f802699</authenticator>
     <hostid>65724</hostid>
-    <rpc_seqno>14</rpc_seqno>
+    <rpc_seqno>16</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -143,33 +143,33 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 <global_prefs_source_email_hash>c5ee1245832291454787fdd3c797f125</global_prefs_source_email_hash>
 <cross_project_id>2b19f53cdca8922115a3d17345ab2ec1</cross_project_id>
 <time_stats>
-    <on_frac>0.030292</on_frac>
+    <on_frac>0.012907</on_frac>
     <connected_frac>-1.000000</connected_frac>
-    <cpu_and_network_available_frac>0.906574</cpu_and_network_available_frac>
-    <active_frac>0.906574</active_frac>
-    <gpu_active_frac>0.900023</gpu_active_frac>
-    <client_start_time>1525412903.250590</client_start_time>
+    <cpu_and_network_available_frac>0.903644</cpu_and_network_available_frac>
+    <active_frac>0.903644</active_frac>
+    <gpu_active_frac>0.896223</gpu_active_frac>
+    <client_start_time>1526605785.771619</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>92188.505299</total_duration>
-    <total_active_duration>7120.771384</total_active_duration>
+    <total_duration>95843.433640</total_duration>
+    <total_active_duration>7897.440552</total_active_duration>
     <total_gpu_active_duration>1087.065393</total_gpu_active_duration>
-    <now>1525461227.545992</now>
-    <previous_uptime>7.671155</previous_uptime>
-    <session_active_duration>1250.872607</session_active_duration>
-    <session_gpu_active_duration>81.432937</session_gpu_active_duration>
+    <now>1526605786.120396</now>
+    <previous_uptime>3523.262508</previous_uptime>
+    <session_active_duration>0.000000</session_active_duration>
+    <session_gpu_active_duration>0.000000</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>78573.370003</bwup>
-    <avg_up>6073981.618077</avg_up>
-    <avg_time_up>1525459629.377758</avg_time_up>
-    <bwdown>5132751.149538</bwdown>
-    <avg_down>112099288.267147</avg_down>
-    <avg_time_down>1525412941.220513</avg_time_down>
+    <bwup>94212.719688</bwup>
+    <avg_up>1798899.390295</avg_up>
+    <avg_time_up>1526527383.648166</avg_time_up>
+    <bwdown>4464715.490605</bwdown>
+    <avg_down>32886218.546961</avg_down>
+    <avg_time_down>1526526133.912673</avg_time_down>
 </net_stats>
 <host_info>
     <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.0.1.22</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -182,9 +182,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15938027520.000000</m_swap>
+    <m_swap>15434051584.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>7743795200.000000</d_free>
+    <d_free>6155472896.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -218,9 +218,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>39647614.000000</d_boinc_used_total>
+        <d_boinc_used_total>44359938.000000</d_boinc_used_total>
         <d_boinc_used_project>207471.000000</d_boinc_used_project>
-        <d_project_share>2814558498.253334</d_project_share>
+        <d_project_share>2233901505.586667</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>

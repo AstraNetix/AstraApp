@@ -6,6 +6,21 @@ import {Store} from 'flux/utils'
 class ProjectsStore extends Store {
   constructor(dispatcher) {
     super(dispatcher);
+    this.areas = [
+      'Physics',
+      'Mathematics',
+      'Astrophysics',
+      'Computer Science',
+      'Climate study',
+      'Astronomy',
+      'Cryptography',
+      'Molecular Biology',
+      'Chemistry',
+      'Cognitive Science',
+      'Seismology',
+      'Environmental',
+      'Medical',
+    ]
     this.projects = {
       'https://einsteinathome.org/': {
         name: 'Einstein@home',
@@ -22,6 +37,10 @@ class ProjectsStore extends Store {
         isRunning: false,
       },
     } ;// {url: {name, sponsors, description, area, platforms, isRunning}}
+  }
+
+  getAreas() {
+    return this.areas;
   }
 
   getProjects() {

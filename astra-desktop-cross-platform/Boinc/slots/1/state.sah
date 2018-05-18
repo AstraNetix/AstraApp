@@ -1,173 +1,119 @@
-<ncfft>78885</ncfft>
-<cr>5.465007e+01</cr>
-<fl>32768</fl>
-<prog>0.55808939</prog>
-<potfreq>1</potfreq>
+<ncfft>13491</ncfft>
+<cr>3.535297e+00</cr>
+<fl>2048</fl>
+<prog>0.05471396</prog>
+<potfreq>1955</potfreq>
 <potactivity>2</potactivity>
-<signal_count>9</signal_count>
-<flops>18857708067034.621094</flops>
-<spike_count>5</spike_count>
-<autocorr_count>1</autocorr_count>
-<pulse_count>2</pulse_count>
+<signal_count>0</signal_count>
+<flops>2478927599055.666992</flops>
+<spike_count>0</spike_count>
+<autocorr_count>0</autocorr_count>
+<pulse_count>0</pulse_count>
 <gaussian_count>0</gaussian_count>
-<triplet_count>1</triplet_count>
+<triplet_count>0</triplet_count>
 <best_spike>
 <spike>
-  <peak_power>25.246042251587</peak_power>
+  <peak_power>23.251192092896</peak_power>
   <mean_power>1</mean_power>
-  <time>2458137.8103858</time>
-  <ra>9.1946702898952</ra>
-  <decl>39.1991</decl>
+  <time>2458254.5443376</time>
+  <ra>11.864821349086</ra>
+  <decl>9.1332189202923</decl>
   <q_pix>0</q_pix>
-  <freq>6624835291.3774</freq>
-  <detection_freq>6624835371.6091</detection_freq>
+  <freq>1420874582.9016</freq>
+  <detection_freq>1420874572.8286</detection_freq>
   <barycentric_freq>0</barycentric_freq>
-  <fft_len>65536</fft_len>
-  <chirp_rate>28.020600366364</chirp_rate>
+  <fft_len>131072</fft_len>
+  <chirp_rate>-1.5009993248327</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
 </spike>
-<bs_score>-0.199867</bs_score>
-<bs_bin>61664</bs_bin>
+<bs_score>-0.235615</bs_score>
+<bs_bin>73045</bs_bin>
 <bs_fft_ind>0</bs_fft_ind>
 </best_spike>
 <best_autocorr>
 <autocorr>
-  <peak_power>17.901538848877</peak_power>
+  <peak_power>15.577825546265</peak_power>
   <mean_power>1</mean_power>
-  <time>2458137.8105515</time>
-  <ra>9.1946666715289</ra>
-  <decl>39.199</decl>
+  <time>2458254.5448036</time>
+  <ra>11.876034769539</ra>
+  <decl>9.133223006817</decl>
   <q_pix>0</q_pix>
-  <delay>3.1828650666667</delay>
-  <freq>6624835967.5176</freq>
-  <detection_freq>6624835562.7538</detection_freq>
+  <delay>4.112384</delay>
+  <freq>1420878906.25</freq>
+  <detection_freq>1420878748.4246</detection_freq>
   <barycentric_freq>0</barycentric_freq>
   <fft_len>131072</fft_len>
-  <chirp_rate>-23.560354412051</chirp_rate>
+  <chirp_rate>-3.3596875281816</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
 </autocorr>
-<ba_score>-0.349170</ba_score>
-<ba_bin>36425</ba_bin>
-<ba_fft_ind>1</ba_fft_ind>
+<ba_score>-0.409553</ba_score>
+<ba_bin>40160</ba_bin>
+<ba_fft_ind>3</ba_fft_ind>
 </best_autocorr>
 <best_gaussian>
 <gaussian>
-  <peak_power>0</peak_power>
-  <mean_power>0</mean_power>
-  <time>0</time>
-  <ra>0</ra>
-  <decl>0</decl>
+  <peak_power>3.1466403007507</peak_power>
+  <mean_power>0.57645064592361</mean_power>
+  <time>2458254.544658</time>
+  <ra>11.872529947169</ra>
+  <decl>9.1332198130557</decl>
   <q_pix>0</q_pix>
-  <freq>0</freq>
-  <detection_freq>0</detection_freq>
+  <freq>1420883035.6598</freq>
+  <detection_freq>1420882961.2114</detection_freq>
   <barycentric_freq>0</barycentric_freq>
-  <fft_len>0</fft_len>
-  <chirp_rate>0</chirp_rate>
+  <fft_len>16384</fft_len>
+  <chirp_rate>-2.164618484457</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
-  <sigma>0</sigma>
-  <chisqr>0</chisqr>
-  <null_chisqr>0</null_chisqr>
+  <sigma>3.0692129135132</sigma>
+  <chisqr>1.3385832309723</chisqr>
+  <null_chisqr>1.9652283191681</null_chisqr>
   <score>0</score>
-  <max_power>0</max_power>
+  <max_power>7.8980684280396</max_power>
+  <pot length=197 encoding="x-csv">
+    55,3,13,43,0,21,5,28,20,3,9,13,32,27,88,3,37,177,3,251,17,109,94,255,15,
+    66,3,10,13,21,16,23,63,13,17,4,23,11,29,10,1,6,10,13,25,15,2,19,31,1,19,
+    36,5,13,6,28,28,12,13,37,31,8,39,28
+  </pot>
 </gaussian>
-<bg_score>-12.000000</bg_score>
-<bg_display_power_thresh>0.000000</bg_display_power_thresh>
-<bg_bin>0</bg_bin>
-<bg_fft_ind>0</bg_fft_ind>
+<bg_score>-4.267222</bg_score>
+<bg_display_power_thresh>1.066667</bg_display_power_thresh>
+<bg_bin>6928</bg_bin>
+<bg_fft_ind>20</bg_fft_ind>
 </best_gaussian>
 <best_pulse>
 <pulse>
-  <peak_power>2.0765852928162</peak_power>
-  <mean_power>0.03178682923317</mean_power>
-  <time>2458137.8108832</time>
-  <ra>9.1946600499709</ra>
-  <decl>39.1991</decl>
+  <peak_power>5.4412851333618</peak_power>
+  <mean_power>0.0039710812270641</mean_power>
+  <time>2458254.5449616</time>
+  <ra>11.879836928559</ra>
+  <decl>9.133220662135</decl>
   <q_pix>0</q_pix>
-  <freq>6624834469.9509</freq>
-  <detection_freq>6624835315.9731</detection_freq>
+  <freq>1420878295.8984</freq>
+  <detection_freq>1420878168.8729</detection_freq>
   <barycentric_freq>0</barycentric_freq>
-  <fft_len>512</fft_len>
-  <chirp_rate>18.45785334878</chirp_rate>
+  <fft_len>64</fft_len>
+  <chirp_rate>-2.095298934357</chirp_rate>
   <rfi_checked>0</rfi_checked>
   <rfi_found>0</rfi_found>
   <reserved>0</reserved>
-  <period>3.4309406280518</period>
-  <snr>10.173149108887</snr>
-  <thresh>9.8565559387207</thresh>
+  <period>1.9480576515198</period>
+  <snr>13.328372001648</snr>
+  <thresh>13.670367240906</thresh>
   <score>0</score>
-  <len_prof>76</len_prof>
-  <pot length=250 encoding="x-csv">
-    13,41,70,42,43,34,31,55,13,36,54,72,34,40,47,27,59,69,36,55,255,11,45,
-    0,46,28,80,80,37,28,23,46,15,35,34,38,39,45,56,51,49,57,48,38,52,28,51,
-    74,57,72,21,40,22,23,38,74,28,30,26,23,34,22,57,69,51,37,36,72,65,17,68,
-    81,22,29,26,23
-  </pot>
+  <len_prof>297</len_prof>
 </pulse>
-<bp_score>1.032120</bp_score>
-<bp_freq_bin>445</bp_freq_bin>
-<bp_time_bin>1024</bp_time_bin>
+<bp_score>0.974983</bp_score>
+<bp_freq_bin>60</bp_freq_bin>
+<bp_time_bin>9250</bp_time_bin>
 </best_pulse>
-<best_triplet>
-<triplet>
-  <peak_power>13.028491973877</peak_power>
-  <mean_power>0.032645385712385</mean_power>
-  <time>2458137.8106541</time>
-  <ra>9.1946622970041</ra>
-  <decl>39.1991</decl>
-  <q_pix>0</q_pix>
-  <freq>6624833575.8812</freq>
-  <detection_freq>6624832301.2501</detection_freq>
-  <barycentric_freq>0</barycentric_freq>
-  <fft_len>512</fft_len>
-  <chirp_rate>-48.95227823562</chirp_rate>
-  <rfi_checked>0</rfi_checked>
-  <rfi_found>0</rfi_found>
-  <reserved>0</reserved>
-  <period>8.3438692092896</period>
-</triplet>
-<bt_score>13.028492</bt_score>
-<bt_bperiod>186.500000</bt_bperiod>
-<bt_tpotind0_0>49</bt_tpotind0_0>
-<bt_tpotind0_1>49</bt_tpotind0_1>
-<bt_tpotind1_0>72</bt_tpotind1_0>
-<bt_tpotind1_1>72</bt_tpotind1_1>
-<bt_tpotind2_0>96</bt_tpotind2_0>
-<bt_tpotind2_1>96</bt_tpotind2_1>
-<bt_freq_bin>405</bt_freq_bin>
-<bt_time_bin>582.000000</bt_time_bin>
-<bt_scale>0.000000</bt_scale>
-<bt_pot_min length=541 encoding="x-csv">
-  0,1,5,3,0,3,5,3,7,10,1,0,0,0,3,1,0,2,1,0,0,2,1,1,3,0,0,1,0,1,3,0,0,0,0,2,
-  1,0,0,13,0,5,0,0,1,0,5,1,2,5,0,2,0,2,1,1,4,0,1,0,4,1,1,2,1,2,1,1,0,0,2,0,
-  1,1,0,3,1,0,0,2,0,2,7,0,0,0,1,2,0,2,0,0,2,0,7,4,0,1,0,0,7,4,1,8,2,6,1,0,
-  0,3,0,2,0,0,2,0,3,0,6,3,0,3,0,1,1,0,1,5,8,0,1,0,4,1,4,4,1,1,1,1,3,2,4,6,
-  1,0,3,1,8,0,0,4,1,5,2,0,3,4,1,3,0,5,0,3,0,5,1,1,4,2,2,0,0,1,0,2,0,1,2,5,
-  0,3,8,1,3,1,1,1,0,6,1,0,0,1,0,3,0,6,2,1,1,0,1,0,3,5,18,2,8,0,0,2,2,0,2,4,
-  2,2,3,7,1,1,1,2,0,0,2,6,2,3,0,0,1,0,0,12,1,0,15,2,0,2,4,2,0,0,0,6,1,2,0,
-  2,0,1,3,2
-</bt_pot_min>
-<bt_pot_max length=818 encoding="x-csv">
-  28,36,47,38,93,43,43,59,44,33,52,64,25,36,44,40,64,37,59,56,25,80,26,109,
-  79,60,43,26,29,19,52,81,62,106,78,41,81,87,30,58,31,45,19,47,30,85,66,114,
-  51,203,49,45,22,43,53,29,26,48,34,82,52,51,50,58,74,19,72,25,60,48,54,30,
-  222,67,34,57,100,88,57,38,59,28,82,38,63,15,146,48,25,74,32,75,103,74,50,
-  38,255,43,49,40,27,47,35,53,15,24,20,69,78,25,57,36,53,52,101,43,32,24,116,
-  28,59,86,30,57,158,52,27,42,39,79,37,52,55,44,61,74,45,54,93,33,84,57,49,
-  60,53,88,57,26,84,12,43,43,73,39,37,39,65,102,79,113,18,40,27,28,14,66,24,
-  44,36,25,52,93,16,92,21,99,34,32,59,50,26,26,39,40,47,28,32,77,47,58,35,
-  38,50,45,56,51,60,55,116,25,70,61,46,65,69,99,43,32,70,41,24,79,71,11,87,
-  35,40,38,50,85,36,74,53,57,58,60,18,103,37,59,23,28,49,34,84,59,45,25,40,
-  30,43,95,32,25,37,32,79,100,50,58,41,32,34,56,53,45
-</bt_pot_max>
-</best_triplet>
 <baseline_smooth>v_BaseLineSmooth</baseline_smooth>
 <get_power_spectrum>v_vGetPowerSpectrumUnrolled</get_power_spectrum>
-<chirp_data>sse3_ChirpData_ak</chirp_data>
+<chirp_data>sse3_ChirpData_ak8</chirp_data>
 <transpose>v_vTranspose4x16ntw</transpose>
-<folding>BH SSE</folding>
+<folding>AK SSE</folding>

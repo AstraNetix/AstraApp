@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
     };
   }
 
-  _searcher = (item, level = 0) => {
+  _searcher = (item, level = 1) => {
     /** Searches recursively through this.state.queryset. Returns all matched queries as well as 
      * the depth at which it was found, which is factored into the match's importance
      * Returns an array of type [item [primitive], depth [int]]
@@ -67,7 +67,7 @@ class SearchBar extends React.Component {
     /* For each name in queryset, find all matches in its data */
     let results = Object.keys(this.state.queryset).map(name => { 
                     return {name: name, items: this._searcher(this.state.queryset[name])}; 
-                  })
+                  });
 
     /* Delete all falsy values from the results */
     results.forEach((match, index) => {
@@ -84,11 +84,10 @@ class SearchBar extends React.Component {
     /* Sort the remaining names by their item's priority */
     results.sort((m, n) => this._priority(m.items, n.items));
 
-    return results
+    return results;
   }
 
-  _handleChange = (event) => {
-    this.setState({
+  _handleChange = (event) => {    this.setState({
       value: event.target.value,
       loading: true
     });
@@ -145,7 +144,7 @@ class SearchBar extends React.Component {
     var resultsStyle = {
       width: this.props.width || '30em',
       backgroundColor: 'rgb(243, 243, 243)',
-      borderTopColor: '#838383', 
+      borderColor: '#838383', 
       borderBottomLeftRadius: '5px',
       borderBottomRightRadius: '5px',
       transition: 'all 0.2s ease',

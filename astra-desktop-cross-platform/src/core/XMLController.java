@@ -49,7 +49,7 @@ public class XMLController {
             NodeList globalPreferences = doc.getFirstChild().getChildNodes();
             Node node;
             Element elem;
-            for (int i = 0; i< globalPreferences.getLength(); i++) {
+            for (int i = 0; i < globalPreferences.getLength(); i++) {
                 node = globalPreferences.item(i);
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     elem = (Element) node;

@@ -24,7 +24,6 @@ public class LoginController {
     @FXML TextField email;
     @FXML private TextField password;
     @FXML private Button loginButton;
-    @FXML private Button newUserButton;
     @FXML private Button forgotPasswordButton;
     @FXML private Text errorLabel;
 
@@ -41,14 +40,6 @@ public class LoginController {
                 e1.printStackTrace();
             }
         }, _manager);
-        Utils.setupButton(newUserButton, event -> {
-            try {
-                Desktop.getDesktop().browse(new URI("")); // TODO: Put signup link here
-            } catch (IOException | URISyntaxException e1) {
-                e1.printStackTrace();
-            }
-        }, _manager);
-
     }
 
     void setErrorLabel(String error) {
@@ -60,12 +51,10 @@ public class LoginController {
     void disableButtons() {
         loginButton.setDisable(true);
         forgotPasswordButton.setDisable(true);
-        newUserButton.setDisable(true);
     }
 
     void enableButtons() {
         loginButton.setDisable(false);
         forgotPasswordButton.setDisable(false);
-        newUserButton.setDisable(false);
     }
 }

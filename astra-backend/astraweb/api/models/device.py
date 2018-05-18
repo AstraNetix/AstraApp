@@ -7,6 +7,7 @@ from django.core.validators import RegexValidator
 
 from django.contrib.auth import get_user_model
 from api.models.project import Project
+from api.models.usage import Data
 
 from api.exceptions.device_exceptions import QuitProjectError, StartProjectError, DeviceClientError
 from api.exceptions.user_exceptions import AuthenticationError
@@ -53,6 +54,17 @@ class Device(models.Model):
     def __str__(self):
         return self.name
 
+    @staticmethod
+    def convert_date(str_date):
+        return datetime.datetime(
+                year=int(str_date[0:4]), 
+                month=int(str_date[5:7]), 
+                day=int(str_date[8:10]), 
+                hour=int(str_date[11:13]), 
+                minute=int(str_date[14:16]),
+                second=int(str_date[17:19]),
+        )
+
 
     #######################################################################################
     # Fields
@@ -67,6 +79,9 @@ class Device(models.Model):
     name                =   models.CharField(max_length=45, null=True, blank=True)
     company             =   models.CharField(max_length=45)
     model               =   models.CharField(max_length=30)
+
+    data               =   models.OneToOneField(to=Data, related_name='device', on_delete=models.CASCADE, 
+                                null=True)
 
     run_on_batteries    =   models.BooleanField(default=False, blank=True)
     run_if_active       =   models.BooleanField(default=False, blank=True)
@@ -126,7 +141,7 @@ class Device(models.Model):
     # Management
 
     @classmethod
-    def create(cls, kwargs):
+    def create(cls, **kwargs):
         try:
             user = User.objects.get(email=kwargs.pop('email'))
             device = cls(**kwargs)
@@ -139,6 +154,7 @@ class Device(models.Model):
                     device.model,
                 )
             device.uid = device.hash_code()
+            device.data = Data.objects.create()
             device.save()
             return device
         except User.DoesNotExist:
@@ -150,6 +166,28 @@ class Device(models.Model):
             "function": "quit"
         }, device_id=self.uid)
 
+    def update(self, message):
+        free, total = int(message['free']), int(message['total'])
+        self.data.add_data('disk_fine', 1 - free/total)
+
+        for name, info in message['tasks'].items():
+            project = Project.objects.get(url=info['url'])
+            task = self.tasks.create(name=name, project=project, 
+                        due=self.convert_date(info['due']), app_version=info['app-version'])
+            device_task = self.device_tasks.create(device=device, task=task, 
+                        recieved=self.convert_date(info['recieved']))
+
+            device_task.app_version = info['app-version']
+            device_task.fraction_done = float(info['fraction-done'])
+            device_task.cpu_time_running = float(info['cpu-time-running'])
+            device_task.cpu_time_remaining = float(info['cpu-time-remaining'])
+            device_task.active_state = float(info['active-state'])
+            # TODO Add state change as well
+            
+            task.save()
+            device_task.save()
+
+        self.save()
     
     ##############################################################################################
     # Projects 

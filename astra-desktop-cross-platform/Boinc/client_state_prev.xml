@@ -2,7 +2,7 @@
 <host_info>
     <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.0.1.22</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -15,9 +15,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15938027520.000000</m_swap>
+    <m_swap>15508819968.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>7743795200.000000</d_free>
+    <d_free>6230798336.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -85,26 +85,26 @@
 </opencl_cpu_prop>
 </host_info>
 <time_stats>
-    <on_frac>0.030292</on_frac>
+    <on_frac>0.014329</on_frac>
     <connected_frac>-1.000000</connected_frac>
-    <cpu_and_network_available_frac>0.906574</cpu_and_network_available_frac>
-    <active_frac>0.906574</active_frac>
-    <gpu_active_frac>0.900023</gpu_active_frac>
-    <client_start_time>1525412903.250590</client_start_time>
+    <cpu_and_network_available_frac>0.901991</cpu_and_network_available_frac>
+    <active_frac>0.901991</active_frac>
+    <gpu_active_frac>0.893924</gpu_active_frac>
+    <client_start_time>1526615580.074292</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>92188.505299</total_duration>
-    <total_active_duration>7120.771384</total_active_duration>
+    <total_duration>98062.561914</total_duration>
+    <total_active_duration>8472.127151</total_active_duration>
     <total_gpu_active_duration>1087.065393</total_gpu_active_duration>
-    <previous_uptime>48327.331726</previous_uptime>
-    <last_update>1525461221.487649</last_update>
+    <previous_uptime>0.489610</previous_uptime>
+    <last_update>1526609150.495012</last_update>
 </time_stats>
 <net_stats>
-    <bwup>77618.567448</bwup>
-    <avg_up>6064093.714233</avg_up>
-    <avg_time_up>1525461229.577783</avg_time_up>
-    <bwdown>5132751.149538</bwdown>
-    <avg_down>112099288.267147</avg_down>
-    <avg_time_down>1525412941.220513</avg_time_down>
+    <bwup>92931.500854</bwup>
+    <avg_up>1645492.359279</avg_up>
+    <avg_time_up>1526605788.210263</avg_time_up>
+    <bwdown>4560532.373105</bwdown>
+    <avg_down>29935391.212677</avg_down>
+    <avg_time_down>1526608168.406198</avg_time_down>
 </net_stats>
 <project>
     <master_url>http://quakecatcher.net/sensor/</master_url>
@@ -120,7 +120,7 @@
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1520391728.000000</user_create_time>
-    <rpc_seqno>14</rpc_seqno>
+    <rpc_seqno>15</rpc_seqno>
     <userid>147652</userid>
     <teamid>0</teamid>
     <hostid>76447</hostid>
@@ -132,7 +132,7 @@
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>1525459861.359501</rec_time>
+    <rec_time>1526609152.908481</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -141,8 +141,8 @@
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
-    <elapsed_time>2198.539622</elapsed_time>
-    <last_rpc_time>1525459630.108248</last_rpc_time>
+    <elapsed_time>3559.594728</elapsed_time>
+    <last_rpc_time>1526527384.320039</last_rpc_time>
     <dont_use_dcf/>
     <non_cpu_intensive/>
     <rsc_backoff_time>
@@ -179,8 +179,8 @@ d5d00577ff57349d98e594255c4a4701a8202bc1be57077131233415542be93b
     <cpu_time>0.000000</cpu_time>
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
-    <disk_usage>19861085.000000</disk_usage>
-    <disk_share>2814558498.253334</disk_share>
+    <disk_usage>19928352.000000</disk_usage>
+    <disk_share>0.000000</disk_share>
 </project>
 <app>
     <name>qcnsensor</name>
@@ -754,7 +754,7 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1519266398.000000</user_create_time>
-    <rpc_seqno>15</rpc_seqno>
+    <rpc_seqno>17</rpc_seqno>
     <userid>130926</userid>
     <teamid>0</teamid>
     <hostid>65724</hostid>
@@ -763,10 +763,10 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <host_create_time>1519266486.000000</host_create_time>
     <nrpc_failures>0</nrpc_failures>
     <master_fetch_failures>0</master_fetch_failures>
-    <min_rpc_time>1525464866.582316</min_rpc_time>
-    <next_rpc_time>1525479230.582316</next_rpc_time>
+    <min_rpc_time>0.000000</min_rpc_time>
+    <next_rpc_time>1526623789.213465</next_rpc_time>
     <rec>0.000000</rec>
-    <rec_time>1525459861.359501</rec_time>
+    <rec_time>1526609152.908481</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -776,7 +776,7 @@ c0bc83dc6282773609ea4060927d7172268d2588bd269eb8001f865e90abe13c
     <njobs_success>0</njobs_success>
     <njobs_error>0</njobs_error>
     <elapsed_time>0.000000</elapsed_time>
-    <last_rpc_time>1525461230.582316</last_rpc_time>
+    <last_rpc_time>1526605789.213465</last_rpc_time>
     <dont_use_dcf/>
     <verify_files_on_app_start/>
     <rsc_backoff_time>
@@ -814,7 +814,7 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <gpu_ec>0.000000</gpu_ec>
     <gpu_time>0.000000</gpu_time>
     <disk_usage>207471.000000</disk_usage>
-    <disk_share>2814558498.253334</disk_share>
+    <disk_share>0.000000</disk_share>
 </project>
 <file>
     <name>stat_icon_01.png</name>
@@ -940,7 +940,7 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <user_total_credit>0.000000</user_total_credit>
     <user_expavg_credit>0.000000</user_expavg_credit>
     <user_create_time>1519203522.000000</user_create_time>
-    <rpc_seqno>2</rpc_seqno>
+    <rpc_seqno>3</rpc_seqno>
     <userid>10673740</userid>
     <teamid>0</teamid>
     <hostid>8467171</hostid>
@@ -951,8 +951,8 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <master_fetch_failures>0</master_fetch_failures>
     <min_rpc_time>0.000000</min_rpc_time>
     <next_rpc_time>0.000000</next_rpc_time>
-    <rec>5.555562</rec>
-    <rec_time>1525459861.359501</rec_time>
+    <rec>9.713521</rec>
+    <rec_time>1526609152.908481</rec_time>
     <resource_share>100.000000</resource_share>
     <desired_disk_usage>0.000000</desired_disk_usage>
     <duration_correction_factor>1.000000</duration_correction_factor>
@@ -960,9 +960,9 @@ b51d73c45c6c91a1bd24614951107e5f784b1414abf19ffb6b948561cc08d482
     <send_time_stats_log>0</send_time_stats_log>
     <send_job_log>0</send_job_log>
     <njobs_success>0</njobs_success>
-    <njobs_error>0</njobs_error>
-    <elapsed_time>23762.467657</elapsed_time>
-    <last_rpc_time>1525412913.871832</last_rpc_time>
+    <njobs_error>4</njobs_error>
+    <elapsed_time>28453.769005</elapsed_time>
+    <last_rpc_time>1526526125.260959</last_rpc_time>
     <dont_use_dcf/>
     <rsc_backoff_time>
         <name>CPU</name>
@@ -993,12 +993,12 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 0000000000000000000000000000000000000000000000000000000000010001
 .
 </code_sign_key>
-    <cpu_ec>310.473870</cpu_ec>
-    <cpu_time>33303.304604</cpu_time>
+    <cpu_ec>423.574406</cpu_ec>
+    <cpu_time>45445.682613</cpu_time>
     <gpu_ec>34.850042</gpu_ec>
     <gpu_time>196.096674</gpu_time>
-    <disk_usage>15004701.000000</disk_usage>
-    <disk_share>2814558498.253334</disk_share>
+    <disk_usage>19679840.000000</disk_usage>
+    <disk_share>300692966694744575438672184335887520951642101836419558605917013667339522178301255057953623182833210772202776073999912261803865123205424830004757239176107474812928.000000</disk_share>
 </project>
 <app>
     <name>setiathome_v8</name>
@@ -1287,22 +1287,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/21d/blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</download_url>
 </file>
 <file>
-    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</name>
-    <nbytes>720434.000000</nbytes>
-    <max_nbytes>0.000000</max_nbytes>
-    <md5_cksum>d601a32cae4ae988e17b7bb861878f9b</md5_cksum>
-    <status>1</status>
-    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/242/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</download_url>
-</file>
-<file>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1_r3914912_0</name>
-    <nbytes>0.000000</nbytes>
-    <max_nbytes>65536.000000</max_nbytes>
-    <status>0</status>
-    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
-</file>
-<file>
-    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0</name>
     <nbytes>0.000000</nbytes>
     <max_nbytes>65536.000000</max_nbytes>
     <status>0</status>
@@ -1341,45 +1326,92 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <download_url>http://boinc2.ssl.berkeley.edu/sg_images/sah_ss_290.png</download_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</name>
-    <nbytes>720445.000000</nbytes>
+    <name>setiathome_8.03_i686-apple-darwin</name>
+    <nbytes>4364148.000000</nbytes>
     <max_nbytes>0.000000</max_nbytes>
-    <md5_cksum>7265c9c7498b0af91b541007428595f1</md5_cksum>
     <status>1</status>
-    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/2e3/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</download_url>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+42fcb07af4c3f31272437846afab872d7d70a8b026384040ab29e69a6e8cc88a
+36288f004d45c7e964a2e6a97c20b7f237a1ecdebf31961c8a357c6e2515ccd9
+fc38ca7febff5912ba3ea2487d7c3913a80e75f362a8c9582ae0e6e5992c9ff5
+8170c8eb573c5c616e14097ce223539a37fbc43141bacc3072e63cf6d592b6b1
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setiathome_8.03_i686-apple-darwin</download_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</name>
-    <nbytes>720445.000000</nbytes>
+    <name>setigraphics_8.03_i686-apple-darwin</name>
+    <nbytes>341520.000000</nbytes>
     <max_nbytes>0.000000</max_nbytes>
-    <md5_cksum>a5c1044cd5495ebb8ec14ac66266db17</md5_cksum>
     <status>1</status>
-    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/15e/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</download_url>
+    <executable/>
+    <signature_required/>
+    <file_signature>
+3a3d3efee9275cdcb4cbdea7835adec8888e2a0597f81536155a952bef777b0f
+7ca0154694ef361235435b44126d04a301b679b3f0c5271e9662478a65c3be01
+a759e83af4e774d51a0c5ec562c82087a51ef2ab3a37a42bacfbc065d11ad1cc
+5bef5beaf784da3b7936ecaef58b17001c1c7b11c4f3c0c490e4303d8bd34d75
+.
+</file_signature>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/setigraphics_8.03_i686-apple-darwin</download_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</name>
-    <nbytes>720460.000000</nbytes>
+    <name>15my18aa.19974.23172.12.39.40</name>
+    <nbytes>720989.000000</nbytes>
     <max_nbytes>0.000000</max_nbytes>
-    <md5_cksum>8a391c205c5a6615a4517fa3ffc90723</md5_cksum>
+    <md5_cksum>f2488b6c8c98f34416b167c558cfd46d</md5_cksum>
     <status>1</status>
-    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/24b/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</download_url>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/3a2/15my18aa.19974.23172.12.39.40</download_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0</name>
+    <name>15my18aa.22362.17654.15.42.90</name>
+    <nbytes>720996.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>32ef93cde0e0d3266c219b8f6ea98a86</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/2ba/15my18aa.22362.17654.15.42.90</download_url>
+</file>
+<file>
+    <name>15my18aa.22362.17654.15.42.47</name>
+    <nbytes>720998.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>0e88f6e1f3a1431766b5e9b74edc1b5d</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/236/15my18aa.22362.17654.15.42.47</download_url>
+</file>
+<file>
+    <name>15my18aa.22362.17654.15.42.84</name>
+    <nbytes>720994.000000</nbytes>
+    <max_nbytes>0.000000</max_nbytes>
+    <md5_cksum>c84af6753c91b2f9c203b0d97464ab07</md5_cksum>
+    <status>1</status>
+    <download_url>http://boinc2.ssl.berkeley.edu/sah/download_fanout/225/15my18aa.22362.17654.15.42.84</download_url>
+</file>
+<file>
+    <name>15my18aa.19974.23172.12.39.40_1_r1004510912_0</name>
     <nbytes>0.000000</nbytes>
     <max_nbytes>65536.000000</max_nbytes>
     <status>0</status>
     <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0</name>
+    <name>15my18aa.22362.17654.15.42.90_1_r1215251536_0</name>
     <nbytes>0.000000</nbytes>
     <max_nbytes>65536.000000</max_nbytes>
     <status>0</status>
     <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
 </file>
 <file>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0</name>
+    <name>15my18aa.22362.17654.15.42.47_0_r2031622050_0</name>
+    <nbytes>0.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <status>0</status>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file>
+<file>
+    <name>15my18aa.22362.17654.15.42.84_1_r72172912_0</name>
     <nbytes>0.000000</nbytes>
     <max_nbytes>65536.000000</max_nbytes>
     <status>0</status>
@@ -1482,6 +1514,51 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
         <open_name>seti_logo</open_name>
     </file_ref>
 </app_version>
+<app_version>
+    <app_name>setiathome_v8</app_name>
+    <version_num>803</version_num>
+    <platform>i686-apple-darwin</platform>
+    <avg_ncpus>1.000000</avg_ncpus>
+    <max_ncpus>1.000000</max_ncpus>
+    <flops>17091784699.896706</flops>
+    <api_version>7.7.0</api_version>
+    <file_ref>
+        <file_name>setiathome_8.03_i686-apple-darwin</file_name>
+        <main_program/>
+    </file_ref>
+    <file_ref>
+        <file_name>setigraphics_8.03_i686-apple-darwin</file_name>
+        <open_name>graphics_app</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>bl_bkg_803.jpg</file_name>
+        <open_name>sponsor_bkg</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>bl_803.jpg</file_name>
+        <open_name>sponsor_logo</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_AUTHORS.txt</file_name>
+        <open_name>setiathome-8.03_AUTHORS.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_COPYING.txt</file_name>
+        <open_name>setiathome-8.03_COPYING.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_COPYRIGHT.txt</file_name>
+        <open_name>setiathome-8.03_COPYRIGHT.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>setiathome-8.03_README.txt</file_name>
+        <open_name>setiathome-8.03_README.txt</open_name>
+    </file_ref>
+    <file_ref>
+        <file_name>seti_803.jpg</file_name>
+        <open_name>seti_logo</open_name>
+    </file_ref>
+</app_version>
 <workunit>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar</name>
     <app_name>setiathome_v8</app_name>
@@ -1496,76 +1573,57 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     </file_ref>
 </workunit>
 <workunit>
-    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</name>
+    <name>15my18aa.19974.23172.12.39.40</name>
     <app_name>setiathome_v8</app_name>
     <version_num>803</version_num>
-    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
-    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_fpops_est>181694351558360.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3633887031167200.000000</rsc_fpops_bound>
     <rsc_memory_bound>33554432.000000</rsc_memory_bound>
     <rsc_disk_bound>33554432.000000</rsc_disk_bound>
     <file_ref>
-        <file_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</file_name>
+        <file_name>15my18aa.19974.23172.12.39.40</file_name>
         <open_name>work_unit.sah</open_name>
     </file_ref>
 </workunit>
 <workunit>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</name>
+    <name>15my18aa.22362.17654.15.42.90</name>
     <app_name>setiathome_v8</app_name>
     <version_num>803</version_num>
-    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
-    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_fpops_est>181721746003155.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3634434920063090.000000</rsc_fpops_bound>
     <rsc_memory_bound>33554432.000000</rsc_memory_bound>
     <rsc_disk_bound>33554432.000000</rsc_disk_bound>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</file_name>
+        <file_name>15my18aa.22362.17654.15.42.90</file_name>
         <open_name>work_unit.sah</open_name>
     </file_ref>
 </workunit>
 <workunit>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</name>
+    <name>15my18aa.22362.17654.15.42.47</name>
     <app_name>setiathome_v8</app_name>
     <version_num>803</version_num>
-    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
-    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_fpops_est>181721746003155.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3634434920063090.000000</rsc_fpops_bound>
     <rsc_memory_bound>33554432.000000</rsc_memory_bound>
     <rsc_disk_bound>33554432.000000</rsc_disk_bound>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</file_name>
+        <file_name>15my18aa.22362.17654.15.42.47</file_name>
         <open_name>work_unit.sah</open_name>
     </file_ref>
 </workunit>
 <workunit>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</name>
+    <name>15my18aa.22362.17654.15.42.84</name>
     <app_name>setiathome_v8</app_name>
     <version_num>803</version_num>
-    <rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
-    <rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+    <rsc_fpops_est>181721746003155.000000</rsc_fpops_est>
+    <rsc_fpops_bound>3634434920063090.000000</rsc_fpops_bound>
     <rsc_memory_bound>33554432.000000</rsc_memory_bound>
     <rsc_disk_bound>33554432.000000</rsc_disk_bound>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</file_name>
+        <file_name>15my18aa.22362.17654.15.42.84</file_name>
         <open_name>work_unit.sah</open_name>
     </file_ref>
 </workunit>
-<result>
-    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</name>
-    <final_cpu_time>4488.233000</final_cpu_time>
-    <final_elapsed_time>5724.644635</final_elapsed_time>
-    <exit_status>0</exit_status>
-    <state>2</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>803</version_num>
-    <final_peak_working_set_size>131014656</final_peak_working_set_size>
-    <final_peak_swap_size>4557160448</final_peak_swap_size>
-    <final_peak_disk_usage>318349</final_peak_disk_usage>
-    <wu_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</wu_name>
-    <report_deadline>1523800839.000000</report_deadline>
-    <received_time>1519203658.594556</received_time>
-    <file_ref>
-        <file_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0</file_name>
-        <open_name>result.sah</open_name>
-    </file_ref>
-</result>
 <result>
     <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</name>
     <final_cpu_time>117.908900</final_cpu_time>
@@ -1587,59 +1645,66 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     </file_ref>
 </result>
 <result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</name>
-    <final_cpu_time>4266.722000</final_cpu_time>
-    <final_elapsed_time>5482.575013</final_elapsed_time>
+    <name>15my18aa.19974.23172.12.39.40_1</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
-    <platform>x86_64-apple-darwin</platform>
+    <platform>i686-apple-darwin</platform>
     <version_num>803</version_num>
-    <final_peak_working_set_size>108961792</final_peak_working_set_size>
-    <final_peak_swap_size>4557361152</final_peak_swap_size>
-    <final_peak_disk_usage>315948</final_peak_disk_usage>
-    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar</wu_name>
-    <report_deadline>1523801184.000000</report_deadline>
-    <received_time>1519204003.875097</received_time>
+    <wu_name>15my18aa.19974.23172.12.39.40</wu_name>
+    <report_deadline>1531068482.000000</report_deadline>
+    <received_time>1526526125.260959</received_time>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0</file_name>
+        <file_name>15my18aa.19974.23172.12.39.40_1_r1004510912_0</file_name>
         <open_name>result.sah</open_name>
     </file_ref>
 </result>
 <result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</name>
-    <final_cpu_time>4286.238000</final_cpu_time>
-    <final_elapsed_time>5514.937504</final_elapsed_time>
+    <name>15my18aa.22362.17654.15.42.90_1</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
-    <platform>x86_64-apple-darwin</platform>
+    <platform>i686-apple-darwin</platform>
     <version_num>803</version_num>
-    <final_peak_working_set_size>108974080</final_peak_working_set_size>
-    <final_peak_swap_size>4557357056</final_peak_swap_size>
-    <final_peak_disk_usage>315927</final_peak_disk_usage>
-    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar</wu_name>
-    <report_deadline>1523801184.000000</report_deadline>
-    <received_time>1519204003.875097</received_time>
+    <wu_name>15my18aa.22362.17654.15.42.90</wu_name>
+    <report_deadline>1531069167.000000</report_deadline>
+    <received_time>1526526125.260959</received_time>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0</file_name>
+        <file_name>15my18aa.22362.17654.15.42.90_1_r1215251536_0</file_name>
         <open_name>result.sah</open_name>
     </file_ref>
 </result>
 <result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</name>
-    <final_cpu_time>4268.235000</final_cpu_time>
-    <final_elapsed_time>5484.695203</final_elapsed_time>
+    <name>15my18aa.22362.17654.15.42.84_1</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
     <exit_status>0</exit_status>
     <state>2</state>
-    <platform>x86_64-apple-darwin</platform>
+    <platform>i686-apple-darwin</platform>
     <version_num>803</version_num>
-    <final_peak_working_set_size>109887488</final_peak_working_set_size>
-    <final_peak_swap_size>4556443648</final_peak_swap_size>
-    <final_peak_disk_usage>318152</final_peak_disk_usage>
-    <wu_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar</wu_name>
-    <report_deadline>1523801184.000000</report_deadline>
-    <received_time>1519204003.875097</received_time>
+    <wu_name>15my18aa.22362.17654.15.42.84</wu_name>
+    <report_deadline>1531069167.000000</report_deadline>
+    <received_time>1526526125.260959</received_time>
     <file_ref>
-        <file_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0</file_name>
+        <file_name>15my18aa.22362.17654.15.42.84_1_r72172912_0</file_name>
+        <open_name>result.sah</open_name>
+    </file_ref>
+</result>
+<result>
+    <name>15my18aa.22362.17654.15.42.47_0</name>
+    <final_cpu_time>0.000000</final_cpu_time>
+    <final_elapsed_time>0.000000</final_elapsed_time>
+    <exit_status>0</exit_status>
+    <state>2</state>
+    <platform>i686-apple-darwin</platform>
+    <version_num>803</version_num>
+    <wu_name>15my18aa.22362.17654.15.42.47</wu_name>
+    <report_deadline>1531069167.000000</report_deadline>
+    <received_time>1526526125.260959</received_time>
+    <file_ref>
+        <file_name>15my18aa.22362.17654.15.42.47_0_r2031622050_0</file_name>
         <open_name>result.sah</open_name>
     </file_ref>
 </result>
@@ -1676,82 +1741,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <active_task_set>
 <active_task>
     <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
-    <result_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</result_name>
-    <active_task_state>0</active_task_state>
-    <app_version_num>803</app_version_num>
-    <slot>0</slot>
-    <checkpoint_cpu_time>4478.248000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>5711.533604</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.792394</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>5711.533604</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>4488.233000</current_cpu_time>
-    <once_ran_edf>1</once_ran_edf>
-    <swap_size>4520775680.000000</swap_size>
-    <working_set_size>36188160.000000</working_set_size>
-    <working_set_size_smoothed>36180511.994938</working_set_size_smoothed>
-    <page_fault_rate>0.000000</page_fault_rate>
-    <bytes_sent>0.000000</bytes_sent>
-    <bytes_received>0.000000</bytes_received>
-</active_task>
-<active_task>
-    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
-    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</result_name>
-    <active_task_state>0</active_task_state>
-    <app_version_num>803</app_version_num>
-    <slot>1</slot>
-    <checkpoint_cpu_time>4255.597000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>5469.463982</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.644843</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>5469.463982</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>4266.722000</current_cpu_time>
-    <once_ran_edf>1</once_ran_edf>
-    <swap_size>4522799104.000000</swap_size>
-    <working_set_size>36241408.000000</working_set_size>
-    <working_set_size_smoothed>36240895.996594</working_set_size_smoothed>
-    <page_fault_rate>0.000000</page_fault_rate>
-    <bytes_sent>0.000000</bytes_sent>
-    <bytes_received>0.000000</bytes_received>
-</active_task>
-<active_task>
-    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
-    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</result_name>
-    <active_task_state>0</active_task_state>
-    <app_version_num>803</app_version_num>
-    <slot>2</slot>
-    <checkpoint_cpu_time>4276.144000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>5501.826473</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.726739</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>5501.826473</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>4286.238000</current_cpu_time>
-    <once_ran_edf>1</once_ran_edf>
-    <swap_size>4521431040.000000</swap_size>
-    <working_set_size>35966976.000000</working_set_size>
-    <working_set_size_smoothed>35955919.988194</working_set_size_smoothed>
-    <page_fault_rate>0.000000</page_fault_rate>
-    <bytes_sent>0.000000</bytes_sent>
-    <bytes_received>0.000000</bytes_received>
-</active_task>
-<active_task>
-    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
-    <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</result_name>
-    <active_task_state>0</active_task_state>
-    <app_version_num>803</app_version_num>
-    <slot>3</slot>
-    <checkpoint_cpu_time>4257.188000</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>5471.584172</checkpoint_elapsed_time>
-    <checkpoint_fraction_done>0.763048</checkpoint_fraction_done>
-    <checkpoint_fraction_done_elapsed_time>5471.584172</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>4268.235000</current_cpu_time>
-    <once_ran_edf>1</once_ran_edf>
-    <swap_size>4522541056.000000</swap_size>
-    <working_set_size>35942400.000000</working_set_size>
-    <working_set_size_smoothed>35928383.995157</working_set_size_smoothed>
-    <page_fault_rate>0.000000</page_fault_rate>
-    <bytes_sent>0.000000</bytes_sent>
-    <bytes_received>0.000000</bytes_received>
-</active_task>
-<active_task>
-    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
     <result_name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</result_name>
     <active_task_state>0</active_task_state>
     <app_version_num>800</app_version_num>
@@ -1760,7 +1749,7 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
     <checkpoint_elapsed_time>1047.102956</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.300413</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>1047.102956</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>117.908900</current_cpu_time>
+    <current_cpu_time>116.542800</current_cpu_time>
     <once_ran_edf>1</once_ran_edf>
     <swap_size>4734337024.000000</swap_size>
     <working_set_size>53673984.000000</working_set_size>
@@ -1772,18 +1761,94 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <active_task>
     <project_master_url>http://quakecatcher.net/sensor/</project_master_url>
     <result_name>qcnuscee_085529_0</result_name>
-    <active_task_state>1</active_task_state>
+    <active_task_state>0</active_task_state>
     <app_version_num>807</app_version_num>
     <slot>5</slot>
-    <checkpoint_cpu_time>30.415660</checkpoint_cpu_time>
-    <checkpoint_elapsed_time>2167.176662</checkpoint_elapsed_time>
+    <checkpoint_cpu_time>45.463260</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>3513.930948</checkpoint_elapsed_time>
     <checkpoint_fraction_done>0.000000</checkpoint_fraction_done>
     <checkpoint_fraction_done_elapsed_time>0.000000</checkpoint_fraction_done_elapsed_time>
-    <current_cpu_time>30.568840</current_cpu_time>
+    <current_cpu_time>45.463260</current_cpu_time>
     <once_ran_edf>0</once_ran_edf>
-    <swap_size>4423385088.000000</swap_size>
-    <working_set_size>19988480.000000</working_set_size>
-    <working_set_size_smoothed>20013176.020573</working_set_size_smoothed>
+    <swap_size>4423229440.000000</swap_size>
+    <working_set_size>22032384.000000</working_set_size>
+    <working_set_size_smoothed>22032627.626086</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>15my18aa.19974.23172.12.39.40_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>0</slot>
+    <checkpoint_cpu_time>740.252000</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>1133.292536</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.054937</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>1133.292536</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>740.252000</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>724488192.000000</swap_size>
+    <working_set_size>35524608.000000</working_set_size>
+    <working_set_size_smoothed>35521185.128499</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>15my18aa.22362.17654.15.42.90_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>1</slot>
+    <checkpoint_cpu_time>739.167200</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>1133.292536</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.054790</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>1133.292536</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>739.167200</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>726179840.000000</swap_size>
+    <working_set_size>35729408.000000</working_set_size>
+    <working_set_size_smoothed>35726980.725758</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>15my18aa.22362.17654.15.42.47_0</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>2</slot>
+    <checkpoint_cpu_time>740.352600</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>1133.292536</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.055328</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>1133.292536</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>740.352600</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>726667264.000000</swap_size>
+    <working_set_size>35430400.000000</working_set_size>
+    <working_set_size_smoothed>35427741.526897</working_set_size_smoothed>
+    <page_fault_rate>0.000000</page_fault_rate>
+    <bytes_sent>0.000000</bytes_sent>
+    <bytes_received>0.000000</bytes_received>
+</active_task>
+<active_task>
+    <project_master_url>http://setiathome.berkeley.edu/</project_master_url>
+    <result_name>15my18aa.22362.17654.15.42.84_1</result_name>
+    <active_task_state>0</active_task_state>
+    <app_version_num>803</app_version_num>
+    <slot>3</slot>
+    <checkpoint_cpu_time>741.043300</checkpoint_cpu_time>
+    <checkpoint_elapsed_time>1131.221772</checkpoint_elapsed_time>
+    <checkpoint_fraction_done>0.054455</checkpoint_fraction_done>
+    <checkpoint_fraction_done_elapsed_time>1131.221772</checkpoint_fraction_done_elapsed_time>
+    <current_cpu_time>741.043300</current_cpu_time>
+    <once_ran_edf>0</once_ran_edf>
+    <swap_size>725524480.000000</swap_size>
+    <working_set_size>35147776.000000</working_set_size>
+    <working_set_size_smoothed>35143597.144900</working_set_size_smoothed>
     <page_fault_rate>0.000000</page_fault_rate>
     <bytes_sent>0.000000</bytes_sent>
     <bytes_received>0.000000</bytes_received>
@@ -1799,6 +1864,6 @@ fa15d8d178c3788fae0f4198defe32324b037b22336359cb697b8c935d254d42
 <user_gpu_prev_request>3</user_gpu_prev_request>
 <user_network_request>2</user_network_request>
 <new_version_check_time>0.000000</new_version_check_time>
-<all_projects_list_check_time>1524289704.621952</all_projects_list_check_time>
+<all_projects_list_check_time>0.000000</all_projects_list_check_time>
 <alt_platform>i686-apple-darwin</alt_platform>
 </client_state>

@@ -1,7 +1,7 @@
 <scheduler_request>
     <authenticator>552e80e81e75579075cec0e9e3655660</authenticator>
     <hostid>8467171</hostid>
-    <rpc_seqno>1</rpc_seqno>
+    <rpc_seqno>2</rpc_seqno>
     <core_client_major_version>7</core_client_major_version>
     <core_client_minor_version>9</core_client_minor_version>
     <core_client_release>0</core_client_release>
@@ -12,9 +12,9 @@
     <allow_multiple_clients>0</allow_multiple_clients>
     <sandbox>0</sandbox>
     <dont_send_work>0</dont_send_work>
-    <work_req_seconds>0.000000</work_req_seconds>
-    <cpu_req_secs>0.000000</cpu_req_secs>
-    <cpu_req_instances>0.000000</cpu_req_instances>
+    <work_req_seconds>34560.000000</work_req_seconds>
+    <cpu_req_secs>34560.000000</cpu_req_secs>
+    <cpu_req_instances>4.000000</cpu_req_instances>
     <estimated_delay>0.000000</estimated_delay>
     <client_cap_plan_class>1</client_cap_plan_class>
     <platform_name>x86_64-apple-darwin</platform_name>
@@ -35,8 +35,8 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 </code_sign_key>
 <working_global_preferences>
 <global_preferences>
-   <source_project></source_project>
-   <mod_time>0.000000</mod_time>
+   <source_project>http://setiathome.berkeley.edu/</source_project>
+   <mod_time>1519264187.000000</mod_time>
    <battery_charge_min_pct>90.000000</battery_charge_min_pct>
    <battery_max_temperature>40.000000</battery_max_temperature>
    <run_on_batteries>0</run_on_batteries>
@@ -70,7 +70,7 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
    <daily_xfer_limit_mb>0.000000</daily_xfer_limit_mb>
    <daily_xfer_period_days>0</daily_xfer_period_days>
    <override_file_present>1</override_file_present>
-   <network_wifi_only>0</network_wifi_only>
+   <network_wifi_only>1</network_wifi_only>
    <day_prefs>
       <day_of_week>0</day_of_week>
       <start_hour>0.00</start_hour>
@@ -108,50 +108,83 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
    </day_prefs>
 </global_preferences>
 </working_global_preferences>
+<global_preferences>
+    <source_project>http://setiathome.berkeley.edu/</source_project>
+    <source_scheduler>http://setiboinc.ssl.berkeley.edu/sah_cgi/cgi</source_scheduler>
+
+<mod_time>1519264187</mod_time>
+<max_ncpus_pct>100</max_ncpus_pct>
+<cpu_usage_limit>100</cpu_usage_limit>
+<run_on_batteries>0</run_on_batteries>
+<run_if_user_active>1</run_if_user_active>
+<run_gpu_if_user_active>0</run_gpu_if_user_active>
+<idle_time_to_run>3</idle_time_to_run>
+<suspend_if_no_recent_input>0</suspend_if_no_recent_input>
+<suspend_cpu_usage>25</suspend_cpu_usage>
+<work_buf_min_days>0.1</work_buf_min_days>
+<work_buf_additional_days>0.5</work_buf_additional_days>
+<cpu_scheduling_period_minutes>60</cpu_scheduling_period_minutes>
+<disk_interval>60</disk_interval>
+<disk_max_used_gb>0</disk_max_used_gb>
+<disk_min_free_gb>1</disk_min_free_gb>
+<disk_max_used_pct>90</disk_max_used_pct>
+<ram_max_used_busy_pct>50</ram_max_used_busy_pct>
+<ram_max_used_idle_pct>90</ram_max_used_idle_pct>
+<leave_apps_in_memory>0</leave_apps_in_memory>
+<vm_max_used_pct>75</vm_max_used_pct>
+<max_bytes_sec_down>0</max_bytes_sec_down>
+<max_bytes_sec_up>0</max_bytes_sec_up>
+<daily_xfer_limit_mb>0</daily_xfer_limit_mb>
+<daily_xfer_period_days>0</daily_xfer_period_days>
+<dont_verify_images>0</dont_verify_images>
+<confirm_before_connecting>0</confirm_before_connecting>
+<hangup_if_dialed>0</hangup_if_dialed>
+</global_preferences>
+<global_prefs_source_email_hash>c5ee1245832291454787fdd3c797f125</global_prefs_source_email_hash>
 <cross_project_id>ded576069eaf7a7250052b785bbf8fa0</cross_project_id>
 <time_stats>
-    <on_frac>0.022604</on_frac>
-    <connected_frac>0.000000</connected_frac>
-    <cpu_and_network_available_frac>0.913494</cpu_and_network_available_frac>
-    <active_frac>0.913494</active_frac>
-    <gpu_active_frac>0.908245</gpu_active_frac>
-    <client_start_time>1525412903.250590</client_start_time>
+    <on_frac>0.009498</on_frac>
+    <connected_frac>-1.000000</connected_frac>
+    <cpu_and_network_available_frac>0.906064</cpu_and_network_available_frac>
+    <active_frac>0.906064</active_frac>
+    <gpu_active_frac>0.899318</gpu_active_frac>
+    <client_start_time>1526525579.726543</client_start_time>
     <total_start_time>1516005359.995951</total_start_time>
-    <total_duration>84240.689496</total_duration>
-    <total_active_duration>5869.898777</total_active_duration>
-    <total_gpu_active_duration>1005.632456</total_gpu_active_duration>
-    <now>1525412911.653413</now>
-    <previous_uptime>7.671155</previous_uptime>
-    <session_active_duration>0.000000</session_active_duration>
+    <total_duration>92864.598327</total_duration>
+    <total_active_duration>7292.188055</total_active_duration>
+    <total_gpu_active_duration>1087.065393</total_gpu_active_duration>
+    <now>1526526122.977612</now>
+    <previous_uptime>48460.188085</previous_uptime>
+    <session_active_duration>171.416671</session_active_duration>
     <session_gpu_active_duration>0.000000</session_gpu_active_duration>
 </time_stats>
 <net_stats>
-    <bwup>75721.689327</bwup>
-    <avg_up>6401389.701472</avg_up>
-    <avg_time_up>1525412905.623117</avg_time_up>
-    <bwdown>5128117.184887</bwdown>
-    <avg_down>19161063807.747654</avg_down>
-    <avg_time_down>1520920449.638711</avg_time_down>
+    <bwup>91979.319882</bwup>
+    <avg_up>1798656.448916</avg_up>
+    <avg_time_up>1526525591.597292</avg_time_up>
+    <bwdown>4954170.429434</bwdown>
+    <avg_down>32154947.218206</avg_down>
+    <avg_time_down>1526525584.235079</avg_time_down>
 </net_stats>
 <host_info>
     <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.0.1.22</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
     <p_model>Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz [x86 Family 6 Model 78 Stepping 3]</p_model>
     <p_features>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfsh ds acpi mmx fxsr sse sse2 ss htt tm pbe pni pclmulqdq dtes64 mon dscpl vmx smx est tm2 ssse3 fma cx16 tpr pdcm sse4_1 sse4_2 x2apic movbe popcnt aes pcid xsave osxsave seglim64 tsctmr avx rdrand f16c</p_features>
-    <p_fpops>4027099031.368307</p_fpops>
-    <p_iops>11957441553.355947</p_iops>
+    <p_fpops>4023876675.639733</p_fpops>
+    <p_iops>11891166871.399490</p_iops>
     <p_membw>1000000000.000000</p_membw>
-    <p_calculated>1520382024.722423</p_calculated>
+    <p_calculated>1525413234.500580</p_calculated>
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15938027520.000000</m_swap>
+    <m_swap>15578603520.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>8804499456.000000</d_free>
+    <d_free>6280351744.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -185,9 +218,9 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 </opencl_cpu_prop>
 </host_info>
     <disk_usage>
-        <d_boinc_used_total>40622223.000000</d_boinc_used_total>
-        <d_boinc_used_project>15909037.000000</d_boinc_used_project>
-        <d_project_share>3203840748.753334</d_project_share>
+        <d_boinc_used_total>38385544.000000</d_boinc_used_total>
+        <d_boinc_used_project>13736330.000000</d_boinc_used_project>
+        <d_project_share>2277499805.386667</d_project_share>
     </disk_usage>
     <coprocs>
 <coproc_intel_gpu>
@@ -227,180 +260,232 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 </coproc_intel_gpu>
     </coprocs>
 <result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</name>
+    <final_cpu_time>4478.248000</final_cpu_time>
+    <final_elapsed_time>5714.707270</final_elapsed_time>
+    <exit_status>2</exit_status>
+    <state>3</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
+    <final_peak_working_set_size>131014656</final_peak_working_set_size>
+    <final_peak_swap_size>4557160448</final_peak_swap_size>
+    <final_peak_disk_usage>318349</final_peak_disk_usage>
     <app_version_num>803</app_version_num>
 <stderr_out>
 <core_client_version>7.9.0</core_client_version>
+<![CDATA[
+<message>
+process exited with code 2 (0x2, -254)</message>
+<stderr_txt>
+setiathome_v8 8.00 Revision: 3310XCode LLVM 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57) x86_64
+
+libboinc: 7.7.0
+libboinc: 7.7.0
+
+Work Unit Info:
+...............
+WU true angle range is :  0.007220
+Optimal function choices:
+--------------------------------------------------------
+                            name   timing   error
+--------------------------------------------------------
+                v_BaseLineSmooth (no other)
+     v_vGetPowerSpectrumUnrolled 0.000079 0.00000 
+              sse2_ChirpData_ak8 0.008901 0.00000 
+             v_vTranspose4x16ntw 0.000742 0.00000 
+                 ben SSE folding 0.001107 0.00000 
+Restarted at 3.71 percent.
+Restarted at 9.41 percent.
+Restarted at 25.52 percent.
+Restarted at 42.41 percent.
+Restarted at 43.10 percent.
+Restarted at 43.10 percent.
+Restarted at 44.18 percent.
+Restarted at 45.60 percent.
+Process creation (../../projects/setiathome.berkeley.edu/setiathome_8.03_x86_64-apple-darwin) failed: Error -1, errno=2
+execv: No such file or directory
+
+</stderr_txt>
+]]>
 </stderr_out>
+<file_info>
+    <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0</name>
+    <nbytes>18311.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <md5_cksum>5e81b5ace20439f7c810ddc7a6eb933f</md5_cksum>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file_info>
 </result>
 <result>
-    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</name>
+    <final_cpu_time>4255.597000</final_cpu_time>
+    <final_elapsed_time>5471.609791</final_elapsed_time>
+    <exit_status>2</exit_status>
+    <state>3</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
+    <final_peak_working_set_size>108961792</final_peak_working_set_size>
+    <final_peak_swap_size>4557361152</final_peak_swap_size>
+    <final_peak_disk_usage>315947</final_peak_disk_usage>
     <app_version_num>803</app_version_num>
 <stderr_out>
 <core_client_version>7.9.0</core_client_version>
+<![CDATA[
+<message>
+process exited with code 2 (0x2, -254)</message>
+<stderr_txt>
+setiathome_v8 8.00 Revision: 3310XCode LLVM 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57) x86_64
+
+libboinc: 7.7.0
+libboinc: 7.7.0
+
+Work Unit Info:
+...............
+WU true angle range is :  0.007145
+Optimal function choices:
+--------------------------------------------------------
+                            name   timing   error
+--------------------------------------------------------
+                v_BaseLineSmooth (no other)
+     v_vGetPowerSpectrumUnrolled 0.000097 0.00000 
+               sse3_ChirpData_ak 0.012064 0.00000 
+             v_vTranspose4x16ntw 0.000872 0.00000 
+                  BH SSE folding 0.001321 0.00000 
+Restarted at 1.08 percent.
+Restarted at 5.56 percent.
+Restarted at 20.92 percent.
+Restarted at 30.09 percent.
+Restarted at 30.24 percent.
+Restarted at 30.24 percent.
+Restarted at 30.46 percent.
+Restarted at 30.92 percent.
+Process creation (../../projects/setiathome.berkeley.edu/setiathome_8.03_x86_64-apple-darwin) failed: Error -1, errno=2
+execv: No such file or directory
+
+</stderr_txt>
+]]>
 </stderr_out>
+<file_info>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0</name>
+    <nbytes>15971.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <md5_cksum>32f82f4d15129dfe6eab5e846b6c6622</md5_cksum>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file_info>
 </result>
 <result>
-    <name>blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar_1</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</name>
+    <final_cpu_time>4276.144000</final_cpu_time>
+    <final_elapsed_time>5502.906895</final_elapsed_time>
+    <exit_status>2</exit_status>
+    <state>3</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
+    <final_peak_working_set_size>108974080</final_peak_working_set_size>
+    <final_peak_swap_size>4557357056</final_peak_swap_size>
+    <final_peak_disk_usage>315927</final_peak_disk_usage>
     <app_version_num>803</app_version_num>
 <stderr_out>
 <core_client_version>7.9.0</core_client_version>
+<![CDATA[
+<message>
+process exited with code 2 (0x2, -254)</message>
+<stderr_txt>
+setiathome_v8 8.00 Revision: 3310XCode LLVM 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57) x86_64
+
+libboinc: 7.7.0
+libboinc: 7.7.0
+
+Work Unit Info:
+...............
+WU true angle range is :  0.007050
+Optimal function choices:
+--------------------------------------------------------
+                            name   timing   error
+--------------------------------------------------------
+                v_BaseLineSmooth (no other)
+     v_vGetPowerSpectrumUnrolled 0.000085 0.00000 
+              sse2_ChirpData_ak8 0.011394 0.00000 
+             v_vTranspose4x16ntw 0.000907 0.00000 
+                 ben SSE folding 0.001406 0.00000 
+Restarted at 1.13 percent.
+Restarted at 6.14 percent.
+Restarted at 23.33 percent.
+Restarted at 34.63 percent.
+Restarted at 35.04 percent.
+Restarted at 35.04 percent.
+Restarted at 36.73 percent.
+Restarted at 38.06 percent.
+Process creation (../../projects/setiathome.berkeley.edu/setiathome_8.03_x86_64-apple-darwin) failed: Error -1, errno=2
+execv: No such file or directory
+
+</stderr_txt>
+]]>
 </stderr_out>
+<file_info>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0</name>
+    <nbytes>18650.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <md5_cksum>63c6139321cfb00b5291fdac0cb6dc10</md5_cksum>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file_info>
 </result>
 <result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</name>
+    <final_cpu_time>4257.188000</final_cpu_time>
+    <final_elapsed_time>5471.584172</final_elapsed_time>
+    <exit_status>2</exit_status>
+    <state>3</state>
     <platform>x86_64-apple-darwin</platform>
     <version_num>803</version_num>
+    <final_peak_working_set_size>109887488</final_peak_working_set_size>
+    <final_peak_swap_size>4556443648</final_peak_swap_size>
+    <final_peak_disk_usage>318152</final_peak_disk_usage>
     <app_version_num>803</app_version_num>
 <stderr_out>
 <core_client_version>7.9.0</core_client_version>
+<![CDATA[
+<message>
+process exited with code 2 (0x2, -254)</message>
+<stderr_txt>
+setiathome_v8 8.00 Revision: 3310XCode LLVM 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57) x86_64
+
+libboinc: 7.7.0
+libboinc: 7.7.0
+
+Work Unit Info:
+...............
+WU true angle range is :  0.007145
+Optimal function choices:
+--------------------------------------------------------
+                            name   timing   error
+--------------------------------------------------------
+                v_BaseLineSmooth (no other)
+     v_vGetPowerSpectrumUnrolled 0.000095 0.00000 
+              sse2_ChirpData_ak8 0.012547 0.00000 
+             v_vTranspose4x16ntw 0.000819 0.00000 
+                  BH SSE folding 0.001378 0.00000 
+Restarted at 1.15 percent.
+Restarted at 6.15 percent.
+Restarted at 23.74 percent.
+Restarted at 37.37 percent.
+Restarted at 37.67 percent.
+Restarted at 37.67 percent.
+Restarted at 39.09 percent.
+Restarted at 40.91 percent.
+Process creation (../../projects/setiathome.berkeley.edu/setiathome_8.03_x86_64-apple-darwin) failed: Error -1, errno=2
+execv: No such file or directory
+
+</stderr_txt>
+]]>
 </stderr_out>
-</result>
-<result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>800</version_num>
-    <plan_class>opencl_intel_gpu_sah</plan_class>
-    <app_version_num>800</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar_0</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>803</version_num>
-    <app_version_num>803</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
-</result>
-<result>
-    <name>blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar_2</name>
-    <final_cpu_time>0.000000</final_cpu_time>
-    <final_elapsed_time>0.000000</final_elapsed_time>
-    <exit_status>200</exit_status>
-    <state>6</state>
-    <platform>x86_64-apple-darwin</platform>
-    <version_num>803</version_num>
-    <app_version_num>803</app_version_num>
-<stderr_out>
-<core_client_version>7.9.0</core_client_version>
-</stderr_out>
+<file_info>
+    <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0</name>
+    <nbytes>17970.000000</nbytes>
+    <max_nbytes>65536.000000</max_nbytes>
+    <md5_cksum>be61feaafbe8779d92c066de5051b6b6</md5_cksum>
+    <upload_url>http://setiboincdata.ssl.berkeley.edu/sah_cgi/file_upload_handler</upload_url>
+</file_info>
 </result>
 <app_versions>
 <app_version>
@@ -431,25 +516,9 @@ e1553cdb9096b0b057088db58799ed90b91fc0fe9925ab288236f995a781ec05
 </app_versions>
 <other_results>
     <other_result>
-        <name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</name>
-        <app_version>1</app_version>
-    </other_result>
-    <other_result>
         <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21351.818.21.44.24.vlar_1</name>
         <app_version>0</app_version>
         <plan_class>opencl_intel_gpu_sah</plan_class>
-    </other_result>
-    <other_result>
-        <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1</name>
-        <app_version>1</app_version>
-    </other_result>
-    <other_result>
-        <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0</name>
-        <app_version>1</app_version>
-    </other_result>
-    <other_result>
-        <name>blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1</name>
-        <app_version>1</app_version>
     </other_result>
 </other_results>
 </scheduler_request>

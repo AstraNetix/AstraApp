@@ -1,18 +1,16 @@
 .no-button {
-    transition: all  1.7s ease;
+    outline: none;
     background: none;
     border-style: none;
 }
 
 .no-button:hover {
     cursor: pointer;
-    transition: all 1.7s ease;
-    transform: rotate(360deg);
-    transform-origin: 43% 68%;
 }
 
 
 .small-button {
+    outline: none;
     transition: all 0.2s ease;
     border: none;
     background: none;
@@ -28,6 +26,7 @@
 }
 
 .select-light {
+    outline: none;
     transition: all 0.2s ease;
     margin: 0em 0.5em;
     font-size: 1em;
@@ -47,18 +46,20 @@
 }
 
 .submit-dark {
+    outline: none;
     transition: all 0.2s ease;
     width: 270px;
 }
 
 .submit-dark:hover {
     transition: all 0.2s ease;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(233, 233, 233);
     color: rgb(71, 71, 71);
     cursor: pointer; 
 }
 
 .submit-light {
+    outline: none;
     transition: all 0.2s ease;
     box-shadow: 0px 3px 20px 0px rgba(31, 31, 31, 0.34);
     width: 270px;
@@ -78,6 +79,7 @@
 }
 
 .light-link {
+    outline: none;
     transition: all 0.7s ease;
     font-weight: 100;
     color: rgb(230, 230, 230);
@@ -96,6 +98,7 @@
 }
 
 .logout-button {
+    outline: none;
     transition: all 0.2s ease;
     font-weight: 100;
     color: rgb(230, 230, 230);
@@ -118,6 +121,7 @@
 }
 
 .dark-link {
+    outline: none;
     transition: all 0.2s ease;
     font-weight: 100;
     color: #646464;
@@ -151,7 +155,6 @@
 }
 
 .add-button {
-    outline: 0;
     transition: all 0.2s ease;
     background: none;
     border-color: #646464;
@@ -160,6 +163,7 @@
     font-size: xx-large;
     border-color: #646464;
     border-radius: 2em;
+    outline: none;
 }
 
 .add-button:hover {
@@ -181,6 +185,7 @@
     width: 7em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+    outline: none;
 }
 
 .small-select:hover {
@@ -188,4 +193,27 @@
     cursor: pointer; 
     color: #dfdfdf;
     background: #646464;
+}
+
+.filter-button {
+    min-width: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    border-radius: 5px;
+    color: rgb(238, 238, 238);
+    /* border-color: rgb(238, 238, 238); */
+    padding: 5px;
+    margin: 4px 4px 4px 0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.filter-button:hover {
+    font-size: small;
+    background-color: rgb(238, 238, 238);
+    color: #646464;
+    transition: all 0.2s ease;
+    cursor: pointer; 
+    border-color: rgb(238, 238, 238);
 }

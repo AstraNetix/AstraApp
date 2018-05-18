@@ -47,7 +47,7 @@ class Sidebar extends React.Component {
     return(
       <div className='side-bar' style={{width: this.state.isMobile ? '3em' : '8em', paddingLeft: this.state.isMobile ? '1em' : '2em'}}>
         <div className='user-tab'>
-          <Image src={this.state.profile} height={this.state.isMobile ? 35 : 60} width={this.state.isMobile ? 35 : 60}  
+          <Image src={this.state.profile} height={this.state.isMobile ? 35 : 50} width={this.state.isMobile ? 35 : 50}  
             style={{borderRadius: '50%', marginBottom: '1em', boxShadow: '0px 5px 35px 0px rgba(31, 31, 31, 0.22)'}}/>  
           {this.state.isMobile ? null : <div style={{fontSize: 'large'}}> {this.state.name} </div>}
           <div> {this.state.isMobile ? 'Lvl' : 'Level' } {this.state.level} </div>

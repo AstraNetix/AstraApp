@@ -114,6 +114,8 @@ public class BoincCommands {
 
     static String[] getCCStatus()  { return execCmnd("--get_cc_status"); }
 
+    static String[] getNetworkHistory()  { return execCmnd("--get_file_transfers"); }
+
     static String[] getState()  { return execCmnd("--get_state"); }
 
     static String[] getTasks()  { return execCmnd("--get_tasks"); }

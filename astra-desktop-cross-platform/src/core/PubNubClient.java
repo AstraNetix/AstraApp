@@ -44,7 +44,75 @@ public class PubNubClient extends SubscribeCallback {
         _pubNub.subscribe().channels(getSubscribeChannel()).execute();
     }
 
-    void publish(Map data) {
+    void update(Map... data) {
+        Map<String, String> meta = new HashMap<String, String>() {{
+            put("status", "update");
+            put("email", _user._email);
+            put("uid", _user._deviceID);
+        }};
+
+        Map[] newData = new Map[data.length+1];
+        newData[0] = meta;
+        System.arraycopy(meta, 0, newData, 1, data.length);
+
+        publish(newData);
+    }
+
+    void login(Map... data) {
+        Map<String, String> meta = new HashMap<String, String>() {{
+            put("status", "login");
+            put("uid", _user._deviceID);
+        }};
+
+        Map[] newData = new Map[data.length+1];
+        newData[0] = meta;
+        System.arraycopy(meta, 0, newData, 1, data.length);
+
+        publish(newData);
+    }
+
+    void create(Map... data) {
+        Map<String, String> meta = new HashMap<String, String>() {{
+            put("status", "create");
+            put("email", _user._email);
+        }};
+
+        Map[] newData = new Map[data.length+1];
+        newData[0] = meta;
+        System.arraycopy(meta, 0, newData, 1, data.length);
+
+        publish(newData);
+    }
+
+    void success(Map... data) {
+        Map<String, String> meta = new HashMap<String, String>() {{
+            put("status", "success");
+            put("email", _user._email);
+            put("uid", _user._deviceID);
+        }};
+
+        Map[] newData = new Map[data.length+1];
+        newData[0] = meta;
+        System.arraycopy(meta, 0, newData, 1, data.length);
+
+        publish(newData);
+    }
+
+    void failure(Map... data) {
+        Map<String, String> meta = new HashMap<String, String>() {{
+            put("status", "failure");
+            put("email", _user._email);
+            put("uid", _user._deviceID);
+        }};
+
+        Map[] newData = new Map[data.length+1];
+        newData[0] = meta;
+        System.arraycopy(meta, 0, newData, 1, data.length);
+
+        publish(newData);
+    }
+
+    void publish(Map... data) {
         String channel  = getPublishChannel();
         JsonObject jsonData = mapToJSON(data);
         if (channel.length() == 1) { jsonData.addProperty("id", _user._deviceID); }
@@ -204,13 +272,15 @@ public class PubNubClient extends SubscribeCallback {
         return _user == null ? "create" : String.valueOf(_user._deviceID.charAt(0));
     }
 
-    private JsonObject mapToJSON(Map data) {
+    private JsonObject mapToJSON(Map... dataArray) {
         JsonObject json = new JsonObject();
-        for (Object key : data.keySet()) {
-            if (data.get(key) instanceof Map) {
-                json.add((String) key, mapToJSON((Map) data.get(key)));
-            } else {
-                json.addProperty((String) key, String.valueOf(data.get(key)));
+        for (Map data : dataArray) {
+            for (Object key : data.keySet()) {
+                if (data.get(key) instanceof Map) {
+                    json.add((String) key, mapToJSON((Map) data.get(key)));
+                } else {
+                    json.addProperty((String) key, String.valueOf(data.get(key)));
+                }
             }
         }
         return json;

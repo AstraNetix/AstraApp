@@ -11,13 +11,13 @@
 <project_dir>/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc/projects/setiathome.berkeley.edu</project_dir>
 <boinc_dir>/Users/sohamkale/Documents/Astra/astra-desktop-cross-platform/Boinc</boinc_dir>
 <authenticator>552e80e81e75579075cec0e9e3655660</authenticator>
-<wu_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar</wu_name>
-<result_name>blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0</result_name>
+<wu_name>15my18aa.19974.23172.12.39.40</wu_name>
+<result_name>15my18aa.19974.23172.12.39.40_1</result_name>
 <shm_key>-1</shm_key>
 <slot>0</slot>
-<client_pid>45624</client_pid>
-<wu_cpu_time>3553.769000</wu_cpu_time>
-<starting_elapsed_time>4467.461899</starting_elapsed_time>
+<client_pid>87068</client_pid>
+<wu_cpu_time>366.428400</wu_cpu_time>
+<starting_elapsed_time>589.954336</starting_elapsed_time>
 <using_sandbox>0</using_sandbox>
 <vm_extensions_disabled>0</vm_extensions_disabled>
 <user_total_credit>0.000000</user_total_credit>
@@ -33,16 +33,16 @@
 <gpu_opencl_dev_index>-1</gpu_opencl_dev_index>
 <gpu_usage>0.000000</gpu_usage>
 <ncpus>1.000000</ncpus>
-<rsc_fpops_est>183887307748840.000000</rsc_fpops_est>
-<rsc_fpops_bound>3677746154976800.000000</rsc_fpops_bound>
+<rsc_fpops_est>181694351558360.000000</rsc_fpops_est>
+<rsc_fpops_bound>3633887031167200.000000</rsc_fpops_bound>
 <rsc_memory_bound>33554432.000000</rsc_memory_bound>
 <rsc_disk_bound>33554432.000000</rsc_disk_bound>
-<computation_deadline>1523792199.000000</computation_deadline>
+<computation_deadline>1531059842.000000</computation_deadline>
 <vbox_window>0</vbox_window>
 <host_info>
     <timezone>-25200</timezone>
     <domain_name>Sohams-MacBook-Pro.local</domain_name>
-    <ip_addr>10.0.0.58</ip_addr>
+    <ip_addr>10.0.1.22</ip_addr>
     <host_cpid>6430ebf4cf11bf05aa020479a05d13e5</host_cpid>
     <p_ncpus>4</p_ncpus>
     <p_vendor>GenuineIntel</p_vendor>
@@ -55,9 +55,9 @@
     <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
     <m_nbytes>8589934592.000000</m_nbytes>
     <m_cache>1000000.000000</m_cache>
-    <m_swap>15938027520.000000</m_swap>
+    <m_swap>15399206912.000000</m_swap>
     <d_total>250035572736.000000</d_total>
-    <d_free>5390409728.000000</d_free>
+    <d_free>6122418176.000000</d_free>
     <os_name>Darwin</os_name>
     <os_version>17.0.0</os_version>
     <n_usable_coprocs>1</n_usable_coprocs>
@@ -210,8 +210,8 @@
       <end_hour>24.00</end_hour>
    </day_prefs>
 </global_preferences>
-<app_file>setiathome_8.03_x86_64-apple-darwin</app_file>
-<app_file>setigraphics_8.03_x86_64-apple-darwin</app_file>
+<app_file>setiathome_8.03_i686-apple-darwin</app_file>
+<app_file>setigraphics_8.03_i686-apple-darwin</app_file>
 <app_file>bl_bkg_803.jpg</app_file>
 <app_file>bl_803.jpg</app_file>
 <app_file>setiathome-8.03_AUTHORS.txt</app_file>

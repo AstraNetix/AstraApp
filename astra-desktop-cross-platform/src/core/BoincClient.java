@@ -22,21 +22,16 @@ public class BoincClient {
 
     /* ************************************* DISC ************************************* */
 
-    Map<String, Map<String, String>> getTotalDiskUsage() {
+    Map<String, String> getTotalDiskUsage() {
         String[] diskUsage = BoincCommands.getDiskUsage();
-        Map<String, Map<String, String>> data = new HashMap<String, Map<String, String>>() {{
-            put("total", new HashMap<String, String>() {{
-                put("value", getDataKnown(diskUsage[1], Line.TOTAL));
-            }});
-            put("free", new HashMap<String, String>() {{
-                put("value", getDataKnown(diskUsage[2], Line.FREE));
-            }});
+        Map<String, String> data = new HashMap<String, String>() {{
+            put("total", getDataKnown(diskUsage[1], Line.TOTAL));
+            put("free", getDataKnown(diskUsage[2], Line.FREE));
         }};
-        int projNum = 0;
         for (int i = 0; i < diskUsage.length; i++) {
             if (diskUsage[i].matches(Line.NUMBER._header)) {
-                data.put(Integer.toString(projNum), (getDiskUsage(diskUsage, i + 1)));
-                i += 3;
+                Map<String, String> projectDiskUsage = getDiskUsage(diskUsage, i + 1);
+                data.put(projectDiskUsage.get("url"), projectDiskUsage.get("disk-usage"));
             }
         }
         return data;
@@ -46,7 +41,7 @@ public class BoincClient {
         String[] diskUsage = BoincCommands.getDiskUsage();
         for (int i = 0; i < diskUsage.length; i++) {
             if (diskUsage[i].matches(Line.NUMBER._header) &&
-                    getDataKnown(diskUsage[i + 1], Line.URL).equals(projectURL)) {
+                    getDataKnown(diskUsage[i + 1], Line.MASTER_URL).equals(projectURL)) {
                 return getDiskUsage(diskUsage, i + 1);
             }
         }
@@ -57,10 +52,86 @@ public class BoincClient {
 
     private Map<String, String> getDiskUsage(String[] diskUsage, int i) {
         return new HashMap<String, String>() {{
-            put("url", getDataKnown(diskUsage[i], Line.URL));
+            put("url", getDataKnown(diskUsage[i], Line.MASTER_URL));
             put("disk-usage", getDataKnown(diskUsage[i + 1], Line.DISK_USAGE));
         }};
     }
+
+    /* ************************************ TASKS ************************************ */
+
+    Map<String, Map<String, String>> getTasks() {
+        String[] tasks = BoincCommands.getTasks();
+        Map<String, Map<String, String>> taskData = new HashMap<>();
+        Pattern header = Pattern.compile(Line.NUMBER._header);
+        for (int i = 0; i < tasks.length; i++) {
+            if (header.matcher(tasks[i]).find()) {
+                Map<String, String> task = new HashMap<>();
+
+                task.put("name", getDataKnown(tasks[i+1], Line.NAME));
+                task.put("url", getDataKnown(tasks[i+3], Line.PROJECT_URL));
+                task.put("received", Utils.convertToISO8601(getDataKnown(tasks[i+4], Line.TASK_RECEIVED)));
+                task.put("due", Utils.convertToISO8601(getDataKnown(tasks[i+5], Line.TASK_DUE)));
+                task.put("state", getDataKnown(tasks[i+9], Line.TASK_STATE));
+                task.put("active-state", getDataKnown(tasks[i+14], Line.ACTIVE_TASK_STATE));
+                task.put("app-version", getDataKnown(tasks[i+15], Line.APP_VERSION));
+                task.put("cpu-time-running", getDataKnown(tasks[i+17], Line.CPU_TIME_RUNNING));
+                task.put("fraction-done", getDataKnown(tasks[i+18], Line.FRACTION_DONE));
+                task.put("cpu-time-remaining", getDataKnown(tasks[i+21], Line.CPU_TIME_REMAINING));
+
+                taskData.put(getDataKnown(tasks[i+1], Line.NAME), task);
+                i += 22;
+            }
+        }
+
+        return taskData;
+    }
+
+    /* *********************************** NETWORK *********************************** */
+
+    /** Returns network traffic history (uploaded bytes and downloaded bytes) by date
+     *
+     * @return (Map) of date (String) => (Map) of type (String) => Byte value (String)
+     */
+    Map<String, Map<String, String>> getNetworkTraffic() {
+        String[] networkHistory = BoincCommands.getNetworkHistory();
+        Map<String, Map<String, String>> networkData = new HashMap<>();
+
+        Pattern datePattern = Pattern.compile(Line.UPLOADED._header);
+        for (String line : networkHistory) {
+            Map<String, String> dateData = new HashMap<>();
+            dateData.put("uploaded", getDataKnown(line, Line.UPLOADED));
+            dateData.put("downloaded", getDataKnown(line, Line.DOWNLOADED));
+
+            Matcher dateMatcher = datePattern.matcher(line);
+            String date = dateMatcher.find() ? line.substring(dateMatcher.start(), dateMatcher.end()) : "";
+            networkData.put(date, dateData);
+        }
+
+        return networkData;
+    }
+
+    /** Returns the latest network traffic history (uploaded bytes and downloaded bytes)
+     *
+     * @return (Map) of data (date, uploaded, or downloaded) => Byte value / date (String)
+     */
+    Map<String, String> getLatestNetworkTraffic() {
+        String[] networkHistory = BoincCommands.getNetworkHistory();
+        String line = networkHistory[0];
+
+        Map<String, String> latestNetworkData = new HashMap<>();
+        Pattern datePattern = Pattern.compile(Line.UPLOADED._header);
+
+        Map<String, String> dateData = new HashMap<>();
+        latestNetworkData.put("uploaded", getDataKnown(line, Line.UPLOADED));
+        latestNetworkData.put("downloaded", getDataKnown(line, Line.DOWNLOADED));
+
+        Matcher dateMatcher = datePattern.matcher(line);
+        String date = dateMatcher.find() ? line.substring(dateMatcher.start(), dateMatcher.end()) : "";
+        latestNetworkData.put("date", date);
+
+        return latestNetworkData;
+    }
+
 
     /* *********************************** PROJECTS *********************************** */
 
@@ -74,7 +145,7 @@ public class BoincClient {
         Pattern header = Pattern.compile(Line.NUMBER._header);
         for (int i = 1; i < projectStatus.length; i++) {
             if (header.matcher(projectStatus[i]).find()) {
-                if (getDataKnown(projectStatus[i+2], Line.URL).equals(projectURL))
+                if (getDataKnown(projectStatus[i+2], Line.MASTER_URL).equals(projectURL))
                     return getProjectInfo(i, projectStatus);
                 i += 23;
             }
@@ -92,7 +163,7 @@ public class BoincClient {
             if (header.matcher(projectStatus[i]).find()) {
                 projects.add(new String[] {
                         getDataKnown(projectStatus[i+1], Line.NAME),
-                        getDataKnown(projectStatus[i+2], Line.URL)
+                        getDataKnown(projectStatus[i+2], Line.MASTER_URL)
                 });
                 i += 23;
             }
@@ -108,7 +179,7 @@ public class BoincClient {
             if (header.matcher(projectStatus[i]).find()) {
                 projects.add(new String[] {
                         getDataKnown(projectStatus[i+1], Line.NAME),
-                        getDataKnown(projectStatus[i+2], Line.URL),
+                        getDataKnown(projectStatus[i+2], Line.MASTER_URL),
                         getDataKnown(projectStatus[i+6], Line.USER_TOTAL_CREDIT)
                 });
                 i += 23;
@@ -198,7 +269,7 @@ public class BoincClient {
         HEADER("========\\s\\S+\\s========", "[a-zA-Z0-9]+"),
         NUMBER("\\)\\s-----------", "\\d+"),
         NAME("name:\\s", "(?<=name:\\s).+"),
-        URL("master\\sURL:\\s", "(?<=master\\sURL:\\s).+"),
+        MASTER_URL("master\\sURL:\\s", "(?<=master\\sURL:\\s).+"),
         USER_NAME("user_name:\\s", "(?<=user_name:\\s).+"),
         USER_TOTAL_CREDIT("user_total_credit:\\s", "\\d\\.\\d{6}"),
         USER_AVG_CREDIT("user_expavg_credit:\\s", "\\d\\.\\d{6}"),
@@ -206,6 +277,19 @@ public class BoincClient {
         NO_MORE_WORK("don't request more work:\\s", "(yes|no)"),
         DISK_USAGE("disk\\susage:\\s", "(\\d\\.\\d{6}|\\d*\\.\\d{2}MB)"),
         PROJECT_FILES_DOWNLOADED("project\\sfiles\\sdownloaded:\\s", "\\d\\.\\d{6}"),
+
+        PROJECT_URL("project\\sURL:\\s", "(?<=project\\sURL:\\s).+"),
+        TASK_RECEIVED("received:\\s", "(?<=received:\\s).+"),
+        TASK_DUE("report\\sdeadline:\\s", "(?<=report\\sdeadline:\\s).+"),
+        TASK_STATE("state:\\s", "(?<=state:\\s).+"),
+        ACTIVE_TASK_STATE("active_task_state:\\s", "(?<=active_task_state:\\s).+"),
+        APP_VERSION("app\\sversion\\snum:\\s", "(?<=app\\sversion\\snum:\\s)\\d+"),
+        FRACTION_DONE("fraction\\sdone:\\s", "(?<=fraction\\sdone:\\s).+"),
+        CPU_TIME_RUNNING("current\\sCPU\\stime:\\s", "(?<=current\\sCPU\\stime:\\s).+"),
+        CPU_TIME_REMAINING("estimated\\sCPU\\stime\\sremaining:\\s", "(?<=estimated\\sCPU\\stime\\sremaining:\\s).+"),
+
+        UPLOADED("\\d{2}-\\w{3}-\\d{4}:\\s", "(?<=\\d{2}-\\w{3}-\\d{4}:\\s)\\d+"),
+        DOWNLOADED("\\d{2}-\\w{3}-\\d{4}:\\s", "(?<=\\,\\s)\\d+"),
 
         TOTAL("total:\\s", "\\d+\\.\\d+"),
         FREE("free:\\s", "\\d+\\.\\d+"),

@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/admin.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/management/commands/createemails.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/management/commands/createemails.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/device.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/email.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/email.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/usage.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/usage.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/models/user.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/serializers/device.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/templates/admin/send_email.html" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/templates/admin/send_email.html" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/device.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/device.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/views/user.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/settings.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/astraweb/urls.py" />
-      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/../astra-backend/astraweb/api/pubnub_client.py" afterPath="$PROJECT_DIR$/../astra-backend/astraweb/api/pubnub_client.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state.xml" afterPath="$PROJECT_DIR$/Boinc/client_state.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/client_state_prev.xml" afterPath="$PROJECT_DIR$/Boinc/client_state_prev.xml" />
@@ -22,27 +10,14 @@
       <change beforePath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/quakecatcher.net_sensor_notices.php.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/setiathome.berkeley.edu_notices.php.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" afterPath="$PROJECT_DIR$/Boinc/notices/www.rnaworld.de_rnaworld_notices.php.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/.setiathome_8.00_x86_64-apple-darwin__opencl_intel_gpu_sah.icloud" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/.setiathome_8.03_x86_64-apple-darwin.icloud" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc02_2bit_guppi_58137_28225_HIP45398_0016.17811.818.21.44.28.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc02_2bit_guppi_58137_29542_HIP45689_0020.22039.409.22.45.61.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc03_2bit_guppi_58137_29542_HIP45689_0020.22485.818.21.44.93.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.74.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21773.818.22.45.81.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.71.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22052.409.22.45.9.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22499.818.22.45.72.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.64.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.55.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc14_2bit_guppi_58137_26668_HIP45126_0012.21950.818.21.44.69.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.140.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_26668_HIP45126_0012.22016.409.22.45.143.vlar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0" />
-      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/r3321_IntelRCoreTMi56360UCPU200GHz_x64.wisdom" afterPath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/r3321_IntelRCoreTMi56360UCPU200GHz_x64.wisdom" />
-      <change beforePath="$PROJECT_DIR$/Boinc/sched_reply_quakecatcher.net_sensor.xml" afterPath="$PROJECT_DIR$/Boinc/sched_reply_quakecatcher.net_sensor.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.21784.818.21.44.70.vlar_1_r84622029_0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22062.409.21.44.20.vlar_0_r1002704658_0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc13_2bit_guppi_58137_26668_HIP45126_0012.22509.818.21.44.71.vlar_1_r1251613424_0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Boinc/projects/setiathome.berkeley.edu/blc15_2bit_guppi_58137_27028_HIP45688_0013.21409.409.21.44.165.vlar_0_r2131394380_0" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/sched_reply_setiathome.berkeley.edu.xml" afterPath="$PROJECT_DIR$/Boinc/sched_reply_setiathome.berkeley.edu.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/sched_request_quakecatcher.net_sensor.xml" afterPath="$PROJECT_DIR$/Boinc/sched_request_quakecatcher.net_sensor.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/sched_request_setiathome.berkeley.edu.xml" afterPath="$PROJECT_DIR$/Boinc/sched_request_setiathome.berkeley.edu.xml" />
@@ -50,36 +25,47 @@
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_setiathome_0" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_setiathome_0" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/0/boinc_task_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/graphics_app" afterPath="$PROJECT_DIR$/Boinc/slots/0/graphics_app" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/0/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/result.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/result.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/setiathome_8.03_x86_64-apple-darwin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/0/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/0/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/0/work_unit.sah" afterPath="$PROJECT_DIR$/Boinc/slots/0/work_unit.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_setiathome_1" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_setiathome_1" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/1/boinc_task_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/graphics_app" afterPath="$PROJECT_DIR$/Boinc/slots/1/graphics_app" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/1/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/result.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/result.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/setiathome_8.03_x86_64-apple-darwin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/1/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/1/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/1/work_unit.sah" afterPath="$PROJECT_DIR$/Boinc/slots/1/work_unit.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_setiathome_2" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_setiathome_2" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/2/boinc_task_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/graphics_app" afterPath="$PROJECT_DIR$/Boinc/slots/2/graphics_app" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/2/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/result.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/result.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/setiathome_8.03_x86_64-apple-darwin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/2/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/2/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/wisdom.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/2/work_unit.sah" afterPath="$PROJECT_DIR$/Boinc/slots/2/work_unit.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_setiathome_3" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_setiathome_3" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/3/boinc_task_state.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/graphics_app" afterPath="$PROJECT_DIR$/Boinc/slots/3/graphics_app" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/3/init_data.xml" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/result.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/result.sah" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/setiathome_8.03_x86_64-apple-darwin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/state.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/3/stderr.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/3/wisdom.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/wisdom.sah" />
-      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/4/boinc_mmap_file" />
-      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/4/boinc_task_state.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/init_data.xml" afterPath="$PROJECT_DIR$/Boinc/slots/4/init_data.xml" />
-      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/state.sah" afterPath="$PROJECT_DIR$/Boinc/slots/4/state.sah" />
-      <change beforePath="$PROJECT_DIR$/Boinc/slots/4/stderr.txt" afterPath="$PROJECT_DIR$/Boinc/slots/4/stderr.txt" />
+      <change beforePath="$PROJECT_DIR$/Boinc/slots/3/work_unit.sah" afterPath="$PROJECT_DIR$/Boinc/slots/3/work_unit.sah" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_mmap_file" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_mmap_file" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_quake_5" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_quake_5" />
       <change beforePath="$PROJECT_DIR$/Boinc/slots/5/boinc_task_state.xml" afterPath="$PROJECT_DIR$/Boinc/slots/5/boinc_task_state.xml" />
@@ -90,44 +76,32 @@
       <change beforePath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" afterPath="$PROJECT_DIR$/Boinc/statistics_www.rnaworld.de_rnaworld.xml" />
       <change beforePath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" afterPath="$PROJECT_DIR$/Boinc/stdoutgpudetect.txt" />
       <change beforePath="$PROJECT_DIR$/Boinc/time_stats_log" afterPath="$PROJECT_DIR$/Boinc/time_stats_log" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/background.png" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/background.png" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/background.psd" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/background.psd" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincCommands.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/BoincCommands.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginController.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient.class" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/PubNubClient.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/login.fxml" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/core/login.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" afterPath="$PROJECT_DIR$/out/production/astra-desktop-cross-platform/login.css" />
+      <change beforePath="$PROJECT_DIR$/src/background.png" afterPath="$PROJECT_DIR$/src/background.png" />
+      <change beforePath="$PROJECT_DIR$/src/background.psd" afterPath="$PROJECT_DIR$/src/background.psd" />
+      <change beforePath="$PROJECT_DIR$/src/core/BoincClient.java" afterPath="$PROJECT_DIR$/src/core/BoincClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/BoincCommands.java" afterPath="$PROJECT_DIR$/src/core/BoincCommands.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/LoginController.java" afterPath="$PROJECT_DIR$/src/core/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/LoginManager.java" afterPath="$PROJECT_DIR$/src/core/LoginManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/MainManager.java" afterPath="$PROJECT_DIR$/src/core/MainManager.java" />
       <change beforePath="$PROJECT_DIR$/src/core/PubNubClient.java" afterPath="$PROJECT_DIR$/src/core/PubNubClient.java" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/package-lock.json" afterPath="$PROJECT_DIR$/../astra-frontend/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/package.json" afterPath="$PROJECT_DIR$/../astra-frontend/package.json" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/.vscode/launch.json" afterPath="$PROJECT_DIR$/../astra-frontend/src/.vscode/launch.json" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/ServerAPI.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/ServerAPI.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/actions/CurrentDeviceActions.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/actions/CurrentDeviceActions.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/actions/CurrentUserActions.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/actions/CurrentUserActions.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/DeviceInfo.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/DeviceInfo.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/DevicesView.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/DevicesView.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/InitialView.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/InitialView.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/LoginForm.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/LoginForm.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/Main.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/Main.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/RegisterForm.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/RegisterForm.js" />
+      <change beforePath="$PROJECT_DIR$/src/core/Utils.java" afterPath="$PROJECT_DIR$/src/core/Utils.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/XMLController.java" afterPath="$PROJECT_DIR$/src/core/XMLController.java" />
+      <change beforePath="$PROJECT_DIR$/src/core/login.fxml" afterPath="$PROJECT_DIR$/src/core/login.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/login.css" afterPath="$PROJECT_DIR$/src/login.css" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/ProjectsView.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/ProjectsView.js" />
       <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/SideBar.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/SideBar.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/WelcomeView.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/WelcomeView.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/buttons/ArrowButton.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/buttons/LogoutButton.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/core/Button.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/core/Button.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/core/Dashboard.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/core/Dashboard.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/core/Image.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/core/Image.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/constants/ActionConstants.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/constants/ActionConstants.js" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/components/core/SearchBar.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/components/core/SearchBar.js" />
       <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/Button.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/InitialView.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/InitialView.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/SideBar.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/SideBar.css" />
       <change beforePath="$PROJECT_DIR$/../astra-frontend/src/css/index.css" afterPath="$PROJECT_DIR$/../astra-frontend/src/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Astra-Logo@3x.png" afterPath="$PROJECT_DIR$/../astra-frontend/src/images/Astra-Logo@3x.png" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Coins Layers .png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Coins Layers Highlight.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Desktop Layers Highlighted.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Desktop Layers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Desktop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Projects Layers Highlighted.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Projects Layers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/Settings Image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/User Layers Highlighted.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/images/User Layers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/stores/CurrentDeviceStore.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/stores/CurrentDeviceStore.js" />
-      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/stores/CurrentUserStore.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/stores/CurrentUserStore.js" />
+      <change beforePath="$PROJECT_DIR$/../astra-frontend/src/stores/ProjectsStore.js" afterPath="$PROJECT_DIR$/../astra-frontend/src/stores/ProjectsStore.js" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -185,11 +159,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BoincCommands.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -204,8 +178,6 @@
                 <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
                 <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
-                <element signature="e#3960#3961#0" expanded="true" />
-                <element signature="e#4015#4016#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,8 +196,8 @@
       <file leaf-file-name="XMLController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/XMLController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="585">
+              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -234,19 +206,29 @@
       <file leaf-file-name="PubNubClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="159" column="80" lean-forward="false" selection-start-line="159" selection-start-column="80" selection-end-line="159" selection-end-column="80" />
-              <folding />
+            <state relative-caret-position="-375">
+              <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+              <folding>
+                <element signature="e#9615#9616#0" expanded="true" />
+                <element signature="e#9711#9712#0" expanded="true" />
+                <element signature="e#9761#9762#0" expanded="true" />
+                <element signature="e#9831#9832#0" expanded="true" />
+                <element signature="e#9873#9874#0" expanded="true" />
+                <element signature="e#9964#9965#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoincClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
+      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding>
+                <element signature="e#2290#2674#0" expanded="true" />
+                <element signature="e#2673#2674#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -254,20 +236,18 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BashClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
+      <file leaf-file-name="BoincClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -276,24 +256,28 @@
       <file leaf-file-name="MainManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="157">
+              <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+              <folding>
+                <element signature="e#2700#2701#0" expanded="true" />
+                <element signature="e#2771#2772#0" expanded="true" />
+                <element signature="e#2951#2952#0" expanded="true" />
+                <element signature="e#3028#3029#0" expanded="true" />
+                <element signature="e#3062#3063#0" expanded="true" />
+                <element signature="e#3131#3132#0" expanded="true" />
+                <element signature="e#3169#3170#0" expanded="true" />
+                <element signature="e#3242#3243#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/User.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-              <folding>
-                <element signature="e#3514#3515#0" expanded="true" />
-                <element signature="e#3582#3583#0" expanded="true" />
-                <element signature="e#3608#3609#0" expanded="true" />
-                <element signature="e#3688#3689#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -301,13 +285,9 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="438">
               <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3798#3799#0" expanded="true" />
-                <element signature="e#3842#3843#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -348,30 +328,30 @@
         <option value="$PROJECT_DIR$/src/sample/astradesktop.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/core/BoincParser.java" />
-        <option value="$PROJECT_DIR$/src/core/XMLController.java" />
         <option value="$PROJECT_DIR$/src/core/BashController.java" />
-        <option value="$PROJECT_DIR$/src/core/login.fxml" />
         <option value="$PROJECT_DIR$/src/tests/BashControllerTests.java" />
         <option value="$PROJECT_DIR$/src/core/tests/BashControllerTests.java" />
         <option value="$PROJECT_DIR$/src/core/Tests/Tests.java" />
         <option value="$PROJECT_DIR$/project_status.txt" />
         <option value="$PROJECT_DIR$/src/create_account.txt" />
         <option value="$PROJECT_DIR$/src/core/main.fxml" />
-        <option value="$PROJECT_DIR$/src/core/BoincClient.java" />
         <option value="$PROJECT_DIR$/src/core/Manager.java" />
         <option value="$PROJECT_DIR$/src/core/Main.java" />
-        <option value="$PROJECT_DIR$/src/core/Utils.java" />
         <option value="$PROJECT_DIR$/src/core/FakePNDelegate.java" />
         <option value="$PROJECT_DIR$/src/core/BashClient.java" />
-        <option value="$PROJECT_DIR$/src/core/LoginController.java" />
         <option value="$PROJECT_DIR$/src/core/MainController.java" />
         <option value="$PROJECT_DIR$/src/core/User.java" />
+        <option value="$PROJECT_DIR$/src/core/Tests.java" />
+        <option value="$PROJECT_DIR$/Boinc/global_prefs_override.xml" />
+        <option value="$PROJECT_DIR$/src/core/login.fxml" />
+        <option value="$PROJECT_DIR$/src/core/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/core/XMLController.java" />
+        <option value="$PROJECT_DIR$/src/core/BoincCommands.java" />
+        <option value="$PROJECT_DIR$/src/core/Utils.java" />
+        <option value="$PROJECT_DIR$/src/core/BoincClient.java" />
+        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
         <option value="$PROJECT_DIR$/src/core/LoginManager.java" />
         <option value="$PROJECT_DIR$/src/core/MainManager.java" />
-        <option value="$PROJECT_DIR$/src/core/Tests.java" />
-        <option value="$PROJECT_DIR$/src/core/BoincCommands.java" />
-        <option value="$PROJECT_DIR$/Boinc/global_prefs_override.xml" />
-        <option value="$PROJECT_DIR$/src/core/PubNubClient.java" />
       </list>
     </option>
   </component>
@@ -442,8 +422,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/cs61b-software/lib/ucb.jar!/" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1024,6 +1003,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1051,7 +1031,6 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1085,7 +1064,7 @@
           <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1094,97 +1073,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setRunIfActive#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setMaxCPUs#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setDiskMaxPercent#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setCPUUsage#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#setMaxBytesUp#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#getConfigHours#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#getRAMMaxUse#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
-            <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#4015#4016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="e#3514#3515#0" expanded="true" />
-            <element signature="e#3582#3583#0" expanded="true" />
-            <element signature="e#3608#3609#0" expanded="true" />
-            <element signature="e#3688#3689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/astradesktop.fxml" />
     <entry file="file://$PROJECT_DIR$/src/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1202,13 +1090,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/pubnub-gson-4.18.0-all.jar!/AUTHORS">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1282,16 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1300,20 +1171,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
@@ -1352,39 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3799#3800#0" expanded="false" />
-            <element signature="e#3853#3854#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#490#491#0" expanded="false" />
-            <element signature="e#571#572#0" expanded="false" />
-            <element signature="e#3520#3521#0" expanded="false" />
-            <element signature="e#3547#3548#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/BashClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1393,69 +1217,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding>
-            <element signature="e#3514#3515#0" expanded="true" />
-            <element signature="e#3582#3583#0" expanded="true" />
-            <element signature="e#3608#3609#0" expanded="true" />
-            <element signature="e#3688#3689#0" expanded="true" />
+            <element signature="e#3514#3515#0" expanded="false" />
+            <element signature="e#3582#3583#0" expanded="false" />
+            <element signature="e#3608#3609#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+    <entry file="file://$PROJECT_DIR$/Boinc/client_state_prev.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3798#3799#0" expanded="true" />
-            <element signature="e#3842#3843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
+    <entry file="file://$PROJECT_DIR$/Boinc/get_current_version.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/XMLController.java">
+    <entry file="file://$PROJECT_DIR$/Boinc/lookup_account.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
+    <entry file="file://$PROJECT_DIR$/Boinc/account_setiathome.berkeley.edu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="159" column="80" lean-forward="false" selection-start-line="159" selection-start-column="80" selection-end-line="159" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/client_state.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/create_account.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/sched_reply_quakecatcher.net_sensor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/output">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/daily_xfer_history.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boinc/gui_rpc_auth.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/login.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1468,10 +1361,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/XMLController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/BoincCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="180">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="method#startBoinc#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#setRunOnBatteries#0;class#BoincCommands#0" expanded="false" />
@@ -1486,9 +1403,66 @@
             <element signature="method#lookupAccount#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#createUser#0;class#BoincCommands#0" expanded="false" />
             <element signature="method#attachProject#0;class#BoincCommands#0" expanded="false" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#4015#4016#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/PubNubClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <element signature="e#9615#9616#0" expanded="true" />
+            <element signature="e#9711#9712#0" expanded="true" />
+            <element signature="e#9761#9762#0" expanded="true" />
+            <element signature="e#9831#9832#0" expanded="true" />
+            <element signature="e#9873#9874#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/MainManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2771#2772#0" expanded="true" />
+            <element signature="e#2951#2952#0" expanded="true" />
+            <element signature="e#3028#3029#0" expanded="true" />
+            <element signature="e#3062#3063#0" expanded="true" />
+            <element signature="e#3131#3132#0" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/LoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding>
+            <element signature="e#2290#2674#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/BoincClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

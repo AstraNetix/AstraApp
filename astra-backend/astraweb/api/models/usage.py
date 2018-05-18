@@ -1,23 +1,22 @@
 from django.db import models
 from django.core.validators import RegexValidator
-from api.models.device import Device
 from api.exceptions.usage_exceptions import DataException
 
-# Holds data for past 24 hours, 1 point for every 15 min, each point 3 digits in length
+# Holds data for past 24 hours, 1 point for every 5 min, each point 3 digits in length
 fine_regex      =   RegexValidator(
-                    regex='^[0-9]{288}$', 
-                    message='CPU usage string must be 288 numerical characters', 
-                    code='nomatch'
-                )
-fine_default    =   "".join('0' for i in range(144))
+                        regex='^[0-9]{864}$', 
+                        message='CPU usage string must be 864 numerical characters', 
+                        code='nomatch'
+                    )
+fine_default    =   "".join('000' for i in range(864))
 
 # Holds data for the past 90 days, 1 point for every day, each point 3 digits in length
 coarse_regex    =   RegexValidator(
-                    regex='^[0-9]{240}$', 
-                    message='CPU usage string must be 240 numerical characters', 
-                    code='nomatch'
-                )
-coarse_default  =   "".join('0' for i in range(240))
+                        regex='^[0-9]{240}$', 
+                        message='CPU usage string must be 240 numerical characters', 
+                        code='nomatch'
+                    )
+coarse_default  =   "".join('000' for i in range(240))
 
 class DataField(models.CharField):
     def __init__(self, *args, **kwargs):
@@ -39,12 +38,11 @@ class DataField(models.CharField):
         return self.get_db_prep_value(value)
 
 class Data(models.Model):
-    device          =   models.OneToOneField(Device, related_name='usage', on_delete=models.CASCADE)
 
-    cpu_fine        =   DataField(validators=[fine_regex], max_length=288, default=fine_default)    
-    gpu_fine        =   DataField(validators=[fine_regex], max_length=288, default=fine_default)
-    disk_fine       =   DataField(validators=[fine_regex], max_length=288, default=fine_default)
-    network_fine    =   DataField(validators=[fine_regex], max_length=288, default=fine_default)  
+    cpu_fine        =   DataField(validators=[fine_regex], max_length=864, default=fine_default)    
+    gpu_fine        =   DataField(validators=[fine_regex], max_length=864, default=fine_default)
+    disk_fine       =   DataField(validators=[fine_regex], max_length=864, default=fine_default)
+    network_fine    =   DataField(validators=[fine_regex], max_length=864, default=fine_default)  
 
     cpu_course      =   DataField(validators=[coarse_regex], max_length=144, default=coarse_default)    
     gpu_course      =   DataField(validators=[coarse_regex], max_length=144, default=coarse_default)

@@ -4,6 +4,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,15 +22,34 @@ import java.util.logging.Logger;
  *
  */
 public class MainManager extends Manager implements PubNubClient.PubNubDelegate {
+
     private PubNubClient _pubnub;
     private MainController _controller;
     private Thread _boinc;
+    private User _user;
+    private BoincClient _boincClient;
+    private ScheduledExecutorService _updateService;
+
+    private final Runnable _updater = () -> {
+        Map<String, String> diskUsage = _boincClient.getTotalDiskUsage();
+        Map<String, String> networkUsage = _boincClient.getLatestNetworkTraffic();
+        Map<String, Map<String, String>> tasks = _boincClient.getTasks();
+
+        Map<String, Map<String, Map<String, String>>> jsonTasks = new HashMap<>();
+        jsonTasks.put("tasks", tasks);
+
+        Map[] data = new Map[] {diskUsage, networkUsage, jsonTasks};
+        _pubnub.update(data);
+    };
 
     MainManager(Scene scene, User user) {
         _scene = scene;
         _user = user;
         _pubnub = new PubNubClient(this);
+        _boincClient = new BoincClient(user);
+
         _pubnub.setUser(user);
+        setupUpdateThread();
     }
 
     void showScreen() {
@@ -42,6 +67,13 @@ public class MainManager extends Manager implements PubNubClient.PubNubDelegate 
         } catch (IOException ex) {
             Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    private void setupUpdateThread() {
+        _updateService = Executors.newScheduledThreadPool(1);
+
+        final ScheduledFuture<?> updateHandler = _updateService.scheduleAtFixedRate(_updater,
+                5, 5, TimeUnit.MINUTES);
     }
 
     void logout() {

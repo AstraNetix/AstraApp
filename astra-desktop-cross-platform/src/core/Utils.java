@@ -13,6 +13,8 @@ import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Formatter;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Copyright (c) 2018 Astra International. All rights reserved.
@@ -117,6 +119,21 @@ public class Utils {
         button.setOnAction(eventHandler);
         button.setOnMouseExited(event -> manager._scene.setCursor(Cursor.DEFAULT));
     }
+
+    static String convertToISO8601(String rawDate) {
+        return String.format("%s-%s-%sT%sZ",
+                rawDate.substring(20, 25),
+                months.get(rawDate.substring(4, 7)),
+                rawDate.substring(8, 10),
+                rawDate.substring(11, 19)
+        );
+    }
+
+    private static final Map<String, String> months = new HashMap<String, String>() {{
+        put("Jan", "01");  put("Feb", "02");  put("Mar", "03");  put("Apr", "04");
+        put("May", "05");  put("Jun", "06");  put("Jul", "07");  put("Aug", "08");
+        put("Sep", "09");  put("Oct", "10");  put("Nov", "11");  put("Dec", "12");
+    }};
 
     // TODO: change in production (must be 16 bytes)
     private static final String cipherPassword = "9np9l2'a=e/c]v`5";
