@@ -165,13 +165,20 @@ class Device(models.Model):
         Device.pubnub.publish(message={
             "function": "quit"
         }, device_id=self.uid)
-
+    
     def update(self, message):
+        """
+        Updates device once every 5 min (prompted by PubNub message from device) 
+        """
+
         free, total = int(message['free']), int(message['total'])
         self.data.add_data('disk_fine', 1 - free/total)
 
         for name, info in message['tasks'].items():
             project = Project.objects.get(url=info['url'])
+
+            # Create task and device_task from the model field, as a way to overcome 
+            # the circular import issue.
             task = self.tasks.create(name=name, project=project, 
                         due=self.convert_date(info['due']), app_version=info['app-version'])
             device_task = self.device_tasks.create(device=device, task=task, 
