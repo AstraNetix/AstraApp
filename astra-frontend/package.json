@@ -23,7 +23,7 @@
     "react-scripts": "1.1.4",
     "react-scroll-box": "^0.3.5",
     "reactjs-popup": "^1.1.1",
-    "recharts": "^1.0.0-beta.10"
+    "recharts": "^2.1.14"
   },
   "scripts": {
     "start": "react-scripts start",
